@@ -7,9 +7,9 @@
 * [Login for the first time](getting-started/login-for-the-first-time.md)
 * [Adding AWS account](getting-started/adding-aws-account.md)
 * [Adding Azure account](getting-started/adding-azure-account.md)
-* [Adding Alibaba account](getting-started/untitled.md)
+* [Adding Alibaba account](getting-started/adding-alibaba-account.md)
 * [Adding GCP account](getting-started/adding-gcp-account.md)
-* [Adding Fujitsu K5 account](getting-started/untitled-1.md)
+* [Adding Fujitsu K5 account](getting-started/adding-fujitsu-k5-account.md)
 
 ## ALM Template
 
