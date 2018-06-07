@@ -9,7 +9,11 @@
 
 ## ALM Template
 
-* [subgroup2](group2/subgroup2.md)
+* [What is ALM-template](group2/subgroup2.md)
+* [Working with ALM-templates](group2/working-with-alm-templates.md)
+* [ALM-template reference](group2/alm-template-reference.md)
+* [Untitled](group2/untitled-2.md)
+* [Untitled](group2/untitled-3.md)
 
 ## ALM Agent
 
