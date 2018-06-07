@@ -1,5 +1,7 @@
 # Working with ALM Templates
-![](../.gitbook/assets/theDocs.all.min.css)
+
+![](https://github.com/mobingilabs/docs/tree/c41c10942132c59be4cf71d474ba6fa87a43b3f1/.gitbook/assets/theDocs.all.min.css)
+
 ## Alm-template Formats {#template-formats}
 
 Alm-template is designed in **Json** format. You can also write your template in Yaml format and then convert it into json file when you deploy your stacks on ALM UI \(or through CLI, API\).
@@ -85,21 +87,21 @@ For Alm-template examples, please refer to [Example ALM Templates](https://learn
 * labelstring
 * descriptionstring
 * vendorobject
-  *  awsobject
+  * awsobject
     * credstring
     * secretstring
     * regionstring
-  *  alicloudobject
+  * alicloudobject
     * credstring
     * secretstring
     * regionstring
-  *  k5object
+  * k5object
     * credstring
     * regionstring
 * configurationsarray of objects
-  *  rolerole name
-  *  flagflag name
-  *  provisionprovision configuration
+  * rolerole name
+  * flagflag name
+  * provisionprovision configuration
     * vpc\_idstring
     * availability\_zonestring
     * instance\_typestring
@@ -108,45 +110,45 @@ For Alm-template examples, please refer to [Example ALM Templates](https://learn
     * volume\_typestring
     * volume\_sizenumber
     * keypairboolean
-    *  subnetobject
+    * subnetobject
       * cidrstring
       * publicboolean
       * auto\_assign\_public\_ipboolean
-    *  security\_groupobject
-      *  ingressarray of objects
-        * cidr\_ipstring
-        * from\_portnumber
-        * ip\_protocolstring
-        * to\_portnumber
-      *  egressarray of objects
-        * cidr\_ipstring
-        * from\_portnumber
-        * ip\_protocolstring
-        * to\_portnumber
-    *  network\_aclarray of objects
+    * security\_groupobject
+      * ingressarray of objects
+      * cidr\_ipstring
+      * from\_portnumber
+      * ip\_protocolstring
+      * to\_portnumber
+      * egressarray of objects
+      * cidr\_ipstring
+      * from\_portnumber
+      * ip\_protocolstring
+      * to\_portnumber
+    * network\_aclarray of objects
       * rule\_numbernumber
       * protocolstring
       * rule\_actionstring
       * acl\_egressboolean
       * cidrstring
-    *  load\_balancerobject
+    * load\_balancerobject
       * lb\_typestring
       * schemestring
       * subnetsstring
       * security\_groupsstring
-      *  listenersarray of objects
-        * load\_balancer\_portstring
-        * protocolstring
-        * instance\_portstring
-        * instance\_protocolstring
-        * cert\_domainstring
-      *  health\_checkobject
-        * healthy\_thresholdstring
-        * intervalstring
-        * targetstring
-        * timeoutstring
-        * unhealthy\_thresholdstring
-    *  auto\_scalingobject
+      * listenersarray of objects
+      * load\_balancer\_portstring
+      * protocolstring
+      * instance\_portstring
+      * instance\_protocolstring
+      * cert\_domainstring
+      * health\_checkobject
+      * healthy\_thresholdstring
+      * intervalstring
+      * targetstring
+      * timeoutstring
+      * unhealthy\_thresholdstring
+    * auto\_scalingobject
       * minnumber
       * maxnumber
       * spot\_minnumber
@@ -154,7 +156,7 @@ For Alm-template examples, please refer to [Example ALM Templates](https://learn
       * cooldownstring
       * healthcheck\_grace\_periodstring
       * availability\_zonesstring
-  *  containerruntime configuration
+  * containerruntime configuration
     * container\_imagestring
     * container\_registry\_usernamestring
     * container\_registry\_passwordstring
