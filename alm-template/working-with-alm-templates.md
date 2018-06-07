@@ -1,5 +1,5 @@
 # Working with ALM Templates
-
+![](../.gitbook/assets/theDocs.all.min.css)
 ## Alm-template Formats {#template-formats}
 
 Alm-template is designed in **Json** format. You can also write your template in Yaml format and then convert it into json file when you deploy your stacks on ALM UI \(or through CLI, API\).
