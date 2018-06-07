@@ -1,7 +1,3 @@
----
-description: desc
----
-
 # What is ALM Template
 
 ## Alm-template Formats {#template-formats}
