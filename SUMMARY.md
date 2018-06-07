@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-* [Login to console for the first time](group1/subpage.md)
+* [First time login](group1/subpage.md)
 * [my teste](group1/my-teste.md)
 
 ## ALM Template
