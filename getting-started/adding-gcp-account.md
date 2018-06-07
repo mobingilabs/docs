@@ -1,6 +1,4 @@
 # Adding GCP account
 
-{% page-ref page="adding-gcp-account.md" %}
-
-
+![](../.gitbook/assets/add-sa.png)
 
