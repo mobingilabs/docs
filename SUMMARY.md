@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Home](README.md)
+* [ALM Documentation](README.md)
 
 ## Getting Started
 
