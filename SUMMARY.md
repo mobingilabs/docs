@@ -4,8 +4,8 @@
 
 ## Getting Started
 
-* [First time login](group1/subpage.md)
-* [my teste](group1/my-teste.md)
+* [Login for the first time](group1/subpage.md)
+* [Adding your AWS account to ALM](group1/my-teste.md)
 
 ## ALM Template
 
