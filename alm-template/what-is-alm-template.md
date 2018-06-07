@@ -1,6 +1,8 @@
+# What is ALM Template
+
 ## Alm-template Formats {#template-formats}
 
-Alm-template is designed in __Json__ format. You can also write your template in Yaml format and then convert it into json file when you deploy your stacks on ALM UI (or through CLI, API).
+Alm-template is designed in **Json** format. You can also write your template in Yaml format and then convert it into json file when you deploy your stacks on ALM UI \(or through CLI, API\).
 
 _Official yaml format support is in-progress_
 
@@ -44,197 +46,123 @@ In the configurations section, you specify one or multiple configuration layers 
 
 Inside each layer, there are four sections you need to specify:
 
-#####{#template-components-configurations-role}
-- __role__
+* **role**
 
-    The "role" of which the stack layer defines to.
+  The "role" of which the stack layer defines to.
 
-    You deploy multiple layers within one Alm-template, for example two _web_ layers, one _bastion_ layer and one _database_ layer. The current available role names:
+  You deploy multiple layers within one Alm-template, for example two _web_ layers, one _bastion_ layer and one _database_ layer. The current available role names:
 
-    - `web`
-    - `bastion`
+  * `web`
+  * `bastion`
 
-#####{#template-components-configurations-flag}
-- __flag__
+* **flag**
 
-    The unique identifier of each layer.
+  The unique identifier of each layer.
 
-    You must specify the _flag_ name for each configuration layer. The value must between 4 to 18 characters in length and contains only alphanumeric characters.
+  You must specify the _flag_ name for each configuration layer. The value must between 4 to 18 characters in length and contains only alphanumeric characters.
 
-#####{#template-components-configurations-provision}
-- __provision__
+* **provision**
 
-    The infrastructure provisioning configurations.
+  The infrastructure provisioning configurations.
 
-    For more information on _provision_ section, please refer to [ALM Template Reference guide](https://learn.mobingi.com/alm-templates-reference#provision).
+  For more information on _provision_ section, please refer to [ALM Template Reference guide](https://learn.mobingi.com/alm-templates-reference#provision).
 
-#####{#template-components-configurations-container}
-- __container__
+* **container**
 
-    The software runtime configurations _(defined as docker images)_ and code deployment requirement for each instance node.
+  The software runtime configurations _\(defined as docker images\)_ and code deployment requirement for each instance node.
 
-    For more information on _container_ section, please refer to [ALM Template Reference guide](https://learn.mobingi.com/alm-templates-reference#container).
-
+  For more information on _container_ section, please refer to [ALM Template Reference guide](https://learn.mobingi.com/alm-templates-reference#container).
 
 ## Alm-template Structure {#template-structure}
 
 Below is a tree view of all possible components within an alm-template.
 
-<div class="alert alert-warning">The following structure is not a working demo template, but rather to explain all possible key names that may contain in the template body.</div>
+The following structure is not a working demo template, but rather to explain all possible key names that may contain in the template body.
 
 For Alm-template examples, please refer to [Example ALM Templates](https://learn.mobingi.com/alm-templates-example-templates).
 
-<div class="file-tree">
-    <ul>
-        <li class="is-file">version<i>string</i></li>
-        <li class="is-file">label<i>string</i></li>
-        <li class="is-file">description<i>string</i></li>
-        <li class="is-folder open">vendor<i>object</i>
-            <ul>
-                <li class="is-folder">
-                    aws<i>object</i>
-                    <ul>
-                        <li class="is-file">cred<i>string</i></li>
-                        <li class="is-file">secret<i>string</i></li>
-                        <li class="is-file">region<i>string</i></li>
-                    </ul>
-                </li>
-                <li class="is-folder">
-                    alicloud<i>object</i>
-                    <ul>
-                        <li class="is-file">cred<i>string</i></li>
-                        <li class="is-file">secret<i>string</i></li>
-                        <li class="is-file">region<i>string</i></li>
-                    </ul>
-                </li>
-                <li class="is-folder">
-                    k5<i>object</i>
-                    <ul>
-                        <li class="is-file">cred<i>string</i></li>
-                        <li class="is-file">region<i>string</i></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li class="is-folder open">configurations<i>array of objects</i>
-            <ul>
-                <li class="is-file open">
-                    role<i>role name</i>
-                </li>
-                <li class="is-file open">
-                    flag<i>flag name</i>
-                </li>
-                <li class="is-folder open">
-                    provision<i>provision configuration</i>
-                    <ul>
-                        <li class="is-file">vpc_id<i>string</i></li>
-                        <li class="is-file">availability_zone<i>string</i></li>
-                        <li class="is-file">instance_type<i>string</i></li>
-                        <li class="is-file">image<i>string</i></li>
-                        <li class="is-file">instance_count<i>number</i></li>
-                        <li class="is-file">volume_type<i>string</i></li>
-                        <li class="is-file">volume_size<i>number</i></li>
-                        <li class="is-file">keypair<i>boolean</i></li>
-                        <li class="is-folder">
-                            subnet<i>object</i>
-                            <ul>
-                                <li class="is-file">cidr<i>string</i></li>
-                                <li class="is-file">public<i>boolean</i></li>
-                                <li class="is-file">auto_assign_public_ip<i>boolean</i></li>
-                            </ul>
-                        </li>
-                        <li class="is-folder">
-                            security_group<i>object</i>
-                            <ul>
-                                <li class="is-folder">
-                                    ingress<i>array of objects</i>
-                                    <ul>
-                                        <li class="is-file">cidr_ip<i>string</i></li>
-                                        <li class="is-file">from_port<i>number</i></li>
-                                        <li class="is-file">ip_protocol<i>string</i></li>
-                                        <li class="is-file">to_port<i>number</i></li>
-                                    </ul>
-                                </li>
-                                <li class="is-folder">
-                                    egress<i>array of objects</i>
-                                    <ul>
-                                        <li class="is-file">cidr_ip<i>string</i></li>
-                                        <li class="is-file">from_port<i>number</i></li>
-                                        <li class="is-file">ip_protocol<i>string</i></li>
-                                        <li class="is-file">to_port<i>number</i></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="is-folder">
-                            network_acl<i>array of objects</i>
-                            <ul>
-                                <li class="is-file">rule_number<i>number</i></li>
-                                <li class="is-file">protocol<i>string</i></li>
-                                <li class="is-file">rule_action<i>string</i></li>
-                                <li class="is-file">acl_egress<i>boolean</i></li>
-                                <li class="is-file">cidr<i>string</i></li>
-                            </ul>
-                        </li>
-                        <li class="is-folder">
-                            load_balancer<i>object</i>
-                            <ul>
-                                <li class="is-file">lb_type<i>string</i></li>
-                                <li class="is-file">scheme<i>string</i></li>
-                                <li class="is-file">subnets<i>string</i></li>
-                                <li class="is-file">security_groups<i>string</i></li>
-                                <li class="is-folder">
-                                    listeners<i>array of objects</i>
-                                    <ul>
-                                        <li class="is-file">load_balancer_port<i>string</i></li>
-                                        <li class="is-file">protocol<i>string</i></li>
-                                        <li class="is-file">instance_port<i>string</i></li>
-                                        <li class="is-file">instance_protocol<i>string</i></li>
-                                        <li class="is-file">cert_domain<i>string</i></li>
-                                    </ul>
-                                </li>
-                                <li class="is-folder">
-                                    health_check<i>object</i>
-                                    <ul>
-                                        <li class="is-file">healthy_threshold<i>string</i></li>
-                                        <li class="is-file">interval<i>string</i></li>
-                                        <li class="is-file">target<i>string</i></li>
-                                        <li class="is-file">timeout<i>string</i></li>
-                                        <li class="is-file">unhealthy_threshold<i>string</i></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="is-folder">
-                            auto_scaling<i>object</i>
-                            <ul>
-                                <li class="is-file">min<i>number</i></li>
-                                <li class="is-file">max<i>number</i></li>
-                                <li class="is-file">spot_min<i>number</i></li>
-                                <li class="is-file">spot_max<i>number</i></li>
-                                <li class="is-file">cooldown<i>string</i></li>
-                                <li class="is-file">healthcheck_grace_period<i>string</i></li>
-                                <li class="is-file">availability_zones<i>string</i></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="is-folder open">
-                    container<i>runtime configuration</i>
-                    <ul>
-                        <li class="is-file">container_image<i>string</i></li>
-                        <li class="is-file">container_registry_username<i>string</i></li>
-                        <li class="is-file">container_registry_password<i>string</i></li>
-                        <li class="is-file">container_code_dir<i>string</i></li>
-                        <li class="is-file">container_git_repo<i>string</i></li>
-                        <li class="is-file">container_git_reference<i>string</i></li>
-                        <li class="is-file">container_git_private_key<i>string</i></li>
-                        <li class="is-file">container_ports<i>array of numbers</i></li>
-                        <li class="is-file">container_users<i>object</i></li>
-                        <li class="is-file">container_env_vars<i>object</i></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</div>
+* versionstring
+* labelstring
+* descriptionstring
+* vendorobject
+  *  awsobject
+    * credstring
+    * secretstring
+    * regionstring
+  *  alicloudobject
+    * credstring
+    * secretstring
+    * regionstring
+  *  k5object
+    * credstring
+    * regionstring
+* configurationsarray of objects
+  *  rolerole name
+  *  flagflag name
+  *  provisionprovision configuration
+    * vpc\_idstring
+    * availability\_zonestring
+    * instance\_typestring
+    * imagestring
+    * instance\_countnumber
+    * volume\_typestring
+    * volume\_sizenumber
+    * keypairboolean
+    *  subnetobject
+      * cidrstring
+      * publicboolean
+      * auto\_assign\_public\_ipboolean
+    *  security\_groupobject
+      *  ingressarray of objects
+        * cidr\_ipstring
+        * from\_portnumber
+        * ip\_protocolstring
+        * to\_portnumber
+      *  egressarray of objects
+        * cidr\_ipstring
+        * from\_portnumber
+        * ip\_protocolstring
+        * to\_portnumber
+    *  network\_aclarray of objects
+      * rule\_numbernumber
+      * protocolstring
+      * rule\_actionstring
+      * acl\_egressboolean
+      * cidrstring
+    *  load\_balancerobject
+      * lb\_typestring
+      * schemestring
+      * subnetsstring
+      * security\_groupsstring
+      *  listenersarray of objects
+        * load\_balancer\_portstring
+        * protocolstring
+        * instance\_portstring
+        * instance\_protocolstring
+        * cert\_domainstring
+      *  health\_checkobject
+        * healthy\_thresholdstring
+        * intervalstring
+        * targetstring
+        * timeoutstring
+        * unhealthy\_thresholdstring
+    *  auto\_scalingobject
+      * minnumber
+      * maxnumber
+      * spot\_minnumber
+      * spot\_maxnumber
+      * cooldownstring
+      * healthcheck\_grace\_periodstring
+      * availability\_zonesstring
+  *  containerruntime configuration
+    * container\_imagestring
+    * container\_registry\_usernamestring
+    * container\_registry\_passwordstring
+    * container\_code\_dirstring
+    * container\_git\_repostring
+    * container\_git\_referencestring
+    * container\_git\_private\_keystring
+    * container\_portsarray of numbers
+    * container\_usersobject
+    * container\_env\_varsobject
+

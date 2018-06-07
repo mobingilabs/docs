@@ -11,9 +11,9 @@
 
 * [What is ALM Template](alm-template/what-is-alm-template.md)
 * [Working with ALM Templates](alm-template/working-with-alm-templates.md)
-* [ALM Template Reference](alm-template/alm-templates-reference.md)
+* [ALM Template Reference](alm-template/alm-template-reference.md)
 * [ALM Template Language](alm-template/alm-template-language.md)
-* [Example ALM Templates](alm-template/alm-templates-example-templates.md)
+* [Example ALM Templates](alm-template/example-alm-templates.md)
 
 ## ALM Agent
 
