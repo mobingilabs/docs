@@ -1,7 +1,7 @@
 # Working with ALM Templates
 
 ![](https://github.com/mobingilabs/docs/tree/c41c10942132c59be4cf71d474ba6fa87a43b3f1/.gitbook/assets/theDocs.all.min.css)
-
+<link href="../.gitbook/assets/theDocs.all.min.css" rel="stylesheet">
 ## Alm-template Formats {#template-formats}
 
 Alm-template is designed in **Json** format. You can also write your template in Yaml format and then convert it into json file when you deploy your stacks on ALM UI \(or through CLI, API\).
