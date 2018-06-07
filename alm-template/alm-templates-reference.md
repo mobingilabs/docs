@@ -1,2 +1,0 @@
-# ALM-template reference
-
