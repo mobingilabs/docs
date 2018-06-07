@@ -25,5 +25,3 @@
 
 ## Introduction
 
-* [What is ALM](what-is-alm.md)
-
