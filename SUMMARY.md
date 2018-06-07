@@ -2,6 +2,10 @@
 
 * [ALM Documentation](README.md)
 
+## Introduction
+
+* [What is ALM?](introduction/what-is-alm.md)
+
 ## Getting Started
 
 * [Login for the first time](getting-started/login-for-the-first-time.md)
@@ -22,8 +26,4 @@
 ## ALM Agent
 
 * [Overview](alm-agent/overview.md)
-
-## Introduction
-
-* [What is ALM?](introduction/what-is-alm.md)
 
