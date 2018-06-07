@@ -4,16 +4,16 @@
 
 ## Getting Started
 
-* [Login for the first time](group1/subpage.md)
-* [Adding your AWS account to ALM](group1/my-teste.md)
+* [Login for the first time](getting-started/login-for-the-first-time.md)
+* [Adding AWS account](getting-started/adding-aws-account.md)
 
 ## ALM Template
 
-* [What is ALM-template](group2/subgroup2.md)
-* [Working with ALM-templates](group2/working-with-alm-templates.md)
-* [ALM-template reference](group2/alm-template-reference.md)
-* [Untitled](group2/untitled-2.md)
-* [Untitled](group2/untitled-3.md)
+* [What is ALM-template](alm-template/subgroup2.md)
+* [Working with ALM-templates](alm-template/working-with-alm-templates.md)
+* [ALM-template reference](alm-template/alm-templates-reference.md)
+* [ALM-template Language](alm-template/untitled-2.md)
+* [Example ALM-templates](alm-template/untitled-3.md)
 
 ## ALM Agent
 

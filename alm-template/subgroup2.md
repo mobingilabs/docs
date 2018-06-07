@@ -1,4 +1,2 @@
 # What is ALM-template
 
-
-
