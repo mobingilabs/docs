@@ -6,6 +6,8 @@
 
 * [Login for the first time](getting-started/login-for-the-first-time.md)
 * [Adding AWS account](getting-started/adding-aws-account.md)
+* [Adding Azure account](getting-started/adding-azure-account.md)
+* [Adding Alibaba account](getting-started/untitled.md)
 
 ## ALM Template
 
