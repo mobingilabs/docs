@@ -2,6 +2,14 @@
 
 * [ALM Documentation](README.md)
 
+## API Reference
+
+* [Overview](api-reference/overview.md)
+* [ALM Template](api-reference/untitled.md)
+* [Stacks](api-reference/stacks.md)
+* [RBAC](api-reference/untitled-1.md)
+* [ALM Agent](api-reference/alm-agent.md)
+
 ## Introduction
 
 * [What is ALM?](introduction/what-is-alm.md)
@@ -34,5 +42,5 @@
 
 ## CLI REFERENCE
 
-* [Mobingi CLI Documentation](cli-reference/overview.md)
+* [Mobingi CLI Documentation](cli-reference/mobingi-cli-documentation.md)
 

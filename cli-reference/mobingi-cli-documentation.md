@@ -92,7 +92,7 @@ $ mobingi-cli login --client-id foo --client-secret bar
 [mobingi-cli]: info: Login successful.
 ```
 
-* `--token` - The access token to use in the command. By default, mobingi-cli will save your access token to the config file after login \(see [login](overview.md#login) command\).
+* `--token` - The access token to use in the command. By default, mobingi-cli will save your access token to the config file after login \(see [login](mobingi-cli-documentation.md#login) command\).
 * `--url` - The base API url to use in the command. By default, this is set to [https://api.mobingi.com](https://api.mobingi.com). You can use this flag if you are hosting your own backend. This is used by devs when testing the cli against the dev and test environments.
 * `--rurl` - The base registry url to use in the command. This is applicable to Mobingi Registry related commands. By default, this is set to [https://registry.mobingi.com](https://registry.mobingi.com). This is used by devs when testing the cli against the dev and test environments.
 * `--apiver` - Specify the API version used in the current command. The default version is v3. The only other supported version is v2.
