@@ -5,6 +5,6 @@ description: >-
 ---
 
 # Introduction
-
+![](../../.gitbook/assets/howitworks2.png)
 {% page-ref page="what-is-alm.md" %}
 
