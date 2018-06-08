@@ -6,8 +6,6 @@
 
 ## Getting Started
 
-* [Login for the first time](getting-started/login-for-the-first-time.md)
-* [Adding AWS account](getting-started/adding-aws-account.md)
 * [Adding Azure account](getting-started/adding-azure-account.md)
 * [Adding Alibaba account](getting-started/adding-alibaba-account.md)
 * [Adding GCP account](getting-started/adding-gcp-account.md)
@@ -42,6 +40,8 @@
 
 * [Introduction](alm/introduction/README.md)
   * [What is ALM?](alm/introduction/what-is-alm.md)
-* [Getting started](alm/getting-started.md)
+* [Getting started](alm/getting-started/README.md)
+  * [Login for the first time](alm/getting-started/login-for-the-first-time/README.md)
+    * [Adding AWS account](alm/getting-started/login-for-the-first-time/adding-aws-account.md)
 * [ALM Template](alm/untitled.md)
 
