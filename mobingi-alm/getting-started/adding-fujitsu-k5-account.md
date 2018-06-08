@@ -8,5 +8,5 @@ Setting up Fujitsu K5 account on Mobingi ALM is different from AWS nor Alibaba C
 
 **Step 2**: Head back to Mobingi ALM console and enter your Fujitsu K5's username, password and contract number, then hit "Add Account" button.
 
-![](../../.gitbook/assets/setup-k5-account1%20%281%29.png)
+![](../../.gitbook/assets/setup-k5-account1.png)
 
