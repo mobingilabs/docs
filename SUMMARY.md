@@ -38,5 +38,6 @@
 
 ## RBAC
 
-* [Overview](rbac/overview.md)
+* [Overview](rbac/overview/README.md)
+  * [What is RBAC?](rbac/overview/what-is-rbac.md)
 
