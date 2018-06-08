@@ -2,11 +2,7 @@
 
 ## Provide your Cloud Account Credentials
 
-Before you can use the software, you need to setup your vendor credentials first. For tutorials on steps to finding and providing credentials, please refer to each cloud vendor's references below:
-
-* [AWS](https://learn.mobingi.com/enterprise/get-started/add-aws-account)
-* [Alibaba Cloud](https://learn.mobingi.com/enterprise/get-started/add-alicloud-account)
-* [Fujitsu K5](https://learn.mobingi.com/enterprise/get-started/add-k5-account)
+Before you can use the software, you need to setup your vendor credentials first. For tutorials on steps to finding and providing credentials, please refer to each cloud vendor's references in the side menu.
 
 ## Create Roles & User Accounts
 
