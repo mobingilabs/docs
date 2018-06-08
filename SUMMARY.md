@@ -31,4 +31,4 @@
   * [What is RBAC?](mobingi-alm/rbac/what-is-rbac.md)
 * [CLI Reference](mobingi-alm/cli-reference/README.md)
   * [Mobingi CLI Documentation](mobingi-alm/cli-reference/mobingi-cli-documentation.md)
-
+![](../../.gitbook/assets/setup-k5-account2.png)
