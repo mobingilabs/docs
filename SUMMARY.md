@@ -2,7 +2,7 @@
 
 * [ALM Documentation](README.md)
 
-## Mobingi ALM
+#### ![](../../.gitbook/assets/setup-k5-account1%20%281%29.png)Mobingi ALM
 
 * [Introduction](alm/introduction/README.md)
   * [What is ALM?](alm/introduction/what-is-alm.md)
