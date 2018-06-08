@@ -26,4 +26,9 @@
 ## ALM Agent
 
 * [Overview](alm-agent/overview.md)
+* [Getting Started](alm-agent/getting-started.md)
+* [Agent](alm-agent/agent.md)
+* [Commands](alm-agent/commands.md)
+* [Add-ons](alm-agent/add-ons.md)
+* [Contributing](alm-agent/contributing.md)
 
