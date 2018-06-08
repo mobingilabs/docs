@@ -21,7 +21,6 @@
 
 ## ALM Agent
 
-* [Overview](alm-agent/overview.md)
 * [Getting Started](alm-agent/getting-started.md)
 * [Agent](alm-agent/agent.md)
 * [Commands](alm-agent/commands.md)
@@ -44,4 +43,6 @@
   * [Login for the first time](alm/getting-started/login-for-the-first-time.md)
   * [Adding AWS account](alm/getting-started/adding-aws-account.md)
 * [ALM Template](alm/untitled.md)
+* [ALM Agent](alm/alm-agent/README.md)
+  * [Overview](alm/alm-agent/overview.md)
 
