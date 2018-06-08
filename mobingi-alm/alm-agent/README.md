@@ -1,6 +1,6 @@
 # ALM Agent
 
-{% page-ref page="../cli-reference/overview.md" %}
+{% page-ref page="overview.md" %}
 
 {% page-ref page="../getting-started/" %}
 
