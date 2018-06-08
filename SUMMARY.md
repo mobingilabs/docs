@@ -35,3 +35,5 @@
 
 ## Getting Started \(Wave and Ripple\)
 
+* [事前準備](getting-started-wave-and-ripple/shi-qian.md)
+
