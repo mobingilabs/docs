@@ -15,3 +15,5 @@ Make sure to check "Furnish a new private key" with JSON as option. You will be 
 
 ![](../.gitbook/assets/permissions%20%281%29.png)
 
+![](../.gitbook/assets/addgcpcred.png)
+

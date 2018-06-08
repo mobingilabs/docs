@@ -5,9 +5,9 @@
 ## API Reference
 
 * [Overview](api-reference/overview.md)
-* [ALM Template](api-reference/untitled.md)
+* [ALM Template](api-reference/alm-template.md)
 * [Stacks](api-reference/stacks.md)
-* [RBAC](api-reference/untitled-1.md)
+* [RBAC](api-reference/rbac.md)
 * [ALM Agent](api-reference/alm-agent.md)
 
 ## Introduction
