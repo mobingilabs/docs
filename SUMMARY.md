@@ -39,8 +39,7 @@
   * [Add-ons](alm/alm-agent/add-ons.md)
   * [Contributing](alm/alm-agent/contributing.md)
 * [RBAC](alm/rbac/README.md)
-  * [Untitled](alm/rbac/untitled.md)
-  * [Overview](alm/rbac/overview-1/README.md)
-    * [Mobingi CLI Documentation](alm/rbac/overview-1/mobingi-cli-documentation.md)
-    * [What is RBAC?](alm/rbac/overview-1/what-is-rbac.md)
+  * [Overview](alm/rbac/overview-1.md)
+  * [Mobingi CLI Documentation](alm/rbac/mobingi-cli-documentation.md)
+  * [What is RBAC?](alm/rbac/what-is-rbac.md)
 
