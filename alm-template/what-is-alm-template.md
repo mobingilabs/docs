@@ -1,6 +1,6 @@
 # What is ALM Template
 
-## <p>Concepts</p> {#concepts}
+## Concepts {#concepts}
 
 * ALM-template is a json formatted configuration file which defines your cloud-native application's architecture design and runtime configuration.
 * ALM-template is cloud platform stateless. You write your template once and it works on any cloud platforms such as AWS, AliCloud, OpenStack, etc.

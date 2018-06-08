@@ -36,3 +36,7 @@
 
 * [Mobingi CLI Documentation](cli-reference/mobingi-cli-documentation.md)
 
+## RBAC
+
+* [Overview](rbac/overview.md)
+
