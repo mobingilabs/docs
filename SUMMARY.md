@@ -8,12 +8,6 @@
 
 ## ALM Template
 
-* [What is ALM Template](alm-template/what-is-alm-template.md)
-* [Working with ALM Templates](alm-template/working-with-alm-templates.md)
-* [ALM Template Reference](alm-template/alm-template-reference.md)
-* [ALM Template Language](alm-template/alm-template-language.md)
-* [Example ALM Templates](alm-template/example-alm-templates.md)
-
 ## ALM Agent
 
 ## CLI REFERENCE
@@ -36,7 +30,11 @@
   * [Adding GCP account](alm/getting-started/adding-gcp-account.md)
   * [Adding Fujitsu K5 account](alm/getting-started/adding-fujitsu-k5-account.md)
 * [ALM Template](alm/untitled/README.md)
-  * [Untitled](alm/untitled/untitled.md)
+  * [What is ALM Template](alm/untitled/what-is-alm-template.md)
+  * [Working with ALM Templates](alm/untitled/working-with-alm-templates.md)
+  * [ALM Template Reference](alm/untitled/alm-template-reference.md)
+  * [ALM Template Language](alm/untitled/alm-template-language.md)
+  * [Example ALM Templates](alm/untitled/example-alm-templates.md)
 * [ALM Agent](alm/alm-agent/README.md)
   * [Overview](alm/alm-agent/overview.md)
   * [Getting Started](alm/alm-agent/getting-started.md)
