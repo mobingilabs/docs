@@ -4,8 +4,6 @@
 
 ## Introduction
 
-* [What is ALM?](introduction/what-is-alm.md)
-
 ## Getting Started
 
 * [Login for the first time](getting-started/login-for-the-first-time.md)
@@ -39,4 +37,9 @@
 * [Overview](rbac/overview/README.md)
   * [Mobingi CLI Documentation](rbac/overview/mobingi-cli-documentation.md)
   * [What is RBAC?](rbac/overview/what-is-rbac.md)
+
+## ALM
+
+* [Introduction](alm/introduction/README.md)
+  * [What is ALM?](alm/introduction/what-is-alm.md)
 
