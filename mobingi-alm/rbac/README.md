@@ -4,5 +4,3 @@
 
 {% page-ref page="what-is-rbac.md" %}
 
-
-
