@@ -6,11 +6,6 @@
 
 ## Getting Started
 
-* [Adding Azure account](getting-started/adding-azure-account.md)
-* [Adding Alibaba account](getting-started/adding-alibaba-account.md)
-* [Adding GCP account](getting-started/adding-gcp-account.md)
-* [Adding Fujitsu K5 account](getting-started/adding-fujitsu-k5-account.md)
-
 ## ALM Template
 
 * [What is ALM Template](alm-template/what-is-alm-template.md)
@@ -42,6 +37,10 @@
 * [Getting started](alm/getting-started/README.md)
   * [Login for the first time](alm/getting-started/login-for-the-first-time.md)
   * [Adding AWS account](alm/getting-started/adding-aws-account.md)
+  * [Adding Azure account](alm/getting-started/adding-azure-account.md)
+  * [Adding Alibaba account](alm/getting-started/adding-alibaba-account.md)
+  * [Adding GCP account](alm/getting-started/adding-gcp-account.md)
+  * [Adding Fujitsu K5 account](alm/getting-started/adding-fujitsu-k5-account.md)
 * [ALM Template](alm/untitled.md)
 * [ALM Agent](alm/alm-agent/README.md)
   * [Overview](alm/alm-agent/overview.md)
