@@ -1,6 +1,6 @@
 # Table of contents
 
-* [ALM Documentation](README.md)
+* [Mobingi ALM Documentation](README.md)
 
 ## Mobingi ALM
 

@@ -11,3 +11,4 @@ ALM \(or Application Lifecycle Management\) is Mobingi's product offering that h
 We provide an [easy-to-use Web UI](https://alm.mobingi.com) for you to manage your infrastructure and deployments from the comfort of your browser. If you prefer a little bit of customization, please have a look at our [ALM Template](https://docs-alm.mobingi.com/alm-template/what-is-alm-template) documentation.
 
 To get started, please visit [https://alm.mobingi.com](https://alm.mobingi.com).
+
