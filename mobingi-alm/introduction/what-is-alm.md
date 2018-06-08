@@ -12,3 +12,4 @@ We provide an [easy-to-use Web UI](https://alm.mobingi.com) for you to manage yo
 
 To get started, please visit [https://alm.mobingi.com](https://alm.mobingi.com).
 
+![](../../.gitbook/assets/setup-k5-account2.png)
