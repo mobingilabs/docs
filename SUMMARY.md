@@ -26,11 +26,9 @@
   * [Commands](alm/alm-agent/commands.md)
   * [Add-ons](alm/alm-agent/add-ons.md)
   * [Contributing](alm/alm-agent/contributing.md)
-* [CLI Reference](alm/cli-reference/README.md)
-  * [Mobingi CLI Documentation](alm/cli-reference/mobingi-cli-documentation.md)
 * [RBAC](alm/rbac/README.md)
   * [Overview](alm/rbac/overview-1.md)
   * [What is RBAC?](alm/rbac/what-is-rbac.md)
-
-## WAVE
+* [CLI Reference](alm/cli-reference/README.md)
+  * [Mobingi CLI Documentation](alm/cli-reference/mobingi-cli-documentation.md)
 
