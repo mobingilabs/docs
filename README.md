@@ -1,8 +1,8 @@
 ---
-description: Mobingi ALM Documentation
+description: Mobingi Documentation
 ---
 
-# Mobingi ALM Documentation
+# Mobingi Documentation
 
 Welcome to Mobingi's official documentation! This documentation covers all references to all available features and options of all Mobingi products.
 
