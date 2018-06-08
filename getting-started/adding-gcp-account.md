@@ -11,5 +11,7 @@ Give it a name and make sure the following permissions are added:
 * Editor
 * Deployment Manager Editor
 
+Make sure to check "Furnish a new private key" with JSON as option. You will be prompted to download and save the file. Save it to a safe location.
+
 ![](../.gitbook/assets/permissions%20%281%29.png)
 
