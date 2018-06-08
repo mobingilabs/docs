@@ -34,10 +34,9 @@
 
 ## CLI REFERENCE
 
-* [Mobingi CLI Documentation](cli-reference/mobingi-cli-documentation.md)
-
 ## RBAC
 
 * [Overview](rbac/overview/README.md)
+  * [Mobingi CLI Documentation](rbac/overview/mobingi-cli-documentation.md)
   * [What is RBAC?](rbac/overview/what-is-rbac.md)
 
