@@ -2,7 +2,7 @@
 
 * [ALM Documentation](README.md)
 
-####Mobingi ALM
+## Mobingi ALM
 
 * [Introduction](alm/introduction/README.md)
   * [What is ALM?](alm/introduction/what-is-alm.md)
@@ -32,7 +32,7 @@
 * [CLI Reference](alm/cli-reference/README.md)
   * [Mobingi CLI Documentation](alm/cli-reference/mobingi-cli-documentation.md)
   
-####Mobingi Test
+##Mobingi Test
 ![](../../.gitbook/assets/setup-k5-account2.png)
 * [Introduction](alm/introduction/README.md)
   * [What is ALM?](alm/introduction/what-is-alm.md)
