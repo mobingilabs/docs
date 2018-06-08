@@ -1,5 +1,8 @@
-### Usage {#usage}
-ALM-agent is a very simple and easy-to use tool. It can be used like a CLI (not a Daemon).
+# Agent
+
+## Usage {#usage}
+
+ALM-agent is a very simple and easy-to use tool. It can be used like a CLI \(not a Daemon\).
 
 Executing alm-agent will start the containers, the code will be deployed, and the command will be terminated.
 
@@ -32,12 +35,12 @@ GLOBAL OPTIONS:
    --version, -v                     print the version
 ```
 
-### Global Options {#global-options}
-- `--autoupdate, -U` - Before running, ALM-agent checks the new version and updates the agent itself if there is a new version. (self-update)
-- `--disablereport, -N` - We are using rollbar for error monitoring. If you do not want to send crash report to rollbar, please use this option.
-- `--provider Provider, -P Provider` - set Provider (default: "aws", available providers: "aws", "alicloud", "k5", "localtest")
-- `--verbose, -V` - show debug logs
-- `--help, -h` - show help
-- `--version, -v` - print the version
+## Global Options {#global-options}
 
+* `--autoupdate, -U` - Before running, ALM-agent checks the new version and updates the agent itself if there is a new version. \(self-update\)
+* `--disablereport, -N` - We are using rollbar for error monitoring. If you do not want to send crash report to rollbar, please use this option.
+* `--provider Provider, -P Provider` - set Provider \(default: "aws", available providers: "aws", "alicloud", "k5", "localtest"\)
+* `--verbose, -V` - show debug logs
+* `--help, -h` - show help
+* `--version, -v` - print the version
 

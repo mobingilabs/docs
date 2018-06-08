@@ -1,8 +1,10 @@
-### register {#register}
+# Commands
+
+## register {#register}
+
 Initialize ALM-agent self register and start containers.
 
 The necessary folders for ALM-agent are created, and if the provider is any value other than `localtest`, cron job will be created. Then, ALM-agent starts the containers.
-
 
 ```bash
 $ alm-agent register -h
@@ -17,10 +19,9 @@ OPTIONS:
    --serverconfig URL, --sc URL  Load ServerConfig from URL. ask to API by default
 ```
 
-### ensure {#ensure}
+## ensure {#ensure}
 
 Start or update containers.
-
 
 ```bash
 $ alm-agent ensure -h
@@ -35,10 +36,9 @@ OPTIONS:
    --serverconfig URL, --sc URL  Load ServerConfig from URL. ask to API by default
 ```
 
+## stop {#stop}
 
-### stop {#stop}
 Stop active containers.
-
 
 ```bash
 $ alm-agent stop -h
@@ -53,8 +53,7 @@ OPTIONS:
    --serverconfig URL, --sc URL  Load ServerConfig from URL. ask to API by default
 ```
 
-
-### noop {#noop}
+## noop {#noop}
 
 Run without container actions.
 
@@ -71,7 +70,7 @@ OPTIONS:
    --serverconfig URL, --sc URL  Load ServerConfig from URL. ask to API by default
 ```
 
-### help {#help}
+## help {#help}
 
 Shows a list of commands or help for one command.
 
@@ -101,3 +100,4 @@ GLOBAL OPTIONS:
    --help, -h                        show help
    --version, -v                     print the version
 ```
+
