@@ -2,14 +2,6 @@
 
 * [ALM Documentation](README.md)
 
-## API Reference
-
-* [Overview](api-reference/overview.md)
-* [ALM Template](api-reference/alm-template.md)
-* [Stacks](api-reference/stacks.md)
-* [RBAC](api-reference/rbac.md)
-* [ALM Agent](api-reference/alm-agent.md)
-
 ## Introduction
 
 * [What is ALM?](introduction/what-is-alm.md)
