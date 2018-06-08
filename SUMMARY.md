@@ -42,4 +42,6 @@
 
 * [Introduction](alm/introduction/README.md)
   * [What is ALM?](alm/introduction/what-is-alm.md)
+* [Getting started](alm/getting-started.md)
+* [ALM Template](alm/untitled.md)
 
