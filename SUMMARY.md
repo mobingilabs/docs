@@ -2,18 +2,6 @@
 
 * [ALM Documentation](README.md)
 
-## Introduction
-
-## Getting Started
-
-## ALM Template
-
-## ALM Agent
-
-## CLI REFERENCE
-
-## RBAC
-
 ## ALM
 
 * [Introduction](alm/introduction/README.md)
@@ -43,4 +31,6 @@
 * [RBAC](alm/rbac/README.md)
   * [Overview](alm/rbac/overview-1.md)
   * [What is RBAC?](alm/rbac/what-is-rbac.md)
+
+## WAVE
 
