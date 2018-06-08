@@ -2,7 +2,7 @@
 
 {% page-ref page="overview.md" %}
 
-{% page-ref page="../getting-started/" %}
+{% page-ref page="getting-started/" %}
 
 {% page-ref page="agent.md" %}
 
