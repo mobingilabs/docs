@@ -41,7 +41,7 @@
 * [Introduction](alm/introduction/README.md)
   * [What is ALM?](alm/introduction/what-is-alm.md)
 * [Getting started](alm/getting-started/README.md)
-  * [Login for the first time](alm/getting-started/login-for-the-first-time/README.md)
-    * [Adding AWS account](alm/getting-started/login-for-the-first-time/adding-aws-account.md)
+  * [Login for the first time](alm/getting-started/login-for-the-first-time.md)
+  * [Adding AWS account](alm/getting-started/adding-aws-account.md)
 * [ALM Template](alm/untitled.md)
 
