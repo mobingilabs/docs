@@ -2,7 +2,7 @@
 
 * [ALM Documentation](README.md)
 
-## ALM
+## Mobingi ALM
 
 * [Introduction](alm/introduction/README.md)
   * [What is ALM?](alm/introduction/what-is-alm.md)
