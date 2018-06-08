@@ -33,7 +33,3 @@
   * [Overview](mobingi-alm/cli-reference/overview.md)
   * [Mobingi CLI Documentation](mobingi-alm/cli-reference/mobingi-cli-documentation.md)
 
-----
-
-* [Getting started \(Wave and Ripple\)](mobingi-alm/getting-started-wave-and-ripple.md)
-
