@@ -6,5 +6,10 @@ Go to "Service accounts" menu under "IAM & admin" section of Google Cloud Platfo
 
 ![](../.gitbook/assets/add-sa.png)
 
+Give it a name and make sure the following permissions are added:
+
+* Editor
+* Deployment Manager Editor
+
 ![](../.gitbook/assets/permissions%20%281%29.png)
 
