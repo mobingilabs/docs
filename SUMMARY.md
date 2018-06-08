@@ -16,12 +16,6 @@
 
 ## ALM Agent
 
-* [Getting Started](alm-agent/getting-started.md)
-* [Agent](alm-agent/agent.md)
-* [Commands](alm-agent/commands.md)
-* [Add-ons](alm-agent/add-ons.md)
-* [Contributing](alm-agent/contributing.md)
-
 ## CLI REFERENCE
 
 ## RBAC
@@ -41,7 +35,13 @@
   * [Adding Alibaba account](alm/getting-started/adding-alibaba-account.md)
   * [Adding GCP account](alm/getting-started/adding-gcp-account.md)
   * [Adding Fujitsu K5 account](alm/getting-started/adding-fujitsu-k5-account.md)
-* [ALM Template](alm/untitled.md)
+* [ALM Template](alm/untitled/README.md)
+  * [Untitled](alm/untitled/untitled.md)
 * [ALM Agent](alm/alm-agent/README.md)
   * [Overview](alm/alm-agent/overview.md)
+  * [Getting Started](alm/alm-agent/getting-started.md)
+  * [Agent](alm/alm-agent/agent.md)
+  * [Commands](alm/alm-agent/commands.md)
+  * [Add-ons](alm/alm-agent/add-ons.md)
+  * [Contributing](alm/alm-agent/contributing.md)
 
