@@ -1,7 +1,7 @@
 ---
 description: >-
   You only define your architecture requirements, plus where application code is
-  hosted, then Mobingi ALM automates the rest for you.
+  hosted, then Mobingi ALM automates the rest for you
 ---
 
 # Introduction
