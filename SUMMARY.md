@@ -33,6 +33,7 @@
 * [Contributing](alm-agent/contributing.md)
 
 ## CLI REFERENCE
+* [Overview](cli-reference/doc-cli.md)
 
 ## API REFERENCE
 
