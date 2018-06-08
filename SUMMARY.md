@@ -33,7 +33,7 @@
   * [Mobingi CLI Documentation](alm/cli-reference/mobingi-cli-documentation.md)
   
 ##Mobingi Test
-![](../../.gitbook/assets/setup-k5-account1%20%281%29.png)
+
 * [Introduction](alm/introduction/README.md)
   * [What is ALM?](alm/introduction/what-is-alm.md)
 
