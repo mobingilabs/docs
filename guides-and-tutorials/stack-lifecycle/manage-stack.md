@@ -53,3 +53,17 @@ About detail setting, you can change from『List My Stacks』--&gt;『Setting』
 
 ![](../../.gitbook/assets/stack_setting1.png)
 
+You can live update Environment Variables and keypairs. Also easily save application stacks' configurations.
+
+![](../../.gitbook/assets/stack_setting2.png)
+
+By clicking once, you can launch new stacks with saved configurations.
+
+![](../../.gitbook/assets/stack_setting3.png)
+
+![](../../.gitbook/assets/stack_setting4.png)
+
+If you want to delete application, just click『Delete Application』.
+
+![](../../.gitbook/assets/delete.png)
+
