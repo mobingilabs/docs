@@ -26,25 +26,4 @@
   * [Commands](mobingi-alm/alm-agent/commands.md)
   * [Add-ons](mobingi-alm/alm-agent/add-ons.md)
   * [Contributing](mobingi-alm/alm-agent/contributing.md)
-* [RBAC](mobingi-alm/rbac/README.md)
-  * [Overview](mobingi-alm/rbac/overview.md)
-  * [What is RBAC?](mobingi-alm/rbac/what-is-rbac.md)
-* [CLI Reference](mobingi-alm/cli-reference/README.md)
-  * [Mobingi CLI Documentation](mobingi-alm/cli-reference/mobingi-cli-documentation.md)
-
-## Getting Started \(Wave and Ripple\)
-
-* [事前準備](getting-started-wave-and-ripple/shi-qian-zhun-bei.md)
-
-## Mobingi Wave
-
-* [Overview](mobingi-wave/overview.md)
-* [明細の確認方法](mobingi-wave/no.md)
-
-## MOBINGI RIPPLE REFERENCE
-
-* [Mobingi Ripple とは](mobingi-ripple-reference/mobingi-ripple-toha.md)
-* [Mobingi Ripple Overview](mobingi-ripple-reference/mobingi-ripple-overview.md)
-* [請求書を発行する](mobingi-ripple-reference/wosuru.md)
-* [新規顧客を追加する](mobingi-ripple-reference/wosuru-1.md)
 
