@@ -9,8 +9,12 @@ Simply add a `mobingi-init.sh` file to the **root** directory of your code and t
 **Example Script:**  
 Below is a sample script for a project coded in PHP and requires Composer, this script will automatically setup the environment.
 
-```text
-sudo apt-get updatesudo apt-get -y install curlsudo sucurl -sS https://getcomposer.org/installer | phpphp composer.phar install
+```bash
+sudo apt-get update
+sudo apt-get -y install curl
+sudo su
+curl -sS https://getcomposer.org/installer | php
+php composer.phar install
 ```
 
 And you are able to view the logs through application's details page, click on the Logs tab, and select on the instance id, then choose moDaemon or Startup from the drop down menu to view service logs.
