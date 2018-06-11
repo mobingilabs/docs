@@ -10,4 +10,6 @@
   * [Manage stack](guides-and-tutorials/stack-lifecycle/manage-stack.md)
 * [Docker](guides-and-tutorials/docker/README.md)
   * [Custom Docker containers](guides-and-tutorials/docker/custom-docker-containers.md)
+* [Others](guides-and-tutorials/others/README.md)
+  * [Blue-green deployment](guides-and-tutorials/others/blue-green-deployment.md)
 
