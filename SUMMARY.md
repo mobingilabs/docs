@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Software that ships your cloud](README.md)
+* [Mobingi documentation \(v2.0\)](README.md)
 
 ## Mobingi ALM
 
