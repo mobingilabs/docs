@@ -19,9 +19,13 @@ As a prerequisite, you must have sufficient permissions in both your Azure Activ
 
 ▪️[Assign application to role/subscription](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#assign-application-to-role)
 
+## Adding Azure credential to your ALM user
 
+1. In the upper right of the page, click your `username` and then `General Settings`
 
+![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.10.20.png)
 
+2. In the left side-menu, click `Setup Credentials` and select `Azure`
 
-
+![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.13.27.png)
 
