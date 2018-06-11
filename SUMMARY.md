@@ -13,4 +13,5 @@
 * [Others](guides-and-tutorials/others/README.md)
   * [Blue-green deployment](guides-and-tutorials/others/blue-green-deployment.md)
   * [How to use RDS](guides-and-tutorials/others/how-to-use-rds.md)
+  * [Environment variables](guides-and-tutorials/others/environment-variables.md)
 
