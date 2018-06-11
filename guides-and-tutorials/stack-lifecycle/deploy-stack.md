@@ -20,7 +20,12 @@ Additionally, Mobingi ALM supports multi account system, so user can register mu
 Let's make your first application stack through mobingi ALM!
 
 * Click**『Application Stacks』--&gt;『Create New Stack』**
-* Choose AWS as cloud vendor
+* Choose AWS as cloud vendor.
 
+![](../../.gitbook/assets/create_aws1.png)
 
+* Choose Region.
+* Select Instance type.
+* You can define Number of Spot Instances by mouse dragging. By using spot instance, you can save 80% of EC2 cost maximum.
+* Define Auto-Scale Range. Mobingi ALM software automatically creates ELB, Subnet, Networks, and other resources which are necessary.
 
