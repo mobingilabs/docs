@@ -45,7 +45,7 @@ description: Mobingi Waveにログインする
 
 
 * RI : RIが適用されている。
-* thtっyh
+*![](../.gitbook/assets/screen-shot-2018-06-11-at-13.49.50.png) thtっyh
 
-![](../.gitbook/assets/screen-shot-2018-06-11-at-13.49.50.png)
+
 
