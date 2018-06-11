@@ -68,7 +68,7 @@
 
 ![](../../.gitbook/assets/bill_003.png)
 
-<img src="../template/assets/prep/bill_004.png" width="700px" alt="">
+![](../../.gitbook/assets/bill_004.png)
 　　
 
  - サンプルポリシーをコピーした後、**先程作成したS3バケット** の詳細を開きます。(※別タブまたはウィンドウでの作業を推奨)
@@ -130,7 +130,7 @@ Resourceの`{replace_to_report_bucket}`部分を **レポートに使用する�
    ]
 }   
 ```
-<img src="../template/assets/prep/role_004.png" width="700px" alt="">
+![](../../.gitbook/assets/role_004.png)
 
 「ポリシーの確認」へ進み、以下の項目を入力してポリシーを作成します。
 
@@ -138,12 +138,12 @@ Resourceの`{replace_to_report_bucket}`部分を **レポートに使用する�
 
 - 説明: 任意
 
-<img src="../template/assets/prep/role_005.png" width="700px" alt="">
+![](../../.gitbook/assets/role_005.png)
 
 『ロールの作成』メニューに戻り、リストを更新し、先ほど作成したポリシーを表示します。
 チェックを有効にして、確認へ進みます。
 
-<img src="../template/assets/prep/role_006.png" width="700px" alt="">
+![](../../.gitbook/assets/role_006.png)
 
 「確認」メニューで、以下の項目を入力します。
 
