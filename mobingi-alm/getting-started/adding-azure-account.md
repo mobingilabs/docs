@@ -1,6 +1,6 @@
 # Adding Azure account
 
-Microsoft Azure requires the security identity below to allow access to specific Azure resources.
+Microsoft Azure requires the credentials below to allow access to specific Azure resources.
 
 1. Application ID
 2. Secret Access key
