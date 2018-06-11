@@ -8,4 +8,5 @@
 * [Stack lifecycle](guides-and-tutorials/stack-lifecycle/README.md)
   * [Deploy stack](guides-and-tutorials/stack-lifecycle/deploy-stack.md)
   * [Manage stack](guides-and-tutorials/stack-lifecycle/manage-stack.md)
+* [Docker](guides-and-tutorials/docker.md)
 
