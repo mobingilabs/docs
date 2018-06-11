@@ -1,7 +1,3 @@
----
-description: Mobingi Ripple はモビンギ株式会社が提供するSaaSのひとつです。
----
-
 # Mobingi Ripple とは
 
 ## Mobingi Ripple でできること

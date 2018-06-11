@@ -1,6 +1,6 @@
 # What is ALM?
 
-ALM \(or Application Lifecycle Management\) is Mobingi's product offering that helps you manage the whole lifecycle of your application from provisioning to different cloud providers to application deployment and monitoring. At the moment, we support the following cloud providers:
+ALM \(_Application Lifecycle Management_\) is Mobingi's product offering that helps you manage the whole lifecycle of your application from provisioning to different cloud providers to application deployment and monitoring. At the moment, we support the following cloud providers:
 
 * Amazon Web Services \(AWS\)
 * Microsoft Azure
