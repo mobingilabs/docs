@@ -15,3 +15,12 @@ Additionally, Mobingi ALM supports multi account system, so user can register mu
 
 ![](../../.gitbook/assets/authoaws.png)
 
+### Create application stack
+
+Let's make your first application stack through mobingi ALM!
+
+* Click**『Application Stacks』--&gt;『Create New Stack』**
+* Choose AWS as cloud vendor
+
+
+
