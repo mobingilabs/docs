@@ -1,19 +1,13 @@
 # Adding Azure account
 
-You must have sufficient permissions in both your Azure Active Directory and your Azure subscription. Specifically, you must be able to create an app in the Active Directory, and assign a role to the service principal.
+Microsoft Azure requires the security identity below to allow access to specific Azure resources.
 
-### Create an Azure Active Directory application
+1. Application ID
+2. Secret Access key
+3. Subscription ID
+4. Directory ID
 
-1. Log in to your Azure Account through the [Azure portal](https://portal.azure.com/).
-2. Select **Azure Active Directory**.
+As a prerequisite, you must have sufficient permissions in both your Azure Active Directory and your Azure subscription. Specifically, you must be able to create an app in the Active Directory, and assign a role to the service principal. 
 
-![](../../.gitbook/assets/select-active-directory.png)
-
-3. Select **App registrations**.
-
-![](../../.gitbook/assets/select-app-registrations.png)
-
-
-
-
+{% page-ref page="adding-azure-account.md" %}
 
