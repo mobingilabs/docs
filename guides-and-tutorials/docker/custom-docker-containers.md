@@ -24,7 +24,9 @@ In order to enable [Blue-Green Deployment](https://docs2.mobingi.com/v/v2/guides
 
 This is an example config file:
 
-```text
-{   "codeDirectory": "/srv/code"}
+```ruby
+{
+   "codeDirectory": "/srv/code"
+}
 ```
 
