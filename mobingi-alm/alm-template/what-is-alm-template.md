@@ -16,6 +16,6 @@
 
 ## Read more
 
-* Learn more about [ALM-agent](https://learn.mobingi.com/alm-agent)
-* See [example](https://learn.mobingi.com/alm-templates-example-templates) ALM-templates
+* Learn more about [ALM-agent](https://docs2.mobingi.com/mobingi-alm/alm-agent/overview)
+* See [example](https://docs2.mobingi.com/mobingi-alm/alm-template/example-alm-templates) ALM-templates
 
