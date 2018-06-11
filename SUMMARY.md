@@ -23,4 +23,6 @@
 * [Overview](api-reference/overview.md)
 * [Stacks](api-reference/stacks/README.md)
   * [List stacks](api-reference/stacks/list-stacks.md)
+* [Vendor credentials](api-reference/vendor-credentials/README.md)
+  * [List credentials](api-reference/vendor-credentials/list-credentials.md)
 
