@@ -65,13 +65,13 @@ Inside each layer, there are four sections you need to specify:
 
   The infrastructure provisioning configurations.
 
-  For more information on _provision_ section, please refer to [ALM Template Reference guide](https://learn.mobingi.com/alm-templates-reference#provision).
+  For more information on _provision_ section, please refer to [ALM Template Reference guide](https://docs2.mobingi.com/mobingi-alm/alm-template/alm-template-reference).
 
 * **container**
 
   The software runtime configurations _\(defined as docker images\)_ and code deployment requirement for each instance node.
 
-  For more information on _container_ section, please refer to [ALM Template Reference guide](https://learn.mobingi.com/alm-templates-reference#container).
+  For more information on _container_ section, please refer to [ALM Template Reference guide](https://docs2.mobingi.com/mobingi-alm/alm-template/alm-template-reference).
 
 ## Alm-template Structure {#template-structure}
 
@@ -79,7 +79,7 @@ Below is a tree view of all possible components within an alm-template.
 
 The following structure is not a working demo template, but rather to explain all possible key names that may contain in the template body.
 
-For Alm-template examples, please refer to [Example ALM Templates](https://learn.mobingi.com/alm-templates-example-templates).
+For Alm-template examples, please refer to [Example ALM Templates](https://docs2.mobingi.com/mobingi-alm/alm-template/example-alm-templates).
 
 * versionstring
 * labelstring
