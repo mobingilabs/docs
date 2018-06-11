@@ -45,3 +45,37 @@ description: Mobingi Waveにログインする
 * RI : RIが適用されている。
 * ![](../.gitbook/assets/screen-shot-2018-06-11-at-13.58.08.png):予算（アラート通知）設定されている。
 
+## アカウント - Group
+
+複数のアカウントをグルーピングし、グループごとの利用金額を表示します。
+
+![](../.gitbook/assets/wave_group.png)
+
+## アカウント - Report
+
+アカウントごとに利用明細を確認することができます。
+
+![](../.gitbook/assets/wave_account_report.png)
+
+## RI - Reserved Instance
+
+購入済みのRIを確認できます。
+
+![](../.gitbook/assets/wave_ri.png)
+
+## 請求書
+
+月々の請求書を確認することができます。
+
+![](../.gitbook/assets/wave_invoice.png)
+
+## 設定
+
+以下の設定、変更が可能です。
+
+* パスワードの変更
+* 言語の変更（日本語・英語・中国語）
+* 通知設定（メール・Slack）
+
+
+
