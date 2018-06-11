@@ -35,9 +35,9 @@
 
 ## Getting Started \(Wave and Ripple\)
 
-* [事前準備](getting-started-wave-and-ripple/shi-qian.md)
+* [事前準備](getting-started-wave-and-ripple/shi-qian-zhun-bei.md)
 
 ## Mobingi Wave
 
-* [Mobingi Wave Overview](mobingi-wave/overview.md)
+* [Mobingi Wave Overview](mobingi-wave/mobingi-wave-overview.md)
 
