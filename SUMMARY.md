@@ -30,7 +30,6 @@
   * [Overview](mobingi-alm/rbac/overview.md)
   * [What is RBAC?](mobingi-alm/rbac/what-is-rbac.md)
 * [CLI Reference](mobingi-alm/cli-reference/README.md)
-  * [Overview](mobingi-alm/cli-reference/overview.md)
   * [Mobingi CLI Documentation](mobingi-alm/cli-reference/mobingi-cli-documentation.md)
 
 ## Getting Started \(Wave and Ripple\)
