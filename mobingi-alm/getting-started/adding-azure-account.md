@@ -11,8 +11,6 @@ As a prerequisite, you must have sufficient permissions in both your Azure Activ
 
 ## Using Azure portal to create necessary credentials
 
-
-
 ▪️[Create an Azure Active Directory application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application)
 
 ▪️[Get Created Application ID and Add authentication key](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application)
@@ -20,6 +18,10 @@ As a prerequisite, you must have sufficient permissions in both your Azure Activ
 ▪️[Get Tenant ID\(Your tenant ID is your Directory ID\)](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-tenant-id)
 
 ▪️[Assign application to role/subscription](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#assign-application-to-role)
+
+
+
+
 
 
 
