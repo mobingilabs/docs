@@ -90,3 +90,23 @@ Head to the Logs tab and watch the `moDaemon` logs of your server until you see 
 [08/Jun/2015:19:25:37 +0900] Adding user: My_office_Laptop
 ```
 
+That will indicate your user has been added to the container.
+
+## SSH into your container
+
+First, you need to decide which container you want to SSH into. You can find the IP addresses of each server on the stack details page.
+
+![](../../.gitbook/assets/ssh_into7.png)
+
+You can log into the container by specifying the SSH user name \(using the key name of the key pair registered in the application stack\) and the IP address of the server. Executing the SSH command as follows:
+
+```bash
+$ ssh My_office_Laptop@52.68.3.179
+```
+
+## Check your SSH history
+
+It is possible to see who has entered your server by viewing the auth logs. Simply go to the stack Logs page, select `ssh`, and you should see the authentication logs for the machine.
+
+![](../../.gitbook/assets/ssh_into8.png)
+
