@@ -29,11 +29,3 @@ POST /v2/access_token
 | client\_secret | string | yes |  |
 | grant\_type | string | yes | This value is always `client_credentials` |
 
-Example Request:
-
-```text
-curl -X POST https://api.mobingi.com/v2/access_token \
--H "Content-Type: application/json" \
--d '{"grant_type":"client_credentials","client_id":"lg-5447826c870e7-xBV0OSJEN-tm","client_secret":"sFVYDoe08fxPjNgYvauYGOYCeXbOTE","grant_type":"client_credentials"}'
-```
-
