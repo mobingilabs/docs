@@ -61,3 +61,32 @@ ore-no-pc:test david$ cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc... david@ore-no-pc.local
 ```
 
+Simply copy the public key body \(starting with **ssh-rsa**\), and paste it in the Public Key field. Also don't forget to fill the Key Name field with a username that you would like to use to log in with. Please note that Key Name field allows only letters, numbers and underscores with no white spaces.
+
+![](../../.gitbook/assets/ssh_into2.png)
+
+Once you are done, you should see a list of your public keys that stored to your account.
+
+![](../../.gitbook/assets/ssh_into3.png)
+
+## Attach the public key to your application stack
+
+Then, let's head to application settings page and attach the public key to your servers.
+
+![](../../.gitbook/assets/ssh_into4.png)
+
+Scroll the page down, and click on Choose Key Pairs button.
+
+![](../../.gitbook/assets/ssh_into5.png)
+
+You will see the list of public keys you stored at your account, simple click Attach button to add the key to your servers \(the current application servers only\).
+
+![](../../.gitbook/assets/ssh_into6.png)
+
+Head to the Logs tab and watch the `moDaemon` logs of your server until you see something like:
+
+```text
+[08/Jun/2015:19:25:37 +0900] Switching port forward from blue to green container
+[08/Jun/2015:19:25:37 +0900] Adding user: My_office_Laptop
+```
+
