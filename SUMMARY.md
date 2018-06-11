@@ -14,4 +14,5 @@
   * [Blue-green deployment](guides-and-tutorials/others/blue-green-deployment.md)
   * [How to use RDS](guides-and-tutorials/others/how-to-use-rds.md)
   * [Environment variables](guides-and-tutorials/others/environment-variables.md)
+  * [Custom installation script](guides-and-tutorials/others/custom-installation-script.md)
 
