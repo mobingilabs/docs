@@ -23,3 +23,11 @@ When code is deployed, a new Green Container containing the new code is started 
 
 ![](../../.gitbook/assets/bg-deploy3.png)
 
+Once it is ready, all traffic is then redirected to this new container. While existing connections continue to stay open against the old Blue Container.
+
+![](../../.gitbook/assets/bg-deploy4.png)
+
+After 10 seconds, which is enough for most HTTP requests to complete, the Blue Container is shut down, and the Green Container will be considered the Blue Container for the next deployment.
+
+![](../../.gitbook/assets/bg-deploy5.png)
+
