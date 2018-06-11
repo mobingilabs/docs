@@ -40,3 +40,10 @@ description: Mobingi Waveにログインする
 
 選択するアカウント毎の利用実績を確認できます。
 
+![](../.gitbook/assets/wave_account.png)
+
+
+
+* RI : RIが適用されている。
+* thtっyh
+
