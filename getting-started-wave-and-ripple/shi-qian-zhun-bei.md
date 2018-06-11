@@ -44,6 +44,7 @@
 - AWSのマネジメントコンソールから、『請求情報とコスト管理ダッシュボード』を開き、レポートメニューへ移動します。
 
 レポートの作成へ進みます。
+
 ![](../../.gitbook/assets/bill_001.png)　　　
 
 - 『ステップ 1: 明細項目の選択』を、以下の要領で記入して次に進めます。
@@ -56,7 +57,7 @@
 
     - サポートの有効化: 任意
 
-<img src="../template/assets/prep/bill_002.png" width="700px" alt="">
+![](../../.gitbook/assets/bill_002.png)
 　　　　
 
 - 『ステップ 2: 配信オプションの選択』では、S3バケットの操作を含めるため、以下手順で進めます。
@@ -65,7 +66,7 @@
 
     - サンプルポリシーの表示とコピー (※必ずS3バケット名を入力後に表示してください)
 
-<img src="../template/assets/prep/bill_003.png" width="700px" alt="">
+![](../../.gitbook/assets/bill_003.png)
 
 <img src="../template/assets/prep/bill_004.png" width="700px" alt="">
 　　
@@ -76,7 +77,7 @@
 
 - バケットポリシーエディタで、先程のサンプルポリシーを適用します。
 
-<img src="../template/assets/prep/bill_005.png" width="700px" alt="">
+![](../../.gitbook/assets/bill_005.png)
 
 『ステップ 2: 配信オプションの選択』に戻り、以下の項目を入力して次へ進みます。
 
@@ -88,28 +89,28 @@
 
 S3のメニューで再度確認してください。
 
-<img src="../template/assets/prep/bill_006.png" width="700px" alt="">
+![](../../.gitbook/assets/bill_006.png)
 
 『ステップ 3: 確認』表示されている内容に間違いがない確認し、完了します。
 
-<img src="../template/assets/prep/bill_007.png" width="700px" alt="">
+![](../../.gitbook/assets/bill_007.png)
 
 
 ###  手順 2 :モビンギに読み取り権限を委譲するIAMロールの作成 {#step2}
 
 AWSのマネジメントコンソールから、IAMサービスを開き、『ロール』>> 『ロールの作成』メニューへ移動します。
 
-<img src="../template/assets/prep/role_001.png" width="700px" alt="">
+![](../../.gitbook/assets/role_001.png)
 
 『信頼されたエンティティの種類を選択』で、「別のAWSアカウントを」選択し、以下のモビンギのアカウントIDを入力します。
 
 - モビンギアカウントID: 131920598436
 
-<img src="../template/assets/prep/role_002.png" width="700px" alt="">
+![](../../.gitbook/assets/role_002.png)
 
 「アクセス権限ポリシーをアタッチする」メニューで、『ポリシーの作成』を選択します。
 
-<img src="../template/assets/prep/role_003-1.png" width="700px" alt="">
+![](../../.gitbook/assets/role_003-1.png)
 
 別のタブ(ウィンドウ)で「ポリシーの作成」メニューが開くので、入力形式にJSONを選択し、以下の内容でポリシーを入力します。
 Resourceの`{replace_to_report_bucket}`部分を **レポートに使用するバケット名** に置き換えてください。
@@ -153,10 +154,10 @@ Resourceの`{replace_to_report_bucket}`部分を **レポートに使用する�
 「信頼されたエンティティ」、「ポリシー」が適用されていることを確認し、ロールを作成します。
 
 
-<img src="../template/assets/prep/role_007.png" width="700px" alt="">
+![](../../.gitbook/assets/role_007.png)
 　　
 
 作成したロールのARNを控えます。
 
 　　
-<img src="../template/assets/prep/role_008-1.png" width="700px" alt="">
+![](../../.gitbook/assets/role_008-1.png)
