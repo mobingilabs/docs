@@ -14,5 +14,16 @@ Additionally, by clicking『Scaling』, you can live update "Number of Spot Inst
 
 ## Deploy code from Git repository
 
+Deploy code is deadly fast. Click Code tab, then setup below.
 
+* Enter Repo name [\(What is Repo name?\)](https://docs.mobingi.com/official/guide/reponame/jp)
+* Branch name.
+* If it's a Private repo, need to put Secret key [\(Hot to create Deploy key?\)](https://docs.mobingi.com/official/faq/deploykey/jp)
+* If you don't use GitHub, you can upload files from "Upload".
+
+![](../../.gitbook/assets/code_1.png)
+
+After Successfully connecting, by typing "git push" the code will automatically affect to every server in that stack.
+
+![](../../.gitbook/assets/git-_push.png)
 
