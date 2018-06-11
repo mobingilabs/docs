@@ -29,3 +29,10 @@ Let's make your first application stack through mobingi ALM!
 * You can define Number of Spot Instances by mouse dragging. By using spot instance, you can save 80% of EC2 cost maximum.
 * Define Auto-Scale Range. Mobingi ALM software automatically creates ELB, Subnet, Networks, and other resources which are necessary.
 
+![](../../.gitbook/assets/create_aws2.png)
+
+* Choose Image Layer.
+* By clicking 『Create Application』, the software will start creating your application stack.
+
+![](../../.gitbook/assets/aws3.png)
+
