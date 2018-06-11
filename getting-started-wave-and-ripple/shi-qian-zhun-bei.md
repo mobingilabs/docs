@@ -45,7 +45,7 @@
 
 レポートの作成へ進みます。
 
-<img src="../template/assets/prep/bill_001.png" width="700px" alt="">
+<img src="../../.gitbook/assets/prep/bill_001.png" width="700px" alt="">
 　　　
 
 - 『ステップ 1: 明細項目の選択』を、以下の要領で記入して次に進めます。
