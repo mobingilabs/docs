@@ -43,7 +43,7 @@ description: Mobingi Waveにログインする
 ![](../.gitbook/assets/wave_account.png)
 
 * RI : RIが適用されている。
-* ![](../.gitbook/assets/screen-shot-2018-06-11-at-13.49.50.png) thtっyh
+* ![](../.gitbook/assets/screen-shot-2018-06-11-at-13.58.08.png):予算（アラート通知）設定されている。
 
-![](../.gitbook/assets/screen-shot-2018-06-11-at-13.58.08.png)
+
 
