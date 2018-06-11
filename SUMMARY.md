@@ -21,4 +21,5 @@
 ## API Reference
 
 * [Overview](api-reference/overview.md)
+* [Stacks](api-reference/stacks.md)
 
