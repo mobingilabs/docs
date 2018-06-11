@@ -57,10 +57,7 @@ Then, lick on the Add new public key button to add a new user key.
 You will need to display your public key by typing `cat ~/.ssh/id_rsa.pub`
 
 ```bash
-ore-no-pc:test david$ cat ~/.ssh/id_rsa.pubssh-rsa AAAAB3NzaC1yc2EAAAODAQABAAABAQDKfe6MTHhHY0OSjI31Yw5e7Kjd1gYPOTs1KU3dLnZrFfPvljYW3hCWMmpROqHYmwV/E4K+Tj+8ladawdawdadawdadawQBQGtQevrS+mCqoC9oPXFt/HEXQAgKfiYP4X73We9t/y0b+6ndgW1Prfl5kKycmN6eqT+MawdadwawdawdawdpJzawdawdFZuve85z+vQTa8HrHh6jTu7tilyH1zWAFkw2u8FenRof8C4akPj0GWRtfnQPjRMzx4wgr3CpTqdCxlCSzez/6cvEG4MQMXY7Xr/OrYki9caYTFPFVv2goFEqpPCnsowof2e0P david@ore-no-pc.local
-```
-
-```bash
-dfdfdfsdf
+ore-no-pc:test david$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc... david@ore-no-pc.local
 ```
 
