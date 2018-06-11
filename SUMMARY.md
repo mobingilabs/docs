@@ -39,5 +39,5 @@
 
 ## Mobingi Wave
 
-* [Overview](mobingi-wave/overview.md)
+* [Mobingi Wave Overview](mobingi-wave/overview.md)
 
