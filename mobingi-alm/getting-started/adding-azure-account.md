@@ -9,7 +9,7 @@ Microsoft Azure requires the credentials below to allow access to specific Azure
 
 As a prerequisite, you must have sufficient permissions in both your Azure Active Directory and your Azure subscription. Specifically, you must be able to create an app in the Active Directory, and assign a role to the service principal.[\(Check Permission\)](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions)
 
-## Using Azure portal to create necessary credentials
+## Using [Azure portal](https://portal.azure.com)  to create necessary credentials
 
 ▪️[Create an Azure Active Directory application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application)
 
