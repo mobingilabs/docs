@@ -1,6 +1,6 @@
 # Mobingi CLI Documentation
 
-### Overview {#overview}
+## Overview
 
 mobingi-cli is the official command line interface for Mobingi API and services.
 
@@ -78,7 +78,7 @@ Global Flags:
 Use "mobingi-cli stack [command] --help" for more information about a command.
 ```
 
-### Global flags {#global-flags}
+## Global flags
 
 Global flags are all optional and can be applied to any subcommand. You can use '=' or whitespace when assigning a value to the flag. This applies to any command's local flags as well. For example, you can login using any of these commands:
 
@@ -103,7 +103,9 @@ $ mobingi-cli login --client-id foo --client-secret bar
 * `--verbose` - When set to true, the command will print additional information during the command's execution.
 * `--debug` - When set to true, the command will print a stack trace when error occurs during the command's execution.
 
-### command: login {#login}
+## Commands
+
+### login {#login}
 
 Log in to Mobingi.
 
@@ -168,7 +170,7 @@ $ mobingi-cli login --client-id foo --client-secret bar --username subuser01 --p
 [mobingi-cli]: info: Login successful.
 ```
 
-### command: stack list {#stack-list}
+### stack list {#stack-list}
 
 List your stacks.
 
@@ -181,7 +183,7 @@ mo-58c2297d25645-q38pTmeey-tk     small lunch behave           AWS          CREA
 mo-58c2297d25645-PxviFSJQV-tk     chronic leaflet flourish     AWS          CREATE_COMPLETE     ...
 ```
 
-### command: stack describe {#stack-describe}
+### stack describe {#stack-describe}
 
 Describe a stack.
 
@@ -221,7 +223,7 @@ $ mobingi-cli stack describe --id mo-58c2297d25645-PxviFSJQV-tk
 }
 ```
 
-### command: stack create {#stack-create}
+### stack create {#stack-create}
 
 Create a stack.
 
@@ -315,7 +317,7 @@ $ mobingi-cli stack create --nickname=sample --apiver=v2
 $ mobingi-cli stack create --nickname=sample --min=2 --max=2 --apiver=v2
 ```
 
-### command: stack update {#stack-update}
+### stack update {#stack-update}
 
 Update an existing stack.
 
@@ -353,7 +355,7 @@ $ mobingi-cli stack update --id=foo --min=5 --max=20 --apiver=v2
 $ mobingi-cli stack update --id=foo --spot-range=25 --apiver=v2
 ```
 
-### command: stack delete {#stack-delete}
+### stack delete {#stack-delete}
 
 Delete a stack.
 
@@ -371,7 +373,7 @@ $ mobingi-cli stack delete --id mo-58c2297d25645-GbdINZdY-tk
 }
 ```
 
-### command: stack ssh {#stack-ssh}
+### stack ssh {#stack-ssh}
 
 Try to establish an ssh connection to your instances.
 
@@ -400,7 +402,7 @@ $ mobingi-cli stack ssh --id mo-58c2297d25645-Sd2aHRDq0-tk --ip 54.238.234.202 -
 https://sesha3.mobingi.com:port/some-random-link/
 ```
 
-### command: stack exec {#stack-exec}
+### stack exec {#stack-exec}
 
 Try to execute a bash script to one or more instances.
 
@@ -496,7 +498,7 @@ LESS_TERMCAP_se=
 _=/bin/env
 ```
 
-### command: stack pem {#stack-pem}
+### stack pem {#stack-pem}
 
 Print the stack's pem file \(and save to file optionally\), if available. Useful if you want to connect to your instances using other tools.
 
@@ -532,7 +534,7 @@ ITvktdL9OMT0RXjZ4qKq+aifaY9D0XzbR3HWLFcWZ+0tmzUTJDM8F6LivsPUjR8uitiic7KXvlDV
 $ ssh -i ~/test.pem user@ipaddr
 ```
 
-### command: template versions {#template-versions}
+### template versions {#template-versions}
 
 List available template versions of a stack.
 
@@ -555,7 +557,7 @@ jbyW_PxMAauQmOS31dUhij4KIqHAtqW2     true       Wed, 30 Aug 2017 02:32:43 UTC   
 1xoPd.cg3juHK94vC8IdUh1bexx7sQ1T     false      Tue, 29 Aug 2017 09:47:50 UTC     453
 ```
 
-### command: template compare {#template-compare}
+### template compare {#template-compare}
 
 Compare two template versions.
 
@@ -601,7 +603,7 @@ $ mobingi-cli template compare --src-sid mo-58c2297d25645-PxviFSJQV-tk \
 }
 ```
 
-### command: rbac describe {#rbac-describe}
+### rbac describe {#rbac-describe}
 
 List all defined role\(s\) or per-user role\(s\). Only your root account has the permissions to run this command.
 
@@ -611,7 +613,7 @@ If --user is not provided, this command will list all defined roles.
 
 * `--user` - Subuser name. Optional.
 
-### command: rbac sample {#rbac-sample}
+### rbac sample {#rbac-sample}
 
 Print a sample role.
 
@@ -647,7 +649,7 @@ $ mobingi-cli rbac sample --out=/home/user/sample.json
 [mobingi-cli]: info: sample written to /home/user/sample.json
 ```
 
-### command: rbac create {#rbac-create}
+### rbac create {#rbac-create}
 
 Define a role.
 
@@ -670,7 +672,7 @@ $ mobingi-cli rbac create --name testrole --scope /home/user/sample.json
 }
 ```
 
-### command: rbac attach {#rbac-attach}
+### rbac attach {#rbac-attach}
 
 Attach a role to a user.
 
@@ -690,7 +692,7 @@ $ mobingi-cli rbac attach --user subuser --role-id morole-58c2297d25645-BtXGMSRs
 }
 ```
 
-### command: rbac delete {#rbac-delete}
+### rbac delete {#rbac-delete}
 
 Delete a role.
 
@@ -698,7 +700,7 @@ Delete a role.
 
 * `--role-id` - The role id to delete. You can get the role id from the _describe_ command.
 
-### command: svrconf show {#svrconf-show}
+### svrconf show {#svrconf-show}
 
 Show a stack's serverconfig \(server configuration\) contents. Starting from v3, server config options are replaced by ALM templates. The following commands are still valid for v2.
 
@@ -712,7 +714,7 @@ Example:
 $ mobingi-cli svrconf show --id=foo --apiver=v2
 ```
 
-### command: svrconf update {#svrconf-update}
+### svrconf update {#svrconf-update}
 
 Update a stack's serverconfig \(server configuration\).
 
@@ -735,7 +737,7 @@ $ mobingi-cli svrconf update --id=foo --filepath=git://github.com/mobingilabs/de
 
 Note that when you provide update options simultaneously \(for example, you provide `--env=FOO:bar` and `--filepath=test` at the same time\), the tool will send each option as a separate request.
 
-### command: creds list {#creds-view}
+### creds list {#creds-view}
 
 List vendor credentials.
 
@@ -751,7 +753,7 @@ VENDOR     ID                       ACCOUNT     LAST MODIFIED
 aws        xxxxxxxxxxxxxxxxxxxx     user        Wed, 05 Jul 2017 07:52:14 UTC
 ```
 
-### command: registry catalog {#registry-list-catalog}
+### registry catalog {#registry-list-catalog}
 
 List images under logged in username.
 
@@ -780,7 +782,7 @@ $ mobingi-cli registry catalog --username=subuser01 --password=xxxxxx
 subuser01/foo
 ```
 
-### command: registry tags {#registry-list-tags}
+### registry tags {#registry-list-tags}
 
 List image tags.
 
@@ -801,7 +803,7 @@ subuser01/foo           latest
 subuser01/foo           2.1
 ```
 
-### command: registry manifest {#registry-tag-manifest}
+### registry manifest {#registry-tag-manifest}
 
 Display a tag's manifest.
 
@@ -868,7 +870,7 @@ $ mobingi-cli registry delete --username=subuser1 --password=xxxxxx \
       --image=foo:latest --apiver=v2
 ```
 
-### command: registry token {#registry-get-token}
+### registry token {#registry-get-token}
 
 Get an access token for Mobingi Docker Registry access.
 
@@ -897,7 +899,7 @@ $ curl -H "Authorization: Bearer token" \
       https://registry.mobingi.com/v2/foo/container/manifests/latest
 ```
 
-### command: reset {#reset}
+### reset {#reset}
 
 Reset all configuration values to default. It will also delete all credential information stored in the platform's native store.
 
@@ -916,7 +918,7 @@ verbose: false
 debug: false
 ```
 
-### command: version {#version}
+### version {#version}
 
 Prints the cli version.
 
