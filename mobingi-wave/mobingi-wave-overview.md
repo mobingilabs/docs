@@ -11,6 +11,7 @@ description: Mobingi Waveにログインする
 * console.mobingi.comで利用しているUsername,Passwordを入力し、Loginをクリック。
 
 ## メニュー構成
+
 ![](../.gitbook/assets/wave_menu.png)
 
 * ダッシュボード：貴社でご利用の全てのAWSアカウントの利用状況（合計）を可視化。
@@ -19,6 +20,7 @@ description: Mobingi Waveにログインする
 * 請求書：請求書のダウンロード。
 
 ## ダッシュボード
+
 ![](../.gitbook/assets/wave08.png)
 
 1. 今月のこれまでのAWS利用費用。
@@ -27,6 +29,7 @@ description: Mobingi Waveにログインする
 4. RIの適用状況。カバー率の高いRI上位3つを表示。
 
 ## ダッシュボード -Analysis
+
 ![](../.gitbook/assets/wave05.png)
 
 * Monthly: 月ごとの利用推移を表示。アカウント毎に色分け。
@@ -35,31 +38,26 @@ description: Mobingi Waveにログインする
 
 ## アカウント
 
-選択するアカウント毎の利用実績を確認できます。
-![](../.gitbook/assets/wave_account.png)
+選択するアカウント毎の利用実績を確認できます。 ![](../.gitbook/assets/wave_account.png)
 
 * RI : RIが適用されている。
 * ![](../.gitbook/assets/screen-shot-2018-06-11-at-13.58.08.png):予算（アラート通知）設定されている。
 
 ## アカウント - Group
 
-複数のアカウントをグルーピングし、グループごとの利用金額を表示します。
-![](../.gitbook/assets/wave_group.png)
+複数のアカウントをグルーピングし、グループごとの利用金額を表示します。 ![](../.gitbook/assets/wave_group.png)
 
 ## アカウント - Report
 
-アカウントごとに利用明細を確認することができます。
-![](../.gitbook/assets/wave_account_report.png)
+アカウントごとに利用明細を確認することができます。 ![](../.gitbook/assets/wave_account_report.png)
 
 ## RI - Reserved Instance
 
-購入済みのRIを確認できます。
-![](../.gitbook/assets/wave_ri.png)
+購入済みのRIを確認できます。 ![](../.gitbook/assets/wave_ri.png)
 
 ## 請求書
 
-月々の請求書を確認することができます。
-![](../.gitbook/assets/wave_invoice.png)
+月々の請求書を確認することができます。 ![](../.gitbook/assets/wave_invoice.png)
 
 ## 設定
 
@@ -68,6 +66,4 @@ description: Mobingi Waveにログインする
 * パスワードの変更
 * 言語の変更（日本語・英語・中国語）
 * 通知設定（メール・Slack）
-
-
 
