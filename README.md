@@ -2,7 +2,7 @@
 description: Mobingi Documentation
 ---
 
-# Mobingi Documentation
+# Mobingi Documentation \(v2.0\)
 
 Welcome to Mobingi's official documentation! This documentation covers all references to all available features and options of all Mobingi products.
 
