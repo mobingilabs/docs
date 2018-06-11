@@ -13,3 +13,9 @@ First of all you should have a key pair specific to you on your computer. In ord
 ore-no-pc:test david$ ls ~/.ssh/id_rsa		id_rsa.pub
 ```
 
+As above, if you do not see id\_rsa and id\_rsa.pub, then you need to create one by using the `ssh-keygen`command:
+
+```bash
+ore-no-pc:test david$ ssh-keygenGenerating public/private rsa key pair.Enter file in which to save the key (/Users/david/.ssh/id_rsa):Enter passphrase (empty for no passphrase):Enter same passphrase again:Your identification has been saved in meow.Your public key has been saved in meow.pub.The key fingerprint is:8d:b9:76:d5:24:b9:26:80:08:f0:e0:03:fc:1c:84:6e david@ore-no-pc.localThe key's randomart image is:+--[ RSA 2048]----+|=.+.             ||                 ||.o+ o            ||                 ||.                ||         . +     ||        o .      ||       . .       ||                 |+-----------------+
+```
+
