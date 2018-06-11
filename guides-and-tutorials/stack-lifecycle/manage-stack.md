@@ -1,5 +1,7 @@
 # Manage stack
 
+## Managing your stack
+
 Mobingi Enterprise not only create application stacks, but also can easily manage them. By using Mobingi, user don't need to monitor public cloud console. Mobingi console fully cover that parts.
 
 You can check instance information from『List My Stacks』--&gt; Stack you want to check --&gt; Instance ID.
@@ -26,4 +28,28 @@ Deploy code is deadly fast. Click Code tab, then setup below.
 After Successfully connecting, by typing "git push" the code will automatically affect to every server in that stack.
 
 ![](../../.gitbook/assets/git-_push.png)
+
+## Monitoring
+
+Mobingi Enterprise has so many useful features which help customers' operation. By clicking『List My Stacks』--&gt;『Monitoring』tab, you can check the detail information of each instance.
+
+![](../../.gitbook/assets/monitoring1.png)
+
+## Logs
+
+You can get Machine logs through Mobingi which is very good for auditing. Click『List My Stacks』--&gt;『Logging』tab, then you can check Realtime Log and downloadable Lifetime Logs as well. The Lifetime Logs will be stored from the moment you deploy applications.
+
+![](../../.gitbook/assets/log1.png)
+
+## Activity
+
+Manager can see which user did what from『List My Stacks』--&gt;『Activity』.
+
+![](../../.gitbook/assets/activity.png)
+
+## Settings
+
+About detail setting, you can change from『List My Stacks』--&gt;『Setting』.
+
+![](../../.gitbook/assets/stack_setting1.png)
 
