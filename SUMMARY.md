@@ -16,4 +16,5 @@
   * [Environment variables](guides-and-tutorials/others/environment-variables.md)
   * [Custom installation script](guides-and-tutorials/others/custom-installation-script.md)
   * [SSH into your container](guides-and-tutorials/others/ssh-into-your-container.md)
+* [FAQ](guides-and-tutorials/faq.md)
 
