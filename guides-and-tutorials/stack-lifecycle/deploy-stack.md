@@ -11,7 +11,7 @@ Open [dashbord,](https://console.mobingi.com/) then click**ã€ŽGrant Permissionã€
 
 Type AWS **Access Key ID** and **Secret Access Key**.  
 Don't know how to get an Access Key ID and Secret Access Key? Go to [here.](https://docs.mobingi.com/your-first-application/aws)  
-Additionally, mobingi ALM supports multi account system, so user can register multiple AWS accounts in the same Mobingi account.
+Additionally, Mobingi ALM supports multi account system, so user can register multiple AWS accounts in the same Mobingi account.
 
 ![](../../.gitbook/assets/authoaws.png)
 
