@@ -42,3 +42,5 @@
 * [Mobingi Wave Overview](mobingi-wave/mobingi-wave-overview.md)
 * [明細の確認方法](mobingi-wave/no.md)
 
+## MOBINGI RIPPLE REFERENCE
+
