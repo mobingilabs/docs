@@ -46,4 +46,5 @@
 
 * [Mobingi Ripple とは](mobingi-ripple-reference/mobingi-ripple-toha.md)
 * [Mobingi Ripple Overview](mobingi-ripple-reference/mobingi-ripple-overview.md)
+* [請求書を発行する](mobingi-ripple-reference/wosuru.md)
 
