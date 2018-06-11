@@ -2,7 +2,7 @@
 description: Mobingi Documentation
 ---
 
-# Mobingi documentation \(v2.0\)
+# Mobingi Documentation \(v2.0\)
 
 ## Software that ships your cloud
 
