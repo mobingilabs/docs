@@ -7,9 +7,7 @@ Our API has predictable, resource-oriented URLs. We support CORS \(Cross-Origin 
 
 ## Endpoint
 
-```text
-https://api.mobingi.com
-```
+[https://api.mobingi.com](https://api.mobingi.com) 
 
 
 
