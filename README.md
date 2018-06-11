@@ -6,8 +6,6 @@ description: Mobingi Documentation
 
 ## Software that ships your cloud
 
-> Software that ships your cloud
-
 ### What does Mobingi provides?
 
 ![](.gitbook/assets/002.png)
