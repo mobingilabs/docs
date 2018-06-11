@@ -13,3 +13,7 @@ Below is a sample script for a project coded in PHP and requires Composer, this 
 sudo apt-get updatesudo apt-get -y install curlsudo sucurl -sS https://getcomposer.org/installer | phpphp composer.phar install
 ```
 
+And you are able to view the logs through application's details page, click on the Logs tab, and select on the instance id, then choose moDaemon or Startup from the drop down menu to view service logs.
+
+![](../../.gitbook/assets/custom-script2.png)
+
