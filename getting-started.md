@@ -11,5 +11,9 @@ You can apply account from [Contact page](https://mobingi.com) \(link in footer\
 
 ## Login to console
 
+After registration, you can login from [Login page.](https://console.mobingi.com/login) Also you can change password later.
 
+## About dashboard
+
+Our powerful and creative dashboard has so many features. You can try how easy it is to scale product as well.
 
