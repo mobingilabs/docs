@@ -12,4 +12,5 @@
   * [Custom Docker containers](guides-and-tutorials/docker/custom-docker-containers.md)
 * [Others](guides-and-tutorials/others/README.md)
   * [Blue-green deployment](guides-and-tutorials/others/blue-green-deployment.md)
+  * [How to use RDS](guides-and-tutorials/others/how-to-use-rds.md)
 
