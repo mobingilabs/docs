@@ -21,5 +21,6 @@
 ## API Reference
 
 * [Overview](api-reference/overview.md)
-* [Stacks](api-reference/stacks.md)
+* [Stacks](api-reference/stacks/README.md)
+  * [List stacks](api-reference/stacks/list-stacks.md)
 
