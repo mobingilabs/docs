@@ -8,6 +8,8 @@ description: Mobingi Documentation
 
 ### What does Mobingi provides?
 
+![](.gitbook/assets/002.png)
+
 Mobingi provide a solution that The software helps your organization to automate your complex devOps workflows and reduce the cost on public clouds. Currently only supporting AWS, and our engineering team is working on the integration with the following public clouds as well:
 
 * Microsoft Azure
