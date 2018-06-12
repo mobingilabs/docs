@@ -1,4 +1,4 @@
-# Delete stack
+# スタックの削除
 
 ```text
 DELETE /v2/alm/stack/{stack_id}
@@ -21,6 +21,6 @@ HTTP/1.1 200 OK
 ```
 
 {% hint style="info" %}
-It may take couple minutes to delete all related resources of your stack. Though the API will try to delete all resources \(such as ELB, security groups, subnets, keypairs, etc\) created by this stack, but in case some resource are linked/shared across other stacks, it may shown as a _DELETE-FAILED_ response, and you may need to manually resolve the conflict resources in your Cloud vendor account \(eg. AWS\) and call the API to delete the stack again.
+_注意_: スタックに付随する全てのリソースの削除には数分かかる場合があります。APIによりスタックの全てのリソース \(ELB, security groups, subnets, keypair など\) の削除が進行されますが、稀に一部のリソースを他のスタックと共有・連結している場合など、 _DELETE-FAILED_ と表示される場合があります。その場合、ご利用のクラウドベンダーのアカウント \(例: AWS\) から手動で競合箇所を解消し、再びスタック削除のAPIを叩く必要があります。
 {% endhint %}
 

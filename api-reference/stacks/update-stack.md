@@ -1,4 +1,4 @@
-# Update stack
+# スタックの更新
 
 ```text
 PUT /v2/alm/stack/{stack_id}
@@ -6,7 +6,7 @@ PUT /v2/alm/stack/{stack_id}
 
 | **Parameters** | **Type** | **Required** | **Details** |
 | --- | --- |
-| configurations | json | no | This parameter is the same as [Create stack](https://docs2.mobingi.com/v/v2/api-reference/stacks/update-stack)'s _configurations_ parameter. |
+| configurations | json | no | [スタックの作成](https://docs.mobingi.com/official/api/v2/jp#create-stack)の _configurations_ パラメーターと同じ |
 
 Request header:
 
