@@ -1,4 +1,4 @@
-# APIレファレンス
+# 概要
 
 {% hint style="info" %}
 Mobingi API はRESTの原則に則って構築されています。   

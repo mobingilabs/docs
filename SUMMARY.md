@@ -20,7 +20,7 @@
 
 ## APIレファレンス
 
-* [APIレファレンス](api-reference/overview.md)
+* [概要](api-reference/overview.md)
 * [スタック](api-reference/stacks/README.md)
   * [スタック一覧の取得](api-reference/stacks/list-stacks.md)
   * [スタックの作成](api-reference/stacks/create-stack.md)
