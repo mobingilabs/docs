@@ -1,13 +1,14 @@
 # Getting started
 
-The easiest way to get started is by making your application and putting it on Mobingi! We have prepared a tutorial that will familiarize you with the controls on Mobingi.
+百聞は一見にしかず、ということでまず実際に触ってみましょう。  
+チュートリアルを活用し実際の画面と照らし合わせながら操作することをお勧めします。
 
-## Create account
+## アカウントの作成
 
-Before create application, you need to apply for Mobingi account.  
-You can apply account from [Contact page](https://mobingi.com) \(link in footer\), within 24hrs we will create account for you.
+Mobingi ALMのアカウント作成は[問い合わせ](https://mobingi.co.jp/contact)よりリクエストをお送りください。  
+24時間以内に担当者よりアカウント情報をご連絡致します。
 
-![](.gitbook/assets/register.png)
+![](.gitbook/assets/registerjp.png)
 
 ## Login to console
 
