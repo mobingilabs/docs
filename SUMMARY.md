@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Mobingi Documentation \(v2.0\)](README.md)
-* [Getting started](getting-started.md)
+* [始める](getting-started.md)
 
 ## Guides and tutorials
 

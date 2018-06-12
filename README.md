@@ -6,15 +6,15 @@ description: Mobingi Documentation
 
 ## Software that ships your cloud
 
-### What does Mobingi provides?
+### モビンギとは？
 
 ![](.gitbook/assets/002.png)
 
-Mobingi provide a solution that The software helps your organization to automate your complex devOps workflows and reduce the cost on public clouds. Currently only supporting AWS, and our engineering team is working on the integration with the following public clouds as well:
+Mobingiプラットフォームはユーザーの複雑なDevOpsワークフローを最大限自動化し、パブリッククラウドのコストを削減します！現在はAWSのみの対応ですが、下記のパブリッククラウドにも順次対応予定です。
 
 * Microsoft Azure
 * Google Cloud Platform
 * Fujitsu Cloud K5
 
-Stay shipping your clouds with us, we'll release new awesome features on a regular basis.
+スピーディーにリリースされる新機能をぜひ体感してください！！
 
