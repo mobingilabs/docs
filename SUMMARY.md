@@ -24,6 +24,7 @@
 * [Stacks](api-reference/stacks/README.md)
   * [List stacks](api-reference/stacks/list-stacks.md)
   * [Create stack](api-reference/stacks/create-stack.md)
+  * [Describe stack](api-reference/stacks/describe-stack.md)
 * [Vendor credentials](api-reference/vendor-credentials/README.md)
   * [List credentials](api-reference/vendor-credentials/list-credentials.md)
 
