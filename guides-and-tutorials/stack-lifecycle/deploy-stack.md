@@ -14,24 +14,25 @@ AWSのサーバー証明書の**アクセスキーID**と**シークレットア
 
 ![](../../.gitbook/assets/authorizationjp.png)
 
-### Create application stack
+### アプリケーションを作成する
 
-Let's make your first application stack through mobingi ALM!
+早速mobingi ALMを使ってご自分のAWSアカウントにアプリケーションを実行してみましょう。
 
-* Click**『Application Stacks』--&gt;『Create New Stack』**
-* Choose AWS as cloud vendor.
+* サイドバーの**『アプリケーションスタック』--&gt;『スタックの作成』**をクリック
+* クラウドベンダーは『AWS』を選択
 
-![](../../.gitbook/assets/create_aws1.png)
+![](../../.gitbook/assets/create_aws1jp.png)
 
-* Choose Region.
-* Select Instance type.
-* You can define Number of Spot Instances by mouse dragging. By using spot instance, you can save 80% of EC2 cost maximum.
-* Define Auto-Scale Range. Mobingi ALM software automatically creates ELB, Subnet, Networks, and other resources which are necessary.
+* リージョンを選択
+* インスタンスタイプを選択
+* スポットインスタンスの割合を選択。スポットインスタンスを選択することで最大80%インスタンスの料金を削減できます。
+* 自動スケール幅を設定。ELB,Subnet...などの表示されているリソースはモビンギにより自動的に用意されます。
 
-![](../../.gitbook/assets/create_aws2.png)
+![](../../.gitbook/assets/create_aws2jp.png)
 
-* Choose Image Layer.
-* By clicking 『Create Application』, the software will start creating your application stack.
+* 希望のイメージを選択
+* RDSを利用する場合は選択。RDSのより詳しい利用方法は[こちら](https://docs.mobingi.com/official/guide/jp/rds)から。
+* 『アプリケーションの作成』をクリックすると作成が開始されます。
 
-![](../../.gitbook/assets/aws3.png)
+![](../../.gitbook/assets/aws3jp.png)
 
