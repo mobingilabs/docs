@@ -1,4 +1,4 @@
-# Put lifecycle hook
+# ライフサイクルフックの設定
 
 {% code-tabs %}
 {% code-tabs-item title="AWS only" %}
@@ -10,7 +10,7 @@ PUT /v2/alm/stack/{stack_id}/lifecyclehook
 
 | **Parameters** | **Type** | **Required** | **Details** |
 | --- | --- |
-| heartbeat | string | no | The time in seconds of which lifecyclehook will apply to instances \(in the same autoscaling group\) when terminates on scale-in or restarts. Default value is 3600. |
+| heartbeat | string | no | Auto Scaling グループ内のインスタンスがスケールイン、もしくは再起動する際に、一定時間待機状態にするライフサイクルフック機能の時間\(秒数\)の設定。デフォルト値は 3600 |
 
 Request header:
 
