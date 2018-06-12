@@ -36,4 +36,5 @@
 * [Vendor credentials](api-reference/vendor-credentials/README.md)
   * [List credentials](api-reference/vendor-credentials/list-credentials.md)
   * [Save credentials](api-reference/vendor-credentials/save-credentials.md)
+  * [Delete credentials](api-reference/vendor-credentials/delete-credentials.md)
 
