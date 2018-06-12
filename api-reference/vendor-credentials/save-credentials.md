@@ -4,9 +4,8 @@
 POST /v2/credentials/{vendor}
 ```
 
-|  |  |  |  |
-| --- | --- | --- |
 | **Parameters** | **Type** | **Required** | **Details** |
+| --- | --- |
 | credentials | array | yes | contains credentials information \(see example request below\) |
 
 Request header:
