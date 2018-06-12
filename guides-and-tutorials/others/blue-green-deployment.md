@@ -1,33 +1,35 @@
 # Blue-green deployment
 
-Mobingi ALM uses Blue-Green Deployment to achieve zero-downtime deployment of new code. When you click deploy in the code page, it will simply deploy your code.
+mobingi ALMは新しいコードをデプロイする際のダウンタイムを無くすため、Blue-Green Deploymentを使用しています。コードページのボタンをクリックするだけで簡単にコードのデプロイが可能です。
 
-![](../../.gitbook/assets/bg-deploy1.png)
+![](../../.gitbook/assets/code_1bgjp.png)
 
-Whenever you click this button, mobingi ALM will initiate deployment on all your servers. It will:
+接続ボタンを押すとスタックの全サーバーに以下のワークフローが実行されます。
 
-1. Renew the container image
-2. Download the code from the repository
-3. Create a new container
-4. Perform code installation on the container
-5. Test the container
-6. If successful, direct all new incoming connections to the new container
-7. Delete the old container after ten seconds
+* コンテナイメージの更新
+* リポジトリからコードのダウンロード
+* 新しいコンテナの作成
+* コンテナへのコードのインストール
+* コンテナのテスト運用
+* 成功した場合には全てのコネクションを新しいコンテナへと自動変更
+* 10秒以内に古いコンテナを削除
 
-Firstly, all connections are being sent to the existing container, known as the Blue Container.
+## Blue-Green Deployment フロー
 
-![](../../.gitbook/assets/bg-deploy2.png)
+まず、全てのコンテナはBlue Containerとして知られるコンテナに送られます。
 
-When code is deployed, a new Green Container containing the new code is started up and the installation process begins inside it.  
+![](../../.gitbook/assets/bg-deploy2jp.png)
+
+コードがデプロイされた際、新しいコードを持つ新しいGreen Containerが起動し内部でインストールを開始します。  
 
 
-![](../../.gitbook/assets/bg-deploy3.png)
+![](../../.gitbook/assets/bg-deploy3jp.png)
 
-Once it is ready, all traffic is then redirected to this new container. While existing connections continue to stay open against the old Blue Container.
+準備が完了した後、全てのトラフィックは新しいコンテナへと変更されます。しかしコネクションが存在する間は古いBlue Containerも稼働した状態を保ちます。
 
-![](../../.gitbook/assets/bg-deploy4.png)
+![](../../.gitbook/assets/bg-deploy4jp.png)
 
-After 10 seconds, which is enough for most HTTP requests to complete, the Blue Container is shut down, and the Green Container will be considered the Blue Container for the next deployment.
+ほとんどのHTTPは10秒以内に完了しBlue Containerはシャットダウンされ、次のデプロイメントはBlue Containerに代わりGreen Containerにて行われます。
 
-![](../../.gitbook/assets/bg-deploy5.png)
+![](../../.gitbook/assets/bg-deploy5jp.png)
 
