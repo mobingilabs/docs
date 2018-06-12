@@ -1,12 +1,12 @@
 # Working with ALM Templates
 
-## Alm Template formats {#template-formats}
+## ALM Template formats {#template-formats}
 
 ALM Template is designed in JSON format. You can also write your template in YAML format and then convert it into JSON file when you deploy your stacks on ALM UI \(or through CLI, or API\).
 
 _Official YAML format support is in-progress._
 
-## Alm Template components {#template-components}
+## ALM Template components {#template-components}
 
 ALM Template top-level components consist of `version`, `label`, `description`, `vendor`, `configurations`.
 
