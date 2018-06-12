@@ -1,19 +1,18 @@
 # スタックの作成
 
-## Create application stack \(AWS\)
+## アプリケーションスタックを作成する \(AWS\)
 
-Here, we explain our core feature "Lifecycle Management".   
-Before you can start using Mobingi ALM for AWS to manage AWS resources on your behalf, you first need to provide your AWS credentials.
+このページではモビンギの特徴であるアプリケーションの**"ライフサイクルマネジメント"**についてご説明しています。利用を開始するにあたり、まずはAWSアカウントをmobingi ALMに登録します。
 
-### Register AWS credentials
+### AWSアカウントの認証情報を登録する
 
-Open [dashboard,](https://console.mobingi.com/) then click**『Grant Permission』**
+[ダッシュボード](https://console.mobingi.com/)を開き、右上のドロップダウンより『一般設定』--&gt;『認証情報』--&gt;**『AWS』**をクリックしてください。
 
-Type AWS **Access Key ID** and **Secret Access Key**.  
-Don't know how to get an Access Key ID and Secret Access Key? Go to [here.](https://docs.mobingi.com/your-first-application/aws)  
-Additionally, Mobingi ALM supports multi account system, so user can register multiple AWS accounts in the same Mobingi account.
+AWSのサーバー証明書の**アクセスキーID**と**シークレットアクセスキー**を入力。  
+アクセスキーIDとシークレットアクセスキーの取得方法は[こちら](https://docs.mobingi.com/official/others/jp/get-accesskey)をご覧ください。  
+モビンギはマルチアカウント対応なので複数のAWSアカウントが登録できます。
 
-![](../../.gitbook/assets/authoaws.png)
+![](../../.gitbook/assets/authorizationjp.png)
 
 ### Create application stack
 
