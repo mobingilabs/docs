@@ -1,28 +1,25 @@
-# Custom Docker containers
+# Dockerコンテナを介してカスタマイズ
 
-## Deploy custom Docker containers
-
-It is possible to deploy your own docker container on mobingi ALM. Simply type in the name of your docker image on docker hub and you are ready to go.
+mobingi ALMではお持ちのDockerイメージを利用しアプリケーションをデプロイすることが可能です。
 
 {% hint style="info" %}
-Docker images that are not modified to have a configuration file and container\_status files will not be able to take advantage of [Blue-Green Deployment](https://docs2.mobingi.com/v/v2/guides-and-tutorials/others/blue-green-deployment), and code deploys will write into the `/var/www` folder.
+環境ファイルとcontainer\_statusファイルを持つように変更されていないDockerイメージは[Blue-Green Deployment](https://docs.mobingi.com/official/guide/jp/bg-deploy)が有効ではありません。コードのデプロイは`/var/www`フォルダに書き込まれます。
 {% endhint %}
 
-Mobingi ALM also automatically maps port 80 and 443 exposed by the container to the port 80 and 443 respectively on the machine. Other ports are ignored.  
+mobingi ALMはマシンのポート80と443に対して、コンテナのポート80と443をそれぞれ自動的にマッピングします。  
+他のポートは無視されます。  
 
 
-## Configuration file
+## 設定ファイル
 
-If a custom docker container does not have a configuration file, mobingi ALM will immediately switch new connections to the new container the moment it starts. If your docker container needs to perform certain tasks before it is able to start, it needs to signal that it is ready to accept connections.
+もしカスタムDockerコンテナが設定ファイルを持っていない場合、起動時すぐに新しいコネクションを新しいコンテナに切り替えます。もしお客様のDockerコンテナが開始可能前にタスクを起動する必要がある場合、コネクションを受け入れる準備が整っているという信号が必要です。
 
-Without a configuration file also, mobingi ALM will only deploy code into the `/var/www` folder.
+また、設定ファイルがない場合でも、`/var/www`フォルダにのみコードをデプロイします。[Blue-Green Deployment](https://docs.mobingi.com/official/guide/jp/bg-deploy)を可能にし、コードデプロイのためのフォルダーのコードの配置を明確にするためにコンテナには以下が必要です。
 
-In order to enable [Blue-Green Deployment](https://docs2.mobingi.com/v/v2/guides-and-tutorials/others/blue-green-deployment) and specify a specific folder for the code deploys to place code in, the container must have the following things:
+* 1. ルートディレクトリ内の設定ファイル
+* 2. コネクションを受け入れる準備ができた場合、スタートアップコマンドは`/var/log/container_status`ファイルに記述されている必要があります。
 
-* A config file in the root directory
-* The startup command must write running into the `/var/log/container_status` file when it is ready to accept connections.
-
-This is an example config file:
+以下設定ファイルの例です:
 
 ```ruby
 {
