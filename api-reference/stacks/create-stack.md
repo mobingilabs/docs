@@ -91,7 +91,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-The stack creation usually takes 5 to 30 minutes to complete depends on your infrastructure's complexity. You can either log in to admin UI interface to see the stack creation progress, or make request to [describe stack](https://docs.mobingi.com/official/api/v2#describe-stack) API.
+The stack creation usually takes 5 to 30 minutes to complete depends on your infrastructure's complexity. You can either log in to admin UI interface to see the stack creation progress, or make request to describe stack API.
 
 In case if the response return a _CREATE-FAILED_ result, you may want to check your Cloud vendor's account to see if you've reached your account limit. Eg. there are a maxium of 20 VPCs per region per AWS account.
 
