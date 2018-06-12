@@ -1,4 +1,4 @@
-# Manage stack
+# スタックの管理
 
 ## Managing your stack
 

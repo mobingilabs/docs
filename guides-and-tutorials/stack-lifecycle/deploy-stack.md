@@ -1,4 +1,4 @@
-# Deploy stack
+# スタックの作成
 
 ## Create application stack \(AWS\)
 
