@@ -29,6 +29,7 @@
   * [Delete stack](api-reference/stacks/delete-stack.md)
   * [Deploy code](api-reference/stacks/deploy-code.md)
   * [Put lifecycle hook](api-reference/stacks/put-lifecycle-hook.md)
+  * [Get lifecycle hook](api-reference/stacks/get-lifecycle-hook.md)
 * [Vendor credentials](api-reference/vendor-credentials/README.md)
   * [List credentials](api-reference/vendor-credentials/list-credentials.md)
 
