@@ -10,13 +10,15 @@ Mobingi ALMのアカウント作成は[問い合わせ](https://mobingi.co.jp/co
 
 ![](.gitbook/assets/registerjp.png)
 
-## Login to console
+## ログイン
 
-After registration, you can login from [Login page.](https://console.mobingi.com/login) Also you can change password later.
+アカウントの登録完了後、[ログインページ](https://console.mobingi.com/login)にメールアドレスと初期設定のパスワードを入力しログインしてください。
 
-## About dashboard
+![](.gitbook/assets/loginjp.png)
 
-Our powerful and creative dashboard has so many features. You can try how easy it is to scale product as well.
+## ダッシュボード
 
-![](.gitbook/assets/console.png)
+パワフルかつ高機能なダッシュボードには、スケーラブルなプロダクトの実行も簡単に行える多数の機能が備わっています。
+
+![](.gitbook/assets/consolejp.png)
 
