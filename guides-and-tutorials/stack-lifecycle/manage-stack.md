@@ -2,17 +2,15 @@
 
 ## [アプリケーションスタックを管理する](https://docs.mobingi.com/official/guide/jp/manage#sec1)
 
-Mobingi Enterprise not only create application stacks, but also can easily manage them. By using Mobingi, user don't need to monitor public cloud console. Mobingi console fully cover that parts.
+mobingi ALMはアプリケーションスタックの作成のみでなく、運用に役立つ様々な機能が備わっています。メニューの『スタック一覧』--&gt; 対象のスタック --&gt; インスタンスID をクリックするとインスタンスの情報が表示されます。
 
-You can check instance information from『List My Stacks』--&gt; Stack you want to check --&gt; Instance ID.
+![](../../.gitbook/assets/stack-listjp.png)
 
-![](../../.gitbook/assets/stack-list.png)
+![](../../.gitbook/assets/server_detailjp.png)
 
-![](../../.gitbook/assets/server_detail.png)
+更に、先ほどの対象スタックページの右にある『サーバーのスケーリング』から『オートスケール幅』や『リザーブドインスタンスの割合』のライブアップデートが可能です。
 
-Additionally, by clicking『Scaling』, you can live update "Number of Spot Instacnces" and "Auto-Scale Range".
-
-![](../../.gitbook/assets/scaling_server.png)
+![](../../.gitbook/assets/scaling_serverjp.png)
 
 ## Deploy code from Git repository
 
