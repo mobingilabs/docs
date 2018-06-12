@@ -12,7 +12,9 @@
 {% endtab %}
 
 {% tab title="GCP" %}
-TBD
+At the moment, all deployments use the region's default public network.
+
+Region: `asia-northeast1`, CIDR: `10.146.0.0/20`
 {% endtab %}
 {% endtabs %}
 
