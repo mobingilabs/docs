@@ -1,4 +1,4 @@
-# List credentials
+# 認証情報の取得
 
 ```text
 GET /v2/credentials/{vendor}

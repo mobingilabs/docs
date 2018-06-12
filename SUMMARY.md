@@ -34,7 +34,7 @@
   * [ServerConfigの取得](api-reference/stacks/describe-serviceconfig.md)
   * [ServerConfigの更新](api-reference/stacks/update-serverconfig.md)
 * [ベンダー認証情報](api-reference/vendor-credentials/README.md)
-  * [List credentials](api-reference/vendor-credentials/list-credentials.md)
-  * [Save credentials](api-reference/vendor-credentials/save-credentials.md)
+  * [認証情報の取得](api-reference/vendor-credentials/list-credentials.md)
+  * [認証情報の保存](api-reference/vendor-credentials/save-credentials.md)
   * [Delete credentials](api-reference/vendor-credentials/delete-credentials.md)
 
