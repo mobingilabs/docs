@@ -1,2 +1,2 @@
-# Vendor credentials
+# ベンダー認証情報
 

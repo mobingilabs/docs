@@ -1,4 +1,4 @@
-# Describe ServiceConfig
+# ServerConfigの取得
 
 ```text
 GET /v2/alm/serverconfig?stack_id={stack_id}
