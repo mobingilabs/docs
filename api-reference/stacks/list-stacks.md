@@ -1,4 +1,4 @@
-# List stacks
+# スタック一覧の取得
 
 ```text
 GET /v2/alm/stack

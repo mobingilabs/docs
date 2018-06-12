@@ -21,10 +21,10 @@
 ## API Reference
 
 * [APIレファレンス](api-reference/overview.md)
-* [Stacks](api-reference/stacks/README.md)
-  * [List stacks](api-reference/stacks/list-stacks.md)
-  * [Create stack](api-reference/stacks/create-stack.md)
-  * [Describe stack](api-reference/stacks/describe-stack.md)
+* [スタック](api-reference/stacks/README.md)
+  * [スタック一覧の取得](api-reference/stacks/list-stacks.md)
+  * [スタックの作成](api-reference/stacks/create-stack.md)
+  * [スタック情報の取得](api-reference/stacks/describe-stack.md)
   * [Update stack](api-reference/stacks/update-stack.md)
   * [Delete stack](api-reference/stacks/delete-stack.md)
   * [Deploy code](api-reference/stacks/deploy-code.md)

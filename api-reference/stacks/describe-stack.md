@@ -1,4 +1,4 @@
-# Describe stack
+# スタック情報の取得
 
 ```text
 GET /v2/alm/stack/{stack_id}
