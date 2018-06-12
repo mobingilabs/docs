@@ -1,6 +1,6 @@
 # スタックの管理
 
-## Managing your stack
+## [アプリケーションスタックを管理する](https://docs.mobingi.com/official/guide/jp/manage#sec1)
 
 Mobingi Enterprise not only create application stacks, but also can easily manage them. By using Mobingi, user don't need to monitor public cloud console. Mobingi console fully cover that parts.
 
