@@ -32,6 +32,7 @@
   * [Get lifecycle hook](api-reference/stacks/get-lifecycle-hook.md)
   * [Restart instance](api-reference/stacks/restart-instance.md)
   * [Describe ServiceConfig](api-reference/stacks/describe-serviceconfig.md)
+  * [Update ServerConfig](api-reference/stacks/update-serverconfig.md)
 * [Vendor credentials](api-reference/vendor-credentials/README.md)
   * [List credentials](api-reference/vendor-credentials/list-credentials.md)
 
