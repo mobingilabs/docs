@@ -1,13 +1,13 @@
-# Custom installation script
+# カスタムスクリプトを記述する
 
-When Mobingi installs a container, it performs a series of steps to start up a webserver. During these steps you can insert your code in the form of a bash shell script to perform the installation and configuration you need.
+Dockerコンテナ作成時に追加でミドルウェアのインストールや設定変更を実行するために、bash形式のスクリプトコードを挿入することができます。Dockerイメージに含まれていないものをインストールしたいときなどにご利用ください。
 
 ![](../../.gitbook/assets/custom-script.png)
 
-Simply add a `mobingi-init.sh` file to the **root** directory of your code and the container will run the instructions in the script to perform the additional setup required by your webserver.
+カスタムスクリプトが実行されるためには`mobingi-init.sh`ファイルをリポジトリの**ルート**に配置しておくだけで、自動的に実行を開始します。
 
-**Example Script:**  
-Below is a sample script for a project coded in PHP and requires Composer, this script will automatically setup the environment.
+スクリプト例:  
+下記のスクリプトはComposerが必要なPHPで書かれたプロジェクトであり、自動的に追加インストールを実行します。
 
 ```bash
 sudo apt-get update
@@ -17,7 +17,7 @@ curl -sS https://getcomposer.org/installer | php
 php composer.phar install
 ```
 
-And you are able to view the logs through application's details page, click on the Logs tab, and select on the instance id, then choose moDaemon or Startup from the drop down menu to view service logs.
+さらに、実行結果のログはアプリケーション環境の詳細ページから見ることが可能です。Logsタブをクリック、インスタンスIDを選び、ドロップダウンメニューにあるmoDaemonかStartupをクリックするだけでログが閲覧できます。
 
-![](../../.gitbook/assets/custom-script2.png)
+![](../../.gitbook/assets/custom-script2jp.png)
 
