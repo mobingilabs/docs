@@ -32,13 +32,16 @@
 * [CLI Reference](mobingi-alm/cli-reference/README.md)
   * [Mobingi CLI Documentation](mobingi-alm/cli-reference/mobingi-cli-documentation.md)
 
+## Getting Started \(Wave and Ripple\)
+
+* [事前準備](getting-started-wave-and-ripple/shi-qian-zhun-bei.md)
+
 ## Mobingi Wave
 
 * [Overview](mobingi-wave/overview.md)
-* [事前準備](mobingi-wave/shi-qian-zhun-bei.md)
 * [明細の確認方法](mobingi-wave/no.md)
 
-## MOBINGI RIPPLE
+## MOBINGI RIPPLE REFERENCE
 
 * [Mobingi Ripple とは](mobingi-ripple-reference/mobingi-ripple-toha.md)
 * [Mobingi Ripple Overview](mobingi-ripple-reference/mobingi-ripple-overview.md)
