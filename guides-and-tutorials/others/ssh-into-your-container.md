@@ -1,20 +1,20 @@
-# SSH into your container
+# コンテナにSSHでログインする
 
 {% hint style="info" %}
-**Do not** use SSH to install software required for production. Servers should be able to go down at any time and be started at any time wi th no human intervention. If you need custom software installation, please refer to [this guide](https://docs2.mobingi.com/v/v2/guides-and-tutorials/others/ssh-into-your-container).  
-SSH is provided in the rare case you need to go on an actual production container to debug and check when something cannot be reproduced or has gone horribly wrong.
+SSHでログインして行われた追加インストール作業や設定変更された値は**コードの自動デプロイ時などコンテナの入れ替え時に引き継がれず消えてしまいます。**ソフトウェアの追加インストールが必要な場合はこちらの[ガイド](https://docs.mobingi.com/official/tutorials/jp/custom_installation_script)をご参照いただいて追加インストールを行うか、アプリケーション環境に利用するDockerイメージにあらかじめ含めておいてください。  
+このSSH機能は、デバッグや一時的な動作確認のために本番コンテナにアクセスしたい場合などに限ってご利用ください。
 {% endhint %}
 
-## Creating a keypair
+## キーペアの作成
 
-First of all you should have a key pair specific to you on your computer. In order to check if you have one, simply type `ls ~/.ssh` in your console.
+まず始めに、お客様のコンピューター用のキーペアを作成します。すでにお持ちかどうか確認するためにコンソールで`ls ~/.ssh`と入力して確認することも可能です。
 
 ```bash
 ore-no-pc:test david$ ls ~/.ssh/
 id_rsa		id_rsa.pub
 ```
 
-As above, if you do not see id\_rsa and id\_rsa.pub, then you need to create one by using the `ssh-keygen`command:
+上記のように、id\_rsa や id\_rsa.pub が表示されない場合、`ssh-keygen`コマンドを使用しキーを作成してください。
 
 ```bash
 ore-no-pc:test david$ ssh-keygen
@@ -40,73 +40,73 @@ The key's randomart image is:
 +-----------------+
 ```
 
-Now you can simply run `ls ~/.ssh/` again to check that you have a key pair.
+再び`ls ~/.ssh/`を実行し、キーペアを取得したか確認してみましょう。
 
-## Uploading your public key
+## 公開鍵を登録する
 
 {% hint style="info" %}
-In order to SSH into a machine you ONLY have to provide it with your **Public Key** or `id_rsa.pub`. This will allow the machine to identify you. **NEVER** transmit your Private Key `id_rsa` over the network.
+SSH公開鍵をマシンに設置するために、**既存の公開鍵**か上記で作成した`id_rsa.pub`のみを使用します。絶対に秘密鍵`id_rsa`を**送信しないでください。**
 {% endhint %}
 
-Open your [Dashboard](https://console.mobingi.com/) and click on the Settings button on the top right, then click on SSH Keys tab.
+[ダッシュボード](https://console.mobingi.com/)を開き、右上にある設定をクリックし、SSHキータブをクリックしてください。
 
-![](../../.gitbook/assets/ssh_into1.png)
+![](../../.gitbook/assets/ssh_into1jp.png)
 
-Then, lick on the Add new public key button to add a new user key.
+そして、パブリックキーを追加ボタンをクリックすると新しいユーザーキーが追加できます。
 
-You will need to display your public key by typing `cat ~/.ssh/id_rsa.pub`
+作成した公開鍵をテキストエディターで表示するか、コマンドラインで`cat ~/.ssh/id_rsa.pub`と打ち込むと内容が表示できます。
 
 ```bash
 ore-no-pc:test david$ cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc... david@ore-no-pc.local
 ```
 
-Simply copy the public key body \(starting with **ssh-rsa**\), and paste it in the Public Key field. Also don't forget to fill the Key Name field with a username that you would like to use to log in with. Please note that Key Name field allows only letters, numbers and underscores with no white spaces.
+表示された公開鍵のボディ部（**ssh-rsa**で始まります）をコピーして公開鍵（Public Key）の欄にペーストします。キー名（Key Name）の欄にログインする際に使用したいユーザー名を入れるのを忘れないように注意してください。キー名欄は英数字、アンダーバーのみ有効です。スペースは使用できません。
 
-![](../../.gitbook/assets/ssh_into2.png)
+![](../../.gitbook/assets/ssh_into2jp.png)
 
-Once you are done, you should see a list of your public keys that stored to your account.
+ここまで完了したらアカウント内の公開鍵の一覧を確認しましょう。
 
-![](../../.gitbook/assets/ssh_into3.png)
+![](../../.gitbook/assets/ssh_into3jp.png)
 
-## Attach the public key to your application stack
+## アプリケーションスタックに公開鍵情報を登録する
 
-Then, let's head to application settings page and attach the public key to your servers.
+次はアプリケーション環境の設定ページに移動し、サーバーにパブリックキーを配置する作業です。
 
-![](../../.gitbook/assets/ssh_into4.png)
+![](../../.gitbook/assets/ssh_into4jp.png)
 
-Scroll the page down, and click on Choose Key Pairs button.
+該当のアプリケーション環境の設定ページをスクロールしキーペアを選択ボタンをクリックしてください。
 
-![](../../.gitbook/assets/ssh_into5.png)
+![](../../.gitbook/assets/ssh_into5jp.png)
 
-You will see the list of public keys you stored at your account, simple click Attach button to add the key to your servers \(the current application servers only\).
+お客様が追加済みの公開鍵の一覧が表示されるので、Attachボタンをクリックしサーバーにキーを設置してください。
 
-![](../../.gitbook/assets/ssh_into6.png)
+![](../../.gitbook/assets/ssh_into6jp.png)
 
-Head to the Logs tab and watch the `moDaemon` logs of your server until you see something like:
+ログタブに移動し、サーバーの`moDaemon`ログをご覧ください。下記は一例です:
 
 ```text
 [08/Jun/2015:19:25:37 +0900] Switching port forward from blue to green container
 [08/Jun/2015:19:25:37 +0900] Adding user: My_office_Laptop
 ```
 
-That will indicate your user has been added to the container.
+このように新しいコンテナが起動し、古いコンテナとの入れ替えが完了した旨の表示があれば、お客様のユーザーは正常にコンテナに追加されています。
 
-## SSH into your container
+## コンテナにSSHでログインする
 
-First, you need to decide which container you want to SSH into. You can find the IP addresses of each server on the stack details page.
+まず、コンテナにSSHログインするために、インスタンスのIPアドレスを特定する必要があります。スタック詳細ページにてそれぞれのサーバーのIPアドレスが確認できます。
 
-![](../../.gitbook/assets/ssh_into7.png)
+![](../../.gitbook/assets/ssh_into7jp.png)
 
-You can log into the container by specifying the SSH user name \(using the key name of the key pair registered in the application stack\) and the IP address of the server. Executing the SSH command as follows:
+SSH のユーザ名（アプリケーションスタックへ登録したキーペアのキー名を使用します）、インスタンスの IP アドレスを指定し、以下のように SSH コマンドを実行することでコンテナへログイン出来ます。下記は一例です:
 
 ```bash
 $ ssh My_office_Laptop@52.68.3.179
 ```
 
-## Check your SSH history
+## SSHログイン履歴を確認する
 
-It is possible to see who has entered your server by viewing the auth logs. Simply go to the stack Logs page, select `ssh`, and you should see the authentication logs for the machine.
+認証ログを見れば、どのユーザーがいつサーバーにアクセスしたかを確認することができます。スタックログページの`ssh`をクリックするとマシンの認証ログの閲覧が可能です。
 
-![](../../.gitbook/assets/ssh_into8.png)
+![](../../.gitbook/assets/ssh_into8jp.png)
 

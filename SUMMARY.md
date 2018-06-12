@@ -15,7 +15,7 @@
   * [RDSの使い方](guides-and-tutorials/others/how-to-use-rds.md)
   * [環境変数](guides-and-tutorials/others/environment-variables.md)
   * [カスタムスクリプトを記述する](guides-and-tutorials/others/custom-installation-script.md)
-  * [SSH into your container](guides-and-tutorials/others/ssh-into-your-container.md)
+  * [コンテナにSSHでログインする](guides-and-tutorials/others/ssh-into-your-container.md)
 * [FAQ](guides-and-tutorials/faq.md)
 
 ## API Reference
