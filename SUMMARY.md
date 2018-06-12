@@ -14,7 +14,7 @@
   * [Adding GCP account](mobingi-alm/getting-started/adding-gcp-account.md)
   * [Adding Fujitsu K5 account](mobingi-alm/getting-started/adding-fujitsu-k5-account.md)
 * [ALM Template](mobingi-alm/alm-template/README.md)
-  * [What is ALM Template](mobingi-alm/alm-template/what-is-alm-template.md)
+  * [What is ALM Template?](mobingi-alm/alm-template/what-is-alm-template.md)
   * [Working with ALM Templates](mobingi-alm/alm-template/working-with-alm-templates.md)
   * [ALM Template Reference](mobingi-alm/alm-template/alm-template-reference.md)
   * [ALM Template Language](mobingi-alm/alm-template/alm-template-language.md)
