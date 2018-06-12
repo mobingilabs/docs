@@ -1,16 +1,39 @@
 # FAQ
 
-## Can I have a mobingicloud.com domain with a server on my own AWS account?
+## **MOBINGI ALMについて**
 
-No, mobingicloud.com domains are only for users using Mobingi Simple Cloud.
+### AWSアカウントは必要ですか。
 
-## What if I want bigger servers?
+はい。アプリケーションスタック作成ページのクラウドベンダーでAWSを選択する場合はモビンギアカウントとは別にAWSのアカウントが必要です
 
-Contact us at support@mobingi.com.
+### 自身のAWSアカウントのサーバーでmobingicloud.comのドメインを持つことは可能ですか？
 
-## Can I use my own docker image?
+いいえ。mobingicloud.comドメインはmoCloud.ioをご利用のユーザーの方のみです。
 
-Yes! Just click on the Custom Docker tab when you are creating your stack.
+### 選択外の大きなサーバーが必要な場合はどうすればいいですか？
+
+support@mobingi.comまでお問い合わせ下さい。
+
+### AWSのRDSを利用した場合、デフォルト状態で外部からのアクセスはできますか？
+
+デフォルト状態での外部からのアクセスは不可となっております。
+
+## **DOCKERについて**
+
+### Dockerの知識がないのですが大丈夫でしょうか。
+
+はい。mobingi ALMはお客様に"Dockerを意識せず使ってもらう"ことを目的としています。  
+選択欄に希望するイメージがない場合は弊社で作成しますのでsupport@mobingi.comまでお気軽にご連絡ください。
+
+### 自分のDocker imageは使えますか？
+
+はい。ご自身のスタックを作成する際にイメージ欄のDockerタブから指定できます。
+
+## **アカウントについて**
+
+### 退会したいです。
+
+アカウントの退会はお問い合わせページから申請をお願い致します。
 
 
 
