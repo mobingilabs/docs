@@ -1,4 +1,4 @@
-# Get lifecycle hook
+# ライフサイクルフックの取得
 
 {% code-tabs %}
 {% code-tabs-item title="AWS only" %}

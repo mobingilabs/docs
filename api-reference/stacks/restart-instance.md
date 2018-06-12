@@ -1,4 +1,4 @@
-# Restart instance
+# インスタンスの再起動
 
 ```text
 POST /v2/alm/stack/{stack_id}/restart_instance
