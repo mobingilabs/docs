@@ -1,38 +1,37 @@
-# How to use RDS
+# RDSの使い方
 
-## How to use RDS
+mobingi ALMでは、アプリケーションスタック作成時、クラウドベンダーにAWSが選択されていた場合  
+RDS（MySQL・PostgreSQL）をそのアプリケーションスタック内に実装する事が可能です。
 
-If you choose AWS as cloud vender when using Mobingi ALM, you can deploy RDS \(MySQL, PostgreSQL\) within application stack.
+## RDSの実装
 
-## Deploy RDS
+アプリケーションスタック作成時にクラウドベンダーをAWSにします。
 
-Choose AWS as cloud vender when stack creation.
+![](../../.gitbook/assets/rds-venderjp.png)
 
-![](../../.gitbook/assets/rds-vender.png)
+RDSの「MySQL」をクリックします。PostgreSQLでも基本的な設定は変わりません。
 
-This time, click MySQL. The process when choose PostgreSQL would be almost same, so you can choose PostgreSQL as well.
+![](../../.gitbook/assets/rds-mysql_postgresqljp.png)
 
-![](../../.gitbook/assets/rds-mysql_postgresql.png)
+MySQLのDBインスタンス・ストレージ容量・リードレプリカの有無を決定し、右下の「選択する」をクリックします。
 
-After specify MySQL DB instance type, storage volume, and read replicas, click Choose button.
+![](../../.gitbook/assets/rds-mysql_openjp.png)
 
-![](../../.gitbook/assets/rds-mysql_open.png)
+MySQLに値が設定されハイライトします。この状態で「アプリケーションの作成」をクリックすると、アプリケーションスタック内にMySQLが実装されます。
 
-After MySQL value setup, click Create Application button.
+![](../../.gitbook/assets/rds-mysql_setjp.png)
 
-![](../../.gitbook/assets/rds-mysql_set.png)
+## RDSの詳細確認
 
-## Check RDS details
+スタック詳細のデータベース項目から、DBアドレス（Master）をクリックします。
 
-From Stack Details page, click DB Address\(master\).
+![](../../.gitbook/assets/rds-checkjp.png)
 
-![](../../.gitbook/assets/rds-check.png)
+RDS（MySQL・PostgreSQL）への接続情報が確認できます。
 
-You can check the connection information of RDS（MySQL・PostgreSQL）
+![](../../.gitbook/assets/rds-check_detailjp.png)
 
-![](../../.gitbook/assets/rds-check_detail.png)
+DBユーザ名・DBパスワード名は不可視となっています。クリックする事で確認できます。
 
-As default, DB Username and DB Password are hided. By mouse click, you can check them.
-
-![](../../.gitbook/assets/rds-check_detail_dbname.png)
+![](../../.gitbook/assets/rds-check_detail_dbnamejp.png)
 
