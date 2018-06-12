@@ -10,5 +10,7 @@ To get started with ALM, please visit [https://alm.mobingi.com](https://alm.mobi
 
 To get started with Wave, please visit [https://wave.mobingi.com](https://wave.mobingi.com).
 
+If you are looking for the old \(v2\) documentations for ALM, you can use the dropdown menu above the side menu.
+
 For general information about Mobingi, please visit our website [https://mobingi.com](https://mobingi.com).
 
