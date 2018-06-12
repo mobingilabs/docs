@@ -7,7 +7,7 @@ Before you can start using Mobingi ALM for AWS to manage AWS resources on your b
 
 ### Register AWS credentials
 
-Open [dashbord,](https://console.mobingi.com/) then click**『Grant Permission』**
+Open [dashboard,](https://console.mobingi.com/) then click**『Grant Permission』**
 
 Type AWS **Access Key ID** and **Secret Access Key**.  
 Don't know how to get an Access Key ID and Secret Access Key? Go to [here.](https://docs.mobingi.com/your-first-application/aws)  
