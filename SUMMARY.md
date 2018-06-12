@@ -18,7 +18,7 @@
   * [コンテナにSSHでログインする](guides-and-tutorials/others/ssh-into-your-container.md)
 * [FAQ](guides-and-tutorials/faq.md)
 
-## API Reference
+## APIレファレンス
 
 * [APIレファレンス](api-reference/overview.md)
 * [スタック](api-reference/stacks/README.md)
