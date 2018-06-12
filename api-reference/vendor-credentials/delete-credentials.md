@@ -1,4 +1,4 @@
-# Delete credentials
+# 認証情報の削除
 
 ```text
 DELETE /v2/credentials/{vendor}

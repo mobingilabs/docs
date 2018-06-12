@@ -36,5 +36,5 @@
 * [ベンダー認証情報](api-reference/vendor-credentials/README.md)
   * [認証情報の取得](api-reference/vendor-credentials/list-credentials.md)
   * [認証情報の保存](api-reference/vendor-credentials/save-credentials.md)
-  * [Delete credentials](api-reference/vendor-credentials/delete-credentials.md)
+  * [認証情報の削除](api-reference/vendor-credentials/delete-credentials.md)
 
