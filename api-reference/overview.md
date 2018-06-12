@@ -1,23 +1,23 @@
-# Overview
+# APIレファレンス
 
 {% hint style="info" %}
-Mobingi API is organized around REST.   
-Our API has predictable, resource-oriented URLs. We support CORS \(Cross-Origin Resource Sharing\), allowing you to interact securely with our API.
+Mobingi API はRESTの原則に則って構築されています。   
+Mobingi API は予測しやすく、リソース志向のURLを持ちます。CORS \(Cross-Origin Resource Sharing\)もサポートしており、安全にAPIを利用できます。
 {% endhint %}
 
-## Endpoint
+## エンドポイント
 
 [https://api.mobingi.com](https://api.mobingi.com) 
 
-## Version
+## バージョニング
 
-The current available API version is `v2` only.
+現在有効なAPIバージョンは`v2`のみです。
 
-## OAuth authentication
+## OAuth 認証
 
-In order to interact with the API, your application must authenticate. Mobingi API handles this through **OAuth**. An OAuth token functions as a complete authentication request. In effect, it acts as a substitute for a username and password pair.
+Mobingi APIは **OAuth** によるアプリケーションの認証が必要です。OAuth認証により取得したトークンはユーザー名・パスワードの代替となる働きをします。
 
-To get an OAuth token, make a POST request to:
+OAuthトークンを取得するために下記のPOSTリクエストを実行してください。
 
 ```text
 POST /v2/access_token
@@ -27,7 +27,7 @@ POST /v2/access_token
 | --- | --- | --- | --- |
 | client\_id | string | yes |  |
 | client\_secret | string | yes |  |
-| grant\_type | string | yes | This value is always `client_credentials` |
+| grant\_type | string | yes | この値は常に`client_credentials` |
 
 Example Request:
 
@@ -37,7 +37,7 @@ curl -X POST https://api.mobingi.com/v2/access_token \
 -d '{"grant_type":"client_credentials","client_id":"lg-5447826c870e7-xBV0OSJEN-tm","client_secret":"sFVYDoe08fxPjNgYvauYGOYCeXbOTE","grant_type":"client_credentials"}'
 ```
 
-You can then start making API requests by passing the `access_token` value to the **Authorization** header.
+`access_token` 値を _Authorization_ のヘッダーに渡すことでAPIリクエストの作成が開始できます。
 
 ```text
 Authorization: Bearer eyJ0eXAiOiJQiLCJhbGciOMeXzQfME...

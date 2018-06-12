@@ -20,7 +20,7 @@
 
 ## API Reference
 
-* [Overview](api-reference/overview.md)
+* [APIレファレンス](api-reference/overview.md)
 * [Stacks](api-reference/stacks/README.md)
   * [List stacks](api-reference/stacks/list-stacks.md)
   * [Create stack](api-reference/stacks/create-stack.md)
