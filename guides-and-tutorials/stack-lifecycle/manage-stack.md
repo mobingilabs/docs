@@ -1,6 +1,6 @@
 # スタックの管理
 
-## [アプリケーションスタックを管理する](https://docs.mobingi.com/official/guide/jp/manage#sec1)
+## アプリケーションスタックを管理する
 
 mobingi ALMはアプリケーションスタックの作成のみでなく、運用に役立つ様々な機能が備わっています。メニューの『スタック一覧』--&gt; 対象のスタック --&gt; インスタンスID をクリックするとインスタンスの情報が表示されます。
 
@@ -12,56 +12,62 @@ mobingi ALMはアプリケーションスタックの作成のみでなく、運
 
 ![](../../.gitbook/assets/scaling_serverjp.png)
 
-## Deploy code from Git repository
+## Gitリポジトリからコードデプロイ
 
-Deploy code is deadly fast. Click Code tab, then setup below.
+コードのデプロイはすばやく簡単に行えます。メニューの全てのスタックをクリック、コードタブをクリックし以下を設定します。
 
-* Enter Repo name [\(What is Repo name?\)](https://docs.mobingi.com/official/guide/reponame/jp)
-* Branch name.
-* If it's a Private repo, need to put Secret key [\(Hot to create Deploy key?\)](https://docs.mobingi.com/official/faq/deploykey/jp)
-* If you don't use GitHub, you can upload files from "Upload".
+* リポジトリ名を入力します \(フォーマット\)
+* ブランチ名を入力します
+* プライベートGitリポジトリの場合は秘密鍵を指定します\([方法](https://docs.mobingi.com/official/others/jp/deploykey)\)
+* GitHub以外を利用する場合は、Uploadよりファイルをアップロードします。
 
-![](../../.gitbook/assets/code_1.png)
+![](../../.gitbook/assets/code_1jp.png)
 
-After Successfully connecting, by typing "git push" the code will automatically affect to every server in that stack.
+コードのデプロイはサブユーザーのみ可能です。メインユーザーをご利用の方は表示ボタンよりサブユーザーを作成し、ログイン後Github接続がご利用いただけます。
+
+![](../../.gitbook/assets/add_userjp.png)
+
+接続が完了すればターミナルからのgit pushでスタック内の全サーバーに自動で変更が適用されます。
 
 ![](../../.gitbook/assets/git-_push.png)
 
-## Monitoring
+## 監視
 
-Mobingi Enterprise has so many useful features which help customers' operation. By clicking『List My Stacks』--&gt;『Monitoring』tab, you can check the detail information of each instance.
+mobingi ALMは１つのダッシュボードに様々な機能が備わっています。   
+『スタック一覧』--&gt;『監視』タブでインスタンスごとの必要情報が閲覧できます。
 
-![](../../.gitbook/assets/monitoring1.png)
+![](../../.gitbook/assets/monitoring1jp.png)
 
-## Logs
+## ログ
 
-You can get Machine logs through Mobingi which is very good for auditing. Click『List My Stacks』--&gt;『Logging』tab, then you can check Realtime Log and downloadable Lifetime Logs as well. The Lifetime Logs will be stored from the moment you deploy applications.
+監査などに役立つマシンログもクリックで取得できます。   
+『スタック一覧』--&gt;『ログ』タブでインスタンスごとの豊富な種類のリアルタイムのログが閲覧できます。
 
-![](../../.gitbook/assets/log1.png)
+![](../../.gitbook/assets/log1jp.png)
 
-## Activity
+## 履歴
 
-Manager can see which user did what from『List My Stacks』--&gt;『Activity』.
+『スタック一覧』--&gt;『履歴』タブでどのユーザーが何をしたか、時系列ごとに閲覧が可能です。
 
-![](../../.gitbook/assets/activity.png)
+![](../../.gitbook/assets/activityjp.png)
 
-## Settings
+## 設定
 
-About detail setting, you can change from『List My Stacks』--&gt;『Setting』.
+『スタック一覧』--&gt;『設定』タブから各種設定が可能です。
 
-![](../../.gitbook/assets/stack_setting1.png)
+![](../../.gitbook/assets/stack_setting1jp.png)
 
-You can live update Environment Variables and keypairs. Also easily save application stacks' configurations.
+環境変数やキーペアのリアルタイムでの追加、更にはアプリケーションスタックの設定が保存できます。
 
-![](../../.gitbook/assets/stack_setting2.png)
+![](../../.gitbook/assets/stack_setting2jp.png)
 
-By clicking once, you can launch new stacks with saved configurations.
+保存済みの設定を利用し新しいスタックをワンクリックで作成できます。
 
-![](../../.gitbook/assets/stack_setting3.png)
+![](../../.gitbook/assets/stack_setting3jp.png)
 
-![](../../.gitbook/assets/stack_setting4.png)
+![](../../.gitbook/assets/stack_setting4jp.png)
 
-If you want to delete application, just click『Delete Application』.
+アプリケーション環境を削除する場合は、『削除する』をクリックすることで削除できます。
 
-![](../../.gitbook/assets/delete.png)
+![](../../.gitbook/assets/deletejp.png)
 
