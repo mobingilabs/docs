@@ -6,13 +6,21 @@
 
 **Reserved key name, not supported yet.**
 
-**Note:** Currently, a new VPC will be created with every Alm-template execution and the default VPC has a fixed cidr range of **10.0.0.0/16** and you cannot customize it at the moment, so when you specifying your subnets please make sure the cidr setting for your subnets are sitting within the VPC cidr range.
+{% tabs %}
+{% tab title="AWS" %}
+**Note:** Currently, a new VPC will be created with every ALM Template execution and the default VPC has a fixed CIDR range of **10.0.0.0/16** and you cannot customize it at the moment, so when you specifying your subnets please make sure the CIDR setting for your subnets are sitting within the VPC CIDR range.
+{% endtab %}
+
+{% tab title="GCP" %}
+TBD
+{% endtab %}
+{% endtabs %}
 
 ### availability\_zone {#availability_zone}
 
 The availability zone of which the stack deploys to.
 
-| Type | Example Value | Required | Supported Platforms |
+| **Type** | **Example Value** | **Required** | **Supported Platforms** |
 | :--- | :--- | :--- | :--- |
 | string | us-east-1 | Yes | AWS AliCloudAzure  K5 |
 
