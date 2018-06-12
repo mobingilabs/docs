@@ -4,7 +4,7 @@
 
 ### vpc\_id {#vpc_id}
 
-**Reserved key name, not supported yet.**
+Reserved key name, not supported yet.
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -12,11 +12,7 @@
 {% endtab %}
 
 {% tab title="GCP" %}
-At the moment, all deployments use the region's default public network.
-
-| **Region** | **CIDR** |
-| :--- | :--- | :--- | :--- |
-| asia-northeast1 | 10.146.0.0/20 |
+At the moment, all deployments use the region's default public network. For GCP's predefined network ranges, you can refer to this [page](https://cloud.google.com/vpc/docs/vpc#ip-ranges).
 {% endtab %}
 {% endtabs %}
 
