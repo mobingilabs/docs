@@ -4,7 +4,7 @@
 
 ALM Agent includes the following prerequisites.
 
-| **REQUIREMENT** |                                                        **DESCRIPTION** |
+| **REQUIREMENT** | **DESCRIPTION** |
 | --- | --- |
 | _Supported Operating System_ | Instances must run on a supported version of Linux.   `Amazon Linux 2016.09` or later, `Ubuntu Server 14.04 LTS` or later, `CentOS7` or later, `Red Hat Enterprise Linux(RHEL) 7` or later. |
 | _Internet Access_ | If your server configuration design requires services to access the public Internet \(_e.g. GitHub, DockerHub, etc.._\), verify that your instances have outbound Internet access first. |
@@ -24,9 +24,9 @@ Download and install from a precompiled binary is the recommended option.
 
 ### _**Using a precompiled binarys**_
 
-ALM-agent is distributed as a binary package. To install ALM-agent, you can download it from this [link](https://download.labs.mobingi.com/alm-agent/master/current/alm-agent.tgz).
+ALM Agent is distributed as a binary package. To install ALM Agent, you can download it from this [link](https://download.labs.mobingi.com/alm-agent/master/current/alm-agent.tgz).
 
-ALM-agent is packaged as a tgz archive. After downloading ALM-agent, untgz the package. ALM-agent runs as a single binary named `alm-agent`.
+ALM Agent is packaged as a tgz archive. After downloading ALM Agent, untgz the package. ALM Agent runs as a single binary named `alm-agent`.
 
 ```bash
 $ mkdir -p /opt/mobingi/alm-agent /opt/mobingi/etc
