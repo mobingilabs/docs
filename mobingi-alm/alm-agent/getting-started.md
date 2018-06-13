@@ -4,12 +4,12 @@
 
 ALM Agent includes the following prerequisites.
 
-| Requirement | Description |
+| **REQUIREMENT** |                                                        **DESCRIPTION** |
 | --- | --- |
-| Supported Operating System | Instances must run on a supported version of Linux.   Amazon Linux 2016.09 or later, Ubuntu Server 14.04 LTS or later, CentOS7 or later, Red Hat Enterprise Linux\(RHEL\) 7 or later. |
-| Internet Access | If your server configuration design requires services to access the public Internet \(e.g. GitHub, DockerHub, etc..\), verify that your instances have outbound Internet access first. |
-| Docker | Instances should have Docker installed. |
-| Git | Instances should have Git installed. |
+| _Supported Operating System_ | Instances must run on a supported version of Linux.   `Amazon Linux 2016.09` or later, `Ubuntu Server 14.04 LTS` or later, `CentOS7` or later, `Red Hat Enterprise Linux(RHEL) 7` or later. |
+| _Internet Access_ | If your server configuration design requires services to access the public Internet \(_e.g. GitHub, DockerHub, etc.._\), verify that your instances have outbound Internet access first. |
+| _Docker_ | Instances should have Docker installed. |
+| _Git_ | Instances should have Git installed. |
 
 ## Install ALM agent {#install-alm-agent}
 
