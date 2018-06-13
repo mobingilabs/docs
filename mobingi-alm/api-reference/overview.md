@@ -5,8 +5,7 @@ Mobingi API is organized around REST. Our API has predictable, resource-oriented
 ## Endpoint
 
 ```text
-
-
+https://api.mobingi.com
 ```
 
 ## Version
@@ -17,7 +16,7 @@ The current supported API version is `v3`.
 
 In order to interact with the API, your application must authenticate. Mobingi API handles this through **OAuth**. An OAuth token functions as a complete authentication request. In effect, it acts as a substitute for a username and password pair.
 
-{% api-method method="post" host="" path="/v3/access\_token" %}
+{% api-method method="post" host="endpoint" path="/v3/access\_token" %}
 {% api-method-summary %}
 OAuth authentication
 {% endapi-method-summary %}
