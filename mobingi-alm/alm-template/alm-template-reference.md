@@ -21,9 +21,6 @@ The availability zone of which the stack deploys to.
 You must specify this value in your Alm-template.
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_availability_zone)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_availability_zone)
-* [K5](alm-template-reference.md#k5)
 
 {% tabs %}
 {% tab title="AWS" %}
