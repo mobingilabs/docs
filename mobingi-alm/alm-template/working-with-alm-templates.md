@@ -63,8 +63,6 @@ The configurations of the stack which ALM Template is about to deploy. In the co
 
 Below is a tree view of all possible components within an ALM Template. The following structure is not a working demo template, but rather to explain all possible key names that may contain in the template body. For ALM Template examples, please refer to [Example ALM Templates](https://docs.mobingi.com/mobingi-alm/alm-template/example-alm-templates).
 
-![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.53.12.png)
-
 ```yaml
 version: string
 label: string
@@ -75,5 +73,33 @@ vendor: object
   gcp: object
   alicloud: object
   k5: object
+configurations: array of objects
+  role: string
+  flag: string
+  provision: object
+    vpc_id: string
+    availability_zone: string
+    instance_type: string
+    image: string
+    instance_count: number
+    volume_type: string
+    volume_size: number
+    keypair: boolean
+    subnet: object
+    security_group: object
+    network_acl: object
+    load_balancer: object
+    auto_scaling: object
+  container: object
+    container_image: string
+    container_registry_username: string
+    container_registry_password: string
+    container_code_dir: string
+    container_code_repo: string
+    container_git_reference: string
+    container_git_private_key: string
+    container_ports: array of numbers
+    container_users: object
+    container_env_vars: object
 ```
 
