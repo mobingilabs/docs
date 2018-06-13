@@ -37,10 +37,14 @@ GLOBAL OPTIONS:
 
 ## Global Options {#global-options}
 
-* `--autoupdate, -U` - Before running, ALM-agent checks the new version and updates the agent itself if there is a new version. \(self-update\)
-* `--disablereport, -N` - We are using rollbar for error monitoring. If you do not want to send crash report to rollbar, please use this option.
-* `--provider Provider, -P Provider` - set Provider \(default: "aws", available providers: "aws", "alicloud", "k5", "localtest"\)
-* `--verbose, -V` - show debug logs
-* `--help, -h` - show help
-* `--version, -v` - print the version
+* _--autoupdate,  -U_   Before running, ALM-agent checks the new version and updates the agent itself  if there is a new version. \(self-update\) 
+* _--disablereport, -N_  We are using rollbar for error monitoring. If you do not want to send crash report to rollbar,   use this option. 
+* _--provider Provider, -P Provider_  set Provider \(default: "aws", available providers: "aws", "alicloud", "k5", "localtest"\) 
+* _--verbose, -V_  show debug logs 
+* _--help, -h_  show help 
+* _--version, -v_  print the version
+
+
+
+                   
 
