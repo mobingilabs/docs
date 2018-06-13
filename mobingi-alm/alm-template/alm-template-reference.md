@@ -155,24 +155,6 @@ At the moment, all deployments use the region's default public network. For GCP'
 {% endtab %}
 {% endtabs %}
 
-This section hasn't been fully covered by documentation.
-
-```text
-    "availability_zone": "ap-northeast-1"
-```
-
-This section hasn't been fully covered by documentation.
-
-```text
-        "availability_zone": "ap-northeast-1"
-```
-
-This section hasn't been fully covered by documentation.
-
-```text
-    "availability_zone": "jp-east-1"
-```
-
 ### instance\_type {#instance_type}
 
 The type of instances \(VMs\).
@@ -186,11 +168,8 @@ If you don't specify this declarative, the default values will be applied for ea
 See below for default values.
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_instance_type)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_instance_type)
-* [K5](alm-template-reference.md#k5_instance_type)
 
-  Default: t2.micro
+Default: t2.micro
 
 ```text
     "instance_type": "t2.micro"
