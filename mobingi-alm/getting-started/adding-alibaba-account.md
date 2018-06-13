@@ -27,7 +27,9 @@ Attach the previously created policy to the RAM user:
 
 ![](../../.gitbook/assets/attach-ram-policy.png)
 
-
+**Step 3**: Create an access key and enter it on ALM.
 
 ![](../../.gitbook/assets/ram-access-key.png)
+
+![](../../.gitbook/assets/setup-alibaba-credentials.png)
 
