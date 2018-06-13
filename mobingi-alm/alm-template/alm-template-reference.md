@@ -104,7 +104,7 @@ Below are the valid availability zones for each regions on AWS.
 
 Below are the valid availability zones for Azure.
 
-```text
+```c
 AustraliaEast
 AustraliaSoutheast
 BrazilSouth
