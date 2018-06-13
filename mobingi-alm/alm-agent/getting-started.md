@@ -18,7 +18,9 @@ There are two ways to installing ALM Agent:
 1. Using a precompiled binary
 2. Installing from source
 
+{% hint style="info" %}
 Download and install from a precompiled binary is the recommended option.
+{% endhint %}
 
 ### _**Using a precompiled binarys**_
 
