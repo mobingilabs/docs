@@ -810,8 +810,13 @@ Attach a role to a user.
 
 **Flags**
 
-* `--user` - The subuser name to attach the role to.
-* `--role-id` - The role id to attach.
+* `--user`
+
+  The subuser name to attach the role to.
+
+* `--role-id`
+
+  The role id to attach.
 
 Example:
 
@@ -830,7 +835,9 @@ Delete a role.
 
 **Flags**
 
-* `--role-id` - The role id to delete. You can get the role id from the _describe_ command.
+* `--role-id` 
+
+  The role id to delete. You can get the role id from the _describe_ command.
 
 ### svrconf show {#svrconf-show}
 
@@ -838,7 +845,9 @@ Show a stack's serverconfig \(server configuration\) contents. Starting from v3,
 
 **Flags**
 
-* `--id` - The stack id to query.
+* `--id` 
+
+  The stack id to query.
 
 Example:
 
@@ -852,9 +861,14 @@ Update a stack's serverconfig \(server configuration\).
 
 **Flags**
 
-* `--id` - The stack id to update.
-* `--env` - A comma-separated key/value pair\(s\) for environment variables. If you have whitespaces in the input, enclose it with double quotes. You can also set this flag to "null" to clear all environment variables.
-* `--filepath` - New filepath value if you want to update your filepath.
+* `--id` 
+
+  The stack id to update.  
+
+* `--env`  A comma-separated key/value pair\(s\) for environment variables. If you have whitespaces in the input, enclose it with double quotes. You can also set this flag to "null" to clear all environment variables. 
+* `--filepath`
+
+  New filepath value if you want to update your filepath.
 
 Examples:
 
@@ -875,7 +889,9 @@ List vendor credentials.
 
 **Flags**
 
-* `--vendor` - The vendor to list credentials. Valid values: _aws_, _alicloud_. Default value is _aws_.
+* `--vendor` 
+
+  The vendor to list credentials. Valid values: _aws_, _alicloud_. Default value is _aws_.
 
 Examples:
 
@@ -895,10 +911,21 @@ Registry related commands will use the login user/password credentials, if nativ
 
 **Flags**
 
-* `--username` - Username \(Mobingi account subuser\)
-* `--password` - Password \(Mobingi account subuser\)
-* `--service` - Authentication service. By default, this is set to "Mobingi Docker Registry".
-* `--scope` - Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.
+* `--username`
+
+  Username \(Mobingi account subuser\)  
+
+* `--password` 
+
+  Password \(Mobingi account subuser\)  
+
+* `--service` 
+
+   Authentication service. By default, this is set to "Mobingi Docker Registry".  
+
+* `--scope` 
+
+  Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.
 
 Examples:
 
@@ -920,11 +947,25 @@ List image tags.
 
 **Flags**
 
-* `--username` - Username \(Mobingi account subuser\)
-* `--password` - Password \(Mobingi account subuser\)
-* `--service` - Authentication service. By default, this is set to "Mobingi Docker Registry".
-* `--scope` - Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.
-* `--image` - Image name to list.
+* `--username` 
+
+  Username \(Mobingi account subuser\)  
+
+* `--password`
+
+  Password \(Mobingi account subuser\)  
+
+* `--service`
+
+  Authentication service. By default, this is set to "Mobingi Docker Registry".  
+
+* `--scope`
+
+  Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.  
+
+* `--image`
+
+  Image name to list.
 
 Example:
 
@@ -941,11 +982,25 @@ Display a tag's manifest.
 
 **Flags**
 
-* `--username` - Username \(Mobingi account subuser\)
-* `--password` - Password \(Mobingi account subuser\)
-* `--service` - Authentication service. By default, this is set to "Mobingi Docker Registry".
-* `--scope` - Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.
-* `--image` - Image tag to query. Format is _image:tag_.
+* `--username`
+
+  Username \(Mobingi account subuser\)  
+
+* `--password`
+
+  Password \(Mobingi account subuser\)  
+
+* `--service`
+
+  Authentication service. By default, this is set to "Mobingi Docker Registry".  
+
+* `--scope`
+
+  Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.  
+
+* `--image`
+
+  Image tag to query. Format is _image:tag_.
 
 Example:
 
@@ -989,11 +1044,25 @@ Delete a tag.
 
 **Flags**
 
-* `--username` - Username \(Mobingi account subuser\)
-* `--password` - Password \(Mobingi account subuser\)
-* `--service` - Authentication service. By default, this is set to "Mobingi Docker Registry".
-* `--scope` - Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.
-* `--image` - Image tag to query. Format is _image:tag_.
+* `--username` 
+
+  Username \(Mobingi account subuser\)  
+
+* `--password`
+
+  Password \(Mobingi account subuser\)  
+
+* `--service`
+
+  Authentication service. By default, this is set to "Mobingi Docker Registry".  
+
+* `--scope`
+
+  Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.  
+
+* `--image`
+
+  Image tag to query. Format is _image:tag_.
 
 Example:
 
@@ -1008,10 +1077,21 @@ Get an access token for Mobingi Docker Registry access.
 
 **Flags**
 
-* `--username` - Username \(Mobingi account subuser\)
-* `--password` - Password \(Mobingi account subuser\)
-* `--service` - Authentication service. By default, this is set to "Mobingi Docker Registry".
-* `--scope` - Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.
+* `--username`
+
+  Username \(Mobingi account subuser\)  
+
+* `--password`
+
+  Password \(Mobingi account subuser\)  
+
+* `--service` 
+
+  Authentication service. By default, this is set to "Mobingi Docker Registry".  
+
+* `--scope`
+
+  Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.
 
 Example:
 
