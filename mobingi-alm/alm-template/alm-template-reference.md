@@ -11,26 +11,7 @@ Reserved key name, not supported yet.
 {% endhint %}
 
 {% tabs %}
-{% tab title="GCP" %}
-At the moment, all deployments use the region's default public network. For GCP's predefined network ranges, you can refer to this [page](https://cloud.google.com/vpc/docs/vpc#ip-ranges).
-{% endtab %}
-{% endtabs %}
-
-### availability\_zone {#availability_zone}
-
-The availability zone of which the stack deploys to.
-
-| **Type** | **Example Value** | **Required** | **Supported Platforms** |
-| :--- | :--- | :--- | :--- |
-| string | us-east-1 | Yes | AWS AliCloudAzure  K5 |
-
-You must specify this value in your Alm-template.
-
-* **Valid Values**
-* [AWS](alm-template-reference.md#aws_availability_zone)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_availability_zone)
-* [K5](alm-template-reference.md#k5)
-
+{% tab title="AWS" %}
 ```text
     "availability_zone": "ap-northeast-1c"
 ```
@@ -102,6 +83,27 @@ Below are the valid availability zones for each regions on AWS.
     sa-east-1b
     sa-east-1c
 ```
+{% endtab %}
+{% tab title="GCP" %}
+At the moment, all deployments use the region's default public network. For GCP's predefined network ranges, you can refer to this [page](https://cloud.google.com/vpc/docs/vpc#ip-ranges).
+{% endtab %}
+{% endtabs %}
+
+### availability\_zone {#availability_zone}
+
+The availability zone of which the stack deploys to.
+
+| **Type** | **Example Value** | **Required** | **Supported Platforms** |
+| :--- | :--- | :--- | :--- |
+| string | us-east-1 | Yes | AWS AliCloudAzure  K5 |
+
+You must specify this value in your Alm-template.
+
+* **Valid Values**
+* [AWS](alm-template-reference.md#aws_availability_zone)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_availability_zone)
+* [K5](alm-template-reference.md#k5)
+
 
 This section hasn't been fully covered by documentation.
 
