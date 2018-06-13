@@ -17,5 +17,5 @@ Make sure to check "Furnish a new private key" with JSON as option. You will be 
 
 Now go to ALM's "General Settings" menu and go "Setup Credentials". Select GCP and fill up the required fields. Under "Service Account" field, copy and paste all the contents of the Service Account JSON file you created from the previous steps.
 
-![](../../.gitbook/assets/addgcpcred%20%281%29.png)
+![](../../.gitbook/assets/addgcpcred.png)
 
