@@ -6,11 +6,11 @@
 
 Reserved key name, not supported yet.
 
-{% tabs %}
-{% tab title="AWS" %}
+{% hint style="info" %}
 **Note:** Currently, a new VPC will be created with every ALM Template execution and the default VPC has a fixed CIDR range of **10.0.0.0/16** and you cannot customize it at the moment, so when you specifying your subnets please make sure the CIDR setting for your subnets are sitting within the VPC CIDR range.
-{% endtab %}
+{% endhint %}
 
+{% tabs %}
 {% tab title="GCP" %}
 At the moment, all deployments use the region's default public network. For GCP's predefined network ranges, you can refer to this [page](https://cloud.google.com/vpc/docs/vpc#ip-ranges).
 {% endtab %}
@@ -27,19 +27,17 @@ The availability zone of which the stack deploys to.
 You must specify this value in your Alm-template.
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_availability_zone)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_availability_zone)
-*  [K5](alm-template-reference.md#k5)
+* [AWS](alm-template-reference.md#aws_availability_zone)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_availability_zone)
+* [K5](alm-template-reference.md#k5)
 
 ```text
-
     "availability_zone": "ap-northeast-1c"
 ```
 
- Below are the valid availability zones for each regions on AWS.
+Below are the valid availability zones for each regions on AWS.
 
 ```text
-
     (North Virginia)
     us-east-1a
     us-east-1b
@@ -105,24 +103,21 @@ You must specify this value in your Alm-template.
     sa-east-1c
 ```
 
- This section hasn't been fully covered by documentation.
+This section hasn't been fully covered by documentation.
 
 ```text
-
     "availability_zone": "ap-northeast-1"
 ```
 
- This section hasn't been fully covered by documentation.
+This section hasn't been fully covered by documentation.
 
 ```text
-
         "availability_zone": "ap-northeast-1"
 ```
 
- This section hasn't been fully covered by documentation.
+This section hasn't been fully covered by documentation.
 
 ```text
-
     "availability_zone": "jp-east-1"
 ```
 
@@ -139,21 +134,19 @@ If you don't specify this declarative, the default values will be applied for ea
 See below for default values.
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_instance_type)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_instance_type)
-*  [K5](alm-template-reference.md#k5_instance_type)
+* [AWS](alm-template-reference.md#aws_instance_type)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_instance_type)
+* [K5](alm-template-reference.md#k5_instance_type)
 
- Default: t2.micro
+  Default: t2.micro
 
 ```text
-
     "instance_type": "t2.micro"
 ```
 
- Below are the valid instance types for AWS.
+Below are the valid instance types for AWS.
 
 ```text
-
     t2.nano
     t2.micro [default]
     t2.small
@@ -229,17 +222,15 @@ See below for default values.
     d2.8xlarge
 ```
 
- Default: xn4.small.
+Default: xn4.small.
 
 ```text
-
     "instance_type": "xn4.small"
 ```
 
- Default: 1101.
+Default: 1101.
 
 ```text
-
     "instance_type": "1101"
 ```
 
@@ -253,31 +244,28 @@ The machine image \(id\) used to launch the instance.
 
 Default values will be applied for each cloud platform \(see below for default values\). However, you can also specify this value for launching with a customized machine image.
 
- Note: If you specify this value and also specify the [container](https://learn.mobingi.com/alm-templates-reference#container) section in the Alm-template to take the advantage of application lifecycle management, you need to make sure the base machine image operating system supports Alm-agent installation. For supported operating systems by Alm-agent, please refer to [this guide](https://learn.mobingi.com/alm-agent/getting-started#prerequisites).
+Note: If you specify this value and also specify the [container](https://learn.mobingi.com/alm-templates-reference#container) section in the Alm-template to take the advantage of application lifecycle management, you need to make sure the base machine image operating system supports Alm-agent installation. For supported operating systems by Alm-agent, please refer to [this guide](https://learn.mobingi.com/alm-agent/getting-started#prerequisites).
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_image)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_image)
-*  [K5](alm-template-reference.md#k5_image)
+* [AWS](alm-template-reference.md#aws_image)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_image)
+* [K5](alm-template-reference.md#k5_image)
 
- Below is also the default value for AWS.
+  Below is also the default value for AWS.
 
 ```text
-
     "image": "ami-2a69be4c"
 ```
 
- Below is also the default value for Alibaba Cloud.
+Below is also the default value for Alibaba Cloud.
 
 ```text
-
     "image": "centos_7_03_64_40G_alibase_20170710.vhd"
 ```
 
- Below is also the default value for K5.
+Below is also the default value for K5.
 
 ```text
-
     "image": "58fd966f-b055-4cd0-9012-cf6af7a4c32b"
 ```
 
@@ -292,22 +280,19 @@ Number of instances \(VMs\) to provision.
 If you don't specify this declarative, the default value of _1_ will be applied.
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_instance_count)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_instance_count)
-*  [K5](alm-template-reference.md#k5_instance_count)
+* [AWS](alm-template-reference.md#aws_instance_count)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_instance_count)
+* [K5](alm-template-reference.md#k5_instance_count)
 
 ```text
-
     "instance_count": 1
 ```
 
 ```text
-
     "instance_count": 1
 ```
 
 ```text
-
     "instance_count": 1
 ```
 
@@ -320,14 +305,13 @@ The volume type of instance.
 | string | standard | No | AWS AliCloud K5 |
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_volume_type)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_volume_type)
-*  [K5](alm-template-reference.md#k5_volume_type)
+* [AWS](alm-template-reference.md#aws_volume_type)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_volume_type)
+* [K5](alm-template-reference.md#k5_volume_type)
 
- If you don't specify this declarative, the default value of gp2 will be applied.
+  If you don't specify this declarative, the default value of gp2 will be applied.
 
 ```text
-
     gp2 - General Purpose SSD
     io1 - Provisioned IOPS SSD
     st1 - Throughput Optimized HDD
@@ -335,7 +319,7 @@ The volume type of instance.
     standard - Magnetic volumes
 ```
 
- This section hasn't been covered by documentation. This section hasn't been covered by documentation.
+This section hasn't been covered by documentation. This section hasn't been covered by documentation.
 
 ### volume\_size {#volume_size}
 
@@ -346,12 +330,11 @@ The size of the volume, in gibibytes \(GiBs\).
 | string | 50 | No | AWS AliCloud K5 |
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_volume_size)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_volume_size)
-*  [K5](alm-template-reference.md#k5_volume_size)
+* [AWS](alm-template-reference.md#aws_volume_size)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_volume_size)
+* [K5](alm-template-reference.md#k5_volume_size)
 
 ```text
-
     Constraints: 1-16384 for gp2, 4-16384 for io1, 500-16384 for st1, 500-16384 for sc1, and 1-1024 for standard (magnetic disk).
 
     Default volume size in GB for each volume types:
@@ -363,7 +346,7 @@ The size of the volume, in gibibytes \(GiBs\).
     - standard: 50
 ```
 
- This section hasn't been covered by documentation. This section hasn't been covered by documentation.
+This section hasn't been covered by documentation. This section hasn't been covered by documentation.
 
 ### keypair {#keypair}
 
@@ -374,28 +357,25 @@ The ssh key pair used to access instances.
 | boolean | true, false | No | AWS AliCloud K5 |
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_keypair)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_keypair)
-*  [K5](alm-template-reference.md#k5_keypair)
+* [AWS](alm-template-reference.md#aws_keypair)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_keypair)
+* [K5](alm-template-reference.md#k5_keypair)
 
- Example below is also the default settings when deploying to AWS.
+  Example below is also the default settings when deploying to AWS.
 
 ```text
-
     "keypair": true
 ```
 
- Example below is also the default settings when deploying to Alibaba Cloud.
+Example below is also the default settings when deploying to Alibaba Cloud.
 
 ```text
-
     "keypair": true
 ```
 
- Example below is also the default settings when deploying to K5.
+Example below is also the default settings when deploying to K5.
 
 ```text
-
     "keypair": true
 ```
 
@@ -436,14 +416,13 @@ A _subnet_ section contains 3 key names.
   If you set `public` as _false_, then this declarative will be ignored.
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_subnet)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_subnet)
-*  [K5](alm-template-reference.md#k5_subnet)
+* [AWS](alm-template-reference.md#aws_subnet)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_subnet)
+* [K5](alm-template-reference.md#k5_subnet)
 
- Example below is also the default settings when deploying to AWS.
+  Example below is also the default settings when deploying to AWS.
 
 ```text
-
     "subnet": {
         "cidr": "10.0.0.0/24",
         "public": true,
@@ -451,10 +430,9 @@ A _subnet_ section contains 3 key names.
     }
 ```
 
- Example below is also the default settings when deploying to Alibaba Cloud.
+Example below is also the default settings when deploying to Alibaba Cloud.
 
 ```text
-
     "subnet": {
         "cidr": "192.168.199.0/24",
         "public": true,
@@ -462,10 +440,9 @@ A _subnet_ section contains 3 key names.
     }
 ```
 
- Example below is also the default settings when deploying to K5.
+Example below is also the default settings when deploying to K5.
 
 ```text
-
     "subnet": {
         "cidr": "10.1.0.0/24",
         "public": true,
@@ -522,14 +499,13 @@ A _network acl_ section contains a list of network\_acl entry items. Each item c
 For more information about network acl please refer to [AWS Documentation](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_ACLs.html)
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_network_acl)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_network_acl)
-*  [K5](alm-template-reference.md#k5_network_acl)
+* [AWS](alm-template-reference.md#aws_network_acl)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_network_acl)
+* [K5](alm-template-reference.md#k5_network_acl)
 
- Example below is also the default settings when deploying to AWS.
+  Example below is also the default settings when deploying to AWS.
 
 ```text
-
     "network_acl": [
         {
             "rule_number": 100,
@@ -548,7 +524,7 @@ For more information about network acl please refer to [AWS Documentation](http:
     ]
 ```
 
- This section hasn't been covered by documentation. This section hasn't been covered by documentation.
+This section hasn't been covered by documentation. This section hasn't been covered by documentation.
 
 ### security\_group {#security_group}
 
@@ -592,14 +568,13 @@ Each _ingress_ or _egress_ contains the following 4 declarative:
   _Required:_ Yes
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_security_group)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_security_group)
-*  [K5](alm-template-reference.md#k5_security_group)
+* [AWS](alm-template-reference.md#aws_security_group)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_security_group)
+* [K5](alm-template-reference.md#k5_security_group)
 
- Example below is also the default settings when deploying to AWS.
+  Example below is also the default settings when deploying to AWS.
 
 ```text
-
     "security_group": {
         "ingress": [
             {
@@ -632,7 +607,7 @@ Each _ingress_ or _egress_ contains the following 4 declarative:
     }
 ```
 
- This section hasn't been covered by documentation. This section hasn't been covered by documentation.
+This section hasn't been covered by documentation. This section hasn't been covered by documentation.
 
 ### auto\_scaling {#auto_scaling}
 
@@ -701,12 +676,11 @@ The _auto scaling_ section contains the following declarative:
   If you don't specify this declarative, the default value of _360_ will be applied.
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_auto_scaling)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_auto_scaling)
-*  [K5](alm-template-reference.md#k5_auto_scaling)
+* [AWS](alm-template-reference.md#aws_auto_scaling)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_auto_scaling)
+* [K5](alm-template-reference.md#k5_auto_scaling)
 
 ```text
-
     "auto_scaling": {
         "min": 1,
         "max": 1,
@@ -716,7 +690,7 @@ The _auto scaling_ section contains the following declarative:
     }
 ```
 
- This section hasn't been covered by documentation. This section hasn't been covered by documentation.
+This section hasn't been covered by documentation. This section hasn't been covered by documentation.
 
 ### load\_balancer {#load_balancer}
 
@@ -866,12 +840,11 @@ The _load balancer_ section contains the following declarative:
     _Required:_ No
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_load_balancer)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_load_balancer)
-*  [K5](alm-template-reference.md#k5_load_balancer)
+* [AWS](alm-template-reference.md#aws_load_balancer)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_load_balancer)
+* [K5](alm-template-reference.md#k5_load_balancer)
 
 ```text
-
     "load_balancer": {
         "lb_type": "classic",
         "scheme": "internet-facing",
@@ -893,7 +866,7 @@ The _load balancer_ section contains the following declarative:
     }
 ```
 
- This section hasn't been covered by documentation. This section hasn't been covered by documentation.
+This section hasn't been covered by documentation. This section hasn't been covered by documentation.
 
 ### rds {#rds}
 
@@ -942,14 +915,13 @@ The _rds_ section contains the following declarative:
   _Required:_ No
 
 * **Valid Values**
-*  [AWS](alm-template-reference.md#aws_rds)
-*  [Alibaba Cloud](alm-template-reference.md#alicloud_rds)
-*  [K5](alm-template-reference.md#k5_rds)
+* [AWS](alm-template-reference.md#aws_rds)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_rds)
+* [K5](alm-template-reference.md#k5_rds)
 
- Default: db.t2.micro
+  Default: db.t2.micro
 
 ```text
-
     "rds": {
         "db_instance_type": "db.t2.micro",
         "engine": "mysql",
@@ -960,10 +932,9 @@ The _rds_ section contains the following declarative:
     }
 ```
 
- Below are the valid db instance types for AWS.
+Below are the valid db instance types for AWS.
 
 ```text
-
     db.t2.micro [default]
     db.t2.small
     db.t2.medium
@@ -1000,10 +971,9 @@ The _rds_ section contains the following declarative:
     db.m1.xlarge
 ```
 
- Below are the valid engine and version for AWS.
+Below are the valid engine and version for AWS.
 
 ```text
-
     mysql
         - 5.6
         - 5.7
@@ -1012,7 +982,7 @@ The _rds_ section contains the following declarative:
         - 10
 ```
 
- This section hasn't been covered by documentation. This section hasn't been covered by documentation.
+This section hasn't been covered by documentation. This section hasn't been covered by documentation.
 
 ## container {#container}
 
@@ -1093,12 +1063,11 @@ The environment variables to be defined for the container operating system.
 | object | See below | No | Platform Stateless |
 
 * **Valid Values**
-*  [Platform Stateless](alm-template-reference.md#container_demo)
+* [Platform Stateless](alm-template-reference.md#container_demo)
 
- The container section is identical to all platforms. Below is an example container configuration.
+  The container section is identical to all platforms. Below is an example container configuration.
 
 ```text
-
     "container": {
         "container_image": "mobingi/ubuntu-apache2-php7",
         "container_code_dir": "/var/www/html",

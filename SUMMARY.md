@@ -29,7 +29,6 @@
 * [RBAC](mobingi-alm/rbac/README.md)
   * [Overview](mobingi-alm/rbac/overview.md)
   * [What is RBAC?](mobingi-alm/rbac/what-is-rbac.md)
-  * [Getting started](mobingi-alm/rbac/getting-started.md)
 * [CLI Reference](mobingi-alm/cli-reference/README.md)
   * [Mobingi CLI Documentation](mobingi-alm/cli-reference/mobingi-cli-documentation.md)
 
