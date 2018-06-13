@@ -2,9 +2,9 @@
 
 ## register {#register}
 
-Initialize ALM-agent self register and start containers.
+Initialize ALM Agent self register and start containers.
 
-The necessary folders for ALM-agent are created, and if the provider is any value other than `localtest`, cron job will be created. Then, ALM-agent starts the containers.
+The necessary folders for ALM Agent are created, and if the provider is any value other than `localtest`, cron job will be created. Then, ALM Agent starts the containers.
 
 ```bash
 $ alm-agent register -h
