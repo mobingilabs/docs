@@ -275,39 +275,125 @@ Create a stack.
 
 **Flags**
 
-* `--alm-template` - Path to your ALM template. This is required in v3.
-* `--vendor` - Stack vendor. For now, only AWS is supported.
-* `--cred` - Your vendor credential ID. If not set, cli will try to get your list of credentials and use the first one in the list, if not empty.
-* `--region` - Region code. By default, this is set to _ap-northeast-1_ \(Tokyo\).
-* `--nickname` - Your stack's nickname.
-* `--arch` - Stack type. Valid values are: "art\_single", "art\_elb". By default, this is set to "art\_elb".
-* `--type` - Instance type. By default, this is set to _m3.medium_.
-* `--image` - Docker registry path to deploy. If you are using _hub.docker.com_, you can omit the domain part \(ex. _grayltc/lamp_\). Otherwise, specify the full path \(ex. _registry.mobingi.com/wayland/lamp_\). By default, this is set to _mobingi/ubuntu-apache2-php7:7.1_.
-* `--dhub-user` - Your Docker hub username if repository is private.
-* `--dbuh-pass` - Your Docker hub password if repository is private.
-* `--min` - Minimum number of instances in your autoscaling group when --arch is set to art\_elb. By default, this is set to 2.
-* `--max` - Maximum number of instances in your autoscaling group when --arch is set to art\_elb. By default, this is set to 10.
-* `--spot-range` - Percentage of spot instance to deploy to autoscaling group. For example, if you have a total of 20 instances running and your spot range is 50 \(50%\), then there will be a fleet of 10 spot instances and 10 on-demand instances. By default, this is set to 50.
-* `--code` - Your git repository url. This can be updated anytime. By default, this is set to _github.com/mobingilabs/default-site-php_.
-* `--code-ref` - Repository branch. By default, this is set to _master_.
-* `--code-privkey` - Private key if git repository is private.
-* `--usedb` - Set to true if you want to deploy a database.
-* `--dbengine` - Your database engine. Valid values are: "db\_mysql", "db\_postgresql". Requires --usedb flag.
-* `--dbtype` - Database instance/class type. Requires --usedb flag.
-* `--dbstorage` - Database storage in GB. Set between 5 to 6144. Requires --usedb flag.
-* `--dbread-replica1` - Read replica 1. Requires --usedb flag.
-* `--dbread-replica2` - Read replica 2. Requires --usedb flag.
-* `--dbread-replica3` - Read replica 3. Requires --usedb flag.
-* `--dbread-replica4` - Read replica 4. Requires --usedb flag.
-* `--dbread-replica5` - Read replica 5. Requires --usedb flag.
-* `--use-elasticache` - Set to true if you want to use elasticache.
-* `--elasticache-engine` - Either _Redis_ or _Memcached_. Requires --use-elasticache flag.
-* `--elasticache-nodetype` - Elasticache node size. For example, _cache.r3.large_. Requires --use-elasticache flag.
-* `--elasticache-nodecount` - If Redis, range is 1 to 6. If Memcached, range is 1 to 20. Requires --use-elasticache flag.
+* `--alm-template`
+
+  Path to your ALM template. This is required in v3.  
+
+* `--vendor`
+
+  Stack vendor. For now, only AWS is supported.  
+
+* `--cred`
+
+  Your vendor credential ID. If not set, cli will try to get your list of credentials and use the first one in the list, if not empty.  
+
+* `--region`
+
+  Region code. By default, this is set to _ap-northeast-1_ \(Tokyo\).  
+
+* `--nickname` 
+
+  Your stack's nickname.  
+
+* `--arch`
+
+  Stack type. Valid values are: "art\_single", "art\_elb". By default, this is set to "art\_elb".  
+
+* `--type` 
+
+  Instance type. By default, this is set to _m3.medium_.  
+
+* `--image`
+
+  Docker registry path to deploy. If you are using _hub.docker.com_, you can omit the domain part \(ex. _grayltc/lamp_\). Otherwise, specify the full path \(ex. _registry.mobingi.com/wayland/lamp_\). By default, this is set to _mobingi/ubuntu-apache2-php7:7.1_.  
+
+* `--dhub-user`
+
+  Your Docker hub username if repository is private.  
+
+* `--dbuh-pass`
+
+  Your Docker hub password if repository is private.  
+
+* `--min`
+
+  Minimum number of instances in your autoscaling group when --arch is set to art\_elb. By default, this is set to 2.  
+
+* `--max` 
+
+  Maximum number of instances in your autoscaling group when --arch is set to art\_elb. By default, this is set to 10.  
+
+* `--spot-range` 
+
+  Percentage of spot instance to deploy to autoscaling group. For example, if you have a total of 20 instances running and your spot range is 50 \(50%\), then there will be a fleet of 10 spot instances and 10 on-demand instances. By default, this is set to 50.  
+
+* `--code`
+
+  Your git repository url. This can be updated anytime. By default, this is set to _github.com/mobingilabs/default-site-php_.  
+
+* `--code-ref` 
+
+  Repository branch. By default, this is set to _master_.  
+
+* `--code-privkey`
+
+  Private key if git repository is private.  
+
+* `--usedb`
+
+  Set to true if you want to deploy a database.  
+
+* `--dbengine`
+
+  Your database engine. Valid values are: "db\_mysql", "db\_postgresql". Requires --usedb flag.  
+
+* `--dbtype`
+
+  Database instance/class type. Requires --usedb flag.  
+
+* `--dbstorage`
+
+  Database storage in GB. Set between 5 to 6144. Requires --usedb flag.  
+
+* `--dbread-replica1`
+
+  Read replica 1. Requires --usedb flag.  
+
+* `--dbread-replica2` 
+
+  Read replica 2. Requires --usedb flag.  
+
+* `--dbread-replica3` 
+
+  Read replica 3. Requires --usedb flag.  
+
+* `--dbread-replica4`
+
+  Read replica 4. Requires --usedb flag.  
+
+* `--dbread-replica5` 
+
+  Read replica 5. Requires --usedb flag.  
+
+* `--use-elasticache`
+
+  Set to true if you want to use elasticache.  
+
+* `--elasticache-engine` 
+
+  Either _Redis_ or _Memcached_. Requires --use-elasticache flag.  
+
+* `--elasticache-nodetype`
+
+  Elasticache node size. For example, _cache.r3.large_. Requires --use-elasticache flag.  
+
+* `--elasticache-nodecount` 
+
+  If Redis, range is 1 to 6. If Memcached, range is 1 to 20. Requires --use-elasticache flag.
 
 **API v3**
 
-Starting in v3, we create stacks using ALM templates. Below is an example of a very simple template that creates a single EC2 instance:
+Starting in v3, we create stacks using ALM Templates. Below is an example of a very simple template that creates a single EC2 instance:
 
 ```bash
 {
