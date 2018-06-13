@@ -4,7 +4,9 @@
 
 ALM Template is designed in JSON format. You can also write your template in YAML format and then convert it into JSON file when you deploy your stacks on ALM UI \(or through CLI, or API\).
 
-_Official YAML format support is in-progress._
+{% hint style="info" %}
+Official YAML format support is in-progress.
+{% endhint %}
 
 ## ALM Template components {#template-components}
 
