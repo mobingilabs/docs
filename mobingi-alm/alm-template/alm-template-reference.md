@@ -10,6 +10,21 @@ Reserved key name, not supported yet.
 **Note:** Currently, a new VPC will be created with every ALM Template execution and the default VPC has a fixed CIDR range of **10.0.0.0/16** and you cannot customize it at the moment, so when you specifying your subnets please make sure the CIDR setting for your subnets are sitting within the VPC CIDR range.
 {% endhint %}
 
+### availability\_zone {#availability_zone}
+
+The availability zone of which the stack deploys to.
+
+| **Type** | **Example Value** | **Required** | **Supported Platforms** |
+| :--- | :--- | :--- | :--- |
+| string | us-east-1 | Yes | AWS AliCloudAzure  K5 |
+
+You must specify this value in your Alm-template.
+
+* **Valid Values**
+* [AWS](alm-template-reference.md#aws_availability_zone)
+* [Alibaba Cloud](alm-template-reference.md#alicloud_availability_zone)
+* [K5](alm-template-reference.md#k5)
+
 {% tabs %}
 {% tab title="AWS" %}
 ```text
@@ -85,25 +100,18 @@ Below are the valid availability zones for each regions on AWS.
 ```
 {% endtab %}
 
+{% tab title="ALIBABA CLOUD" %}
+
+{% endtab %}
+
 {% tab title="GCP" %}
 At the moment, all deployments use the region's default public network. For GCP's predefined network ranges, you can refer to this [page](https://cloud.google.com/vpc/docs/vpc#ip-ranges).
 {% endtab %}
+
+{% tab title="K5" %}
+
+{% endtab %}
 {% endtabs %}
-
-### availability\_zone {#availability_zone}
-
-The availability zone of which the stack deploys to.
-
-| **Type** | **Example Value** | **Required** | **Supported Platforms** |
-| :--- | :--- | :--- | :--- |
-| string | us-east-1 | Yes | AWS AliCloudAzure  K5 |
-
-You must specify this value in your Alm-template.
-
-* **Valid Values**
-* [AWS](alm-template-reference.md#aws_availability_zone)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_availability_zone)
-* [K5](alm-template-reference.md#k5)
 
 This section hasn't been fully covered by documentation.
 
