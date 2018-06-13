@@ -28,8 +28,12 @@ Get authentication token for subsequent API calls.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
+{% api-method-parameter name="client\_secret" type="string" required=false %}
+Mobingi client secret.
+{% endapi-method-parameter %}
 
+{% api-method-parameter name="client\_id" type="string" required=false %}
+Mobingi client id.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -47,4 +51,6 @@ Get authentication token for subsequent API calls.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
 
