@@ -1,6 +1,6 @@
 # ALM Template Language
 
-Mobingi ALM provides several built-in functions that help you manage your Alm Template. These functions are named **ATL**, short for **A**lm **T**emplate **L**anguage.
+Mobingi ALM provides several built-in functions that help you manage your Alm-template. These functions are named **ATL**, short for **A**lm **T**emplate **L**anguage.
 
 Use ATL functions in your templates to assign values to properties that are not available until runtime.
 
