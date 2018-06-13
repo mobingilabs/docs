@@ -4,14 +4,14 @@ In order to support various unique functions for different cloud providers, we p
 
 ## AWS {#aws}
 
-The ALM-agent enables you to perform specific actions when Auto Scaling Instances or Spot Instances are terminated.
+The ALM Agent enables you to perform specific actions when Auto Scaling Instances or Spot Instances are terminated.
 
-### How ALM-agent Work
+### How ALM Agent Works
 
 * Deregisters the instance from the load balancer.
   * After the instance is deregistered, it no longer receives traffic from the load balancer.
 * Executes the specified script.
-  * If you put the script named `pre_shutdown.sh` under the root \(`/`\) folder in the Docker Image, the ALM-agent executes the script.
+  * If you put the script named `pre_shutdown.sh` under the root \(`/`\) folder in the Docker Image, the ALM Agent executes the script.
 
 ### Conditions
 
