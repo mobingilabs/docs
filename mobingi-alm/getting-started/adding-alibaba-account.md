@@ -17,7 +17,13 @@ Copy the above the policy contents and create the policy on Alibaba Cloud consol
 
 ![](../../.gitbook/assets/create-ram-policy.png)
 
-Step 2: Create the RAM user and attach the policy.
+**Step 2**: Create the RAM user and attach the policy.
+
+Create the RAM user:
 
 ![](../../.gitbook/assets/create-ram-user.png)
+
+Attach the previously created policy to the RAM user:
+
+![](../../.gitbook/assets/attach-ram-policy.png)
 
