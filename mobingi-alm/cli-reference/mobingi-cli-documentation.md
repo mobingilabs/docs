@@ -455,12 +455,29 @@ Update an existing stack.
 
 **Flags**
 
-* `--alm-template` - Path to your updated ALM template file. Required in v3.
-* `--id` - The stack id to update.
-* `--type` - Instance type. See stack create command for more information.
-* `--min` - Minimum number of instances in your autoscaling group. See stack create command for more information.
-* `--max` - Maximum number of instances in your autoscaling group. See stack create command for more information.
-* `--spot-range` - Percentage of spot instance to deploy to autoscaling group. See stack create command for more information.
+* `--alm-template`
+
+  Path to your updated ALM template file. Required in v3.  
+
+* `--id` 
+
+  The stack id to update.  
+
+* `--type`
+
+  Instance type. See stack create command for more information.  
+
+* `--min` 
+
+  Minimum number of instances in your autoscaling group. See stack create command for more information.  
+
+* `--max`
+
+  Maximum number of instances in your autoscaling group. See stack create command for more information.  
+
+* `--spot-range`
+
+  Percentage of spot instance to deploy to autoscaling group. See stack create command for more information.
 
 **API v3**
 
@@ -493,7 +510,9 @@ Delete a stack.
 
 **Flags**
 
-* `--id` - The stack id to delete.
+* `--id`
+
+  The stack id to delete.
 
 Example:
 
@@ -511,11 +530,25 @@ Try to establish an ssh connection to your instances.
 
 **Flags**
 
-* `--id` - The stack id the instance belongs to.
-* `--ip` - The IP address of the instance you want to connect.
-* `--flag` - The configuration flag.
-* `--user` - The ssh username. By default, this is set to _ec2-user_. Set to _root_ when vendor is Alibaba Cloud.
-* `--browser` - Try to open the url using the user's default browser.
+* `--id` 
+
+  The stack id the instance belongs to.  
+
+* `--ip`
+
+  The IP address of the instance you want to connect.  
+
+* `--flag` 
+
+  The configuration flag.  
+
+* `--user`
+
+  The ssh username. By default, this is set to _ec2-user_. Set to _root_ when vendor is Alibaba Cloud.  
+
+* `--browser`
+
+  Try to open the url using the user's default browser.
 
 Examples:
 
@@ -540,8 +573,13 @@ Try to execute a bash script to one or more instances.
 
 **Flags**
 
-* `--target` - The target instance to execute the script. The format is stack-id\|ip:flag. This flag can be specified more than once.
-* `--script` - The script file to execute.
+* `--target`
+
+  The target instance to execute the script. The format is stack-id\|ip:flag. This flag can be specified more than once.  
+
+* `--script`
+
+  The script file to execute.
 
 Examples:
 
@@ -636,8 +674,13 @@ Print the stack's pem file \(and save to file optionally\), if available. Useful
 
 **Flags**
 
-* `--id` - The stack id to query.
-* `--flag` - The configuration flag.
+* `--id`
+
+  The stack id to query.  
+
+* `--flag`
+
+  The configuration flag.
 
 Example:
 
@@ -672,7 +715,9 @@ List available template versions of a stack.
 
 **Flags**
 
-* `--id` - The stack id owning the template versions to be listed.
+* `--id` 
+
+  The stack id owning the template versions to be listed.
 
 Example:
 
@@ -697,11 +742,25 @@ You can compare template versions from the same stack, versions from different s
 
 **Flags**
 
-* `--src-sid` - The stack id of the first \(or source\) template. This flag is required.
-* `--src-vid` - The version id of the first \(or source\) template. This flag is required.
-* `--tgt-sid` - The stack id of the second \(or target\) template. If not set, cli will assume you are comparing templates of the same stack.
-* `--tgt-vid` - The version id of the second \(or target\) template. This flag is required if you are not providing the --tgt-body flag.
-* `--tgt-body` - Path of the template file you want to compare to the first \(or source\) template. If you set this flag, do not set the --tgt-sid and the --tgt-vid flags as they are ignored.
+* `--src-sid`
+
+  The stack id of the first \(or source\) template. This flag is required.  
+
+* `--src-vid`
+
+  The version id of the first \(or source\) template. This flag is required.  
+
+* `--tgt-sid` 
+
+  The stack id of the second \(or target\) template. If not set, cli will assume you are comparing templates of the same stack.  
+
+* `--tgt-vid` 
+
+  The version id of the second \(or target\) template. This flag is required if you are not providing the --tgt-body flag.  
+
+* `--tgt-body` 
+
+  Path of the template file you want to compare to the first \(or source\) template. If you set this flag, do not set the --tgt-sid and the --tgt-vid flags as they are ignored.
 
 Example:
 
@@ -743,7 +802,9 @@ If --user is not provided, this command will list all defined roles.
 
 **Flags**
 
-* `--user` - Subuser name. Optional.
+* `--user` 
+
+  Subuser name. Optional.
 
 ### rbac sample {#rbac-sample}
 
@@ -787,10 +848,21 @@ Define a role.
 
 **Flags**
 
-* `--type` - Create type. Valid values are _role_ and _user_. Default is _role_.
-* `--name` - Role name when --type is _role_.
-* `--scope` - Path to role file.
-* `--allow-all` - When set to true, --scope is ignored, the resulting role will allow all actions to all resources.
+* `--type`
+
+  Create type. Valid values are _role_ and _user_. Default is _role_.  
+
+* `--name`
+
+  Role name when --type is _role_.  
+
+* `--scope`
+
+  Path to role file.  
+
+* `--allow-all`
+
+  When set to true, --scope is ignored, the resulting role will allow all actions to all resources.
 
 Example:
 
@@ -812,7 +884,7 @@ Attach a role to a user.
 
 * `--user`
 
-  The subuser name to attach the role to.
+  The subuser name to attach the role to.  
 
 * `--role-id`
 
