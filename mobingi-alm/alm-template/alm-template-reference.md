@@ -5,10 +5,13 @@
 ### vpc\_id {#vpc_id}
 
 Reserved key name, not supported yet.
+{% hint style="info" %}
+**Note:** Currently, a new VPC will be created with every ALM Template execution and the default VPC has a fixed CIDR range of **10.0.0.0/16** and you cannot customize it at the moment, so when you specifying your subnets please make sure the CIDR setting for your subnets are sitting within the VPC CIDR range.
+{% endhint %}
 
 {% tabs %}
 {% tab title="AWS" %}
-**Note:** Currently, a new VPC will be created with every ALM Template execution and the default VPC has a fixed CIDR range of **10.0.0.0/16** and you cannot customize it at the moment, so when you specifying your subnets please make sure the CIDR setting for your subnets are sitting within the VPC CIDR range.
+
 {% endtab %}
 
 {% tab title="GCP" %}
