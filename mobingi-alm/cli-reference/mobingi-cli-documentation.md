@@ -140,12 +140,29 @@ Log in to Mobingi.
 
 **Flags**
 
-* `--client-id, -i` - Your Mobingi client id.
-* `--client-secret, -s` - Your Mobingi client secret.
-* `--grant-type, -g` - Grant type. Default value is "password".
-* `--username, -u` - Username. You can use your main \(master\) account to login as root. Or you can use any subuser name.
-* `--password, -p` - Password.
-* `--endpoints` - Setup endpoints after login. If you have a Mobingi dev or qa account\(s\), you can set this to _dev_ or _qa_.
+* `--client-id, -i`
+
+  Your Mobingi client id.  
+
+* `--client-secret, -s` 
+
+  Your Mobingi client secret.  
+
+* `--grant-type, -g`
+
+  Grant type. Default value is "password".  
+
+* `--username, -u`
+
+  Username. You can use your main \(master\) account to login as root. Or you can use any subuser name.  
+
+* `--password, -p` 
+
+  Password  
+
+* `--endpoints`
+
+  Setup endpoints after login. If you have a Mobingi dev or qa account\(s\), you can set this to _dev_ or _qa_.
 
 This is the first command you need to run to use the other commands. To login, run
 
@@ -164,7 +181,7 @@ Password: xxxx
 [mobingi-cli]: info: Login successful.
 ```
 
-If login is successful, cli will create a file _config.yml_ under _$HOME/.mobingi-cli/_ folder that will contain the configuration values set during login. Cli will also attempt to store your credentials in the platform's native store \(i.e. Keychain for OSX\), if available. If not successful, the retrieved token during login will be saved in the _config.yml_ file. This token has an expiration so you will probably need to relogin at some point when this happens.
+If login is successful, cli will create a file _`config.yml`_ under _`$HOME/.mobingi-cli/`_ folder that will contain the configuration values set during login. Cli will also attempt to store your credentials in the platform's native store \(i.e. Keychain for OSX\), if available. If not successful, the retrieved token during login will be saved in the _config.yml_ file. This token has an expiration so you will probably need to relogin at some point when this happens.
 
 For Windows and OSX, cli can use the native credential store directly; wincred for Windows, Keychain for OSX. For Linux, cli uses [pass](https://www.passwordstore.org/) as storage. The following is an example of how to setup pass in Ubuntu systems.
 
