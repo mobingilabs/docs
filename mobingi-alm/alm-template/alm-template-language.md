@@ -6,9 +6,9 @@ Use ATL functions in your templates to assign values to properties that are not 
 
 **Note:**
 
-```text
+{% hint style="info" %}
 You can use ATL functions only in specific parts of a template. Please refer to each functions' document for detailed explanation.
-```
+{% endhint %}
 
 ## computed {#computed}
 
