@@ -2,7 +2,7 @@
 
 ## Prerequisites {#prerequisites}
 
-ALM-agent includes the following prerequisites.
+ALM Agent includes the following prerequisites.
 
 | Requirement | Description |
 | --- | --- |
