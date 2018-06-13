@@ -84,6 +84,7 @@ Below are the valid availability zones for each regions on AWS.
     sa-east-1c
 ```
 {% endtab %}
+
 {% tab title="GCP" %}
 At the moment, all deployments use the region's default public network. For GCP's predefined network ranges, you can refer to this [page](https://cloud.google.com/vpc/docs/vpc#ip-ranges).
 {% endtab %}
@@ -103,7 +104,6 @@ You must specify this value in your Alm-template.
 * [AWS](alm-template-reference.md#aws_availability_zone)
 * [Alibaba Cloud](alm-template-reference.md#alicloud_availability_zone)
 * [K5](alm-template-reference.md#k5)
-
 
 This section hasn't been fully covered by documentation.
 
