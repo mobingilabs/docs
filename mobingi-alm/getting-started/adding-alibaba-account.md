@@ -27,3 +27,7 @@ Attach the previously created policy to the RAM user:
 
 ![](../../.gitbook/assets/attach-ram-policy.png)
 
+
+
+![](../../.gitbook/assets/ram-access-key.png)
+
