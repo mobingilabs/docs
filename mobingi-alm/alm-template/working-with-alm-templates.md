@@ -65,3 +65,15 @@ Below is a tree view of all possible components within an ALM Template. The foll
 
 ![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.53.12.png)
 
+```yaml
+version: string
+label: string
+description: string
+vendor: object
+  aws: object
+  azure: object
+  gcp: object
+  alicloud: object
+  k5: object
+```
+
