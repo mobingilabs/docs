@@ -34,7 +34,7 @@ The configurations of the stack which ALM Template is about to deploy. In the co
 
   The "role" of which the stack layer defines to.
 
-  You deploy multiple layers within one Alm-template, for example two _web_ layers, one _bastion_ layer and one _database_ layer. The current available role names:
+  You deploy multiple layers within one ALM Template, for example two _web_ layers, one _bastion_ layer and one _database_ layer. The current available role names:
 
   * `web`
   * `bastion`
@@ -49,17 +49,17 @@ The configurations of the stack which ALM Template is about to deploy. In the co
 
   The infrastructure provisioning configurations.
 
-  For more information on _provision_ section, please refer to [ALM Template Reference guide](https://docs2.mobingi.com/mobingi-alm/alm-template/alm-template-reference).
+  For more information on _provision_ section, please refer to [ALM Template Reference guide](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-reference).
 
 * **container**
 
   The software runtime configurations _\(defined as docker images\)_ and code deployment requirement for each instance node.
 
-  For more information on _container_ section, please refer to [ALM Template Reference guide](https://docs2.mobingi.com/mobingi-alm/alm-template/alm-template-reference).
+  For more information on _container_ section, please refer to [ALM Template Reference guide](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-reference).
 
 ## ALM Template Structure {#template-structure}
 
-Below is a tree view of all possible components within an ALM Template. The following structure is not a working demo template, but rather to explain all possible key names that may contain in the template body. For ALM Template examples, please refer to [Example ALM Templates](https://docs2.mobingi.com/mobingi-alm/alm-template/example-alm-templates).
+Below is a tree view of all possible components within an ALM Template. The following structure is not a working demo template, but rather to explain all possible key names that may contain in the template body. For ALM Template examples, please refer to [Example ALM Templates](https://docs.mobingi.com/mobingi-alm/alm-template/example-alm-templates).
 
 ![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.53.12.png)
 
