@@ -96,6 +96,7 @@ Below are the valid availability zones for each regions on AWS.
     sa-east-1c
 ```
 {% endtab %}
+
 {% tab title="AZURE" %}
 ```text
     "availability_zone": "ap-northeast-1c"
