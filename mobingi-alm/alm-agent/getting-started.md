@@ -13,7 +13,7 @@ ALM Agent includes the following prerequisites.
 
 ## Install ALM agent {#install-alm-agent}
 
-There are two ways to installing ALM-agent:
+There are two ways to installing ALM Agent:
 
 1. Using a precompiled binary
 2. Installing from source
