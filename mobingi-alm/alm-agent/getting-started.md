@@ -50,7 +50,7 @@ vagrant $ make build
 
 ## Verifying the Installation {#verifying-the-installation}
 
-After installing ALM-agent, verify the installation works and check that `alm-agent` is available.
+After installing ALM Agent, verify the installation works and check that `alm-agent` is available.
 
 By executing `alm-agent` you should see the help output similar to this:
 
