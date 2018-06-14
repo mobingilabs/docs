@@ -608,9 +608,6 @@ A _network acl_ section contains a list of network\_acl entry items. Each item c
 For more information about network acl please refer to [AWS Documentation](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_ACLs.html)
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_network_acl)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_network_acl)
-* [K5](alm-template-reference.md#k5_network_acl)
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -634,29 +631,6 @@ This section hasn't been covered by documentation.
 This section hasn't been covered by documentation.
 {% endtab %}
 {% endtabs %}
-
-Example below is also the default settings when deploying to AWS.
-
-```text
-    "network_acl": [
-        {
-            "rule_number": 100,
-            "protocol": "-1",
-            "rule_action": "allow",
-            "acl_egress": true,
-            "cidr_block": "0.0.0.0/0"
-        },
-        {
-            "rule_number": 100,
-            "protocol": "-1",
-            "rule_action": "allow",
-            "acl_egress": false,
-            "cidr_block": "0.0.0.0/0"
-        }
-    ]
-```
-
-This section hasn't been covered by documentation. This section hasn't been covered by documentation.
 
 ### security\_group {#security_group}
 
@@ -697,17 +671,16 @@ Each _ingress_ or _egress_ contains the following 4 declarative:
 
   End of port range for the TCP and UDP protocols, or an ICMP code. If you specify icmp for the IpProtocol property, you can specify -1 as a wildcard \(i.e., any ICMP code\).
 
-  _Required:_ Yes
+  _Required:_ Yes  
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_security_group)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_security_group)
-* [K5](alm-template-reference.md#k5_security_group)
 
-  Example below is also the default settings when deploying to AWS.
+{% tabs %}
+{% tab title="AWS" %}
+Example below is also the default settings when deploying to AWS.
 
-```text
-    "security_group": {
+```typescript
+"security_group": {
         "ingress": [
             {
                 "cidr_ip": "0.0.0.0/0",
@@ -738,8 +711,20 @@ Each _ingress_ or _egress_ contains the following 4 declarative:
         ]
     }
 ```
+{% endtab %}
 
-This section hasn't been covered by documentation. This section hasn't been covered by documentation.
+{% tab title="ALIBABA CLOUD" %}
+This section hasn't been covered by documentation.
+{% endtab %}
+
+{% tab title="AZURE" %}
+This section hasn't been covered by documentation.
+{% endtab %}
+
+{% tab title="K5" %}
+This section hasn't been covered by documentation.
+{% endtab %}
+{% endtabs %}
 
 ### auto\_scaling {#auto_scaling}
 
