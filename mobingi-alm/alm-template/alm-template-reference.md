@@ -168,7 +168,8 @@ If you don't specify this declarative, the default values will be applied for ea
 See below for default values.
 
 * **Valid Values**
-
+{% tabs %}
+{% tab title="AWS" %}
 Default: t2.micro
 
 ```text
@@ -252,18 +253,34 @@ Below are the valid instance types for AWS.
     d2.4xlarge
     d2.8xlarge
 ```
-
+{% endtab %}
+{% tab title="ALIBABA CLOUD" %}
 Default: xn4.small.
 
 ```text
     "instance_type": "xn4.small"
 ```
 
+{% endtab %}
+{% tab title="AZURE" %}
+Default: Standard_B1s.
+
+```text
+    "instance_type": "Standard_B1s"
+```
+{% endtab %}
+{% tab title="K5" %}
 Default: 1101.
 
 ```text
     "instance_type": "1101"
 ```
+{% endtab %}
+{% endtabs %}
+
+
+
+
 
 ### image {#image}
 
