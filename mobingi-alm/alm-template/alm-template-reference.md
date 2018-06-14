@@ -163,7 +163,9 @@ The type of instances \(**VM**s\).
 | :--- | :--- | :--- | :--- |
 | string | t2.micro | No | `AWS` `AliCloud` `Azure` `K5` |
 
-If you don't specify this declarative, the default values will be applied for each cloud platform.
+{% hint style="info" %}
+**Note:** If you don't specify this declarative, the default values will be applied for each cloud platform.
+{% endhint %}
 
 See below for default values.
 
