@@ -1136,8 +1136,6 @@ This section hasn't been covered by documentation
 {% endtab %}
 {% endtabs %}
 
-This section hasn't been covered by documentation. This section hasn't been covered by documentation.
-
 ## container {#container}
 
 #### container\_image {#container_image}
