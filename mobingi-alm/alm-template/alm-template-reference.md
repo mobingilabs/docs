@@ -157,11 +157,11 @@ At the moment, all deployments use the region's default public network. For GCP'
 
 ### instance\_type {#instance_type}
 
-The type of instances \(VMs\).
+The type of instances \(**VM**s\).
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| string | t2.micro | No | AWS AliCloud K5 |
+| string | t2.micro | No | `AWS` `AliCloud` `Azure` `K5` |
 
 If you don't specify this declarative, the default values will be applied for each cloud platform.
 
