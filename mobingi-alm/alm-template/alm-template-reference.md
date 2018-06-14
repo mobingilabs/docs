@@ -333,6 +333,7 @@ Number of instances \(VMs\) to provision.
 If you don't specify this declarative, the default value of _1_ will be applied.
 
 * **Valid Values**
+
 {% tabs %}
 {% tab title="AWS" %}
 ```text
