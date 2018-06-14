@@ -790,12 +790,9 @@ The _auto scaling_ section contains the following declarative:
 
   _Required:_ No
 
-  If you don't specify this declarative, the default value of _360_ will be applied.
+  If you don't specify this declarative, the default value of _360_ will be applied.  
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_auto_scaling)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_auto_scaling)
-* [K5](alm-template-reference.md#k5_auto_scaling)
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -822,18 +819,6 @@ This section hasn't been covered by documentation.
 This section hasn't been covered by documentation.
 {% endtab %}
 {% endtabs %}
-
-```text
-    "auto_scaling": {
-        "min": 1,
-        "max": 1,
-        "availability_zones": "${use(FlagName1.provision.availability_zone, FlagName2.provision.availability_zone)}",
-        "cooldown": "360",
-        "healthcheck_grace_period": "360"
-    }
-```
-
-This section hasn't been covered by documentation. This section hasn't been covered by documentation.
 
 ### load\_balancer {#load_balancer}
 
@@ -980,15 +965,16 @@ The _load balancer_ section contains the following declarative:
 
     Specifies the number of consecutive health probe failures required before moving the instance to the Unhealthy state.
 
-    _Required:_ No
+    _Required:_ No  
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_load_balancer)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_load_balancer)
-* [K5](alm-template-reference.md#k5_load_balancer)
 
-```text
-    "load_balancer": {
+{% tabs %}
+{% tab title="AWS" %}
+
+
+```typescript
+"load_balancer": {
         "lb_type": "classic",
         "scheme": "internet-facing",
         "listeners": [
@@ -1008,8 +994,20 @@ The _load balancer_ section contains the following declarative:
         }
     }
 ```
+{% endtab %}
 
-This section hasn't been covered by documentation. This section hasn't been covered by documentation.
+{% tab title="ALIBABA CLOUD" %}
+This section hasn't been covered by documentation.
+{% endtab %}
+
+{% tab title="AZURE" %}
+
+{% endtab %}
+
+{% tab title="K5" %}
+This section hasn't been covered by documentation.
+{% endtab %}
+{% endtabs %}
 
 ### rds {#rds}
 
@@ -1055,17 +1053,16 @@ The _rds_ section contains the following declarative:
 
   Constraints: 1-5 \(replica counts\).
 
-  _Required:_ No
+  _Required:_ No  
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_rds)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_rds)
-* [K5](alm-template-reference.md#k5_rds)
 
-  Default: db.t2.micro
+{% tabs %}
+{% tab title="AWS" %}
+Default: db.t2.micro
 
-```text
-    "rds": {
+```typescript
+ "rds": {
         "db_instance_type": "db.t2.micro",
         "engine": "mysql",
         "version": "5.6"
@@ -1124,6 +1121,20 @@ Below are the valid engine and version for AWS.
         - 9.6
         - 10
 ```
+{% endtab %}
+
+{% tab title="ALIBABA CLOUD" %}
+This section hasn't been covered by documentation.
+{% endtab %}
+
+{% tab title="AZURE" %}
+This section hasn't been covered by documentation
+{% endtab %}
+
+{% tab title="K5" %}
+This section hasn't been covered by documentation
+{% endtab %}
+{% endtabs %}
 
 This section hasn't been covered by documentation. This section hasn't been covered by documentation.
 
