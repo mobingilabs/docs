@@ -257,21 +257,23 @@ Below are the valid instance types for AWS.
     d2.8xlarge
 ```
 {% endtab %}
+
 {% tab title="ALIBABA CLOUD" %}
 Default: xn4.small.
 
 ```text
     "instance_type": "xn4.small"
 ```
-
 {% endtab %}
+
 {% tab title="AZURE" %}
-Default: Standard_B1s.
+Default: Standard\_B1s.
 
 ```text
     "instance_type": "Standard_B1s"
 ```
 {% endtab %}
+
 {% tab title="K5" %}
 Default: 1101.
 
@@ -280,7 +282,6 @@ Default: 1101.
 ```
 {% endtab %}
 {% endtabs %}
-
 
 ### image {#image}
 
@@ -298,8 +299,9 @@ Note: If you specify this value and also specify the [container](https://learn.m
 
 {% tabs %}
 {% tab title="AWS" %}
- Below is also the default value for AWS.
- ```text
+Below is also the default value for AWS.
+
+```text
     "image": "ami-2a69be4c"
 ```
 {% endtab %}
@@ -311,6 +313,7 @@ Below is also the default value for Alibaba Cloud.
     "image": "centos_7_03_64_40G_alibase_20170710.vhd"
 ```
 {% endtab %}
+
 {% tab title="K5" %}
 Below is also the default value for K5.
 
@@ -319,8 +322,6 @@ Below is also the default value for K5.
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 ### instance\_count {#instance_count}
 
@@ -340,16 +341,19 @@ If you don't specify this declarative, the default value of _1_ will be applied.
     "instance_count": 1
 ```
 {% endtab %}
+
 {% tab title="ALIBABA CLOUD" %}
 ```text
     "instance_count": 1
 ```
 {% endtab %}
+
 {% tab title="AZURE" %}
 ```text
     "instance_count": 1
 ```
 {% endtab %}
+
 {% tab title="K5" %}
 ```text
     "instance_count": 1
@@ -366,11 +370,8 @@ The volume type of instance.
 | string | standard | No | AWS AliCloud K5 |
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_volume_type)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_volume_type)
-* [K5](alm-template-reference.md#k5_volume_type)
 
-  If you don't specify this declarative, the default value of gp2 will be applied.
+If you don't specify this declarative, the default value of gp2 will be applied.
 
 ```text
     gp2 - General Purpose SSD
