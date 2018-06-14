@@ -16,7 +16,7 @@ The availability zone of which the stack deploys to.
 
 | **Type** | **Example Value** | **Required** | **Supported Platforms** |
 | :--- | :--- | :--- | :--- |
-| string | us-east-1 | Yes | AWS AliCloudAzure  K5 |
+| string | us-east-1 | Yes | `AWS` `AliCloud` `Azure`  `K5` |
 
 You must specify this value in your Alm-template.
 
