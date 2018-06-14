@@ -413,14 +413,13 @@ This section hasn't been covered by documentation.
 {% tab title="AZURE" %}
 Current initial deployment size is 50GB.
 
-{% endtab %}
-{% tab title="K5" %}
-This section hasn't been covered by documentation.
-
 {% hint style="info" %}
 **Note:** Soon to support other sizes.
 {% endhint %}
 
+{% endtab %}
+{% tab title="K5" %}
+This section hasn't been covered by documentation.
 {% endtab %}
 {% endtabs %}
 
