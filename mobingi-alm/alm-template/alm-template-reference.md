@@ -434,9 +434,6 @@ The ssh key pair used to access instances.
 | boolean | true, false | No | AWS AliCloud K5 |
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_keypair)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_keypair)
-* [K5](alm-template-reference.md#k5_keypair)
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -512,36 +509,56 @@ A _subnet_ section contains 3 key names.
 * [AWS](alm-template-reference.md#aws_subnet)
 * [Alibaba Cloud](alm-template-reference.md#alicloud_subnet)
 * [K5](alm-template-reference.md#k5_subnet)
-
-  Example below is also the default settings when deploying to AWS.
+* 
+{% tabs %}
+{% tab title="AWS" %}
+Example below is also the default settings when deploying to AWS.
 
 ```text
-    "subnet": {
+"subnet": {
         "cidr": "10.0.0.0/24",
         "public": true,
         "auto_assign_public_ip": true
     }
 ```
+{% endtab %}
 
+{% tab title="ALIBABA CLOUD" %}
 Example below is also the default settings when deploying to Alibaba Cloud.
 
 ```text
-    "subnet": {
+"subnet": {
         "cidr": "192.168.199.0/24",
         "public": true,
         "auto_assign_public_ip": true
     }
 ```
+{% endtab %}
 
+{% tab title="AZURE" %}
+Example below is also the default settings when deploying to Azure.
+
+```text
+"subnet": {
+        "cidr": "192.168.199.0/24",
+        "public": true,
+        "auto_assign_public_ip": true
+    }
+```
+{% endtab %}
+
+{% tab title="K5" %}
 Example below is also the default settings when deploying to K5.
 
 ```text
-    "subnet": {
+"subnet": {
         "cidr": "10.1.0.0/24",
         "public": true,
         "auto_assign_public_ip": true
     }
 ```
+{% endtab %}
+{% endtabs %}
 
 ### network\_acl {#network_acl}
 
