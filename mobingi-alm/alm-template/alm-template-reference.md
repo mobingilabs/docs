@@ -168,6 +168,7 @@ If you don't specify this declarative, the default values will be applied for ea
 See below for default values.
 
 * **Valid Values**
+
 {% tabs %}
 {% tab title="AWS" %}
 Default: t2.micro
@@ -277,9 +278,6 @@ Default: 1101.
 ```
 {% endtab %}
 {% endtabs %}
-
-
-
 
 
 ### image {#image}
