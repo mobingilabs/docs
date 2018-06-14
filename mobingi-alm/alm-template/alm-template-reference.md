@@ -413,7 +413,7 @@ This section hasn't been covered by documentation.
 {% endtab %}
 
 {% tab title="AZURE" %}
-Current initial deployment size is 50GB.
+Current initial deployment size is _50GB_.
 
 {% hint style="info" %}
 **Note:** Soon to support other sizes.
@@ -438,23 +438,39 @@ The ssh key pair used to access instances.
 * [Alibaba Cloud](alm-template-reference.md#alicloud_keypair)
 * [K5](alm-template-reference.md#k5_keypair)
 
-  Example below is also the default settings when deploying to AWS.
+{% tabs %}
+{% tab title="AWS" %}
+Example below is also the default settings when deploying to AWS.
 
 ```text
-    "keypair": true
+"keypair": true
 ```
+{% endtab %}
 
+{% tab title="ALIBABA Cloud" %}
 Example below is also the default settings when deploying to Alibaba Cloud.
 
 ```text
-    "keypair": true
+"keypair": true
 ```
+{% endtab %}
 
+{% tab title="AZURE" %}
+Example below is also the default settings when deploying to Azure.
+
+```text
+"keypair": true
+```
+{% endtab %}
+
+{% tab title="K5" %}
 Example below is also the default settings when deploying to K5.
 
 ```text
-    "keypair": true
+"keypair": true
 ```
+{% endtab %}
+{% endtabs %}
 
 ### subnet {#subnet}
 
@@ -1157,4 +1173,6 @@ The environment variables to be defined for the container operating system.
         }
     }
 ```
+
+
 
