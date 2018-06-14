@@ -289,7 +289,7 @@ The machine image \(id\) used to launch the instance.
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| string | ami-2a69be4c | No | AWS AliCloud K5 |
+| string | ami-2a69be4c | No | `AWS` `AliCloud` `K5` |
 
 Default values will be applied for each cloud platform \(see below for default values\). However, you can also specify this value for launching with a customized machine image.
 
@@ -329,7 +329,7 @@ Number of instances \(VMs\) to provision.
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| int | 1 | No | AWS AliCloud K5 |
+| int | 1 | No | `AWS` `AliCloud`  `Azure` `K5` |
 
 If you don't specify this declarative, the default value of _1_ will be applied.
 
@@ -367,7 +367,7 @@ The volume type of instance.
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| string | standard | No | AWS AliCloud K5 |
+| string | standard | No | `AWS` `AliCloud` `K5` |
 
 * **Valid Values**
 
@@ -389,7 +389,7 @@ The size of the volume, in gibibytes \(GiBs\).
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| string | 50 | No | AWS AliCloud K5 |
+| string | 50 | No | `AWS` `AliCloud`  `Azure` `K5` |
 
 * **Valid Values**
 
@@ -431,7 +431,7 @@ The ssh key pair used to access instances.
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| boolean | true, false | No | AWS AliCloud K5 |
+| boolean | true, false | No | `AWS` `AliCloud` `Azure` `K5` |
 
 * **Valid Values**
 
@@ -475,7 +475,7 @@ The subnet settings.
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| object | See below | No | AWS AliCloud K5 |
+| object | See below | No | `AWS` `AliCloud` `Azure` `K5` |
 
 A _subnet_ section contains 3 key names.
 
@@ -565,7 +565,7 @@ The network action control list for a virtual private cloud. **This section supp
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| array | see blow | No | AWS |
+| array | see blow | No | `AWS` |
 
 A _network acl_ section contains a list of network\_acl entry items. Each item contains the following declaratives:
 
@@ -638,7 +638,7 @@ The security groups for your virtual private cloud. Security groups are associat
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| object | See below | No | AWS AliCloud K5 |
+| object | See below | No | `AWS` `AliCloud` `Azure` `K5` |
 
 A _security group_ section contains two entry items, `ingress` and `egress`.
 
@@ -732,7 +732,7 @@ The auto-scaling group defines the configuration to automatically scale up or do
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| object, or string | See below | No | AWS AliCloud K5 |
+| object, or string | See below | No | `AWS` `AliCloud`  `Azure` `K5` |
 
 **Note:** If you are deploying an _application_ type of load balancer \(you define in [`load_balancer`](https://learn.mobingi.com/alm-templates-reference#load_balancer) declarative\), you can omit the required parameters below and use the ATL function `#share` to share the same auto scaling group which you defined in another layer. [Click here](https://learn.mobingi.com/alm-template-language) for more on ATL functions.
 
@@ -826,7 +826,7 @@ The load-balancer for the auto-scaling group.
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| object | See below | No | AWS AliCloud K5 |
+| object | See below | No | `AWS` `AliCloud` `K5` |
 
 The _load balancer_ section contains the following declarative:
 
@@ -1015,7 +1015,7 @@ The Rds is a managed relational database service.
 
 | Type | Example Value | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| object | See below | No | AWS AliCloud K5 |
+| object | See below | No | `AWS` `AliCloud` `K5` |
 
 The _rds_ section contains the following declarative:
 
