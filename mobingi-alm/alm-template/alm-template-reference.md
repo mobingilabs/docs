@@ -797,6 +797,32 @@ The _auto scaling_ section contains the following declarative:
 * [Alibaba Cloud](alm-template-reference.md#alicloud_auto_scaling)
 * [K5](alm-template-reference.md#k5_auto_scaling)
 
+{% tabs %}
+{% tab title="AWS" %}
+```typescript
+    "auto_scaling": {
+        "min": 1,
+        "max": 1,
+        "availability_zones": "${use(FlagName1.provision.availability_zone, FlagName2.provision.availability_zone)}",
+        "cooldown": "360",
+        "healthcheck_grace_period": "360"
+    }
+```
+{% endtab %}
+
+{% tab title="ALIBABA CLOUD" %}
+This section hasn't been covered by documentation.
+{% endtab %}
+
+{% tab title="AZURE" %}
+This section hasn't been covered by documentation.
+{% endtab %}
+
+{% tab title="K5" %}
+This section hasn't been covered by documentation.
+{% endtab %}
+{% endtabs %}
+
 ```text
     "auto_scaling": {
         "min": 1,
