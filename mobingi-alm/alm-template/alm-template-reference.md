@@ -407,15 +407,19 @@ The size of the volume, in gibibytes \(GiBs\).
     - standard: 50
 ```
 {% endtab %}
+
 {% tab title="ALIBABA CLOUD" %}
 This section hasn't been covered by documentation.
 {% endtab %}
+
 {% tab title="AZURE" %}
 Current initial deployment size is 50GB.
+
 {% hint style="info" %}
 **Note:** Soon to support other sizes.
 {% endhint %}
 {% endtab %}
+
 {% tab title="K5" %}
 This section hasn't been covered by documentation.
 {% endtab %}
