@@ -392,10 +392,9 @@ The size of the volume, in gibibytes \(GiBs\).
 | string | 50 | No | AWS AliCloud K5 |
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_volume_size)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_volume_size)
-* [K5](alm-template-reference.md#k5_volume_size)
 
+{% tabs %}
+{% tab title="AWS" %}
 ```text
     Constraints: 1-16384 for gp2, 4-16384 for io1, 500-16384 for st1, 500-16384 for sc1, and 1-1024 for standard (magnetic disk).
 
@@ -407,8 +406,23 @@ The size of the volume, in gibibytes \(GiBs\).
     - sc1: 500
     - standard: 50
 ```
+{% endtab %}
+{% tab title="ALIBABA CLOUD" %}
+This section hasn't been covered by documentation.
+{% endtab %}
+{% tab title="AZURE" %}
+Current initial deployment size is 50GB.
 
-This section hasn't been covered by documentation. This section hasn't been covered by documentation.
+{% endtab %}
+{% tab title="K5" %}
+This section hasn't been covered by documentation.
+
+{% hint style="info" %}
+**Note:** Soon to support other sizes.
+{% endhint %}
+
+{% endtab %}
+{% endtabs %}
 
 ### keypair {#keypair}
 
