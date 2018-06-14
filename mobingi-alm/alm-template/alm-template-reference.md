@@ -295,27 +295,35 @@ Default values will be applied for each cloud platform \(see below for default v
 Note: If you specify this value and also specify the [container](https://learn.mobingi.com/alm-templates-reference#container) section in the Alm-template to take the advantage of application lifecycle management, you need to make sure the base machine image operating system supports Alm-agent installation. For supported operating systems by Alm-agent, please refer to [this guide](https://learn.mobingi.com/alm-agent/getting-started#prerequisites).
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_image)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_image)
-* [K5](alm-template-reference.md#k5_image)
 
-  Below is also the default value for AWS.
-
-```text
+{% tabs %}
+{% tab title="AWS" %}
+ Below is also the default value for AWS.
+ ```text
     "image": "ami-2a69be4c"
 ```
+{% endtab %}
 
+{% tab title="ALIBABA CLOUD" %}
 Below is also the default value for Alibaba Cloud.
 
 ```text
     "image": "centos_7_03_64_40G_alibase_20170710.vhd"
 ```
-
+{% endtab %}
+{% tab title="K5" %}
 Below is also the default value for K5.
 
 ```text
     "image": "58fd966f-b055-4cd0-9012-cf6af7a4c32b"
 ```
+{% endtab %}
+{% endtabs %}
+
+
+
+
+
 
 ### instance\_count {#instance_count}
 
