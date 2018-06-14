@@ -322,9 +322,6 @@ Below is also the default value for K5.
 
 
 
-
-
-
 ### instance\_count {#instance_count}
 
 Number of instances \(VMs\) to provision.
@@ -336,21 +333,28 @@ Number of instances \(VMs\) to provision.
 If you don't specify this declarative, the default value of _1_ will be applied.
 
 * **Valid Values**
-* [AWS](alm-template-reference.md#aws_instance_count)
-* [Alibaba Cloud](alm-template-reference.md#alicloud_instance_count)
-* [K5](alm-template-reference.md#k5_instance_count)
-
+{% tabs %}
+{% tab title="AWS" %}
 ```text
     "instance_count": 1
 ```
-
+{% endtab %}
+{% tab title="ALIBABA CLOUD" %}
 ```text
     "instance_count": 1
 ```
-
+{% endtab %}
+{% tab title="AZURE" %}
 ```text
     "instance_count": 1
 ```
+{% endtab %}
+{% tab title="K5" %}
+```text
+    "instance_count": 1
+```
+{% endtab %}
+{% endtabs %}
 
 ### volume\_type {#volume_type}
 
