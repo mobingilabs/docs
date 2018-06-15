@@ -35,7 +35,7 @@ If you do not have yet a Mobingi ALM account, you can sign up [here](https://mob
 
 1. After logging-in to your [Mobingi ALM](https://alm.mobingi.com/login) account, in the upper right corner of the page click your `username` and then `General Settings`
 
-![ALT ALM](../../.gitbook/assets/screen-shot-2018-06-11-at-17.10.0_box.png)
+![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.10.0_box.png)
 
 1. In the left side-menu, click `Setup Credentials` and select `Azure`
 
