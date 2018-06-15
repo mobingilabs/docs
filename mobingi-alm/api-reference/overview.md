@@ -12,5 +12,3 @@ https://api.mobingi.com
 
 The current supported API version is `v3`.
 
-
-

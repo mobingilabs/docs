@@ -6,7 +6,7 @@ In order to interact with the API, your application must authenticate. Mobingi A
 
 _To get an OAuth token, make a POST request to_
 
- POST `/v3/access_token`
+POST `/v3/access_token`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -44,7 +44,7 @@ Authorization: Bearer eyJ0eXAiOiJQiLCJhbGciOMeXzQfME
 
 Applies the Mobingi Alm template and creates stack.
 
- POST `/v3/alm/template`
+POST `/v3/alm/template`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -105,7 +105,7 @@ Updates the Mobingi Alm template and applies the changes to stack resources.
 
 _Note:_ `vendor` section will be ignored when performing this API call. You can not change cloud vendors after the stack is created.
 
- PUT `/v3/alm/template/{stack_id}`
+PUT `/v3/alm/template/{stack_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -163,7 +163,7 @@ HTTP/1.1 202 Accepted
 
 Compares the resource changes between two Mobingi Alm templates.
 
- POST `/v3/alm/template/compare`
+POST `/v3/alm/template/compare`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -298,7 +298,7 @@ HTTP/1.1 202 Accepted
 
 List Mobingi Alm template versions
 
- GET `/v3/alm/template`
+GET `/v3/alm/template`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -342,7 +342,7 @@ HTTP/1.1 200 OK
 
 Describes the template body of a specific version.
 
- GET `/v3/alm/template/{stack_id}`
+GET `/v3/alm/template/{stack_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -391,7 +391,7 @@ HTTP/1.1 200 OK
 
 List all stacks running under current organization account.
 
- GET `/v3/alm/stack`
+GET `/v3/alm/stack`
 
 Request Header
 
@@ -449,7 +449,7 @@ HTTP/1.1 200 OK
 
 Describes the stack detail information.
 
- GET `/v3/alm/stack/{stack_id}`
+GET `/v3/alm/stack/{stack_id}`
 
 Request Header
 
@@ -502,7 +502,7 @@ HTTP/1.1 200 OK
 
 Describes the stack container detail information.
 
- GET `/v3/alm/container/{container_id}`
+GET `/v3/alm/container/{container_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -534,7 +534,7 @@ HTTP/1.1 200 OK
 
 List the stack containers filtering by {stack\_id} or {instance\_id}
 
- GET `/v3/alm/container`
+GET `/v3/alm/container`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -587,7 +587,7 @@ HTTP/1.1 200 OK
 
 Creates a new role. \(**Note: This endpoint can only be accessed by master account**\)
 
- POST `/v3/role`
+POST `/v3/role`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -626,7 +626,7 @@ Updates an existing role.
 
 **Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
- PUT `/v3/role/{role_id}`
+PUT `/v3/role/{role_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -666,7 +666,7 @@ Deletes an existing Role.
 
 **Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
- DELETE `/v3/role/{role_id}`
+DELETE `/v3/role/{role_id}`
 
 Request Header
 
@@ -692,7 +692,7 @@ Lists all roles created under current account.
 
 **Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
- GET `/v3/role`
+GET `/v3/role`
 
 Request Header
 
@@ -728,7 +728,7 @@ HTTP/1.1 200
 
    **Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
-    GET `/v3/user/{username}/role`
+   GET `/v3/user/{username}/role`
 
 ```text
 Request Header
@@ -756,8 +756,8 @@ HTTP/1.1 200
 
 ]
 ```
-```
 
+```text
 1. **Describe Current Logged In User Roles**
 
 ```text
@@ -796,8 +796,8 @@ HTTP/1.1 200
 
 ]
 ```
-```
 
+```text
 ### Attach Role to User {#rbac-attach-user-role}
 
 Attach an existing role to a user.
@@ -843,7 +843,7 @@ Reattach a role to user.
 
 **Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
- PUT `/v3/user/role/{role_id}`
+PUT `/v3/user/role/{role_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -881,7 +881,7 @@ Deatch a role from user.
 
 **Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
- DELETE `/v3/user/role/{role_id}`
+DELETE `/v3/user/role/{role_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -917,7 +917,7 @@ HTTP/1.1 200
 
 Describes the role scope body.
 
- GET `/v3/role/templates`
+GET `/v3/role/templates`
 
 Request Header
 
@@ -967,7 +967,7 @@ For example, when an instance is launched and Mobingi alm agent is installed, th
 
 Another example, when an AWS spot instance is scheduled to be shutdown, the agent will send notice to this endpoint and allow Mobingi system to perform other necessary actions \(_such as spot replacement\)_.
 
- POST `/v3/alm/agent/agent_status`
+POST `/v3/alm/agent/agent_status`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -994,7 +994,7 @@ HTTP/1.1 202 Accepted
 
 This endpoint listens to the notifications sent by Mobingi alm-agent with the status updates during a container's lifecycle. Possible status examples: _starting_, _updating_, _restarting_, _running_, _terminated_, etc.
 
- POST `/v3/alm/agent/container_status`
+POST `/v3/alm/agent/container_status`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
@@ -1021,7 +1021,7 @@ HTTP/1.1 202 Accepted
 
 This endpoint is used by Mobingi alm-agent to describing `container` section of the layer configuration from Mobingi Alm Template, identified by `flag` name.
 
- GET `/v3/alm/agent/config`
+GET `/v3/alm/agent/config`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
 | --- | :---: | ---: | :--- |
