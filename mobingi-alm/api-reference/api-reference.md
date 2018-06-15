@@ -2,21 +2,17 @@
 
 ### OAuth Authentication {#authentication}
 
-In order to interact with the API, your application must authenticate. Mobingi API handles this through __OAuth__. An OAuth token functions as a complete authentication request. In effect, it acts as a substitute for a username and password pair.
+In order to interact with the API, your application must authenticate. Mobingi API handles this through **OAuth**. An OAuth token functions as a complete authentication request. In effect, it acts as a substitute for a username and password pair.
 
 _To get an OAuth token, make a POST request to_
 
-<div class="callout callout-info">
-POST <code>/v3/access_token</code>
-</div>
+ POST `/v3/access_token`
 
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-| client_id       | string        | Yes       |             |
-| client_secret       | string        | Yes       |              |
-| grant_type       | string        | Yes       | This value is either `client_credentials` or `password`. <br />If you grant with <var>password</var>, you are interacting the same as working around Mobingi UI; If you grant with <var>client_credentials</var>, you are acting as an Alm-Agent, and most resource related permissions are denied by [RBAC](https://learn.mobingi.com/enterprise/rbac).    |
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| client\_id | string | Yes |  |
+| client\_secret | string | Yes |  |
+| grant\_type | string | Yes | This value is either `client_credentials` or `password`.  If you grant with password, you are interacting the same as working around Mobingi UI; If you grant with client\_credentials, you are acting as an Alm-Agent, and most resource related permissions are denied by [RBAC](https://learn.mobingi.com/enterprise/rbac). |
 
 Example Request:
 
@@ -28,44 +24,41 @@ curl -X POST https://api.mobingi.com/v3/access_token \
 
 Response Body:
 
-```json
+```javascript
 {
   "token_type": "Bearer",
   "expires_in": 43200,
   "access_token": "eyJ0eXAiOiJQiLCJhbGciOMeXzQfME"
 }
 ```
+
 You can then start making API requests by passing the `access_token` value to the _Authorization_ Header
 
-```
+```text
 Authorization: Bearer eyJ0eXAiOiJQiLCJhbGciOMeXzQfME
 ```
 
-
 ## ALM Templates {#alm-templates}
-
 
 ### Apply Template {#template-apply}
 
 Applies the Mobingi Alm template and creates stack.
 
-<div class="callout callout-info">
-POST <code>/v3/alm/template</code>
-</div>
+ POST `/v3/alm/template`
 
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-|  { _template body_ }  | string        | Yes       |  Mobingi Alm template body in json string format            |
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| { _template body_ } | string | Yes | Mobingi Alm template body in json string format |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
 ```
 
 Request body
+
 ```bash
 {
   "version": "2017-03-03",
@@ -106,31 +99,27 @@ HTTP/1.1 201 Created
 }
 ```
 
-
-
 ### Update Template {#template-update}
 
 Updates the Mobingi Alm template and applies the changes to stack resources.
 
 _Note:_ `vendor` section will be ignored when performing this API call. You can not change cloud vendors after the stack is created.
 
-<div class="callout callout-info">
-PUT <code>/v3/alm/template/{stack_id}</code>
-</div>
+ PUT `/v3/alm/template/{stack_id}`
 
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-| { _template body_ } | string        |   Yes     | Mobingi Alm template body in json string format            |
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| { _template body_ } | string | Yes | Mobingi Alm template body in json string format |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
 ```
 
 Request body
+
 ```bash
 {
   "version": "2017-03-03",
@@ -170,31 +159,30 @@ HTTP/1.1 202 Accepted
 }
 ```
 
-
 ### Compare Templates {#template-compare}
 
 Compares the resource changes between two Mobingi Alm templates.
 
-<div class="callout callout-info">
-POST <code>/v3/alm/template/compare</code>
-</div>
+ POST `/v3/alm/template/compare`
 
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-| id       | array        |    conditional    |    items contain stack id and version information         |
-| body       | array        |    conditional    |   items contain template body source         |
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| id | array | conditional | items contain stack id and version information |
+| body | array | conditional | items contain template body source |
 
-_Note: You can compare two templates by retrieving them from their version id and stack id. Or, you can compare a target template body (posted in json format to `body` parameter) with a source template retrieved by its version id and stack id._
+_Note: You can compare two templates by retrieving them from their version id and stack id. Or, you can compare a target template body \(posted in json format to_ `body` _parameter\) with a source template retrieved by its version id and stack id._
 
-_The current API version only supports two templates comparison, and you always should retrieve the source template by its version id and stack id. That being said, you have to always pass at least one item in parameter `id` array. Below are two examples:_
+_The current API version only supports two templates comparison, and you always should retrieve the source template by its version id and stack id. That being said, you have to always pass at least one item in parameter_ `id` _array. Below are two examples:_
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
 ```
 
-Request body ( _Example 1_ )
+Request body \( _Example 1_ \)
+
 ```bash
 {
     "id": [
@@ -212,7 +200,8 @@ Request body ( _Example 1_ )
 }
 ```
 
-Request body ( _Example 2_ )
+Request body \( _Example 2_ \)
+
 ```bash
 {
     "id": [
@@ -305,23 +294,18 @@ HTTP/1.1 202 Accepted
 }
 ```
 
-
 ### Template Versions {#template-list}
 
 List Mobingi Alm template versions
 
-<div class="callout callout-info">
-GET <code>/v3/alm/template</code>
-</div>
+ GET `/v3/alm/template`
 
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-| stack_id       | string        |   Yes     |  The unique id returned when applying the template     |
-
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| stack\_id | string | Yes | The unique id returned when applying the template |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
@@ -354,23 +338,18 @@ HTTP/1.1 200 OK
 ]
 ```
 
-
 ### Describe Template {#template-describe}
 
 Describes the template body of a specific version.
 
-<div class="callout callout-info">
-GET <code>/v3/alm/template/{stack_id}</code>
-</div>
+ GET `/v3/alm/template/{stack_id}`
 
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-| version_id       | string        |   No     | The id of the template version associated with the stack. If empty or "latest" provided, the most updated template version is returned      |
-
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| version\_id | string | No | The id of the template version associated with the stack. If empty or "latest" provided, the most updated template version is returned |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
@@ -406,20 +385,16 @@ HTTP/1.1 200 OK
 }
 ```
 
-
 ## Stacks {#stacks}
-
 
 ### List Stacks {#stack-list}
 
 List all stacks running under current organization account.
 
-<div class="callout callout-info">
-GET <code>/v3/alm/stack</code>
-</div>
-
+ GET `/v3/alm/stack`
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
@@ -470,23 +445,18 @@ HTTP/1.1 200 OK
 ]
 ```
 
-
-
 ### Describe Stack {#stack-describe}
 
 Describes the stack detail information.
 
-<div class="callout callout-info">
-GET <code>/v3/alm/stack/{stack_id}</code>
-</div>
-
+ GET `/v3/alm/stack/{stack_id}`
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
 ```
-
 
 Response Body
 
@@ -532,28 +502,22 @@ HTTP/1.1 200 OK
 
 Describes the stack container detail information.
 
-<div class="callout callout-info">
-GET <code>/v3/alm/container/{container_id}</code>
-</div>
+ GET `/v3/alm/container/{container_id}`
 
-
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-| container_id       | string        |   Yes     | The id of the container associated with the stack. |
-
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| container\_id | string | Yes | The id of the container associated with the stack. |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
 ```
 
-
 Response Body
 
-```json
+```javascript
 HTTP/1.1 200 OK
 
 {
@@ -568,31 +532,25 @@ HTTP/1.1 200 OK
 
 ### List Containers {#list-containers}
 
-List the stack containers filtering by {stack_id} or {instance_id}
+List the stack containers filtering by {stack\_id} or {instance\_id}
 
-<div class="callout callout-info">
-GET <code>/v3/alm/container</code>
-</div>
+ GET `/v3/alm/container`
 
-
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-| stack_id       | string        |   conditional     | If both {stack_id} and {instance_id} are presents, {stack_id} will be ignored. |
-| instance_id       | string        |   conditional     | The id of the instance. |
-
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| stack\_id | string | conditional | If both {stack\_id} and {instance\_id} are presents, {stack\_id} will be ignored. |
+| instance\_id | string | conditional | The id of the instance. |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
 ```
 
-
 Response Body
 
-```json
+```javascript
 HTTP/1.1 200 OK
 
 [
@@ -625,28 +583,20 @@ HTTP/1.1 200 OK
 
 ## RBAC {#rbac}
 
-
-
 ### Create Role {#rbac-create-role}
 
-Creates a new role. (__Note: This endpoint can only be accessed by master account__)
+Creates a new role. \(**Note: This endpoint can only be accessed by master account**\)
 
+ POST `/v3/role`
 
-<div class="callout callout-info">
-POST <code>/v3/role</code>
-</div>
-
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-|   name  | string        | Yes       | Name of Mobingi Role            |
-|   scope  | string        | Yes       | Mobingi Role in json string format            |
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| name | string | Yes | Name of Mobingi Role |
+| scope | string | Yes | Mobingi Role in json string format |
 
 Request Header
 
 ```bash
-
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/x-www-form-urlencoded
 ```
@@ -674,26 +624,24 @@ HTTP/1.1 200
 
 Updates an existing role.
 
-__Note:__ _This endpoint is denied to all users except master account, defined by [default RBAC scope](https://learn.mobingi.com/enterprise/rbac-reference#default-roles), and this scope cannot be overwritten._
+**Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
-<div class="callout callout-info">
-PUT <code>/v3/role/{role_id}</code>
-</div>
+ PUT `/v3/role/{role_id}`
 
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-|   name  | string        | Yes       | Name of Mobingi Role            |
-|   scope  | string        | Yes       | Mobingi Role in json string format            |
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| name | string | Yes | Name of Mobingi Role |
+| scope | string | Yes | Mobingi Role in json string format |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/x-www-form-urlencoded
 ```
 
 Request body
+
 ```bash
 {
   "name": "sample name",
@@ -714,17 +662,14 @@ HTTP/1.1 200
 
 ### Delete Role {#rbac-delete-role}
 
-
 Deletes an existing Role.
 
+**Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
-__Note:__ _This endpoint is denied to all users except master account, defined by [default RBAC scope](https://learn.mobingi.com/enterprise/rbac-reference#default-roles), and this scope cannot be overwritten._
-
-<div class="callout callout-info">
-DELETE <code>/v3/role/{role_id}</code>
-</div>
+ DELETE `/v3/role/{role_id}`
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
@@ -745,15 +690,12 @@ HTTP/1.1 200
 
 Lists all roles created under current account.
 
+**Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
-__Note:__ _This endpoint is denied to all users except master account, defined by [default RBAC scope](https://learn.mobingi.com/enterprise/rbac-reference#default-roles), and this scope cannot be overwritten._
-
-<div class="callout callout-info">
-GET <code>/v3/role</code>
-</div>
-
+ GET `/v3/role`
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
@@ -778,112 +720,106 @@ HTTP/1.1 200
 ]
 ```
 
-
 ### Describe Roles {#rbac-describe-roles}
 
+1. **Describe roles attached to the user**
 
+   Lists all roles attached to a user specified by username.
 
-1. ##### Describe roles attached to the user
+   **Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
-    Lists all roles attached to a user specified by <var>username</var>.
+    GET `/v3/user/{username}/role`
 
-    __Note:__ _This endpoint is denied to all users except master account, defined by [default RBAC scope](https://learn.mobingi.com/enterprise/rbac-reference#default-roles), and this scope cannot be overwritten._
+```text
+Request Header
+```bash
+Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
+Content-Type: application/json
+```
 
-    <div class="callout callout-info">
-    GET <code>/v3/user/{username}/role</code>
-    </div>
+Response Body
 
+```bash
+HTTP/1.1 200
+[
+    {
+        "role_id": "morole-544****0e1-ZgNT***M8K-tk",
+        "user_id": "544****0e1",
+        "name": "sample name",
+        "scope": "{ _role scope body_ }",
+        "create_time": "",
+        "update_time": ""
+    },
+    {
+        ....
+    }
 
-    Request Header
-    ```bash
-    Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
-    Content-Type: application/json
-    ```
+]
+```
+```
 
-    Response Body
+1. **Describe Current Logged In User Roles**
 
-    ```bash
-    HTTP/1.1 200
-    [
-        {
-            "role_id": "morole-544****0e1-ZgNT***M8K-tk",
-            "user_id": "544****0e1",
-            "name": "sample name",
-            "scope": "{ _role scope body_ }",
-            "create_time": "",
-            "update_time": ""
-        },
-        {
-            ....
-        }
+```text
+Lists all roles attached to current user.
 
-    ]
-    ```
-
-2. ##### Describe Current Logged In User Roles
-
-
-    Lists all roles attached to current user.
-
-    _This endpoint is requested by users instead of master account, and returns the roles that attached to them._
-
-    <div class="callout callout-info">
-    GET <code>/v3/user/role</code>
-    </div>
-
-
-
-    Request Header
-    ```bash
-    Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
-    Content-Type: application/json
-    ```
-
-    Response Body
-
-    ```bash
-    HTTP/1.1 200
-    [
-        {
-            "user_role_id": "mour-5447****0e1-TEW****dsIE-tk",
-            "role_id": "morole-5447****0e1-ZgN****RM8K-tk",
-            "user": "{ user_id: 5447****0e1, username: tes***est }",
-            "scope": "{ _role scope body_ }",
-            "create_time": "",
-            "update_time": ""
-        },
-        {
-            ....
-        }
-
-    ]
-    ```
-
-### Attach Role to User {#rbac-attach-user-role}
-
-
-Attach an existing role to a user.
-
-__Note:__ _This endpoint is denied to all users except master account, defined by [default RBAC scope](https://learn.mobingi.com/enterprise/rbac-reference#default-roles), and this scope cannot be overwritten._
+_This endpoint is requested by users instead of master account, and returns the roles that attached to them._
 
 <div class="callout callout-info">
-POST <code>/v3/user/role</code>
+GET <code>/v3/user/role</code>
 </div>
 
 
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-|   username  | string        | Yes       | target user            |
-|   role_id  | string        | Yes       | Mobingi Role Id            |
-
 
 Request Header
+```bash
+Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
+Content-Type: application/json
+```
+
+Response Body
+
+```bash
+HTTP/1.1 200
+[
+    {
+        "user_role_id": "mour-5447****0e1-TEW****dsIE-tk",
+        "role_id": "morole-5447****0e1-ZgN****RM8K-tk",
+        "user": "{ user_id: 5447****0e1, username: tes***est }",
+        "scope": "{ _role scope body_ }",
+        "create_time": "",
+        "update_time": ""
+    },
+    {
+        ....
+    }
+
+]
+```
+```
+
+### Attach Role to User {#rbac-attach-user-role}
+
+Attach an existing role to a user.
+
+**Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
+
+ POST `/v3/user/role`
+
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| username | string | Yes | target user |
+| role\_id | string | Yes | Mobingi Role Id |
+
+Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/x-www-form-urlencoded
 ```
 
 Request body
+
 ```bash
 {
   "username": "testtest",
@@ -905,26 +841,23 @@ HTTP/1.1 200
 
 Reattach a role to user.
 
+**Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
-__Note:__ _This endpoint is denied to all users except master account, defined by [default RBAC scope](https://learn.mobingi.com/enterprise/rbac-reference#default-roles), and this scope cannot be overwritten._
+ PUT `/v3/user/role/{role_id}`
 
-<div class="callout callout-info">
-PUT <code>/v3/user/role/{role_id}</code>
-</div>
-
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-|   username  | string        | Yes       | target user            |
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| username | string | Yes | target user |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/x-www-form-urlencoded
 ```
 
 Request body
+
 ```bash
 {
   "username": "testtest"
@@ -942,31 +875,27 @@ HTTP/1.1 200
 }
 ```
 
-
 ### Detach Role from User {#rbac-detach-user-role}
 
 Deatch a role from user.
 
+**Note:** _This endpoint is denied to all users except master account, defined by_ [_default RBAC scope_](https://learn.mobingi.com/enterprise/rbac-reference#default-roles)_, and this scope cannot be overwritten._
 
-__Note:__ _This endpoint is denied to all users except master account, defined by [default RBAC scope](https://learn.mobingi.com/enterprise/rbac-reference#default-roles), and this scope cannot be overwritten._
+ DELETE `/v3/user/role/{role_id}`
 
-<div class="callout callout-info">
-DELETE <code>/v3/user/role/{role_id}</code>
-</div>
-
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-|   username  | string        | Yes       | target user            |
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| username | string | Yes | target user |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
 ```
 
 Request body
+
 ```bash
 {
   "username": "testtest"
@@ -986,20 +915,16 @@ HTTP/1.1 200
 
 ### Describe Role Scope {#rbac-describe-role-scope}
 
-
 Describes the role scope body.
 
-<div class="callout callout-info">
-GET <code>/v3/role/templates</code>
-</div>
-
+ GET `/v3/role/templates`
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
 ```
-
 
 Response Body
 
@@ -1030,14 +955,9 @@ HTTP/1.1 200
 ]
 ```
 
-
-
 ## Alm-Agent {#alm-agent}
 
-_In this section, all endpoints are designated to work with Mobingi alm-agent in order to perform application lifecycle automation by Mobingi.
-Mobingi alm-agent is the Linux server side program that automatically installed during instance launch and initialization.
-If you are a contributor to the OSS repo [github.com/mobingi/alm-agent](https://github.com/mobingi/alm-agent), you're looking at the right reference here. If you are a developer working on integrating Mobingi ALM with your client applications or contributing to Mobingi API/UI only, you can ignore this API references section._
-
+_In this section, all endpoints are designated to work with Mobingi alm-agent in order to perform application lifecycle automation by Mobingi. Mobingi alm-agent is the Linux server side program that automatically installed during instance launch and initialization. If you are a contributor to the OSS repo_ [_github.com/mobingi/alm-agent_](https://github.com/mobingi/alm-agent)_, you're looking at the right reference here. If you are a developer working on integrating Mobingi ALM with your client applications or contributing to Mobingi API/UI only, you can ignore this API references section._
 
 ### Register Agent Status {#alm-agent-register-agent-status}
 
@@ -1045,24 +965,20 @@ This endpoint listens to the notifications sent by Mobingi alm-agent for self st
 
 For example, when an instance is launched and Mobingi alm agent is installed, the agent will first call this endpoint to register itself.
 
-Another example, when an AWS spot instance is scheduled to be shutdown, the agent will send notice to this endpoint and allow Mobingi system to perform other necessary actions (_such as spot replacement)_.
+Another example, when an AWS spot instance is scheduled to be shutdown, the agent will send notice to this endpoint and allow Mobingi system to perform other necessary actions \(_such as spot replacement\)_.
 
+ POST `/v3/alm/agent/agent_status`
 
-<div class="callout callout-info">
-POST <code>/v3/alm/agent/agent_status</code>
-</div>
-
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-| stack_id       | string        |   Yes     |   The stack id which this server instance is belonged to   |
-| agent_id       | string        |   Yes     |   The agent's unique identifier |
-| status       | string        |   Yes     |  Sample values: _starting_, _installing_, _error_, _notice_, <i>spot_terminate</i>, etc..  |
-| instance_id       | string        |   No     |   The server instance id where Mobingi alm-agent is installed on |
-| message       | string        |   No     |  Optional, a description of the status message, e.g: _image/repository not found_  |
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| stack\_id | string | Yes | The stack id which this server instance is belonged to |
+| agent\_id | string | Yes | The agent's unique identifier |
+| status | string | Yes | Sample values: _starting_, _installing_, _error_, _notice_, spot\_terminate, etc.. |
+| instance\_id | string | No | The server instance id where Mobingi alm-agent is installed on |
+| message | string | No | Optional, a description of the status message, e.g: _image/repository not found_ |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
@@ -1072,33 +988,24 @@ Response Body
 
 ```bash
 HTTP/1.1 202 Accepted
-
-
 ```
-
-
 
 ### Register Container Status {#alm-agent-register-container-status}
 
 This endpoint listens to the notifications sent by Mobingi alm-agent with the status updates during a container's lifecycle. Possible status examples: _starting_, _updating_, _restarting_, _running_, _terminated_, etc.
 
+ POST `/v3/alm/agent/container_status`
 
-<div class="callout callout-info">
-POST <code>/v3/alm/agent/container_status</code>
-</div>
-
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-| stack_id       | string        |   Yes     |   The stack id which this server instance is belonged to   |
-| agent_id       | string        |   Yes     |   The agent's unique identifier |
-| container_id       | string        |   Yes     |   The container unique id. _Sometimes, this value could be an instance's id. |
-| status       | string        |   Yes     |  sample values: _starting_, _updating_, _restarting_, _running_, _terminated_, etc..  |
-| instance_id       | string        |   No     |   The server instance id where Mobingi alm-agent is installed on |
-
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| stack\_id | string | Yes | The stack id which this server instance is belonged to |
+| agent\_id | string | Yes | The agent's unique identifier |
+| container\_id | string | Yes | The container unique id. \_Sometimes, this value could be an instance's id. |
+| status | string | Yes | sample values: _starting_, _updating_, _restarting_, _running_, _terminated_, etc.. |
+| instance\_id | string | No | The server instance id where Mobingi alm-agent is installed on |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
@@ -1108,26 +1015,21 @@ Response Body
 
 ```bash
 HTTP/1.1 202 Accepted
-
-
 ```
+
 ### Describe Container Configuration {#alm-agent-container-config}
 
 This endpoint is used by Mobingi alm-agent to describing `container` section of the layer configuration from Mobingi Alm Template, identified by `flag` name.
 
-<div class="callout callout-info">
-GET <code>/v3/alm/agent/config</code>
-</div>
+ GET `/v3/alm/agent/config`
 
-
-| Parameters    | Type          | Required  | Detail       |
-| ------------- |:-------------:| ---------:| :------------|
-| stack_id       | string        |   Yes     | the stack id where the instance is associated to     |
-| flag       | string        |   Yes     | The flag identifier of the configuration layer    |
-
-
+| Parameters | Type | Required | Detail |
+| --- | :---: | ---: | :--- |
+| stack\_id | string | Yes | the stack id where the instance is associated to |
+| flag | string | Yes | The flag identifier of the configuration layer |
 
 Request Header
+
 ```bash
 Authorization: Bearer eyJ0eXAiOiJQiL...CJhbGciOMeXzQfME
 Content-Type: application/json
@@ -1152,4 +1054,6 @@ HTTP/1.1 200 OK
   "updated": 1492161755
 }
 ```
-__Note:__ _If the response has an empty body, it could mean that wrong `flag` name was provided, or it doesn't have any container config defined._
+
+**Note:** _If the response has an empty body, it could mean that wrong_ `flag` _name was provided, or it doesn't have any container config defined._
+
