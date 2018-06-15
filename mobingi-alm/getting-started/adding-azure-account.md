@@ -43,7 +43,7 @@ If you do not have yet a Mobingi ALM account, you can sign up [here](https://mob
 
 ![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.13.27_box2.png)
 
-3. Enter your preferred account name and the `Application ID`, `Secret Access Key`, `Subscription ID`, `Directory ID` you created in the _**Using Azure portal to create necessary credentials**_ section and click _**Add Account**_ button
+3. Enter your preferred account name and the `Application ID`, `Secret Access Key`, `Subscription ID`, `Directory ID` you created in the _**Using**_ [_**Azure portal**_](https://portal.azure.com) _**to create necessary credentials**_ section and click _**Add Account**_ button
 
 ![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.16.53box3.png)
 
