@@ -331,7 +331,7 @@ Below is also the default value for K5.
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| int | no | Number of instances \(VMs\) to provision. This is only applicable to non-autoscaled stacks.For autoscaled stacks, see \`auto\_scaling\` section. |
+| int | no | Number of instances \(VMs\) to provision. This is only applicable to non-autoscaled stacks.For autoscaled stacks, see `auto_scaling` section. |
 
 If you don't specify this declarative, the default value of _1_ will be applied.
 
@@ -357,7 +357,7 @@ Valid values:
 {% endtab %}
 
 {% tab title="GCP" %}
-
+This value is only valid when &gt; 0 **AND** `auto_scaling.min` and `auto_scaling.max` are both set to zero. See [auto\_scaling](https://docs.mobingi.com/~/edit/drafts/-LFGEpO3Bbe9iO_YTYp-/mobingi-alm/alm-template/alm-template-reference#auto_scaling) section for more information about autoscaling.
 {% endtab %}
 
 {% tab title="K5" %}
