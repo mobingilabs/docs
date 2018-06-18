@@ -6,7 +6,7 @@
 
 Reserved key name, not supported yet.
 
-Currently, a new VPC will be created with every ALM-template execution and the default VPC has a fixed CIDR range of **10.0.0.0/16** and you cannot customize it at the moment, so when you specifying your subnets please make sure the CIDR setting for your subnets are sitting within the VPC CIDR range.
+Currently, a new VPC will be created with every ALM Template execution and the default VPC has a fixed CIDR range of **10.0.0.0/16** and you cannot customize it at the moment, so when you specifying your subnets please make sure the CIDR setting for your subnets are sitting within the VPC CIDR range.
 
 For GCP, all deployments use the region's default public network. For GCP's predefined network ranges, you can refer to this [page](https://cloud.google.com/vpc/docs/vpc#ip-ranges).
 
@@ -14,7 +14,7 @@ For GCP, all deployments use the region's default public network. For GCP's pred
 
 | Type | Required | Description |
 | --- | --- |
-| string | Yes | The availability zone of which the stack deploys to. You must specify this value in your ALM-template. |
+| string | Yes | The availability zone of which the stack deploys to. You must specify this value in your ALM Template. |
 
 Valid values:
 
@@ -289,7 +289,7 @@ Default: 1101.
 
 Default values will be applied for each cloud platform \(see below for default values\). However, you can also specify this value for launching with a customized machine image.
 
-Note: If you specify this value and also specify the [container](https://learn.mobingi.com/alm-templates-reference#container) section in the ALM-template to take the advantage of application lifecycle management, you need to make sure the base machine image operating system supports ALM-agent installation. For supported operating systems by ALM-agent, please refer to [this guide](https://learn.mobingi.com/alm-agent/getting-started#prerequisites).
+Note: If you specify this value and also specify the [container](https://learn.mobingi.com/alm-templates-reference#container) section in the ALM Template to take the advantage of application lifecycle management, you need to make sure the base machine image operating system supports ALM-agent installation. For supported operating systems by ALM-agent, please refer to [this guide](https://learn.mobingi.com/alm-agent/getting-started#prerequisites).
 
 Valid values:
 

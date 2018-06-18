@@ -1,6 +1,6 @@
 # ALM Template Language
 
-ALM-template provides several built-in functions that help you manage your ALM-template. These functions are named **ATL**, short for **A**LM **T**emplate **L**anguage. Not to be confused with Microsoft's [ATL](https://msdn.microsoft.com/en-us/library/3ax346b7.aspx).
+ALM Template provides several built-in functions that help you manage your ALM Template. These functions are named **ATL**, short for **A**LM **T**emplate **L**anguage. Not to be confused with Microsoft's [ATL](https://msdn.microsoft.com/en-us/library/3ax346b7.aspx).
 
 Use ATL functions in your templates to assign values to properties that are not available until runtime.
 
@@ -16,7 +16,7 @@ _Usage:_
 
 `${computed}`
 
-This function is used to calculate the valid value for supported declarative in your Alm-template.
+This function is used to calculate the valid value for supported declarative in your ALM Template.
 
 Example:
 
