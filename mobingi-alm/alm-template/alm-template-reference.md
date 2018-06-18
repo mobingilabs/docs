@@ -1147,15 +1147,19 @@ This section hasn't been covered by documentation
 
 ## container {#container}
 
-#### container\_image {#container_image}
+### container\_image
 
-The docker image to be used to launch base container.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| string | `registry.mobingi.com/tompson/ubuntu-nginx-php:latest` | No | Platform Stateless |
+| string | no | The docker image to be used to launch base container. |
 
-#### container\_registry\_username {#container_registry_username}
+Example: 
+
+| `registry.mobingi.com/tompson/ubuntu-nginx-php:latest` |
+| :--- | :--- | :--- | :--- |
+
+
+### container\_registry\_username
 
 The docker image registry's username if this is a private image repository.
 
@@ -1163,39 +1167,49 @@ The docker image registry's username if this is a private image repository.
 | :--- | :--- | :--- | :--- |
 | string | N/A | No | Platform Stateless |
 
-#### container\_registry\_password {#container_registry_password}
+### container\_registry\_password
 
-The docker image registry's password if this is a private image repository.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| string | N/A | No | Platform Stateless |
+| string | no | The docker image registry's password if this is a private image repository. |
 
-#### container\_code\_dir {#container_code_dir}
+### container\_code\_dir
 
-The directory of the instance where application code will be deployed to.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
-| string | `/var/www/html` | No | Platform Stateless |
+| string | no | The directory of the instance where application code will be deployed to. |
 
-#### container\_git\_repo {#container_git_repo}
+Example: 
 
-The git repository url of where application code is hosted.
-
-| Type | Example Value | Required | Supported Platforms |
+| `/var/www/html` |
 | :--- | :--- | :--- | :--- |
-| string | `https://github.com/mobingilabs/default-site-php.git` | No | Platform Stateless |
 
-#### container\_git\_reference {#container_git_reference}
 
-The git repository branch of where application code is hosted.
+### container\_git\_repo
 
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| string | `master` | No | Platform Stateless |
+| string | no | The git repository url of where application code is hosted. |
 
-#### container\_git\_private\_key {#container_git_private_key}
+Example: 
+
+| `https://github.com/mobingilabs/default-site-php.git` |
+| :--- | :--- | :--- | :--- |
+
+
+### container\_git\_reference
+
+| Type | Required | Description |
+| :--- | :--- | :--- | :--- |
+| string | no | The git repository branch of where application code is hosted. |
+
+Example:
+
+```text
+master
+```
+
+### container\_git\_private\_key
 
 The private key of the git repository if it is a private repository.
 
@@ -1203,43 +1217,42 @@ The private key of the git repository if it is a private repository.
 | :--- | :--- | :--- | :--- |
 | string | See below | No | Platform Stateless |
 
-#### container\_ports {#container_ports}
+### container\_ports
 
-The ports for connection to be used by containers.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| array | `[ 80 ]` | No | Platform Stateless |
+| array | no | The ports for connection to be used by containers. |
 
-#### container\_users {#container_users}
+Example: 
+
+| `[ 80 ]` |
+| :--- | :--- | :--- | :--- |
+
+
+### container\_users
 
 This parameter is not yet supported.
 
-#### container\_env\_vars {#container_env_vars}
+### container\_env\_vars
 
-The environment variables to be defined for the container operating system.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| object | See below | No | Platform Stateless |
+| object | no | The environment variables to be defined for the container operating system. |
 
-* **Valid Values**
-* [Platform Stateless](alm-template-reference.md#container_demo)
+## An example `container` configuration:
 
-  The container section is identical to all platforms. Below is an example container configuration.
-
-```text
-    "container": {
-        "container_image": "mobingi/ubuntu-apache2-php7",
-        "container_code_dir": "/var/www/html",
-        "container_git_repo": "https://github.com/mobingilabs/default-site-php.git",
-        "container_git_reference": "master",
-        "container_ports": [80],
-        "container_env_vars": {
-            "display_errors": "Off",
-            "my_variable": "Some value"
-        }
-    }
+```typescript
+"container": {
+  "container_image": "mobingi/ubuntu-apache2-php7",
+  "container_code_dir": "/var/www/html",
+  "container_git_repo": "https://github.com/mobingilabs/default-site-php.git",
+  "container_git_reference": "master",
+  "container_ports": [80],
+  "container_env_vars": {
+    "display_errors": "Off",
+    "my_variable": "Some value"
+  }
+}
 ```
 
 
