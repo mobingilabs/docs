@@ -445,53 +445,15 @@ This section hasn't been covered by documentation.
 
 The ssh key pair used to access instances.
 
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| boolean | true, false | No | `AWS` `AliCloud` `Azure` `K5` |
-
-* **Valid Values**
-
-{% tabs %}
-{% tab title="AWS" %}
-Example below is also the default settings when deploying to AWS.
-
-```text
-"keypair": true
-```
-{% endtab %}
-
-{% tab title="ALIBABA Cloud" %}
-Example below is also the default settings when deploying to Alibaba Cloud.
-
-```text
-"keypair": true
-```
-{% endtab %}
-
-{% tab title="AZURE" %}
-Example below is also the default settings when deploying to Azure.
-
-```text
-"keypair": true
-```
-{% endtab %}
-
-{% tab title="K5" %}
-Example below is also the default settings when deploying to K5.
-
-```text
-"keypair": true
-```
-{% endtab %}
-{% endtabs %}
+| boolean | no | Enable SSH key pair to be used to access instances. Default value is **true**. |
 
 ### subnet {#subnet}
 
-The subnet settings.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| object | See below | No | `AWS` `AliCloud` `Azure` `K5` |
+| object | no | The subnet settings. |
 
 A _subnet_ section contains 3 key names.
 
@@ -521,9 +483,7 @@ A _subnet_ section contains 3 key names.
 
   If you set `public` as _false_, then this declarative will be ignored.
 
-
-
-* **Valid Values**
+Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -531,10 +491,10 @@ Example below is also the default settings when deploying to AWS.
 
 ```text
 "subnet": {
-        "cidr": "10.0.0.0/24",
-        "public": true,
-        "auto_assign_public_ip": true
-    }
+  "cidr": "10.0.0.0/24",
+  "public": true,
+  "auto_assign_public_ip": true
+}
 ```
 {% endtab %}
 
@@ -543,10 +503,10 @@ Example below is also the default settings when deploying to Alibaba Cloud.
 
 ```text
 "subnet": {
-        "cidr": "192.168.199.0/24",
-        "public": true,
-        "auto_assign_public_ip": true
-    }
+  "cidr": "192.168.199.0/24",
+  "public": true,
+  "auto_assign_public_ip": true
+}
 ```
 {% endtab %}
 
@@ -555,11 +515,15 @@ Example below is also the default settings when deploying to Azure.
 
 ```text
 "subnet": {
-        "cidr": "192.168.199.0/24",
-        "public": true,
-        "auto_assign_public_ip": true
-    }
+  "cidr": "192.168.199.0/24",
+  "public": true,
+  "auto_assign_public_ip": true
+}
 ```
+{% endtab %}
+
+{% tab title="GCP" %}
+This is not supported yet.
 {% endtab %}
 
 {% tab title="K5" %}
@@ -567,10 +531,10 @@ Example below is also the default settings when deploying to K5.
 
 ```text
 "subnet": {
-        "cidr": "10.1.0.0/24",
-        "public": true,
-        "auto_assign_public_ip": true
-    }
+  "cidr": "10.1.0.0/24",
+  "public": true,
+  "auto_assign_public_ip": true
+}
 ```
 {% endtab %}
 {% endtabs %}
