@@ -1211,11 +1211,9 @@ master
 
 ### container\_git\_private\_key
 
-The private key of the git repository if it is a private repository.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| string | See below | No | Platform Stateless |
+| string | no | The private key of the git repository if it is a private repository. |
 
 ### container\_ports
 
