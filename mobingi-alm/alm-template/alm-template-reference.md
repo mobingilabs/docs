@@ -145,6 +145,10 @@ WestUs2
 {% endtab %}
 
 {% tab title="GCP" %}
+```ruby
+"availability_zone": "asia-northeast1-a"
+```
+
 You can refer to this [page](https://cloud.google.com/compute/docs/regions-zones/) for supported availability zones in GCP.
 {% endtab %}
 
