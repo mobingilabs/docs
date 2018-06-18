@@ -18,14 +18,14 @@ The availability zone of which the stack deploys to.
 | :--- | :--- | :--- | :--- |
 | string | us-east-1 | Yes | `AWS` `AliCloud` `Azure`  `K5` |
 
-You must specify this value in your Alm-template.
+You must specify this value in your ALM Template.
 
 * **Valid Values**
 
 {% tabs %}
 {% tab title="AWS" %}
 ```text
-    "availability_zone": "ap-northeast-1c"
+"availability_zone": "ap-northeast-1c"
 ```
 
 Below are the valid availability zones for each regions on AWS.
