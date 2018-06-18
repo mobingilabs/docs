@@ -827,11 +827,9 @@ This section hasn't been covered by documentation.
 
 ### load\_balancer {#load_balancer}
 
-The load-balancer for the auto-scaling group.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| object | See below | No | `AWS` `AliCloud` `K5` |
+| object | no | The `load_balancer` for the `auto_scaling` group. |
 
 The _load balancer_ section contains the following declarative:
 
@@ -970,9 +968,9 @@ The _load balancer_ section contains the following declarative:
 
     Specifies the number of consecutive health probe failures required before moving the instance to the Unhealthy state.
 
-    _Required:_ No  
+    _Required:_ No
 
-* **Valid Values**
+Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -1009,6 +1007,10 @@ This section hasn't been covered by documentation.
 
 {% endtab %}
 
+{% tab title="GCP" %}
+For now, GCP only supports the classic load balancer. It uses `listeners.load_balancer_port` and `health_check.target` keys for configuration and always creates an internet-facing load balancer.
+{% endtab %}
+
 {% tab title="K5" %}
 This section hasn't been covered by documentation.
 {% endtab %}
@@ -1016,11 +1018,9 @@ This section hasn't been covered by documentation.
 
 ### rds {#rds}
 
-The Rds is a managed relational database service.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| object | See below | No | `AWS` `AliCloud` `K5` |
+| object | no | The `rds` is a managed relational database service. |
 
 The _rds_ section contains the following declarative:
 
@@ -1058,9 +1058,9 @@ The _rds_ section contains the following declarative:
 
   Constraints: 1-5 \(replica counts\).
 
-  _Required:_ No  
+  _Required:_ No
 
-* **Valid Values**
+Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -1134,6 +1134,10 @@ This section hasn't been covered by documentation.
 
 {% tab title="AZURE" %}
 This section hasn't been covered by documentation
+{% endtab %}
+
+{% tab title="GCP" %}
+This is not supported yet.
 {% endtab %}
 
 {% tab title="K5" %}
