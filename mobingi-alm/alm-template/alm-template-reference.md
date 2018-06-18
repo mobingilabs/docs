@@ -283,17 +283,15 @@ Default: 1101.
 
 ### image {#image}
 
-The machine image \(id\) used to launch the instance.
-
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | string | no | The machine image \(id\) used to launch the instance. |
 
 Default values will be applied for each cloud platform \(see below for default values\). However, you can also specify this value for launching with a customized machine image.
 
-Note: If you specify this value and also specify the [container](https://learn.mobingi.com/alm-templates-reference#container) section in the Alm-template to take the advantage of application lifecycle management, you need to make sure the base machine image operating system supports Alm-agent installation. For supported operating systems by Alm-agent, please refer to [this guide](https://learn.mobingi.com/alm-agent/getting-started#prerequisites).
+Note: If you specify this value and also specify the [container](https://learn.mobingi.com/alm-templates-reference#container) section in the ALM Template to take the advantage of application lifecycle management, you need to make sure the base machine image operating system supports ALM Agent installation. For supported operating systems by ALM Agent, please refer to [this guide](https://learn.mobingi.com/alm-agent/getting-started#prerequisites).
 
-* **Valid Values**
+Valid values
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -310,6 +308,14 @@ Below is also the default value for Alibaba Cloud.
 ```text
     "image": "centos_7_03_64_40G_alibase_20170710.vhd"
 ```
+{% endtab %}
+
+{% tab title="Azure" %}
+This is not supported yet.
+{% endtab %}
+
+{% tab title="GCP" %}
+This is not supported yet.
 {% endtab %}
 
 {% tab title="K5" %}
