@@ -139,6 +139,8 @@ WestUs2
 {% endtab %}
 
 {% tab title="GCP" %}
+Example:
+
 ```ruby
 "availability_zone": "asia-northeast1-a"
 ```
