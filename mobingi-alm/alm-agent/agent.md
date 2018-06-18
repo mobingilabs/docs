@@ -2,9 +2,9 @@
 
 ## Usage {#usage}
 
-ALM Agent is a very simple and easy-to-use tool. It can be used like a CLI \(not a Daemon\).
+ALM-agent is a very simple and easy-to-use tool. It can be used like a CLI \(not a Daemon\).
 
-Executing alm-agent will start the containers, the code will be deployed, and the command will be terminated.
+Executing ALM-agent will start the containers, the code will be deployed, and the command will be terminated.
 
 To view a list of the available options and commands at any time, just run `alm-agent` with `--help, -h` arguments:
 
