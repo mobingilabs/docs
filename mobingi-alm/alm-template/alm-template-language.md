@@ -1,12 +1,12 @@
 # ALM Template Language
 
-Mobingi ALM provides several built-in functions that help you manage your Alm-template. These functions are named **ATL**, short for **A**lm **T**emplate **L**anguage.
+ALM-template provides several built-in functions that help you manage your ALM-template. These functions are named **ATL**, short for **A**LM **T**emplate **L**anguage. Not to be confused with Microsoft's [ATL](https://msdn.microsoft.com/en-us/library/3ax346b7.aspx).
 
 Use ATL functions in your templates to assign values to properties that are not available until runtime.
 
-**Note:**
-
 {% hint style="info" %}
+For now, ATL is only supported in AWS. Support for other cloud vendors will be available soon.
+
 You can use ATL functions only in specific parts of a template. Please refer to each functions' document for detailed explanation.
 {% endhint %}
 
