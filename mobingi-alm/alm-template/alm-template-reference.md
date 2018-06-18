@@ -157,26 +157,16 @@ You can refer to this [page](https://cloud.google.com/compute/docs/regions-zones
 
 ### instance\_type {#instance_type}
 
-The type of instances \(**VM**s\).
+The type of instances \(**VM**s\). If value is not provided in the template, the default values will be used for each cloud platform.
 
-| Type | Example Value | Required | Supported Platforms |
-| :--- | :--- | :--- | :--- |
-| string | t2.micro | No | `AWS` `AliCloud` `Azure` `K5` |
-
-{% hint style="info" %}
-**Note:** If you don't specify this declarative, the default values will be applied for each cloud platform.
-{% endhint %}
-
-See below for default values.
-
-* **Valid Values**
+**Valid Values**
 
 {% tabs %}
 {% tab title="AWS" %}
 Default: t2.micro
 
 ```text
-    "instance_type": "t2.micro"
+"instance_type": "t2.micro"
 ```
 
 Below are the valid instance types for AWS.
@@ -272,6 +262,12 @@ Default: Standard\_B1s.
 ```text
     "instance_type": "Standard_B1s"
 ```
+{% endtab %}
+
+{% tab title="GCP" %}
+Default type: `n1-standard-1`
+
+Refer to this [page](https://cloud.google.com/compute/docs/machine-types) for information on GCP machine types.
 {% endtab %}
 
 {% tab title="K5" %}
