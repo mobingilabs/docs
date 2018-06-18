@@ -727,15 +727,17 @@ This section hasn't been covered by documentation.
 
 ### auto\_scaling {#auto_scaling}
 
-The auto-scaling group defines the configuration to automatically scale up or down the number of compute resources that are being allocated to your application based on its needs at any given time.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| object, or string | See below | No | `AWS` `AliCloud`  `Azure` `K5` |
+| object, or string | no | The `auto_scaling` group defines the configuration to automatically scale up or down the number of compute resources that are being allocated to your application based on its needs at any given time. |
 
-**Note:** If you are deploying an _application_ type of load balancer \(you define in [`load_balancer`](https://learn.mobingi.com/alm-templates-reference#load_balancer) declarative\), you can omit the required parameters below and use the ATL function `#share` to share the same auto scaling group which you defined in another layer. [Click here](https://learn.mobingi.com/alm-template-language) for more on ATL functions.
+If you are deploying an _application_ type of load balancer \(you define in [`load_balancer`](https://learn.mobingi.com/alm-templates-reference#load_balancer) declarative\), you can omit the required parameters below and use the ATL function `#share` to share the same auto scaling group which you defined in another layer. [Click here](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-language) for more on ATL functions.
 
-The _auto scaling_ section contains the following declarative:
+{% hint style="warning" %}
+[**ATL**](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-language) is only supported by AWS at the moment.
+{% endhint %}
+
+The `auto_scaling` section contains the following declarative:
 
 * `min` \(int\)
 
