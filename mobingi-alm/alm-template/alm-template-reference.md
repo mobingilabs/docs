@@ -6,9 +6,9 @@
 
 Reserved key name, not supported yet.
 
-{% hint style="info" %}
-**Note:** Currently, a new VPC will be created with every ALM Template execution and the default VPC has a fixed CIDR range of **10.0.0.0/16** and you cannot customize it at the moment, so when you specifying your subnets please make sure the CIDR setting for your subnets are sitting within the VPC CIDR range.
-{% endhint %}
+Currently, a new VPC will be created with every ALM Template execution and the default VPC has a fixed CIDR range of **10.0.0.0/16** and you cannot customize it at the moment, so when you specifying your subnets please make sure the CIDR setting for your subnets are sitting within the VPC CIDR range.
+
+At the moment, all deployments use the region's default public network. For GCP's predefined network ranges, you can refer to this [page](https://cloud.google.com/vpc/docs/vpc#ip-ranges).
 
 ### availability\_zone {#availability_zone}
 
@@ -20,7 +20,7 @@ The availability zone of which the stack deploys to.
 
 You must specify this value in your ALM Template.
 
-* **Valid Values**
+**Valid Values**
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -99,7 +99,7 @@ Below are the valid availability zones for each regions on AWS.
 
 {% tab title="AZURE" %}
 ```text
-    "availability_zone": "ap-northeast-1c"
+"availability_zone": "ap-northeast-1c"
 ```
 
 Below are the valid availability zones for Azure.
@@ -140,7 +140,7 @@ WestUs2
 
 {% tab title="ALIBABA CLOUD" %}
 ```text
-    "availability_zone": "ap-northeast-1"
+"availability_zone": "ap-northeast-1"
 ```
 {% endtab %}
 
@@ -150,7 +150,7 @@ At the moment, all deployments use the region's default public network. For GCP'
 
 {% tab title="K5" %}
 ```text
-    "availability_zone": "ap-northeast-1"
+"availability_zone": "ap-northeast-1"
 ```
 {% endtab %}
 {% endtabs %}
