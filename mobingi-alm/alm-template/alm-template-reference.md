@@ -543,11 +543,11 @@ Example below is also the default settings when deploying to K5.
 
 The network action control list for a virtual private cloud. **This section supports AWS only.**
 
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| array | see blow | No | `AWS` |
+| array | no | The network action control list for a virtual private cloud. **This section supports AWS only.** |
 
-A _network acl_ section contains a list of network\_acl entry items. Each item contains the following declaratives:
+A _network\_acl_ section contains a list of network\_acl entry items. Each item contains the following declaratives:
 
 * `rule_number` \(int\)
 
@@ -587,15 +587,28 @@ A _network acl_ section contains a list of network\_acl entry items. Each item c
 
 For more information about network acl please refer to [AWS Documentation](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_ACLs.html)
 
-* **Valid Values**
+Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
 Example below is also the default settings when deploying to AWS.
 
-```text
+```ruby
 "network_acl": [
-    {        "rule_number": 100,        "protocol": "-1",        "rule_action": "allow",        "acl_egress": true,        "cidr_block": "0.0.0.0/0"    },    {        "rule_number": 100,        "protocol": "-1",        "rule_action": "allow",        "acl_egress": false,        "cidr_block": "0.0.0.0/0"    }]
+  {
+    "rule_number": 100,
+    "protocol": "-1",
+    "rule_action": "allow",
+    "cidr_block": "0.0.0.0/0"
+  },
+  {
+    "rule_number": 100,
+    "protocol": "-1",
+    "rule_action": "allow",
+    "acl_egress": false,
+    "cidr_block": "0.0.0.0/0"
+  }
+]
 ```
 {% endtab %}
 
@@ -607,6 +620,10 @@ This section hasn't been covered by documentation.
 This section hasn't been covered by documentation.
 {% endtab %}
 
+{% tab title="GCP" %}
+This is not supported yet.
+{% endtab %}
+
 {% tab title="K5" %}
 This section hasn't been covered by documentation.
 {% endtab %}
@@ -614,11 +631,9 @@ This section hasn't been covered by documentation.
 
 ### security\_group {#security_group}
 
-The security groups for your virtual private cloud. Security groups are associated with network interfaces and acts as a virtual firewall that controls the traffic for one or more instances.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| object | See below | No | `AWS` `AliCloud` `Azure` `K5` |
+| object | no | The security groups for your virtual private cloud. Security groups are associated with network interfaces and acts as a virtual firewall that controls the traffic for one or more instances. |
 
 A _security group_ section contains two entry items, `ingress` and `egress`.
 
@@ -651,9 +666,9 @@ Each _ingress_ or _egress_ contains the following 4 declarative:
 
   End of port range for the TCP and UDP protocols, or an ICMP code. If you specify icmp for the IpProtocol property, you can specify -1 as a wildcard \(i.e., any ICMP code\).
 
-  _Required:_ Yes  
+  _Required:_ Yes
 
-* **Valid Values**
+Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -699,6 +714,10 @@ This section hasn't been covered by documentation.
 
 {% tab title="AZURE" %}
 This section hasn't been covered by documentation.
+{% endtab %}
+
+{% tab title="GCP" %}
+For GCP deployments, the default network where the stack is deployed will, by default, open ports **22** and **80** from source **0.0.0.0/0**.
 {% endtab %}
 
 {% tab title="K5" %}
