@@ -974,8 +974,6 @@ Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
-
-
 ```typescript
 "load_balancer": {
         "lb_type": "classic",
@@ -1001,10 +999,6 @@ Valid values:
 
 {% tab title="ALIBABA CLOUD" %}
 This section hasn't been covered by documentation.
-{% endtab %}
-
-{% tab title="AZURE" %}
-
 {% endtab %}
 
 {% tab title="GCP" %}
@@ -1153,7 +1147,7 @@ This section hasn't been covered by documentation
 | :--- | :--- | :--- | :--- |
 | string | no | The docker image to be used to launch base container. |
 
-Example: 
+Example:
 
 | `registry.mobingi.com/tompson/ubuntu-nginx-php:latest` |
 | :--- | :--- | :--- | :--- |
@@ -1179,7 +1173,7 @@ The docker image registry's username if this is a private image repository.
 | :--- | :--- | :--- | :--- |
 | string | no | The directory of the instance where application code will be deployed to. |
 
-Example: 
+Example:
 
 | `/var/www/html` |
 | :--- | :--- | :--- | :--- |
@@ -1191,7 +1185,7 @@ Example:
 | :--- | :--- | :--- | :--- |
 | string | no | The git repository url of where application code is hosted. |
 
-Example: 
+Example:
 
 | `https://github.com/mobingilabs/default-site-php.git` |
 | :--- | :--- | :--- | :--- |
@@ -1221,7 +1215,7 @@ master
 | :--- | :--- | :--- | :--- |
 | array | no | The ports for connection to be used by containers. |
 
-Example: 
+Example:
 
 | `[ 80 ]` |
 | :--- | :--- | :--- | :--- |
@@ -1252,6 +1246,4 @@ This parameter is not yet supported.
   }
 }
 ```
-
-
 

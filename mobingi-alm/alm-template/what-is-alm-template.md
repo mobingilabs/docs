@@ -12,5 +12,3 @@ ALM Template is a component of [ALM](https://mobingi.com/how-mobingi-alm-works).
 
 If you specify the runtime configurations of your application in the `container` section of the ALM Template, then ALM will also deploy an [ALM-agent](https://docs.mobingi.com/mobingi-alm/alm-agent) on each provisioned node to perform application runtime setup and continuous code deployment.
 
-
-

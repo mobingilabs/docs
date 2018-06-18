@@ -6,7 +6,7 @@ The ALM-agent is software for Mobingi ALM. ALM-agent is the primary component of
 
 ALM-agent runs on instances, manages Docker containers and deploys code to instances on behalf of you.
 
-ALM-agent works with [ALM-template](https://docs.mobingi.com/mobingi-alm/alm-template/what-is-alm-template). When you run the ALM-agent, the agent on the instance processes the ALM-template and configures the instance as specified.
+ALM-agent works with [ALM Template](https://docs.mobingi.com/mobingi-alm/alm-template/what-is-alm-template). When you run the ALM-agent, the agent on the instance processes the ALM Template and configures the instance as specified.
 
 ## Characteristics of ALM Agent {#characteristics-of-alm-agent}
 
