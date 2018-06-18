@@ -16,7 +16,7 @@ For GCP, all deployments use the region's default public network. For GCP's pred
 | --- | --- |
 | string | Yes | The availability zone of which the stack deploys to. You must specify this value in your ALM-template. |
 
-Valid values
+Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -161,7 +161,7 @@ You can refer to this [page](https://cloud.google.com/compute/docs/regions-zones
 
 The type of instances \(**VM**s\). If value is not provided in the template, the default values will be used for each cloud platform.
 
-**Valid Values**
+Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -291,7 +291,7 @@ Default values will be applied for each cloud platform \(see below for default v
 
 Note: If you specify this value and also specify the [container](https://learn.mobingi.com/alm-templates-reference#container) section in the ALM-template to take the advantage of application lifecycle management, you need to make sure the base machine image operating system supports ALM-agent installation. For supported operating systems by ALM-agent, please refer to [this guide](https://learn.mobingi.com/alm-agent/getting-started#prerequisites).
 
-Valid values
+Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -329,15 +329,13 @@ Below is also the default value for K5.
 
 ### instance\_count {#instance_count}
 
-Number of instances \(VMs\) to provision.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| int | 1 | No | `AWS` `AliCloud`  `Azure` `K5` |
+| int | no | Number of instances \(VMs\) to provision. This is only applicable to non-autoscaled stacks. |
 
 If you don't specify this declarative, the default value of _1_ will be applied.
 
-* **Valid Values**
+Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -356,6 +354,10 @@ If you don't specify this declarative, the default value of _1_ will be applied.
 ```text
     "instance_count": 1
 ```
+{% endtab %}
+
+{% tab title="GCP" %}
+
 {% endtab %}
 
 {% tab title="K5" %}
