@@ -357,7 +357,7 @@ Valid values:
 {% endtab %}
 
 {% tab title="GCP" %}
-This value is only valid when &gt; 0 **AND** `auto_scaling.min` and `auto_scaling.max` are both set to zero. See [auto\_scaling](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-reference#auto_scaling) section for more information about autoscaling.
+This value is only valid when &gt; zero **AND** `auto_scaling.min` and `auto_scaling.max` are both set to zero. See [auto\_scaling](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-reference#auto_scaling) section for more information about autoscaling.
 {% endtab %}
 
 {% tab title="K5" %}
@@ -369,14 +369,14 @@ This value is only valid when &gt; 0 **AND** `auto_scaling.min` and `auto_scalin
 
 ### volume\_type {#volume_type}
 
-The volume type of instance.
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| string | standard | No | `AWS` `AliCloud` `K5` |
+| string | no | The volume type of instance. |
 
-* **Valid Values**
+Valid values:
 
+{% tabs %}
+{% tab title="AWS" %}
 If you don't specify this declarative, the default value of gp2 will be applied.
 
 ```text
@@ -386,8 +386,16 @@ If you don't specify this declarative, the default value of gp2 will be applied.
     sc1 - Cold HDD
     standard - Magnetic volumes
 ```
+{% endtab %}
 
-This section hasn't been covered by documentation. This section hasn't been covered by documentation.
+{% tab title="Azure" %}
+This is not supported yet.
+{% endtab %}
+
+{% tab title="GCP" %}
+This is not supported yet.
+{% endtab %}
+{% endtabs %}
 
 ### volume\_size {#volume_size}
 
