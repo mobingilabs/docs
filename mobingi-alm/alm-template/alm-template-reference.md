@@ -12,13 +12,7 @@ For GCP, all deployments use the region's default public network. For GCP's pred
 
 ### availability\_zone {#availability_zone}
 
-The availability zone of which the stack deploys to.
-
-| **Type** | **Example Value** | **Required** | **Supported Platforms** |
-| :--- | :--- | :--- | :--- |
-| string | us-east-1 | Yes | `AWS` `AliCloud` `Azure`  `K5` |
-
-You must specify this value in your ALM Template.
+The availability zone of which the stack deploys to. You must specify this value in your ALM Template.
 
 **Valid Values**
 
