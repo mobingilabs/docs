@@ -357,7 +357,7 @@ Valid values:
 {% endtab %}
 
 {% tab title="GCP" %}
-This value is only valid when &gt; 0 **AND** `auto_scaling.min` and `auto_scaling.max` are both set to zero. See [auto\_scaling](https://docs.mobingi.com/~/edit/drafts/-LFGEpO3Bbe9iO_YTYp-/mobingi-alm/alm-template/alm-template-reference#auto_scaling) section for more information about autoscaling.
+This value is only valid when &gt; 0 **AND** `auto_scaling.min` and `auto_scaling.max` are both set to zero. See [auto\_scaling](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-reference#auto_scaling) section for more information about autoscaling.
 {% endtab %}
 
 {% tab title="K5" %}
