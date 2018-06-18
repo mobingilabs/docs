@@ -145,7 +145,7 @@ WestUs2
 {% endtab %}
 
 {% tab title="GCP" %}
-At the moment, all deployments use the region's default public network. For GCP's predefined network ranges, you can refer to this [page](https://cloud.google.com/vpc/docs/vpc#ip-ranges).
+You can refer to this [page](https://cloud.google.com/compute/docs/regions-zones/) for supported availability zones in GCP.
 {% endtab %}
 
 {% tab title="K5" %}
