@@ -331,7 +331,7 @@ Below is also the default value for K5.
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| int | no | Number of instances \(VMs\) to provision. This is only applicable to non-autoscaled stacks. |
+| int | no | Number of instances \(VMs\) to provision. This is only applicable to non-autoscaled stacks.For autoscaled stacks, see \`auto\_scaling\` section. |
 
 If you don't specify this declarative, the default value of _1_ will be applied.
 
