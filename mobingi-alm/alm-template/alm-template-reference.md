@@ -791,20 +791,20 @@ The `auto_scaling` section contains the following declarative:
 
   _Required:_ No
 
-  If you don't specify this declarative, the default value of _360_ will be applied.  
+  If you don't specify this declarative, the default value of _360_ will be applied.
 
-* **Valid Values**
+Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
 ```typescript
-    "auto_scaling": {
-        "min": 1,
-        "max": 1,
-        "availability_zones": "${use(FlagName1.provision.availability_zone, FlagName2.provision.availability_zone)}",
-        "cooldown": "360",
-        "healthcheck_grace_period": "360"
-    }
+"auto_scaling": {
+  "min": 1,
+  "max": 1,
+  "availability_zones": "${use(FlagName1.provision.availability_zone, FlagName2.provision.availability_zone)}",
+  "cooldown": "360",
+  "healthcheck_grace_period": "360"
+}
 ```
 {% endtab %}
 
@@ -814,6 +814,10 @@ This section hasn't been covered by documentation.
 
 {% tab title="AZURE" %}
 This section hasn't been covered by documentation.
+{% endtab %}
+
+{% tab title="GCP" %}
+For GCP, the system will check if `min` is &gt; 0, `max` is &gt; `min`, and `instance_type` is zero before proceeding. Spot instances \(or preemptive instance in GCP parlance\) is not supported yet.
 {% endtab %}
 
 {% tab title="K5" %}
