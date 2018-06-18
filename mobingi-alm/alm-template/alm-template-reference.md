@@ -399,13 +399,11 @@ This is not supported yet.
 
 ### volume\_size {#volume_size}
 
-The size of the volume, in gibibytes \(GiBs\).
-
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| string | 50 | No | `AWS` `AliCloud`  `Azure` `K5` |
+| string | no | The size of the volume, in gibibytes \(GiBs\). |
 
-* **Valid Values**
+Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
@@ -432,6 +430,10 @@ Current initial deployment size is _50GB_.
 {% hint style="info" %}
 **Note:** Soon to support other sizes.
 {% endhint %}
+{% endtab %}
+
+{% tab title="GCP" %}
+Default value is 50GB.
 {% endtab %}
 
 {% tab title="K5" %}
