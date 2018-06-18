@@ -14,7 +14,7 @@ For GCP, all deployments use the region's default public network. For GCP's pred
 
 | Type | Required | Description |
 | --- | --- |
-| string | Yes | The availability zone of which the stack deploys to. You must specify this value in your ALM Template. |
+| string | Yes | The availability zone of which the stack deploys to. You must specify this value in your ALM-template. |
 
 Valid values
 
