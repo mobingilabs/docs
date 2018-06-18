@@ -285,9 +285,9 @@ Default: 1101.
 
 The machine image \(id\) used to launch the instance.
 
-| Type | Example Value | Required | Supported Platforms |
+| Type | Required | Description |
 | :--- | :--- | :--- | :--- |
-| string | ami-2a69be4c | No | `AWS` `AliCloud` `K5` |
+| string | no | The machine image \(id\) used to launch the instance. |
 
 Default values will be applied for each cloud platform \(see below for default values\). However, you can also specify this value for launching with a customized machine image.
 
