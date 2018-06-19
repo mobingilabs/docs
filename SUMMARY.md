@@ -50,5 +50,5 @@
 * [Mobingi Ripple とは](mobingi-ripple/what-is-ripple.md)
 * [Mobingi Ripple Overview](mobingi-ripple/overview.md)
 * [請求書を発行する](mobingi-ripple/create-invoice.md)
-* [新規顧客を追加する](mobingi-ripple/wosuru-1.md)
+* [新規顧客を追加する](mobingi-ripple/add-customer.md)
 
