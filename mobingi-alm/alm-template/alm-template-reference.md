@@ -741,47 +741,45 @@ The `auto_scaling` section contains the following declarative:
 
 * `min` \(int\)
 
-  The minimum size of the Auto Scaling group.
+  The minimum size of the whole \(total\) autoscaling group.
 
-  _Required:_ No
+  Required_:_ No
 
-  If you don't specify this declarative, the default value of _1_ will be applied.
+  If you don't specify this declarative, the default value of 1 will be applied.
 
 * `max` \(int\)
 
-  The maximum size of the Auto Scaling group.
+  The maximum size of the whole \(total\) autoscaling group.
 
-  _Required:_ No
+  Required: No
 
-  If you don't specify this declarative, the default value of _1_ will be applied.
+  If you don't specify this declarative, the default value of 1 will be applied.
 
-* `spot_min` \(int\)
+* `spot_to_ondemand_ratio` \(int\) The percentage of min/max values to deploy as spot/preemptible/low-priority instances. For example, if you have 10 as `min` and 100 as `max`, a `spot_to_ondemand_ratio` value of 60 \(or 60 percent\) will have the following results: Spot min: 6 \(60% of 10\) Spot max: 60 \(60% of 100\) On-demand min: 4 On-demand max: 40
+* `spot_min` \(int\) **\[DEPRECATED\]**
 
-  The minimum size of the spot instances in Auto Scaling group.
+  The minimum size of the spot instances in the autoscaling group. This key will still work with AWS stacks. For other cloud vendors, please use `spot_to_ondemand_ratio` key.
 
-  _Required:_ No
+  Required: No
 
-  _This declarative supports **AWS** only, if you specify this value when deploying to other cloud platforms it will be ignored._
+* `spot_max` \(int\) **\[DEPRECATED\]**
 
-* `spot_max` \(int\)
+  The maximum size of the spot instances in the autoscaling group.
 
-  The maximum size of the spot instances in Auto Scaling group.
-
-  _Required:_ No
-
-  _This declarative supports **AWS** only, if you specify this value when deploying to other cloud platforms it will be ignored._
+  Required: No  
+  This key will still work with AWS- and GCP-based stacks. For other cloud vendors, please use `spot_to_ondemand_ratio` key.
 
 * `availability_zones` \(string\)
 
   The list of availability zones for the Auto Scaling group.
 
-  _Required:_ Yes
+  Required: Yes
 
 * `cooldown` \(string\)
 
   The number of seconds after a scaling activity is completed before any further scaling activities can start.
 
-  _Required:_ No
+  Required: No
 
   If you don't specify this declarative, the default value of _360_ will be applied.
 
@@ -789,7 +787,7 @@ The `auto_scaling` section contains the following declarative:
 
   The length of time in seconds after a new instance comes into service that Auto Scaling starts checking its health.
 
-  _Required:_ No
+  Required: No
 
   If you don't specify this declarative, the default value of _360_ will be applied.
 
