@@ -764,10 +764,9 @@ The `auto_scaling` section contains the following declarative:
 
 * `spot_max` \(int\) **\[DEPRECATED\]**
 
-  The maximum size of the spot instances in the autoscaling group.
+  The maximum size of the spot instances in the autoscaling group. This key will still work with AWS- and GCP-based stacks. For other cloud vendors, please use `spot_to_ondemand_ratio` key.
 
-  Required: No  
-  This key will still work with AWS- and GCP-based stacks. For other cloud vendors, please use `spot_to_ondemand_ratio` key.
+  Required: No
 
 * `availability_zones` \(string\)
 
