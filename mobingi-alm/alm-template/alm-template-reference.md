@@ -816,7 +816,7 @@ This section hasn't been covered by documentation.
 {% tab title="GCP" %}
 For GCP, the system will check if `min` is &gt; 0, `max` is &gt; `min`, and `instance_type` is zero before proceeding.
 
-For [preemptible](https://cloud.google.com/compute/docs/instances/preemptible) instances, the system will calculate the values based on the provided `spot_to_ondemand_ration` value. For compatibility with the deprecated `spot_min` and `spot_max` keys, it will also check if `spot_min` &gt; 0, `spot_max` &gt; `spot_min` and `instance_type` is zero before proceeding.
+For [preemptible](https://cloud.google.com/compute/docs/instances/preemptible) instances, the system will calculate the values based on the provided `spot_to_ondemand_ratio` value. For compatibility with the deprecated `spot_min` and `spot_max` keys, it will also check if `spot_min` &gt; 0, `spot_max` &gt; `spot_min` and `instance_type` is zero before proceeding.
 {% endtab %}
 
 {% tab title="K5" %}
