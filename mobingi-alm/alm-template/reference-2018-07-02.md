@@ -110,7 +110,7 @@ stacks:
 
 # vendor definitions
 vendors:
-- name: string
+- name: string # could be an entry in safebox
   provider: string
 ```
 
