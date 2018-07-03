@@ -100,8 +100,6 @@ stacks:
     min: number
     max: number
     spot_to_ondemand_ratio: number
-    availability_zones:
-    - string
     cooldown: string
     healthcheck_grace_period: string
   rds: # maybe change to 'rdb'; rds is too 'AWS'-sy
