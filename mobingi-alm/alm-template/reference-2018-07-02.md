@@ -96,8 +96,6 @@ stacks:
     min: number
     max: number
     spot_to_ondemand_ratio: number
-    spot_min: number
-    spot_max: number
     availability_zones:
     - string
     cooldown: string
