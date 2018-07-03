@@ -42,7 +42,7 @@
 ## Mobingi Wave
 
 * [Overview](mobingi-wave/overview.md)
-* [事前準備](mobingi-wave/shi-qian-zhun-bei.md)
+* [事前準備](mobingi-wave/preparation.md)
 * [明細の確認方法](mobingi-wave/check-usage.md)
 
 ## MOBINGI RIPPLE
