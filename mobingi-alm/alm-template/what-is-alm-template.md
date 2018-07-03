@@ -1,5 +1,9 @@
 # What is ALM Template?
 
+{% hint style="info" %}
+We are in the processing of updating the current template to a new version suited for multi-application, multi-stack, and multi-vendor deployments. It will be a YAML-based template \(although JSON is also supported\). We will be releasing these new features in the coming months. Stay tuned!
+{% endhint %}
+
 ## What is ALM Template?
 
 ### Concepts {#concepts}
