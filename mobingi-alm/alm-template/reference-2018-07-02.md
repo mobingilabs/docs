@@ -51,11 +51,63 @@ stacks:
   volume_type: string
   volume_size: number
   keypair: boolean
-  subnet: object
-  security_group: object
-  network_acl: object
-  load_balancer: object
-  auto_scaling: object
+  subnet:
+    cidr: string
+    public: boolean
+    auto_assign_public_ip: boolean
+  security_group:
+    ingress:
+    - cidr: string
+      from_port: number
+      ip_protocol: string
+      to_port: number
+    egress:
+    - cidr: string
+      from_port: number
+      ip_protocol: string
+      to_port: number
+  network_acl:
+    rule_number: number
+    protocol: string
+    rule_action: string
+    acl_egress: boolean
+    cidr_block: string
+  load_balancer:
+    lb_type: string
+    scheme: string
+    security_groups:
+    - string
+    subnets:
+    - string
+    listeners:
+    - load_balancer_port: string
+      protocol: string
+      instance_port: string
+      instance_protocol: string
+      cert_domain: string
+    health_check:
+      healthy_threshold: string
+      interval: string
+      target: string
+      timeout: string
+      unhealthy_threshold: string
+  auto_scaling:
+    min: number
+    max: number
+    spot_to_ondemand_ratio: number
+    spot_min: number
+    spot_max: number
+    availability_zones:
+    - string
+    cooldown: string
+    healthcheck_grace_period: string
+  rds:
+    db_instance_type: string
+    engine: string
+    version: string
+    storage: int
+    multi_az: boolean
+    replica: number
 
 # vendor definitions
 vendors:
