@@ -15,7 +15,6 @@
   * [Adding Fujitsu K5 account](mobingi-alm/getting-started/adding-fujitsu-k5-account.md)
 * [ALM Template](mobingi-alm/alm-template/README.md)
   * [What is ALM Template?](mobingi-alm/alm-template/what-is-alm-template.md)
-  * [Working with ALM Templates](mobingi-alm/alm-template/working-with-alm-templates.md)
   * [ALM Template Reference](mobingi-alm/alm-template/alm-template-reference.md)
   * [ALM Template Language](mobingi-alm/alm-template/alm-template-language.md)
   * [Example ALM Templates](mobingi-alm/alm-template/example-alm-templates.md)
@@ -42,13 +41,13 @@
 ## Mobingi Wave
 
 * [Overview](mobingi-wave/overview.md)
-* [事前準備](mobingi-wave/preparation.md)
-* [明細の確認方法](mobingi-wave/check-usage.md)
+* [事前準備](mobingi-wave/shi-qian-zhun-bei.md)
+* [明細の確認方法](mobingi-wave/no.md)
 
 ## MOBINGI RIPPLE
 
-* [Mobingi Ripple とは](mobingi-ripple/what-is-ripple.md)
-* [Mobingi Ripple Overview](mobingi-ripple/overview.md)
-* [請求書を発行する](mobingi-ripple/create-invoice.md)
-* [新規顧客を追加する](mobingi-ripple/add-customer.md)
+* [Mobingi Ripple とは](mobingi-ripple/mobingi-ripple-toha.md)
+* [Mobingi Ripple Overview](mobingi-ripple/mobingi-ripple-overview.md)
+* [請求書を発行する](mobingi-ripple/wosuru.md)
+* [新規顧客を追加する](mobingi-ripple/wosuru-1.md)
 
