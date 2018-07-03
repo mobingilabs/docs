@@ -40,11 +40,11 @@ stacks:
   - key: string
     value: string
   vendors:
-  - vendor: string
+  - string
   regions:
   - region: string
     availability_zones:
-    - zone: string
+    - string
   vpc_id: string
   instance_type: string
   image: string
