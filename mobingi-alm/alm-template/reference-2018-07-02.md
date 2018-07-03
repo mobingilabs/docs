@@ -4,5 +4,10 @@
 This page is still a work in progress.
 {% endhint %}
 
+The following is the proposed new version of ALM Template.
 
+```yaml
+version: string
+description: string
+```
 
