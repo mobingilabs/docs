@@ -102,7 +102,7 @@ stacks:
     - string
     cooldown: string
     healthcheck_grace_period: string
-  rds:
+  rds: # maybe change to 'rdb'; rds is too 'AWS'-sy
     db_instance_type: string
     engine: string
     version: string
