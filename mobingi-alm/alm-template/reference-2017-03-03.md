@@ -1313,7 +1313,7 @@ This parameter is not yet supported.
 | :--- | :--- | :--- | :--- |
 | object | no | The environment variables to be defined for the container operating system. |
 
-## An example `container` configuration:
+An example `container` configuration:
 
 ```typescript
 "container": {
