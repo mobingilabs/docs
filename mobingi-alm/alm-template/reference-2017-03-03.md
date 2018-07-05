@@ -20,20 +20,20 @@ The cloud platform vendor of which the template will be deployed to. You need to
 
 The configurations of the stack which ALM Template is about to deploy. In the configurations section, you specify one or multiple configuration layers of your application's provision and container runtime settings. Inside each layer, there are four sections you need to specify:
 
-* **role**
+### **role**
 
-  The "role" of which the stack layer defines to.
+The "role" of which the stack layer defines to.
 
-  You deploy multiple layers within one ALM Template, for example two _web_ layers, one _bastion_ layer and one _database_ layer. The current available role names:
+You deploy multiple layers within one ALM Template, for example two _web_ layers, one _bastion_ layer and one _database_ layer. The current available role names:
 
-  * `web`
-  * `bastion`
+* `web`
+* `bastion`
 
-* **flag**
+### **flag**
 
-  The unique identifier of each layer.
+The unique identifier of each layer.
 
-  You must specify the _flag_ name for each configuration layer. The value must between 4 to 18 characters in length and contains only alphanumeric characters.
+You must specify the _flag_ name for each configuration layer. The value must between 4 to 18 characters in length and contains only alphanumeric characters.
 
 * **provision**
 
@@ -47,9 +47,9 @@ The configurations of the stack which ALM Template is about to deploy. In the co
 
   For more information on _container_ section, please refer to [ALM Template Reference guide](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-reference).
 
-## provision {#provision}
+### provision
 
-### vpc\_id {#vpc_id}
+#### vpc\_id
 
 Reserved key name, not supported yet.
 
@@ -57,7 +57,7 @@ Currently, a new VPC will be created with every ALM Template execution and the d
 
 For GCP, all deployments use the region's default public network. For GCP's predefined network ranges, you can refer to this [page](https://cloud.google.com/vpc/docs/vpc#ip-ranges).
 
-### availability\_zone {#availability_zone}
+#### availability\_zone
 
 | Type | Required | Description |
 | --- | --- |
@@ -204,7 +204,7 @@ You can refer to this [page](https://cloud.google.com/compute/docs/regions-zones
 {% endtab %}
 {% endtabs %}
 
-### instance\_type {#instance_type}
+#### instance\_type
 
 The type of instances \(**VM**s\). If value is not provided in the template, the default values will be used for each cloud platform.
 
@@ -328,7 +328,7 @@ Default: 1101.
 {% endtab %}
 {% endtabs %}
 
-### image {#image}
+#### image
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -374,7 +374,7 @@ Below is also the default value for K5.
 {% endtab %}
 {% endtabs %}
 
-### instance\_count {#instance_count}
+#### instance\_count
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -414,7 +414,7 @@ This value is only valid when &gt; zero **AND** `auto_scaling.min` and `auto_sca
 {% endtab %}
 {% endtabs %}
 
-### volume\_type {#volume_type}
+#### volume\_type
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -444,7 +444,7 @@ This is not supported yet.
 {% endtab %}
 {% endtabs %}
 
-### volume\_size {#volume_size}
+#### volume\_size
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -488,7 +488,7 @@ This section hasn't been covered by documentation.
 {% endtab %}
 {% endtabs %}
 
-### keypair {#keypair}
+#### keypair
 
 The ssh key pair used to access instances.
 
@@ -496,7 +496,7 @@ The ssh key pair used to access instances.
 | :--- | :--- | :--- | :--- |
 | boolean | no | Enable SSH key pair to be used to access instances. Default value is **true**. |
 
-### subnet {#subnet}
+#### subnet
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -586,7 +586,7 @@ Example below is also the default settings when deploying to K5.
 {% endtab %}
 {% endtabs %}
 
-### network\_acl {#network_acl}
+#### network\_acl
 
 The network action control list for a virtual private cloud. **This section supports AWS only.**
 
@@ -676,7 +676,7 @@ This section hasn't been covered by documentation.
 {% endtab %}
 {% endtabs %}
 
-### security\_group {#security_group}
+#### security\_group
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -772,7 +772,7 @@ This section hasn't been covered by documentation.
 {% endtab %}
 {% endtabs %}
 
-### auto\_scaling {#auto_scaling}
+#### auto\_scaling
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -871,7 +871,7 @@ This section hasn't been covered by documentation.
 {% endtab %}
 {% endtabs %}
 
-### load\_balancer {#load_balancer}
+#### load\_balancer
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -1056,7 +1056,7 @@ This section hasn't been covered by documentation.
 {% endtab %}
 {% endtabs %}
 
-### rds {#rds}
+#### rds
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -1185,9 +1185,9 @@ This section hasn't been covered by documentation
 {% endtab %}
 {% endtabs %}
 
-## container {#container}
+### container
 
-### container\_image
+#### container\_image
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -1199,7 +1199,7 @@ Example:
 | :--- | :--- | :--- | :--- |
 
 
-### container\_registry\_username
+#### container\_registry\_username
 
 The docker image registry's username if this is a private image repository.
 
@@ -1207,13 +1207,13 @@ The docker image registry's username if this is a private image repository.
 | :--- | :--- | :--- | :--- |
 | string | N/A | No | Platform Stateless |
 
-### container\_registry\_password
+#### container\_registry\_password
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | string | no | The docker image registry's password if this is a private image repository. |
 
-### container\_code\_dir
+#### container\_code\_dir
 
 | Type | Required | Supported Platforms |
 | :--- | :--- | :--- | :--- |
@@ -1225,7 +1225,7 @@ Example:
 | :--- | :--- | :--- | :--- |
 
 
-### container\_git\_repo
+#### container\_git\_repo
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -1237,7 +1237,7 @@ Example:
 | :--- | :--- | :--- | :--- |
 
 
-### container\_git\_reference
+#### container\_git\_reference
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -1249,13 +1249,13 @@ Example:
 master
 ```
 
-### container\_git\_private\_key
+#### container\_git\_private\_key
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | string | no | The private key of the git repository if it is a private repository. |
 
-### container\_ports
+#### container\_ports
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
@@ -1267,11 +1267,11 @@ Example:
 | :--- | :--- | :--- | :--- |
 
 
-### container\_users
+#### container\_users
 
 This parameter is not yet supported.
 
-### container\_env\_vars
+#### container\_env\_vars
 
 | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
