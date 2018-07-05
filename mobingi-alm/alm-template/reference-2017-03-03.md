@@ -731,7 +731,7 @@ This section hasn't been covered by documentation.
 | :--- | :--- | :--- | :--- |
 | object, or string | no | The `auto_scaling` group defines the configuration to automatically scale up or down the number of compute resources that are being allocated to your application based on its needs at any given time. |
 
-If you are deploying an _application_ type of load balancer \(you define in [`load_balancer`](https://learn.mobingi.com/alm-templates-reference#load_balancer) declarative\), you can omit the required parameters below and use the ATL function `#share` to share the same auto scaling group which you defined in another layer. [Click here](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-language) for more on ATL functions.
+If you are deploying an _application_ type of load balancer \(you define in [`load_balancer`](reference-2017-03-03.md#load_balancer) declarative\), you can omit the required parameters below and use the ATL function `#share` to share the same auto scaling group which you defined in another layer. [Click here](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-language) for more on ATL functions.
 
 {% hint style="warning" %}
 [**ATL**](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-language) is only supported by AWS at the moment.
@@ -860,7 +860,7 @@ The _load balancer_ section contains the following declarative:
 
   _Required:_ No
 
-  **Note:** This value is in string type and can only be the reference to [`security_group`](https://learn.mobingi.com/alm-templates-reference#security_group) section you defined in same or other layers. For example if you have two layers of configurations named "Layer1" and "Layer2", you can reference the _security group_ defined in Layer2 to Layer1 by writing:
+  **Note:** This value is in string type and can only be the reference to [`security_group`](reference-2017-03-03.md#security_group) section you defined in same or other layers. For example if you have two layers of configurations named "Layer1" and "Layer2", you can reference the _security group_ defined in Layer2 to Layer1 by writing:
 
   ```javascript
     { "security_groups": "#ref(Layer2.provision.security_group)"}
@@ -874,7 +874,7 @@ The _load balancer_ section contains the following declarative:
 
   **Note:** Only specify this value if you are deploying an ALB type of load-balancer.
 
-  **Note:** This value is in string type and can only be the reference to [`subnet`](https://learn.mobingi.com/alm-templates-reference#subnet) section you defined in same or other layers. For example if you have two layers of configurations named "Layer1" and "Layer2", you can reference the _subnets_ to use both of them by:
+  **Note:** This value is in string type and can only be the reference to [`subnet`](reference-2017-03-03.md#subnet) section you defined in same or other layers. For example if you have two layers of configurations named "Layer1" and "Layer2", you can reference the _subnets_ to use both of them by:
 
   ```javascript
     { "subnets": "#ref(Layer2.provision.subnet,Layer1.provision.subnet)"}
