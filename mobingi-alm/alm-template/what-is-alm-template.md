@@ -12,15 +12,13 @@ We are in the process of updating the current template to a new version suited f
 * ALM Template is cloud platform agnostic. You write your template once and it works on any cloud platforms such as AWS, GCP, Azure, AliCloud, etc.
 * You can save and reuse ALM Templates at anytime.
 
-### How does it work {#how-does-it-work}
+## How does it work
 
 ALM Template is a component of [ALM](https://mobingi.com/how-mobingi-alm-works). You write your ALM Template in code blocks and paste it on ALM console \(or through CLI, or API\) and it will be converted into each cloud platform's native configuration standards, then ALM will provision all resources on your behalf.
 
 If you specify the runtime configurations of your application in the `container` section of the ALM Template, then ALM will also deploy an [ALM-agent](https://docs.mobingi.com/mobingi-alm/alm-agent) on each provisioned node to perform application runtime setup and continuous code deployment.
 
-## Working with ALM Templates
-
-### ALM Template formats {#template-formats}
+## ALM Template formats
 
 ALM Template is designed in JSON format. You can also write your template in YAML format and then convert it into JSON file when you deploy your stacks on ALM UI \(or through CLI, or API\).
 
@@ -28,7 +26,7 @@ ALM Template is designed in JSON format. You can also write your template in YAM
 Official YAML format support is in-progress.
 {% endhint %}
 
-### ALM Template components {#template-components}
+## ALM Template components
 
 ALM Template top-level components consist of `version`, `label`, `description`, `vendor`, `configurations`. For more information about these components, see the reference section.
 

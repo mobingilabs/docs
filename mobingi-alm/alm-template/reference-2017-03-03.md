@@ -79,19 +79,9 @@ The unique identifier of each layer.
 
 You must specify the _flag_ name for each configuration layer. The value must between 4 to 18 characters in length and contains only alphanumeric characters.
 
-* **provision**
-
-  The infrastructure provisioning configurations.
-
-  For more information on _provision_ section, please refer to [ALM Template Reference guide](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-reference).
-
-* **container**
-
-  The software runtime configurations _\(defined as docker images\)_ and code deployment requirement for each instance node.
-
-  For more information on _container_ section, please refer to [ALM Template Reference guide](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-reference).
-
 ### provision
+
+The infrastructure provisioning configurations.
 
 #### vpc\_id
 
@@ -1230,6 +1220,8 @@ This section hasn't been covered by documentation
 {% endtabs %}
 
 ### container
+
+The software runtime configurations _\(defined as docker images\)_ and code deployment requirement for each instance node.
 
 #### container\_image
 
