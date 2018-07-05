@@ -2,7 +2,7 @@
 
 ## Template Structure
 
-Below is a tree view of all possible components within an ALM Template. The following structure is not a working demo template, but rather to explain all possible key names that may contain in the template body. For ALM Template examples, please refer to [Example ALM Templates](https://docs.mobingi.com/mobingi-alm/alm-template/example-alm-templates).
+Below is a tree view of all possible components within an ALM Template. The following structure is not a working demo template, but rather to explain all possible key names that may contain in the template body.
 
 ```yaml
 version: string
