@@ -289,7 +289,7 @@ Default: 1101.
 
 Default values will be applied for each cloud platform \(see below for default values\). However, you can also specify this value for launching with a customized machine image.
 
-Note: If you specify this value and also specify the [container](https://learn.mobingi.com/alm-templates-reference#container) section in the ALM Template to take the advantage of application lifecycle management, you need to make sure the base machine image operating system supports ALM-agent installation. For supported operating systems by ALM-agent, please refer to [this guide](https://learn.mobingi.com/alm-agent/getting-started#prerequisites).
+Note: If you specify this value and also specify the [container](https://docs.mobingi.com/mobingi-alm/alm-template/reference-2017-03-03#container) section in the ALM Template to take the advantage of application lifecycle management, you need to make sure the base machine image operating system supports ALM-agent installation. For supported operating systems by ALM-agent, please refer to [this guide](https://docs.mobingi.com/mobingi-alm/alm-agent/getting-started#prerequisites).
 
 Valid values:
 
