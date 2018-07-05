@@ -1,5 +1,9 @@
 # Reference \(2017-03-03\)
 
+## version
+
+The version of ALM Template release. This value is always **2017-03-03**.
+
 ## provision {#provision}
 
 ### vpc\_id {#vpc_id}
