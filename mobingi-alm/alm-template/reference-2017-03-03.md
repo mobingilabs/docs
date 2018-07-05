@@ -1,6 +1,6 @@
 # Reference \(2017-03-03\)
 
-## Template Structure
+## Template structure
 
 Below is a tree view of all possible components within an ALM Template. The following structure is not a working demo template, but rather to explain all possible key names that may contain in the template body.
 
