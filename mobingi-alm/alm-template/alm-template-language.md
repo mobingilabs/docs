@@ -21,7 +21,7 @@ This function is used to calculate the valid value for supported declarative in 
 Example:
 
 ```javascript
-  "instance_type": "${computed}"
+"instance_type": "${computed}"
 ```
 
 ## use {#use}
@@ -35,7 +35,7 @@ This function is used to reference the value that you defined in other declarati
 _Example:_
 
 ```javascript
-  "availability_zones": "${use(Layer1.provision.availability_zone),use(Layer2.provision.availability_zone)}"
+"availability_zones": "${use(Layer1.provision.availability_zone),use(Layer2.provision.availability_zone)}"
 ```
 
 **Note:** This function can only be used if the origin value is type of _string_, it cannot be applied to any other type of values. For referencing values such as object or array, you use `${copy( .. )}`.
@@ -51,7 +51,7 @@ This function is used to copy the whole value that you defined in other declarat
 _Example:_
 
 ```javascript
-  "security_group": "${copy(Layer1.provision.security_group)}"
+"security_group": "${copy(Layer1.provision.security_group)}"
 ```
 
 ## ref {#ref}
@@ -65,9 +65,9 @@ Currently, this function can be used only in:
 1. load\_balancer : security\_groups
 
    ```javascript
-    "load_balancer": {
-        "security_groups": "#ref(Layer2.provision.security_group)",
-    },
+   "load_balancer": {
+     "security_groups": "#ref(Layer2.provision.security_group)",
+   },
    ```
 
    _Use case explanation:_
@@ -85,9 +85,9 @@ Currently, this function can be used in two declarative:
 1. load\_balancer : subnets
 
    ```javascript
-    "load_balancer": {
-        "subnets": "#share(Layer1.provision.subnet,Layer2.provision.subnet)",
-    },
+   "load_balancer": {
+     "subnets": "#share(Layer1.provision.subnet,Layer2.provision.subnet)",
+   },
    ```
 
    _Use case explanation:_
@@ -97,9 +97,9 @@ Currently, this function can be used in two declarative:
 2. auto\_scaling
 
    ```javascript
-    {
-        "auto_scaling": "#share(Layer1.provision.auto_scaling)"
-    }
+   {
+     "auto_scaling": "#share(Layer1.provision.auto_scaling)"
+   }
    ```
 
    _Use case explanation:_
