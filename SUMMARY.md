@@ -42,6 +42,7 @@
 ## Mobingi Wave
 
 * [Overview](mobingi-wave/overview.md)
+* [Preparation](mobingi-wave/preparation-1.md)
 * [事前準備](mobingi-wave/preparation.md)
 * [明細の確認方法](mobingi-wave/no.md)
 
