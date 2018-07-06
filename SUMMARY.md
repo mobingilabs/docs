@@ -43,13 +43,12 @@
 
 * [Overview](mobingi-wave/overview.md)
 * [事前準備](mobingi-wave/preparation.md)
-* [明細の確認方法](mobingi-wave/check-usage.md)
+* [明細の確認方法](mobingi-wave/no.md)
 
 ## MOBINGI RIPPLE
 
-* [Mobingi Ripple とは](mobingi-ripple/what-is-ripple.md)
+* [Mobingi Ripple とは](mobingi-ripple/mobingi-ripple-toha.md)
 * [Mobingi Ripple Overview](mobingi-ripple/mobingi-ripple-overview.md)
-* [請求書を発行する](mobingi-ripple/create-invoice.md)
-* [新規顧客を追加する](mobingi-ripple/add-customer.md)
-
+* [請求書を発行する](mobingi-ripple/wosuru.md)
+* [新規顧客を追加する](mobingi-ripple/wosuru-1.md)
 
