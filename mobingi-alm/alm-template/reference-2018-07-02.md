@@ -52,10 +52,6 @@ stacks:
   load_balancer:
     lb_type: string
     scheme: string
-    security_groups:
-    - string
-    subnets:
-    - string
     listeners:
     - load_balancer_port: string
       protocol: string
