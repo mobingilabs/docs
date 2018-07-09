@@ -83,13 +83,14 @@ stacks:
 
 # Vendor definitions.
 vendors:
-- name: string
-  provider: string
-  cred_name: string
+- name: string # required
+  provider: string # required
+  cred_name: string # required
   project_id: string # gcp only
   app_id: string # azure only
   subscription_id: string # azure only
   directory_id: string # azure only
+  contract_number: string # fujitsu k5
   
 # The following section (groups) can be customized although Mobingi
 # will provide common definitions that can be referenced
@@ -97,18 +98,18 @@ vendors:
 
 # region/az group definitions
 region_groups:
-- name: string
+- name: string # required
   vendors:
-  - name: string
+  - name: string # required
     region: string
     availability_zones:
     - string
 
 # instance group definitions
 instance_groups:
-- name: string
+- name: string # required
   vendors:
-  - name: string # not a reference to 'vendors'
+  - name: string # required, not a reference to 'vendors'
     instance_type: string
     image: string
     instance_count: number
@@ -121,8 +122,8 @@ instance_groups:
 # azure: vnet
 # gcp: vpc
 vpc_groups:
-- name: string
-  # vendor-independent
+- name: string # required
+  # vendor-independent subnet
   subnet:
     cidr: string
     public: boolean
@@ -135,7 +136,7 @@ vpc_groups:
       acl_egress: boolean
       cidr_block: string
   vendors:
-  - name: string # not a reference to 'vendors'
+  - name: string # required, not a reference to 'vendors'
     subnet:
       cidr: string
       public: boolean
@@ -153,8 +154,8 @@ vpc_groups:
 # azure: network security groups
 # gcp: firewall
 network_security_groups:
-- name: string
-  # vendor-independent
+- name: string # required
+  # vendor-independent ingress/egress
   ingress:
   - cidr: string
     from_port: number
@@ -166,7 +167,7 @@ network_security_groups:
     ip_protocol: string
     to_port: number
   vendors:
-  - name: string # not a reference to 'vendors'
+  - name: string # required, not a reference to 'vendors'
     ingress:
     - cidr: string
       from_port: number
