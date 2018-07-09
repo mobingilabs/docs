@@ -2,7 +2,7 @@
 description: Mobingi Waveにログインする
 ---
 
-# Overview
+# 概要
 
 ## Mobingi Waveにログインする
 
