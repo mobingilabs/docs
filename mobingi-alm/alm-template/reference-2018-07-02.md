@@ -8,7 +8,7 @@ We are in the process of updating the current template to a new version suited f
 This page is still a work in progress.
 {% endhint %}
 
-The following is the proposed new version of ALM Template.
+The following is the proposed new version of ALM Template. By default, all keys are optional unless stated otherwise.
 
 ```yaml
 version: string # '2018-07-02'
@@ -45,13 +45,9 @@ stacks:
     value: string
   vendors:
   - string
-  regions:
-  - region: string
-    availability_zones:
-    - string
+  region_groups: string
   vpc_group: string
   instance_group: string
-  keypair: boolean
   security_group: string
   load_balancer:
     lb_type: string
@@ -93,6 +89,15 @@ stacks:
 
 # -- start --
 
+# region/az group definitions
+region_groups:
+- name: string
+  vendors:
+  - name: string
+    region: string
+    availability_zones:
+    - string
+
 # instance group definitions
 instance_groups:
 - name: string
@@ -103,6 +108,7 @@ instance_groups:
     instance_count: number
     volume_type: string
     volume_size: number
+    keypair: boolean
     
 # virtual network group definitions
 # aws: vpc
