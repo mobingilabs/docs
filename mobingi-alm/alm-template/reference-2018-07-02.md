@@ -11,13 +11,14 @@ This page is still a work in progress.
 The following is the proposed new version of ALM Template. By default, all keys are optional unless stated otherwise.
 
 ```yaml
-version: string # '2018-07-02'
+version: string # '2018-07-02', required
 label: string
 description: string
 
-# application definitions
+# Definitions for apps that are to be deployed to one or more stacks.
+# You can define 0 or more apps.
 applications:
-- name: string
+- name: string # required
   labels:
   - key: string
     value: string
@@ -35,16 +36,17 @@ applications:
   - key: string
     value: string
   stacks:
-  - string # name of stack definition(s)
+  # List of stacks this app will be deployed to.
+  - string
 
-# stack definitions
+# Stack definitions. At least one (1) stack is required per template.
 stacks:
-- name: string
+- name: string # required
   labels:
   - key: string
     value: string
   vendors:
-  - string
+  - string # at least one (1) vendor is required
   region_groups: string
   vpc_group: string
   instance_group: string
@@ -78,12 +80,16 @@ stacks:
     multi_az: boolean
     replica: number
   k8s: {tbd}
-  
-# The following section (groups) can be customizable although
-# Mobingi will provide common definitions that can be referenced
-# by name.
 
-# -- start --
+# Vendor definitions.
+vendors:
+- name: string
+  provider: string
+  cred_name: string
+  
+# The following section (groups) can be customized although Mobingi
+# will provide common definitions that can be referenced
+# by name.
 
 # region/az group definitions
 region_groups:
@@ -167,12 +173,5 @@ network_security_groups:
       from_port: number
       ip_protocol: string
       to_port: number
-      
-# -- end --
-      
-# vendor definitions
-vendors:
-- name: string # could be an entry in safebox
-  provider: string
 ```
 
