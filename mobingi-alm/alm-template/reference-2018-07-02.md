@@ -86,6 +86,10 @@ vendors:
 - name: string
   provider: string
   cred_name: string
+  project_id: string # gcp only
+  app_id: string # azure only
+  subscription_id: string # azure only
+  directory_id: string # azure only
   
 # The following section (groups) can be customized although Mobingi
 # will provide common definitions that can be referenced
