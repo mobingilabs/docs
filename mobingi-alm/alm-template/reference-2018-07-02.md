@@ -35,7 +35,7 @@ applications:
   - key: string
     value: string
   stacks:
-  - string
+  - string # name of stack definition(s)
 
 # stack definitions
 stacks:
@@ -49,34 +49,10 @@ stacks:
   - region: string
     availability_zones:
     - string
-  vpc_id: string
-  instance_type: string
-  image: string
-  instance_count: number
-  volume_type: string
-  volume_size: number
+  vpc_group: string
+  instance_group: string
   keypair: boolean
-  subnet:
-    cidr: string
-    public: boolean
-    auto_assign_public_ip: boolean
-  security_group:
-    ingress:
-    - cidr: string
-      from_port: number
-      ip_protocol: string
-      to_port: number
-    egress:
-    - cidr: string
-      from_port: number
-      ip_protocol: string
-      to_port: number
-  network_acl:
-    rule_number: number
-    protocol: string
-    rule_action: string
-    acl_egress: boolean
-    cidr_block: string
+  security_group: string
   load_balancer:
     lb_type: string
     scheme: string
@@ -102,14 +78,96 @@ stacks:
     spot_to_ondemand_ratio: number
     cooldown: string
     healthcheck_grace_period: string
-  rds: # maybe change to 'rdb'; rds is too 'AWS'-sy
+  rdb:
     db_instance_type: string
     engine: string
     version: string
     storage: int
     multi_az: boolean
     replica: number
+  k8s: {tbd}
+  
+# The following section (groups) can be customizable although
+# Mobingi will provide common definitions that can be referenced
+# by name.
 
+# -- start --
+
+# instance group definitions
+instance_groups:
+- name: string
+  vendors:
+  - name: string # not a reference to 'vendors'
+    instance_type: string
+    image: string
+    instance_count: number
+    volume_type: string
+    volume_size: number
+    
+# virtual network group definitions
+# aws: vpc
+# azure: vnet
+# gcp: vpc
+vpc_groups:
+- name: string
+  # vendor-independent
+  subnet:
+    cidr: string
+    public: boolean
+    auto_assign_public_ip: boolean
+    route: {tbd}
+    network_acl:
+      rule_number: number
+      protocol: string
+      rule_action: string
+      acl_egress: boolean
+      cidr_block: string
+  vendors:
+  - name: string # not a reference to 'vendors'
+    subnet:
+      cidr: string
+      public: boolean
+      auto_assign_public_ip: boolean
+      route: {tbd}
+      network_acl:
+        rule_number: number
+        protocol: string
+        rule_action: string
+        acl_egress: boolean
+        cidr_block: string
+        
+# network security definitions
+# aws: security groups
+# azure: network security groups
+# gcp: firewall
+network_security_groups:
+- name: string
+  # vendor-independent
+  ingress:
+  - cidr: string
+    from_port: number
+    ip_protocol: string
+    to_port: number
+  egress:
+  - cidr: string
+    from_port: number
+    ip_protocol: string
+    to_port: number
+  vendors:
+  - name: string # not a reference to 'vendors'
+    ingress:
+    - cidr: string
+      from_port: number
+      ip_protocol: string
+      to_port: number
+    egress:
+    - cidr: string
+      from_port: number
+      ip_protocol: string
+      to_port: number
+      
+# -- end --
+      
 # vendor definitions
 vendors:
 - name: string # could be an entry in safebox
