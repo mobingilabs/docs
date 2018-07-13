@@ -44,6 +44,7 @@
 * [概要](mobingi-wave/overview.md)
 * [事前準備](mobingi-wave/shi-qian-zhun-bei.md)
 * [明細の確認方法](mobingi-wave/no.md)
+* [レポートとCSVの見方](mobingi-wave/check_csv.md)
 
 ## MOBINGI RIPPLE
 
