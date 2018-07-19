@@ -1,4 +1,4 @@
-# Mobingi Ripple Overview
+# Mobingi Ripple 概要
 
 ## **ダッシュボード** 
 
