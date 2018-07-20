@@ -12,21 +12,21 @@ description: Mobingi Waveにログインする
 
 ## メニュー構成
 
-![](../.gitbook/assets/wave_menu.png)
+![](../.gitbook/assets/snip20180720_21.png)
 
-* ダッシュボード：貴社でご利用の全てのAWSアカウントの利用状況（合計）を可視化。
-* アカウント：AWSアカウント毎に利用状況を可視化、レポート参照。
-* RI：Reserved Instanceの一覧。
-* 請求書：請求書のダウンロード。
+* ダッシュボード：貴社でご利用の全てのAWSアカウントの利用状況（合計）可視化。
+* レポートト：AWSアカウントやタグごとの利用状況を可視化、レポートの参照。
+* RI：Reserved Instanceの一覧と適応状況を表示。
 
 ## ダッシュボード
 
-![](../.gitbook/assets/wave08.png)
+![](../.gitbook/assets/snip20180720_19.png)
 
-1. 今月のこれまでのAWS利用費用。
-2. 先月（1ヶ月分）の利用実績。
-3. 貴社でご利用のAWSアカウント数。
-4. RIの適用状況。カバー率の高いRI上位3つを表示。
+* 今月のこれまでのAWS利用費用を把握。
+* 先月（1ヶ月分）の利用実績。
+* 貴社でご利用のAWSアカウント数。
+* 利用量の多いアカウントをランキングで表示。
+* RIの適用状況。カバー率の高いRI上位3つを表示。
 
 ## ダッシュボード -Analysis
 
@@ -34,28 +34,27 @@ description: Mobingi Waveにログインする
 
 * Monthly: 月ごとの利用推移を表示。アカウント毎に色分け。
 * Daily: 全アカウント合計の日毎の利用推移。
-* byProduct: AWSのサービスごとの内訳。
 
-## アカウント
+## レポート -アカウント
 
-選択するアカウント毎の利用実績を確認できます。
+選択するアカウントごとの利用実績を確認できます。
 
-![](../.gitbook/assets/wave_account.png)
+![](../.gitbook/assets/snip20180720_23.png)
 
-* RI : RIが適用されている。
+* Payer : Payer account \(親アカウント）
 * ![](../.gitbook/assets/screen-shot-2018-06-11-at-13.58.08.png):予算（アラート通知）設定されている。
 
-## アカウント - Group
+スクロールし、年月、サービスを選択するとレポートが閲覧できます。
+
+![](../.gitbook/assets/snip20180720_24.png)
+
+## レポート - グループ
 
 複数のアカウントをグルーピングし、グループごとの利用金額を表示します。 
 
-![](../.gitbook/assets/wave_group.png)
+![](../.gitbook/assets/snip20180720_26.png)
 
-## アカウント - Report
 
-アカウントごとに利用明細を確認することができます。
-
-![](../.gitbook/assets/wave_account_report.png)
 
 ## RI - Reserved Instance
 
