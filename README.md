@@ -1,16 +1,20 @@
 ---
-Mobingi Ripple 公式ユーザーガイド
+description: Mobingi Rippleの公式ユーザーガイドです。
 ---
 
-# Mobingi Documentation
+# Mobingi Ripple 公式ユーザーガイド
 
-Welcome to Mobingi's official documentation! This documentation covers all references to all available features and options of all Mobingi products.
+Mobingi Ripple のダッシュボードからの基本的な操作方法を説明しています。
 
-To get started with ALM, please visit [https://alm.mobingi.com](https://alm.mobingi.com).
+機能の追加・変更に合わせてこのユーザーガイドはアップデートされます。
 
-To get started with Wave, please visit [https://wave.mobingi.com](https://wave.mobingi.com).
+左のメニューから読みたい項目を選択してください。
 
-If you are looking for the old \(v2\) documentations for ALM, you can use the dropdown menu on the upper left hand corner of this page.
+Mobingi Ripple:  [https://ripple.mobingi.com](https://alm.mobingi.com).
 
-For general information about Mobingi, please visit our website [https://mobingi.com](https://mobingi.com).
+
+
+本ユーザーガイドで解決できない場合は support@mobingi.com までお気軽にお問い合わせください。
+
+Mobingi Website:  [https://mobingi.com](https://mobingi.com).
 
