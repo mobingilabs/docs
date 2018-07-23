@@ -1,8 +1,10 @@
 ---
-description: Rippleから請求書を発行しましょう。
+description: 請求書を発行するフローについて説明しています。
 ---
 
 # 請求書を発行する
+
+[※ 請求書発行する前に、請求データ確定のご連絡と集計作業が必要です。](https://docs.mobingi.com/~/drafts/-LI4AaN4Frv--_hbAXgG/primary/v/ripple/mobingi-ripple/mobingi-ripple-gai-yao#dashboard)
 
 ## 1. Rippleで請求書を発行する
 
@@ -52,9 +54,7 @@ description: Rippleから請求書を発行しましょう。
 
 ### CSVデータのフォーマット：アカウント単位
 
-![](../.gitbook/assets/csv_account.png)
-
-
+![1&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x306B;&#x5BFE;&#x3057;&#x3066;1&#x884C;](../.gitbook/assets/csv_account.png)
 
 1. アカウント情報
 2. AWSサービス毎の利用実績（USD）
@@ -63,7 +63,7 @@ description: Rippleから請求書を発行しましょう。
 
 ### CSVデータのフォーマット：アカウント/サービス単位
 
-![](../.gitbook/assets/csv_service.png)
+![1&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x306E;1&#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x3054;&#x3068;&#x306B;1&#x884C;](../.gitbook/assets/csv_service.png)
 
 各アカウントのサービス毎に行を構成。
 

@@ -7,12 +7,12 @@ description: 新規顧客の追加方法です。
 **手順**
 
 * AWSで顧客のアカウントを追加
-* 顧客（請求グループ）を登録する
-* 顧客（請求グループ）データを登録する
-* 請求グループにAWSアカウントを連結する
-* Wave（Reseller閲覧用）ログイン情報を設定
+* [顧客（請求グループ）を登録する](https://docs.mobingi.com/~/drafts/-LI4AaN4Frv--_hbAXgG/primary/v/ripple/mobingi-ripple/wosuru-1#step1)
+* [顧客（請求グループ）データを登録する](https://docs.mobingi.com/~/drafts/-LI4AaN4Frv--_hbAXgG/primary/v/ripple/mobingi-ripple/wosuru-1#step2)
+* [請求グループにAWSアカウントを連結する](https://docs.mobingi.com/~/drafts/-LI4AaN4Frv--_hbAXgG/primary/v/ripple/mobingi-ripple/wosuru-1#step3)
+* [Wave（Reseller閲覧用）ログイン情報を設定](https://docs.mobingi.com/~/drafts/-LI4AaN4Frv--_hbAXgG/primary/v/ripple/mobingi-ripple/wosuru-1#step4)
 
-## 1. 顧客（請求グループ）を登録する
+## 1. 顧客（請求グループ）を登録する {#step1}
 
 ![](../.gitbook/assets/add_user.png)
 
@@ -23,7 +23,7 @@ description: 新規顧客の追加方法です。
    * "Generate!" ボタンで乱数を作成することができます。
    * Payer Account を選択します。 Payer Accountは「一括設定」で管理します。
 
-## 2. 顧客（請求グループ）データを登録する
+## 2. 顧客（請求グループ）データを登録する {#step2}
 
 ![](../.gitbook/assets/add_setting.png)
 
@@ -43,7 +43,7 @@ description: 新規顧客の追加方法です。
 
      ※ 「請求書一括作成」を利用するには、これらを事前に設定する必要があります。
 
-## 3. 請求グループにAWSアカウントを連結する
+## 3. 請求グループにAWSアカウントを連結する {#step3}
 
 ![](../.gitbook/assets/add_account.png)
 
@@ -56,7 +56,7 @@ description: 新規顧客の追加方法です。
    * アカウント名 : AWSアカウント名を記入。
    * 備考（任意）: 用途、目的などをメモ。
 
-## 4. Wave（Reseller閲覧用）ログイン情報を設定
+## 4. Wave（Reseller閲覧用）ログイン情報を設定 {#step4}
 
 ![](../.gitbook/assets/wave_setting.png)
 
