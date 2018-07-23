@@ -662,7 +662,7 @@ Example below is also the default settings when deploying to Azure.
 
 ```yaml
 "subnet": {
-  "cidr": "192.168.199.0/24",
+  "cidr": "10.0.0.0/16",
   "public": true,
   "auto_assign_public_ip": true
 }
