@@ -64,6 +64,9 @@ Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
+cred_: ALM credential name created under AWS vendor_  
+region_: vendor region for your deployment_
+
 ```yaml
 "vendor": {
     "aws": {
@@ -75,6 +78,9 @@ Valid values:
 {% endtab %}
 
 {% tab title="AZURE" %}
+cred_: ALM credential name created under Azure vendor_  
+region_: vendor region for your deployment_
+
 ```yaml
 "vendor": {
     "azure": {
@@ -86,6 +92,9 @@ Valid values:
 {% endtab %}
 
 {% tab title="ALIBABA CLOUD" %}
+cred_: ALM credential name created under Alibaba cloud vendor_  
+region_: vendor region for your deployment_
+
 ```yaml
 "vendor": {
     "alicloud": {
@@ -97,6 +106,10 @@ Valid values:
 {% endtab %}
 
 {% tab title="GCP" %}
+cred_: ALM credential name created under AWS vendor_  
+region_: vendor region for your deployment_  
+project\_id_: your  GCP project id_
+
 ```yaml
  "vendor": {
     "gcp": {
