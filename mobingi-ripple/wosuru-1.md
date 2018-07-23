@@ -7,10 +7,10 @@ description: 新規顧客の追加方法です。
 **手順**
 
 * AWSで顧客のアカウントを追加
-* [顧客（請求グループ）を登録する](https://docs.mobingi.com/~/drafts/-LI4AaN4Frv--_hbAXgG/primary/v/ripple/mobingi-ripple/wosuru-1#step1)
-* [顧客（請求グループ）データを登録する](https://docs.mobingi.com/~/drafts/-LI4AaN4Frv--_hbAXgG/primary/v/ripple/mobingi-ripple/wosuru-1#step2)
-* [請求グループにAWSアカウントを連結する](https://docs.mobingi.com/~/drafts/-LI4AaN4Frv--_hbAXgG/primary/v/ripple/mobingi-ripple/wosuru-1#step3)
-* [Wave（Reseller閲覧用）ログイン情報を設定](https://docs.mobingi.com/~/drafts/-LI4AaN4Frv--_hbAXgG/primary/v/ripple/mobingi-ripple/wosuru-1#step4)
+* 顧客（請求グループ）を登録する
+* 顧客（請求グループ）データを登録する
+* 請求グループにAWSアカウントを連結する
+* Wave（Reseller閲覧用）ログイン情報を設定
 
 ## 1. 顧客（請求グループ）を登録する {#step1}
 
