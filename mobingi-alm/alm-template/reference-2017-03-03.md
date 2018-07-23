@@ -60,6 +60,59 @@ The description of the ALM Template. You can use this section to describe the pu
 
 The cloud platform vendor of which the template will be deployed to. You need to specify the vendor in every ALM Template you write, and can only specify one vendor at a time.
 
+Valid values:
+
+{% tabs %}
+{% tab title="AWS" %}
+```yaml
+"vendor": {
+    "aws": {
+      "cred": "change this to your AWS Security Key ID",
+      "region": "ap-northeast-1"
+    }
+}
+```
+{% endtab %}
+
+{% tab title="AZURE" %}
+```yaml
+"vendor": {
+    "azure": {
+      "cred": "your-credential-name-in-alm",
+      "region": "japaneast"
+    }
+}
+```
+{% endtab %}
+
+{% tab title="ALIBABA CLOUD" %}
+```yaml
+"vendor": {
+    "alicloud": {
+      "cred": "your-credential-name-in-alm",
+      "region": "ap-northeast-1"
+    }
+ }
+```
+{% endtab %}
+
+{% tab title="GCP" %}
+```yaml
+ "vendor": {
+    "gcp": {
+       "cred": "your-credential-name-in-alm",
+       "region": "asia-northeast1",
+       "project_id": "GCP-project-id"
+      }
+  }
+```
+{% endtab %}
+
+{% tab title="K5" %}
+_Not yet supported in this document._
+{% endtab %}
+{% endtabs %}
+
 ## configurations
 
 The configurations of the stack which ALM Template is about to deploy. In the configurations section, you specify one or multiple configuration layers of your application's provision and container runtime settings. Inside each layer, there are four sections you need to specify:
