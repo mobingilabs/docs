@@ -33,9 +33,7 @@ description: 新規顧客の追加方法です。
 
 **※ このデータ登録をしないと請求書の作成ができません。**
 
-![](../.gitbook/assets/add_setting.png)
-
-
+![&#x8ACB;&#x6C42;&#x66F8;&#x306E;&#x8A2D;&#x5B9A;](../.gitbook/assets/snip20180724_22.png)
 
 1. `設定`をクリック
 2. 請求関連の諸条件を設定
