@@ -14,7 +14,7 @@ Mobingi Ripple:  [https://ripple.mobingi.com](https://alm.mobingi.com).
 
 
 
-本ユーザーガイドで解決できない場合は support@mobingi.com までお気軽にお問い合わせください。
+本ユーザーガイドで解決できない場合は ripple\_cs@mobingi.com までお気軽にお問い合わせください。
 
 Mobingi Website:  [https://mobingi.com](https://mobingi.com).
 
