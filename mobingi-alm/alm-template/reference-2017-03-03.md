@@ -60,6 +60,72 @@ The description of the ALM Template. You can use this section to describe the pu
 
 The cloud platform vendor of which the template will be deployed to. You need to specify the vendor in every ALM Template you write, and can only specify one vendor at a time.
 
+Valid values:
+
+{% tabs %}
+{% tab title="AWS" %}
+cred_: ALM credential name created under AWS vendor_  
+region_: vendor region for your deployment_
+
+```yaml
+"vendor": {
+    "aws": {
+      "cred": "change this to your AWS Security Key ID",
+      "region": "ap-northeast-1"
+    }
+}
+```
+{% endtab %}
+
+{% tab title="AZURE" %}
+cred_: ALM credential name created under Azure vendor_  
+region_: vendor region for your deployment_
+
+```yaml
+"vendor": {
+    "azure": {
+      "cred": "your-credential-name-in-alm",
+      "region": "japaneast"
+    }
+}
+```
+{% endtab %}
+
+{% tab title="ALIBABA CLOUD" %}
+cred_: ALM credential name created under Alibaba cloud vendor_  
+region_: vendor region for your deployment_
+
+```yaml
+"vendor": {
+    "alicloud": {
+      "cred": "your-credential-name-in-alm",
+      "region": "ap-northeast-1"
+    }
+ }
+```
+{% endtab %}
+
+{% tab title="GCP" %}
+cred_: ALM credential name created under AWS vendor_  
+region_: vendor region for your deployment_  
+project\_id_: your  GCP project id_
+
+```yaml
+ "vendor": {
+    "gcp": {
+       "cred": "your-credential-name-in-alm",
+       "region": "asia-northeast1",
+       "project_id": "GCP-project-id"
+      }
+  }
+```
+{% endtab %}
+
+{% tab title="K5" %}
+_Not yet supported in this document._
+{% endtab %}
+{% endtabs %}
+
 ## configurations
 
 The configurations of the stack which ALM Template is about to deploy. In the configurations section, you specify one or multiple configuration layers of your application's provision and container runtime settings. Inside each layer, there are four sections you need to specify:
@@ -101,7 +167,7 @@ Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
-```text
+```yaml
 "availability_zone": "ap-northeast-1c"
 ```
 
@@ -175,7 +241,7 @@ Below are the valid availability zones for each regions on AWS.
 {% endtab %}
 
 {% tab title="AZURE" %}
-```text
+```yaml
 "availability_zone": "ap-northeast-1c"
 ```
 
@@ -224,7 +290,7 @@ WestUs2
 {% tab title="GCP" %}
 Example:
 
-```ruby
+```yaml
 "availability_zone": "asia-northeast1-a"
 ```
 
@@ -232,7 +298,7 @@ You can refer to this [page](https://cloud.google.com/compute/docs/regions-zones
 {% endtab %}
 
 {% tab title="K5" %}
-```text
+```yaml
 "availability_zone": "ap-northeast-1"
 ```
 {% endtab %}
@@ -248,7 +314,7 @@ Valid values:
 {% tab title="AWS" %}
 Default: t2.micro
 
-```text
+```yaml
 "instance_type": "t2.micro"
 ```
 
@@ -334,7 +400,7 @@ Below are the valid instance types for AWS.
 {% tab title="ALIBABA CLOUD" %}
 Default: xn4.small.
 
-```text
+```yaml
     "instance_type": "xn4.small"
 ```
 {% endtab %}
@@ -342,7 +408,7 @@ Default: xn4.small.
 {% tab title="AZURE" %}
 Default: Standard\_B1s.
 
-```text
+```yaml
     "instance_type": "Standard_B1s"
 ```
 {% endtab %}
@@ -356,7 +422,7 @@ Refer to this [page](https://cloud.google.com/compute/docs/machine-types) for in
 {% tab title="K5" %}
 Default: 1101.
 
-```text
+```yaml
     "instance_type": "1101"
 ```
 {% endtab %}
@@ -378,7 +444,7 @@ Valid values:
 {% tab title="AWS" %}
 Below is also the default value for AWS.
 
-```text
+```yaml
     "image": "ami-2a69be4c"
 ```
 {% endtab %}
@@ -386,7 +452,7 @@ Below is also the default value for AWS.
 {% tab title="ALIBABA CLOUD" %}
 Below is also the default value for Alibaba Cloud.
 
-```text
+```yaml
     "image": "centos_7_03_64_40G_alibase_20170710.vhd"
 ```
 {% endtab %}
@@ -402,7 +468,7 @@ This is not supported yet.
 {% tab title="K5" %}
 Below is also the default value for K5.
 
-```text
+```yaml
     "image": "58fd966f-b055-4cd0-9012-cf6af7a4c32b"
 ```
 {% endtab %}
@@ -420,19 +486,19 @@ Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
-```text
+```yaml
     "instance_count": 1
 ```
 {% endtab %}
 
 {% tab title="ALIBABA CLOUD" %}
-```text
+```yaml
     "instance_count": 1
 ```
 {% endtab %}
 
 {% tab title="AZURE" %}
-```text
+```yaml
     "instance_count": 1
 ```
 {% endtab %}
@@ -442,7 +508,7 @@ This value is only valid when &gt; zero **AND** `auto_scaling.min` and `auto_sca
 {% endtab %}
 
 {% tab title="K5" %}
-```text
+```yaml
     "instance_count": 1
 ```
 {% endtab %}
@@ -460,7 +526,7 @@ Valid values:
 {% tab title="AWS" %}
 If you don't specify this declarative, the default value of gp2 will be applied.
 
-```text
+```yaml
     gp2 - General Purpose SSD
     io1 - Provisioned IOPS SSD
     st1 - Throughput Optimized HDD
@@ -570,7 +636,7 @@ Valid values:
 {% tab title="AWS" %}
 Example below is also the default settings when deploying to AWS.
 
-```text
+```yaml
 "subnet": {
   "cidr": "10.0.0.0/24",
   "public": true,
@@ -582,7 +648,7 @@ Example below is also the default settings when deploying to AWS.
 {% tab title="ALIBABA CLOUD" %}
 Example below is also the default settings when deploying to Alibaba Cloud.
 
-```text
+```yaml
 "subnet": {
   "cidr": "192.168.199.0/24",
   "public": true,
@@ -594,9 +660,9 @@ Example below is also the default settings when deploying to Alibaba Cloud.
 {% tab title="AZURE" %}
 Example below is also the default settings when deploying to Azure.
 
-```text
+```yaml
 "subnet": {
-  "cidr": "192.168.199.0/24",
+  "cidr": "10.0.0.0/16",
   "public": true,
   "auto_assign_public_ip": true
 }
@@ -674,7 +740,7 @@ Valid values:
 {% tab title="AWS" %}
 Example below is also the default settings when deploying to AWS.
 
-```ruby
+```yaml
 "network_acl": [
   {
     "rule_number": 100,
@@ -698,7 +764,7 @@ This section hasn't been covered by documentation.
 {% endtab %}
 
 {% tab title="AZURE" %}
-This section hasn't been covered by documentation.
+This is not supported yet.
 {% endtab %}
 
 {% tab title="GCP" %}
@@ -755,7 +821,7 @@ Valid values:
 {% tab title="AWS" %}
 Example below is also the default settings when deploying to AWS.
 
-```typescript
+```yaml
 "security_group": {
         "ingress": [
             {
@@ -794,7 +860,38 @@ This section hasn't been covered by documentation.
 {% endtab %}
 
 {% tab title="AZURE" %}
-This section hasn't been covered by documentation.
+```yaml
+"security_group": {
+    "ingress": [
+        {
+            "cidr_ip": "0.0.0.0/0",
+            "from_port": 80,
+            "ip_protocol": "tcp",
+           		"to_port": 80
+        },
+        {
+            "cidr_ip": "0.0.0.0/0",
+            "from_port": 443,
+           	"ip_protocol": "tcp",
+        	"to_port": 443
+        },
+        {
+            "cidr_ip": "0.0.0.0/0",
+            "from_port": 22,
+            "ip_protocol": "tcp",
+            "to_port": 22
+        }
+    ],
+   	"egress": [
+        {
+            cidr_ip": "0.0.0.0/0",
+            "from_port": 0,
+           	"ip_protocol": "tcp",
+            "to_port": 65535
+        }
+    ]
+}
+```
 {% endtab %}
 
 {% tab title="GCP" %}
@@ -875,7 +972,7 @@ Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
-```typescript
+```yaml
 "auto_scaling": {
   "min": 1,
   "max": 1,
@@ -1054,7 +1151,7 @@ Valid values:
 
 {% tabs %}
 {% tab title="AWS" %}
-```typescript
+```yaml
 "load_balancer": {
         "lb_type": "classic",
         "scheme": "internet-facing",
@@ -1140,7 +1237,7 @@ Valid values:
 {% tab title="AWS" %}
 Default: db.t2.micro
 
-```typescript
+```yaml
  "rds": {
         "db_instance_type": "db.t2.micro",
         "engine": "mysql",
@@ -1315,7 +1412,7 @@ This parameter is not yet supported.
 
 An example `container` configuration:
 
-```typescript
+```yaml
 "container": {
   "container_image": "mobingi/ubuntu-apache2-php7",
   "container_code_dir": "/var/www/html",
