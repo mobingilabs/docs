@@ -44,7 +44,8 @@ description: Mobingi Waveにログインする
 * Payer : Payer account \(親アカウント）
 * ![](../.gitbook/assets/screen-shot-2018-06-11-at-13.58.08.png):予算（アラート通知）設定されている。
 
-スクロールし、年月、サービスを選択するとレポートが閲覧できます。
+スクロールし、年月、サービスを選択するとレポートが表示できます。  
+年月の隣にあるボタンからCSVとしてダウンロードできます。
 
 ![](../.gitbook/assets/snip20180720_24.png)
 
@@ -54,7 +55,13 @@ description: Mobingi Waveにログインする
 
 ![](../.gitbook/assets/snip20180720_26.png)
 
+## レポート - タグ
 
+AWSで利用しているタグごとの利用金額を把握できます。
+
+![](../.gitbook/assets/snip20180724_32.png)
+
+詳細は[タグでの利用量](https://docs.mobingi.com/v/wave/mobingi-wave/tag-report)の把握をご覧ください。
 
 ## RI - Reserved Instance
 
