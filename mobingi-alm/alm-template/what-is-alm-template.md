@@ -30,3 +30,5 @@ Official YAML format support is in-progress.
 
 ALM Template top-level components consist of `version`, `label`, `description`, `vendor`, `configurations`. For more information about these components, see the reference section.
 
+
+
