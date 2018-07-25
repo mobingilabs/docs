@@ -1,5 +1,5 @@
 ---
-description: Mobingi Waveにログインする
+description: Waveの基本的な機能の説明です。
 ---
 
 # Mobingi Wave 概要

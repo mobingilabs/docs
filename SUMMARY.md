@@ -4,9 +4,10 @@
 
 ## Mobingi Wave
 
-* [事前準備](mobingi-wave/shi-qian-zhun-bei.md)
-* [Mobingi Wave 概要](mobingi-wave/mobingi-wave-gai-yao.md)
-* [明細の確認方法](mobingi-wave/no.md)
+* [事前準備](mobingi-wave/prep.md)
+* [Mobingi Wave 概要](mobingi-wave/about-wave.md)
+* [明細の確認方法](mobingi-wave/detail-check.md)
 * [タグでの利用量の把握](mobingi-wave/tag-report.md)
-* [レポートとCSVの見方](mobingi-wave/reptotocsvno.md)
+* [レポートとCSVの見方](mobingi-wave/report-csv.md)
+* [割引と為替の適用](mobingi-wave/apply-jpy.md)
 
