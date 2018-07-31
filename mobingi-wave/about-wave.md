@@ -1,85 +1,85 @@
 ---
-description: Waveの基本的な機能の説明です。
+description: Wave的基本功能说明。
 ---
 
-# Mobingi Wave 概要
+# Mobingi Wave 概述
 
-## Mobingi Waveにログインする
+## 登录Mobingi Wave
 
 ![](../.gitbook/assets/wave01.png)
 
-* https://app.mobingi.com/wave/login より必要情報を入力し、ログインをクリック。
+* 请从 https://app.mobingi.com/wave/login 输入必要的信息，然后点击“登录”。
 
-## メニュー構成
+## 菜单结构
 
 ![](../.gitbook/assets/snip20180720_21.png)
 
-* ダッシュボード：貴社でご利用の全てのAWSアカウントの利用状況（合計）可視化。
-* レポートト：AWSアカウントやタグごとの利用状況を可視化、レポートの参照。
-* RI：Reserved Instanceの一覧と適応状況を表示。
+* 仪表盘：在贵公司使用的所有的AWS账户的利用状况（合计）可视化。
+* 报告：AWS账户和每个标签的利用状况可视化，参考报告。
+* RI：显示Reserved Instance列表和适应状况。
 
-## ダッシュボード
+## 仪表盘
 
 ![](../.gitbook/assets/snip20180720_19.png)
 
-* 今月のこれまでのAWS利用費用を把握。
-* 先月（1ヶ月分）の利用実績。
-* 貴社でご利用のAWSアカウント数。
-* 利用量の多いアカウントをランキングで表示。
-* RIの適用状況。カバー率の高いRI上位3つを表示。
+* 掌握这个月至今的AWS使用额。
+* 上个月（一个月）的使用实绩。
+* 在贵公司使用的AWS帐户数。
+* 使用量多的账户排行榜显示。
+* RI的适应状况。显示RI的覆盖率高的前三名。
 
-## ダッシュボード -Analysis
+## 仪表盘 -Analysis
 
 ![](../.gitbook/assets/wave05.png)
 
-* Monthly: 月ごとの利用推移を表示。アカウント毎に色分け。
-* Daily: 全アカウント合計の日毎の利用推移。
+* Monthly: 显示月别的使用趋势。 颜色区分每个账户。
+* Daily: 所有账户合计的每日使用趋势。
 
-## レポート -アカウント
+## 报告 - 账户
 
-選択するアカウントごとの利用実績を確認できます。
+您可以确认每个选定账户的使用记录。
 
 ![](../.gitbook/assets/snip20180720_23.png)
 
-* Payer : Payer account \(親アカウント）
-* ![](../.gitbook/assets/screen-shot-2018-06-11-at-13.58.08.png):予算（アラート通知）設定されている。
+* Payer : Payer account （主账户）
+* ![](../.gitbook/assets/screen-shot-2018-06-11-at-13.58.08.png): 已设置预算（警报通知）。 
 
-スクロールし、年月、サービスを選択するとレポートが表示できます。  
-年月の隣にあるボタンからCSVとしてダウンロードできます。
+向下滚动并选择，年月，服务，则会显示报告。  
+从年月旁边的按钮中可以下载CSV。
 
 ![](../.gitbook/assets/snip20180720_24.png)
 
-## レポート - グループ
+## 报告 - 小组
 
-複数のアカウントをグルーピングし、グループごとの利用金額を表示します。 
+将复数帐户分组并显示每个组的使用额。 
 
 ![](../.gitbook/assets/snip20180720_26.png)
 
-## レポート - タグ
+## 报告 - 标签
 
-AWSで利用しているタグごとの利用金額を把握できます。
+可以掌握在AWS中使用的标签的每个标签的使用额。
 
 ![](../.gitbook/assets/snip20180724_32.png)
 
-詳細は[タグでの利用量](https://docs.mobingi.com/v/wave/mobingi-wave/tag-report)の把握をご覧ください。
+详细请查看掌握 [在标签的使用量](https://docs.mobingi.com/v/wave/mobingi-wave/tag-report) 。
 
 ## RI - Reserved Instance
 
-購入済みのRIを確認できます。
+可以查看已购买的RI
 
 ![](../.gitbook/assets/wave_ri.png)
 
-## 請求書
+## 账单
 
-月々の請求書を確認することができます。
+可以查看每个月的账单。
 
 ![](../.gitbook/assets/wave_invoice.png)
 
-## 設定
+## 设置
 
-以下の設定、変更が可能です。
+可以更改以下的设置。
 
-* パスワードの変更
-* 言語の変更（日本語・英語・中国語）
-* 通知設定（メール・Slack）
+* 更改密码
+* 更改语言（日语/英语/中文）
+* 通知设置（电子邮件/ Slack）
 
