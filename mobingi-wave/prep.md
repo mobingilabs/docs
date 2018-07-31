@@ -53,15 +53,15 @@ description: 在将引入 Wave 前的准备
   * 包含: 选择 **资源ID**
   * 启用支持: 任意
 
-![](../.gitbook/assets/bill_002.png)
+![](../.gitbook/assets/snip20180730_4.png)
 
 * 在“第2步：选择交付选项”页面，为包括S3存储桶的操作，按以下步骤进行。
   * 输入S3存储桶（之前创建的）名称
   * 示例策略显示和复制（※请务必在填写S3存储桶名称后在显示）
 
-![](../.gitbook/assets/bill_003.png)
+![](../.gitbook/assets/snip20180730_10.png)
 
-![](../.gitbook/assets/bill_004.png)
+![](../.gitbook/assets/snip20180730_12.png)
 
 * 复制样本策略后，打开**先前创建的S3存储桶** 的详细信息。（※建议在另一个标签或窗口上操作）
 * 在S3中，按“访问权限”&gt;&gt;“存储桶策略”操作菜单。
@@ -88,17 +88,17 @@ description: 在将引入 Wave 前的准备
 
 从AWS管理控制台中，打开IAM服务并转到“角色”&gt;&gt;“创建角色”菜单。
 
-![](../.gitbook/assets/role_001.png)
+![](../.gitbook/assets/snip20180730_14.png)
 
 在“选择可信用的实体类型”中选择“其他的AWS账户”，输入下面的Mobingi账户ID。
 
 * Mobingi账户ID： 131920598436
 
-![](../.gitbook/assets/role_002.png)
+![](../.gitbook/assets/snip20180730_2%20%281%29.png)
 
-在“附加访问权限策略”菜单中，选择“制定策略”。
+在“附加访问权限策略”菜单中，选择“创建策略”。
 
-![](../.gitbook/assets/role_003-1.png)
+![](../.gitbook/assets/snip20180730_5.png)
 
 由于在另一个标签（窗口）中打开“创建策略”菜单，选择JSON作为输入格式，以以下的内容输入策略。请将 Resource的`{replace_to_report_bucket}`部分置换为 **要使用的报告的存储桶名称**。
 
@@ -118,7 +118,7 @@ description: 在将引入 Wave 前的准备
 }
 ```
 
-![](../.gitbook/assets/role_004.png)
+![](../.gitbook/assets/snip20180730_8.png)
 
 进入“确认策略”，输入以下项目并创建策略。
 
