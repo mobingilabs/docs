@@ -7,7 +7,7 @@ description: >-
 # Preparation
 
 * This page explains thins you need to be done on your AWS account for start using Mobingi Wave.
-* After finish preparation, you will need to give Mobingi the below informations. Please keep thes
+* After finishing preparation, you will need to give Mobingi the below informations. 
 
 ```
 - AWS account ID (12 digit numbers).

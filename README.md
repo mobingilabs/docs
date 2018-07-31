@@ -1,20 +1,16 @@
 ---
-description: Mobingi Documentation
+description: Welcome to Mobingi Wave official user guide!
 ---
 
 # Mobingi Wave Documentation
 
-## Welcome to Wave official documentation.
+This documentation explains from the things you need to be done before start using Wave to after start using it. We constantly update this doc.  
 
-### What does Mobingi provides?
+[The original Wave documentation \(Japanese\)](https://docs.mobingi.com/v/wave/) 
 
-![](.gitbook/assets/002.png)
+Mobingi Wave: [https://app.mobingi.com/wave](https://app.mobingi.com/wave).
 
-Mobingi provide a solution that The software helps your organization to automate your complex devOps workflows and reduce the cost on public clouds. Currently only supporting AWS, and our engineering team is working on the integration with the following public clouds as well:
+If there is any question, feel free to contact us: support@mobingi.com
 
-* Microsoft Azure
-* Google Cloud Platform
-* Fujitsu Cloud K5
 
-Stay shipping your clouds with us, we'll release new awesome features on a regular basis.
 
