@@ -15,6 +15,7 @@ description: >-
 - Information of the report you made.
 
     - Report name
+
     - S3 bucket
 
     - Report path prefix, or Report path
@@ -69,35 +70,38 @@ Click **Create report**.
 
 ![](../.gitbook/assets/snip20180727_17.png)
 
-Go back to Step2: Select Delivery Options and put below info.
+Go back to **`Step2: Select Delivery Options`** and put below info.
 
-レポートパスのプレフィックス: 任意 \(※なしでも構いません\) 圧縮: 任意 バケットポリシーが正しくない場合、検証で「有効なバケット」となりません。
+* Report path prefix: Optional  \(\*blank also works\) 
+* Compression: Optional
+
+It shows **Valid Bucket** only when the bucket policy is correct.
 
 Check your S3 again.
 
-![](../.gitbook/assets/bill_006.png)
+![](../.gitbook/assets/snip20180731_35.png)
 
-『ステップ 3: 確認』表示されている内容に間違いがない確認し、完了します。
+Check the info again and click **Review and Complete.**
 
-![](../.gitbook/assets/bill_007.png)
+![](../.gitbook/assets/snip20180727_29.png)
 
 ## Step 2 : Create IAM role for Mobingi {#step2}
 
 From AWS management console, select **IAM** service and click **Roles** &gt;&gt; **Create role.**
 
-![](../.gitbook/assets/snip20180727_18.png)
+![](../.gitbook/assets/snip20180727_19.png)
 
-『信頼されたエンティティの種類を選択』で、「別のAWSアカウントを」選択し、以下のモビンギのアカウントIDを入力します。
+Choose  **Another AWS Account** at **`Select type of trusted entity`**and put Mobingi account ID.
 
-* モビンギアカウントID: 131920598436
+* Mobingi Account ID: 131920598436
 
-![](../.gitbook/assets/role_002.png)
+![](../.gitbook/assets/snip20180727_21.png)
 
-「アクセス権限ポリシーをアタッチする」メニューで、『ポリシーの作成』を選択します。
+Click **Create policy**.
 
-![](../.gitbook/assets/role_003-1.png)
+![](../.gitbook/assets/snip20180727_23.png)
 
-別のタブ\(ウィンドウ\)で「ポリシーの作成」メニューが開くので、入力形式にJSONを選択し、以下の内容でポリシーを入力します。 Resourceの`{replace_to_report_bucket}`部分を **レポートに使用するバケット名** に置き換えてください。
+New tab or window will open. Choose JSON as input format and type the policy same as below. Make sure to change`{replace_to_report_bucket}` at "Resource"  to **the bucket name you use for report.**
 
 ```bash
 {
@@ -115,29 +119,29 @@ From AWS management console, select **IAM** service and click **Roles** &gt;&gt;
 }
 ```
 
-![](../.gitbook/assets/role_004.png)
+![](../.gitbook/assets/snip20180727_25.png)
 
-「ポリシーの確認」へ進み、以下の項目を入力してポリシーを作成します。
+After fill the informations below, you can finish to create policy.
 
-* 名前: 任意\(※必須\)
-* 説明: 任意
+* Name: Any \(\*required\)
+* Description: Option
 
-![](../.gitbook/assets/role_005.png)
+![](../.gitbook/assets/snip20180727_31.png)
 
-『ロールの作成』メニューに戻り、リストを更新し、先ほど作成したポリシーを表示します。 チェックを有効にして、確認へ進みます。
+Go back to **Create Role** and refresh, the policy suppose to display on the list. Active the policy and move to review page. ****
 
-![](../.gitbook/assets/role_006.png)
+![](../.gitbook/assets/snip20180727_33.png)
 
-「確認」メニューで、以下の項目を入力します。
+At **Review**, fill the informations below.
 
-* ロール名: 任意\(※必須\)
-* ロールの説明: 任意
+* Role name: Any \(\*required\)
+* Role description: Option
 
-「信頼されたエンティティ」、「ポリシー」が適用されていることを確認し、ロールを作成します。
+After check **Trusted entities** and **Policies** are correctly applied, click **Create role**.
 
-![](../.gitbook/assets/role_007.png)
+![](../.gitbook/assets/snip20180731_39.png)
 
-作成したロールのARNを控えます。
+Keep the ARN of the role.
 
 
 
