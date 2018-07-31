@@ -2,9 +2,9 @@
 description: Mobingi Documentation
 ---
 
-# Mobingi Documentation \(v2.0\)
+# Mobingi Wave Documentation
 
-## Software that ships your cloud
+## Welcome to Wave official documentation.
 
 ### What does Mobingi provides?
 
