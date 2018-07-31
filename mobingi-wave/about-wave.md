@@ -6,42 +6,42 @@ description: Wave的基本功能说明。
 
 ## 登录Mobingi Wave
 
-![](../.gitbook/assets/wave01.png)
+![](../.gitbook/assets/snip20180731_20.png)
 
 * 请从 https://app.mobingi.com/wave/login 输入必要的信息，然后点击“登录”。
 
 ## 菜单结构
 
-![](../.gitbook/assets/snip20180720_21.png)
+![](../.gitbook/assets/snip20180731_21.png)
 
-* 仪表盘：在贵公司使用的所有的AWS账户的利用状况（合计）可视化。
-* 报告：AWS账户和每个标签的利用状况可视化，参考报告。
+* 仪表盘：在贵公司使用的所有的AWS帐户的利用状况（合计）可视化。
+* 报告：AWS帐户和每个标签的利用状况可视化，参考报告。
 * RI：显示Reserved Instance列表和适应状况。
 
-## 仪表盘
+## 控制面板
 
-![](../.gitbook/assets/snip20180720_19.png)
+![](../.gitbook/assets/snip20180731_56.png)
 
 * 掌握这个月至今的AWS使用额。
 * 上个月（一个月）的使用实绩。
 * 在贵公司使用的AWS帐户数。
-* 使用量多的账户排行榜显示。
+* 使用量多的帐户排行榜显示。
 * RI的适应状况。显示RI的覆盖率高的前三名。
 
-## 仪表盘 -Analysis
+## 控制面板 - Analysis
 
 ![](../.gitbook/assets/wave05.png)
 
-* Monthly: 显示月别的使用趋势。 颜色区分每个账户。
-* Daily: 所有账户合计的每日使用趋势。
+* Monthly: 显示月别的使用趋势。 颜色区分每个帐户。
+* Daily: 所有帐户合计的每日使用趋势。
 
-## 报告 - 账户
+## 报告 - 帐户
 
-您可以确认每个选定账户的使用记录。
+您可以确认每个选定帐户的使用记录。
 
-![](../.gitbook/assets/snip20180720_23.png)
+![](../.gitbook/assets/snip20180731_23.png)
 
-* Payer : Payer account （主账户）
+* Payer : Payer account （主帐户）
 * ![](../.gitbook/assets/screen-shot-2018-06-11-at-13.58.08.png): 已设置预算（警报通知）。 
 
 向下滚动并选择，年月，服务，则会显示报告。  
@@ -53,7 +53,7 @@ description: Wave的基本功能说明。
 
 将复数帐户分组并显示每个组的使用额。 
 
-![](../.gitbook/assets/snip20180720_26.png)
+![](../.gitbook/assets/snip20180731_26.png)
 
 ## 报告 - 标签
 
@@ -67,11 +67,11 @@ description: Wave的基本功能说明。
 
 可以查看已购买的RI
 
-![](../.gitbook/assets/wave_ri.png)
+![](../.gitbook/assets/snip20180731_37.png)
 
-## 账单
+## 帐单
 
-可以查看每个月的账单。
+可以查看每个月的帐单。
 
 ![](../.gitbook/assets/wave_invoice.png)
 
