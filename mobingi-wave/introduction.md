@@ -6,7 +6,7 @@ description: >-
 
 # Preparation
 
-* This page explains thins you need to be done on your AWS account for start using Mobingi Wave.
+* This page explains things you need to be done on your AWS account for start using Mobingi Wave.
 * After finishing preparation, you will need to give Mobingi the below informations. 
 
 ```

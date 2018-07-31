@@ -4,5 +4,5 @@
 
 ## Mobingi Wave
 
-* [Preparation](mobingi-alm/introduction.md)
+* [Preparation](mobingi-wave/introduction.md)
 
