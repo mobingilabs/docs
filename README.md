@@ -1,18 +1,20 @@
 ---
-description: Mobingi Waveの公式ユーザーガイドです。
+description: Mobingi Documentation
 ---
 
-# Mobingi Wave 公式ユーザーガイド
+# Mobingi Documentation \(v2.0\)
 
-Mobingi Wave を利用するための事前準備から、UIの基本的な操作方法などを説明しています。
+## Software that ships your cloud
 
-機能の追加・変更に合わせてこのユーザーガイドはアップデートされます。
+### What does Mobingi provides?
 
-左のメニューから読みたい項目を選択してください。
+![](.gitbook/assets/002.png)
 
-Mobingi Wave: [https://app.mobingi.com/wave](https://app.mobingi.com/wave).
+Mobingi provide a solution that The software helps your organization to automate your complex devOps workflows and reduce the cost on public clouds. Currently only supporting AWS, and our engineering team is working on the integration with the following public clouds as well:
 
-本ユーザーガイドで解決できない場合は support@mobingi.com までお気軽にお問い合わせください。
+* Microsoft Azure
+* Google Cloud Platform
+* Fujitsu Cloud K5
 
-Mobingi Website: [https://mobingi.com](https://mobingi.com).
+Stay shipping your clouds with us, we'll release new awesome features on a regular basis.
 
