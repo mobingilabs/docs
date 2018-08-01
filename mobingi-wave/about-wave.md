@@ -59,7 +59,7 @@ description: Wave的基本功能说明。
 
 可以掌握在AWS中利用的标签的每个标签的利用额。
 
-![](../.gitbook/assets/snip20180724_32.png)
+![](../.gitbook/assets/snip20180801_67%20%281%29.png)
 
 详细请查看 [掌握标签的使用量](https://docs.mobingi.com/v/wave/mobingi-wave/tag-report) 。
 

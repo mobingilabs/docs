@@ -9,7 +9,7 @@ description: 如果您想要月度报告显示日元和想适用折扣时可利�
 从屏幕右上角的下拉菜单中选择设置。  
 从`Additional Setting`输入折扣率和汇率然后`Save`。
 
-![&#x8BBE;&#x7F6E;&#x753B;&#x9762;](../.gitbook/assets/snip20180731_22%20%281%29.png)
+![](../.gitbook/assets/snip20180801_71.png)
 
 请在月初登陆上个月利用的统计适用的折扣率和汇率。
 

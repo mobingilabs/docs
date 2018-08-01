@@ -16,8 +16,7 @@ description: 在将引进 Wave 前的准备
 
     - S3存储桶
 
-    - レポートパスのプレフィックス、またはレポートのパス
-    - 报告路径的Prefix，或报告路径
+    - 报告路径前缀，或报告路径
 
 - 授权指定存储桶用的 IAM角色的ARN (例如: arn:aws:iam::xxxxxxxxxxxx:role/crossacounnt-access-for-mobingi)
 ```
@@ -67,11 +66,11 @@ description: 在将引进 Wave 前的准备
 * 在S3中，按“访问权限”&gt;&gt;“存储桶策略”操作菜单。
 * 在存储桶策略编辑器中，适用之前的样本策略
 
-![](../.gitbook/assets/bill_005.png)
+![](../.gitbook/assets/snip20180801_63.png)
 
 返回到“第2步：选择交付选项”，输入以下项目并进行下一步。
 
-* 报告路径的Prefix：任意（※也可忽略）
+* 报告路径前缀：任意（※也可忽略）
 * 圧缩：任意
 
 如果存储桶策略不正确，在验证不会成为“有效桶”。
@@ -125,7 +124,7 @@ description: 在将引进 Wave 前的准备
 * 姓名： 任意\(※必須\)
 * 描述：任意
 
-![](../.gitbook/assets/role_005.png)
+![](../.gitbook/assets/snip20180801_64.png)
 
 返回“创建角色”菜单并更新列表，显示之前创建的策略。 激活选项，进入下一步确认。
 

@@ -6,7 +6,7 @@ description: 设置画面的说明。
 
 从控制台右上角的下拉菜单中选择设置。
 
-![&#x8BBE;&#x7F6E;&#x753B;&#x9762;](../.gitbook/assets/snip20180731_22.png)
+![](../.gitbook/assets/snip20180801_71%20%281%29.png)
 
 ### 在设置画面上可以设置的内容
 
