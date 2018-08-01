@@ -4,7 +4,7 @@ description: Mobingi Wave的官方用户指南
 
 # Mobingi Wave 官方用户指南
 
-从使用Mobingi Wave的提前准备中讲解UI等的基本操作方法。
+从使用Mobingi Wave的提前准备中讲解UI等的基本的操作方法。
 
 根据功能的添加・更改将更新本用户指南。
 

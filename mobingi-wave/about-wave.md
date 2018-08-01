@@ -4,17 +4,17 @@ description: Wave的基本功能说明。
 
 # Mobingi Wave 概述
 
-## 登录Mobingi Wave
+## 注册Mobingi Wave
 
 ![](../.gitbook/assets/snip20180731_20.png)
 
-* 请从 https://app.mobingi.com/wave/login 输入必要的信息，然后点击“登录”。
+* 请从 https://app.mobingi.com/wave/login 输入必要的信息，然后点击“注册”。
 
 ## 菜单结构
 
 ![](../.gitbook/assets/snip20180731_21.png)
 
-* 仪表盘：在贵公司使用的所有的AWS帐户的利用状况（合计）可视化。
+* 控制面板：在贵公司使用的所有的AWS帐户的利用状况（合计）可视化。
 * 报告：AWS帐户和每个标签的利用状况可视化，参考报告。
 * RI：显示Reserved Instance列表和适应状况。
 
