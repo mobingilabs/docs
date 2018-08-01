@@ -15,8 +15,8 @@ description: Wave的基本功能说明。
 ![](../.gitbook/assets/snip20180731_21.png)
 
 * 控制面板：在贵公司使用的所有的AWS帐户的利用状况（合计）可视化。
-* 报告：AWS帐户和每个标签的利用状况可视化，参考报告。
-* RI：显示Reserved Instance列表和适应状况。
+* 报告：AWS帐户和每个标签的利用状况可视化，报告参考。
+* RI：显示Reserved Instance列表和利用状况。
 
 ## 控制面板
 
@@ -25,15 +25,15 @@ description: Wave的基本功能说明。
 * 掌握这个月至今的AWS使用额。
 * 上个月（一个月）的使用实绩。
 * 在贵公司使用的AWS帐户数。
-* 使用量多的帐户排行榜显示。
-* RI的适应状况。显示RI的覆盖率高的前三名。
+* 利用量多的帐户的排行榜显示。
+* RI的利用状况。显示RI的覆盖率高的前三名。
 
 ## 控制面板 - Analysis
 
 ![](../.gitbook/assets/wave05.png)
 
 * Monthly: 显示月别的使用趋势。 颜色区分每个帐户。
-* Daily: 所有帐户合计的每日使用趋势。
+* Daily: 所有帐户合计的每天利用趋势。
 
 ## 报告 - 帐户
 
@@ -45,7 +45,7 @@ description: Wave的基本功能说明。
 * ![](../.gitbook/assets/screen-shot-2018-06-11-at-13.58.08.png): 已设置预算（警报通知）。 
 
 向下滚动并选择，年月，服务，则会显示报告。  
-从年月旁边的按钮中可以下载CSV。
+从年月旁边的按钮可以下载CSV。
 
 ![](../.gitbook/assets/snip20180720_24.png)
 
@@ -57,11 +57,11 @@ description: Wave的基本功能说明。
 
 ## 报告 - 标签
 
-可以掌握在AWS中使用的标签的每个标签的使用额。
+可以掌握在AWS中利用的标签的每个标签的利用额。
 
 ![](../.gitbook/assets/snip20180724_32.png)
 
-详细请查看掌握 [在标签的使用量](https://docs.mobingi.com/v/wave/mobingi-wave/tag-report) 。
+详细请查看 [掌握标签的使用量](https://docs.mobingi.com/v/wave/mobingi-wave/tag-report) 。
 
 ## RI - Reserved Instance
 
