@@ -117,7 +117,7 @@ description: 在将引进 Wave 前的准备
 }
 ```
 
-![](../.gitbook/assets/snip20180801_59.png)
+![](../.gitbook/assets/snip20180801_72.png)
 
 进入“确认策略”，输入以下项目并创建策略。
 
