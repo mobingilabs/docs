@@ -20,7 +20,7 @@ description: 控制面板上的报告和CSV报告的比较说明。
    * 报告中小数显示到小数第2位。 比如在此列报告中的 `$21.18` 和在CSV中的 `21.18966134` 是一致的。
 4. Region: 地区
    * 在此例中，在控制面板显示为 `Asia Pacific(Tokyo)` ，而在CSV中则显示为`ap-northeast-1` 。 两者都是指东京地区。
-5. UsageQuantity: 使用量
+5. UsageQuantity: 利用量
    * 此例在报告中是`1,394.05` 和在CSV中的 `1,394.056667` 是一致的。
 6. InstanceType: 实例类型
    * 此例在报告和CSV都是 `t2.micro`，是一致的。

@@ -32,12 +32,12 @@ description: Wave的基本功能说明。
 
 ![](../.gitbook/assets/wave05.png)
 
-* Monthly: 显示月别的使用趋势。 颜色区分每个帐户。
+* Monthly: 显示月别的利用趋势。 颜色区分每个帐户。
 * Daily: 所有帐户合计的每天利用趋势。
 
 ## 报告 - 帐户
 
-您可以确认每个选定帐户的使用记录。
+您可以查看每个选定帐户的使用实绩。
 
 ![](../.gitbook/assets/snip20180731_23.png)
 
@@ -45,7 +45,7 @@ description: Wave的基本功能说明。
 * ![](../.gitbook/assets/screen-shot-2018-06-11-at-13.58.08.png): 已设置预算（警报通知）。 
 
 向下滚动并选择，年月，服务，则会显示报告。  
-从年月旁边的按钮可以下载CSV。
+从年月旁边的按钮可以作为CSV下载。
 
 ![](../.gitbook/assets/snip20180720_24.png)
 
