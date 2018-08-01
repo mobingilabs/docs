@@ -20,7 +20,7 @@ description: 设置画面的说明。
 
 3. 通知设置
 
-   * 超过在报告书画面设置的预算时，会从电子邮件或slack通知您。
+   * 超过在报告画面设置的预算时，会从邮件或slack通知您。
 
 4. Additional Setting
    * 您可以设置折扣率和汇率。关于使用方法您可以查看[折扣和货币兑换的适用](https://docs.mobingi.com/v/wave/mobingi-wave/apply-jpy)。
