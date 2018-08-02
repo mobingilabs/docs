@@ -47,7 +47,7 @@ description: Wave的基本功能说明。
 向下滚动并选择，年月，服务，则会显示报告。  
 从年月旁边的按钮可以作为CSV下载。
 
-![](../.gitbook/assets/snip20180720_24.png)
+![](../.gitbook/assets/snip20180803_97.png)
 
 ## 报告 - 群组
 
