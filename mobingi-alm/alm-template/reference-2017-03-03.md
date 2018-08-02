@@ -160,7 +160,7 @@ For GCP, all deployments use the region's default public network. For GCP's pred
 #### availability\_zone
 
 | Type | Required | Description |
-| --- | --- |
+| :--- | :--- | :--- |
 | string | Yes | The availability zone of which the stack deploys to. You must specify this value in your ALM Template. |
 
 Valid values:
@@ -431,7 +431,7 @@ Default: 1101.
 #### image
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | string | no | The machine image \(id\) used to launch the instance. |
 
 Default values will be applied for each cloud platform \(see below for default values\). However, you can also specify this value for launching with a customized machine image.
@@ -477,7 +477,7 @@ Below is also the default value for K5.
 #### instance\_count
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | int | no | Number of instances \(VMs\) to provision. This is only applicable to non-autoscaled stacks.For autoscaled stacks, see `auto_scaling` section. |
 
 If you don't specify this declarative, the default value of _1_ will be applied.
@@ -517,7 +517,7 @@ This value is only valid when &gt; zero **AND** `auto_scaling.min` and `auto_sca
 #### volume\_type
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | string | no | The volume type of instance. |
 
 Valid values:
@@ -547,7 +547,7 @@ This is not supported yet.
 #### volume\_size
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | string | no | The size of the volume, in gibibytes \(GiBs\). |
 
 Valid values:
@@ -593,13 +593,13 @@ This section hasn't been covered by documentation.
 The ssh key pair used to access instances.
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | boolean | no | Enable SSH key pair to be used to access instances. Default value is **true**. |
 
 #### subnet
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | object | no | The subnet settings. |
 
 A _subnet_ section contains 3 key names.
@@ -691,7 +691,7 @@ Example below is also the default settings when deploying to K5.
 The network action control list for a virtual private cloud. **This section supports AWS only.**
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | array | no | The network action control list for a virtual private cloud. **This section supports AWS only.** |
 
 A _network\_acl_ section contains a list of network\_acl entry items. Each item contains the following declaratives:
@@ -779,7 +779,7 @@ This section hasn't been covered by documentation.
 #### security\_group
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | object | no | The security groups for your virtual private cloud. Security groups are associated with network interfaces and acts as a virtual firewall that controls the traffic for one or more instances. |
 
 A _security group_ section contains two entry items, `ingress` and `egress`.
@@ -906,7 +906,7 @@ This section hasn't been covered by documentation.
 #### auto\_scaling
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | object, or string | no | The `auto_scaling` group defines the configuration to automatically scale up or down the number of compute resources that are being allocated to your application based on its needs at any given time. |
 
 If you are deploying an _application_ type of load balancer \(you define in [`load_balancer`](reference-2017-03-03.md#load_balancer) declarative\), you can omit the required parameters below and use the ATL function `#share` to share the same auto scaling group which you defined in another layer. [Click here](https://docs.mobingi.com/mobingi-alm/alm-template/alm-template-language) for more on ATL functions.
@@ -1005,7 +1005,7 @@ This section hasn't been covered by documentation.
 #### load\_balancer
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | object | no | The `load_balancer` for the `auto_scaling` group. |
 
 The _load balancer_ section contains the following declarative:
@@ -1190,7 +1190,7 @@ This section hasn't been covered by documentation.
 #### rds
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | object | no | The `rds` is a managed relational database service. |
 
 The _rds_ section contains the following declarative:
@@ -1323,13 +1323,13 @@ The software runtime configurations _\(defined as docker images\)_ and code depl
 #### container\_image
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | string | no | The docker image to be used to launch base container. |
 
 Example:
 
 | `registry.mobingi.com/tompson/ubuntu-nginx-php:latest` |
-| :--- | :--- | :--- | :--- |
+| :--- |
 
 
 #### container\_registry\_username
@@ -1343,37 +1343,37 @@ The docker image registry's username if this is a private image repository.
 #### container\_registry\_password
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | string | no | The docker image registry's password if this is a private image repository. |
 
 #### container\_code\_dir
 
 | Type | Required | Supported Platforms |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | string | no | The directory of the instance where application code will be deployed to. |
 
 Example:
 
 | `/var/www/html` |
-| :--- | :--- | :--- | :--- |
+| :--- |
 
 
 #### container\_git\_repo
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | string | no | The git repository url of where application code is hosted. |
 
 Example:
 
 | `https://github.com/mobingilabs/default-site-php.git` |
-| :--- | :--- | :--- | :--- |
+| :--- |
 
 
 #### container\_git\_reference
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | string | no | The git repository branch of where application code is hosted. |
 
 Example:
@@ -1385,19 +1385,19 @@ master
 #### container\_git\_private\_key
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | string | no | The private key of the git repository if it is a private repository. |
 
 #### container\_ports
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | array | no | The ports for connection to be used by containers. |
 
 Example:
 
 | `[ 80 ]` |
-| :--- | :--- | :--- | :--- |
+| :--- |
 
 
 #### container\_users
@@ -1407,7 +1407,7 @@ This parameter is not yet supported.
 #### container\_env\_vars
 
 | Type | Required | Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | object | no | The environment variables to be defined for the container operating system. |
 
 An example `container` configuration:

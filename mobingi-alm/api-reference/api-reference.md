@@ -9,7 +9,7 @@ _To get an OAuth token, make a POST request to_
 POST `/v3/access_token`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | client\_id | string | Yes |  |
 | client\_secret | string | Yes |  |
 | grant\_type | string | Yes | This value is either `client_credentials` or `password`.  If you grant with password, you are interacting the same as working around Mobingi UI; If you grant with client\_credentials, you are acting as an Alm-Agent, and most resource related permissions are denied by [RBAC](https://learn.mobingi.com/enterprise/rbac). |
@@ -47,7 +47,7 @@ Applies the Mobingi Alm template and creates stack.
 POST `/v3/alm/template`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | { _template body_ } | string | Yes | Mobingi Alm template body in json string format |
 
 Request Header
@@ -108,7 +108,7 @@ _Note:_ `vendor` section will be ignored when performing this API call. You can 
 PUT `/v3/alm/template/{stack_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | { _template body_ } | string | Yes | Mobingi Alm template body in json string format |
 
 Request Header
@@ -166,7 +166,7 @@ Compares the resource changes between two Mobingi Alm templates.
 POST `/v3/alm/template/compare`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | id | array | conditional | items contain stack id and version information |
 | body | array | conditional | items contain template body source |
 
@@ -301,7 +301,7 @@ List Mobingi Alm template versions
 GET `/v3/alm/template`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | stack\_id | string | Yes | The unique id returned when applying the template |
 
 Request Header
@@ -345,7 +345,7 @@ Describes the template body of a specific version.
 GET `/v3/alm/template/{stack_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | version\_id | string | No | The id of the template version associated with the stack. If empty or "latest" provided, the most updated template version is returned |
 
 Request Header
@@ -505,7 +505,7 @@ Describes the stack container detail information.
 GET `/v3/alm/container/{container_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | container\_id | string | Yes | The id of the container associated with the stack. |
 
 Request Header
@@ -537,7 +537,7 @@ List the stack containers filtering by {stack\_id} or {instance\_id}
 GET `/v3/alm/container`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | stack\_id | string | conditional | If both {stack\_id} and {instance\_id} are presents, {stack\_id} will be ignored. |
 | instance\_id | string | conditional | The id of the instance. |
 
@@ -590,7 +590,7 @@ Creates a new role. \(**Note: This endpoint can only be accessed by master accou
 POST `/v3/role`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | name | string | Yes | Name of Mobingi Role |
 | scope | string | Yes | Mobingi Role in json string format |
 
@@ -629,7 +629,7 @@ Updates an existing role.
 PUT `/v3/role/{role_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | name | string | Yes | Name of Mobingi Role |
 | scope | string | Yes | Mobingi Role in json string format |
 
@@ -846,7 +846,7 @@ Reattach a role to user.
 PUT `/v3/user/role/{role_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | username | string | Yes | target user |
 
 Request Header
@@ -884,7 +884,7 @@ Deatch a role from user.
 DELETE `/v3/user/role/{role_id}`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | username | string | Yes | target user |
 
 Request Header
@@ -970,7 +970,7 @@ Another example, when an AWS spot instance is scheduled to be shutdown, the agen
 POST `/v3/alm/agent/agent_status`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | stack\_id | string | Yes | The stack id which this server instance is belonged to |
 | agent\_id | string | Yes | The agent's unique identifier |
 | status | string | Yes | Sample values: _starting_, _installing_, _error_, _notice_, spot\_terminate, etc.. |
@@ -997,7 +997,7 @@ This endpoint listens to the notifications sent by Mobingi alm-agent with the st
 POST `/v3/alm/agent/container_status`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | stack\_id | string | Yes | The stack id which this server instance is belonged to |
 | agent\_id | string | Yes | The agent's unique identifier |
 | container\_id | string | Yes | The container unique id. \_Sometimes, this value could be an instance's id. |
@@ -1024,7 +1024,7 @@ This endpoint is used by Mobingi alm-agent to describing `container` section of 
 GET `/v3/alm/agent/config`
 
 | **Parameters** | **Type** | **Required** | **Detail** |
-| --- | :---: | ---: | :--- |
+| :--- | :--- | :--- | :--- |
 | stack\_id | string | Yes | the stack id where the instance is associated to |
 | flag | string | Yes | The flag identifier of the configuration layer |
 

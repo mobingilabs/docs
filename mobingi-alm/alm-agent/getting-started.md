@@ -5,7 +5,7 @@
 ALM-agent includes the following prerequisites.
 
 | **REQUIREMENT** | **DESCRIPTION** |
-| --- | --- |
+| :--- | :--- |
 | _Supported Operating System_ | Instances must run on a supported version of Linux.   `Amazon Linux 2016.09` or later, `Ubuntu Server 14.04 LTS` or later, `CentOS7` or later, `Red Hat Enterprise Linux(RHEL) 7` or later. |
 | _Internet Access_ | If your server configuration design requires services to access the public Internet \(_e.g. GitHub, DockerHub, etc.._\), verify that your instances have outbound Internet access first. |
 | _Docker_ | Instances should have Docker installed. |
