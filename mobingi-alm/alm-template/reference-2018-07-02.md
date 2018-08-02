@@ -82,12 +82,12 @@ stacks:
   k8s:
     name: string
     # applicable keys:
-    # vendors:
-    # region_groups:
-    # vpc_groups:
-    # instance_group:
-    # security_group:
-    # auto_scaling:
+    # > vendors
+    # > region_groups
+    # > vpc_groups
+    # > instance_group
+    # > security_group
+    # > auto_scaling
 
 # Vendor definitions.
 vendors:
