@@ -5,7 +5,7 @@ GET /v2/alm/serverconfig?stack_id={stack_id}
 ```
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- |
+| :--- | :--- | :--- | :--- |
 | stack\_id | string | yes |  |
 
 Request header:

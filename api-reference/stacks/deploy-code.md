@@ -5,7 +5,7 @@ POST /v2/alm/stack/{stack_id}/code
 ```
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | method | string | yes | オプションは `s3`,`github_public` 、`github_private` 、`github` 。 |
 | filepath | string | no | 「method」が `s3` 、 `github_public` 、 `github_private` のいずれかの場合、この値は必須です。 |
 | privateKey | string | no | 「method」が `github_private` の場合、この値は必須です。 |

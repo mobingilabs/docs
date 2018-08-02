@@ -5,14 +5,14 @@ POST /v2/alm/stack
 ```
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | vendor | string | no | 予約済み名前空間。デフォルトの値は常に**aws**です。その他Enterprise edition APIでサポート済みの値は以下  - _OpenStack_  - _AliCloud_  - _SBCloud_  - _K5Cloud_ |
 | cred | string | yes | 作成するスタックが実行されるクラウドベンダーの認証情報ID。最初にこの値を [認証情報の保存](https://docs.mobingi.com/official/api/v2/jp#save-credentials) APIに設定する必要があります。 |
 | region | string | yes | 例: AWSの東京リージョンの場合 `ap-northeast-1` |
 | configurations | json | yes | \[_下記参照_\] |
 
 | **Configuration** | **Type** | **Required** | **Details** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | architecture | string | yes | 単体スタックの場合は `art_single` 、ロードバランサ機能付きのスタックは `art_elb` |
 | type | string | yes | サーバータイプ 例: `t2.small` |
 | image | string | no | Dockerレジストリのパス。下記２通りの方法があります - 例: `registry.mobingi.com/wayland/lamp`のようにパス全体を指定 - _hub.docker.com_ から直接イメージを持ってくるためにドメイン部分を省き指定 例:`greyltc/lamp/` |
@@ -29,7 +29,7 @@ POST /v2/alm/stack
 | elasticache | array | no | \[_下記参照_\] |
 
 | **database** | **Type** | **Required** | **Details** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | Engine | string | yes | `db_mysql` もしくは `db_postgresql` を指定 |
 | DBtype | string | yes | 例: `db.m3.medium` |
 | DBStorage | string | yes | GB表記のストレージサイズ。 _5_ から _6144_ の間で指定。 |
@@ -40,7 +40,7 @@ POST /v2/alm/stack
 | ReadReplica5 | string | no | \[_同上_\] |
 
 | **elasticache** | **Type** | **Required** | **Details** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | ElastiCacheEngine | string | yes | `Redis` もしくは `Memcached` を指定 |
 | ElastiCacheNodeType | string | yes | 例: `cache.r3.large` |
 | ElastiCacheNodes | string | yes | -Redisの場合ノード数を _1_ から _6_ の間で指定。その内の _1_ つはプライマリノード、その他はレプリカの数となります。 -Memcachedの場合はノード数を _1_ から _20_ の間で指定。 |

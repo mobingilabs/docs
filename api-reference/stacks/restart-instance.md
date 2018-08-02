@@ -5,7 +5,7 @@ POST /v2/alm/stack/{stack_id}/restart_instance
 ```
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- |
+| :--- | :--- | :--- | :--- |
 | instance\_id | string | yes |  |
 
 Request header:

@@ -5,7 +5,7 @@ POST /v2/credentials/{vendor}
 ```
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- |
+| :--- | :--- | :--- | :--- |
 | credentials | array | yes | 認証情報を含む \(下記のリクエスト例を参照\) |
 
 Request header:

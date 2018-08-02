@@ -5,7 +5,7 @@ PUT /v2/alm/stack/{stack_id}
 ```
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- |
+| :--- | :--- | :--- | :--- |
 | configurations | json | no | [スタックの作成](https://docs.mobingi.com/official/api/v2/jp#create-stack)の _configurations_ パラメーターと同じ |
 
 Request header:
