@@ -5,7 +5,7 @@ PUT /v2/alm/serverconfig
 ```
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | stack\_id | string | yes | ​ |
 | filepath | string | no | Required if `privateKey` or `branch` are set |
 | privateKey | string | no |  |

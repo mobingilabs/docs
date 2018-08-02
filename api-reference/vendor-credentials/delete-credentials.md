@@ -5,7 +5,7 @@ DELETE /v2/credentials/{vendor}
 ```
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- |
+| :--- | :--- | :--- | :--- |
 | credential\_id | string | yes |  |
 
 Request header:

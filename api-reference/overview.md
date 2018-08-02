@@ -24,7 +24,7 @@ POST /v2/access_token
 ```
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | client\_id | string | yes |  |
 | client\_secret | string | yes |  |
 | grant\_type | string | yes | This value is always `client_credentials` |

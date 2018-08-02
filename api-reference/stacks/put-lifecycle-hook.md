@@ -9,7 +9,7 @@ PUT /v2/alm/stack/{stack_id}/lifecyclehook
 {% endcode-tabs %}
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- |
+| :--- | :--- | :--- | :--- |
 | heartbeat | string | no | The time in seconds of which lifecyclehook will apply to instances \(in the same autoscaling group\) when terminates on scale-in or restarts. Default value is 3600. |
 
 Request header:

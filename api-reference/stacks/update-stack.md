@@ -5,7 +5,7 @@ PUT /v2/alm/stack/{stack_id}
 ```
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- |
+| :--- | :--- | :--- | :--- |
 | configurations | json | no | This parameter is the same as [Create stack](https://docs2.mobingi.com/v/v2/api-reference/stacks/update-stack)'s _configurations_ parameter. |
 
 Request header:

@@ -5,14 +5,14 @@ POST /v2/alm/stack
 ```
 
 | **Parameters** | **Type** | **Required** | **Details** |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | vendor | string | no | Reserved namespace. Default value is always **aws**. Other supported values in Enterprise edition API are:  - _OpenStack_,  - _AliCloud_,  - _SBCloud_,  - _K5Cloud_. |
 | cred | string | yes | The credential id to which Cloud vendor this stack should be deployed to. You need to set this value in [Save Credential](https://docs.mobingi.com/official/api/v2#save-credentials) API first. |
 | region | string | yes | Eg. `ap-northeast-1` for AWS Tokyo region. |
 | configurations | json | yes | \[see below\] |
 
 | **Configuration** | **Type** | **Required** | **Details** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | architecture | string | yes | Specify `art_single` for single stack or `art_elb` for load-balanced stack |
 | type | string | yes | The server type, eg: `t2.small` |
 | image | string | no | The docker registry path. You can either: - specify the full path, eg: `registry.mobingi.com/wayland/lamp`, or  - omit the domain part for pulling images from _hub.docker.com_directly, eg:`greyltc/lamp/` |
@@ -29,7 +29,7 @@ POST /v2/alm/stack
 | elasticache | array | no | \[see below\] |
 
 | **database** | **Type** | **Required** | **Details** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | Engine | string | yes | Specify either `db_mysql` or `db_postgresql` |
 | DBtype | string | yes | Eg. `db.m3.medium` |
 | DBStorage | string | yes | Storage size in GB, between 5 to 6144 |
@@ -40,7 +40,7 @@ POST /v2/alm/stack
 | ReadReplica5 | string | no | \[same as above\] |
 
 | **elasticache** | **Type** | **Required** | **Details** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | ElastiCacheEngine | string | yes | Specify either `Redis` or `Memcached` |
 | ElastiCacheNodeType | string | yes | Eg. `cache.r3.large` |
 | ElastiCacheNodes | string | yes | -Redis, Specify the number of Nodes between _1_ to _6_. One of them is the primary node, the others are the number of replicas.  -Memcached, Specify the number of Nodes between 1 to 20 |
