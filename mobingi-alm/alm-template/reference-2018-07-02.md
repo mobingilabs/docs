@@ -79,7 +79,15 @@ stacks:
     storage: int
     multi_az: boolean
     replica: number
-  k8s: {tbd}
+  k8s:
+    name: string
+    # applicable keys:
+    # vendors:
+    # region_groups:
+    # vpc_groups:
+    # instance_group:
+    # security_group:
+    # auto_scaling:
 
 # Vendor definitions.
 vendors:
