@@ -77,11 +77,11 @@ description: 在将引进 Wave 前的准备
 
 请再次确认S3菜单。
 
-![](../.gitbook/assets/bill_006.png)
+![](../.gitbook/assets/snip20180802_77.png)
 
 检查“第3步：确认”的显示内容中是否有错误并点击完成。
 
-![](../.gitbook/assets/bill_007.png)
+![](../.gitbook/assets/snip20180802_79.png)
 
 ## 步骤2：创建一个授权Mobingi可以阅读的IAM角色 {#step2}
 
