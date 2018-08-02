@@ -49,7 +49,7 @@ description: Wave的基本功能说明。
 
 ![](../.gitbook/assets/snip20180720_24.png)
 
-## 报告 - 小组
+## 报告 - 群组
 
 将复数帐户分组并显示每个组的使用额。 
 
