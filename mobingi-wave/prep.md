@@ -128,7 +128,7 @@ description: 在将引进 Wave 前的准备
 
 返回“创建角色”菜单并更新列表，显示之前创建的策略。 激活选项，进入下一步确认。
 
-![](../.gitbook/assets/role_006.png)
+![](../.gitbook/assets/snip20180802_88.png)
 
 在“确认”菜单中，输入以下项目。
 
@@ -137,11 +137,11 @@ description: 在将引进 Wave 前的准备
 
 确认是否已适用“受信任实体”和“策略”，并创建角色。
 
-![](../.gitbook/assets/role_007.png)
+![](../.gitbook/assets/snip20180802_89.png)
 
 记录已创建的角色的ARN。
 
-![](../.gitbook/assets/role_008-1.png)
+![](../.gitbook/assets/snip20180802_90.png)
 
 
 
