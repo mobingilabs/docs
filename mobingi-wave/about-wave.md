@@ -73,8 +73,6 @@ description: Wave的基本功能说明。
 
 可以查看每个月的帐单。
 
-![](../.gitbook/assets/wave_invoice.png)
-
 ## 设置
 
 可以更改以下的设置。
