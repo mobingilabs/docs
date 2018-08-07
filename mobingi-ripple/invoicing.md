@@ -4,7 +4,7 @@ description: 請求書を発行するフローについて説明しています�
 
 # 請求書を発行する
 
-[※ 請求書発行する前に、請求データ確定のご連絡と集計作業が必要です。](https://docs.mobingi.com/~/drafts/-LI4AaN4Frv--_hbAXgG/primary/v/ripple/mobingi-ripple/mobingi-ripple-gai-yao#dashboard)
+[※ 請求書発行する前に、請求データ確定のご連絡と集計作業が必要です。](https://docs.mobingi.com/v/ripple/mobingi-ripple/new-customer#step2)
 
 ## 1. 為替レートを登録する
 

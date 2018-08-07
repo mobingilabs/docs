@@ -8,7 +8,7 @@
 * [サービス概要](mobingi-ripple/mobingi-ripple-gai-yao.md)
 * [請求書を発行する](mobingi-ripple/invoicing.md)
 * [一時金の確認と計算](mobingi-ripple/noto.md)
-* [新規顧客を追加する](mobingi-ripple/wosuru-1.md)
+* [新規顧客を追加する](mobingi-ripple/new-customer.md)
 * [RI をアタッチする](mobingi-ripple/ri-woatatchisuru.md)
 * [FAQ](mobingi-ripple/faq.md)
 
