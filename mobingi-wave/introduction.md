@@ -110,8 +110,7 @@ New tab or window will open. Choose JSON as input format and type the policy sam
          {
                "Effect": "Allow",
                "Action": [
-                     "s3:GetObject",
-                     "s3:HeadObject"
+                     "s3:GetObject"
                ],
                "Resource": "arn:aws:s3:::{replace_to_report_bucket}/*"
          }
