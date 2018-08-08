@@ -108,8 +108,7 @@ AWSのマネジメントコンソールから、IAMサービスを開き、『�
          {
                "Effect": "Allow",
                "Action": [
-                     "s3:GetObject",
-                     "s3:HeadObject"
+                     "s3:GetObject"
                ],
                "Resource": "arn:aws:s3:::{replace_to_report_bucket}/*"
          }
