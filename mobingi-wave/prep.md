@@ -108,8 +108,7 @@ description: 在将引进 Wave 前的准备
          {
                "Effect": "Allow",
                "Action": [
-                     "s3:GetObject",
-                     "s3:HeadObject"
+                     "s3:GetObject"
                ],
                "Resource": "arn:aws:s3:::{replace_to_report_bucket}/*"
          }
