@@ -1,5 +1,5 @@
 ---
-description: Waveの基本的な機能の説明です。
+description: Mobingi Waveにログインする
 ---
 
 # Mobingi Wave 概要
@@ -15,25 +15,29 @@ description: Waveの基本的な機能の説明です。
 ![](../.gitbook/assets/snip20180720_21.png)
 
 * ダッシュボード：貴社でご利用の全てのAWSアカウントの利用状況（合計）可視化。
-* レポートト：AWSアカウントやタグごとの利用状況を可視化、レポートの参照。
+* レポート：アカウント単位、グループ単位、タグ単位の利用状況を可視化、レポートの参照。
 * RI：Reserved Instanceの一覧と適応状況を表示。
 
 ## ダッシュボード
 
-![](../.gitbook/assets/snip20180720_19.png)
+![](../.gitbook/assets/snip20180809_2.png)
 
-* 今月のこれまでのAWS利用費用を把握。
-* 先月（1ヶ月分）の利用実績。
-* 貴社でご利用のAWSアカウント数。
-* 利用量の多いアカウントをランキングで表示。
-* RIの適用状況。カバー率の高いRI上位3つを表示。
+* 日次更新データについて
+  * 更新タイミング：毎日
+  * データ鮮度：約2日前のデータ
+* 月次更新データについて
+  * 更新タイミング：毎月5日頃
+  * データ鮮度：先月以前の利用分を表示
 
 ## ダッシュボード -Analysis
 
-![](../.gitbook/assets/wave05.png)
+![](../.gitbook/assets/snip20180809_3.png)
 
-* Monthly: 月ごとの利用推移を表示。アカウント毎に色分け。
-* Daily: 全アカウント合計の日毎の利用推移。
+* Daily
+  * 合計：今月の利用料の累積（Usage hr x on-demand rate）
+  * 日別データの平均額：今月の日次利用料の変動（Usage hr x on-demand rate）
+* Monthly
+  * 過去12ヶ月間の利用料の推移（Usage hr x true rate） アカウント毎に色分け
 
 ## レポート -アカウント
 
