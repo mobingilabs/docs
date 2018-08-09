@@ -31,7 +31,7 @@ description: Mobingi Waveにログインする
 
 ## 控制面板 - Analysis
 
-![](../.gitbook/assets/wave05.png)
+![](../.gitbook/assets/snip20180809_8.png)
 
 * Daily
   * 合计：本月的利用额的累计（Usage hr x on-demand rate）
