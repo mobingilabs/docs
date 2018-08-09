@@ -1,5 +1,5 @@
 ---
-description: Wave的基本功能说明。
+description: Mobingi Waveにログインする
 ---
 
 # Mobingi Wave 概述
@@ -15,25 +15,29 @@ description: Wave的基本功能说明。
 ![](../.gitbook/assets/snip20180731_21.png)
 
 * 控制面板：在贵公司使用的所有的AWS帐户的利用状况（合计）可视化。
-* 报告：AWS帐户和每个标签的利用状况可视化，报告参考。
+* 报告：帐户单位，群组单位，标签单位的利用状况可视化，报告参照。
 * RI：显示Reserved Instance列表和利用状况。
 
 ## 控制面板
 
 ![](../.gitbook/assets/snip20180731_56.png)
 
-* 掌握这个月至今的AWS使用额。
-* 上个月（一个月）的使用实绩。
-* 在贵公司使用的AWS帐户数。
-* 利用量多的帐户的排行榜显示。
-* RI的利用状况。显示RI的覆盖率高的前三名。
+* 关于每日数据更新
+  * 定时更新：毎天
+  * 数据新鲜度：大约两天前的数据
+* 关于每月数据更新
+  * 定时更新：每月5号左右
+  * 数据新鲜度：显示上个月以上的使用状况
 
 ## 控制面板 - Analysis
 
 ![](../.gitbook/assets/wave05.png)
 
-* Monthly: 显示月别的利用趋势。 颜色区分每个帐户。
-* Daily: 所有帐户合计的每天利用趋势。
+* Daily
+  * 合计：本月的利用额的累计（Usage hr x on-demand rate）
+  * 每日数据的平均额：本月的每日利用额的变化（Usage hr x on-demand rate）
+* Monthly
+  * 过去12个月的利用额的推移（Usage hr x true rate） 颜色区别每个帐户
 
 ## 报告 - 帐户
 
