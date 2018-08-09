@@ -20,7 +20,7 @@ description: Mobingi Waveにログインする
 
 ## 控制面板
 
-![](../.gitbook/assets/snip20180731_56.png)
+![](../.gitbook/assets/snip20180809_23.png)
 
 * 关于每日数据更新
   * 定时更新：毎天
