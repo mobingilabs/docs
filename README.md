@@ -10,7 +10,7 @@ Mobingi Ripple のダッシュボードからの基本的な操作方法を説�
 
 左のメニューから読みたい項目を選択してください。
 
-Mobingi Ripple:  [https://ripple.mobingi.com](https://alm.mobingi.com).
+Mobingi Ripple:  [https://ripple.mobingi.com](https://ripple.mobingi.com).
 
 
 
