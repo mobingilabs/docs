@@ -79,16 +79,7 @@ stacks:
     storage: int
     multi_az: boolean
     replica: number
-  k8s:
-    name: string
-    # applicable keys:
-    # > vendors
-    # > region_groups
-    # > vpc_groups
-    # > instance_group
-    # > security_group
-    # > auto_scaling
-    # > k8s_groups
+  k8s_group: string
 
 # Vendor definitions.
 vendors:
@@ -187,5 +178,13 @@ network_security_groups:
       from_port: number
       ip_protocol: string
       to_port: number
+      
+# kubernetes definitions
+k8s_groups:
+- name: string # required
+  vendors:
+  - name: string # required, not a reference to 'vendors'
+    # 'config' can be the same as the following GCP resource:
+    config: object
 ```
 
