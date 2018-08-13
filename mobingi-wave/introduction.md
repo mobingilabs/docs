@@ -9,7 +9,7 @@ description: >-
 * This page explains things you need to be done on your AWS account for start using Mobingi Wave.
 * After finishing preparation, you will need to give Mobingi the below informations. 
 
-```
+```text
 - AWS account ID (12 digit numbers).
 
 - Information of the report you made.
@@ -23,14 +23,14 @@ description: >-
 - ARN of IAM Role which allow the specific bucket.(Ex: arn:aws:iam::xxxxxxxxxxxx:role/crossacounnt-access-for-mobingi)
 ```
 
-## Step 1 : Create S3 bucket and daily report \(option\)  {#step1}
+## Step 1 : Create S3 bucket and daily report \(option\) {#step1}
 
 * Create daily repot with the AWS account you want to share the billing information with Wave.
 * You can skip if you already have the report definition with below conditions.
 
-  `Time unit:` **`Daily`**
+  `Time unit:` `Daily`
 
-  **`Rsource IDs`**`is included in the report.`
+  `Rsource IDsis included in the report.`
 
   `There is no object which Mobingi shouldn't see.(Since the access atuhority will be a whole bucket).`
 
@@ -48,7 +48,7 @@ Click **Create report**.
 
 ![](../.gitbook/assets/snip20180727_7.png)
 
-* Fill out **`Step 1: Select Content`** same as below.
+* Fill out `Step 1: Select Content` same as below.
   * Report name: Any
   * Time unit: **Daily**
   * Include: **Resource IDs**
@@ -56,7 +56,7 @@ Click **Create report**.
 
 ![](../.gitbook/assets/snip20180727_9.png)
 
-* **`Step2: Select Delivery Options`** will be the following process.
+* `Step2: Select Delivery Options` will be the following process.
   * Put S3 bucket name \(you made at Step1-1\)
   * Display and copy **Sample policy** \(\* make sure to click after you entered S3 bucket name\)
 
@@ -70,7 +70,7 @@ Click **Create report**.
 
 ![](../.gitbook/assets/snip20180727_17.png)
 
-Go back to **`Step2: Select Delivery Options`** and put below info.
+Go back to `Step2: Select Delivery Options` and put below info.
 
 * Report path prefix: Optional  \(\*blank also works\) 
 * Compression: Optional
@@ -91,7 +91,7 @@ From AWS management console, select **IAM** service and click **Roles** &gt;&gt;
 
 ![](../.gitbook/assets/snip20180727_19.png)
 
-Choose  **Another AWS Account** at **`Select type of trusted entity`**and put Mobingi account ID.
+Choose **Another AWS Account** at `Select type of trusted entity`and put Mobingi account ID.
 
 * Mobingi Account ID: 131920598436
 
@@ -101,7 +101,7 @@ Click **Create policy**.
 
 ![](../.gitbook/assets/snip20180727_23.png)
 
-New tab or window will open. Choose JSON as input format and type the policy same as below. Make sure to change`{replace_to_report_bucket}` at "Resource"  to **the bucket name you use for report.**
+New tab or window will open. Choose JSON as input format and type the policy same as below. Make sure to change`{replace_to_report_bucket}` at "Resource" to **the bucket name you use for report.**
 
 ```bash
 {
@@ -127,7 +127,7 @@ After fill the informations below, you can finish to create policy.
 
 ![](../.gitbook/assets/snip20180727_31.png)
 
-Go back to **Create Role** and refresh, the policy suppose to display on the list. Active the policy and move to review page. ****
+Go back to **Create Role** and refresh, the policy suppose to display on the list. Active the policy and move to review page. _\*\*_
 
 ![](../.gitbook/assets/snip20180727_33.png)
 
@@ -141,6 +141,4 @@ After check **Trusted entities** and **Policies** are correctly applied, click *
 ![](../.gitbook/assets/snip20180731_39.png)
 
 Keep the ARN of the role.
-
-
 

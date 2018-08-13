@@ -1,5 +1,5 @@
 ---
-description: Welcome to Mobingi Wave official user guide!
+description: Mobingi Documentation
 ---
 
 # Mobingi Wave Documentation
