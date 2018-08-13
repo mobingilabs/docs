@@ -187,12 +187,5 @@ network_security_groups:
       from_port: number
       ip_protocol: string
       to_port: number
-      
-# kubernetes definitions
-k8s_groups:
-- name: string # required
-  vendors:
-  - name: string: # required, not a reference to 'vendors'
-    version: string
 ```
 
