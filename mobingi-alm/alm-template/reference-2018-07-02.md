@@ -184,8 +184,9 @@ k8s_groups:
 - name: string # required
   vendors:
   - name: string # required, not a reference to 'vendors'
-    # 'gcp_config' can be the same as the following GCP resource:
+    # 'gcp_native' can be the same as the following GCP resource:
     # https://cloud.google.com/kubernetes-engine/docs/references/rest/v1/projects.zones.clusters
-    gcp_config: object
+    # if you provide 'gcp_native', all other keys (except 'name'), will be overruled.
+    gcp_native: object
 ```
 
