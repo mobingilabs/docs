@@ -184,7 +184,8 @@ k8s_groups:
 - name: string # required
   vendors:
   - name: string # required, not a reference to 'vendors'
-    # 'config' can be the same as the following GCP resource:
-    config: object
+    # 'gcp_config' can be the same as the following GCP resource:
+    # https://cloud.google.com/kubernetes-engine/docs/references/rest/v1/projects.zones.clusters
+    gcp_config: object
 ```
 
