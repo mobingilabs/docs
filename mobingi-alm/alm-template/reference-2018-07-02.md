@@ -19,6 +19,7 @@ description: string
 # You can define 0 or more apps.
 applications:
 - name: string # required
+  description: string
   labels:
   - key: string
     value: string
@@ -42,6 +43,7 @@ applications:
 # Stack definitions. At least one (1) stack is required per template.
 stacks:
 - name: string # required
+  description: string
   labels:
   - key: string
     value: string
@@ -84,6 +86,7 @@ stacks:
 # Vendor definitions.
 vendors:
 - name: string # required
+  description: string
   provider: string # required
   cred_name: string # required
   project_id: string # gcp only
@@ -99,6 +102,7 @@ vendors:
 # region/az group definitions
 region_groups:
 - name: string # required
+  description: string
   vendors:
   - name: string # required
     region: string
@@ -108,6 +112,7 @@ region_groups:
 # instance group definitions
 instance_groups:
 - name: string # required
+  description: string
   vendors:
   - name: string # required, not a reference to 'vendors'
     instance_type: string
@@ -123,6 +128,7 @@ instance_groups:
 # gcp: vpc
 vpc_groups:
 - name: string # required
+  description: string
   # vendor-independent subnet
   subnet:
     cidr: string
@@ -155,6 +161,7 @@ vpc_groups:
 # gcp: firewall
 network_security_groups:
 - name: string # required
+  description: string
   # vendor-independent ingress/egress
   ingress:
   - cidr: string
@@ -182,6 +189,7 @@ network_security_groups:
 # kubernetes definitions
 k8s_groups:
 - name: string # required
+  description: string
   vendors:
   - name: string # required, not a reference to 'vendors'
     # 'gcp_native' is specific only to 'gcp' vendor.
