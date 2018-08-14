@@ -192,6 +192,7 @@ k8s_groups:
   description: string
   vendors:
   - name: string # required, not a reference to 'vendors'
+    version: string
     # 'gcp_native' is specific only to 'gcp' vendor.
     # It can be the same as the following GCP-specific resource:
     # https://cloud.google.com/kubernetes-engine/docs/references/rest/v1/projects.zones.clusters
