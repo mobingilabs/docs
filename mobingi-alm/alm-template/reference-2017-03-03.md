@@ -988,7 +988,13 @@ This section hasn't been covered by documentation.
 {% endtab %}
 
 {% tab title="AZURE" %}
-This section hasn't been covered by documentation.
+```yaml
+"auto_scaling":{
+    "min": 3,
+    "max":3,
+    "spot_to_ondemand_ratio": 50
+},
+```
 {% endtab %}
 
 {% tab title="GCP" %}

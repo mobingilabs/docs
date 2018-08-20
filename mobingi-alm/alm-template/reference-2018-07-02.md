@@ -94,7 +94,7 @@ vendors:
   subscription_id: string # azure only
   directory_id: string # azure only
   contract_number: string # fujitsu k5
-  
+
 # The following section (groups) can be customized although Mobingi
 # will provide common definitions that can be referenced
 # by name.
@@ -121,7 +121,7 @@ instance_groups:
     volume_type: string
     volume_size: number
     keypair: boolean
-    
+
 # virtual network group definitions
 # aws: vpc
 # azure: vnet
@@ -154,7 +154,7 @@ vpc_groups:
         rule_action: string
         acl_egress: boolean
         cidr_block: string
-        
+
 # network security definitions
 # aws: security groups
 # azure: network security groups
@@ -185,7 +185,7 @@ network_security_groups:
       from_port: number
       ip_protocol: string
       to_port: number
-      
+
 # kubernetes definitions
 k8s_groups:
 - name: string # required
