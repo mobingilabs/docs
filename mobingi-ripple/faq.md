@@ -20,3 +20,8 @@ ripple\_cs@mobingi.com までご連絡ください。
 
 新たに追加した請求グループの中に請求書の設定を行っていないものがあると「請求書一括作成」をすることはできません。詳しくは[こちら](https://docs.mobingi.com/~/drafts/-LI8pjSJ8E_gGuBJofR3/primary/v/ripple/mobingi-ripple/wosuru-1#step2)をご覧ください。
 
+##  Marketplaceの費用は含まれていますか？ {#woshitaraergamashita}
+
+請求書及びCSVに含まれております。  
+
+
