@@ -20,8 +20,13 @@ ripple\_cs@mobingi.com までご連絡ください。
 
 新たに追加した請求グループの中に請求書の設定を行っていないものがあると「請求書一括作成」をすることはできません。詳しくは[こちら](https://docs.mobingi.com/~/drafts/-LI8pjSJ8E_gGuBJofR3/primary/v/ripple/mobingi-ripple/wosuru-1#step2)をご覧ください。
 
-##  Marketplaceの費用は含まれていますか？ {#woshitaraergamashita}
+## Marketplaceの取り扱いについて教えてください。 {#woshitaraergamashita}
 
-請求書及びCSVに含まれております。  
+月次の利用料とともに請求書及びCSVに含まれておりますが、一部の「Recurring fee」と表わされる料金に関しては一時金として「再計算請求データ一覧」のページに表示されます。
+
+## 再計算が必要な場合を教えてください。 {#woshitaraergamashita}
+
+RIの所有者設定を間違えていた場合、AWS上で追加したアカウントを登録し忘れていた場合などに、再度設定や登録をした後再計算の依頼をする必要があります。手数料やサポート料金といった請求書の設定を変更する場合は再計算の依頼は必要なく、設定変更後にすぐ請求書の作成が行えます。  
+  
 
 
