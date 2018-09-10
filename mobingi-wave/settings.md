@@ -9,7 +9,7 @@
 1. ログインID（メールアドレス）の変更 
 2. パスワードの変更
 
-   * 現在のパスワードを忘れてしまった場合はお手数ですが、[ログインページより再設定](https://docs.mobingi.com/v/wave/mobingi-wave/settings/resetpw)できます。
+   * 現在のパスワードを忘れてしまった場合はお手数ですが、[ログインページより再設定](https://docs.mobingi.com/v/wave/mobingi-wave/settings#resetpw)できます。
 
 3. 言語の選択
 
