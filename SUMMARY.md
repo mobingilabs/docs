@@ -5,7 +5,7 @@
 ## MOBINGI RIPPLE
 
 * [Mobingi Ripple とは](mobingi-ripple/mobingi-ripple-toha.md)
-* [事前準備](mobingi-ripple/shi-qian.md)
+* [事前準備](mobingi-ripple/prep.md)
 * [サービス概要](mobingi-ripple/mobingi-ripple-gai-yao.md)
 * [請求書を発行する](mobingi-ripple/invoicing.md)
 * [一時金の確認と計算](mobingi-ripple/fee.md)
