@@ -28,7 +28,7 @@ description: >-
 * Create daily repot with the AWS account you want to share the billing information with Wave.
 * You can skip if you already have the report definition with below conditions.
 
-  `Time unit:` `Daily`
+  `Time unit:` `Hourly`
 
   `Rsource IDsis included in the report.`
 
@@ -50,17 +50,17 @@ Click **Create report**.
 
 * Fill out `Step 1: Select Content` same as below.
   * Report name: Any
-  * Time unit: **Daily**
+  * Time unit: **Hourly**
   * Include: **Resource IDs**
   * Enable support for...: Optional
 
-![](../.gitbook/assets/snip20180727_9.png)
+![](../.gitbook/assets/snip20181004_14.png)
 
 * `Step2: Select Delivery Options` will be the following process.
   * Put S3 bucket name \(you made at Step1-1\)
   * Display and copy **Sample policy** \(\* make sure to click after you entered S3 bucket name\)
 
-![](../.gitbook/assets/snip20180727_12.png)
+![](../.gitbook/assets/snip20181004_16.png)
 
 ![](../.gitbook/assets/snip20180727_10.png)
 
@@ -79,11 +79,11 @@ It shows **Valid Bucket** only when the bucket policy is correct.
 
 Check your S3 again.
 
-![](../.gitbook/assets/snip20180731_35.png)
+![](../.gitbook/assets/snip20181004_16%20%281%29.png)
 
 Check the info again and click **Review and Complete.**
 
-![](../.gitbook/assets/snip20180727_29.png)
+![](../.gitbook/assets/snip20181004_18.png)
 
 ## Step 2 : Create IAM role for Mobingi {#step2}
 
