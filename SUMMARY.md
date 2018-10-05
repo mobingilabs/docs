@@ -10,6 +10,7 @@
 * [請求書を発行する](mobingi-ripple/invoicing.md)
 * [一時金の確認と計算](mobingi-ripple/fee.md)
 * [新規顧客を追加する](mobingi-ripple/new-customer.md)
+* [Wave for Reseller](mobingi-ripple/wave-for-reseller.md)
 * [RI をアタッチする](mobingi-ripple/ri-woatatchisuru.md)
 * [FAQ](mobingi-ripple/faq.md)
 
