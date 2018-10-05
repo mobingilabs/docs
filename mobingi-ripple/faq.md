@@ -16,10 +16,6 @@ ripple\_cs@mobingi.com までご連絡ください。
 
 ripple\_cs@mobingi.com までご連絡ください。
 
-## 「請求書一括作成」を押したらエラーが出ました。
-
-新たに追加した請求グループの中に請求書の設定を行っていないものがあると「請求書一括作成」をすることはできません。詳しくは[こちら](https://docs.mobingi.com/~/drafts/-LI8pjSJ8E_gGuBJofR3/primary/v/ripple/mobingi-ripple/wosuru-1#step2)をご覧ください。
-
 ## Marketplaceの取り扱いについて教えてください。 {#woshitaraergamashita}
 
 月次の利用料とともに請求書及びCSVに含まれておりますが、一部の「Recurring fee」と表わされる料金に関しては一時金として「再計算請求データ一覧」のページに表示されます。
