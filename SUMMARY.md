@@ -13,4 +13,5 @@
 * [Wave for Reseller](mobingi-ripple/wave-for-reseller.md)
 * [RI をアタッチする](mobingi-ripple/ri-woatatchisuru.md)
 * [FAQ](mobingi-ripple/faq.md)
+* [Hourlyレポートへの変更（AWS）](mobingi-ripple/hourlyreptohenoaws.md)
 
