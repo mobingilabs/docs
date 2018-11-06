@@ -18,9 +18,3 @@ Mobingi Ripple:  [https://ripple.mobingi.com](https://ripple.mobingi.com).
 
 
 
-
-
---- 更新情報 ---
-
-2018.8.6：「一時金の確認と計算」ページを追加しました。
-
