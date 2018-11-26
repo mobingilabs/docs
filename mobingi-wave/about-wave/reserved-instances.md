@@ -2,5 +2,5 @@
 
 購入済みのリザーブドインスタンスの一覧と適応状況を確認できます。
 
-![](../../.gitbook/assets/wave_ri.png)
+![](../../.gitbook/assets/screen-shot-2018-11-26-at-17.03.56.png)
 
