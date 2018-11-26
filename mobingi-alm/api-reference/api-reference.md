@@ -38,9 +38,9 @@ You can then start making API requests by passing the `access_token` value to th
 Authorization: Bearer eyJ0eXAiOiJQiLCJhbGciOMeXzQfME
 ```
 
-## ALM Templates {#alm-templates}
+## ALM Templates <a id="alm-templates"></a>
 
-### Apply Template {#template-apply}
+### Apply Template <a id="template-apply"></a>
 
 Applies the Mobingi Alm template and creates stack.
 
@@ -99,7 +99,7 @@ HTTP/1.1 201 Created
 }
 ```
 
-### Update Template {#template-update}
+### Update Template <a id="template-update"></a>
 
 Updates the Mobingi Alm template and applies the changes to stack resources.
 
@@ -159,7 +159,7 @@ HTTP/1.1 202 Accepted
 }
 ```
 
-### Compare Templates {#template-compare}
+### Compare Templates <a id="template-compare"></a>
 
 Compares the resource changes between two Mobingi Alm templates.
 
@@ -294,7 +294,7 @@ HTTP/1.1 202 Accepted
 }
 ```
 
-### Template Versions {#template-list}
+### Template Versions <a id="template-list"></a>
 
 List Mobingi Alm template versions
 
@@ -338,7 +338,7 @@ HTTP/1.1 200 OK
 ]
 ```
 
-### Describe Template {#template-describe}
+### Describe Template <a id="template-describe"></a>
 
 Describes the template body of a specific version.
 
@@ -385,9 +385,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-## Stacks {#stacks}
+## Stacks <a id="stacks"></a>
 
-### List Stacks {#stack-list}
+### List Stacks <a id="stack-list"></a>
 
 List all stacks running under current organization account.
 
@@ -445,7 +445,7 @@ HTTP/1.1 200 OK
 ]
 ```
 
-### Describe Stack {#stack-describe}
+### Describe Stack <a id="stack-describe"></a>
 
 Describes the stack detail information.
 
@@ -498,7 +498,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Describe Container {#describe-container}
+### Describe Container <a id="describe-container"></a>
 
 Describes the stack container detail information.
 
@@ -530,7 +530,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### List Containers {#list-containers}
+### List Containers <a id="list-containers"></a>
 
 List the stack containers filtering by {stack\_id} or {instance\_id}
 
@@ -581,9 +581,9 @@ HTTP/1.1 200 OK
 ]
 ```
 
-## RBAC {#rbac}
+## RBAC <a id="rbac"></a>
 
-### Create Role {#rbac-create-role}
+### Create Role <a id="rbac-create-role"></a>
 
 Creates a new role. \(**Note: This endpoint can only be accessed by master account**\)
 
@@ -620,7 +620,7 @@ HTTP/1.1 200
 }
 ```
 
-### Update Role {#rbac-update-role}
+### Update Role <a id="rbac-update-role"></a>
 
 Updates an existing role.
 
@@ -660,7 +660,7 @@ HTTP/1.1 200
 }
 ```
 
-### Delete Role {#rbac-delete-role}
+### Delete Role <a id="rbac-delete-role"></a>
 
 Deletes an existing Role.
 
@@ -686,7 +686,7 @@ HTTP/1.1 200
 }
 ```
 
-### List Roles {#rbac-list-roles}
+### List Roles <a id="rbac-list-roles"></a>
 
 Lists all roles created under current account.
 
@@ -720,7 +720,7 @@ HTTP/1.1 200
 ]
 ```
 
-### Describe Roles {#rbac-describe-roles}
+### Describe Roles <a id="rbac-describe-roles"></a>
 
 1. **Describe roles attached to the user**
 
@@ -837,7 +837,7 @@ HTTP/1.1 200
 }
 ```
 
-### Reattach Role to User {#rbac-reattach-user-role}
+### Reattach Role to User <a id="rbac-reattach-user-role"></a>
 
 Reattach a role to user.
 
@@ -875,7 +875,7 @@ HTTP/1.1 200
 }
 ```
 
-### Detach Role from User {#rbac-detach-user-role}
+### Detach Role from User <a id="rbac-detach-user-role"></a>
 
 Deatch a role from user.
 
@@ -913,7 +913,7 @@ HTTP/1.1 200
 }
 ```
 
-### Describe Role Scope {#rbac-describe-role-scope}
+### Describe Role Scope <a id="rbac-describe-role-scope"></a>
 
 Describes the role scope body.
 
@@ -955,11 +955,11 @@ HTTP/1.1 200
 ]
 ```
 
-## Alm-Agent {#alm-agent}
+## Alm-Agent <a id="alm-agent"></a>
 
 _In this section, all endpoints are designated to work with Mobingi alm-agent in order to perform application lifecycle automation by Mobingi. Mobingi alm-agent is the Linux server side program that automatically installed during instance launch and initialization. If you are a contributor to the OSS repo_ [_github.com/mobingi/alm-agent_](https://github.com/mobingi/alm-agent)_, you're looking at the right reference here. If you are a developer working on integrating Mobingi ALM with your client applications or contributing to Mobingi API/UI only, you can ignore this API references section._
 
-### Register Agent Status {#alm-agent-register-agent-status}
+### Register Agent Status <a id="alm-agent-register-agent-status"></a>
 
 This endpoint listens to the notifications sent by Mobingi alm-agent for self status registration.
 
@@ -990,7 +990,7 @@ Response Body
 HTTP/1.1 202 Accepted
 ```
 
-### Register Container Status {#alm-agent-register-container-status}
+### Register Container Status <a id="alm-agent-register-container-status"></a>
 
 This endpoint listens to the notifications sent by Mobingi alm-agent with the status updates during a container's lifecycle. Possible status examples: _starting_, _updating_, _restarting_, _running_, _terminated_, etc.
 
@@ -1017,7 +1017,7 @@ Response Body
 HTTP/1.1 202 Accepted
 ```
 
-### Describe Container Configuration {#alm-agent-container-config}
+### Describe Container Configuration <a id="alm-agent-container-config"></a>
 
 This endpoint is used by Mobingi alm-agent to describing `container` section of the layer configuration from Mobingi Alm Template, identified by `flag` name.
 

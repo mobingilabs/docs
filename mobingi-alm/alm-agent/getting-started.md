@@ -1,6 +1,6 @@
 # Getting Started
 
-## Prerequisites {#prerequisites}
+## Prerequisites <a id="prerequisites"></a>
 
 ALM-agent includes the following prerequisites.
 
@@ -11,7 +11,7 @@ ALM-agent includes the following prerequisites.
 | _Docker_ | Instances should have Docker installed. |
 | _Git_ | Instances should have Git installed. |
 
-## Install ALM agent {#install-alm-agent}
+## Install ALM agent <a id="install-alm-agent"></a>
 
 There are two ways to installing ALM Agent:
 
@@ -48,7 +48,7 @@ vagrant $ cd /home/vagrant/src/github.com/mobingi/alm-agent/
 vagrant $ make build
 ```
 
-## Verifying the Installation {#verifying-the-installation}
+## Verifying the Installation <a id="verifying-the-installation"></a>
 
 After installing ALM-agent, verify the installation works and check that `alm-agent` is available.
 

@@ -10,7 +10,7 @@ For now, ATL is only supported in AWS. Support for other cloud vendors will be a
 You can use ATL functions only in specific parts of a template. Please refer to each functions' document for detailed explanation.
 {% endhint %}
 
-## computed {#computed}
+## computed <a id="computed"></a>
 
 _Usage:_
 
@@ -24,7 +24,7 @@ Example:
 "instance_type": "${computed}"
 ```
 
-## use {#use}
+## use <a id="use"></a>
 
 _Usage:_
 
@@ -40,7 +40,7 @@ _Example:_
 
 **Note:** This function can only be used if the origin value is type of _string_, it cannot be applied to any other type of values. For referencing values such as object or array, you use `${copy( .. )}`.
 
-## copy {#copy}
+## copy <a id="copy"></a>
 
 _Usage:_
 
@@ -54,7 +54,7 @@ _Example:_
 "security_group": "${copy(Layer1.provision.security_group)}"
 ```
 
-## ref {#ref}
+## ref <a id="ref"></a>
 
 _Usage:_
 
@@ -74,7 +74,7 @@ Currently, this function can be used only in:
 
    When the load balancer requires specified security groups, you can use this function to reference the security groups that are defined in `security_group` declarative.
 
-## share {#share}
+## share <a id="share"></a>
 
 Usage:
 

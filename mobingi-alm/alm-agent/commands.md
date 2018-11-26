@@ -1,6 +1,6 @@
 # Commands
 
-## register {#register}
+## register <a id="register"></a>
 
 Initialize ALM-agent self register and start containers.
 
@@ -19,7 +19,7 @@ OPTIONS:
    --serverconfig URL, --sc URL  Load ServerConfig from URL. ask to API by default
 ```
 
-## ensure {#ensure}
+## ensure <a id="ensure"></a>
 
 Start or update containers.
 
@@ -36,7 +36,7 @@ OPTIONS:
    --serverconfig URL, --sc URL  Load ServerConfig from URL. ask to API by default
 ```
 
-## stop {#stop}
+## stop <a id="stop"></a>
 
 Stop active containers.
 
@@ -53,7 +53,7 @@ OPTIONS:
    --serverconfig URL, --sc URL  Load ServerConfig from URL. ask to API by default
 ```
 
-## noop {#noop}
+## noop <a id="noop"></a>
 
 Run without container actions.
 
@@ -70,7 +70,7 @@ OPTIONS:
    --serverconfig URL, --sc URL  Load ServerConfig from URL. ask to API by default
 ```
 
-## help {#help}
+## help <a id="help"></a>
 
 Shows a list of commands or help for one command.
 

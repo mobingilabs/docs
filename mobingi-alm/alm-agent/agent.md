@@ -1,6 +1,6 @@
 # Agent
 
-## Usage {#usage}
+## Usage <a id="usage"></a>
 
 ALM-agent is a very simple and easy-to-use tool. It can be used like a CLI \(not a Daemon\).
 
@@ -35,7 +35,7 @@ GLOBAL OPTIONS:
    --version, -v                     print the version
 ```
 
-## Global Options {#global-options}
+## Global Options <a id="global-options"></a>
 
 * _--autoupdate,  -U_   Before running, ALM-agent checks the new version and updates the agent itself  if there is a new version. \(self-update\) 
 * _--disablereport, -N_  We are using rollbar for error monitoring. If you do not want to send crash report to rollbar,   use this option. 

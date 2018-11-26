@@ -2,7 +2,7 @@
 
 In order to support various unique functions for different cloud providers, we provide add-ons.
 
-## AWS {#aws}
+## AWS <a id="aws"></a>
 
 The ALM-agent enables you to perform specific actions when Auto Scaling Instances or Spot Instances are terminated.
 
