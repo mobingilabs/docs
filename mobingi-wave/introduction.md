@@ -23,7 +23,7 @@ description: >-
 - ARN of IAM Role which allow the specific bucket.(Ex: arn:aws:iam::xxxxxxxxxxxx:role/crossacounnt-access-for-mobingi)
 ```
 
-## Step 1 : Create S3 bucket and daily report \(option\) {#step1}
+## Step 1 : Create S3 bucket and daily report \(option\) <a id="step1"></a>
 
 * Create daily repot with the AWS account you want to share the billing information with Wave.
 * You can skip if you already have the report definition with below conditions.
@@ -85,7 +85,7 @@ Check the info again and click **Review and Complete.**
 
 ![](../.gitbook/assets/snip20181004_18.png)
 
-## Step 2 : Create IAM role for Mobingi {#step2}
+## Step 2 : Create IAM role for Mobingi <a id="step2"></a>
 
 From AWS management console, select **IAM** service and click **Roles** &gt;&gt; **Create role.**
 
