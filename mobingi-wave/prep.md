@@ -21,7 +21,7 @@ description: 在将引进 Wave 前的准备
 - 授权指定存储桶用的 IAM角色的ARN (例如: arn:aws:iam::xxxxxxxxxxxx:role/crossacounnt-access-for-mobingi)
 ```
 
-## 步骤1：创建S3存储桶以及每小时报告（任意） {#step1}
+## 步骤1：创建S3存储桶以及每小时报告（任意） <a id="step1"></a>
 
 * 使用帐单信息共享的AWS帐户创建每小时报告。
 * 如果您已有以下的报告定义条件，可跳过此操作。
@@ -83,7 +83,7 @@ description: 在将引进 Wave 前的准备
 
 ![](../.gitbook/assets/snip20181010_1.png)
 
-## 步骤2：创建一个授权Mobingi可以读取的IAM角色 {#step2}
+## 步骤2：创建一个授权Mobingi可以读取的IAM角色 <a id="step2"></a>
 
 从AWS管理控制台中，打开IAM服务并转到“角色”&gt;&gt;“创建角色”菜单。
 
