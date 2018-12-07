@@ -25,3 +25,4 @@ Rippleの左メニューにあるWave for ResellerはRippleユーザーが自社
 Rippleユーザーはエンドのお客様に対して機能限定版Waveを提供できます。手順1で作成したログインIDとパスワードを使用しWaveの[ログイン画面](https://app.mobingi.com/wave/login)からログインすると機能限定版Waveが表示されます。
 
 ![](../.gitbook/assets/snip20181005_26.png)
+
