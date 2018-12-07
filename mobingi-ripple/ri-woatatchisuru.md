@@ -1,7 +1,3 @@
----
-description: Reserved Instance 所有者の変更についてです。
----
-
 # RI をアタッチする
 
 Mobingi Ripple ではユーザーの所有しているRIを自動で検出して表示します。  

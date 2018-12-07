@@ -1,8 +1,4 @@
----
-description: Mobingi Rippleについての説明です。
----
-
-# Mobingi Ripple とは
+# Mobingi Ripple でできること
 
 ## Mobingi Ripple でできること
 

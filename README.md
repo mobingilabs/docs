@@ -1,5 +1,5 @@
 ---
-description: Mobingi Rippleの公式ユーザーガイドです。
+description: Mobingi Documentation
 ---
 
 # Mobingi Ripple 公式ユーザーガイド
