@@ -14,7 +14,8 @@
 * [請求書を発行する](mobingi-ripple/invoicing.md)
 * [一時金の確認と計算](mobingi-ripple/fee.md)
 * [新規顧客を追加する](mobingi-ripple/new-customer.md)
-* [RI をアタッチする](mobingi-ripple/ri-woatatchisuru.md)
+* [RI のアロケーション変更](mobingi-ripple/change-ri.md)
+* [タグでの請求データ作成](mobingi-ripple/tag-invoice.md)
 * [FAQ](mobingi-ripple/faq.md)
 * [Hourlyレポートへの変更（AWS）](mobingi-ripple/change-hourly.md)
 
