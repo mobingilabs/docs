@@ -104,13 +104,17 @@ AWSのマネジメントコンソールから、IAMサービスを開き、『�
 ```bash
 {
     "Version": "2012-10-17",
-   "Statement": [
+    "Statement": [
          {
                "Effect": "Allow",
                "Action": [
-                     "s3:GetObject"
+                     "s3:Get*",
+                     "s3:List*"
                ],
-               "Resource": "arn:aws:s3:::{replace_to_report_bucket}/*"
+               "Resource": [
+                     "arn:aws:s3:::{replace_to_report_bucket}",
+                     "arn:aws:s3:::{replace_to_report_bucket}/*
+               ]
          }
    ]
 }
