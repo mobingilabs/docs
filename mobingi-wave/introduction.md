@@ -115,7 +115,7 @@ New tab or window will open. Choose JSON as input format and type the policy sam
                ],
                "Resource": [
                      "arn:aws:s3:::{replace_to_report_bucket}",
-                     "arn:aws:s3:::{replace_to_report_bucket}/*
+                     "arn:aws:s3:::{replace_to_report_bucket}/*"
                ]
          }
    ]
