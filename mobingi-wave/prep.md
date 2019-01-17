@@ -113,7 +113,7 @@ AWSのマネジメントコンソールから、IAMサービスを開き、『�
                ],
                "Resource": [
                      "arn:aws:s3:::{replace_to_report_bucket}",
-                     "arn:aws:s3:::{replace_to_report_bucket}/*
+                     "arn:aws:s3:::{replace_to_report_bucket}/*"
                ]
          }
    ]
