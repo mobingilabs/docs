@@ -11,193 +11,145 @@ This page is still a work in progress.
 The following is the proposed new version of ALM Template. By default, all keys are optional unless stated otherwise.
 
 ```yaml
-version: string # '2018-07-02', required
-label: string
-description: string
-
-# Definitions for apps that are to be deployed to one or more stacks.
-# You can define 0 or more apps.
+---
+version: 20180702 # required
+name: deployment1 # should be unique across account level
+---
+# These credentials should be registered to your ALM account.
+credentials:
+# The credential name you used to input the credential.
+- name: subuser01
+  # Valid values: aws, gcp, azure, alicloud
+  # For now, only AWS is supported in this new template.
+  provider: aws
+---
+# The list of applications to be deployed.
 applications:
-- name: string # required
-  description: string
-  labels:
-  - key: string
-    value: string
-  container_image: string
-  container_registry_username: string
-  container_registry_password: string
-  container_code_dir: string
-  container_code_repo: string
-  container_git_reference: string
-  container_git_private_key: string
-  container_ports:
-  - number
-  container_users: object
-  container_env_vars:
-  - key: string
-    value: string
+# The name of the application to deploy. Should be unique at
+# deployment level.
+- name: app1
+  # TODO: Mobingi-defined keys here. For sane defaults, and if
+  # you don't like writing k8s yaml files.
+  ...
+  # Use this key if you want to deploy raw Kubernetes apps to
+  # your stack. All k8s resources are supported here.
+  k8sExtra: |
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: hello1
+    spec:
+      selector:
+        matchLabels:
+          app: hello1
+      replicas: 1
+      revisionHistoryLimit: 5
+      template:
+        metadata:
+          labels:
+            app: hello1
+        spec:
+          containers:
+          - name: hello1
+            image: hashicorp/http-echo
+            args: ["-text=Hello world (1)"]
+            resources:
+              requests:
+                cpu: 100m
+                memory: 300Mi
+            imagePullPolicy: Always
+            ports:
+            - containerPort: 5678
+    ---
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: hello1
+    spec:
+      type: NodePort
+      ports:
+      - protocol: TCP
+        port: 80
+        targetPort: 5678
+      selector:
+        app: hello1
+  # The list of stacks where you want to deploy this application.
+  # The following names should correspond to a cluster under the
+  # `stacks` key.
   stacks:
-  # List of stacks this app will be deployed to.
-  - string
-
-# Stack definitions. At least one (1) stack is required per template.
+  - cluster1
+  # Example for multiple apps in a cluster.
+- name: app2
+  k8sExtra: |
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: hello2
+    spec:
+      selector:
+        matchLabels:
+          app: hello2
+      replicas: 1
+      revisionHistoryLimit: 5
+      template:
+        metadata:
+          labels:
+            app: hello2
+        spec:
+          containers:
+          - name: hello2
+            image: hashicorp/http-echo
+            args: ["-text=Hello world (2)"]
+            resources:
+              requests:
+                cpu: 100m
+                memory: 300Mi
+            imagePullPolicy: Always
+            ports:
+            - containerPort: 5678
+    ---
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: hello2
+    spec:
+      type: NodePort
+      ports:
+      - protocol: TCP
+        port: 80
+        targetPort: 5678
+      selector:
+        app: hello2
+  stacks:
+  - cluster1
+---
+# The list of stacks where you want to deploy your applications.
 stacks:
-- name: string # required
-  description: string
-  labels:
-  - key: string
-    value: string
-  vendors:
-  - string # at least one (1) vendor is required
-  region_groups: string
-  vpc_group: string
-  instance_group: string
-  security_group: string
-  load_balancer:
-    lb_type: string
-    scheme: string
-    listeners:
-    - load_balancer_port: string
-      protocol: string
-      instance_port: string
-      instance_protocol: string
-      cert_domain: string
-    health_check:
-      healthy_threshold: string
-      interval: string
-      target: string
-      timeout: string
-      unhealthy_threshold: string
-  auto_scaling:
-    min: number
-    max: number
-    spot_to_ondemand_ratio: number
-    cooldown: string
-    healthcheck_grace_period: string
-  rdb:
-    db_instance_type: string
-    engine: string
-    version: string
-    storage: int
-    multi_az: boolean
-    replica: number
-  k8s_group: string
-
-# Vendor definitions.
-vendors:
-- name: string # required
-  description: string
-  provider: string # required
-  cred_name: string # required
-  project_id: string # gcp only
-  app_id: string # azure only
-  subscription_id: string # azure only
-  directory_id: string # azure only
-  contract_number: string # fujitsu k5
-
-# The following section (groups) can be customized although Mobingi
-# will provide common definitions that can be referenced
-# by name.
-
-# region/az group definitions
-region_groups:
-- name: string # required
-  description: string
-  vendors:
-  - name: string # required
-    region: string
-    availability_zones:
-    - string
-
-# instance group definitions
-instance_groups:
-- name: string # required
-  description: string
-  vendors:
-  - name: string # required, not a reference to 'vendors'
-    instance_type: string
-    image: string
-    instance_count: number
-    volume_type: string
-    volume_size: number
-    keypair: boolean
-
-# virtual network group definitions
-# aws: vpc
-# azure: vnet
-# gcp: vpc
-vpc_groups:
-- name: string # required
-  description: string
-  # vendor-independent subnet
-  subnet:
-    cidr: string
-    public: boolean
-    auto_assign_public_ip: boolean
-    route: {tbd}
-    network_acl:
-      rule_number: number
-      protocol: string
-      rule_action: string
-      acl_egress: boolean
-      cidr_block: string
-  vendors:
-  - name: string # required, not a reference to 'vendors'
-    subnet:
-      cidr: string
-      public: boolean
-      auto_assign_public_ip: boolean
-      route: {tbd}
-      network_acl:
-        rule_number: number
-        protocol: string
-        rule_action: string
-        acl_egress: boolean
-        cidr_block: string
-
-# network security definitions
-# aws: security groups
-# azure: network security groups
-# gcp: firewall
-network_security_groups:
-- name: string # required
-  description: string
-  # vendor-independent ingress/egress
-  ingress:
-  - cidr: string
-    from_port: number
-    ip_protocol: string
-    to_port: number
-  egress:
-  - cidr: string
-    from_port: number
-    ip_protocol: string
-    to_port: number
-  vendors:
-  - name: string # required, not a reference to 'vendors'
-    ingress:
-    - cidr: string
-      from_port: number
-      ip_protocol: string
-      to_port: number
-    egress:
-    - cidr: string
-      from_port: number
-      ip_protocol: string
-      to_port: number
-
-# kubernetes definitions
-k8s_groups:
-- name: string # required
-  description: string
-  vendors:
-  - name: string # required, not a reference to 'vendors'
-    version: string
-    # 'gcp_native' is specific only to 'gcp' vendor.
-    # It can be the same as the following GCP-specific resource:
-    # https://cloud.google.com/kubernetes-engine/docs/references/rest/v1/projects.zones.clusters
-    # If you provide 'gcp_native', all other keys (except 'name'),
-    # will be overruled.
-    gcp_native: object
+- name: cluster1 # should be unique at deployment level
+  type: k8s # for now, only k8s clusters are supported
+  # This should correspond to a credential name you provided
+  # somewhere in this template.
+  credential: subuser01
+  region: ap-northeast-1
+  keyPair: true
+  # Applies to k8s master only.
+  highlyAvailable: false
+  # Applies to the k8s worker nodes. 
+  workerGroups:
+  - type: t2.medium
+    min: 3
+    max: 10
+  # Option to skip Mobingi-defined cluster.
+  skip: false
+  # This key is provided if you want to provision any AWS resources using
+  # CloudFormation.
+  cfnExtra: |
+    AWSTemplateFormatVersion: '2010-09-09'
+    Description: 'AWS CloudFormation Sample CfnExtra'
+    Resources:
+      CfnExtraSnsTopic:
+        Type: AWS::SNS::Topic
+        Properties:
+          TopicName: "cfnextra-sample-snstopic"`
 ```
 
