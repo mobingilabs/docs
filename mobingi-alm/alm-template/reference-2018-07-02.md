@@ -151,5 +151,9 @@ stacks:
         Type: AWS::SNS::Topic
         Properties:
           TopicName: "cfnextra-sample-snstopic"`
+  dmExtra: |
+    {Insert GCP Deployment Manager template here}
+  armExtra: |
+    {Insert Azure Resource Manager template here}
 ```
 
