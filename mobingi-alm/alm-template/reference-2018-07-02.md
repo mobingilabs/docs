@@ -130,13 +130,13 @@ stacks:
   # This should correspond to a credential name you provided
   # somewhere in this template.
   credential: subuser01
-  region: ap-northeast-1
+  region: ap-northeast-1 # cloud provider specific region
   keyPair: true
   # Applies to k8s master only.
   highlyAvailable: false
   # Applies to the k8s worker nodes. 
   workerGroups:
-  - type: t2.medium
+  - type: t2.medium # cloud provider specific instance type
     min: 3
     max: 10
   # Option to skip Mobingi-defined cluster.
@@ -144,6 +144,7 @@ stacks:
   # This key is provided if you want to provision any AWS resources using
   # CloudFormation.
   cfnExtra: |
+    # A CloudFormation template example:
     AWSTemplateFormatVersion: '2010-09-09'
     Description: 'AWS CloudFormation Sample CfnExtra'
     Resources:
