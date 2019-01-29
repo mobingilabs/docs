@@ -20,7 +20,6 @@ credentials:
 # The credential name you used to input the credential.
 - name: subuser01
   # Valid values: aws, gcp, azure, alicloud
-  # For now, only AWS is supported in this new template.
   provider: aws
 ---
 # The list of applications to be deployed.
@@ -152,8 +151,12 @@ stacks:
         Type: AWS::SNS::Topic
         Properties:
           TopicName: "cfnextra-sample-snstopic"
+  # This key is provided if you want to provision any GCP resources using
+  # Deployment Manager.
   dmExtra: |
     {Insert GCP Deployment Manager template here}
+  # This key is provided if you want to provision any Azure resources using
+  # Azure Resource Manager.
   armExtra: |
     {Insert Azure Resource Manager template here}
 ```
