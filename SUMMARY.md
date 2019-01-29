@@ -12,7 +12,7 @@
   * [請求書](mobingi-ripple/about/invoice.md)
   * [Wave for Reseller](mobingi-ripple/about/wave-for-reseller.md)
 * [請求書を発行する](mobingi-ripple/invoicing.md)
-* [一時金の確認と計算](mobingi-ripple/fee.md)
+* [ショットの費用を請求に含める](mobingi-ripple/fee.md)
 * [新規顧客を追加する](mobingi-ripple/new-customer.md)
 * [RI のアロケーション変更](mobingi-ripple/change-ri.md)
 * [タグでの請求データ作成](mobingi-ripple/tag-invoice.md)
