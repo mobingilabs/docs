@@ -1,7 +1,3 @@
----
-description: 「請求グループ」とはRippleを使用して請求書を発行する単位です。
----
-
 # 請求グループ
 
 ![](../../.gitbook/assets/sukurnshotto-2018-12-13-140259.png)
