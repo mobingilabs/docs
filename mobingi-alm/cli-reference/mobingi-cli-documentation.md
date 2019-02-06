@@ -2,16 +2,16 @@
 
 ## Overview
 
-mobingi-cli is the official command line interface for Mobingi API and services.
+mobingi is the official command line interface for Mobingi API and services.
 
-To view a list of the available commands, just run mobingi-cli without arguments:
+To view a list of the available commands, just run mobingi without arguments:
 
 ```bash
-$ mobingi-cli
+$ mobingi
 Command line interface for Mobingi API and services.
 
 Usage:
-  mobingi-cli [command]
+  mobingi [command]
 
 Available Commands:
   creds       manage your credentials
@@ -36,20 +36,20 @@ Flags:
       --timeout int     timeout in seconds (default 120)
       --verbose         verbose output
       --debug           debug mode when error occurs
-  -h, --help            help for mobingi-cli
+  -h, --help            help for mobingi
 
-Use "mobingi-cli [command] --help" for more information about a command.
+Use "mobingi [command] --help" for more information about a command.
 ```
 
 To get help for any command, pass the -h flag to the command. For example, to see help about the stack command:
 
 ```bash
-$ mobingi-cli stack -h
+$ mobingi stack -h
 Manage your infrastructure/application stack.                    
 
 Usage:                                                           
-  mobingi-cli stack [flags]                                      
-  mobingi-cli stack [command]                                    
+  mobingi stack [flags]                                      
+  mobingi stack [command]                                    
 
 Available Commands:                                              
   create      create a stack                                     
@@ -75,7 +75,7 @@ Global Flags:
       --url string      base url for API
       --verbose         verbose output
 
-Use "mobingi-cli stack [command] --help" for more information about a command.
+Use "mobingi stack [command] --help" for more information about a command.
 ```
 
 ## Global flags
@@ -84,17 +84,17 @@ Global flags are all optional and can be applied to any subcommand. You can use 
 
 ```bash
 # using the '=' for assignment
-$ mobingi-cli login --client-id=foo --client-secret=bar
-[mobingi-cli]: info: Login successful.
+$ mobingi login --client-id=foo --client-secret=bar
+[mobingi]: info: Login successful.
 
 # using whitespace for assignment
-$ mobingi-cli login --client-id foo --client-secret bar
-[mobingi-cli]: info: Login successful.
+$ mobingi login --client-id foo --client-secret bar
+[mobingi]: info: Login successful.
 ```
 
 * `--token`
 
-  The access token to use in the command. By default, mobingi-cli will save your access token to the config file after login \(see [login](mobingi-cli-documentation.md#login) command\).  
+  The access token to use in the command. By default, mobingi will save your access token to the config file after login \(see [login](mobingi-cli-documentation.md#login) command\).  
 
 * `--url`
 
@@ -168,20 +168,20 @@ This is the first command you need to run to use the other commands. To login, r
 
 ```bash
 # login as root
-$ mobingi-cli login --client-id=foo --client-secret=bar --username=master@mobingi.com --password=1234
-[mobingi-cli]: info: Login successful.
+$ mobingi login --client-id=foo --client-secret=bar --username=master@mobingi.com --password=1234
+[mobingi]: info: Login successful.
 
 # login as subuser
-$ mobingi-cli login --client-id=foo --client-secret=bar --username=subuser01 --password=pass
-[mobingi-cli]: info: Login successful.
+$ mobingi login --client-id=foo --client-secret=bar --username=subuser01 --password=pass
+[mobingi]: info: Login successful.
 
 # if you don't want to show your password, remove the --password flag
-$ mobingi-cli login --client-id=foo --client-secret=bar --username=subuser01
+$ mobingi login --client-id=foo --client-secret=bar --username=subuser01
 Password: xxxx
-[mobingi-cli]: info: Login successful.
+[mobingi]: info: Login successful.
 ```
 
-If login is successful, cli will create a file _`config.yml`_ under _`$HOME/.mobingi-cli/`_ folder that will contain the configuration values set during login. Cli will also attempt to store your credentials in the platform's native store \(i.e. Keychain for OSX\), if available. If not successful, the retrieved token during login will be saved in the _config.yml_ file. This token has an expiration so you will probably need to relogin at some point when this happens.
+If login is successful, cli will create a file _`config.yml`_ under _`$HOME/.mobingi/`_ folder that will contain the configuration values set during login. Cli will also attempt to store your credentials in the platform's native store \(i.e. Keychain for OSX\), if available. If not successful, the retrieved token during login will be saved in the _config.yml_ file. This token has an expiration so you will probably need to relogin at some point when this happens.
 
 For Windows and OSX, cli can use the native credential store directly; wincred for Windows, Keychain for OSX. For Linux, cli uses [pass](https://www.passwordstore.org/) as storage. The following is an example of how to setup pass in Ubuntu systems.
 
@@ -206,14 +206,14 @@ sub   rsa2048/CDC4C430 2017-09-22 [E]
 # initialize pass (use the pub key id)
 $ pass init 5486B0F6
 
-# you can now do a mobingi-cli login ...
+# you can now do a mobingi login ...
 ```
 
 By default, all endpoints are set to Mobingi production during login. You can use the --endpoints flag to target alternative endpoints. For example, if you have a Mobingi dev account, you can use the following login command:
 
 ```bash
-$ mobingi-cli login --client-id foo --client-secret bar --username subuser01 --password 1234 --endpoints dev
-[mobingi-cli]: info: Login successful.
+$ mobingi login --client-id foo --client-secret bar --username subuser01 --password 1234 --endpoints dev
+[mobingi]: info: Login successful.
 ```
 
 ### stack list <a id="stack-list"></a>
@@ -223,7 +223,7 @@ List your stacks.
 Example:
 
 ```bash
-$ mobingi-cli stack list
+$ mobingi stack list
 STACK ID                          STACK NAME                   PLATFORM     STATUS              ...
 mo-58c2297d25645-q38pTmeey-tk     small lunch behave           AWS          CREATE_COMPLETE     ...
 mo-58c2297d25645-PxviFSJQV-tk     chronic leaflet flourish     AWS          CREATE_COMPLETE     ...
@@ -240,7 +240,7 @@ Describe a stack.
 Example:
 
 ```bash
-$ mobingi-cli stack describe --id mo-58c2297d25645-PxviFSJQV-tk
+$ mobingi stack describe --id mo-58c2297d25645-PxviFSJQV-tk
 {
   "auth_token": "...",
   "update_time": "2017-08-30T11:32:42+09:00",
@@ -430,8 +430,8 @@ Starting in v3, we create stacks using ALM Templates. Below is an example of a v
 Example:
 
 ```bash
-$ mobingi-cli stack create --alm-template=/home/user/aws-single-ec2.json
-[mobingi-cli]: info: [201 Created] return payload:
+$ mobingi stack create --alm-template=/home/user/aws-single-ec2.json
+[mobingi]: info: [201 Created] return payload:
 {
   "status": "success",
   "stack_status": "CREATE_IN_PROGRESS",
@@ -445,8 +445,8 @@ $ mobingi-cli stack create --alm-template=/home/user/aws-single-ec2.json
 Examples:
 
 ```bash
-$ mobingi-cli stack create --nickname=sample --apiver=v2
-$ mobingi-cli stack create --nickname=sample --min=2 --max=2 --apiver=v2
+$ mobingi stack create --nickname=sample --apiver=v2
+$ mobingi stack create --nickname=sample --min=2 --max=2 --apiver=v2
 ```
 
 ### stack update <a id="stack-update"></a>
@@ -484,9 +484,9 @@ Update an existing stack.
 Similar to stack creation, you only need to update some parts of your ALM template to update your stack.
 
 ```bash
-$ mobingi-cli stack update --id mo-58c2297d25645-q38pTmeey-tk \
+$ mobingi stack update --id mo-58c2297d25645-q38pTmeey-tk \
       --alm-template /home/user/aws-single_ec2_update.json
-[mobingi-cli]: info: [202 Accepted] return payload:
+[mobingi]: info: [202 Accepted] return payload:
 {
   "status": "success",
   "stack_status": "UPDATE_IN_PROGRESS",
@@ -500,8 +500,8 @@ $ mobingi-cli stack update --id mo-58c2297d25645-q38pTmeey-tk \
 Examples:
 
 ```bash
-$ mobingi-cli stack update --id=foo --min=5 --max=20 --apiver=v2
-$ mobingi-cli stack update --id=foo --spot-range=25 --apiver=v2
+$ mobingi stack update --id=foo --min=5 --max=20 --apiver=v2
+$ mobingi stack update --id=foo --spot-range=25 --apiver=v2
 ```
 
 ### stack delete <a id="stack-delete"></a>
@@ -517,8 +517,8 @@ Delete a stack.
 Example:
 
 ```bash
-$ mobingi-cli stack delete --id mo-58c2297d25645-GbdINZdY-tk
-[mobingi-cli]: info: [200 OK] return payload:
+$ mobingi stack delete --id mo-58c2297d25645-GbdINZdY-tk
+[mobingi]: info: [200 OK] return payload:
 {
   "status": "DELETE_IN_PROGRESS"
 }
@@ -554,7 +554,7 @@ Examples:
 
 ```bash
 # open an ssh connection via cli
-$ mobingi-cli stack ssh --id mo-58c2297d25645-Sd2aHRDq0-tk --ip 54.238.234.202 --flag web01
+$ mobingi stack ssh --id mo-58c2297d25645-Sd2aHRDq0-tk --ip 54.238.234.202 --flag web01
 [ec2-user@ip-10-0-1-96 ~]$ pwd
 /home/ec2-user
 [ec2-user@ip-10-0-1-96 ~]$ exit
@@ -562,8 +562,8 @@ logout
 Connection to 54.238.234.202 closed.
 
 # open an ssh connection using default browser
-$ mobingi-cli stack ssh --id mo-58c2297d25645-Sd2aHRDq0-tk --ip 54.238.234.202 --flag web01 --browser
-[mobingi-cli]: info: open link with a browser (if not opened automatically): \
+$ mobingi stack ssh --id mo-58c2297d25645-Sd2aHRDq0-tk --ip 54.238.234.202 --flag web01 --browser
+[mobingi]: info: open link with a browser (if not opened automatically): \
 https://sesha3.mobingi.com:port/some-random-link/
 ```
 
@@ -591,10 +591,10 @@ uname -a
 env
 
 # run the script on a single instance
-$ mobingi-cli stack exec \
+$ mobingi stack exec \
     --target "mo-58c2297d25645-rkIEPmust-tk|root@47.74.5.170:Single" \
     --script ~/test.sh
-[mobingi-cli]: info: [0]output: mo-58c2297d25645-rkIEPmust-tk, instance: root@47.74.5.170, flag: Single
+[mobingi]: info: [0]output: mo-58c2297d25645-rkIEPmust-tk, instance: root@47.74.5.170, flag: Single
 /root
 Linux iZ6weeq9e4ktok8f9o2910Z 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
 XDG_SESSION_ID=43623
@@ -614,11 +614,11 @@ XDG_RUNTIME_DIR=/run/user/0
 _=/usr/bin/env
 
 # run the same script to an aws ec2 instance and an alibabacloud vm
-$ mobingi-cli stack exec \
+$ mobingi stack exec \
     --target "mo-58c2297d25645-rkIEPmust-tk|root@47.74.5.170:Single" \
     --target "mo-58c2297d25645-M5EIHEaOC-tk|ec2-user@13.230.9.8:web0" \
     --script ~/test.sh
-[mobingi-cli]: info: [0]output: mo-58c2297d25645-rkIEPmust-tk, instance: root@47.74.5.170, flag: Single
+[mobingi]: info: [0]output: mo-58c2297d25645-rkIEPmust-tk, instance: root@47.74.5.170, flag: Single
 /root
 Linux iZ6weeq9e4ktok8f9o2910Z 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
 XDG_SESSION_ID=43631
@@ -637,7 +637,7 @@ LESSOPEN=||/usr/bin/lesspipe.sh %s
 XDG_RUNTIME_DIR=/run/user/0
 _=/usr/bin/env
 
-[mobingi-cli]: info: [1]output: mo-58c2297d25645-M5EIHEaOC-tk, instance: ec2-user@13.230.9.8, flag: web0
+[mobingi]: info: [1]output: mo-58c2297d25645-M5EIHEaOC-tk, instance: ec2-user@13.230.9.8, flag: web0
 /home/ec2-user
 Linux ip-10-0-1-63 4.9.51-10.52.amzn1.x86_64 #1 SMP Fri Sep 29 01:16:19 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
 LESS_TERMCAP_mb=
@@ -686,8 +686,8 @@ Example:
 
 ```bash
 # print pem file
-$ mobingi-cli stack pem --id mo-58c2297d25645-Sd2aHRDq0-tk --flag web01
-[mobingi-cli]: info: payload:
+$ mobingi stack pem --id mo-58c2297d25645-Sd2aHRDq0-tk --flag web01
+[mobingi]: info: payload:
 -----BEGIN RSA PRIVATE KEY-----
 MIIEogIBAAKCAQEAiy5kdqROYbjke0BE8rcT7qUtSKyaaIgqiJLYxlduov2wvnRHSo5O8m67v8UD
 Pkxz4fR/gQXYcpV4/T/3zqTVaGcVNK8ZCE1jRfKt/5QFQkPOJRkDWZZzQqSwUMhnMiK1iE+33fmp
@@ -696,8 +696,8 @@ ITvktdL9OMT0RXjZ4qKq+aifaY9D0XzbR3HWLFcWZ+0tmzUTJDM8F6LivsPUjR8uitiic7KXvlDV
 -----END RSA PRIVATE KEY-----
 
 # print pem file and save to home directory as test.pem
-$ mobingi-cli stack pem --id mo-58c2297d25645-Sd2aHRDq0-tk --flag web01 --out ~/test.pem
-[mobingi-cli]: info: payload:
+$ mobingi stack pem --id mo-58c2297d25645-Sd2aHRDq0-tk --flag web01 --out ~/test.pem
+[mobingi]: info: payload:
 -----BEGIN RSA PRIVATE KEY-----
 MIIEogIBAAKCAQEAiy5kdqROYbjke0BE8rcT7qUtSKyaaIgqiJLYxlduov2wvnRHSo5O8m67v8UD
 Pkxz4fR/gQXYcpV4/T/3zqTVaGcVNK8ZCE1jRfKt/5QFQkPOJRkDWZZzQqSwUMhnMiK1iE+33fmp
@@ -723,12 +723,12 @@ Example:
 
 ```bash
 # list stacks first to get the stack id
-$ mobingi-cli stack list
+$ mobingi stack list
 STACK ID                          STACK NAME                   PLATFORM     STATUS              ...
 mo-58c2297d25645-q38pTmeey-tk     small lunch behave           AWS          CREATE_COMPLETE     ...
 mo-58c2297d25645-PxviFSJQV-tk     chronic leaflet flourish     AWS          CREATE_COMPLETE     ...
 # then list the template versions
-$ mobingi-cli template versions --id mo-58c2297d25645-PxviFSJQV-tk
+$ mobingi template versions --id mo-58c2297d25645-PxviFSJQV-tk
 VERSION ID                           LATEST     LAST MODIFIED                     SIZE
 jbyW_PxMAauQmOS31dUhij4KIqHAtqW2     true       Wed, 30 Aug 2017 02:32:43 UTC     472
 1xoPd.cg3juHK94vC8IdUh1bexx7sQ1T     false      Tue, 29 Aug 2017 09:47:50 UTC     453
@@ -766,10 +766,10 @@ Example:
 
 ```bash
 # using the examples above
-$ mobingi-cli template compare --src-sid mo-58c2297d25645-PxviFSJQV-tk \
+$ mobingi template compare --src-sid mo-58c2297d25645-PxviFSJQV-tk \
       --src-vid jbyW_PxMAauQmOS31dUhij4KIqHAtqW2 \
       --tgt-vid 1xoPd.cg3juHK94vC8IdUh1bexx7sQ1T
-[mobingi-cli]: info: diff:
+[mobingi]: info: diff:
 {
   "new": [],
   "removed": [],
@@ -815,7 +815,7 @@ This is useful when creating roles and you want something to start with. You can
 Example:
 
 ```bash
-$ mobingi-cli rbac sample --out=/home/user/sample.json
+$ mobingi rbac sample --out=/home/user/sample.json
 {
   "Version": "2017-05-05",
   "Statement": [
@@ -839,7 +839,7 @@ $ mobingi-cli rbac sample --out=/home/user/sample.json
     }
   ]
 }
-[mobingi-cli]: info: sample written to /home/user/sample.json
+[mobingi]: info: sample written to /home/user/sample.json
 ```
 
 ### rbac create <a id="rbac-create"></a>
@@ -868,8 +868,8 @@ Example:
 
 ```bash
 # use the sample generated in the previous command
-$ mobingi-cli rbac create --name testrole --scope /home/user/sample.json
-[mobingi-cli]: info: 200 OK
+$ mobingi rbac create --name testrole --scope /home/user/sample.json
+[mobingi]: info: 200 OK
 {
   "status":"success",
   "role_id":"morole-58c2297d25645-F6HUEJG57"
@@ -893,8 +893,8 @@ Attach a role to a user.
 Example:
 
 ```bash
-$ mobingi-cli rbac attach --user subuser --role-id morole-58c2297d25645-BtXGMSRsI
-[mobingi-cli]: info: 200 OK
+$ mobingi rbac attach --user subuser --role-id morole-58c2297d25645-BtXGMSRsI
+[mobingi]: info: 200 OK
 {
   "status": "success",
   "user_role_id": "mour-subuser-icxUQ91SO"
@@ -924,7 +924,7 @@ Show a stack's serverconfig \(server configuration\) contents. Starting from v3,
 Example:
 
 ```bash
-$ mobingi-cli svrconf show --id=foo --apiver=v2
+$ mobingi svrconf show --id=foo --apiver=v2
 ```
 
 ### svrconf update <a id="svrconf-update"></a>
@@ -946,11 +946,11 @@ Examples:
 
 ```bash
 # env examples
-$ mobingi-cli svrconf update --id=foo --env=KEY1:value1,KEY2:value2,KEYx:valuex --apiver=v2
-$ mobingi-cli svrconf update --id=foo --env="KEY1: value1, KEY2: value2, KEYx: valuex" --apiver=v2
-$ mobingi-cli svrconf update --id=foo --env=null --apiver=v2
+$ mobingi svrconf update --id=foo --env=KEY1:value1,KEY2:value2,KEYx:valuex --apiver=v2
+$ mobingi svrconf update --id=foo --env="KEY1: value1, KEY2: value2, KEYx: valuex" --apiver=v2
+$ mobingi svrconf update --id=foo --env=null --apiver=v2
 # filepath example
-$ mobingi-cli svrconf update --id=foo --filepath=git://github.com/mobingilabs/default --apiver=v2
+$ mobingi svrconf update --id=foo --filepath=git://github.com/mobingilabs/default --apiver=v2
 ```
 
 Note that when you provide update options simultaneously \(for example, you provide `--env=FOO:bar` and `--filepath=test` at the same time\), the tool will send each option as a separate request.
@@ -968,7 +968,7 @@ List vendor credentials.
 Examples:
 
 ```bash
-$ mobingi-cli creds list
+$ mobingi creds list
 VENDOR     ID                       ACCOUNT     LAST MODIFIED
 aws        xxxxxxxxxxxxxxxxxxxx     user        Wed, 05 Jul 2017 07:52:14 UTC
 ```
@@ -1003,13 +1003,13 @@ Examples:
 
 ```bash
 # user/password credentials are stored in native store
-$ mobingi-cli registry catalog
-[mobingi-cli]: info: Catalog list for user: subuser01
+$ mobingi registry catalog
+[mobingi]: info: Catalog list for user: subuser01
 subuser01/foo
 
 # no native store support
-$ mobingi-cli registry catalog --username=subuser01 --password=xxxxxx
-[mobingi-cli]: info: Catalog list for user: subuser01
+$ mobingi registry catalog --username=subuser01 --password=xxxxxx
+[mobingi]: info: Catalog list for user: subuser01
 subuser01/foo
 ```
 
@@ -1042,7 +1042,7 @@ List image tags.
 Example:
 
 ```bash
-$ mobingi-cli registry tags --image foo
+$ mobingi registry tags --image foo
 IMAGE                   TAG
 subuser01/foo           latest
 subuser01/foo           2.1
@@ -1077,7 +1077,7 @@ Display a tag's manifest.
 Example:
 
 ```bash
-$ mobingi-cli registry manifest --image foo:latest
+$ mobingi registry manifest --image foo:latest
 {
    "schemaVersion": 1,
    "name": "subuser01/foo",
@@ -1139,7 +1139,7 @@ Delete a tag.
 Example:
 
 ```bash
-$ mobingi-cli registry delete --username=subuser1 --password=xxxxxx \
+$ mobingi registry delete --username=subuser1 --password=xxxxxx \
       --image=foo:latest --apiver=v2
 ```
 
@@ -1168,7 +1168,7 @@ Get an access token for Mobingi Docker Registry access.
 Example:
 
 ```bash
-$ mobingi-cli registry token \
+$ mobingi registry token \
       --username=foo \
       --password=bar \
       --service="Mobingi Docker Registry" \
@@ -1190,7 +1190,7 @@ Reset all configuration values to default. It will also delete all credential in
 Example:
 
 ```bash
-$ mobingi-cli reset
+$ mobingi reset
 $ cat ~/.mobingi-cli/config.yml
 access_token: ""
 api_url: https://api.mobingi.com
@@ -1207,7 +1207,7 @@ debug: false
 Prints the cli version.
 
 ```bash
-$ mobingi-cli version
+$ mobingi version
 v0.2.3-beta
 ```
 
