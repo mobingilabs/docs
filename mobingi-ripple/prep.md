@@ -124,6 +124,8 @@ AWSのマネジメントコンソールから、IAMサービスを開き、『�
 
 ![](../.gitbook/assets/create-policy-ja.png)
 
+![](../.gitbook/assets/create-policy-example-ja.png)
+
 「ポリシーの確認」へ進み、以下の項目を入力してポリシーを作成します。
 
 * 名前: 任意\(※必須\)
