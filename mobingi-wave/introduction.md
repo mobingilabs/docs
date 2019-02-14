@@ -122,7 +122,7 @@ New tab or window will open. Choose JSON as input format and type the policy sam
 }
 ```
 
-![](../.gitbook/assets/snip20180727_25.png)
+![](../.gitbook/assets/create-policy-en.png)
 
 After fill the informations below, you can finish to create policy.
 
