@@ -13,6 +13,5 @@
 * [一時金の確認](mobingi-wave/a-lump-sum.md)
 * [タグ機能の有効化](mobingi-wave/tag-report.md)
 * [レポートとCSVの見方](mobingi-wave/report-csv.md)
-* [割引と為替の適用](mobingi-wave/apply-jpy.md)
 * [各種設定・変更](mobingi-wave/settings.md)
 

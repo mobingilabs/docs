@@ -2,7 +2,7 @@
 
 コンソール右上のドロップダウンメニューから設定を選択します。
 
-![](../.gitbook/assets/snip20180910_5.png)
+![](../.gitbook/assets/mobingi_wave.png)
 
 ### 設定画面でできること
 
@@ -15,10 +15,7 @@
 
    * 日本語、英語、中国語に対応しています。
 
-4. チャート設定
-   * ダッシュボードのチャートに表示するサービスを最大5つまで選択できます。（デフォルトはEC2のみ選択） 
-5. 通知設定
-
+4. 通知設定
    * レポート画面から設定した予算を越えると、メールもしくはslackに通知が飛びます。
    * Slackに通知する場合`webhookURL`を入力する必要があります。
      1. Slackにログインし通知先のSlackチャンネルを作成（既にある場合は必要なし）
@@ -27,9 +24,6 @@
      4. `Descriptive Label`等の設定等のを変更する場合は`Save Settings`する
      5. `Webhook URL` の `Copy URL` をクリック
      6. コピーしたWebhook URLをWaveに貼り付け
-
-6. Additional Setting
-   * 割引率と為替レートの設定ができます。利用方法については[割引と為替の適用](https://docs.mobingi.com/v/wave/mobingi-wave/apply-jpy)をご覧ください。
 
 ## 設定：レポートページ
 
