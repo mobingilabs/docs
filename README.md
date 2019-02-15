@@ -22,4 +22,5 @@ For more information, please visit relevant links below.
 | :--- | :--- |
 | [https://mobingi.com/](https://mobingi.com/) | English website |
 | [https://mobingi.com/jp/](https://mobingi.com/jp/) | Japanese website |
+| [https://corp.mobingi.com/](https://corp.mobingi.com/) | Corporate website |
 
