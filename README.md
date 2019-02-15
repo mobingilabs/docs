@@ -1,10 +1,10 @@
 ---
-description: >-
-  Welcome to Mobingi's official documentation! To get started, you can use the
-  dropdown menu on the upper left hand corner of this page.
+description: Mobingi Documentation
 ---
 
 # Get Started
+
+Welcome to Mobingi's official documentation! To get started, you can use the dropdown menu on the upper left hand corner of this page.
 
 To get started with ALM, please visit [https://alm.mobingi.com/](https://alm.mobingi.com/).
 
