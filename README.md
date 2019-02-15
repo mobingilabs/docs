@@ -4,13 +4,11 @@ description: Mobingi Documentation
 
 # Overview
 
-Welcome to Mobingi's official documentation! This documentation covers all references to all available features and options of all Mobingi products.
+{% hint style="info" %}
+We are in the process of updating the current template to a new version suited for multi-application, multi-stack, and multi-vendor deployments. It will be a YAML-based template \(although JSON is also supported\). We will be releasing these new features in the coming months. Stay tuned!
+{% endhint %}
 
-To get started with ALM, please visit [https://alm.mobingi.com](https://alm.mobingi.com).
-
-To get started with Wave, please visit [https://wave.mobingi.com](https://wave.mobingi.com).
-
-If you are looking for the old \(v2\) documentations for ALM, you can use the dropdown menu on the upper left hand corner of this page.
-
-For general information about Mobingi, please visit our website [https://mobingi.com](https://mobingi.com).
+{% hint style="warning" %}
+This page is still a work in progress.
+{% endhint %}
 
