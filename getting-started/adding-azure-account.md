@@ -35,19 +35,19 @@ If you do not have yet a Mobingi ALM account, you can sign up [here](https://mob
 
 1. After logging-in to your [Mobingi ALM](https://alm.mobingi.com/login) account, in the upper right corner of the page click your `username` and then `General Settings`
 
-![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.10.0_box.png)
+![](../.gitbook/assets/screen-shot-2018-06-11-at-17.10.0_box.png)
 
 1. In the left side-menu, click `Setup Credentials` and select `Azure`
 
-![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.13.27_box2.png)
+![](../.gitbook/assets/screen-shot-2018-06-11-at-17.13.27_box2.png)
 
 1. Enter your preferred account name and the `Application ID`, `Secret Access Key`, `Subscription ID`, `Directory ID` you created in the _**Using**_ [_**Azure portal**_](https://portal.azure.com) _**to create necessary credentials**_ section and click _**Add Account**_ button
 
-![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.16.53box3.png)
+![](../.gitbook/assets/screen-shot-2018-06-11-at-17.16.53box3.png)
 
 {% hint style="success" %}
 Your credential is added at the bottom of the page.
 {% endhint %}
 
-![](../../.gitbook/assets/screen-shot-2018-06-11-at-17.30.11.png)
+![](../.gitbook/assets/screen-shot-2018-06-11-at-17.30.11.png)
 

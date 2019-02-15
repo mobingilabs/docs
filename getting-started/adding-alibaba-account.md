@@ -11,25 +11,25 @@ We recommend you to use RAM user as Alibaba Cloud credentials to ALM. To create 
 
 The contents of the policy can be checked on ALM:
 
-![](../../.gitbook/assets/ram-policy.png)
+![](../.gitbook/assets/ram-policy.png)
 
 Copy the above the policy contents and create the policy on Alibaba Cloud console:
 
-![](../../.gitbook/assets/create-ram-policy.png)
+![](../.gitbook/assets/create-ram-policy.png)
 
 **Step 2**: Create the RAM user and attach the policy.
 
 Create the RAM user:
 
-![](../../.gitbook/assets/create-ram-user.png)
+![](../.gitbook/assets/create-ram-user.png)
 
 Attach the previously created policy to the RAM user:
 
-![](../../.gitbook/assets/attach-ram-policy.png)
+![](../.gitbook/assets/attach-ram-policy.png)
 
 **Step 3**: Create an access key and enter it on ALM.
 
-![](../../.gitbook/assets/ram-access-key.png)
+![](../.gitbook/assets/ram-access-key.png)
 
-![](../../.gitbook/assets/setup-alibaba-credentials.png)
+![](../.gitbook/assets/setup-alibaba-credentials.png)
 

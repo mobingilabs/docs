@@ -27,7 +27,7 @@ RBAC is a policy document that formally states one or more permissions. To assig
 
 Before any requests goes in, the RBAC module will check for the current user's role settings first, then it passes or denies the request.
 
-![](../../.gitbook/assets/rbac-concept.png)
+![](../.gitbook/assets/rbac-concept.png)
 
 For the requests being passed, there is no other actions need to perform.
 
