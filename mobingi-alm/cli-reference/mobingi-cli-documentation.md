@@ -94,39 +94,39 @@ $ mobingi login --client-id foo --client-secret bar
 
 * `--token`
 
-  The access token to use in the command. By default, mobingi will save your access token to the config file after login \(see [login](mobingi-cli-documentation.md#login) command\).  
+  The access token to use in the command. By default, mobingi will save your access token to the config file after login \(see [login](mobingi-cli-documentation.md#login) command\).
 
 * `--url`
 
-  The base API url to use in the command. By default, this is set to [https://api.mobingi.com](https://api.mobingi.com). You can use this flag if you are hosting your own backend. This is used by devs when testing the cli against the dev and test environments.  
+  The base API url to use in the command. By default, this is set to [https://api.mobingi.com](https://api.mobingi.com). You can use this flag if you are hosting your own backend. This is used by devs when testing the cli against the dev and test environments.
 
 * `--rurl`
 
-  The base registry url to use in the command. This is applicable to Mobingi Registry related commands. By default, this is set to [https://registry.mobingi.com](https://registry.mobingi.com). This is used by devs when testing the cli against the dev and test environments.  
+  The base registry url to use in the command. This is applicable to Mobingi Registry related commands. By default, this is set to [https://registry.mobingi.com](https://registry.mobingi.com). This is used by devs when testing the cli against the dev and test environments.
 
 * `--apiver`
 
-  Specify the API version used in the current command. The default version is v3. The only other supported version is v2.  
+  Specify the API version used in the current command. The default version is v3. The only other supported version is v2.
 
 * `--fmt, -f`
 
-  Output format of the command. Valid values are: _raw_, _json_. Not all commands support this flag.  
+  Output format of the command. Valid values are: _raw_, _json_. Not all commands support this flag.
 
 * `--out, -o`
 
-  Full path of the file to write the command output. Not all commands support this flag.  
+  Full path of the file to write the command output. Not all commands support this flag.
 
 * `--indent`
 
-  Padding/indentation \(or the number of whitespaces to be added\) when the output format used is _json_. By default, this is set to 2.  
+  Padding/indentation \(or the number of whitespaces to be added\) when the output format used is _json_. By default, this is set to 2.
 
 * `--timeout`
 
-   The timeout value \(in seconds\) for the command's http request \(if applicable\). By default, this is set to 120 seconds.  
+  The timeout value \(in seconds\) for the command's http request \(if applicable\). By default, this is set to 120 seconds.
 
 * `--verbose`
 
-  When set to true, the command will print additional information during the command's execution.  
+  When set to true, the command will print additional information during the command's execution.
 
 * `--debug`
 
@@ -134,7 +134,7 @@ $ mobingi login --client-id foo --client-secret bar
 
 ## Commands
 
-### login <a id="login"></a>
+### login  <a id="login"></a>
 
 Log in to Mobingi.
 
@@ -142,23 +142,23 @@ Log in to Mobingi.
 
 * `--client-id, -i`
 
-  Your Mobingi client id.  
+  Your Mobingi client id.
 
-* `--client-secret, -s` 
+* `--client-secret, -s`
 
-  Your Mobingi client secret.  
+  Your Mobingi client secret.
 
 * `--grant-type, -g`
 
-  Grant type. Default value is "password".  
+  Grant type. Default value is "password".
 
 * `--username, -u`
 
-  Username. You can use your main \(master\) account to login as root. Or you can use any subuser name.  
+  Username. You can use your main \(master\) account to login as root. Or you can use any subuser name.
 
-* `--password, -p` 
+* `--password, -p`
 
-  Password  
+  Password
 
 * `--endpoints`
 
@@ -181,7 +181,7 @@ Password: xxxx
 [mobingi]: info: Login successful.
 ```
 
-If login is successful, cli will create a file _`config.yml`_ under _`$HOME/.mobingi/`_ folder that will contain the configuration values set during login. Cli will also attempt to store your credentials in the platform's native store \(i.e. Keychain for OSX\), if available. If not successful, the retrieved token during login will be saved in the _config.yml_ file. This token has an expiration so you will probably need to relogin at some point when this happens.
+If login is successful, cli will create a file `config.yml` under `$HOME/.mobingi/` folder that will contain the configuration values set during login. Cli will also attempt to store your credentials in the platform's native store \(i.e. Keychain for OSX\), if available. If not successful, the retrieved token during login will be saved in the _config.yml_ file. This token has an expiration so you will probably need to relogin at some point when this happens.
 
 For Windows and OSX, cli can use the native credential store directly; wincred for Windows, Keychain for OSX. For Linux, cli uses [pass](https://www.passwordstore.org/) as storage. The following is an example of how to setup pass in Ubuntu systems.
 
@@ -216,7 +216,7 @@ $ mobingi login --client-id foo --client-secret bar --username subuser01 --passw
 [mobingi]: info: Login successful.
 ```
 
-### stack list <a id="stack-list"></a>
+### stack list  <a id="stack-list"></a>
 
 List your stacks.
 
@@ -229,7 +229,7 @@ mo-58c2297d25645-q38pTmeey-tk     small lunch behave           AWS          CREA
 mo-58c2297d25645-PxviFSJQV-tk     chronic leaflet flourish     AWS          CREATE_COMPLETE     ...
 ```
 
-### stack describe <a id="stack-describe"></a>
+### stack describe  <a id="stack-describe"></a>
 
 Describe a stack.
 
@@ -269,7 +269,7 @@ $ mobingi stack describe --id mo-58c2297d25645-PxviFSJQV-tk
 }
 ```
 
-### stack create <a id="stack-create"></a>
+### stack create  <a id="stack-create"></a>
 
 Create a stack.
 
@@ -277,117 +277,117 @@ Create a stack.
 
 * `--alm-template`
 
-  Path to your ALM template. This is required in v3.  
+  Path to your ALM template. This is required in v3.
 
 * `--vendor`
 
-  Stack vendor. For now, only AWS is supported.  
+  Stack vendor. For now, only AWS is supported.
 
 * `--cred`
 
-  Your vendor credential ID. If not set, cli will try to get your list of credentials and use the first one in the list, if not empty.  
+  Your vendor credential ID. If not set, cli will try to get your list of credentials and use the first one in the list, if not empty.
 
 * `--region`
 
-  Region code. By default, this is set to _ap-northeast-1_ \(Tokyo\).  
+  Region code. By default, this is set to _ap-northeast-1_ \(Tokyo\).
 
-* `--nickname` 
+* `--nickname`
 
-  Your stack's nickname.  
+  Your stack's nickname.
 
 * `--arch`
 
-  Stack type. Valid values are: "art\_single", "art\_elb". By default, this is set to "art\_elb".  
+  Stack type. Valid values are: "art\_single", "art\_elb". By default, this is set to "art\_elb".
 
-* `--type` 
+* `--type`
 
-  Instance type. By default, this is set to _m3.medium_.  
+  Instance type. By default, this is set to _m3.medium_.
 
 * `--image`
 
-  Docker registry path to deploy. If you are using _hub.docker.com_, you can omit the domain part \(ex. _grayltc/lamp_\). Otherwise, specify the full path \(ex. _registry.mobingi.com/wayland/lamp_\). By default, this is set to _mobingi/ubuntu-apache2-php7:7.1_.  
+  Docker registry path to deploy. If you are using _hub.docker.com_, you can omit the domain part \(ex. _grayltc/lamp_\). Otherwise, specify the full path \(ex. _registry.mobingi.com/wayland/lamp_\). By default, this is set to _mobingi/ubuntu-apache2-php7:7.1_.
 
 * `--dhub-user`
 
-  Your Docker hub username if repository is private.  
+  Your Docker hub username if repository is private.
 
 * `--dbuh-pass`
 
-  Your Docker hub password if repository is private.  
+  Your Docker hub password if repository is private.
 
 * `--min`
 
-  Minimum number of instances in your autoscaling group when --arch is set to art\_elb. By default, this is set to 2.  
+  Minimum number of instances in your autoscaling group when --arch is set to art\_elb. By default, this is set to 2.
 
-* `--max` 
+* `--max`
 
-  Maximum number of instances in your autoscaling group when --arch is set to art\_elb. By default, this is set to 10.  
+  Maximum number of instances in your autoscaling group when --arch is set to art\_elb. By default, this is set to 10.
 
-* `--spot-range` 
+* `--spot-range`
 
-  Percentage of spot instance to deploy to autoscaling group. For example, if you have a total of 20 instances running and your spot range is 50 \(50%\), then there will be a fleet of 10 spot instances and 10 on-demand instances. By default, this is set to 50.  
+  Percentage of spot instance to deploy to autoscaling group. For example, if you have a total of 20 instances running and your spot range is 50 \(50%\), then there will be a fleet of 10 spot instances and 10 on-demand instances. By default, this is set to 50.
 
 * `--code`
 
-  Your git repository url. This can be updated anytime. By default, this is set to _github.com/mobingilabs/default-site-php_.  
+  Your git repository url. This can be updated anytime. By default, this is set to _github.com/mobingilabs/default-site-php_.
 
-* `--code-ref` 
+* `--code-ref`
 
-  Repository branch. By default, this is set to _master_.  
+  Repository branch. By default, this is set to _master_.
 
 * `--code-privkey`
 
-  Private key if git repository is private.  
+  Private key if git repository is private.
 
 * `--usedb`
 
-  Set to true if you want to deploy a database.  
+  Set to true if you want to deploy a database.
 
 * `--dbengine`
 
-  Your database engine. Valid values are: "db\_mysql", "db\_postgresql". Requires --usedb flag.  
+  Your database engine. Valid values are: "db\_mysql", "db\_postgresql". Requires --usedb flag.
 
 * `--dbtype`
 
-  Database instance/class type. Requires --usedb flag.  
+  Database instance/class type. Requires --usedb flag.
 
 * `--dbstorage`
 
-  Database storage in GB. Set between 5 to 6144. Requires --usedb flag.  
+  Database storage in GB. Set between 5 to 6144. Requires --usedb flag.
 
 * `--dbread-replica1`
 
-  Read replica 1. Requires --usedb flag.  
+  Read replica 1. Requires --usedb flag.
 
-* `--dbread-replica2` 
+* `--dbread-replica2`
 
-  Read replica 2. Requires --usedb flag.  
+  Read replica 2. Requires --usedb flag.
 
-* `--dbread-replica3` 
+* `--dbread-replica3`
 
-  Read replica 3. Requires --usedb flag.  
+  Read replica 3. Requires --usedb flag.
 
 * `--dbread-replica4`
 
-  Read replica 4. Requires --usedb flag.  
+  Read replica 4. Requires --usedb flag.
 
-* `--dbread-replica5` 
+* `--dbread-replica5`
 
-  Read replica 5. Requires --usedb flag.  
+  Read replica 5. Requires --usedb flag.
 
 * `--use-elasticache`
 
-  Set to true if you want to use elasticache.  
+  Set to true if you want to use elasticache.
 
-* `--elasticache-engine` 
+* `--elasticache-engine`
 
-  Either _Redis_ or _Memcached_. Requires --use-elasticache flag.  
+  Either _Redis_ or _Memcached_. Requires --use-elasticache flag.
 
 * `--elasticache-nodetype`
 
-  Elasticache node size. For example, _cache.r3.large_. Requires --use-elasticache flag.  
+  Elasticache node size. For example, _cache.r3.large_. Requires --use-elasticache flag.
 
-* `--elasticache-nodecount` 
+* `--elasticache-nodecount`
 
   If Redis, range is 1 to 6. If Memcached, range is 1 to 20. Requires --use-elasticache flag.
 
@@ -449,7 +449,7 @@ $ mobingi stack create --nickname=sample --apiver=v2
 $ mobingi stack create --nickname=sample --min=2 --max=2 --apiver=v2
 ```
 
-### stack update <a id="stack-update"></a>
+### stack update  <a id="stack-update"></a>
 
 Update an existing stack.
 
@@ -457,23 +457,23 @@ Update an existing stack.
 
 * `--alm-template`
 
-  Path to your updated ALM template file. Required in v3.  
+  Path to your updated ALM template file. Required in v3.
 
-* `--id` 
+* `--id`
 
-  The stack id to update.  
+  The stack id to update.
 
 * `--type`
 
-  Instance type. See stack create command for more information.  
+  Instance type. See stack create command for more information.
 
-* `--min` 
+* `--min`
 
-  Minimum number of instances in your autoscaling group. See stack create command for more information.  
+  Minimum number of instances in your autoscaling group. See stack create command for more information.
 
 * `--max`
 
-  Maximum number of instances in your autoscaling group. See stack create command for more information.  
+  Maximum number of instances in your autoscaling group. See stack create command for more information.
 
 * `--spot-range`
 
@@ -504,7 +504,7 @@ $ mobingi stack update --id=foo --min=5 --max=20 --apiver=v2
 $ mobingi stack update --id=foo --spot-range=25 --apiver=v2
 ```
 
-### stack delete <a id="stack-delete"></a>
+### stack delete  <a id="stack-delete"></a>
 
 Delete a stack.
 
@@ -524,27 +524,27 @@ $ mobingi stack delete --id mo-58c2297d25645-GbdINZdY-tk
 }
 ```
 
-### stack ssh <a id="stack-ssh"></a>
+### stack ssh  <a id="stack-ssh"></a>
 
 Try to establish an ssh connection to your instances.
 
 **Flags**
 
-* `--id` 
+* `--id`
 
-  The stack id the instance belongs to.  
+  The stack id the instance belongs to.
 
 * `--ip`
 
-  The IP address of the instance you want to connect.  
+  The IP address of the instance you want to connect.
 
-* `--flag` 
+* `--flag`
 
-  The configuration flag.  
+  The configuration flag.
 
 * `--user`
 
-  The ssh username. By default, this is set to _ec2-user_. Set to _root_ when vendor is Alibaba Cloud.  
+  The ssh username. By default, this is set to _ec2-user_. Set to _root_ when vendor is Alibaba Cloud.
 
 * `--browser`
 
@@ -567,7 +567,7 @@ $ mobingi stack ssh --id mo-58c2297d25645-Sd2aHRDq0-tk --ip 54.238.234.202 --fla
 https://sesha3.mobingi.com:port/some-random-link/
 ```
 
-### stack exec <a id="stack-exec"></a>
+### stack exec  <a id="stack-exec"></a>
 
 Try to execute a bash script to one or more instances.
 
@@ -575,7 +575,7 @@ Try to execute a bash script to one or more instances.
 
 * `--target`
 
-  The target instance to execute the script. The format is stack-id\|ip:flag. This flag can be specified more than once.  
+  The target instance to execute the script. The format is stack-id\|ip:flag. This flag can be specified more than once.
 
 * `--script`
 
@@ -668,7 +668,7 @@ LESS_TERMCAP_se=
 _=/bin/env
 ```
 
-### stack pem <a id="stack-pem"></a>
+### stack pem  <a id="stack-pem"></a>
 
 Print the stack's pem file \(and save to file optionally\), if available. Useful if you want to connect to your instances using other tools.
 
@@ -676,7 +676,7 @@ Print the stack's pem file \(and save to file optionally\), if available. Useful
 
 * `--id`
 
-  The stack id to query.  
+  The stack id to query.
 
 * `--flag`
 
@@ -709,13 +709,13 @@ ITvktdL9OMT0RXjZ4qKq+aifaY9D0XzbR3HWLFcWZ+0tmzUTJDM8F6LivsPUjR8uitiic7KXvlDV
 $ ssh -i ~/test.pem user@ipaddr
 ```
 
-### template versions <a id="template-versions"></a>
+### template versions  <a id="template-versions"></a>
 
 List available template versions of a stack.
 
 **Flags**
 
-* `--id` 
+* `--id`
 
   The stack id owning the template versions to be listed.
 
@@ -734,7 +734,7 @@ jbyW_PxMAauQmOS31dUhij4KIqHAtqW2     true       Wed, 30 Aug 2017 02:32:43 UTC   
 1xoPd.cg3juHK94vC8IdUh1bexx7sQ1T     false      Tue, 29 Aug 2017 09:47:50 UTC     453
 ```
 
-### template compare <a id="template-compare"></a>
+### template compare  <a id="template-compare"></a>
 
 Compare two template versions.
 
@@ -744,21 +744,21 @@ You can compare template versions from the same stack, versions from different s
 
 * `--src-sid`
 
-  The stack id of the first \(or source\) template. This flag is required.  
+  The stack id of the first \(or source\) template. This flag is required.
 
 * `--src-vid`
 
-  The version id of the first \(or source\) template. This flag is required.  
+  The version id of the first \(or source\) template. This flag is required.
 
-* `--tgt-sid` 
+* `--tgt-sid`
 
-  The stack id of the second \(or target\) template. If not set, cli will assume you are comparing templates of the same stack.  
+  The stack id of the second \(or target\) template. If not set, cli will assume you are comparing templates of the same stack.
 
-* `--tgt-vid` 
+* `--tgt-vid`
 
-  The version id of the second \(or target\) template. This flag is required if you are not providing the --tgt-body flag.  
+  The version id of the second \(or target\) template. This flag is required if you are not providing the --tgt-body flag.
 
-* `--tgt-body` 
+* `--tgt-body`
 
   Path of the template file you want to compare to the first \(or source\) template. If you set this flag, do not set the --tgt-sid and the --tgt-vid flags as they are ignored.
 
@@ -794,7 +794,7 @@ $ mobingi template compare --src-sid mo-58c2297d25645-PxviFSJQV-tk \
 }
 ```
 
-### rbac describe <a id="rbac-describe"></a>
+### rbac describe  <a id="rbac-describe"></a>
 
 List all defined role\(s\) or per-user role\(s\). Only your root account has the permissions to run this command.
 
@@ -802,11 +802,11 @@ If --user is not provided, this command will list all defined roles.
 
 **Flags**
 
-* `--user` 
+* `--user`
 
   Subuser name. Optional.
 
-### rbac sample <a id="rbac-sample"></a>
+### rbac sample  <a id="rbac-sample"></a>
 
 Print a sample role.
 
@@ -842,7 +842,7 @@ $ mobingi rbac sample --out=/home/user/sample.json
 [mobingi]: info: sample written to /home/user/sample.json
 ```
 
-### rbac create <a id="rbac-create"></a>
+### rbac create  <a id="rbac-create"></a>
 
 Define a role.
 
@@ -850,15 +850,15 @@ Define a role.
 
 * `--type`
 
-  Create type. Valid values are _role_ and _user_. Default is _role_.  
+  Create type. Valid values are _role_ and _user_. Default is _role_.
 
 * `--name`
 
-  Role name when --type is _role_.  
+  Role name when --type is _role_.
 
 * `--scope`
 
-  Path to role file.  
+  Path to role file.
 
 * `--allow-all`
 
@@ -876,7 +876,7 @@ $ mobingi rbac create --name testrole --scope /home/user/sample.json
 }
 ```
 
-### rbac attach <a id="rbac-attach"></a>
+### rbac attach  <a id="rbac-attach"></a>
 
 Attach a role to a user.
 
@@ -884,7 +884,7 @@ Attach a role to a user.
 
 * `--user`
 
-  The subuser name to attach the role to.  
+  The subuser name to attach the role to.
 
 * `--role-id`
 
@@ -901,23 +901,23 @@ $ mobingi rbac attach --user subuser --role-id morole-58c2297d25645-BtXGMSRsI
 }
 ```
 
-### rbac delete <a id="rbac-delete"></a>
+### rbac delete  <a id="rbac-delete"></a>
 
 Delete a role.
 
 **Flags**
 
-* `--role-id` 
+* `--role-id`
 
   The role id to delete. You can get the role id from the _describe_ command.
 
-### svrconf show <a id="svrconf-show"></a>
+### svrconf show  <a id="svrconf-show"></a>
 
 Show a stack's serverconfig \(server configuration\) contents. Starting from v3, server config options are replaced by ALM templates. The following commands are still valid for v2.
 
 **Flags**
 
-* `--id` 
+* `--id`
 
   The stack id to query.
 
@@ -927,17 +927,17 @@ Example:
 $ mobingi svrconf show --id=foo --apiver=v2
 ```
 
-### svrconf update <a id="svrconf-update"></a>
+### svrconf update  <a id="svrconf-update"></a>
 
 Update a stack's serverconfig \(server configuration\).
 
 **Flags**
 
-* `--id` 
+* `--id`
 
-  The stack id to update.  
+  The stack id to update.
 
-* `--env`  A comma-separated key/value pair\(s\) for environment variables. If you have whitespaces in the input, enclose it with double quotes. You can also set this flag to "null" to clear all environment variables. 
+* `--env` A comma-separated key/value pair\(s\) for environment variables. If you have whitespaces in the input, enclose it with double quotes. You can also set this flag to "null" to clear all environment variables.
 * `--filepath`
 
   New filepath value if you want to update your filepath.
@@ -955,13 +955,13 @@ $ mobingi svrconf update --id=foo --filepath=git://github.com/mobingilabs/defaul
 
 Note that when you provide update options simultaneously \(for example, you provide `--env=FOO:bar` and `--filepath=test` at the same time\), the tool will send each option as a separate request.
 
-### creds list <a id="creds-view"></a>
+### creds list  <a id="creds-view"></a>
 
 List vendor credentials.
 
 **Flags**
 
-* `--vendor` 
+* `--vendor`
 
   The vendor to list credentials. Valid values: _aws_, _alicloud_. Default value is _aws_.
 
@@ -973,7 +973,7 @@ VENDOR     ID                       ACCOUNT     LAST MODIFIED
 aws        xxxxxxxxxxxxxxxxxxxx     user        Wed, 05 Jul 2017 07:52:14 UTC
 ```
 
-### registry catalog <a id="registry-list-catalog"></a>
+### registry catalog  <a id="registry-list-catalog"></a>
 
 List images under logged in username.
 
@@ -985,17 +985,17 @@ Registry related commands will use the login user/password credentials, if nativ
 
 * `--username`
 
-  Username \(Mobingi account subuser\)  
+  Username \(Mobingi account subuser\)
 
-* `--password` 
+* `--password`
 
-  Password \(Mobingi account subuser\)  
+  Password \(Mobingi account subuser\)
 
-* `--service` 
+* `--service`
 
-   Authentication service. By default, this is set to "Mobingi Docker Registry".  
+  Authentication service. By default, this is set to "Mobingi Docker Registry".
 
-* `--scope` 
+* `--scope`
 
   Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.
 
@@ -1013,27 +1013,27 @@ $ mobingi registry catalog --username=subuser01 --password=xxxxxx
 subuser01/foo
 ```
 
-### registry tags <a id="registry-list-tags"></a>
+### registry tags  <a id="registry-list-tags"></a>
 
 List image tags.
 
 **Flags**
 
-* `--username` 
+* `--username`
 
-  Username \(Mobingi account subuser\)  
+  Username \(Mobingi account subuser\)
 
 * `--password`
 
-  Password \(Mobingi account subuser\)  
+  Password \(Mobingi account subuser\)
 
 * `--service`
 
-  Authentication service. By default, this is set to "Mobingi Docker Registry".  
+  Authentication service. By default, this is set to "Mobingi Docker Registry".
 
 * `--scope`
 
-  Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.  
+  Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.
 
 * `--image`
 
@@ -1048,7 +1048,7 @@ subuser01/foo           latest
 subuser01/foo           2.1
 ```
 
-### registry manifest <a id="registry-tag-manifest"></a>
+### registry manifest  <a id="registry-tag-manifest"></a>
 
 Display a tag's manifest.
 
@@ -1056,19 +1056,19 @@ Display a tag's manifest.
 
 * `--username`
 
-  Username \(Mobingi account subuser\)  
+  Username \(Mobingi account subuser\)
 
 * `--password`
 
-  Password \(Mobingi account subuser\)  
+  Password \(Mobingi account subuser\)
 
 * `--service`
 
-  Authentication service. By default, this is set to "Mobingi Docker Registry".  
+  Authentication service. By default, this is set to "Mobingi Docker Registry".
 
 * `--scope`
 
-  Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.  
+  Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.
 
 * `--image`
 
@@ -1110,27 +1110,27 @@ $ mobingi registry manifest --image foo:latest
 }
 ```
 
-### command: registry delete <a id="registry-tag-delete"></a>
+### command: registry delete  <a id="registry-tag-delete"></a>
 
 Delete a tag.
 
 **Flags**
 
-* `--username` 
+* `--username`
 
-  Username \(Mobingi account subuser\)  
+  Username \(Mobingi account subuser\)
 
 * `--password`
 
-  Password \(Mobingi account subuser\)  
+  Password \(Mobingi account subuser\)
 
 * `--service`
 
-  Authentication service. By default, this is set to "Mobingi Docker Registry".  
+  Authentication service. By default, this is set to "Mobingi Docker Registry".
 
 * `--scope`
 
-  Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.  
+  Authentication scope. See [https://docs.docker.com/registry/spec/auth/scope/](https://docs.docker.com/registry/spec/auth/scope/) for more information on scopes.
 
 * `--image`
 
@@ -1143,7 +1143,7 @@ $ mobingi registry delete --username=subuser1 --password=xxxxxx \
       --image=foo:latest --apiver=v2
 ```
 
-### registry token <a id="registry-get-token"></a>
+### registry token  <a id="registry-get-token"></a>
 
 Get an access token for Mobingi Docker Registry access.
 
@@ -1151,15 +1151,15 @@ Get an access token for Mobingi Docker Registry access.
 
 * `--username`
 
-  Username \(Mobingi account subuser\)  
+  Username \(Mobingi account subuser\)
 
 * `--password`
 
-  Password \(Mobingi account subuser\)  
+  Password \(Mobingi account subuser\)
 
-* `--service` 
+* `--service`
 
-  Authentication service. By default, this is set to "Mobingi Docker Registry".  
+  Authentication service. By default, this is set to "Mobingi Docker Registry".
 
 * `--scope`
 
@@ -1183,7 +1183,7 @@ $ curl -H "Authorization: Bearer token" \
       https://registry.mobingi.com/v2/foo/container/manifests/latest
 ```
 
-### reset <a id="reset"></a>
+### reset  <a id="reset"></a>
 
 Reset all configuration values to default. It will also delete all credential information stored in the platform's native store.
 
@@ -1202,7 +1202,7 @@ verbose: false
 debug: false
 ```
 
-### version <a id="version"></a>
+### version  <a id="version"></a>
 
 Prints the cli version.
 

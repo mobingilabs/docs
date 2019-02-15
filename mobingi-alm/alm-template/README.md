@@ -8,5 +8,3 @@
 
 {% page-ref page="example-alm-templates.md" %}
 
-
-
