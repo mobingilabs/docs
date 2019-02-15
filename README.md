@@ -16,11 +16,16 @@ Below are the links to Mobingi products' dashboards.
 | Wave dashboard | [https://app.mobingi.com/wave/](https://app.mobingi.com/wave/) |
 | Ripple dashboard | [https://ripple.mobingi.com/](https://ripple.mobingi.com/) |
 
-For more information, please visit relevant links below.
+For more information about Mobingi in general, please visit relevant links below.
 
 | Link | Description |
 | :--- | :--- |
 | [https://mobingi.com/](https://mobingi.com/) | English website |
 | [https://mobingi.com/jp/](https://mobingi.com/jp/) | Japanese website |
 | [https://corp.mobingi.com/](https://corp.mobingi.com/) | Corporate website |
+| [http://blog.mobingi.co.jp/](http://blog.mobingi.co.jp/) | Mobingi blog \(Japanese\) |
+| [https://labs.mobingi.com/](https://labs.mobingi.com/) | Tech blog \(Japanese\) |
+| [https://tech.mobingi.com/](https://tech.mobingi.com/) | Tech blog \(English\) |
+| [https://github.com/mobingi/](https://github.com/mobingi/) | GitHub \(main\) |
+| [https://github.com/mobingilabs/](https://github.com/mobingilabs/) | GitHub \(labs\) |
 
