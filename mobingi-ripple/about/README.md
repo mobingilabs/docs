@@ -22,14 +22,9 @@ description: Mobingi Rippleの基本的な機能についての説明です。
 
 Mobingi Ripple \([https://ripple.mobingi.com/login](https://ripple.mobingi.com/login)）の主な機能である「請求グループ」「アカウント」「請求書」「Wave for Reseller」についてご説明します。
 
-{% page-ref="account.md" %}
+{% page-ref page="./" %}
 
-{% page-ref="invoice.md" %}
+{% page-ref page="./" %}
 
-{% page-ref="wave-for-reseller.md" %}
+{% page-ref page="./" %}
 
-
-
-{% page="wave-for-reseller.md" %}
-{% page="wave-for-reseller.md" %}
-{% page="wave-for-reseller.md" %}
