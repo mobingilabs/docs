@@ -6,7 +6,7 @@ We are in the process of updating the current template to a new version suited f
 
 ## What is ALM Template?
 
-### Concepts <a id="concepts"></a>
+### Concepts  <a id="concepts"></a>
 
 * ALM Template is a JSON-formatted configuration file which defines your cloud-native application's architecture design and runtime configuration.
 * ALM Template is cloud platform agnostic. You write your template once and it works on any cloud platforms such as AWS, GCP, Azure, AliCloud, etc.
@@ -29,6 +29,4 @@ Official YAML format support is in-progress.
 ## ALM Template components
 
 ALM Template top-level components consist of `version`, `label`, `description`, `vendor`, `configurations`. For more information about these components, see the reference section.
-
-
 
