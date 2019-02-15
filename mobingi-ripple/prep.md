@@ -1,7 +1,3 @@
----
-description: Wave を導入するにあたっての準備です。
----
-
 # 事前準備
 
 * モビンギのHourlyレポート解析を有効にするために、お客様のAWSアカウントで実施する必要がある作業と、モビンギに提出する情報について記述します。
@@ -126,7 +122,9 @@ AWSのマネジメントコンソールから、IAMサービスを開き、『�
 }
 ```
 
-![](../.gitbook/assets/role_004.png)
+![](../.gitbook/assets/create-policy-ja.png)
+
+![](../.gitbook/assets/create-policy-example-ja.png)
 
 「ポリシーの確認」へ進み、以下の項目を入力してポリシーを作成します。
 
@@ -151,3 +149,4 @@ AWSのマネジメントコンソールから、IAMサービスを開き、『�
 作成したロールのARNを控えます。
 
 ![](../.gitbook/assets/role_008-1.png)
+

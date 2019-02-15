@@ -1,18 +1,20 @@
 # Table of contents
 
-* [Mobingi Wave 公式ユーザーガイド](README.md)
+* [Mobingi Ripple よくあるご質問](README.md)
 
-## Mobingi Wave
+## MOBINGI RIPPLE
 
-* [事前準備](mobingi-wave/prep.md)
-* [Mobingi Wave 概要](mobingi-wave/about-wave/README.md)
-  * [レポート](mobingi-wave/about-wave/usage-reports.md)
-  * [リザーブドインスタンス](mobingi-wave/about-wave/reserved-instances.md)
-  * [請求書](mobingi-wave/about-wave/invoice.md)
-* [明細の確認方法](mobingi-wave/detail-check.md)
-* [一時金の確認](mobingi-wave/a-lump-sum.md)
-* [タグ機能の有効化](mobingi-wave/tag-report.md)
-* [レポートとCSVの見方](mobingi-wave/report-csv.md)
-* [割引と為替の適用](mobingi-wave/apply-jpy.md)
-* [各種設定・変更](mobingi-wave/settings.md)
-
+* [Mobingi Ripple でできること](mobingi-ripple/mobingi-ripple-toha.md)
+* [事前準備](mobingi-ripple/prep.md)
+* [Mobingi Ripple 概要](mobingi-ripple/about/README.md)
+  * [請求グループ](mobingi-ripple/about/billing-group.md)
+  * [アカウント](mobingi-ripple/about/account.md)
+  * [請求書](mobingi-ripple/about/invoice.md)
+  * [Wave for Reseller](mobingi-ripple/about/wave-for-reseller.md)
+* [請求書を発行する](mobingi-ripple/invoicing.md)
+* [ショットの費用を請求に含める](mobingi-ripple/fee.md)
+* [新規顧客を追加する](mobingi-ripple/new-customer.md)
+* [RI のアロケーション変更](mobingi-ripple/change-ri.md)
+* [タグでの請求データ作成](mobingi-ripple/tag-invoice.md)
+* [FAQ](mobingi-ripple/faq.md)
+* [Hourlyレポートへの変更（AWS）](mobingi-ripple/change-hourly.md)

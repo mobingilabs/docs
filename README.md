@@ -2,15 +2,8 @@
 description: Mobingi Waveの公式ユーザーガイドです。
 ---
 
-# Mobingi Wave 公式ユーザーガイド
+# Mobingi Ripple よくあるご質問
 
-Mobingi Wave を利用するための事前準備から、UIの基本的な操作方法などを説明しています。
+よくあるご質問をまとめて掲載しています。
 
-機能の追加・変更に合わせてこのユーザーガイドはアップデートされます。
-
-左のメニューから読みたい項目を選択してください。
-
-Mobingi Wave: [https://app.mobingi.com/wave](https://app.mobingi.com/wave).
-
-本ユーザーガイドで解決できない場合は support@mobingi.com までお気軽にお問い合わせください。
-
+直接サポートが必要な場合はripple\_cs@mobingi.comまでお気軽にお問い合わせください。
