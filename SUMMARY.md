@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Mobingi Documentation](README.md)
+* [Get Started](README.md)
 
