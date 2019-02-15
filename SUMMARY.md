@@ -15,7 +15,6 @@
   * [Adding Fujitsu K5 account](mobingi-alm/getting-started/adding-fujitsu-k5-account.md)
 * [ALM Template](mobingi-alm/alm-template/README.md)
   * [What is ALM Template?](mobingi-alm/alm-template/what-is-alm-template.md)
-  * [Reference \(2018-07-02\)](mobingi-alm/alm-template/reference-2018-07-02.md)
   * [Reference \(2017-03-03\)](mobingi-alm/alm-template/reference-2017-03-03.md)
   * [ALM Template Language](mobingi-alm/alm-template/alm-template-language.md)
   * [Example ALM Templates](mobingi-alm/alm-template/example-alm-templates.md)
