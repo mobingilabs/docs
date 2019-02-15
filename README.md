@@ -1,16 +1,10 @@
 ---
-description: Mobingi Documentation
+description: Mobingi Waveの公式ユーザーガイドです。
 ---
 
-# Mobingi Documentation
+# Mobingi Ripple よくあるご質問
 
-Welcome to Mobingi's official documentation! This documentation covers all references to all available features and options of all Mobingi products.
+よくあるご質問をまとめて掲載しています。
 
-To get started with ALM, please visit [https://alm.mobingi.com](https://alm.mobingi.com).
-
-To get started with Wave, please visit [https://wave.mobingi.com](https://wave.mobingi.com).
-
-If you are looking for the old \(v2\) documentations for ALM, you can use the dropdown menu on the upper left hand corner of this page.
-
-For general information about Mobingi, please visit our website [https://mobingi.com](https://mobingi.com).
+直接サポートが必要な場合はripple\_cs@mobingi.comまでお気軽にお問い合わせください。
 
