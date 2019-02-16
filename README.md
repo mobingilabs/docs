@@ -1,3 +1,9 @@
+---
+description: Mobingi Documentation
+---
+
+# Reference
+
 ## Overview
 
 mobingi is the official command line interface for Mobingi API and services.
@@ -1208,3 +1214,4 @@ Prints the cli version.
 $ mobingi version
 v0.2.3-beta
 ```
+

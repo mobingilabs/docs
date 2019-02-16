@@ -1,5 +1,5 @@
 # Table of contents
 
-* [What is ALM?](README.md)
+* [Reference](README.md)
 * [Reference](reference.md)
 
