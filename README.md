@@ -2,30 +2,19 @@
 description: Mobingi Documentation
 ---
 
-# Get Started
+# What is ALM?
 
-Welcome to Mobingi's official documentation! To get started, you can use the dropdown menu on the upper left hand corner of this page.
+## What is ALM?
 
-Below are the links to Mobingi products' dashboards.
+ALM \(_Application Lifecycle Management_\) is Mobingi's product offering that helps you manage the whole lifecycle of your application from provisioning to different cloud providers to application deployment and monitoring. At the moment, we support the following cloud providers:
 
-| Target | Link |
-| :--- | :--- |
-| Ocean dashboard | TBD |
-| ALM \(v3\) dashboard | [https://alm.mobingi.com/](https://alm.mobingi.com/) |
-| ALM \(v2\) dashboard | [https://console.mobingi.com/](https://console.mobingi.com/) |
-| Wave dashboard | [https://app.mobingi.com/wave/](https://app.mobingi.com/wave/) |
-| Ripple dashboard | [https://ripple.mobingi.com/](https://ripple.mobingi.com/) |
+* [Amazon Web Services \(AWS\)]()
+* [Microsoft Azure]()
+* [Alibaba Cloud]()
+* [Google Cloud Platform]()
+* [Fujitsu K5]()
 
-For more information about Mobingi in general, please visit relevant links below.
+We provide an [easy-to-use Web UI](https://alm.mobingi.com) for you to manage your infrastructure and deployments from the comfort of your browser. If you prefer a little bit of customization, please have a look at our [ALM Template](https://docs.mobingi.com/mobingi-alm/alm-template/what-is-alm-template) documentation.
 
-| Link | Description |
-| :--- | :--- |
-| [https://mobingi.com/](https://mobingi.com/) | English website |
-| [https://mobingi.com/jp/](https://mobingi.com/jp/) | Japanese website |
-| [https://corp.mobingi.com/](https://corp.mobingi.com/) | Corporate website |
-| [http://blog.mobingi.co.jp/](http://blog.mobingi.co.jp/) | Mobingi blog \(Japanese\) |
-| [https://labs.mobingi.com/](https://labs.mobingi.com/) | Tech blog \(Japanese\) |
-| [https://tech.mobingi.com/](https://tech.mobingi.com/) | Tech blog \(English\) |
-| [https://github.com/mobingi/](https://github.com/mobingi/) | GitHub \(main\) |
-| [https://github.com/mobingilabs/](https://github.com/mobingilabs/) | GitHub \(labs\) |
+For more information, please visit [https://mobingi.com/products/alm](https://mobingi.com/products/alm).
 
