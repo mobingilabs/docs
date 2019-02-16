@@ -1,4 +1,6 @@
 # Table of contents
 
-* [Reference](README.md)
+* [Overview](README.md)
+* [Global flags](global-flags.md)
+* [Commands](commands.md)
 
