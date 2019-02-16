@@ -1,4 +1,4 @@
-# Mobingi CLI Documentation
+# Reference
 
 ## Overview
 
@@ -94,7 +94,7 @@ $ mobingi login --client-id foo --client-secret bar
 
 * `--token`
 
-  The access token to use in the command. By default, mobingi will save your access token to the config file after login \(see [login](mobingi-cli-documentation.md#login) command\).
+  The access token to use in the command. By default, mobingi will save your access token to the config file after login \(see [login](reference.md#login) command\).
 
 * `--url`
 
