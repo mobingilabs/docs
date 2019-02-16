@@ -87,11 +87,11 @@ Use "mobingi stack [command] --help" for more information about a command.
 Global flags are all optional and can be applied to any subcommand. You can use '=' or whitespace when assigning a value to the flag. This applies to any command's local flags as well. For example, you can login using any of these commands:
 
 ```bash
-# using the '=' for assignment
+# Using the '=' for assignment
 $ mobingi login --client-id=foo --client-secret=bar
 [mobingi]: info: Login successful.
 
-# using whitespace for assignment
+# Using whitespace for assignment
 $ mobingi login --client-id foo --client-secret bar
 [mobingi]: info: Login successful.
 ```
@@ -171,15 +171,17 @@ Log in to Mobingi.
 This is the first command you need to run to use the other commands. To login, run
 
 ```bash
-# login as root
-$ mobingi login --client-id=foo --client-secret=bar --username=master@mobingi.com --password=1234
+# Login as root
+$ mobingi login --client-id=foo --client-secret=bar \
+    --username=master@mobingi.com --password=1234
 [mobingi]: info: Login successful.
 
-# login as subuser
-$ mobingi login --client-id=foo --client-secret=bar --username=subuser01 --password=pass
+# Login as subuser
+$ mobingi login --client-id=foo --client-secret=bar \
+    --username=subuser01 --password=pass
 [mobingi]: info: Login successful.
 
-# if you don't want to show your password, remove the --password flag
+# If you don't want to show your password, remove the --password flag
 $ mobingi login --client-id=foo --client-secret=bar --username=subuser01
 Password: xxxx
 [mobingi]: info: Login successful.
@@ -190,16 +192,17 @@ If login is successful, cli will create a file `config.yml` under `$HOME/.mobing
 For Windows and OSX, cli can use the native credential store directly; wincred for Windows, Keychain for OSX. For Linux, cli uses [pass](https://www.passwordstore.org/) as storage. The following is an example of how to setup pass in Ubuntu systems.
 
 ```bash
-# install pass
+# Install `pass`
 $ sudo apt-get install pass
 
-# generate your own key using gpg2, do not use a passphrase
+# Generate your own key using gpg2, do not use a passphrase
 $ gpg2 --gen-key
 
-# if the cmd seems stuck due to lack of entropy, you can open another window and run the ff cmd:
-# dd if=/dev/sda of=/dev/zero
+# If the cmd seems stuck due to lack of entropy, you can open
+# another window and run the ff cmd:
+# $ dd if=/dev/sda of=/dev/zero
 
-# list your keys
+# List your keys
 $ gpg2 --list-keys
 /home/user/.gnupg/pubring.kbx
 ------------------------------
@@ -207,16 +210,17 @@ pub   rsa2048/5486B0F6 2017-09-22 [SC]
 uid         [ultimate] IamGroot <iamgroot@mobingi.com>
 sub   rsa2048/CDC4C430 2017-09-22 [E]
 
-# initialize pass (use the pub key id)
+# Initialize pass (use the pub key id)
 $ pass init 5486B0F6
 
-# you can now do a mobingi login ...
+# You can now do a mobingi login ...
 ```
 
 By default, all endpoints are set to Mobingi production during login. You can use the --endpoints flag to target alternative endpoints. For example, if you have a Mobingi dev account, you can use the following login command:
 
 ```bash
-$ mobingi login --client-id foo --client-secret bar --username subuser01 --password 1234 --endpoints dev
+$ mobingi login --client-id foo --client-secret bar \
+    --username subuser01 --password 1234 --endpoints dev
 [mobingi]: info: Login successful.
 ```
 
@@ -228,9 +232,9 @@ Example:
 
 ```bash
 $ mobingi stack list
-STACK ID                          STACK NAME                   PLATFORM     STATUS              ...
-mo-58c2297d25645-q38pTmeey-tk     small lunch behave           AWS          CREATE_COMPLETE     ...
-mo-58c2297d25645-PxviFSJQV-tk     chronic leaflet flourish     AWS          CREATE_COMPLETE     ...
+STACK ID      STACK NAME                   PLATFORM     STATUS              ...
+mo-xxx-tk     small lunch behave           AWS          CREATE_COMPLETE     ...
+mo-xxx-tk     chronic leaflet flourish     AWS          CREATE_COMPLETE     ...
 ```
 
 ### stack describe  <a id="stack-describe"></a>
@@ -406,8 +410,8 @@ Starting in v3, we create stacks using ALM Templates. Below is an example of a v
   "description": "This template creates a sample stack with EC2 instance on AWS",
   "vendor": {
     "aws": {
-      "cred": "** Your AWS Security Key ID **",
-      "secret": "** Your AWS Security Key Secret, remove line if you have a Mobingi account **",
+      "cred": "Your AWS Security Key ID",
+      "secret": "Your AWS Security Key Secret",
       "region": "ap-northeast-1"
     }
   },
@@ -558,7 +562,8 @@ Examples:
 
 ```bash
 # open an ssh connection via cli
-$ mobingi stack ssh --id mo-58c2297d25645-Sd2aHRDq0-tk --ip 54.238.234.202 --flag web01
+$ mobingi stack ssh --id mo-58c2297d25645-Sd2aHRDq0-tk \
+    --ip 54.238.234.202 --flag web01
 [ec2-user@ip-10-0-1-96 ~]$ pwd
 /home/ec2-user
 [ec2-user@ip-10-0-1-96 ~]$ exit
@@ -566,7 +571,8 @@ logout
 Connection to 54.238.234.202 closed.
 
 # open an ssh connection using default browser
-$ mobingi stack ssh --id mo-58c2297d25645-Sd2aHRDq0-tk --ip 54.238.234.202 --flag web01 --browser
+$ mobingi stack ssh --id mo-58c2297d25645-Sd2aHRDq0-tk \
+    --ip 54.238.234.202 --flag web01 --browser
 [mobingi]: info: open link with a browser (if not opened automatically): \
 https://sesha3.mobingi.com:port/some-random-link/
 ```
@@ -588,7 +594,8 @@ Try to execute a bash script to one or more instances.
 Examples:
 
 ```bash
-# for example, we have a script with the following contents (stored in home folder as test.sh):
+# For example, we have a script with the following contents
+# (stored in home folder as test.sh):
 #!/bin/bash
 pwd
 uname -a
@@ -598,9 +605,9 @@ env
 $ mobingi stack exec \
     --target "mo-58c2297d25645-rkIEPmust-tk|root@47.74.5.170:Single" \
     --script ~/test.sh
-[mobingi]: info: [0]output: mo-58c2297d25645-rkIEPmust-tk, instance: root@47.74.5.170, flag: Single
+[mobingi]: info: [0]output: mo-58c2297d25645-rkIEPmust-tk, instance: ...
 /root
-Linux iZ6weeq9e4ktok8f9o2910Z 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+Linux iZ6weeq9e4ktok8f9o2910Z 3.10.0-514.26.2.el7.x86_64 #1 ...
 XDG_SESSION_ID=43623
 SHELL=/bin/bash
 SSH_CLIENT=54.238.178.1 45328 22
@@ -622,9 +629,9 @@ $ mobingi stack exec \
     --target "mo-58c2297d25645-rkIEPmust-tk|root@47.74.5.170:Single" \
     --target "mo-58c2297d25645-M5EIHEaOC-tk|ec2-user@13.230.9.8:web0" \
     --script ~/test.sh
-[mobingi]: info: [0]output: mo-58c2297d25645-rkIEPmust-tk, instance: root@47.74.5.170, flag: Single
+[mobingi]: info: [0]output: mo-58c2297d25645-rkIEPmust-tk, instance: ...
 /root
-Linux iZ6weeq9e4ktok8f9o2910Z 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+Linux iZ6weeq9e4ktok8f9o2910Z 3.10.0-514.26.2.el7.x86_64 #1 ...
 XDG_SESSION_ID=43631
 SHELL=/bin/bash
 SSH_CLIENT=54.238.178.1 45386 22
@@ -641,9 +648,9 @@ LESSOPEN=||/usr/bin/lesspipe.sh %s
 XDG_RUNTIME_DIR=/run/user/0
 _=/usr/bin/env
 
-[mobingi]: info: [1]output: mo-58c2297d25645-M5EIHEaOC-tk, instance: ec2-user@13.230.9.8, flag: web0
+[mobingi]: info: [1]output: mo-58c2297d25645-M5EIHEaOC-tk, instance: ...
 /home/ec2-user
-Linux ip-10-0-1-63 4.9.51-10.52.amzn1.x86_64 #1 SMP Fri Sep 29 01:16:19 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+Linux ip-10-0-1-63 4.9.51-10.52.amzn1.x86_64 #1 ...
 LESS_TERMCAP_mb=
 LESS_TERMCAP_md=
 LESS_TERMCAP_me=
@@ -728,9 +735,9 @@ Example:
 ```bash
 # list stacks first to get the stack id
 $ mobingi stack list
-STACK ID                          STACK NAME                   PLATFORM     STATUS              ...
-mo-58c2297d25645-q38pTmeey-tk     small lunch behave           AWS          CREATE_COMPLETE     ...
-mo-58c2297d25645-PxviFSJQV-tk     chronic leaflet flourish     AWS          CREATE_COMPLETE     ...
+STACK ID      STACK NAME                   PLATFORM     STATUS              ...
+mo-xxx-tk     small lunch behave           AWS          CREATE_COMPLETE     ...
+mo-xxx-tk     chronic leaflet flourish     AWS          CREATE_COMPLETE     ...
 # then list the template versions
 $ mobingi template versions --id mo-58c2297d25645-PxviFSJQV-tk
 VERSION ID                           LATEST     LAST MODIFIED                     SIZE
@@ -783,8 +790,8 @@ $ mobingi template compare --src-sid mo-58c2297d25645-PxviFSJQV-tk \
       "newvalue": "template version label #1 (update)"
     },
     "description": {
-      "oldvalue": "This template creates a sample stack with EC2 instance on AWS",
-      "newvalue": "This template creates a sample stack with EC2 instance on AWS (update)"
+      "oldvalue": "Creates a sample stack with EC2 instance on AWS",
+      "newvalue": "Creates a sample stack with EC2 instance on AWS (update)"
     },
     "configurations\/provision\/instance_type": {
       "oldvalue": "t2.micro",
@@ -950,11 +957,14 @@ Examples:
 
 ```bash
 # env examples
-$ mobingi svrconf update --id=foo --env=KEY1:value1,KEY2:value2,KEYx:valuex --apiver=v2
-$ mobingi svrconf update --id=foo --env="KEY1: value1, KEY2: value2, KEYx: valuex" --apiver=v2
+$ mobingi svrconf update --id=foo \
+    --env=KEY1:value1,KEY2:value2,KEYx:valuex --apiver=v2
+$ mobingi svrconf update --id=foo \
+    --env="KEY1: value1, KEY2: value2, KEYx: valuex" --apiver=v2
 $ mobingi svrconf update --id=foo --env=null --apiver=v2
 # filepath example
-$ mobingi svrconf update --id=foo --filepath=git://github.com/mobingilabs/default --apiver=v2
+$ mobingi svrconf update --id=foo \
+    --filepath=git://github.com/mobingilabs/default --apiver=v2
 ```
 
 Note that when you provide update options simultaneously \(for example, you provide `--env=FOO:bar` and `--filepath=test` at the same time\), the tool will send each option as a separate request.
@@ -1089,7 +1099,7 @@ $ mobingi registry manifest --image foo:latest
    "architecture": "amd64",
    "fsLayers": [
       {
-         "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+         "blobSum": "sha256:a3ed95caeb02ffe68..."
       },
       ...
    ],
