@@ -27,8 +27,6 @@
   * [Working with RBAC](rbac/working-with-rbac.md)
   * [Release history](rbac/release-history.md)
   * [Example RBAC roles](rbac/example-rbac-roles.md)
-* [CLI Reference](cli-reference/README.md)
-  * [Mobingi CLI Documentation](cli-reference/mobingi-cli-documentation.md)
 * [API Reference](api-reference/README.md)
   * [Overview](api-reference/overview.md)
   * [API Reference](api-reference/api-reference.md)
