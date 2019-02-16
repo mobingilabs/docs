@@ -6,7 +6,7 @@ description: Mobingi Documentation
 
 ## Overview
 
-mobingi is the official command line interface for Mobingi API and services.
+[mobingi](https://github.com/mobingi/mobingi) is the official command line interface for [Mobingi](https://mobingi.com/) API and services.
 
 To view a list of the available commands, just run mobingi without arguments:
 
@@ -98,7 +98,7 @@ $ mobingi login --client-id foo --client-secret bar
 
 * `--token`
 
-  The access token to use in the command. By default, mobingi will save your access token to the config file after login \(see [login](reference.md#login) command\).
+  The access token to use in the command. By default, mobingi will save your access token to the config file after login \(see [login]() command\).
 
 * `--url`
 
