@@ -10,7 +10,6 @@ Below are the links to Mobingi products' dashboards.
 
 | Target | Link |
 | :--- | :--- |
-| Ocean dashboard | TBD |
 | ALM \(v3\) dashboard | [https://alm.mobingi.com/](https://alm.mobingi.com/) |
 | ALM \(v2\) dashboard | [https://console.mobingi.com/](https://console.mobingi.com/) |
 | Wave dashboard | [https://app.mobingi.com/wave/](https://app.mobingi.com/wave/) |
