@@ -1,7 +1,5 @@
 # Deployments
 
-## Deployments
-
 #### Create a deployment
 
 ```http
