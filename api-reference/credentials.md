@@ -1,24 +1,24 @@
 # Credentials
 
-#### Create a deployment
+#### Create a credential
 
 ```http
 REQUEST
-POST /vendord/v0/deployments HTTP1.1
+POST /vendord/v0/credentials HTTP1.1
 Authorization: Bearer {token}
 
-{template body}
+{request body contents vary per provider}
 
 ---
 RESPONSE
 HTTP 202
 ```
 
-#### List deployments
+#### List credentials
 
 ```http
 REQUEST
-GET /vendord/v0/deployments HTTP1.1
+GET /vendord/v0/credentials[?vendor={vendor-name}] HTTP1.1
 Authorization: Bearer {token}
 
 ---
@@ -27,11 +27,11 @@ HTTP 200
 tbd
 ```
 
-#### Describe a deployment
+#### Describe a credential
 
 ```http
 REQUEST
-GET /vendord/v0/deployments/{id} HTTP1.1
+GET /vendord/v0/credentials/{id} HTTP1.1
 Authorization: Bearer {token}
 
 ---
@@ -40,11 +40,11 @@ HTTP 200
 tbd
 ```
 
-#### Delete a deployment
+#### Delete a credential
 
 ```text
 REQUEST
-DELETE /vendord/v0/deployments/{id} HTTP1.1
+DELETE /vendord/v0/credentials/{id} HTTP1.1
 Authorization: Bearer {token}
 
 ---
