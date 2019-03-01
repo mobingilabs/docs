@@ -13,9 +13,15 @@
 
 ![](../../.gitbook/assets/sukurnshotto-2019-02-13-155304.png)
 
-* **RI Recommendation - Utilizationタブ** 所有しているRIの適用状況が閲覧できます。
+* **RI Recommendation - Utilizationタブ**  
+  今現在稼働しているインスタンスの種類、及び適用状況が閲覧できます。  
+  選択した「Payer Account ID」の Organization 全体で選択月に稼働した全EC2インスタンスが表示されます。（**\*専有インスタンスは表示されません**）
 
-![](../../.gitbook/assets/sukurnshotto-2019-02-14-101938.png)
+
+
+  適用率という項目は稼働したインスタンス時間に対し、どの程度RIが適用されたかを指します。したがって、100%に近い程、RIが適用されており、「0%＝全てオンデマンドでの稼働」ということになります。
+
+![](../../.gitbook/assets/akaunto-mobingidocumentation.png)
 
 * **RI Recommendation - Recommendationタブ** 適用状況の実績から購入タイプ・量のレコメンドが閲覧できます。 　
   * リージョン：購入するべきリージョン
