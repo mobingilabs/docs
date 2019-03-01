@@ -1,6 +1,6 @@
 # Deployments
 
-#### Create a deployment
+## Create a deployment
 
 ```http
 REQUEST
@@ -14,7 +14,7 @@ RESPONSE
 HTTP 202
 ```
 
-#### List deployments
+## List deployments
 
 ```http
 REQUEST
@@ -27,7 +27,7 @@ HTTP 200
 tbd
 ```
 
-#### Describe a deployment
+## Describe a deployment
 
 ```http
 REQUEST
@@ -40,7 +40,7 @@ HTTP 200
 tbd
 ```
 
-#### Delete a deployment
+## Delete a deployment
 
 ```text
 REQUEST

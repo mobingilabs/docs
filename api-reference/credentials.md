@@ -1,6 +1,6 @@
 # Credentials
 
-#### Create a credential
+## Create a credential
 
 ```http
 REQUEST
@@ -14,7 +14,7 @@ RESPONSE
 HTTP 202
 ```
 
-#### List credentials
+## List credentials
 
 ```http
 REQUEST
@@ -27,7 +27,7 @@ HTTP 200
 tbd
 ```
 
-#### Describe a credential
+## Describe a credential
 
 ```http
 REQUEST
@@ -40,7 +40,7 @@ HTTP 200
 tbd
 ```
 
-#### Delete a credential
+## Delete a credential
 
 ```text
 REQUEST
@@ -51,3 +51,4 @@ Authorization: Bearer {token}
 RESPONSE
 HTTP 202
 ```
+
