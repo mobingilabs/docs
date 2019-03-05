@@ -19,7 +19,7 @@
 
 ![](../.gitbook/assets/reseller_profit.png)
 
-## Ripple と Wave
+## Mobingi Ripple と Mobingi Wave
 
 リセラーがRIppleに登録した内容を元に、適正な利用料金を計算し、エンドユーザーはWave上から請求内容を確認できます。
 
