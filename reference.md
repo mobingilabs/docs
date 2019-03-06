@@ -27,14 +27,14 @@ This page is still a work in progress.
 | ModifyTags | Allowed to modify tags. |
 | ViewTags | View tags only. |
 
-REQUEST
+#### Request
 
 ```http
 GET /rbac/permissions HTTP1.1
 Authorization: Bearer {token}
 ```
 
-RESPONSE
+#### Response
 
 ```ruby
 HTTP 200
