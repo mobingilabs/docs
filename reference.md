@@ -12,6 +12,8 @@ This page is still a work in progress.
 
 #### Wave Permissions
 
+The following are the list of permissions supported in RBAC for Wave.
+
 | Permission | Description |
 | :--- | :--- |
 | `Admin` | No restrictions. Root user, by default, has this permission. |
