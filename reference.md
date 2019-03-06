@@ -122,3 +122,14 @@ HTTP 200
 ]
 ```
 
+## Delete role
+
+#### Request
+
+```http
+DELETE /rbac/roles/{id} HTTP1.1
+Authorization: Bearer {token}
+```
+
+The `{id}` part is the value of the `id` you get from listing roles.
+
