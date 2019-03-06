@@ -6,6 +6,6 @@ This page is still a work in progress.
 
 | Description | Link |
 | :--- | :--- |
-| Base URL \(dev\) | `https://servicedev.mobingi.com/ocean/` |
-| Base URL | `https://service.mobingi.com/ocean/` |
+| Base URL \(dev\) | `https://servicedev.mobingi.com/m/` |
+| Base URL | `https://service.mobingi.com/m/` |
 
