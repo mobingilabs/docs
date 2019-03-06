@@ -64,6 +64,8 @@ HTTP 200
 
 ## Create role
 
+Roles are created at COMPANY level. This means `MyRole` can be different under company `A000` and `MyRole` under company `A001`.
+
 #### Request
 
 ```http
