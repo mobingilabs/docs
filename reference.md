@@ -64,6 +64,8 @@ HTTP 200
 
 ## Create role
 
+During role creation, if your `permissions` list contains an `Admin` entry, all other entries will be discarded.
+
 #### Request
 
 ```http
@@ -82,10 +84,58 @@ Authorization: Bearer {token}
       "permissions":[
         "ModifySettings",
         "ViewSettings",
-        "..."
+        ...
       ]
     }
   ]
 }
+```
+
+## List roles
+
+#### Request
+
+```http
+GET /rbac/roles HTTP1.1
+Authorization: Bearer {token}
+```
+
+#### Response
+
+```ruby
+HTTP 200
+[
+  {
+    "id": "6f6e6561646d696e...",
+    "roles": {
+      "name": "adminrole",
+      "permissions": [
+        {
+          "namespace": "wave",
+          "permissions": [
+            "Admin"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "6f726564726f6c65...",
+    "roles": {
+      "name": "testrole",
+      "permissions": [
+        {
+          "namespace": "wave",
+          "permissions": [
+            "ModifySettings",
+            "ViewSettings",
+            "ModifyAccountSettings"
+          ]
+        }
+      ]
+    }
+  },
+  ...
+]
 ```
 
