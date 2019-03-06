@@ -47,7 +47,7 @@ HTTP 200
 
 ## Create role
 
-During role creation, if your `permissions` list contains an `Admin` entry, all other entries will be discarded.
+During role creation, if your `permissions` list contains an `Admin` entry, all other entries will be discarded except `Admin`.
 
 #### Request
 
