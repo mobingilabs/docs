@@ -62,3 +62,30 @@ HTTP 200
 ]
 ```
 
+## Create role
+
+#### Request
+
+```http
+POST /rbac/roles HTTP1.1
+Authorization: Bearer {token}
+```
+
+#### Request body
+
+```ruby
+{
+  "name":"testrole",
+  "permissions":[
+    {
+      "namespace":"wave",
+      "permissions":[
+        "ModifySettings",
+        "ViewSettings",
+        "..."
+      ]
+    }
+  ]
+}
+```
+
