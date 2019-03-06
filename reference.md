@@ -6,7 +6,6 @@ This page is still a work in progress.
 
 | Description | Link |
 | :--- | :--- |
-| Base URL \(dev\) | `https://servicedev.mobingi.com/m/` |
 | Base URL | `https://service.mobingi.com/m/` |
 
 ## List permissions
