@@ -10,14 +10,14 @@ This page is still a work in progress.
 
 ## List permissions
 
-#### Request
+**Request**
 
 ```http
 GET /permissions HTTP1.1
 Authorization: Bearer {token}
 ```
 
-#### Response
+**Response**
 
 ```ruby
 HTTP 200
