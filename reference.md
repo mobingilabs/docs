@@ -160,6 +160,7 @@ Authorization: Bearer {token}
 #### Response
 
 ```ruby
+HTTP 200
 {
   "success":[
     "somerole"
