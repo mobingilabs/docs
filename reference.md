@@ -135,7 +135,7 @@ The `{id}` part is the value of the `id` you get from listing roles.
 
 ## Map roles to user
 
-You can only map (or attach) up to 10 roles per user. Mapping roles to users always overwrite existing mapped roles at namespace level. For example, if a user has 3 roles mapped to it, namely `role1`, `role2`, and `role3`, if you attach `role4` to that same user, that user will now only have one role, namely `role4`. Passing an empty roles list will not remove any mapping.
+You can only map \(or attach\) up to 10 roles per user. Mapping roles to users always overwrite existing mapped roles at namespace level. For example, if a user has 3 roles mapped to it, namely `role1`, `role2`, and `role3`, if you attach `role4` to that same user, that user will now only have one role, namely `role4`. Passing an empty roles list will not remove any mapping.
 
 **Request**
 
@@ -212,3 +212,4 @@ Authorization: Bearer {token}
 ```
 
 The `{id}` part is the value of the `id` you get from listing user role mappings.
+
