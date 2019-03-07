@@ -10,7 +10,7 @@ This page is still a work in progress.
 
 TBD
 
-## Wave Permissions
+## Wave permissions
 
 The following are the list of permissions supported in RBAC for Wave.
 
@@ -27,4 +27,20 @@ The following are the list of permissions supported in RBAC for Wave.
 | `ViewGroups` | View groups only. |
 | `ModifyTags` | Allowed to modify tags. |
 | `ViewTags` | View tags only. |
+
+## Ripple permissions
+
+The following are the list of permissions supported in RBAC for Ripple.
+
+| Permission | Description |
+| :--- | :--- |
+| `Admin` | No restrictions. Root user, by default, has this permission. |
+
+## Ocean permissions
+
+The following are the list of permissions supported in RBAC for Ripple.
+
+| Permission | Description |
+| :--- | :--- |
+| `Admin` | No restrictions. Root user, by default, has this permission. |
 
