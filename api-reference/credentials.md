@@ -4,7 +4,7 @@
 
 ```http
 REQUEST
-POST /vendord/v0/credentials HTTP1.1
+POST /v0/credentials HTTP1.1
 Authorization: Bearer {token}
 
 {request body contents vary per provider}
@@ -18,7 +18,7 @@ HTTP 202
 
 ```http
 REQUEST
-GET /vendord/v0/credentials[?vendor={vendor-name}] HTTP1.1
+GET /v0/credentials[?vendor={vendor-name}] HTTP1.1
 Authorization: Bearer {token}
 
 ---
@@ -31,7 +31,7 @@ tbd
 
 ```http
 REQUEST
-GET /vendord/v0/credentials/{id} HTTP1.1
+GET /v0/credentials/{id} HTTP1.1
 Authorization: Bearer {token}
 
 ---
@@ -44,7 +44,7 @@ tbd
 
 ```text
 REQUEST
-DELETE /vendord/v0/credentials/{id} HTTP1.1
+DELETE /v0/credentials/{id} HTTP1.1
 Authorization: Bearer {token}
 
 ---
