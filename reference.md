@@ -197,6 +197,7 @@ HTTP 200
     "sub_user":"subuser02",
     "namespace":"wave",
     "role":"testrole2"
-  }
+  },
+  ...
 ]
 ```
