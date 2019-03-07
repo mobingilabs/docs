@@ -156,3 +156,14 @@ Authorization: Bearer {token}
   ]
 }
 ```
+
+#### Response
+
+```ruby
+{
+  "success":[
+    "somerole"
+  ],
+  "failed":[]
+}
+```
