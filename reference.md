@@ -146,8 +146,6 @@ Authorization: Bearer {token}
 
 #### Request body
 
-#### Request body
-
 ```ruby
 {
   "user_id":"subuser1",
