@@ -38,7 +38,7 @@ The following are the list of permissions supported in RBAC for Ripple.
 
 ## Ocean permissions
 
-The following are the list of permissions supported in RBAC for Ripple.
+The following are the list of permissions supported in RBAC for Ocean.
 
 | Permission | Description |
 | :--- | :--- |
