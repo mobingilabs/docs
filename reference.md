@@ -192,8 +192,7 @@ HTTP 200
   },
   {
     "id":"NThjMjI5N2QyNTY0NXx...",
-    "root_user":
-    "58c2297d25645",
+    "root_user":"58c2297d25645",
     "sub_user":"subuser02",
     "namespace":"wave",
     "role":"testrole2"
