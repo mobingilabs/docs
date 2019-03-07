@@ -6,14 +6,14 @@ This page is still a work in progress.
 
 | Description | Link |
 | :--- | :--- |
-| Base URL | `https://service.mobingi.com/m/` |
+| Base URL | `https://service.mobingi.com/m/auth/rbac/` |
 
 ## List permissions
 
 #### Request
 
 ```http
-GET /rbac/permissions HTTP1.1
+GET /permissions HTTP1.1
 Authorization: Bearer {token}
 ```
 
@@ -52,7 +52,7 @@ During role creation, if your `permissions` list contains an `Admin` entry, all 
 #### Request
 
 ```http
-POST /rbac/roles HTTP1.1
+POST /roles HTTP1.1
 Authorization: Bearer {token}
 ```
 
@@ -79,7 +79,7 @@ Authorization: Bearer {token}
 #### Request
 
 ```http
-GET /rbac/roles HTTP1.1
+GET /roles HTTP1.1
 Authorization: Bearer {token}
 ```
 
@@ -127,7 +127,7 @@ HTTP 200
 #### Request
 
 ```http
-DELETE /rbac/roles/{id} HTTP1.1
+DELETE /roles/{id} HTTP1.1
 Authorization: Bearer {token}
 ```
 
