@@ -143,3 +143,18 @@ You can only attach up to 10 roles per user. Attaching roles to users always ove
 POST /userroles HTTP1.1
 Authorization: Bearer {token}
 ```
+
+#### Request body
+
+#### Request body
+
+```ruby
+{
+  "user_id":"subuser1",
+  "roles":[
+    "MjI5N2QyNTY0NVw6...",
+    "Mm5kYWRtaW4gNThj...",
+    ...
+  ]
+}
+```
