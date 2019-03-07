@@ -49,14 +49,14 @@ HTTP 200
 
 During role creation, if your `permissions` list contains an `Admin` entry, all other entries will be discarded except `Admin`.
 
-#### Request
+**Request**
 
 ```http
 POST /roles HTTP1.1
 Authorization: Bearer {token}
 ```
 
-#### Request body
+**Request body**
 
 ```ruby
 {
@@ -76,14 +76,14 @@ Authorization: Bearer {token}
 
 ## List roles
 
-#### Request
+**Request**
 
 ```http
 GET /roles HTTP1.1
 Authorization: Bearer {token}
 ```
 
-#### Response
+**Response**
 
 ```ruby
 HTTP 200
@@ -124,7 +124,7 @@ HTTP 200
 
 ## Delete role
 
-#### Request
+**Request**
 
 ```http
 DELETE /roles/{id} HTTP1.1
@@ -137,14 +137,14 @@ The `{id}` part is the value of the `id` you get from listing roles.
 
 You can only attach up to 10 roles per user. Attaching roles to users always overwrite existing mapped roles at namespace level. For example, if a user has 3 roles attached to it, namely `role1`, `role2`, and `role3`, if you attach `role4` to that same user, that user will now only have one role, namely `role4`. Passing an empty roles list will not remove any mapping.
 
-#### Request
+**Request**
 
 ```http
 POST /userroles HTTP1.1
 Authorization: Bearer {token}
 ```
 
-#### Request body
+**Request body**
 
 ```ruby
 {
@@ -157,7 +157,7 @@ Authorization: Bearer {token}
 }
 ```
 
-#### Response
+**Response**
 
 ```ruby
 HTTP 200
