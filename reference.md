@@ -168,3 +168,35 @@ HTTP 200
   "failed":[]
 }
 ```
+
+## List user roles
+
+**Request**
+
+```http
+GET /userroles HTTP1.1
+Authorization: Bearer {token}
+```
+
+**Response**
+
+```ruby
+HTTP 200
+[
+  {
+    "id":"NThjMjI5N2QyN...",
+    "root_user":"58c2297d25645",
+    "sub_user":"subuser01",
+    "namespace":"wave",
+    "role":"testrole1"
+  },
+  {
+    "id":"NThjMjI5N2QyNTY0NXx...",
+    "root_user":
+    "58c2297d25645",
+    "sub_user":"subuser02",
+    "namespace":"wave",
+    "role":"testrole2"
+  }
+]
+```
