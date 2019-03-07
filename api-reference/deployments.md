@@ -4,7 +4,7 @@
 
 ```http
 REQUEST
-POST /vendord/v0/deployments HTTP1.1
+POST /v0/deployments HTTP1.1
 Authorization: Bearer {token}
 
 {template body}
@@ -18,7 +18,7 @@ HTTP 202
 
 ```http
 REQUEST
-GET /vendord/v0/deployments HTTP1.1
+GET /v0/deployments HTTP1.1
 Authorization: Bearer {token}
 
 ---
@@ -31,7 +31,7 @@ tbd
 
 ```http
 REQUEST
-GET /vendord/v0/deployments/{id} HTTP1.1
+GET /v0/deployments/{id} HTTP1.1
 Authorization: Bearer {token}
 
 ---
@@ -44,7 +44,7 @@ tbd
 
 ```text
 REQUEST
-DELETE /vendord/v0/deployments/{id} HTTP1.1
+DELETE /v0/deployments/{id} HTTP1.1
 Authorization: Bearer {token}
 
 ---
