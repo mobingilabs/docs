@@ -57,14 +57,7 @@ stacks:
   # This key is provided if you want to provision any AWS resources using
   # CloudFormation.
   cfnExtra: |
-    # A CloudFormation template example:
-    AWSTemplateFormatVersion: '2010-09-09'
-    Description: 'AWS CloudFormation Sample CfnExtra'
-    Resources:
-      CfnExtraSnsTopic:
-        Type: AWS::SNS::Topic
-        Properties:
-          TopicName: "cfnextra-sample-snstopic"
+    {Insert CloudFormation template here}
   # This key is provided if you want to provision any GCP resources using
   # Deployment Manager.
   dmExtra: |
