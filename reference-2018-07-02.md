@@ -17,7 +17,7 @@ name: deployment1
 credentials:
 # The name of the credential to use. This credential should already
 # be registered to your Mobingi account. 
-- name: subuser01
+- name: mycreds
 
   # Valid values:
   # - aws
@@ -51,7 +51,7 @@ stacks:
   type: k8s # for now, only k8s clusters are supported
   # This should correspond to a credential name you provided
   # somewhere in this template.
-  credential: subuser01
+  credential: mycreds
   region: ap-northeast-1 # cloud provider specific region
   keyPair: true
   # Applies to k8s master only.
