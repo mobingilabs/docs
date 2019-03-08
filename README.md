@@ -8,6 +8,16 @@ description: Mobingi Documentation
 This page is still a work in progress.
 {% endhint %}
 
+## RBAC permissions
+
+The following are the list of permissions supported in RBAC management.
+
+| Permission | Description |
+| :--- | :--- |
+| `Admin` | No restrictions. Root user, by default, has this permission. |
+| `ModifyRbac` | Allowed to modify RBAC settings. |
+| `ViewRbac` | View RBAC settings only. |
+
 ## Wave permissions
 
 The following are the list of permissions supported in RBAC for Wave.
