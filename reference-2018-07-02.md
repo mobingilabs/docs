@@ -9,14 +9,23 @@ The following is the proposed new version of ALM Template. By default, all keys 
 ```yaml
 ---
 version: 20180702 # required
-name: deployment1 # should be unique across account level
+
+# Name should be unique across your account.
+name: deployment1
+
 ---
-# These credentials should be registered to your ALM account.
 credentials:
-# The credential name you used to input the credential.
+# The name of the credential to use. This credential should already
+# be registered to your Mobingi account. 
 - name: subuser01
-  # Valid values: aws, gcp, azure, alicloud
+
+  # Valid values:
+  # - aws
+  # - gcp
+  # - azure
+  # - alicloud
   provider: aws
+
 ---
 # The list of applications to be deployed.
 applications:
