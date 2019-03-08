@@ -10,15 +10,15 @@ The following is the proposed version of Ocean Template. By default, all keys ar
 ---
 version: 20180702 # required
 
-# Name should be unique across your account.
+# Required. Name should be unique across your account.
 name: string
 
 description: string
 
 ---
 credentials:
-# The name of the credential to use. This credential should already
-# be registered to your Mobingi account. 
+# Required. The name of the credential to use. This credential should already
+# be registered to your Mobingi account.
 - name: string
 
   # Valid values:
@@ -31,7 +31,7 @@ credentials:
 ---
 # The list of applications to be deployed.
 applications:
-# The name of the application to deploy. Should be unique at
+# Required. The name of the application to deploy. Should be unique at
 # deployment level.
 - name: string
 
@@ -74,7 +74,7 @@ applications:
 ---
 # The list of stacks where you want to deploy your applications.
 stacks:
-#  Stack name should be unique at deployment level
+#  Required. Stack name should be unique at deployment level
 - name: string
 
   # Valid values (for now:
