@@ -15,8 +15,6 @@ The following are the list of permissions supported in RBAC for Wave.
 | Permission | Description |
 | :--- | :--- |
 | `Admin` | No restrictions. Root user, by default, has this permission. |
-| `ModifyRbac` | Allowed to modify RBAC settings. |
-| `ViewRbac` | View RBAC settings only. |
 | `ModifySettings` | Allowed to modify global Wave settings. |
 | `ViewSettings` | View global Wave settings only. |
 | `ModifyAccountSettings` | Allowed to modify account level settings. |
