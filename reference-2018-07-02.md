@@ -4,7 +4,7 @@
 This page is still a work in progress.
 {% endhint %}
 
-The following is the proposed new version of ALM Template. By default, all keys are optional unless stated otherwise.
+The following is the proposed version of Ocean Template. By default, all keys are optional unless stated otherwise.
 
 ```yaml
 ---
