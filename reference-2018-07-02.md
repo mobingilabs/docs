@@ -123,5 +123,9 @@ stacks:
   # Azure Resource Manager.
   armExtra: |
     {Insert Azure Resource Manager template here}
+  aliExtra: |
+   {Insert Alibaba ROS template here}
 ```
+
+
 
