@@ -218,7 +218,7 @@ HTTP 200
     "root_user":"58c2297d25645",
     "sub_user":"subuser02",
     "namespace":"wave",
-    "role":"testrole2"
+    "filter":"billingGroup:1111"
   },
   ...
 ]
