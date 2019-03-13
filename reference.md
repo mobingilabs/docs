@@ -138,7 +138,7 @@ The `{id}` part is the value of the `id` you get from listing roles.
 
 ## Map roles to user
 
-You can only map \(or attach\) up to 5 roles per user. For filtering rules, the supported values for `type` are: `linkAcct` and `billingGroup`.
+You can only map \(or attach\) up to 5 roles per user per namespace. For filtering rules, the supported values for `type` are: `linkAcct` and `billingGroup`. There is no limit for filtering rules per user.
 
 **Request**
 
