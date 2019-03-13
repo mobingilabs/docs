@@ -149,9 +149,29 @@ Authorization: Bearer {token}
 ```ruby
 {
   "user_id":"subuser1",
+  "namepace":"wave",
   "roles":[
     "MjI5N2QyNTY0NVw6...",
     "Mm5kYWRtaW4gNThj...",
+    ...
+  ],
+  "filter_rules":[
+    {
+      "type":"linkAcct",
+      "resource":[
+        "1111",
+        "2222",
+        ...
+      ]
+    },
+    {
+      "type":"billingGroup",
+      "resource":[
+        "3333",
+        "4444",
+        ...
+      ]
+    },
     ...
   ]
 }
