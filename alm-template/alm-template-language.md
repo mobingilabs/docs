@@ -5,8 +5,7 @@ ALM Template provides several built-in functions that help you manage your ALM T
 Use ATL functions in your templates to assign values to properties that are not available until runtime.
 
 {% hint style="info" %}
-For now, ATL is only supported in AWS. Support for other cloud vendors will be available soon.
-
+For now, ATL is only supported in AWS. Support for other cloud vendors will be available soon.  
 You can use ATL functions only in specific parts of a template. Please refer to each functions' document for detailed explanation.
 {% endhint %}
 
