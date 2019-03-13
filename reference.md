@@ -76,15 +76,15 @@ Authorization: Bearer {token}
 
 ## List roles
 
-Valid values for `namespace`:
-- `wave`
-
 **Request**
 
 ```http
 GET /roles[?namespace={namespace}] HTTP1.1
 Authorization: Bearer {token}
 ```
+
+Valid values for `namespace`:
+- `wave`
 
 **Response**
 
