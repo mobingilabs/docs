@@ -127,7 +127,7 @@ stacks:
   # This key is provided if you want to provision any Alibaba resources using
   # Resource Orchestration Service.
   aliExtra: |
-   {Insert Alibaba ROS template here}
+    {Insert Alibaba ROS template here}
 ```
 
 
