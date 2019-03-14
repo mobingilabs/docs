@@ -140,7 +140,7 @@ The `{id}` part is the value of the `id` you get from listing roles.
 
 You can only map \(or attach\) up to 5 roles per user per namespace. There is no limit for filtering rules per user.
 
-Valid values for `type` filtering rules:
+Valid values for `type` for filtering rules:
 
 | Namespace | Value |
 | :--- | :--- |
