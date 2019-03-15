@@ -123,12 +123,10 @@ stacks:
   # Azure Resource Manager.
   armExtra: |
     {Insert Azure Resource Manager template here}
-    
+
   # This key is provided if you want to provision any Alibaba resources using
   # Resource Orchestration Service.
   aliExtra: |
     {Insert Alibaba ROS template here}
 ```
-
-
 
