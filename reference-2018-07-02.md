@@ -87,6 +87,9 @@ stacks:
 
   # Region values depends on what cloud this stack belongs.
   region: string
+  
+  # Whether or not keypair is created for nodes.
+  keyPair: bool
 
   # Applies to k8s master only. Behaviour may change depending on
   # cloud provider.
