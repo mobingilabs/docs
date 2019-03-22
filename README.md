@@ -10,7 +10,7 @@ This page is still a work in progress.
 
 ## RBAC permissions
 
-The following are the list of permissions supported in RBAC management.
+The following are the list of permissions supported in RBAC management. RBAC management belongs to `rbac` namespace.
 
 | Permission | Description |
 | :--- | :--- |
@@ -27,15 +27,15 @@ The following are the list of permissions supported in RBAC for Wave.
 | :--- | :--- |
 | `Admin` | No restrictions. Root user, by default, has this permission. |
 | `ModifySettings` | Allowed to modify global Wave settings. |
-| `ViewSettings` | View global Wave settings only. |
+| `ReadSettings` | View global Wave settings only. |
 | `ModifyAccountSettings` | Allowed to modify account level settings. |
-| `ViewAccountSettings` | View account level settings only. |
+| `ReadAccountSettings` | View account level settings only. |
 | `DownloadBulk` | Allowed to download bulk CSV. |
 | `DownloadReports` | Allowed to download reports CSV. |
 | `ModifyGroups` | Allowed to modify groups. |
-| `ViewGroups` | View groups only. |
+| `ReadGroups` | View groups only. |
 | `ModifyTags` | Allowed to modify tags. |
-| `ViewTags` | View tags only. |
+| `ReadTags` | View tags only. |
 
 ## Ripple permissions
 
