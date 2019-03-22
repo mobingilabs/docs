@@ -83,9 +83,6 @@ GET /roles[?namespace={namespace}] HTTP1.1
 Authorization: Bearer {token}
 ```
 
-Valid values for `namespace`:
-- `wave`
-
 **Response**
 
 ```ruby
