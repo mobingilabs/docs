@@ -15,8 +15,9 @@ The following are the list of permissions supported in user management. User per
 | Permission | Description |
 | :--- | :--- |
 | `Admin` | No restrictions. Root user, by default, has this permission. |
-| `ReadOnly` | View user information. |
+| `ReadOnly` | View user information, including API clients. |
 | `ModifyUsers` | Allowed to modify user attributes. |
+| `ModifyApiClients` | Allowed to modify API clients. |
 
 ## RBAC permissions
 
