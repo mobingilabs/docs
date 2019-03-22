@@ -8,6 +8,16 @@ description: Mobingi Documentation
 This page is still a work in progress.
 {% endhint %}
 
+## User permissions
+
+The following are the list of permissions supported in user management. User permissions belongs to the `user` namespace.
+
+| Permission | Description |
+| :--- | :--- |
+| `Admin` | No restrictions. Root user, by default, has this permission. |
+| `ReadOnly` | View user information. |
+| `ModifyUsers` | Allowed to modify user attributes. |
+
 ## RBAC permissions
 
 The following are the list of permissions supported in RBAC management. RBAC permissions belongs to the `rbac` namespace.
