@@ -10,6 +10,10 @@ This page is still a work in progress.
 
 ## User permissions
 
+| Namespace |
+| :--- |
+| `user` |
+
 The following are the list of permissions supported in user management. User permissions belongs to the `user` namespace.
 
 | Permission | Description |
