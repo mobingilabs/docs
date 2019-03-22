@@ -79,7 +79,7 @@ Authorization: Bearer {token}
 **Request**
 
 ```http
-GET /roles[?namespace={namespace}] HTTP1.1
+GET /roles?namespace={namespace} HTTP1.1
 Authorization: Bearer {token}
 ```
 
