@@ -10,7 +10,7 @@ This page is still a work in progress.
 
 ## RBAC permissions
 
-The following are the list of permissions supported in RBAC management. RBAC management belongs to `rbac` namespace.
+The following are the list of permissions supported in RBAC management. RBAC permissions belongs to the `rbac` namespace.
 
 | Permission | Description |
 | :--- | :--- |
@@ -21,7 +21,7 @@ The following are the list of permissions supported in RBAC management. RBAC man
 
 ## Wave permissions
 
-The following are the list of permissions supported in RBAC for Wave.
+The following are the list of permissions supported in RBAC for Wave. Wave permissions belongs to the `wave` namespace.
 
 | Permission | Description |
 | :--- | :--- |
