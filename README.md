@@ -15,8 +15,9 @@ The following are the list of permissions supported in RBAC management.
 | Permission | Description |
 | :--- | :--- |
 | `Admin` | No restrictions. Root user, by default, has this permission. |
-| `ModifyRbac` | Allowed to modify RBAC settings. |
-| `ViewRbac` | View RBAC settings only. |
+| `ReadOnly` | View RBAC permissions, roles, and mappings. |
+| `ModifyRoles` | Allowed to modify RBAC roles. |
+| `ModifyUserRoles` | Allowed to modify user-role mappings. |
 
 ## Wave permissions
 
