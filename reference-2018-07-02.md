@@ -35,6 +35,10 @@ applications:
 # deployment level.
 - name: string
 
+  # This should correspond to the credential used in creating the stack
+  # this application will be installed to. 
+  credential: string
+
   # Valid values (for now):
   #   deployment - Kubernetes deployment
   type: string
