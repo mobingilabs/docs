@@ -18,7 +18,7 @@ description: string
 ---
 credentials:
 # Required. The name of the credential to use. This credential should already
-# be registered to your Mobingi account.
+# be registered to your Mobingi account. Name is unique at account level.
 - name: string
 
   # Valid values:
@@ -78,7 +78,7 @@ applications:
 ---
 # The list of stacks where you want to deploy your applications.
 stacks:
-#  Required. Stack name should be unique at deployment level
+#  Required. Stack name should be unique per account per provider.
 - name: string
 
   # Valid values (for now:
