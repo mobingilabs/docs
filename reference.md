@@ -158,7 +158,7 @@ Authorization: Bearer {token}
 ```ruby
 {
   "user_id":"subuser1",
-  "namepace":"wave",
+  "namespace":"wave",
   "roles":[
     "MjI5N2QyNTY0NVw6...",
     "Mm5kYWRtaW4gNThj...",
