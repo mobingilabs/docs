@@ -95,9 +95,14 @@ stacks:
   # Whether or not keypair is created for nodes.
   keyPair: bool
 
-  # Applies to k8s master only. Behaviour may change depending on
-  # cloud provider.
-  highlyAvailable: bool
+  master:
+    # Applies to k8s master only. Behaviour may change depending on
+    # cloud provider.
+    highlyAvailable: bool
+    
+    # Optional: if setting the number of nodes for master is required,
+    # use this key.
+    nodeCount: number
 
   # Definitions of worker node groups for this cluster.
   workerGroups:
