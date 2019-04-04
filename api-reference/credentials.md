@@ -13,6 +13,7 @@ Before you can do any Ocean deployments, you need to register your cloud credent
 ```http
 POST /v0/credentials HTTP1.1
 Authorization: Bearer {token}
+Content-Type: application/json
 
 {request body}
 ```
