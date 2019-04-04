@@ -19,13 +19,25 @@ Authorization: Bearer {token}
 
 Example request payload for `{request body}` per provider:
 
-```ruby
 Alibaba:
+
+```ruby
 {
-	"vendor":"alicloud",
-	"name":"testalicloudcreds",
-	"key":"ABCDEF",
-	"secret":"somesecret"
+  "vendor":"alicloud",
+  "name":"testalicloudcreds",
+  "key":"ABCDEF",
+  "secret":"somesecret"
+}
+```
+
+AWS:
+
+```ruby
+{
+  "vendor":"aws",
+  "name":"testawscreds",
+  "key":"ABCDEF",
+  "secret":"somesecret"
 }
 ```
 
