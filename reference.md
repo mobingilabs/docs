@@ -1,4 +1,4 @@
-# Reference
+# API Reference
 
 {% hint style="warning" %}
 This page is still a work in progress.
@@ -142,8 +142,8 @@ Valid values for `type` for filtering rules:
 | Namespace | Value |
 | :--- | :--- |
 | wave | `linkAcct` |
-| | `group` |
-| | `tag` |
+|  | `group` |
+|  | `tag` |
 | ripple | `billingGroup` |
 
 **Request**

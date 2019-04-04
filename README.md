@@ -48,7 +48,7 @@ The following are the list of permissions supported in RBAC for Wave. Wave permi
 | `ReadGroups` | View groups only. |
 | `ModifyTags` | Allowed to modify tags. |
 | `ReadTags` | View tags only. |
-| `ReadBillingGroup` | View billing group dashboard data (graph) only. |
+| `ReadBillingGroup` | View billing group dashboard data \(graph\) only. |
 | `ModifyBillingGroup` | Allowed to modify billing group dashboard data. |
 
 ## Ripple permissions

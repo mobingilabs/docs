@@ -1,5 +1,5 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Reference](reference.md)
+* [API Reference](reference.md)
 
