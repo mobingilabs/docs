@@ -41,12 +41,15 @@ The following are the list of permissions supported in RBAC for Wave. Wave permi
 | `ReadSettings` | View global Wave settings only. |
 | `ModifyAccountSettings` | Allowed to modify account level settings. |
 | `ReadAccountSettings` | View account level settings only. |
+| `ReadAccount` | View account list only. |
 | `DownloadBulk` | Allowed to download bulk CSV. |
 | `DownloadReports` | Allowed to download reports CSV. |
 | `ModifyGroups` | Allowed to modify groups. |
 | `ReadGroups` | View groups only. |
 | `ModifyTags` | Allowed to modify tags. |
 | `ReadTags` | View tags only. |
+| `ReadBillingGroup` | View billing group dashboard data (graph) only. |
+| `ModifyBillingGroup` | Allowed to modify billing group dashboard data. |
 
 ## Ripple permissions
 
