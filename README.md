@@ -1,12 +1,18 @@
----
-description: Mobingi Documentation
----
-
 # Overview
 
 {% hint style="warning" %}
 This page is still a work in progress.
 {% endhint %}
+
+## Namespace table
+
+| Product/domain | Namespace |
+| :--- | :--- |
+| Ripple | `ripple` |
+| Wave | `wave` |
+| Ocean | `ocean` |
+| Users | `users` |
+| RBAC | `rbac` |
 
 ## User permissions
 
