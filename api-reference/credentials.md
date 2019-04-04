@@ -17,7 +17,7 @@ Authorization: Bearer {token}
 {request body}
 ```
 
-Example request payload for `{request body}` per provider:
+The following are some example request payloads for `{request body}` per provider.
 
 Alibaba:
 
@@ -38,6 +38,20 @@ AWS:
   "name":"testawscreds",
   "key":"ABCDEF",
   "secret":"somesecret"
+}
+```
+
+Azure:
+
+```ruby
+{
+  "vendor":"azure",
+  "name":"testazurecreds",
+  "key":"ABCDEF",
+  "secret":"somesecret",
+  "application":"997613dc-032a-440f-bead-2bb5b19ad002",
+  "subscription":"c825c2bf-cdc5-4b96-9644-a1dd5144ae0f",
+  "directory":"292cd594-02c7-4a56-86e7-e30615557e83"
 }
 ```
 
