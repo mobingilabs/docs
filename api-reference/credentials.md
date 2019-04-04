@@ -36,6 +36,8 @@ Example:
 }
 ```
 
+When creating [Ocean templates](https://docs.mobingi.com/v/ocean-en/reference-2018-07-02), you will use the credential's `name` part as the name for the template's credential entry. This name should be unique per account.
+
 ## List credentials
 
 ```http
