@@ -2,5 +2,5 @@
 
 | Description | Link |
 | :--- | :--- |
-| Base URL | `https://service.mobingi.com/m/vendor/` |
+| Base URL | `https://service.mobingi.com/m/ocean/` |
 
