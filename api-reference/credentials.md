@@ -91,15 +91,17 @@ When creating [Ocean templates](https://docs.mobingi.com/v/ocean-en/reference-20
 
 ## List credentials
 
+**Request**
+
 ```http
-REQUEST
 GET /v0/credentials[?vendor={vendor-name}] HTTP1.1
 Authorization: Bearer {token}
+```
 
----
-RESPONSE
+**Response**
+
+```ruby
 HTTP 200
-tbd
 ```
 
 ## Describe a credential
