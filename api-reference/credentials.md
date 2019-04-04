@@ -167,26 +167,44 @@ HTTP 200
 
 ## Describe a credential
 
+**Request**
+
 ```http
-REQUEST
 GET /v0/credentials/{id} HTTP1.1
 Authorization: Bearer {token}
+```
 
----
-RESPONSE
+**Response**
+
+```ruby
 HTTP 200
-tbd
+
+{
+  "credential_id":"cred-gcp-xx",
+  "user_id":"1234",
+  "username":"subuser",
+  "name":"testgcpcreds",
+  "key":"testgcpcreds",
+  "secret":"***",
+  "project_id":"gcp-project-id",
+  "create_time":"2018-05-21T17:15:36+09:00",
+  "update_time":"2018-05-21T17:15:36+09:00",
+  "vendor":"gcp"
+}
 ```
 
 ## Delete a credential
 
-```text
-REQUEST
+**Request**
+
+```http
 DELETE /v0/credentials/{id} HTTP1.1
 Authorization: Bearer {token}
+```
 
----
-RESPONSE
+**Response**
+
+```ruby
 HTTP 202
 ```
 
