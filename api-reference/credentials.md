@@ -4,6 +4,8 @@
 This page is still a work in progress.
 {% endhint %}
 
+Before you can do any Ocean deployments, you need to register your cloud credentials to Ocean. These credentials will be used by Ocean to access your cloud account and deploy any resources you need in your Ocean deployments.
+
 ## Create a credential
 
 ```http
