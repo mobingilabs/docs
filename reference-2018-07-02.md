@@ -91,7 +91,7 @@ stacks:
 
   # Region values depends on what cloud this stack belongs.
   region: string
-  
+
   # Whether or not keypair is created for nodes.
   keyPair: bool
 
@@ -99,7 +99,7 @@ stacks:
     # Applies to k8s master only. Behaviour may change depending on
     # cloud provider.
     highlyAvailable: bool
-    
+
     # Optional: if setting the number of nodes for master is required,
     # use this key.
     nodeCount: number
