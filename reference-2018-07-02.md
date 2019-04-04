@@ -21,11 +21,7 @@ credentials:
 # be registered to your Mobingi account. Name is unique at account level.
 - name: string
 
-  # Valid values:
-  #   aws
-  #   gcp
-  #   azure
-  #   alicloud
+  # See vendor codes for valid values.
   provider: string
 
 ---
