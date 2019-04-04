@@ -23,12 +23,6 @@ Authorization: Bearer {token}
 HTTP 200
 [
   {
-    "namespace":"global",
-    "permissions":[
-      "Admin"
-    ]
-  },
-  {
     "namespace":"wave",
     "permissions":[
       "Admin",
