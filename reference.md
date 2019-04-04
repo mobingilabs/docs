@@ -131,7 +131,7 @@ Valid values for `type` for filtering rules:
 | :--- | :--- |
 | wave | `linkAcct` |
 |  | `group` |
-|  | `tag` |
+|  | `tags` |
 | ripple | `billingGroup` |
 
 **Request**
