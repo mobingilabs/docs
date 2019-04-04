@@ -14,7 +14,19 @@ Before you can do any Ocean deployments, you need to register your cloud credent
 POST /v0/credentials HTTP1.1
 Authorization: Bearer {token}
 
-{request body contents vary per provider}
+{request body}
+```
+
+Example request payload for `{request body}` per provider:
+
+```ruby
+Alibaba:
+{
+	"vendor":"alicloud",
+	"name":"testalicloudcreds",
+	"key":"ABCDEF",
+	"secret":"somesecret"
+}
 ```
 
 **Response**
