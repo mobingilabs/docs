@@ -8,15 +8,17 @@ Before you can do any Ocean deployments, you need to register your cloud credent
 
 ## Create a credential
 
+**Request**
+
 ```http
-REQUEST
 POST /v0/credentials HTTP1.1
 Authorization: Bearer {token}
 
 {request body contents vary per provider}
+```
 
----
-RESPONSE
+**Response**
+```ruby
 HTTP 202
 ```
 
