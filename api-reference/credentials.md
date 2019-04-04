@@ -69,10 +69,11 @@ GCP (for GCP, `secret` is your service account's JSON file):
 
 **Response**
 
+Example:
+
 ```ruby
 HTTP 201
 
-Example:
 {
   "credential_id":"cred-aws-58c2297d25645-fa7vzi6E1l",
   "user_id":"1234567890",
