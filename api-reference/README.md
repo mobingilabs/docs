@@ -6,6 +6,5 @@ This page is still a work in progress.
 
 | Description | Link |
 | :--- | :--- |
-| Base URL \(dev\) | `https://servicedev.mobingi.com/m/vendor/` |
 | Base URL | `https://service.mobingi.com/m/vendor/` |
 
