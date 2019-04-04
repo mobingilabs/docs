@@ -55,6 +55,18 @@ Azure:
 }
 ```
 
+GCP:
+
+```ruby
+{
+  "vendor":"gcp",
+  "name":"testgcpcreds",
+  "project_id":"gcp-project-id",
+  "secret":"aGVsbG93b3JsZA==",
+  "isbase64":true
+}
+```
+
 **Response**
 
 ```ruby
