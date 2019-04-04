@@ -205,6 +205,6 @@ Authorization: Bearer {token}
 **Response**
 
 ```ruby
-HTTP 202
+HTTP 200
 ```
 
