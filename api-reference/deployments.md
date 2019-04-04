@@ -18,7 +18,7 @@ RESPONSE
 HTTP 202
 ```
 
-Check out https://github.com/mobingi/ocean-template-examples for example about `{template body}`.
+Check out https://github.com/mobingi/ocean-template-examples for examples about `{template body}`.
 
 ## List deployments
 
