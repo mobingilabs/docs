@@ -89,34 +89,22 @@ Authorization: Bearer {token}
 HTTP 200
 [
   {
-    "id": "6f6e6561646d696e...",
-    "roles": {
-      "name": "adminrole",
-      "permissions": [
-        {
-          "namespace": "wave",
-          "permissions": [
-            "Admin"
-          ]
-        }
-      ]
-    }
+    "id": "b3JlZHJvbGUgNThjMjI5N2Q...",
+    "name": "testrole",
+    "namespace": "wave",
+    "permissions": [
+      "ModifySettings",
+      "ViewSettings",
+      "ModifyAccountSettings"
+    ]
   },
   {
-    "id": "6f726564726f6c65...",
-    "roles": {
-      "name": "testrole",
-      "permissions": [
-        {
-          "namespace": "wave",
-          "permissions": [
-            "ModifySettings",
-            "ViewSettings",
-            "ModifyAccountSettings"
-          ]
-        }
-      ]
-    }
+    "id": "Mm5kYWRtaW4g...",
+    "name": "waveAdmin",
+    "namespace": "wave",
+    "permissions": [
+      "Admin"
+    ]
   },
   ...
 ]
