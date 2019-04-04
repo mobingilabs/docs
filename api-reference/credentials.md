@@ -18,8 +18,22 @@ Authorization: Bearer {token}
 ```
 
 **Response**
+
 ```ruby
-HTTP 202
+HTTP 201
+
+Example:
+{
+  "credential_id":"cred-aws-58c2297d25645-fa7vzi6E1l",
+  "user_id":"1234567890",
+  "username":"testsubuser",
+  "name":"testawscreds",
+  "key":"ABCDEF",
+  "secret":"***",
+  "create_time":"2019-04-04T04:16:02Z",
+  "update_time":"2019-04-04T04:16:02Z",
+  "vendor":"aws"
+}
 ```
 
 ## List credentials
