@@ -65,6 +65,10 @@ The following are the list of permissions supported in RBAC for Wave. Wave permi
 
 ## Ripple permissions
 
+{% hint style="warning" %}
+This page is still a work in progress.
+{% endhint %}
+
 The following are the list of permissions supported in RBAC for Ripple.
 
 | Permission | Description |
@@ -72,6 +76,10 @@ The following are the list of permissions supported in RBAC for Ripple.
 | `Admin` | No restrictions. Root user, by default, has this permission. |
 
 ## Ocean permissions
+
+{% hint style="warning" %}
+This page is still a work in progress.
+{% endhint %}
 
 The following are the list of permissions supported in RBAC for Ocean.
 
