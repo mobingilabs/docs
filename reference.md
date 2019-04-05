@@ -119,10 +119,8 @@ Valid values for `type` for filtering rules:
 
 | Namespace | Value |
 | :--- | :--- |
-| wave | `linkAcct` |
-|  | `group` |
-|  | `tags` |
-| ripple | `billingGroup` |
+| `wave` | `linkAcct`, `group`, `tags` |
+| `ripple` | `billingGroup` |
 
 **Request**
 
