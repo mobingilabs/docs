@@ -78,4 +78,3 @@ The following are the list of permissions supported in RBAC for Ocean.
 | Permission | Description |
 | :--- | :--- |
 | `Admin` | No restrictions. Root user, by default, has this permission. |
-
