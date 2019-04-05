@@ -3,3 +3,6 @@ root: ./
 structure:
   readme: README.md
   summary: SUMMARY.md
+
+redirects:
+  reference-2018-07-02: ./template-2018-07-02.md
