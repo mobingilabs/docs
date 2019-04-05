@@ -1,4 +1,8 @@
 # Table of contents
 
-* [Get Started](README.md)
+* [Mobingi Ripple Documentation](README.md)
+
+## Mobingi Ripple
+
+* [Preparation](mobingi-ripple/introduction.md)
 
