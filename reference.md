@@ -6,7 +6,7 @@ This page is still a work in progress.
 
 | Description | Link |
 | :--- | :--- |
-| Base URL | `https://service.mobingi.com/m/auth/rbac/` |
+| API Base URL | `https://service.mobingi.com/m/auth/rbac/` |
 
 ## List permissions
 
