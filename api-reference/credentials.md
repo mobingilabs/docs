@@ -52,7 +52,7 @@ Azure:
 }
 ```
 
-GCP (for GCP, `secret` is your service account's JSON file):
+GCP \(for GCP, `secret` is your service account's JSON file\):
 
 ```ruby
 {
