@@ -66,7 +66,7 @@ The following are the list of permissions supported in RBAC for Wave. Wave permi
 ## Ripple permissions
 
 {% hint style="warning" %}
-This page is still a work in progress.
+This section is still a work in progress.
 {% endhint %}
 
 The following are the list of permissions supported in RBAC for Ripple.
@@ -78,7 +78,7 @@ The following are the list of permissions supported in RBAC for Ripple.
 ## Ocean permissions
 
 {% hint style="warning" %}
-This page is still a work in progress.
+This section is still a work in progress.
 {% endhint %}
 
 The following are the list of permissions supported in RBAC for Ocean.
