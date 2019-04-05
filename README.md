@@ -6,7 +6,7 @@ Mobingi RBAC is defined around users, namespaces, roles, and permissions. Users 
 
 Roles and permissions in Mobingi RBAC are isolated based on namespaces. What this means is that a role can only be created under a specific namespace, with namespace-specific permissions attached to it.
 
-Mobingi root users (the main account you registered to Mobingi, in email address form) are always super admins, or have unrestricted access across namespaces. 
+Mobingi root users (the main account you registered to Mobingi, in email address form) are always super admins, or have unrestricted access across namespaces. Typically, root users should create subusers and assign specific roles to them.
 
 ## Namespace table
 
