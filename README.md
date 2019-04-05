@@ -12,5 +12,5 @@ Mobingi Wave を利用するための事前準備から、UIの基本的な操�
 
 Mobingi Wave: [https://app.mobingi.com/wave](https://app.mobingi.com/wave).
 
-本ユーザーガイドで解決できない場合は support@mobingi.com までお気軽にお問い合わせください。
+本ユーザーガイドで解決できない場合は wave\_cs@mobingi.com までお気軽にお問い合わせください。
 

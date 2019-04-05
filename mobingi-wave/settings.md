@@ -2,40 +2,45 @@
 
 コンソール右上のドロップダウンメニューから設定を選択します。
 
-![](../.gitbook/assets/mobingi_wave.png)
+![](../.gitbook/assets/sukurnshotto-2019-03-13-102548.png)
 
 ### 設定画面でできること
 
-1. ログインID（メールアドレス）の変更 
-2. パスワードの変更
-
-   * 現在のパスワードを忘れてしまった場合はお手数ですが、[ログインページより再設定](https://docs.mobingi.com/v/wave/mobingi-wave/settings#resetpw)できます。
-
-3. 言語の選択
+1. 言語の選択
 
    * 日本語、英語、中国語に対応しています。
 
-4. 通知設定
-   * レポート画面から設定した予算を越えると、メールもしくはslackに通知が飛びます。
-   * Slackに通知する場合`webhookURL`を入力する必要があります。
-     1. Slackにログインし通知先のSlackチャンネルを作成（既にある場合は必要なし）
-     2. [https://slack.com/services/new/incoming-webhook](https://slack.com/services/new/incoming-webhook)にアクセス
-     3. 通知先チャンネルを選択後`Add Incoming WebHooks integration`をクリック
-     4. `Descriptive Label`等の設定等のを変更する場合は`Save Settings`する
-     5. `Webhook URL` の `Copy URL` をクリック
-     6. コピーしたWebhook URLをWaveに貼り付け
+2. ログインID（メールアドレス）の変更 
+3. パスワードの変更
+   * 現在のパスワードを入力することにより新しいパスワードを指定できます。現在のパスワードを忘れてしまった場合はお手数ですが、[ログインページより再設定](https://docs.mobingi.com/v/wave/mobingi-wave/settings#resetpw)をお願いいたします。
 
 ## 設定：レポートページ
 
-### 予算設定
+### 予算通知設定
 
 レポートページから設定・変更できる作業です。
 
-![](../.gitbook/assets/snip20180806_14.png)
+![](../.gitbook/assets/bannersandalertstomobingiwave.png)
 
-レポートページから対象のアカウントを選択し、アカウント名したの`予算設定`ボタンをクリック。ポップアップより日、月ごとの予算が設定できます。
+レポートページから対象のアカウントを選択し、右上メニューの`予算設定`ボタンをクリック。
 
-予算をオーバーした場合にはメール・Slackにて通知されます。通知設定は本ページ内の`3.通知設定`をご覧ください。
+![](../.gitbook/assets/sukurnshotto-2019-03-13-102958.png)
+
+下記項目をアクティブにし設定した上で`設定を保存`ボタンを押してください。
+
+* 通知先の設定 
+  * メールアドレス
+  * Slack 
+* 日毎の設定
+  * 1日の予算（ドル）
+  * 前日比（パーセント）
+* 月毎の予算
+  * １ヶ月の予算（ドル）
+
+2日前までのデータを元に、予算をオーバーしたタイミングで指定した先に通知されます。  
+メールで設定した場合は下記のようなメールが届きます。
+
+![](../.gitbook/assets/nosurumonoka5198tsukarimashita.png)
 
 ### アカウント名の変更
 
