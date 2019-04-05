@@ -2,5 +2,5 @@
 
 | Description | Link |
 | :--- | :--- |
-| Base URL | `https://service.mobingi.com/m/ocean/` |
+| API Base URL | `https://service.mobingi.com/m/ocean/` |
 
