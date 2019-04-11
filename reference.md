@@ -195,6 +195,8 @@ GET /{subuser}/userroles HTTP1.1
 Authorization: Bearer {token}
 ```
 
+`{subuser}` is the subuser id.
+
 **Response**
 
 ```ruby
