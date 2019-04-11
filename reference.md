@@ -181,7 +181,7 @@ HTTP 200
 
 **Request**
 
-For this endpoint, the returned user roles are those mapped by the caller.
+For this endpoint, the returned role mappings are those attached to the caller.
 
 ```http
 GET /userroles HTTP1.1
