@@ -6,15 +6,18 @@ This page is still a work in progress.
 
 ## Create a deployment
 
+**Request**
+
 ```http
-REQUEST
 POST /v0/deployments HTTP1.1
 Authorization: Bearer {token}
 
 {template body}
+```
 
----
-RESPONSE
+**Response**
+
+```http
 HTTP 202
 ```
 
