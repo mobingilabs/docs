@@ -51,13 +51,15 @@ tbd
 
 ## Delete a deployment
 
-```text
-REQUEST
-DELETE /v0/deployments/{id} HTTP1.1
-Authorization: Bearer {token}
+**Request**
 
----
-RESPONSE
+```http
+DELETE /v0/deployments/{templatename} HTTP1.1
+Authorization: Bearer {token}
+```
+**Response**
+
+```http
 HTTP 202
 ```
 
