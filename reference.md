@@ -181,8 +181,17 @@ HTTP 200
 
 **Request**
 
+For this endpoint, the returned user roles are those mapped by the caller.
+
 ```http
 GET /userroles HTTP1.1
+Authorization: Bearer {token}
+```
+
+For listing role mapping of other subusers, use this endpoint.
+
+```http
+GET /{subuser}/userroles HTTP1.1
 Authorization: Bearer {token}
 ```
 
