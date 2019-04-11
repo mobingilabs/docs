@@ -21,7 +21,7 @@ Authorization: Bearer {token}
 HTTP 202
 ```
 
-Check out [https://github.com/mobingi/ocean-template-examples](https://github.com/mobingi/ocean-template-examples) for examples about `{template body}`.
+Check out [https://github.com/mobingi/ocean-template-examples](https://github.com/mobingi/ocean-template-examples) for examples about `{template body}`. For details on how to write Ocean templates, check out this [reference](https://docs.mobingi.com/v/ocean-en/template-2018-07-02).
 
 ## List deployments
 
