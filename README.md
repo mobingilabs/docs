@@ -8,6 +8,8 @@ Ocean is Mobingi's product for end-to-end application lifecycle management, incl
 
 You can do deployments in Ocean using Ocean templates. One template is equivalent to one deployment. You can define applications and stacks in a template. Applications are container-based. Stacks are the infrastructure definitions where you can deploy your applications. Ocean uses [Kubernetes](https://kubernetes.io/) as its default infrastructure for application deployment.
 
+Ocean's deployment target is your cloud account, whether it's AWS, Azure, or GCP. You need to register your cloud credentials to Ocean before you start deploying templates.
+
 ## Vendor codes
 
 | Provider | Vendor code |
