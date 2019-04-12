@@ -90,6 +90,8 @@ When creating [Ocean templates](https://docs.mobingi.com/v/ocean-en/reference-20
 
 ## List credentials
 
+Return a list of registered credentials.
+
 **Request**
 
 ```http
@@ -166,6 +168,8 @@ HTTP 200
 
 ## Describe a credential
 
+Describe a specific credential specified by id.
+
 **Request**
 
 ```http
@@ -193,6 +197,8 @@ HTTP 200
 ```
 
 ## Delete a credential
+
+Remove a registered credential from Ocean.
 
 **Request**
 
