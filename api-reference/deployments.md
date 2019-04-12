@@ -51,13 +51,9 @@ Authorization: Bearer {token}
 
 **Response**
 
-```http
-HTTP 200
-```
-
-Example response
-
 ```ruby
+HTTP 200
+
 {
   "stacks":[
     {
