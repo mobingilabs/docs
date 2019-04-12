@@ -58,24 +58,11 @@ HTTP 200
 Example response
 
 ```ruby
-GET /v0/deployments?template=oceantest
-Authorization: Bearer {token}
-
 {
   "stacks":[
     {
       "name":"stack-name",
       "items":[
-        {
-          "name":"cfnextra",
-          "resources":[
-            {
-              "key": "AWS::SNS::SNSTopic",
-              "value": "arn:aws:sns:ap-northeast-1:963826138034:cfnextra-sample-snstopic"
-            },
-          ],
-          "status": "creating|updating|completed|failed"
-        },
         {
           "name":"eksmaster",
           "resources":[
@@ -89,7 +76,17 @@ Authorization: Bearer {token}
             }
           ],
           "status": "creating|updating|completed|failed"
-        }             
+        },
+        {
+          "name":"cfnextra",
+          "resources":[
+            {
+              "key": "AWS::SNS::SNSTopic",
+              "value": "arn:aws:sns:ap-northeast-1:...cfnextra-sample-snstopic"
+            },
+          ],
+          "status": "creating|updating|completed|failed"
+        }
       ]
     }     
   ]
