@@ -68,8 +68,6 @@ GCP \(for GCP, `secret` is your service account's JSON file\):
 
 **Response**
 
-Example:
-
 ```ruby
 HTTP 201
 
