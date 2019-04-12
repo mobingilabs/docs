@@ -95,9 +95,12 @@ HTTP 200
 **Request**
 
 ```http
-DELETE /v0/deployments/{templatename} HTTP1.1
+DELETE /v0/deployments/{name} HTTP1.1
 Authorization: Bearer {token}
 ```
+
+`{name}` is the template (or deployment) name.
+
 **Response**
 
 ```http
