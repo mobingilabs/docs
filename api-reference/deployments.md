@@ -15,7 +15,7 @@ Authorization: Bearer {token}
 
 **Response**
 
-```http
+```ruby
 HTTP 202
 ```
 
@@ -103,7 +103,7 @@ Authorization: Bearer {token}
 
 **Response**
 
-```http
+```ruby
 HTTP 202
 ```
 
