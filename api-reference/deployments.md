@@ -55,6 +55,7 @@ Authorization: Bearer {token}
 HTTP 200
 
 {
+  "deployment":"template-name",
   "stacks":[
     {
       "name":"stack-name",
