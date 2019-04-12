@@ -4,6 +4,8 @@ The following is the API reference for working with Ocean deployments.
 
 ## Create a deployment
 
+Deploy an Ocean template.
+
 **Request**
 
 ```http
@@ -23,6 +25,8 @@ Check out [https://github.com/mobingi/ocean-template-examples](https://github.co
 
 ## List deployments
 
+Get a list of available deployments.
+
 {% hint style="warning" %}
 This page is still a work in progress.
 {% endhint %}
@@ -39,6 +43,8 @@ tbd
 ```
 
 ## Describe a deployment
+
+Describe a specific deployment based on name.
 
 **Request**
 
@@ -91,6 +97,8 @@ HTTP 200
 ```
 
 ## Delete a deployment
+
+Delete a deployment and all associated applications and resources.
 
 **Request**
 
