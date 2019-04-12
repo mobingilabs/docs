@@ -41,9 +41,11 @@ tbd
 **Request**
 
 ```http
-GET /v0/deployments/{id} HTTP1.1
+GET /v0/deployments/{name} HTTP1.1
 Authorization: Bearer {token}
 ```
+
+`{name}` is the template (or deployment) name.
 
 **Response**
 
