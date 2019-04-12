@@ -38,15 +38,17 @@ tbd
 
 ## Describe a deployment
 
+**Request**
+
 ```http
-REQUEST
 GET /v0/deployments/{id} HTTP1.1
 Authorization: Bearer {token}
+```
 
----
-RESPONSE
+**Response**
+
+```http
 HTTP 200
-tbd
 ```
 
 ## Delete a deployment
