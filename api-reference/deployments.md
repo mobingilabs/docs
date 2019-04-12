@@ -1,5 +1,7 @@
 # Deployments
 
+The following is the API reference for working with Ocean deployments. 
+
 ## Create a deployment
 
 **Request**
