@@ -55,6 +55,47 @@ Authorization: Bearer {token}
 HTTP 200
 ```
 
+Example response
+
+```ruby
+GET /v0/deployments?template=oceantest
+Authorization: Bearer {token}
+
+{
+  "stacks":[
+    {
+      "name":"stack-name",
+      "items":[
+        {
+          "name":"cfnextra",
+          "resources":[
+            {
+              "key": "AWS::SNS::SNSTopic",
+              "value": "arn:aws:sns:ap-northeast-1:963826138034:cfnextra-sample-snstopic"
+            },
+          ],
+          "status": "creating|updating|completed|failed"
+        },
+        {
+          "name":"eksmaster",
+          "resources":[
+            {
+              "key": "AWS::EC2::InternetGateway",
+              "value": "igw-040e7443b67d8cda2"
+            },
+            {
+              "key": "AWS::EC2::Route",
+              "value": "aws-5-Route-1PR9K4JNZTQRY"
+            }
+          ],
+          "status": "creating|updating|completed|failed"
+        }             
+      ]
+    }     
+  ]
+}
+```
+
 ## Delete a deployment
 
 **Request**
