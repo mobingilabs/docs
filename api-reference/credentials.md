@@ -4,6 +4,8 @@ Before you can do any Ocean deployments, you need to register your cloud credent
 
 ## Create a credential
 
+Register a cloud credential to Ocean.
+
 **Request**
 
 ```http
