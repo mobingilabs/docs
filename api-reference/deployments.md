@@ -25,11 +25,11 @@ Check out [https://github.com/mobingi/ocean-template-examples](https://github.co
 
 ## List deployments
 
-Get a list of available deployments.
-
 {% hint style="warning" %}
 This page is still a work in progress.
 {% endhint %}
+
+Get a list of available deployments.
 
 ```http
 REQUEST
