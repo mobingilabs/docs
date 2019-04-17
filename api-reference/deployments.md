@@ -90,7 +90,8 @@ HTTP 200
           ],
           "status": "creating|updating|completed|failed"
         }
-      ]
+      ],
+      "region": "ap-northeast-1"
     }     
   ]
 }
