@@ -1,6 +1,6 @@
 # Deployments
 
-The following is the API reference for working with Ocean deployments. 
+The following is the API reference for working with Ocean deployments.
 
 ## Create a deployment
 
@@ -53,7 +53,7 @@ GET /v0/deployments/{name} HTTP1.1
 Authorization: Bearer {token}
 ```
 
-`{name}` is the template (or deployment) name.
+`{name}` is the template \(or deployment\) name.
 
 **Response**
 
@@ -108,7 +108,7 @@ DELETE /v0/deployments/{name} HTTP1.1
 Authorization: Bearer {token}
 ```
 
-`{name}` is the template (or deployment) name.
+`{name}` is the template \(or deployment\) name.
 
 **Response**
 
