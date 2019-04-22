@@ -1,7 +1,12 @@
-# 事前準備
+---
+description: Ripple の利用を開始するにあたり、事前に必要な設定をご説明します。
+---
 
-* モビンギのHourlyレポート解析を有効にするために、お客様のAWSアカウントで実施する必要がある作業と、モビンギに提出する情報について記述します。
-* 作業後、モビンギに提出する情報については以下の通りです。 各段階の作業で控えていただくようお願いいたします。\(作業後でも確認可能です。\)
+# Hourlyレポート解析の有効化
+
+モビンギのHourlyレポート解析を有効にするために、お客様のAWSアカウントで実施する必要がある作業と、モビンギに提出する情報について記述します。
+
+作業後、モビンギに提出する情報については以下の通りです。 各段階の作業で控えていただくようお願いいたします。\(作業後でも確認可能です。\)
 
 ```text
 - AWSアカウントのID (数字12桁)
@@ -40,14 +45,14 @@
 
 レポートの作成へ進みます。
 
-![](../.gitbook/assets/snip20181004_7.png)
+![](../../.gitbook/assets/snip20181004_7.png)
 
 * 『ステップ 1: レポートの明細項目』を以下の要領で記入して次に進めます。
   * レポート名：任意
   * **リソースIDのインクルード**：チェック
   * データの更新設定：チェック推奨
 
-![](../.gitbook/assets/ming-cheng-wei-she-ding-7.png)
+![](../../.gitbook/assets/ming-cheng-wei-she-ding-7.png)
 
 * 『ステップ 2: 配信オプション』では、S3バケットの操作を含めるため、以下手順で進めます。
   * S3バケット名\(先程作成\)を入力
@@ -60,15 +65,15 @@
 レポートデータ統合を有効化すると正常に動かない場合があります。
 {% endhint %}
 
-![](../.gitbook/assets/ming-cheng-wei-she-ding-8.png)
+![](../../.gitbook/assets/ming-cheng-wei-she-ding-8.png)
 
-![](../.gitbook/assets/snip20181003_6.png)
+![](../../.gitbook/assets/snip20181003_6.png)
 
 * サンプルポリシーをコピーした後、**先程作成したS3バケット** の詳細を開きます。\(※別タブまたはウィンドウでの作業を推奨\)
 * S3で『アクセス権限』&gt;&gt; 『バケットポリシー』とメニューをたどります。
 * バケットポリシーエディタで、先程のサンプルポリシーを適用します。
 
-![](../.gitbook/assets/bill_005.png)
+![](../../.gitbook/assets/bill_005.png)
 
 『ステップ 2: 配信オプション』に戻り、以下の項目を入力して次へ進みます。
 
@@ -79,27 +84,27 @@
 
 S3のメニューで再度確認してください。
 
-![](../.gitbook/assets/ming-cheng-wei-she-ding-11.png)
+![](../../.gitbook/assets/ming-cheng-wei-she-ding-11.png)
 
 『ステップ 3: 確認』表示されている内容に間違いがない確認し、完了します。
 
-![](../.gitbook/assets/sukurnshotto-2018-12-13-152219.png)
+![](../../.gitbook/assets/sukurnshotto-2018-12-13-152219.png)
 
 ## 手順 2 :モビンギに読み取り権限を委譲するIAMロールの作成 <a id="step2"></a>
 
 AWSのマネジメントコンソールから、IAMサービスを開き、『ロール』&gt;&gt; 『ロールの作成』メニューへ移動します。
 
-![](../.gitbook/assets/role_001.png)
+![](../../.gitbook/assets/role_001.png)
 
 『信頼されたエンティティの種類を選択』で、「別のAWSアカウントを」選択し、以下のモビンギのアカウントIDを入力します。
 
 * モビンギアカウントID: 131920598436
 
-![](../.gitbook/assets/role_002.png)
+![](../../.gitbook/assets/role_002.png)
 
 「アクセス権限ポリシーをアタッチする」メニューで、『ポリシーの作成』を選択します。
 
-![](../.gitbook/assets/role_003-1.png)
+![](../../.gitbook/assets/role_003-1.png)
 
 別のタブ\(ウィンドウ\)で「ポリシーの作成」メニューが開くので、入力形式にJSONを選択し、以下の内容でポリシーを入力します。 Resourceの`{replace_to_report_bucket}`部分を **レポートに使用するバケット名** に置き換えてください。
 
@@ -122,20 +127,20 @@ AWSのマネジメントコンソールから、IAMサービスを開き、『�
 }
 ```
 
-![](../.gitbook/assets/create-policy-ja.png)
+![](../../.gitbook/assets/create-policy-ja.png)
 
-![](../.gitbook/assets/create-policy-example-ja.png)
+![](../../.gitbook/assets/create-policy-example-ja.png)
 
 「ポリシーの確認」へ進み、以下の項目を入力してポリシーを作成します。
 
 * 名前: 任意\(※必須\)
 * 説明: 任意
 
-![](../.gitbook/assets/role_005.png)
+![](../../.gitbook/assets/role_005.png)
 
 『ロールの作成』メニューに戻り、リストを更新し、先ほど作成したポリシーを表示します。 チェックを有効にして、確認へ進みます。
 
-![](../.gitbook/assets/role_006.png)
+![](../../.gitbook/assets/role_006.png)
 
 「確認」メニューで、以下の項目を入力します。
 
@@ -144,9 +149,9 @@ AWSのマネジメントコンソールから、IAMサービスを開き、『�
 
 「信頼されたエンティティ」、「ポリシー」が適用されていることを確認し、ロールを作成します。
 
-![](../.gitbook/assets/role_007.png)
+![](../../.gitbook/assets/role_007.png)
 
 作成したロールのARNを控えます。
 
-![](../.gitbook/assets/role_008-1.png)
+![](../../.gitbook/assets/role_008-1.png)
 

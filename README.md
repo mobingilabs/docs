@@ -2,19 +2,9 @@
 description: Mobingi Documentation
 ---
 
-# Mobingi Ripple 公式ユーザーガイド
+# Mobingi Ripple ヘルプセンター
 
-Mobingi Ripple のダッシュボードからの基本的な操作方法を説明しています。
+Mobingi Ripple をご利用のお客様向けに、Rippleを利用する上で必要な情報や便利な使い方をご紹介します。
 
-機能の追加・変更に合わせてこのユーザーガイドはアップデートされます。
-
-左のメニューから読みたい項目を選択してください。
-
-Mobingi Ripple:  [https://ripple.mobingi.com](https://ripple.mobingi.com).
-
-
-
-本ユーザーガイドで解決できない場合は ripple\_cs@mobingi.com までお気軽にお問い合わせください。
-
-
+本ヘルプガイドを読んでも分からないことがあれば、ripple\_cs@mobingi.com までお気軽にお問い合わせください。
 
