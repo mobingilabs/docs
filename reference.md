@@ -69,6 +69,7 @@ Authorization: Bearer {token}
 **Response**
 
 ```ruby
+HTTP 200
 {
   "id": "iA1OGMyMjk3ZDI1NjQ1...",
   "name":"testrole",
