@@ -66,6 +66,25 @@ Authorization: Bearer {token}
 }
 ```
 
+**Response**
+
+```ruby
+{
+  "id": "iA1OGMyMjk3ZDI1NjQ1...",
+  "name":"testrole",
+  "permissions":[
+    {
+      "namespace":"wave",
+      "permissions":[
+        "ModifySettings",
+        "ViewSettings",
+        ...
+      ]
+    }
+  ]
+}
+```
+
 ## List roles
 
 **Request**
