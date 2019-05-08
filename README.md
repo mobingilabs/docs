@@ -22,7 +22,7 @@ The following table lists the supported namespaces under Mobingi RBAC.
 
 ## User permissions
 
-The following are the list of permissions supported in user management. User permissions belongs to the `user` namespace.
+The following table lists the permissions supported under user management. User permissions belongs to the `user` namespace.
 
 | Permission | Description |
 | :--- | :--- |
@@ -33,7 +33,7 @@ The following are the list of permissions supported in user management. User per
 
 ## RBAC permissions
 
-The following are the list of permissions supported in RBAC management. RBAC permissions belongs to the `rbac` namespace.
+The following table lists the permissions supported under RBAC management. RBAC permissions belongs to the `rbac` namespace.
 
 | Permission | Description |
 | :--- | :--- |
@@ -44,7 +44,7 @@ The following are the list of permissions supported in RBAC management. RBAC per
 
 ## Wave permissions
 
-The following are the list of permissions supported in RBAC for Wave. Wave permissions belongs to the `wave` namespace.
+The following table lists the permissions supported under RBAC for Wave. Wave permissions belongs to the `wave` namespace.
 
 | Permission | Description |
 | :--- | :--- |
@@ -69,7 +69,7 @@ The following are the list of permissions supported in RBAC for Wave. Wave permi
 This section is still a work in progress.
 {% endhint %}
 
-The following are the list of permissions supported in RBAC for Ripple. Ripple permissions belongs to the `ripple` namespace.
+The following table lists the permissions supported under RBAC for Ripple. Ripple permissions belongs to the `ripple` namespace.
 
 | Permission | Description |
 | :--- | :--- |
@@ -96,7 +96,7 @@ The following are the list of permissions supported in RBAC for Ripple. Ripple p
 This section is still a work in progress.
 {% endhint %}
 
-The following are the list of permissions supported in RBAC for Ocean.
+The following table lists the permissions supported under RBAC for Ocean.
 
 | Permission | Description |
 | :--- | :--- |
