@@ -69,7 +69,7 @@ The following are the list of permissions supported in RBAC for Wave. Wave permi
 This section is still a work in progress.
 {% endhint %}
 
-The following are the list of permissions supported in RBAC for Ripple.
+The following are the list of permissions supported in RBAC for Ripple. Ripple permissions belongs to the `ripple` namespace.
 
 | Permission | Description |
 | :--- | :--- |
