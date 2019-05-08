@@ -210,7 +210,7 @@ GET /userroles HTTP1.1
 Authorization: Bearer {token}
 ```
 
-For listing role mapping of other subusers, use this endpoint.
+For listing role mappings of other subusers, use this endpoint.
 
 ```http
 GET /{subuser}/userroles HTTP1.1
