@@ -137,7 +137,7 @@ The `{id}` part is the value of the `id` you get from listing roles.
 
 ## Map roles to user
 
-You can only map \(or attach\) up to 5 roles per user per namespace. There is no limit for filtering rules per user.
+You can only map \(or attach\) up to 5 roles to a user per namespace. There is no limit for filtering rules per user.
 
 Valid values for `type` for filtering rules:
 
