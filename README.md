@@ -74,6 +74,21 @@ The following are the list of permissions supported in RBAC for Ripple.
 | Permission | Description |
 | :--- | :--- |
 | `Admin` | No restrictions. Root user, by default, has this permission. |
+| `ModifySettings` | Allowed to modify global Ripple settings. |
+| `ReadSettings` | View global Ripple settings only. |
+| `ModifyInvoiceSettings` | Allowed to modify invoice settings. |
+| `ReadInvoiceSettings` | View invoice settings only. |
+| `ReadBillingGroup` | View billing group only. |
+| `ModifyBillingGroup` | Allowed to modify billing group settings. |
+| `ReadAccount` | todo |
+| `ModifyAccount` | todo |
+| `ReadReseller` | todo |
+| `ModifyReseller` | todo |
+| `ReadInvoice` | todo |
+| `ModifyInvoice` | todo |
+| `ReadRi` | todo |
+| `ModifyRi` | todo |
+
 
 ## Ocean permissions
 
