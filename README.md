@@ -22,7 +22,7 @@ The following table lists the supported namespaces under Mobingi RBAC.
 
 ## User permissions
 
-The following table lists the permissions supported under user management. User permissions belongs to the `user` namespace.
+The following table lists the permissions supported under user management. User permissions belong to the `user` namespace.
 
 | Permission | Description |
 | :--- | :--- |
@@ -33,7 +33,7 @@ The following table lists the permissions supported under user management. User 
 
 ## RBAC permissions
 
-The following table lists the permissions supported under RBAC management. RBAC permissions belongs to the `rbac` namespace.
+The following table lists the permissions supported under RBAC management. RBAC permissions belong to the `rbac` namespace.
 
 | Permission | Description |
 | :--- | :--- |
@@ -44,7 +44,7 @@ The following table lists the permissions supported under RBAC management. RBAC 
 
 ## Wave permissions
 
-The following table lists the permissions supported under RBAC for Wave. Wave permissions belongs to the `wave` namespace.
+The following table lists the permissions supported under RBAC for Wave. Wave permissions belong to the `wave` namespace.
 
 | Permission | Description |
 | :--- | :--- |
@@ -65,7 +65,7 @@ The following table lists the permissions supported under RBAC for Wave. Wave pe
 
 ## Ripple permissions
 
-The following table lists the permissions supported under RBAC for Ripple. Ripple permissions belongs to the `ripple` namespace.
+The following table lists the permissions supported under RBAC for Ripple. Ripple permissions belong to the `ripple` namespace.
 
 | Permission | Description |
 | :--- | :--- |
@@ -92,7 +92,7 @@ The following table lists the permissions supported under RBAC for Ripple. Rippl
 This section is still a work in progress.
 {% endhint %}
 
-The following table lists the permissions supported under RBAC for Ocean.
+The following table lists the permissions supported under RBAC for Ocean. Ocean permissions belong to the `ocean` namespace.
 
 | Permission | Description |
 | :--- | :--- |
