@@ -97,6 +97,8 @@ GET /roles?namespace={namespace} HTTP1.1
 Authorization: Bearer {token}
 ```
 
+The `{namespace}` parameter is optional. If not provided, all roles will be returned.
+
 **Response**
 
 ```ruby
