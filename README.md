@@ -65,10 +65,6 @@ The following table lists the permissions supported under RBAC for Wave. Wave pe
 
 ## Ripple permissions
 
-{% hint style="warning" %}
-This section is still a work in progress.
-{% endhint %}
-
 The following table lists the permissions supported under RBAC for Ripple. Ripple permissions belongs to the `ripple` namespace.
 
 | Permission | Description |
