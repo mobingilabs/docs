@@ -80,14 +80,14 @@ The following table lists the permissions supported under RBAC for Ripple. Rippl
 | `ModifyInvoiceSettings` | Allowed to modify invoice settings. |
 | `ReadBillingGroup` | View billing group only. |
 | `ModifyBillingGroup` | Allowed to modify billing group settings. |
-| `ReadAccount` | todo |
-| `ModifyAccount` | todo |
-| `ReadReseller` | todo |
-| `ModifyReseller` | todo |
-| `ReadInvoice` | todo |
-| `ModifyInvoice` | todo |
-| `ReadRi` | todo |
-| `ModifyRi` | todo |
+| `ReadAccount` | View account section only. |
+| `ModifyAccount` | Allowed to modify account section settings. |
+| `ReadReseller` | View reseller section only. |
+| `ModifyReseller` | Allowed to modify reseller section settings. |
+| `ReadInvoice` | View invoice section only. |
+| `ModifyInvoice` | Allowed to modify invoice section settings. |
+| `ReadRi` | View RI section only. |
+| `ModifyRi` | Allowed to modify RI section settings. |
 
 
 ## Ocean permissions
