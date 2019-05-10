@@ -21,16 +21,17 @@ The following table lists the supported namespaces under Mobingi RBAC.
 | Users | `users` |
 | RBAC | `rbac` |
 
-## User permissions
+## Dashboard permissions
 
-The following table lists the permissions supported under user management. User permissions belong to the `user` namespace.
+The following table lists the permissions supported under Mobingi Dashboard. Dashboard permissions belong to the `dashboard` namespace.
 
 | Permission | Description |
 | :--- | :--- |
 | `Admin` | No restrictions. Root user, by default, has this permission. |
-| `ReadOnly` | View user information, including API clients. |
-| `ModifyUsers` | Allowed to modify user attributes. |
-| `ModifyApiClients` | Allowed to modify API clients. |
+| `ReadEventsAll` | View events under all namespaces. |
+| `ReadEventsRipple` | View events under `ripple` namespace. |
+| `ReadEventsWave` | View events under `wave` namespace. |
+| `ReadEventsOcean` | View events under `ocean` namespace. |
 
 ## RBAC permissions
 
@@ -86,7 +87,6 @@ The following table lists the permissions supported under RBAC for Ripple. Rippl
 | `ReadRi` | View RI section only. |
 | `ModifyRi` | Allowed to modify RI section settings. |
 
-
 ## Ocean permissions
 
 {% hint style="warning" %}
@@ -98,3 +98,14 @@ The following table lists the permissions supported under RBAC for Ocean. Ocean 
 | Permission | Description |
 | :--- | :--- |
 | `Admin` | No restrictions. Root user, by default, has this permission. |
+
+## User permissions
+
+The following table lists the permissions supported under user management. User permissions belong to the `user` namespace.
+
+| Permission | Description |
+| :--- | :--- |
+| `Admin` | No restrictions. Root user, by default, has this permission. |
+| `ReadOnly` | View user information, including API clients. |
+| `ModifyUsers` | Allowed to modify user attributes. |
+| `ModifyApiClients` | Allowed to modify API clients. |
