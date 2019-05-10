@@ -12,5 +12,5 @@ AWSのサポート料金、リザーブドインスタンス （RI）の前払�
 \*\*\*\*[AWSが定める請求の種類](https://docs.aws.amazon.com/ja_jp/awsaccountbilling/latest/aboutv2/enhanced-lineitem-columns.html)を表示しています。「Fee」「Refund」「Credit」のうちのひとつが表示されます。
 {% endhint %}
 
-
+適用させたい一時金を選択した状態で、 `アクション` ボタンをクリックして、何月に含めるのか、為替レートの設定、免税を適用するか否かを設定し `実行` をクリックします。
 
