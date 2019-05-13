@@ -46,7 +46,7 @@ description: >-
 
 Click **Create report**.
 
-![](../.gitbook/assets/snip20180727_7.png)
+![](../../.gitbook/assets/snip20180727_7.png)
 
 * Fill out `Step 1: Select Content` same as below.
   * Report name: Any
@@ -54,21 +54,21 @@ Click **Create report**.
   * Include: **Resource IDs**
   * Enable support for...: Optional
 
-![](../.gitbook/assets/snip20181004_14.png)
+![](../../.gitbook/assets/snip20181004_14.png)
 
 * `Step2: Select Delivery Options` will be the following process.
   * Put S3 bucket name \(you made at Step1-1\)
   * Display and copy **Sample policy** \(\* make sure to click after you entered S3 bucket name\)
 
-![](../.gitbook/assets/snip20181004_16.png)
+![](../../.gitbook/assets/snip20181004_16.png)
 
-![](../.gitbook/assets/snip20180727_10.png)
+![](../../.gitbook/assets/snip20180727_10.png)
 
 * After copy **sample policy,** open the **S3 bucket which you create on step1-1** and open detail \(\* we suggest to open the page with new window or new tab\).
 * On S3 page, go to **Permissions** &gt;&gt; **Bucket Policy.**
 * Put the policy you copied at before into **Bucket policy editor** and Save.
 
-![](../.gitbook/assets/snip20180727_17.png)
+![](../../.gitbook/assets/snip20180727_17.png)
 
 Go back to `Step2: Select Delivery Options` and put below info.
 
@@ -79,27 +79,27 @@ It shows **Valid Bucket** only when the bucket policy is correct.
 
 Check your S3 again.
 
-![](../.gitbook/assets/snip20181004_16%20%281%29.png)
+![](../../.gitbook/assets/snip20181004_16%20%281%29.png)
 
 Check the info again and click **Review and Complete.**
 
-![](../.gitbook/assets/snip20181004_18.png)
+![](../../.gitbook/assets/snip20181004_18.png)
 
 ## Step 2 : Create IAM role for Mobingi <a id="step2"></a>
 
 From AWS management console, select **IAM** service and click **Roles** &gt;&gt; **Create role.**
 
-![](../.gitbook/assets/snip20180727_19.png)
+![](../../.gitbook/assets/snip20180727_19.png)
 
 Choose **Another AWS Account** at `Select type of trusted entity`and put Mobingi account ID.
 
 * Mobingi Account ID: 131920598436
 
-![](../.gitbook/assets/snip20180727_21.png)
+![](../../.gitbook/assets/snip20180727_21.png)
 
 Click **Create policy**.
 
-![](../.gitbook/assets/snip20180727_23.png)
+![](../../.gitbook/assets/snip20180727_23.png)
 
 New tab or window will open. Choose JSON as input format and type the policy same as below. Make sure to change`{replace_to_report_bucket}` at "Resource" to **the bucket name you use for report.**
 
@@ -122,18 +122,18 @@ New tab or window will open. Choose JSON as input format and type the policy sam
 }
 ```
 
-![](../.gitbook/assets/create-policy-en.png)
+![](../../.gitbook/assets/create-policy-en.png)
 
 After fill the informations below, you can finish to create policy.
 
 * Name: Any \(\*required\)
 * Description: Option
 
-![](../.gitbook/assets/snip20180727_31.png)
+![](../../.gitbook/assets/snip20180727_31.png)
 
 Go back to **Create Role** and refresh, the policy suppose to display on the list. Active the policy and move to review page. _\*\*_
 
-![](../.gitbook/assets/snip20180727_33.png)
+![](../../.gitbook/assets/snip20180727_33.png)
 
 At **Review**, fill the informations below.
 
@@ -142,7 +142,7 @@ At **Review**, fill the informations below.
 
 After check **Trusted entities** and **Policies** are correctly applied, click **Create role**.
 
-![](../.gitbook/assets/snip20180731_39.png)
+![](../../.gitbook/assets/snip20180731_39.png)
 
 Keep the ARN of the role.
 
