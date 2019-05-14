@@ -2,5 +2,6 @@
 
 * [Overview](README.md)
 * [Namespaces](namespaces.md)
+* [Permissions](permissions.md)
 * [API Reference](reference.md)
 
