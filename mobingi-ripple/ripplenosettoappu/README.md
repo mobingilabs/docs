@@ -1,6 +1,6 @@
-# Rippleのセットアップ
+# Ripple settings
 
-Ripple の利用を開始する前に必ず設定します：
+Be sure to set the following items before using Ripple：
 
 {% page-ref page="introduction.md" %}
 

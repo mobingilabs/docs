@@ -1,6 +1,6 @@
-# 毎月の請求書発行の手順
+# Monthly Invoicing Procedure
 
-お客様が月初に、毎月行う必要のある作業を順にご紹介します。
+Here is an orderly description of what you need to do every month at the beginning of the month.
 
 {% page-ref page="1-dtano.md" %}
 

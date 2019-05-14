@@ -1,12 +1,10 @@
-# 1. 請求データ確定の連絡
+# 1. Notification of confirmation of billing data
 
-毎月月初3~7日頃に、AWSから請求書が届きます。
+You will receive an invoice from AWS between 3rd to 7th day of every month. When you receive the invoice, click the "`Report billing finalization`" button on the Ripple dashboard.
 
-請求書が届きましたら、 Ripple ダッシュボードにございます`請求データ確定の連絡`ボタンをクリックします。
-
-のち、2営業日以内に弊社サポート（ripple\_cs@mobingi.com）より、 `【企業名】x月請求データ計算依頼完了のご連絡` というタイトルでメールを送付します。届きましたら次のステップに進んでください。
+Within 2 business days, our support team\(ripple\_cs@mobingi.com\) send an e-mail with the title of `[Company name] x (month) Complete notification of billing data calculation request.` If you receive this email, please proceed to the next step.
 
 {% hint style="info" %}
-AWSのサポート料金、AWSから付与されたクレジット、返金、その他通常の請求書に載らない一時金を請求に含める場合、毎月7日以降に確定ボタンをクリックしてください。
+If you would like to include a temporary fee in the bill that does not appear on your regular invoice, such as AWS support fee, AWS-provided credit, refund, etc., please click the " Report billing finalization" after 7th day of month.
 {% endhint %}
 
