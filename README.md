@@ -8,19 +8,6 @@ Roles and permissions in Mobingi RBAC are isolated based on namespaces. What thi
 
 Mobingi root users \(the main account you registered to Mobingi, in email address form\) are always super admins, or have unrestricted access across namespaces. Typically, root users should create subusers and assign specific roles to them.
 
-## Namespace table
-
-The following table lists the supported namespaces under Mobingi RBAC.
-
-| Product/domain | Namespace |
-| :--- | :--- |
-| Dashboard | `dashboard` |
-| Ripple | `ripple` |
-| Wave | `wave` |
-| Ocean | `ocean` |
-| Users | `users` |
-| RBAC | `rbac` |
-
 ## Dashboard permissions
 
 The following table lists the permissions supported under Mobingi Dashboard. Dashboard permissions belong to the `dashboard` namespace.
@@ -109,3 +96,4 @@ The following table lists the permissions supported under user management. User 
 | `ReadOnly` | View user information, including API clients. |
 | `ModifyUsers` | Allowed to modify user attributes. |
 | `ModifyApiClients` | Allowed to modify API clients. |
+
