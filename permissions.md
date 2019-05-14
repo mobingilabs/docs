@@ -1,5 +1,7 @@
 # Permissions
 
+The following tables list all supported permissions under Mobingi RBAC across all namespaces.
+
 ## Dashboard permissions
 
 The following table lists the permissions supported under Mobingi Dashboard. Dashboard permissions belong to the `dashboard` namespace.
