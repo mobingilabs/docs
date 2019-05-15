@@ -15,6 +15,9 @@
   * [4. 請求書の作成](mobingi-ripple/nono/4-no.md)
   * [5. 発行した請求明細の確認とダウンロード](mobingi-ripple/nono/5-shitanotodaunrdo.md)
   * [6. エンドユーザーに請求明細を提示](mobingi-ripple/nono/6-endoyzniwo.md)
+  * [2. Exchange rate setting](mobingi-ripple/nono/2.-exchange-rate-setting.md)
+  * [3. Include the cost of the shot in the bill](mobingi-ripple/nono/3.-include-the-cost-of-the-shot-in-the-bill.md)
+* [2. Exchange rate setting](mobingi-ripple/2.-exchange-rate-setting.md)
 
 ## Search by features
 
