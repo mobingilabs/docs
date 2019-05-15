@@ -104,15 +104,14 @@ Delete a deployment and all associated applications and resources.
 **Request**
 
 ```http
-DELETE /v0/deployments/{name} HTTP1.1
+DELETE /v0/deployments/{name}[?force=true] HTTP1.1
 Authorization: Bearer {token}
 ```
 
-`{name}` is the template \(or deployment\) name.
+`{name}` is the template \(or deployment\) name. For templates that have dependency to other templates, API will return error stating the dependency. If the parameter `force=true` is specified, the template resources will be deleted including all dependencies.
 
 **Response**
 
-```ruby
-HTTP 202
-```
+For successful responses, server will return `HTTP 202`. Errors will return `HTTP 422`.
+
 
