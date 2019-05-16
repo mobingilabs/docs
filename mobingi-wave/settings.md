@@ -46,7 +46,7 @@
 
 アカウント名右の`Edit`をクリックするとWave上の名前の表記が変更できます。
 
-![](../.gitbook/assets/image.png)
+![](../.gitbook/assets/image%20%282%29.png)
 
 ## パスワードの再設定 <a id="resetpw"></a>
 
