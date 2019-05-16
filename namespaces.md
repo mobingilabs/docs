@@ -11,5 +11,3 @@ The following table lists the supported namespaces under Mobingi RBAC.
 | Users | `users` |
 | RBAC | `rbac` |
 
-
-
