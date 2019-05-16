@@ -1,19 +1,22 @@
-# 請求書
+# Invoice
 
-左メニューにございます `請求書` 項目の機能についてご紹介します。
+Here, we introduce the functions of the "`Invoices`" section in the left menu.
 
-## 請求書の作成
+## Create invoice
 
-請求グループごとに請求書を作成します。
+Create an invoice for each billing group.
 
-## 再計算請求データ一覧
+{% page-ref page="../mobingi-ripple/nono/4-no.md" %}
 
-RIの前払金やサポート料金、クレジット、返金等の一時金が表示されます。
+## Recalculation billing data list
 
-RIの所有者設定を間違えていた場合、AWS上で追加したアカウントを登録し忘れていた場合などに、再度設定や登録をした後再計算の依頼をする必要があります。  
-手数料やサポート料金といった請求書の設定を変更する場合は再計算の依頼は必要なく、設定変更後にすぐ請求書の作成が行えます。
+It shows RI prepayments, support charges, credits, refunds, etc.
 
-## 換算レート設定
+If you make a mistake in the RI owner setting, or if you forgot to register the account you added on AWS, you need to request recalculation after setting and registering again.
 
-請求計算で必要な月ごとの為替レートを設定します。
+There is no need to recalculate invoice settings such as fees and support charges, and you can create invoices immediately after changing the settings.
+
+## Conversion rate setting
+
+Set the monthly exchange rate required for billing.
 

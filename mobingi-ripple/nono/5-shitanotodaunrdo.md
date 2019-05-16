@@ -1,24 +1,26 @@
-# 5. 発行した請求明細の確認とダウンロード
+# 5. Confirmation and download of issued invoice details
 
-作成した請求書は、画面上で明細を確認できます。また、CSVデータとしてダウンロードすることも可能です。
+You can check the details of the invoice you created on the screen. You can also download it as CSV data.
 
-## 画面上から明細を確認する <a id="karawosuru"></a>
+## Confirm the item from the screen
 
-左メニューより `請求書` &gt; `請求書の作成` で、発行した請求書一覧が表示されます。確認したい請求グループのステータスにある `請求明細を確認` をクリックすることで明細を確認できます。
+From the left menu, select Invoices&gt; `Create Invoices`, and you will see a list of issued invoices. Click on the items of the billing group and you check the details of that invoices.
 
-* このページを印刷することで請求書/明細としてご利用いただくことが可能です。
-* 一度作成した請求書はRipple内で保存されます。
-* 請求書を再作成した場合は上書きされます。
+* By printing that page, you can use it as an invoice / billing statement.
+* Invoices created once are saved in Ripple.
+* If you re-create the invoice, it will be overwritten.
 
-## CSVデータをダウンロード <a id="csvdtawodaunrdo"></a>
+## Download CSV data
 
-請求明細のCSVデータは、ひと月分一括でダウンロードすることが可能です。
+CSV data of billing statement can be downloaded for one month at a time.
 
-`アカウント/サービス単位` または `タグ単位` でデータをダウンロードできます。
+You can download data by `account / service unit` or `Tag unit`.
 
-タグ単位での請求データ作成の方法については、[こちら](https://docs.mobingi.com/v/ripple/more-info/tag-invoice)をご覧ください。
+{% hint style="info" %}
+Please see below for how to create billing data in tags.
+{% endhint %}
 
-右メニューより `請求書` &gt; `請求書の作成` の画面から、`請求書作成`の横のダウンロードボタンをクリックすると、全ての請求グループのCSVデータをダウンロードできます。
+You can download the CSV data of all billing groups by clicking the download button next to the display of "Invoicing" from Invoices&gt; `Create Invoice` from the left menu.
 
 
 

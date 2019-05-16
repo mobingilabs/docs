@@ -1,12 +1,12 @@
-# 6. エンドユーザーに請求明細を提示
+# 6. Present invoice details to end user
 
-エンドユーザーに請求明細を提示する方法を二つご紹介します。
+Here are two ways to present invoice details to end users.
 
-## 請求書をPDFファイル形式で顧客に提示する
+## Present invoices to customers in PDF file format
 
-確認したい請求グループの `請求明細の確認` をクリックすることで明細を確認できます。その画面をPDFファイルとして保存すれば、PDFファイルを顧客に提示できます。
+You can check the billing statement for any billing group by clicking Check invoice. If you save the screen as a PDF file, you can present the PDF file to the customer.
 
-## Wave for Reseller を利用する
+## Use Wave for Reseller
 
-エンドユーザー用の Wave for Reseller のアカウントを発行することで、エンドユーザーは Mobingi Wave を通してWebから請求情報を閲覧できます。
+By issuing a Wave for Reseller account for end users, the end users can view billing information online through Mobingi Wave.
 
