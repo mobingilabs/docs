@@ -13,7 +13,7 @@ Below are the links to Mobingi products' dashboards.
 | ALM \(v3\) dashboard | [https://alm.mobingi.com/](https://alm.mobingi.com/) |
 | ALM \(v2\) dashboard | [https://console.mobingi.com/](https://console.mobingi.com/) |
 | Wave dashboard | [https://app.mobingi.com/wave/](https://app.mobingi.com/wave/) |
-| Ripple dashboard | [https://ripple.mobingi.com/](https://ripple.mobingi.com/) |
+| Ripple dashboard | [https://app.mobingi.com/ripple/](https://app.mobingi.com/ripple/) |
 
 For more information about Mobingi in general, please visit relevant links below.
 
