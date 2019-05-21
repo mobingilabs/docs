@@ -1,6 +1,6 @@
 # Add a new customer
 
-1.Issue AWS account for customer on AWS
+1.Issue customer's AWS account from AWS
 
 Issue an AWS account for the customer from the AWS Management Console.
 
