@@ -9,7 +9,7 @@ This tool reduces labor costs by automating traditional Excel manual calculation
 ## What you can do with Ripple
 
 * Manage the relationship between customer and AWS account
-* Release the blend rate of RI and output the items that match the application of RI
+* Re-calculate the blend of RIs and output the correct unblended invoice. 
 
 　・Streamline billing operations
 
@@ -21,13 +21,13 @@ By automating traditional manual tasks, you can reduce working time, standardize
 
 ## 2.Improve profitability of resellers
 
-Buy and use the right amount of RI at the right time.
+Buy and use the proper amount of RI at the right timing.
 
 
 
 ## Mobingi Ripple and Mobingi Wave
 
-Based on the contents registered by reseller on Ripple, the appropriate usage charge can be calculated, and the end user can check the bill on Wave.
+Based on the Ripple data registered by reseller, the appropriate usage charge can be calculated, and the end user can check the billing information on Wave.
 
 
 
