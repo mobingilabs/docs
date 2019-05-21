@@ -17,7 +17,7 @@ CSV data of billing statement can be downloaded for one month at a time.
 You can download data by `account / service unit` or `Tag unit`.
 
 {% hint style="info" %}
-Please see below for how to create billing data in tags.
+Please see here for creating billing data in tags.
 {% endhint %}
 
 You can download the CSV data of all billing groups by clicking the download button next to the display of "Invoicing" from Invoices&gt; `Create Invoice` from the left menu.

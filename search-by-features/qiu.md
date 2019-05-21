@@ -6,7 +6,7 @@ Here, we introduce the functions of the "`Invoices`" section in the left menu.
 
 Create an invoice for each billing group.
 
-{% page-ref page="../mobingi-ripple/nono/4-no.md" %}
+{% page-ref page="../mobingi-ripple/routine/4-no.md" %}
 
 ## Recalculation billing data list
 

@@ -8,13 +8,13 @@
 * [Ripple settings](mobingi-ripple/ripplenosettoappu/README.md)
   * [Preparation](mobingi-ripple/ripplenosettoappu/introduction.md)
   * [Invoice setting](mobingi-ripple/ripplenosettoappu/qiu-ding.md)
-* [Monthly Invoicing Procedure](mobingi-ripple/nono/README.md)
-  * [1. Notification of confirmation of billing data](mobingi-ripple/nono/1-dtano.md)
-  * [2. Exchange rate setting](mobingi-ripple/nono/2.-exchange-rate-setting.md)
-  * [3. Include the cost of the shot in the bill](mobingi-ripple/nono/3.-include-the-cost-of-the-shot-in-the-bill.md)
-  * [4. Create invoice](mobingi-ripple/nono/4-no.md)
-  * [5. Confirmation and download of issued invoice details](mobingi-ripple/nono/5-shitanotodaunrdo.md)
-  * [6. Present invoice details to end user](mobingi-ripple/nono/6-endoyzniwo.md)
+* [Monthly Invoicing Procedure](mobingi-ripple/routine/README.md)
+  * [1. Notification of confirmation of billing data](mobingi-ripple/routine/click-button.md)
+  * [2. Exchange rate setting](mobingi-ripple/routine/2.-exchange-rate-setting.md)
+  * [3. Include the cost of the shot in the bill](mobingi-ripple/routine/3.-include-the-cost-of-the-shot-in-the-bill.md)
+  * [4. Create invoice](mobingi-ripple/routine/4-no.md)
+  * [5. Confirmation and download of issued invoice details](mobingi-ripple/routine/5-shitanotodaunrdo.md)
+  * [6. Present invoice details to end user](mobingi-ripple/routine/6-endoyzniwo.md)
 
 ## Search by features
 
