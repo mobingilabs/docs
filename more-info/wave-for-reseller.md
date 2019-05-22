@@ -2,7 +2,7 @@
 
 Wave for Reseller は、Ripple ユーザーが自社や顧客向けに Mobingi Wave のログイン情報を発行するためのページです。
 
-[Mobingi Wave とは？](https://mobingi.com/jp/products/wave)
+[Mobingi Wave とは？](https://mobingi.com/jp/product/wave/)
 
 Wave for Reseller は、「Rippleユーザー自身」と、「Rippleユーザーの自社または顧客」で提供する機能が異なります。
 
