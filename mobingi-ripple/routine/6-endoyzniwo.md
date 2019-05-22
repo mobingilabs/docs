@@ -10,3 +10,5 @@ You can check the billing statement for any billing group by clicking Check invo
 
 By issuing a Wave for Reseller account for end users, the end users can view billing information online through Mobingi Wave.
 
+{% page-ref page="../../in-detail/what-is-wave-for-reseller.md" %}
+
