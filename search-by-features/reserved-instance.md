@@ -6,6 +6,8 @@ Here, we introduce the functions of the " `Reserved Instances` " section in the 
 
 Manage purchased RI. RI allocation can be done by clicking `•••`&gt; `RI editing`.
 
+{% page-ref page="../in-detail/change-ri-allocation.md" %}
+
 ## RI application rate
 
 You can view the application status of your RI for the currently running instance.

@@ -30,7 +30,7 @@ From Account & Groups in the left menu, click Add Account in the upper right of 
 
 By using Wave for Reseller, customers can check monthly billing information from the web.
 
-
+{% page-ref page="what-is-wave-for-reseller.md" %}
 
 
 

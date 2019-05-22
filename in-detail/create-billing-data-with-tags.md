@@ -34,7 +34,7 @@ Select the tag values that you want to include in the aggregation.
 
 After completing the settings 1 to 3 above, create billing data according to the normal billing procedure.
 
-
+{% page-ref page="../mobingi-ripple/routine/" %}
 
 
 

@@ -20,3 +20,5 @@ There is no need to recalculate invoice settings such as fees and support charge
 
 Set the monthly exchange rate required for billing.
 
+{% page-ref page="../mobingi-ripple/routine/2.-exchange-rate-setting.md" %}
+
