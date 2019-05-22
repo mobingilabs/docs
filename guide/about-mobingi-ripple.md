@@ -3,7 +3,7 @@
 ## 概要
 
 AWSリセラー、MSPのためのAWS請求書の自動計算と請求書発行ツールです。  
-従来のExcelを利用したマニュアル計算を自動化し、そこにかかる人件費を削減します。詳しくは[こちら](https://mobingi.com/jp/products/ripple)をご覧ください。
+従来のExcelを利用したマニュアル計算を自動化し、そこにかかる人件費を削減します。詳しくは[こちら](https://mobingi.com/jp/product/ripple/)をご覧ください。
 
 ## Ripple で出来ること
 
