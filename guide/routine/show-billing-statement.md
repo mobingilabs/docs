@@ -10,3 +10,5 @@
 
 エンドユーザー用の Wave for Reseller のアカウントを発行することで、エンドユーザーは Mobingi Wave を通してWebから請求情報を閲覧できます。
 
+{% page-ref page="../../more-info/wave-for-reseller.md" %}
+
