@@ -1,11 +1,11 @@
 # 4. Create invoice
 
-An email will be sent from our support within 2 business days after pressing the confirmation button. Please proceed to this step after receiving the email.
+After pressing the confirmation button, the email will be sent from our support within 2 business days. Please proceed to below steps after receiving the email.
 
-## How to create in bulk
+## How to bulk create invoice.
 
 {% hint style="info" %}
-You can change the invoice settings temporarily, such as changing the discount rate only for that month. Please follow the steps below.
+You can change the invoice settings temporarily, such as changing the discount rate only for that month. 
 {% endhint %}
 
 1. Go to Invoice&gt; `Create Invoice` from the left menu.

@@ -13,7 +13,7 @@
   * [2. Exchange rate setting](mobingi-ripple/routine/2.-exchange-rate-setting.md)
   * [3. Include the cost of the shot in the bill](mobingi-ripple/routine/3.-include-the-cost-of-the-shot-in-the-bill.md)
   * [4. Create invoice](mobingi-ripple/routine/4-no.md)
-  * [5. Confirmation and download of issued invoice details](mobingi-ripple/routine/5-shitanotodaunrdo.md)
+  * [5. Check the invoice data](mobingi-ripple/routine/5-shitanotodaunrdo.md)
   * [6. Present invoice details to end user](mobingi-ripple/routine/6-endoyzniwo.md)
 
 ## Search by features

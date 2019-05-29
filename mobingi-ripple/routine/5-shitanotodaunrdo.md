@@ -1,4 +1,4 @@
-# 5. Confirmation and download of issued invoice details
+# 5. Check the invoice data
 
 You can check the details of the invoice you created on the screen. You can also download it as CSV data.
 
