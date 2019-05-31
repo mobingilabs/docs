@@ -145,7 +145,7 @@ The `{id}` part is the value of the id you get from listing roles.
     "ModifyRoles",
     "ModifyUserRoles",
     ...
-    ]
+  ]
 } 
 ```
 
