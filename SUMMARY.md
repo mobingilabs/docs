@@ -2,7 +2,7 @@
 
 * [Overview](README.md)
 * [Authentication](authentication.md)
-* [Users](users.md)
 * [Authorization](authorization.md)
+* [Users](users.md)
 * [Ocean](ocean.md)
 
