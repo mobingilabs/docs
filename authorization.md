@@ -124,17 +124,6 @@ HTTP 200
 ]
 ```
 
-## Delete role
-
-**Request**
-
-```http
-DELETE /roles/{id} HTTP1.1
-Authorization: Bearer {token}
-```
-
-The `{id}` part is the value of the `id` you get from listing roles.
-
 ## Update role
 
 **Request**
@@ -144,8 +133,7 @@ PATCH /roles/{id} HTTP1.1
 Authorization: Bearer {token}
 ```
 
-The {id} part is the value of the id you get from listing roles.
-
+The `{id}` part is the value of the id you get from listing roles.
 
 **Request body**
 
@@ -174,6 +162,18 @@ The {id} part is the value of the id you get from listing roles.
   ]
 }
 ```
+
+## Delete role
+
+**Request**
+
+```http
+DELETE /roles/{id} HTTP1.1
+Authorization: Bearer {token}
+```
+
+The `{id}` part is the value of the `id` you get from listing roles.
+
 ## Map roles to user
 
 You can only map \(or attach\) up to 5 roles to a user per namespace. There is no limit for filtering rules per user.
