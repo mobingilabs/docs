@@ -2,7 +2,7 @@
 
 * [Overview](README.md)
 * [Authentication](authentication.md)
-* [Authorization](authorization.md)
+* [Authorization \(RBAC\)](authorization.md)
 * [Users](users.md)
 * [Ocean](ocean/README.md)
   * [Credentials](ocean/credentials.md)

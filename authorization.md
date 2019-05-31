@@ -138,7 +138,6 @@ The `{id}` part is the value of the id you get from listing roles.
 **Request body**
 
 ```ruby
-
 {
   "namespace": "rbac",
   "permissions": [
@@ -146,7 +145,7 @@ The `{id}` part is the value of the id you get from listing roles.
     "ModifyUserRoles",
     ...
   ]
-} 
+}
 ```
 
 **Response**
