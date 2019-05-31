@@ -1,4 +1,4 @@
-# Authorization
+# Authorization (RBAC)
 
 | Description | Link |
 | :--- | :--- |
