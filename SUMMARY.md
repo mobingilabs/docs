@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Mobingi Ripple よくあるご質問](README.md)
-* [Untitled](untitled.md)
 
 ## MOBINGI RIPPLE
 
