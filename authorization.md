@@ -135,6 +135,45 @@ Authorization: Bearer {token}
 
 The `{id}` part is the value of the `id` you get from listing roles.
 
+## Update role
+
+**Request**
+
+```http
+PATCH /roles/{id} HTTP1.1
+Authorization: Bearer {token}
+```
+
+The {id} part is the value of the id you get from listing roles.
+
+
+**Request body**
+
+```ruby
+
+{
+  "namespace": "rbac",
+  "permissions": [
+    "ModifyRoles",
+    "ModifyUserRoles",
+    ...
+    ]
+} 
+```
+
+**Response**
+
+```ruby
+{
+  "id": "iA1OGMyMjk3ZDI1NjQ1...",
+  "namespace": "rbac",
+  "permissions": [
+    "ModifyRoles",
+    "ModifyUserRoles",
+    ...
+  ]
+}
+```
 ## Map roles to user
 
 You can only map \(or attach\) up to 5 roles to a user per namespace. There is no limit for filtering rules per user.
