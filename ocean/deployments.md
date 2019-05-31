@@ -113,3 +113,4 @@ Authorization: Bearer {token}
 **Response**
 
 For successful responses, server will return `HTTP 202`. Errors will return `HTTP 422`.
+
