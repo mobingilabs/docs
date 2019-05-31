@@ -3,8 +3,6 @@
 | Description | Link |
 | :--- | :--- |
 | API Base URL | `https://service.mobingi.com/m/auth/rbac/` |
-| API Base URL \(QA\) | `https://serviceqa.mobingi.com/m/auth/rbac/` |
-| API Base URL \(Dev\) | `https://servicedev.mobingi.com/m/auth/rbac/` |
 
 ## List permissions
 
