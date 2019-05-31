@@ -1,4 +1,5 @@
 # Table of contents
 
-* [Get Started](README.md)
+* [Overview](README.md)
+* [API Reference](reference.md)
 
