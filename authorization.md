@@ -247,7 +247,7 @@ Valid values for `type` for filtering rules:
 | `wave` | `linkAcct`, `group`, `tags` |
 | `ripple` | `billingGroup` |
 
-this method replace all a subuser's role to information of request body.
+This method replaces all the roles of the specified sub-user with the information in the request body.
 
 **Request**
 
