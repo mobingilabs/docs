@@ -237,6 +237,75 @@ HTTP 200
 }
 ```
 
+## Update map roles to user
+You can only update map \(or attach\) up to 5 roles to a user per namespace. There is no limit for filtering rules per user.
+
+Valid values for `type` for filtering rules:
+
+| Namespace | Value |
+| :--- | :--- |
+| `wave` | `linkAcct`, `group`, `tags` |
+| `ripple` | `billingGroup` |
+
+this method replace all a subuser's role to information of request body.
+
+**Request**
+
+```http
+PATCH /userroles HTTP1.1
+Authorization: Bearer {token}
+```
+```http
+PATCH /{subuser}/userroles HTTP1.1
+Authorization: Bearer {token}
+```
+
+`{subuser}` is the subuser id.
+**Request body**
+
+
+```ruby
+{
+  "namespace":"wave",
+  "roles":[
+    "MjI5N2QyNTY0NVw6...",
+    "Mm5kYWRtaW4gNThj...",
+    ...
+  ],
+  "filter_rules":[
+    {
+      "type":"linkAcct",
+      "resource":[
+        "1111",
+        "2222",
+        ...
+      ]
+    },
+    {
+      "type":"billingGroup",
+      "resource":[
+        "3333",
+        "4444",
+        ...
+      ]
+    },
+    ...
+  ]
+}
+```
+
+**Response**
+
+```ruby
+HTTP 200
+{
+  "success":[
+    "somerole"
+  ],
+  "failed":[],
+  "filters":[]
+}
+```
 ## List user role mappings
 
 **Request**
