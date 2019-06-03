@@ -261,6 +261,8 @@ Authorization: Bearer {token}
 ```
 
 `{subuser}` is the subuser id.
+
+
 **Request body**
 
 
