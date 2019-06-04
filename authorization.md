@@ -167,7 +167,7 @@ HTTP 200
 
 ## Delete role
 
-delete role and delete mapped role.
+Delete role and delete mapped role.
 
 **Request**
 
