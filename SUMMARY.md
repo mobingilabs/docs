@@ -1,4 +1,6 @@
 # Table of contents
 
-* [Get Started](README.md)
+* [Overview](README.md)
+* [Namespaces](namespaces.md)
+* [Permissions](permissions.md)
 

@@ -1,6 +1,6 @@
-# Overview
+# Namespaces
 
 {% hint style="warning" %}
-進行中 \(wip\)
+進行中
 {% endhint %}
 
