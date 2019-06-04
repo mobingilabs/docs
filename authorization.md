@@ -123,16 +123,14 @@ HTTP 200
 
 ## Update role
 
-Update role.
-if role name is different, rename mapped role name.
+Update role. If role name is different, rename mapped role name.
 
 **Request**
 
 ```http
-PATCH /roles/{role-name} HTTP1.1
+PATCH /roles/{rolename} HTTP1.1
 Authorization: Bearer {token}
 ```
-
 
 **Request body**
 
@@ -167,12 +165,12 @@ HTTP 200
 
 ## Delete role
 
-Delete role and delete mapped role.
+Delete role. Deleting a role will also remove all mappings.
 
 **Request**
 
 ```http
-DELETE /roles/{role-name} HTTP1.1
+DELETE /roles/{rolename} HTTP1.1
 Authorization: Bearer {token}
 ```
 
