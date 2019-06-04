@@ -39,7 +39,7 @@ HTTP 200
 
 During role creation, if your `permissions` list contains an `Admin` entry, all other entries will be discarded except `Admin`.
 
-Roles are root user-level. That means all roles created by the root user, or any subuser that has permissions to create roles, are available to all subusers to use.
+Roles are root user-level. That means all roles created by the root user, or any subuser that has permissions to create roles, are available to all subusers.
 
 **Request**
 
