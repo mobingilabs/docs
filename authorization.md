@@ -351,8 +351,7 @@ HTTP 200
 
 ## Delete user role mapping
 
-delete user role map.
-don't delete filter.
+delete user role map. don't delete filter.
 
 **Request**
 
@@ -368,9 +367,9 @@ Authorization: Bearer {token}
 
 `{subuser}` is the subuser name.
 
-
 **Response**
 
 ```ruby
 HTTP 200
 ```
+
