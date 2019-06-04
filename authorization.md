@@ -238,6 +238,7 @@ HTTP 200
 ```
 
 ## Update map roles to user
+
 You can only update map \(or attach\) up to 5 roles to a user per namespace. There is no limit for filtering rules per user.
 
 Valid values for `type` for filtering rules:
@@ -255,6 +256,7 @@ This method replaces subuser's all roles to information in the request body.
 PATCH /userroles HTTP1.1
 Authorization: Bearer {token}
 ```
+
 ```http
 PATCH /{subuser}/userroles HTTP1.1
 Authorization: Bearer {token}
@@ -262,9 +264,7 @@ Authorization: Bearer {token}
 
 `{subuser}` is the subuser id.
 
-
 **Request body**
-
 
 ```ruby
 {
@@ -308,6 +308,7 @@ HTTP 200
   "filters":[]
 }
 ```
+
 ## List user role mappings
 
 **Request**
@@ -361,3 +362,4 @@ Authorization: Bearer {token}
 ```
 
 The `{id}` part is the value of the `id` you get from listing user role mappings.
+
