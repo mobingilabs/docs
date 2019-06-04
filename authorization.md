@@ -353,6 +353,8 @@ HTTP 200
 
 ## Delete user role mapping
 
+delete user role map excluding filter.
+
 **Request**
 
 ```http
