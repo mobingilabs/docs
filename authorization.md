@@ -239,6 +239,47 @@ HTTP 200
 }
 ```
 
+## List user role mappings
+
+**Request**
+
+For this endpoint, the returned role mappings are those attached to the caller.
+
+```http
+GET /userroles HTTP1.1
+Authorization: Bearer {token}
+```
+
+For listing role mappings of other subusers, use this endpoint.
+
+```http
+GET /{subuser}/userroles HTTP1.1
+Authorization: Bearer {token}
+```
+
+`{subuser}` is the subuser name.
+
+**Response**
+
+```ruby
+HTTP 200
+[
+  {
+    "root_user":"58c2297d25645",
+    "sub_user":"subuser01",
+    "namespace":"wave",
+    "role":"testrole1"
+  },
+  {
+    "root_user":"58c2297d25645",
+    "sub_user":"subuser02",
+    "namespace":"wave",
+    "filter":"billingGroup:2222"
+  },
+  ...
+]
+```
+
 ## Update map roles to user
 
 You can only update map \(or attach\) up to 5 roles to a user per namespace. There is no limit for filtering rules per user.
@@ -308,47 +349,6 @@ HTTP 200
   "failed":[],
   "filters":[]
 }
-```
-
-## List user role mappings
-
-**Request**
-
-For this endpoint, the returned role mappings are those attached to the caller.
-
-```http
-GET /userroles HTTP1.1
-Authorization: Bearer {token}
-```
-
-For listing role mappings of other subusers, use this endpoint.
-
-```http
-GET /{subuser}/userroles HTTP1.1
-Authorization: Bearer {token}
-```
-
-`{subuser}` is the subuser name.
-
-**Response**
-
-```ruby
-HTTP 200
-[
-  {
-    "root_user":"58c2297d25645",
-    "sub_user":"subuser01",
-    "namespace":"wave",
-    "role":"testrole1"
-  },
-  {
-    "root_user":"58c2297d25645",
-    "sub_user":"subuser02",
-    "namespace":"wave",
-    "filter":"billingGroup:2222"
-  },
-  ...
-]
 ```
 
 ## Delete user role mapping
