@@ -71,7 +71,6 @@ Authorization: Bearer {token}
 ```ruby
 HTTP 200
 {
-  "id": "iA1OGMyMjk3ZDI1NjQ1...",
   "name":"testrole",
   "permissions":[
     {
@@ -103,7 +102,6 @@ The `{namespace}` parameter is optional. If not provided, all roles will be retu
 HTTP 200
 [
   {
-    "id": "b3JlZHJvbGUgNThjMjI5N2Q...",
     "name": "testrole",
     "namespace": "wave",
     "permissions": [
@@ -113,7 +111,6 @@ HTTP 200
     ]
   },
   {
-    "id": "Mm5kYWRtaW4g...",
     "name": "waveAdmin",
     "namespace": "wave",
     "permissions": [
@@ -126,24 +123,32 @@ HTTP 200
 
 ## Update role
 
+Update role.
+if role name is different, rename mapped role name.
+
 **Request**
 
 ```http
-PATCH /roles/{id} HTTP1.1
+PATCH /roles/{role-name} HTTP1.1
 Authorization: Bearer {token}
 ```
 
-The `{id}` part is the value of the id you get from listing roles.
+`{id}` is role name that you want update.
 
 **Request body**
 
 ```ruby
 {
-  "namespace": "rbac",
-  "permissions": [
-    "ModifyRoles",
-    "ModifyUserRoles",
-    ...
+  "name":"testrole",
+  "permissions":[
+    {
+      "namespace":"wave",
+      "permissions":[
+        "ModifySettings",
+        "ViewSettings",
+        ...
+      ]
+    }
   ]
 }
 ```
@@ -151,27 +156,26 @@ The `{id}` part is the value of the id you get from listing roles.
 **Response**
 
 ```ruby
+HTTP 200
 {
-  "id": "iA1OGMyMjk3ZDI1NjQ1...",
-  "namespace": "rbac",
-  "permissions": [
-    "ModifyRoles",
-    "ModifyUserRoles",
-    ...
-  ]
+  "success":[
+    "somerole"
+  ],
+  "failed":[],
+  "filters":[]
 }
 ```
 
 ## Delete role
 
+delete role and delete mapped role.
+
 **Request**
 
 ```http
-DELETE /roles/{id} HTTP1.1
+DELETE /roles/{role-name} HTTP1.1
 Authorization: Bearer {token}
 ```
-
-The `{id}` part is the value of the `id` you get from listing roles.
 
 ## Map roles to user
 
@@ -326,7 +330,7 @@ GET /{subuser}/userroles HTTP1.1
 Authorization: Bearer {token}
 ```
 
-`{subuser}` is the subuser id.
+`{subuser}` is the subuser name.
 
 **Response**
 
@@ -334,14 +338,12 @@ Authorization: Bearer {token}
 HTTP 200
 [
   {
-    "id":"NThjMjI5N2QyN...",
     "root_user":"58c2297d25645",
     "sub_user":"subuser01",
     "namespace":"wave",
     "role":"testrole1"
   },
   {
-    "id":"NThjMjI5N2QyNTY0NXx...",
     "root_user":"58c2297d25645",
     "sub_user":"subuser02",
     "namespace":"wave",
@@ -356,8 +358,20 @@ HTTP 200
 **Request**
 
 ```http
-DELETE /userroles/{id} HTTP1.1
+DELETE /userroles/{role-name} HTTP1.1
 Authorization: Bearer {token}
 ```
 
-The `{id}` part is the value of the `id` you get from listing user role mappings.
+```http
+DELETE /{subuser}/userroles HTTP1.1
+Authorization: Bearer {token}
+```
+
+`{subuser}` is the subuser name.
+
+
+**Response**
+
+```ruby
+HTTP 200
+```
