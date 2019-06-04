@@ -133,7 +133,6 @@ PATCH /roles/{role-name} HTTP1.1
 Authorization: Bearer {token}
 ```
 
-`{id}` is role name that you want update.
 
 **Request body**
 
@@ -202,8 +201,7 @@ Authorization: Bearer {token}
   "user_id":"subuser1",
   "namespace":"wave",
   "roles":[
-    "MjI5N2QyNTY0NVw6...",
-    "Mm5kYWRtaW4gNThj...",
+    "somerole",
     ...
   ],
   "filter_rules":[
@@ -274,8 +272,7 @@ Authorization: Bearer {token}
 {
   "namespace":"wave",
   "roles":[
-    "MjI5N2QyNTY0NVw6...",
-    "Mm5kYWRtaW4gNThj...",
+    "somerole",
     ...
   ],
   "filter_rules":[
