@@ -129,15 +129,11 @@ Authorization: Bearer {token}
 ```ruby
 {
   "name":"testrole",
+  "namespace":"wave",
   "permissions":[
-    {
-      "namespace":"wave",
-      "permissions":[
-        "ModifySettings",
-        "ViewSettings",
-        ...
-      ]
-    }
+    "ModifySettings",
+    "ViewSettings",
+    ...
   ]
 }
 ```
