@@ -34,7 +34,7 @@ HTTP 200
   }
 ]
 ```
-## List User permissions
+## List user permissions
 
 **Request**
 
