@@ -270,6 +270,8 @@ HTTP 200
 
 ## List user permissions
 
+Retrieve all permissions to all roles attached to the `{subuser}`.
+
 **Request**
 
 ```http
