@@ -351,17 +351,17 @@ HTTP 200
 
 ## Delete user role mapping
 
-Delete user role map, don't delete filter.
+Delete existing user role mapping. At the moment, deleting a mapping won't delete filtering rules.
 
 **Request**
 
 ```http
-DELETE /userroles/{role-name} HTTP1.1
+DELETE /userroles/{rolename} HTTP1.1
 Authorization: Bearer {token}
 ```
 
 ```http
-DELETE /{subuser}/userroles/{role-name} HTTP1.1
+DELETE /{subuser}/userroles/{rolename} HTTP1.1
 Authorization: Bearer {token}
 ```
 
