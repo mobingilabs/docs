@@ -6,6 +6,8 @@
 
 ## List permissions
 
+List all permissions supported by Mobingi RBAC in all namespaces.
+
 **Request**
 
 ```http
