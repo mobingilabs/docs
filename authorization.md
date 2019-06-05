@@ -34,6 +34,36 @@ HTTP 200
   }
 ]
 ```
+## List User permissions
+
+**Request**
+
+```http
+GET /{subuser}/permissions HTTP1.1
+Authorization: Bearer {token}
+```
+
+**Response**
+
+```ruby
+HTTP 200
+[
+  {
+    "namespace":"wave",
+    "permissions":[
+      "Admin",
+      "ModifySettings",
+      "..."
+    ]
+  },
+  {
+    "namespace":"ripple",
+    "permissions":[
+      "Admin"
+    ]
+  }
+]
+```
 
 ## Create role
 
