@@ -53,15 +53,11 @@ Authorization: Bearer {token}
 ```ruby
 {
   "name":"testrole",
+  "namespace":"wave",
   "permissions":[
-    {
-      "namespace":"wave",
-      "permissions":[
-        "ModifySettings",
-        "ViewSettings",
-        ...
-      ]
-    }
+    "ModifySettings",
+    "ViewSettings",
+    ...
   ]
 }
 ```
@@ -72,15 +68,11 @@ Authorization: Bearer {token}
 HTTP 200
 {
   "name":"testrole",
+  "namespace":"wave",
   "permissions":[
-    {
-      "namespace":"wave",
-      "permissions":[
-        "ModifySettings",
-        "ViewSettings",
-        ...
-      ]
-    }
+    "ModifySettings",
+    "ViewSettings",
+    ...
   ]
 }
 ```
