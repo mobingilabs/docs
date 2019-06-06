@@ -188,25 +188,11 @@ Authorization: Bearer {token}
 ```ruby
 {
   "user_id":"subuser1",
-  "namespace":"wave",
-  "roles":[
-    "somerole",
-    ...
-  ],
-  "filter_rules":[
+  "items":[
     {
-      "type":"linkAcct",
-      "resource":[
-        "1111",
-        "2222",
-        ...
-      ]
-    },
-    {
-      "type":"billingGroup",
-      "resource":[
-        "3333",
-        "4444",
+      "namespace":"wave",
+      "roles":[
+        "somerole",
         ...
       ]
     },
@@ -333,25 +319,12 @@ Authorization: Bearer {token}
 
 ```ruby
 {
-  "namespace":"wave",
-  "roles":[
-    "somerole",
-    ...
-  ],
-  "filter_rules":[
+  "user_id":"subuser1",
+  "items":[
     {
-      "type":"linkAcct",
-      "resource":[
-        "1111",
-        "2222",
-        ...
-      ]
-    },
-    {
-      "type":"billingGroup",
-      "resource":[
-        "3333",
-        "4444",
+      "namespace":"wave",
+      "roles":[
+        "somerole",
         ...
       ]
     },
