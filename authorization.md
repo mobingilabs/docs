@@ -6,6 +6,8 @@
 
 ## List permissions
 
+List all permissions supported by Mobingi RBAC in all namespaces.
+
 **Request**
 
 ```http
@@ -264,6 +266,39 @@ HTTP 200
     "filter":"billingGroup:2222"
   },
   ...
+]
+```
+
+## List user permissions
+
+Retrieve all permissions to all roles attached to the `{subuser}`.
+
+**Request**
+
+```http
+GET /{subuser}/permissions HTTP1.1
+Authorization: Bearer {token}
+```
+
+**Response**
+
+```ruby
+HTTP 200
+[
+  {
+    "namespace":"wave",
+    "permissions":[
+      "Admin",
+      "ModifySettings",
+      "..."
+    ]
+  },
+  {
+    "namespace":"ripple",
+    "permissions":[
+      "Admin"
+    ]
+  }
 ]
 ```
 
