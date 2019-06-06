@@ -188,16 +188,13 @@ Authorization: Bearer {token}
 ```ruby
 {
   "user_id":"subuser1",
-  "items":[
+  "roles":[
     {
       "namespace":"wave",
-      "roles":[
-        "somerole",
-        ...
-      ]
+      "role": "somerole",
     },
     ...
-  ]
+    ]
 }
 ```
 
@@ -320,16 +317,13 @@ Authorization: Bearer {token}
 ```ruby
 {
   "user_id":"subuser1",
-  "items":[
+  "roles":[
     {
       "namespace":"wave",
-      "roles":[
-        "somerole",
-        ...
-      ]
+      "role": "somerole",
     },
     ...
-  ]
+    ]
 }
 ```
 
