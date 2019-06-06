@@ -345,28 +345,3 @@ HTTP 200
   "filters":[]
 }
 ```
-
-## Delete user role mapping
-
-Delete existing user role mapping. At the moment, deleting a mapping won't delete filtering rules.
-
-**Request**
-
-```http
-DELETE /userroles/{rolename} HTTP1.1
-Authorization: Bearer {token}
-```
-
-```http
-DELETE /{subuser}/userroles/{rolename} HTTP1.1
-Authorization: Bearer {token}
-```
-
-`{subuser}` is the subuser name.
-
-**Response**
-
-```ruby
-HTTP 200
-```
-
