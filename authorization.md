@@ -128,7 +128,6 @@ Authorization: Bearer {token}
 
 ```ruby
 {
-  "name":"testrole",
   "namespace":"wave",
   "permissions":[
     "ModifySettings",
@@ -143,11 +142,13 @@ Authorization: Bearer {token}
 ```ruby
 HTTP 200
 {
-  "success":[
-    "somerole"
-  ],
-  "failed":[],
-  "filters":[]
+  "name": "testrole",
+  "namespace":"wave",
+  "permissions":[
+    "ModifySettings",
+    "ViewSettings",
+    ...
+  ]
 }
 ```
 
