@@ -7,6 +7,7 @@
 * [Mobingi Ripple とは？](guide/about-mobingi-ripple.md)
 * [Ripple のセットアップ](guide/set-up/README.md)
   * [Hourlyレポート解析の有効化](guide/set-up/prepare.md)
+  * [顧客の登録](guide/set-up/register-customer.md)
   * [請求書設定](guide/set-up/invoice-setting.md)
 * [毎月の請求書発行の手順](guide/routine/README.md)
   * [1. 請求データ確定の連絡](guide/routine/click-button.md)
