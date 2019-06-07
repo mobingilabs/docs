@@ -23,10 +23,10 @@ Rippleの画面に従ってフィールド内に以下の情報をご入力く�
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"></th>
-      <th style="text-align:left"></th>
-      <th style="text-align:left"></th>
-      <th style="text-align:left"></th>
+      <th style="text-align:left">&#x540D;&#x79F0;</th>
+      <th style="text-align:left">&#x5165;&#x529B;</th>
+      <th style="text-align:left">&#x5909;&#x66F4;</th>
+      <th style="text-align:left">&#x8AAC;&#x660E;</th>
     </tr>
   </thead>
   <tbody>
@@ -41,7 +41,7 @@ Rippleの画面に従ってフィールド内に以下の情報をご入力く�
       <td style="text-align:left">&#x5FC5;&#x9808;</td>
       <td style="text-align:left">&#x5909;&#x66F4;&#x53EF;</td>
       <td style="text-align:left">
-        <p>&#x8ACB;&#x6C42;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x3092;&#x7BA1;&#x7406;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x540D;&#x79F0;&#x3002;</p>
+        <p>&#x8ACB;&#x6C42;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x3092;&#x7BA1;&#x7406;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x540D;&#x79F0;</p>
         <p>&#x9867;&#x5BA2;&#x306B;&#x306F;&#x898B;&#x3048;&#x306A;&#x3044;&#x305F;&#x3081;&#x3001;</p>
         <p>&#x7BA1;&#x7406;&#x3057;&#x3084;&#x3059;&#x3044;&#x540D;&#x79F0;&#x3092;&#x3054;&#x767B;&#x9332;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
         <p>(&#x4F8B;&#xFF1A;&#x9867;&#x5BA2;&#x540D;&#x3001;&#x6848;&#x4EF6;&#x540D;&#x306A;&#x3069;)</p>
