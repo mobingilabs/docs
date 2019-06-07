@@ -161,7 +161,7 @@ Delete role. Deleting a role will also remove all mappings.
 **Request**
 
 ```http
-DELETE /roles/{rolename} HTTP1.1
+DELETE /roles/{namespace}/{rolename} HTTP1.1
 Authorization: Bearer {token}
 ```
 
