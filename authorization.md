@@ -316,7 +316,6 @@ Authorization: Bearer {token}
 
 ```ruby
 {
-  "user_id":"subuser1",
   "roles":[
     {
       "namespace":"wave",
