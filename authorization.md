@@ -122,7 +122,7 @@ Update role. If role name is different, rename mapped role name.
 **Request**
 
 ```http
-PATCH /roles/{rolename} HTTP1.1
+PATCH /roles/{namespace}/{rolename} HTTP1.1
 Authorization: Bearer {token}
 ```
 
@@ -130,7 +130,6 @@ Authorization: Bearer {token}
 
 ```ruby
 {
-  "namespace":"wave",
   "permissions":[
     "ModifySettings",
     "ViewSettings",
