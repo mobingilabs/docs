@@ -130,6 +130,7 @@ Authorization: Bearer {token}
 
 ```ruby
 {
+  "namespace":"wave",
   "permissions":[
     "ModifySettings",
     "ViewSettings",
