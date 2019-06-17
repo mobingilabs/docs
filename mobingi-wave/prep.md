@@ -40,11 +40,11 @@ description: Wave を導入するにあたっての準備です。
 
 ### 手順1-2: **Hourlyレポートの作成**
 
-* AWSのマネジメントコンソールから、『請求情報とコスト管理ダッシュボード』を開き、レポートメニューへ移動します。
+* AWSのマネジメントコンソールから、『請求』を開き『Cost & Usage Reports 』メニューへ移動します。
 
 レポートの作成へ進みます。
 
-![](../.gitbook/assets/snip20181004_7.png)
+![](../.gitbook/assets/billing_management_console.png)
 
 * 『ステップ 1: レポートの明細項目』を以下の要領で記入して次に進めます。
   * レポート名：任意
@@ -54,56 +54,50 @@ description: Wave を導入するにあたっての準備です。
 ![](../.gitbook/assets/ming-cheng-wei-she-ding-7.png)
 
 * 『ステップ 2: 配信オプション』では、S3バケットの操作を含めるため、以下手順で進めます。
-  * S3バケット名\(先程作成\)を入力
-  * サンプルポリシーの表示とコピー \(※必ずS3バケット名を入力後に表示してください\)
-  * 使用料の時間詳細度：**時間別**
-  * レポートのバージョニング：新しいメールバージョンの作成
-  * **レポートデータ統合の有効化: チェックしない**
+  * S3バケット名の設定ボタンをクリック
+  * 『ステップ 1/2: S3 バケットの設定』で既存のバケットを選択
+  * 『ステップ 2/2: ポリシーの確認』のポリシーの確認にチェックを入れ保存
 
 {% hint style="danger" %}
 レポートデータ統合を有効化すると正常に動かない場合があります。
 {% endhint %}
 
-![](../.gitbook/assets/ming-cheng-wei-she-ding-8.png)
+![](../.gitbook/assets/billing_management_console-3.png)
 
-![](../.gitbook/assets/snip20181003_6.png)
+![](../.gitbook/assets/billing_management_console-4.png)
 
-* サンプルポリシーをコピーした後、**先程作成したS3バケット** の詳細を開きます。\(※別タブまたはウィンドウでの作業を推奨\)
-* S3で『アクセス権限』&gt;&gt; 『バケットポリシー』とメニューをたどります。
-* バケットポリシーエディタで、先程のサンプルポリシーを適用します。
+![](../.gitbook/assets/billing_management_console-5.png)
 
-![](../.gitbook/assets/bill_005.png)
+* 検証で「有効なバケット」と出ていることを確認し、下記の設定を行います。
+  * レポートパスのプレフィックス: 任意 \(※なしでも構いません\)
+  * 使用料の時間詳細度：**時間別**
+  * レポートのバージョニング：新しいメールバージョンの作成
+  * **レポートデータ統合の有効化: チェックしない**
+  * 圧縮タイプ: GZIP もしくは ZIP を選択
 
-『ステップ 2: 配信オプション』に戻り、以下の項目を入力して次へ進みます。
+{% hint style="danger" %}
+レポートデータ統合を有効化すると正常に動かない場合があります。
+{% endhint %}
 
-* レポートパスのプレフィックス: 任意 \(※なしでも構いません\)
-* 圧縮: 任意
+* 『ステップ 3: 確認』表示されている内容に間違いがない確認し、完了します。
 
-バケットポリシーが正しくない場合、検証で「有効なバケット」となりません。
-
-S3のメニューで再度確認してください。
-
-![](../.gitbook/assets/ming-cheng-wei-she-ding-11.png)
-
-『ステップ 3: 確認』表示されている内容に間違いがない確認し、完了します。
-
-![](../.gitbook/assets/sukurnshotto-2018-12-13-152219.png)
+![](../.gitbook/assets/sukurnshotto-2019-06-14-144714.png)
 
 ## 手順 2 :モビンギに読み取り権限を委譲するIAMロールの作成  <a id="step2"></a>
 
 AWSのマネジメントコンソールから、IAMサービスを開き、『ロール』&gt;&gt; 『ロールの作成』メニューへ移動します。
 
-![](../.gitbook/assets/role_001.png)
+![](../.gitbook/assets/iam_management_console-2.png)
 
 『信頼されたエンティティの種類を選択』で、「別のAWSアカウントを」選択し、以下のモビンギのアカウントIDを入力します。
 
-* モビンギアカウントID: 131920598436
+* **モビンギアカウントID: 131920598436**
 
-![](../.gitbook/assets/role_002.png)
+![](../.gitbook/assets/iam_management_console-3.png)
 
-「アクセス権限ポリシーをアタッチする」メニューで、『ポリシーの作成』を選択します。
+「Attach アクセス権限ポリシー」メニューで、『ポリシーの作成』を選択します。
 
-![](../.gitbook/assets/role_003-1.png)
+![](../.gitbook/assets/iam_management_console-4.png)
 
 別のタブ\(ウィンドウ\)で「ポリシーの作成」メニューが開くので、入力形式にJSONを選択し、以下の内容でポリシーを入力します。 Resourceの`{replace_to_report_bucket}`部分を **レポートに使用するバケット名** に置き換えてください。
 
@@ -126,20 +120,24 @@ AWSのマネジメントコンソールから、IAMサービスを開き、『�
 }
 ```
 
-![](../.gitbook/assets/create-policy-ja.png)
+![](../.gitbook/assets/iam_management_console-5.png)
 
-![](../.gitbook/assets/create-policy-example-ja.png)
+![](../.gitbook/assets/iam_management_console-6.png)
 
 「ポリシーの確認」へ進み、以下の項目を入力してポリシーを作成します。
 
 * 名前: 任意\(※必須\)
 * 説明: 任意
 
-![](../.gitbook/assets/role_005.png)
+![](../.gitbook/assets/iam_management_console-7.png)
 
 『ロールの作成』メニューに戻り、リストを更新し、先ほど作成したポリシーを表示します。 チェックを有効にして、確認へ進みます。
 
-![](../.gitbook/assets/role_006.png)
+![](../.gitbook/assets/iam_management_console.png)
+
+『次のステップ: タグ』をクリック。
+
+* タグは任意で設定してください。
 
 「確認」メニューで、以下の項目を入力します。
 
@@ -148,9 +146,9 @@ AWSのマネジメントコンソールから、IAMサービスを開き、『�
 
 「信頼されたエンティティ」、「ポリシー」が適用されていることを確認し、ロールを作成します。
 
-![](../.gitbook/assets/role_007.png)
+![](../.gitbook/assets/iam_management_console-9.png)
 
 作成したロールのARNを控えます。
 
-![](../.gitbook/assets/role_008-1.png)
+![](../.gitbook/assets/iam_management_console-10.png)
 
