@@ -43,12 +43,6 @@ During role creation, if your `permissions` list contains an `Admin` entry, all 
 
 Roles are root user-level. That means all roles created by the root user, or any subuser that has permissions to create roles, are available to all subusers.
 
-Role names are validated using the regular expression below:
-
-```
-^[A-Za-z0-9][A-Za-z0-9_-]*[A-Za-z0-9]$
-```
-
 **Request**
 
 ```http
@@ -68,6 +62,12 @@ Authorization: Bearer {token}
     ...
   ]
 }
+```
+
+Role names should have at least 6 characters in length and 32 characters maximum. It should also be alphanumeric. Hyphens and underscores are allowed in between. The regular expression used for validation is below:
+
+```
+^[A-Za-z0-9][A-Za-z0-9_-]*[A-Za-z0-9]$
 ```
 
 **Response**
