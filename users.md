@@ -2,7 +2,7 @@
 
 | Description | Link |
 | :--- | :--- |
-| API Base URL | `https://service.mobingi.com/m/user/` |
+| API Base URL | `https://service.mobingi.com/m/user/v0/` |
 
 ## Create subuser
 
