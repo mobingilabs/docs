@@ -58,10 +58,6 @@ description: Wave を導入するにあたっての準備です。
   * 『ステップ 1/2: S3 バケットの設定』で既存のバケットを選択
   * 『ステップ 2/2: ポリシーの確認』のポリシーの確認にチェックを入れ保存
 
-{% hint style="danger" %}
-レポートデータ統合を有効化すると正常に動かない場合があります。
-{% endhint %}
-
 ![](../.gitbook/assets/billing_management_console-3.png)
 
 ![](../.gitbook/assets/billing_management_console-4.png)
