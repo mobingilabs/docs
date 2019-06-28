@@ -2,7 +2,7 @@
 
 * [Mobingi Ripple ヘルプセンター](README.md)
 
-## 初めての方へ
+## 初めての方へ <a id="guide"></a>
 
 * [Mobingi Ripple とは？](guide/about-mobingi-ripple.md)
 * [Ripple のセットアップ](guide/set-up/README.md)
@@ -17,14 +17,14 @@
   * [5. 発行した請求明細の確認とダウンロード](guide/routine/download-csv.md)
   * [6. エンドユーザーに請求明細を提示](guide/routine/show-billing-statement.md)
 
-## 機能で調べる
+## 機能で調べる <a id="features"></a>
 
 * [請求書](features/invoice.md)
 * [リザーブドインスタンス](features/ri.md)
 * [アカウントとグループ](features/account.md)
 * [環境設定](features/preference.md)
 
-## もっと詳しく
+## もっと詳しく <a id="more-info"></a>
 
 * [新規顧客を追加する](more-info/add-new-customer.md)
 * [RI のアロケーション変更](more-info/change-ri.md)
