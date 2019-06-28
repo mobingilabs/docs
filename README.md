@@ -1,10 +1,10 @@
 # Overview
 
-### Users
+## Users
 
 There are two types of Mobingi users; root users and subusers. Root users are account owners and super admins. These are the accounts you register to Mobingi and are in email address form. Subusers are users that are created by root users and are typically given minimal access to perform specific roles although subusers can also be admins.
 
-### RBAC
+## RBAC
 
 Mobingi RBAC is a Mobingi-wide role-based access control system that provides fine-grained access management to Mobingi features and resources. In using Mobingi RBAC, you can grant only the amount of access to users that they need to perform their jobs.
 
@@ -14,7 +14,7 @@ Roles and permissions in Mobingi RBAC are isolated based on namespaces. What thi
 
 Mobingi root users are always super admins, or have unrestricted access across namespaces. Typically, root users should create subusers and assign specific roles to them.
 
-### Namespaces
+## Namespaces
 
 The following table lists the supported namespaces under Mobingi RBAC.
 
@@ -26,3 +26,4 @@ The following table lists the supported namespaces under Mobingi RBAC.
 | Ocean | `ocean` |
 | Users | `users` |
 | RBAC | `rbac` |
+
