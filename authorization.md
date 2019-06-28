@@ -66,7 +66,7 @@ Authorization: Bearer {token}
 
 Role names should have at least 6 characters in length and 32 characters maximum. It should also be alphanumeric. Hyphens and underscores are allowed in between. The regular expression used for validation is below:
 
-```
+```text
 ^[A-Za-z0-9][A-Za-z0-9_-]*[A-Za-z0-9]$
 ```
 
