@@ -2,7 +2,7 @@
 
 ### Users
 
-There are two types of Mobingi users: root users and subusers. Root users are account owners and super admins. These are the accounts you register to Mobingi and are in email address form. Subusers are users that are created by root users and are typically given minimal access to perform specific roles although subusers can also be admins.
+There are two types of Mobingi users; root users and subusers. Root users are account owners and super admins. These are the accounts you register to Mobingi and are in email address form. Subusers are users that are created by root users and are typically given minimal access to perform specific roles although subusers can also be admins.
 
 ### RBAC
 
