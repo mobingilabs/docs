@@ -3,7 +3,7 @@
 * [Mobingi Documentation \(v2.0\)](README.md)
 * [始める](getting-started.md)
 
-## ガイド/チュートリアル
+## ガイド/チュートリアル <a id="guides-and-tutorials"></a>
 
 * [ライフサイクルスタック](guides-and-tutorials/stack-lifecycle/README.md)
   * [スタックの作成](guides-and-tutorials/stack-lifecycle/deploy-stack.md)
@@ -18,7 +18,7 @@
   * [コンテナにSSHでログインする](guides-and-tutorials/others/ssh-into-your-container.md)
 * [FAQ](guides-and-tutorials/faq.md)
 
-## APIレファレンス
+## APIレファレンス <a id="api-reference"></a>
 
 * [概要](api-reference/overview.md)
 * [スタック](api-reference/stacks/README.md)
