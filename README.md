@@ -12,8 +12,6 @@ Below are the links to Mobingi products' dashboards.
 | :--- | :--- |
 | Ripple dashboard | [https://app.mobingi.com/ripple/](https://app.mobingi.com/ripple/) |
 | Wave dashboard | [https://app.mobingi.com/wave/](https://app.mobingi.com/wave/) |
-| ALM \(v3\) dashboard | [https://alm.mobingi.com/](https://alm.mobingi.com/) |
-| ALM \(v2\) dashboard | [https://console.mobingi.com/](https://console.mobingi.com/) |
 
 For more information about Mobingi in general, please visit relevant links below.
 
