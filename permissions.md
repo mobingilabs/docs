@@ -1,5 +1,9 @@
 # Permissions
 
+{% hint style="warning" %}
+Please check out [https://github.com/mobingi/rbac-permissions](https://github.com/mobingi/rbac-permissions) for the most up-to-date permissions list.
+{% endhint %}
+
 The following tables list all supported permissions under Mobingi RBAC across all namespaces.
 
 ## Dashboard permissions
