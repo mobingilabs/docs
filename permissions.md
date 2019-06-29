@@ -1,6 +1,6 @@
 # Permissions
 
-{% hint style="warning" %}
+{% hint style="info" %}
 Please check out [https://github.com/mobingi/rbac-permissions](https://github.com/mobingi/rbac-permissions) for the most up-to-date permissions list.
 {% endhint %}
 
