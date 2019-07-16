@@ -24,14 +24,17 @@ description: RBACページの利用方法を解説します。
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x5236;&#x9650;&#x306A;&#x3057;</td>
       <td style="text-align:left">&#x5168;&#x3066;</td>
       <td style="text-align:left">Admin</td>
     </tr>
     <tr>
       <td style="text-align:left">&#x95B2;&#x89A7;&#x6A29;&#x9650;&#x306E;&#x307F;</td>
       <td style="text-align:left">WAVE</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>ReadAccount, ReadAccountSettings,</p>
+        <p>ReadGroups, ReadInvoice, ReadSettings, ReadTags</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">&#x95B2;&#x89A7;&#x6A29;&#x9650;&#x306E;&#x307F;</td>
@@ -42,12 +45,12 @@ description: RBACページの利用方法を解説します。
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x95B2;&#x89A7;&#x6A29;&#x9650;&#x306E;&#x307F;</td>
       <td style="text-align:left">USER</td>
       <td style="text-align:left">ReadOnly</td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#x95B2;&#x89A7;&#x6A29;&#x9650;&#x306E;&#x307F;</td>
       <td style="text-align:left">ROLE</td>
       <td style="text-align:left">ReadOnly</td>
     </tr>

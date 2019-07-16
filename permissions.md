@@ -35,13 +35,11 @@
 | `DownloadBulk` | CSVの一括ダウンロード権限です。 |
 | `DownloadReports` | レポートのCSVダウンロード権限です。 |
 | `ModifyAccountSettings` | 「アカウント情報」の変更権限です。 |
-| `ModifyBillingGroup` | ダッシュボードデータの編集権限です。 |
 | `ModifyGroups` | 「グループ」の編集が可能になります。 |
 | `ModifySettings` | 「設定」の変更が可能です。 |
 | `ModifyTags` | 「タグ」ページの機能です。 |
 | `ReadAccount` | 「アカウント」の閲覧権限です。 |
 | `ReadAccountSettings` | アカウントの設定閲覧権限です。 |
-| `ReadBillingGroup` | ダッシュボードのグラフ閲覧権限です。 |
 | `ReadGroups` | 「グループ」の閲覧権限です。 |
 | `ReadInvoice` | 請求書ページの閲覧権限です。 |
 | `ReadSettings` | 「設定」の閲覧権限です。 |
