@@ -33,7 +33,6 @@
 | :--- | :--- |
 | `Admin` | 一切の制限がない権限です。ルートユーザーはデフォルトで Admin 権限となります。 |
 | `DownloadBulk` | CSVの一括ダウンロード権限です。 |
-| `DownloadReports` | レポートのCSVダウンロード権限です。 |
 | `ModifyAccountSettings` | 「アカウント情報」の変更権限です。 |
 | `ModifyGroups` | 「グループ」の編集が可能になります。 |
 | `ModifySettings` | 「設定」の変更が可能です。 |
