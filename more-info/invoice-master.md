@@ -12,5 +12,5 @@
 
 請求書作成済みの月の請求書設定を変更し再作成する場合は以下ページをご覧ください。
 
-{% page-ref page="minowosuru.md" %}
+{% page-ref page="invoice-created.md" %}
 

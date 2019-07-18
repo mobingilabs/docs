@@ -20,5 +20,5 @@
 
 翌月以降も設定を変更したい場合は同時にマスタ設定の変更を行なってください。
 
-{% page-ref page="nomasutawosuru.md" %}
+{% page-ref page="invoice-master.md" %}
 
