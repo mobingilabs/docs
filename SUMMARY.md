@@ -27,6 +27,8 @@
 ## もっと詳しく <a id="more-info"></a>
 
 * [新規顧客を追加する](more-info/add-new-customer.md)
+* [請求書作成済みの請求書設定を変更する](more-info/minowosuru.md)
+* [請求書のマスタ設定を変更する](more-info/nomasutawosuru.md)
 * [RI のアロケーション変更](more-info/change-ri.md)
 * [タグでの請求データ作成](more-info/tag-invoice.md)
 * [Wave for Reseller とは](more-info/wave-for-reseller.md)
