@@ -27,20 +27,18 @@ openapiで使用するtokenを取得
 
 ```http
 POST /v1/access_token HTTP1.1
-Content-Type: application/json
+Content-Type: form-data
 
 {request body}
 ```
 
-The following are some example request payloads for `{request body}`.
-
-form-data:
+`{request body}` の例
 
 ```ruby
 {
   "grant_type":"client_credentials",
-  "client_id":"testalicloudcreds",
-  "client_secret":"ABCDEF"
+  "client_id":"test-client-id",
+  "client_secret":"ABCDEFGHI"
 }
 ```
 
