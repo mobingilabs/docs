@@ -50,8 +50,8 @@ Content-Type: application/json
 
 | Path             |  description    |
 | ---------------  | --------------  |
-| `owner`          | 使用可能な値 - company |
-| `resolution`     | 使用可能な値 - monthly / daily  | 
+| `owner`          | 使用可能な値 <br> - `company` |
+| `resolution`     | 使用可能な値 <br> - `monthly` <br> - `daily`  | 
 
 
 `{URL Params}` の例
@@ -69,5 +69,5 @@ Content-Type: application/json
 | -----------  | --------------------------  |
 | `from`       | 型 : *string* <br> フォーマット : *YYYY-MM_DD* <br> 説明 : <br> Monthly は自動的に `YYYY-MM`へ変換されます。 <br> Daily は自動的に `YYYY-MM-DD`へ変換されます。<br>   |
 | `to`         | 型 : *string* <br> フォーマット : *YYYY-MM_DD* <br> 説明 : <br> Monthly は自動的に `YYYY-MM`へ変換されます。 <br> Daily は自動的に `YYYY-MM-DD`へ変換されます。<br>    | 
-| `by`         | **使用可能な値** <br> 型 : *string* <br> - `service` | `account`  <br> |
+| `by`         | **使用可能な値** <br> 型 : *string* <br> - `service` <br> - `account` |
 | `vendor`     | **使用可能な値** <br> 型 : *string* <br> - `aws` |
