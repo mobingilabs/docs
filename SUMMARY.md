@@ -8,4 +8,6 @@
   * [Credentials](ocean/credentials.md)
   * [Deployments](ocean/deployments.md)
 * [ALM \(v3\)](alm-v3.md)
-
+* [Wave(oepn api)](wave-open-api/README.md)
+  * [Pre-request](wave-open-api/prerequest.md)
+  * [Report](wave-open-api/report.md)
