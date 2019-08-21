@@ -29,10 +29,12 @@
 * [新規顧客を追加する](more-info/add-new-customer.md)
 * [請求書作成済みの請求書設定を変更する](more-info/invoice-created.md)
 * [請求書のマスタ設定を変更する](more-info/invoice-master.md)
+* [プロジェクト単位で収支管理する](more-info/project-manage.md)
 * [RI のアロケーション変更](more-info/change-ri.md)
 * [タグでの請求データ作成](more-info/tag-invoice.md)
 * [Wave for Reseller とは](more-info/wave-for-reseller.md)
 * [サービス毎の割引・割増の設定](more-info/setting-per-service.md)
 * [CSVデータの中身](more-info/csv-data.md)
+* [各ページ情報をダウンロードする](more-info/download-pageinfo.md)
 * [よくあるお問い合わせ](more-info/faq.md)
 
