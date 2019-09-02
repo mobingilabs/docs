@@ -29,6 +29,6 @@ Wave for Reseller にて登録したEメール/ログインIDとパスワード�
 * ご利用明細の確認できます（見せる、見せないを選択できます）。
 
 {% hint style="info" %}
-自社または顧客にも、月中の利用状況の詳細の提供をご希望のお客様は ripple\_cs@mobingi.com までご連絡ください。
+自社または顧客にも、月中の利用状況の詳細の提供をご希望のお客様は ripple\_cs@alphaus.cloud までご連絡ください。
 {% endhint %}
 

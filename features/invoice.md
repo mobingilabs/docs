@@ -8,8 +8,6 @@
 
 {% page-ref page="../guide/routine/issue-invoice.md" %}
 
-
-
 ## 再計算請求データ一覧
 
 RIの前払金やサポート料金、クレジット、返金等の一時金が表示されます。

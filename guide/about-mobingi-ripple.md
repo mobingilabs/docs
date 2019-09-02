@@ -1,4 +1,4 @@
-# Mobingi Ripple とは？
+# Ripple とは？
 
 ## 概要
 
@@ -22,9 +22,7 @@ AWSリセラー、MSPのためのAWS請求書の自動計算と請求書発行�
 
 最適な量のRIを適切なタイミングで購入し、運用しましょう。
 
-![](../.gitbook/assets/reseller_profit.png)
-
-## Mobingi Ripple と Mobingi Wave
+## Ripple と Wave
 
 リセラーがRippleに登録した内容を元に、適正な利用料金を計算し、エンドユーザーは Wave 上から請求内容を確認できます。
 

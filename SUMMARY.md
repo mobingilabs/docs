@@ -1,10 +1,10 @@
 # Table of contents
 
-* [Mobingi Ripple ヘルプセンター](README.md)
+* [Ripple ヘルプセンター](README.md)
 
 ## 初めての方へ <a id="guide"></a>
 
-* [Mobingi Ripple とは？](guide/about-mobingi-ripple.md)
+* [Ripple とは？](guide/about-mobingi-ripple.md)
 * [Ripple のセットアップ](guide/set-up/README.md)
   * [Hourlyレポート解析の有効化](guide/set-up/prepare.md)
   * [顧客登録](guide/set-up/register-customer.md)

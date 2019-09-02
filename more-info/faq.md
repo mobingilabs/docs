@@ -2,7 +2,7 @@
 
 ## ユーザーIDもしくはパスワードを忘れました。
 
-ripple\_cs@mobingi.com までご連絡ください。
+ripple\_cs@alphaus.cloud までご連絡ください。
 
 ## Rippleでの操作はAWSからの請求にも影響するのでしょうか？
 
@@ -21,5 +21,5 @@ ripple\_cs@mobingi.com までご連絡ください。
 ## 1つのAWSアカウントに、複数の請求グループIDを登録することは可能ですか？
 
 お客様自身で登録することができません（2019年4月現在）  
-ご希望のお客様は ripple\_cs@mobingi.com までご連絡ください。
+ご希望のお客様は ripple\_cs@alphaus.cloud までご連絡ください。
 
