@@ -1,11 +1,11 @@
 # Table of contents
 
-* [Mobingi Wave 公式ユーザーガイド](README.md)
+* [Wave 公式ユーザーガイド](README.md)
 
 ## Mobingi Wave
 
 * [事前準備](mobingi-wave/prep.md)
-* [Mobingi Wave 概要](mobingi-wave/about-wave/README.md)
+* [Wave 概要](mobingi-wave/about-wave/README.md)
   * [レポート](mobingi-wave/about-wave/usage-reports.md)
   * [リザーブドインスタンス](mobingi-wave/about-wave/reserved-instances.md)
   * [請求書](mobingi-wave/about-wave/invoice.md)
