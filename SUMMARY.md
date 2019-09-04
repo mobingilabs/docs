@@ -29,6 +29,7 @@
 * [新規顧客を追加する](more-info/add-new-customer.md)
 * [請求書作成済みの請求書設定を変更する](more-info/invoice-created.md)
 * [請求書のマスタ設定を変更する](more-info/invoice-master.md)
+* [請求書に項目を追加する](more-info/free-format.md)
 * [プロジェクト単位で収支管理する](more-info/project-manage.md)
 * [RI のアロケーション変更](more-info/change-ri.md)
 * [タグでの請求データ作成](more-info/tag-invoice.md)
