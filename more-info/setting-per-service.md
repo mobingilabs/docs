@@ -32,7 +32,8 @@ EC2、RDSなど、AWSのサービス毎に割引・割増の設定ができま�
 * RDS Service
 * DynamoDB
 * CloudFront
-* AmazonConnect
-* AmazonMarketplace
+* AWS Direct Connect
 {% endhint %}
+
+
 
