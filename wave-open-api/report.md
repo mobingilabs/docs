@@ -1,40 +1,38 @@
-# レポート
+# Report
 
 **基本的なResponse Format**
 
-```json
+```javascript
 {
-	vendor : [
-		{
-			id : string
-			name : string
-			date : [
-				{
-					blended_cost : number
+    vendor : [
+        {
+            id : string
+            name : string
+            date : [
+                {
+                    blended_cost : number
                     date : string
                     timestamp : number
                     true_unblended_cost : number
                     unblended_cost : number
-				},...
-			]
-		},...
-	]
+                },...
+            ]
+        },...
+    ]
 }
 ```
 
-<br>
-
-| Response value        | type     | description   |
-| --------------------- | -------- | ------------- |
-| `vendor`              | *array*  | パラメーターで指定したvendor 例 : `aws` |
-| `id`                  | *string* |  - `service` servicename <br>  - `account` account id |
-| `name`                | *string* |  - `service` servicename <br>  - `account` account name |
-| `date`                | *array*  | 取得したデータ一覧 |
-| `date`                | *string* | - `monthly` : `YYYY-MM` <br> - `daily` : `YYYY-MM-DD` |
-| `timestamp`           | *number* | `date` のUNIXタイムスタンプ |
-| `blended_cost`        | *number* | AWS CURの `lineitem/blendedcost`   |
-| `unblended_cost`      | *number* | AWS CURの `lineitem/unblendedcost` |
-| `true_unblended_cost` | *number* | mobingiで再計算したunblendedcost |
+| Response value | type | description |
+| :--- | :--- | :--- |
+| `vendor` | _array_ | パラメーターで指定したvendor 例 : `aws` |
+| `id` | _string_ | - `service` servicename    - `account` account id |
+| `name` | _string_ | - `service` servicename    - `account` account name |
+| `date` | _array_ | 取得したデータ一覧 |
+| `date` | _string_ | - `monthly` : `YYYY-MM`   - `daily` : `YYYY-MM-DD` |
+| `timestamp` | _number_ | `date` のUNIXタイムスタンプ |
+| `blended_cost` | _number_ | AWS CURの `lineitem/blendedcost` |
+| `unblended_cost` | _number_ | AWS CURの `lineitem/unblendedcost` |
+| `true_unblended_cost` | _number_ | mobingiで再計算したunblendedcost |
 
 ## レポートの取得
 
@@ -43,16 +41,14 @@
 ```http
 POST /v1/reports/{owner}/{resolution}?from={from}&to={to}&by={by}&vendor={vendor} HTTP1.1
 Content-Type: application/json
-
 ```
 
 `{Path Variables}` の例
 
-| Path             |  description    |
-| ---------------  | --------------  |
-| `owner`          | 使用可能な値 <br> - `company` |
-| `resolution`     | 使用可能な値 <br> - `monthly` <br> - `daily`  | 
-
+| Path | description |
+| :--- | :--- |
+| `owner` | 使用可能な値   - `company` |
+| `resolution` | 使用可能な値   - `monthly`   - `daily` |
 
 `{URL Params}` の例
 
@@ -65,9 +61,10 @@ Content-Type: application/json
 }
 ```
 
-| Params       |  description                |
-| -----------  | --------------------------  |
-| `from`       | 型 : *string* <br> フォーマット : *YYYY-MM_DD* <br> 説明 : <br> Monthly は自動的に `YYYY-MM`へ変換されます。 <br> Daily は自動的に `YYYY-MM-DD`へ変換されます。<br>   |
-| `to`         | 型 : *string* <br> フォーマット : *YYYY-MM_DD* <br> 説明 : <br> Monthly は自動的に `YYYY-MM`へ変換されます。 <br> Daily は自動的に `YYYY-MM-DD`へ変換されます。<br>    | 
-| `by`         | **使用可能な値** <br> 型 : *string* <br> - `service` <br> - `account` |
-| `vendor`     | **使用可能な値** <br> 型 : *string* <br> - `aws` |
+| Params | description |
+| :--- | :--- |
+| `from` | 型 : _string_   フォーマット : _YYYY-MM\_DD_   説明 :   Monthly は自動的に `YYYY-MM`へ変換されます。   Daily は自動的に `YYYY-MM-DD`へ変換されます。  |
+| `to` | 型 : _string_   フォーマット : _YYYY-MM\_DD_   説明 :   Monthly は自動的に `YYYY-MM`へ変換されます。   Daily は自動的に `YYYY-MM-DD`へ変換されます。  |
+| `by` | **使用可能な値**   型 : _string_   - `service`   - `account` |
+| `vendor` | **使用可能な値**   型 : _string_   - `aws` |
+

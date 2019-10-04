@@ -1,9 +1,10 @@
-# プリリクエスト
+# Pre-request
 
 open apiを使用するためのtokenを取得する必要があります。
 
 **Response Format**
-```
+
+```text
 {
     token_type : string
     expires_in : number
@@ -11,13 +12,11 @@ open apiを使用するためのtokenを取得する必要があります。
 }
 ```
 
-<br>
-
-| Response value  | type      | description   |
-| --------------- | --------- | ------------- |
-| `token_type`    | *string*  | 認証スキーム |
-| `expires_in`    | *number*  | 期限 43200秒 |
-| `access_token`  | *string*  | token値 |
+| Response value | type | description |
+| :--- | :--- | :--- |
+| `token_type` | _string_ | 認証スキーム |
+| `expires_in` | _number_ | 期限 43200秒 |
+| `access_token` | _string_ | token値 |
 
 ## Token取得
 
@@ -42,8 +41,9 @@ Content-Type: form-data
 }
 ```
 
-| Body             |  description    |
-| ---------------  | --------------  |
-| `grant_type`     | 固定値           |
-| `client_id`      | 顧客ID           | 
-| `client_secret`  | 顧客Secret       |
+| Body | description |
+| :--- | :--- |
+| `grant_type` | 固定値 |
+| `client_id` | 顧客ID |
+| `client_secret` | 顧客Secret |
+
