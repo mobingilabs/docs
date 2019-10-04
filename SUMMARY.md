@@ -38,5 +38,5 @@
 * [CSVデータの中身](more-info/csv-data.md)
 * [各ページ情報をダウンロードする](more-info/download-pageinfo.md)
 * [よくあるお問い合わせ](more-info/faq.md)
-* [請求書の英語表示/ドル請求](more-info/nodoru.md)
+* [請求書の英語表示/ドル請求](more-info/english-support.md)
 
