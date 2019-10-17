@@ -39,6 +39,6 @@
 * [CSVデータの中身](more-info/csv-data.md)
 * [各ページ情報をダウンロードする](more-info/download-pageinfo.md)
 * [請求書の英語表示/ドル請求](more-info/english-support.md)
-* [原価データをエクスポートする](more-info/export-original-cost.md)
+* [原価データを出力する](more-info/export-original-cost.md)
 * [よくあるお問い合わせ](more-info/faq.md)
 
