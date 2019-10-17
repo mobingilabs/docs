@@ -22,6 +22,7 @@
 * [請求書](features/invoice.md)
 * [リザーブドインスタンス](features/ri.md)
 * [アカウントとグループ](features/account.md)
+* [ツール](features/tools.md)
 * [環境設定](features/preference.md)
 
 ## もっと詳しく <a id="more-info"></a>
@@ -37,6 +38,7 @@
 * [サービス毎の割引・割増の設定](more-info/setting-per-service.md)
 * [CSVデータの中身](more-info/csv-data.md)
 * [各ページ情報をダウンロードする](more-info/download-pageinfo.md)
-* [よくあるお問い合わせ](more-info/faq.md)
 * [請求書の英語表示/ドル請求](more-info/english-support.md)
+* [原価データをエクスポートする](more-info/export-original-cost.md)
+* [よくあるお問い合わせ](more-info/faq.md)
 
