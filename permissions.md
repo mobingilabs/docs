@@ -2,7 +2,7 @@
 
 最新の権限リストは[Githubのページ](%20https://github.com/mobingi/rbac-permissions)をご確認ください。 
 
-以下テーブルのリストは全てMobingi のサービス内で適用されるものです。
+以下テーブルのリストは全てAlphaus のサービス内で適用されるものです。
 
 ## USER 権限 <a id="user-permissions"></a>
 
