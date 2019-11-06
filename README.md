@@ -10,8 +10,8 @@ Below are the links to Mobingi products' dashboards.
 
 | Target | Link |
 | :--- | :--- |
-| Ripple (beta) | [https://next.alphaus.cloud/ripple/](https://app.mobingi.com/ripple/) |
-| Wave (beta) | [https://next.alphaus.cloud/wave/](https://app.mobingi.com/wave/) |
+| Ripple \(beta\) | [https://next.alphaus.cloud/ripple/](https://app.mobingi.com/ripple/) |
+| Wave \(beta\) | [https://next.alphaus.cloud/wave/](https://app.mobingi.com/wave/) |
 | Ripple | [https://app.mobingi.com/ripple/](https://app.mobingi.com/ripple/) |
 | Wave | [https://app.mobingi.com/wave/](https://app.mobingi.com/wave/) |
 
