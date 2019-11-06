@@ -10,8 +10,10 @@ Below are the links to Mobingi products' dashboards.
 
 | Target | Link |
 | :--- | :--- |
-| Ripple dashboard | [https://app.mobingi.com/ripple/](https://app.mobingi.com/ripple/) |
-| Wave dashboard | [https://app.mobingi.com/wave/](https://app.mobingi.com/wave/) |
+| Ripple (beta) | [https://app.mobingi.com/ripple/](https://app.mobingi.com/ripple/) |
+| Wave (beta) | [https://app.mobingi.com/wave/](https://app.mobingi.com/wave/) |
+| Ripple | [https://app.mobingi.com/ripple/](https://app.mobingi.com/ripple/) |
+| Wave | [https://app.mobingi.com/wave/](https://app.mobingi.com/wave/) |
 
 For more information about Mobingi in general, please visit the relevant links below.
 
