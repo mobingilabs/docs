@@ -1,12 +1,10 @@
 # ライフサイクルフックの設定
 
-{% code-tabs %}
-{% code-tabs-item title="AWS only" %}
+{% code title="AWS only" %}
 ```text
 PUT /v2/alm/stack/{stack_id}/lifecyclehook
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 | **Parameters** | **Type** | **Required** | **Details** |
 | :--- | :--- | :--- | :--- |
