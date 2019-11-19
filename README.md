@@ -2,7 +2,7 @@
 description: Mobingi Documentation
 ---
 
-# Get Started
+# Getting started
 
 Welcome to Mobingi's official documentation! To get started, you can use the dropdown menu on the upper left hand corner of this page.
 
