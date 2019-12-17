@@ -8,7 +8,7 @@ description: Mobingi Documentation
 We are still in the process of updating our documentation from using the Mobingi company name to Alphaus.
 {% endhint %}
 
-Welcome to Mobingi's official documentation! To get started, you can use the dropdown menu on the upper left hand corner of this page.
+Welcome to Alphaus official documentation! To get started, you can use the dropdown menu on the upper left hand corner of this page.
 
 Below are the links to Mobingi products' dashboards.
 
