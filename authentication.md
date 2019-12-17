@@ -30,7 +30,7 @@ The following table describes the formdata you need to supply as your POST body.
 **Response**
 
 ```ruby
-HTTP 200
+HTTP/1.1 200 OK
 
 {
   "id_token": "eyJ0eXAiOiJKV1Q...",
