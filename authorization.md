@@ -6,7 +6,7 @@
 
 ## List permissions
 
-List all permissions supported by RBAC in all namespaces.
+List all permissions supported by RBAC in all namespaces. For reference, supported permissions can be found [here](https://github.com/mobingi/rbac-permissions).
 
 **Request**
 
