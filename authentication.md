@@ -31,20 +31,8 @@ The following table describes the formdata you need to supply as your POST body.
 
 ```ruby
 HTTP 200
-[
-  {
-    "namespace":"wave",
-    "permissions":[
-      "Admin",
-      "ModifySettings",
-      "..."
-    ]
-  },
-  {
-    "namespace":"ripple",
-    "permissions":[
-      "Admin"
-    ]
-  }
-]
+
+{
+  "id_token":"abcdefg..."
+}
 ```
