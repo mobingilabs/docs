@@ -4,7 +4,7 @@ For general information about RBAC, check out this [link](https://docs.mobingi.c
 
 The following endpoint is the base url for the APIs below.
 
-```
+```text
 https://service.mobingi.com/m/auth/rbac/
 ```
 
