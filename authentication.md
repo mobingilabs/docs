@@ -4,9 +4,12 @@ Before you can access Alphaus API services, you need to get an access token firs
 
 Use the following endpoints to acquire product-specific access tokens.
 
-```
-Ripple: https://login.mobingi.com/ripple/access_token
-Wave:   https://login.mobingi.com/access_token
+```bash
+# Ripple
+https://login.mobingi.com/ripple/access_token
+
+# Wave
+https://login.mobingi.com/access_token
 ```
 
 **Request**
