@@ -18,7 +18,8 @@ authorization: Bearer {token}
 **Response**
 
 ```ruby
-HTTP 200
+HTTP/1.1 200 OK
+
 [
   {
     "namespace":"wave",
@@ -73,7 +74,8 @@ Role names should have at least 6 characters in length and 32 characters maximum
 **Response**
 
 ```ruby
-HTTP 200
+HTTP/1.1 200 OK
+
 {
   "name":"testrole",
   "namespace":"wave",
@@ -99,7 +101,8 @@ The `{namespace}` parameter is optional. If not provided, all roles will be retu
 **Response**
 
 ```ruby
-HTTP 200
+HTTP/1.1 200 OK
+
 [
   {
     "name": "testrole",
@@ -148,7 +151,8 @@ authorization: Bearer {token}
 **Response**
 
 ```ruby
-HTTP 200
+HTTP/1.1 200 OK
+
 {
   "name": "testrole",
   "namespace":"wave",
@@ -207,7 +211,8 @@ authorization: Bearer {token}
 **Response**
 
 ```ruby
-HTTP 200
+HTTP/1.1 200 OK
+
 {
   "success":[
     "somerole"
@@ -240,7 +245,8 @@ Authorization: Bearer {token}
 **Response**
 
 ```ruby
-HTTP 200
+HTTP/1.1 200 OK
+
 [
   {
     "root_user":"58c2297d25645",
@@ -272,7 +278,8 @@ authorization: Bearer {token}
 **Response**
 
 ```ruby
-HTTP 200
+HTTP/1.1 200 OK
+
 [
   {
     "namespace":"wave",
@@ -335,7 +342,8 @@ authorization: Bearer {token}
 **Response**
 
 ```ruby
-HTTP 200
+HTTP/1.1 200 OK
+
 {
   "success":[
     "somerole"
