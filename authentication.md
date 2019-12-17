@@ -33,6 +33,10 @@ The following table describes the formdata you need to supply as your POST body.
 HTTP 200
 
 {
-  "id_token":"abcdefg..."
+  "id_token": "eyJ0eXAiOiJKV1Q...",
+  "token_type": "Bearer",
+  "expires_in": 86399,
+  "access_token": "eyJ0eXAiOiJKV1Q...",
+  "refresh_token": "def50200..."
 }
 ```
