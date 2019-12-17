@@ -14,6 +14,8 @@ https://login.mobingi.com/access_token
 
 **Request**
 
+To obtain an access token, send a POST message to the access token endpoints using the format described below.
+
 ```http
 POST {access-token-url} HTTP1.1
 content-type: multipart/form-data
