@@ -16,6 +16,17 @@ Content-Type: application/json
 {body formdata}
 ```
 
+The following table describes the formdata you need to supply as your POST body.
+
+| Name | Value |
+| :--- | :--- |
+| `grant_type` | Valid values: `password` |
+| `client_id` | The client id you received from Alphaus. |
+| `client_secret` | The client secret you received from Alphaus. |
+| `username` | You account username. |
+| `password` | You account password. |
+| `scope` | Valid values: `openid` |
+
 **Response**
 
 ```ruby
