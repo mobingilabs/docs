@@ -1,5 +1,7 @@
 # Authorization \(RBAC\)
 
+For general information about RBAC, check out this [link](https://docs.mobingi.com/v/ur-en/#rbac).
+
 | Description | Link |
 | :--- | :--- |
 | API Base URL | `https://service.mobingi.com/m/auth/rbac/` |
