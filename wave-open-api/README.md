@@ -1,4 +1,4 @@
-# Wave\(open api\)
+# Wave \(OpenAPI\)
 
 | Description | Link |
 | :--- | :--- |
