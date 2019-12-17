@@ -4,11 +4,11 @@
 This page is still a work in progress.
 {% endhint %}
 
-The following APIs can be used to manage your account's subusers.
+The following endpoint is the base url for the APIs below.
 
-| Description | Link |
-| :--- | :--- |
-| API Base URL | `https://service.mobingi.com/m/u/` |
+```
+https://service.mobingi.com/m/u/
+```
 
 ## Create subuser
 
