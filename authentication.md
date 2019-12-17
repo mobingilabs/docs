@@ -11,7 +11,7 @@ Before you can access Alphaus API services, you need to get an access token firs
 
 ```http
 POST {baseurl}/access_token HTTP1.1
-Content-Type: application/json
+content-type: multipart/form-data
 
 {body formdata}
 ```
@@ -35,7 +35,7 @@ HTTP 200
 {
   "id_token": "eyJ0eXAiOiJKV1Q...",
   "token_type": "Bearer",
-  "expires_in": 86399,
+  "expires_in": 86400,
   "access_token": "eyJ0eXAiOiJKV1Q...",
   "refresh_token": "def50200..."
 }
