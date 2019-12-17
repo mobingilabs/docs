@@ -30,6 +30,7 @@ HTTP/1.1 200 OK
   {
     "username":"mysubuser",
     "msp_user":"MSP-123456",
+    "mobingi_user": "abcdef",
     "email":"mysubuser@domain.com",
     "nickname":"",
     ...
