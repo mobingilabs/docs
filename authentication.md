@@ -2,15 +2,17 @@
 
 Before you can access Alphaus API services, you need to get an access token first. You will then use this token in your succeeding calls to the API using the `authorization: Bearer {token}` HTTP header. Alphaus API tokens are [JSON Web Tokens \(JWT\)](https://tools.ietf.org/html/rfc7519).
 
-| Product | URL |
-| :--- | :--- |
-| Ripple | `https://login.mobingi.com/ripple/access_token` |
-| Wave | `https://login.mobingi.com/access_token` |
+Use the following endpoints to acquire product-specific access tokens.
+
+```
+Ripple: https://login.mobingi.com/ripple/access_token
+Wave:   https://login.mobingi.com/access_token
+```
 
 **Request**
 
 ```http
-POST {baseurl}/access_token HTTP1.1
+POST {access-token-url} HTTP1.1
 content-type: multipart/form-data
 
 {body formdata}
