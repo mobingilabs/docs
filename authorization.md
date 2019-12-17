@@ -49,11 +49,7 @@ Roles are root user-level. That means all roles created by the root user, or any
 ```http
 POST /roles HTTP1.1
 authorization: Bearer {token}
-```
 
-**Request body**
-
-```ruby
 {
   "name":"testrole",
   "namespace":"wave",
@@ -133,11 +129,7 @@ Update role. If role name is different, rename mapped role name.
 ```http
 PATCH /roles/{namespace}/{rolename} HTTP1.1
 authorization: Bearer {token}
-```
 
-**Request body**
-
-```ruby
 {
   "namespace":"wave",
   "permissions":[
@@ -191,11 +183,7 @@ Valid values for `type` for filtering rules:
 ```http
 POST /userroles HTTP1.1
 authorization: Bearer {token}
-```
 
-**Request body**
-
-```ruby
 {
   "user_id":"subuser1",
   "roles":[
@@ -316,18 +304,7 @@ This method replaces subuser's all roles to information in the request body.
 ```http
 PATCH /userroles HTTP1.1
 authorization: Bearer {token}
-```
 
-```http
-PATCH /{subuser}/userroles HTTP1.1
-authorization: Bearer {token}
-```
-
-`{subuser}` is the subuser id.
-
-**Request body**
-
-```ruby
 {
   "roles":[
     {
@@ -338,6 +315,23 @@ authorization: Bearer {token}
     ]
 }
 ```
+
+```http
+PATCH /{subuser}/userroles HTTP1.1
+authorization: Bearer {token}
+
+{
+  "roles":[
+    {
+      "namespace":"wave",
+      "role": "somerole",
+    },
+    ...
+    ]
+}
+```
+
+`{subuser}` is the subuser id.
 
 **Response**
 
