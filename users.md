@@ -32,9 +32,6 @@ HTTP/1.1 200 OK
     "msp_user":"MSP-123456",
     "email":"mysubuser@domain.com",
     "nickname":"",
-    "notification": {
-      "email":"false"}
-    },
     ...
   }
 ]
