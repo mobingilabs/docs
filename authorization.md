@@ -12,7 +12,7 @@ List all permissions supported by RBAC in all namespaces.
 
 ```http
 GET /permissions HTTP1.1
-Authorization: Bearer {token}
+authorization: Bearer {token}
 ```
 
 **Response**
@@ -47,7 +47,7 @@ Roles are root user-level. That means all roles created by the root user, or any
 
 ```http
 POST /roles HTTP1.1
-Authorization: Bearer {token}
+authorization: Bearer {token}
 ```
 
 **Request body**
@@ -91,7 +91,7 @@ HTTP 200
 
 ```http
 GET /roles?namespace={namespace} HTTP1.1
-Authorization: Bearer {token}
+authorization: Bearer {token}
 ```
 
 The `{namespace}` parameter is optional. If not provided, all roles will be returned.
@@ -129,7 +129,7 @@ Update role. If role name is different, rename mapped role name.
 
 ```http
 PATCH /roles/{namespace}/{rolename} HTTP1.1
-Authorization: Bearer {token}
+authorization: Bearer {token}
 ```
 
 **Request body**
@@ -168,7 +168,7 @@ Delete role. Deleting a role will also remove all mappings.
 
 ```http
 DELETE /roles/{namespace}/{rolename} HTTP1.1
-Authorization: Bearer {token}
+authorization: Bearer {token}
 ```
 
 ## Map roles to user
@@ -186,7 +186,7 @@ Valid values for `type` for filtering rules:
 
 ```http
 POST /userroles HTTP1.1
-Authorization: Bearer {token}
+authorization: Bearer {token}
 ```
 
 **Request body**
@@ -225,7 +225,7 @@ For this endpoint, the returned role mappings are those attached to the caller.
 
 ```http
 GET /userroles HTTP1.1
-Authorization: Bearer {token}
+authorization: Bearer {token}
 ```
 
 For listing role mappings of other subusers, use this endpoint.
@@ -266,7 +266,7 @@ Retrieve all permissions to all roles attached to the `{subuser}`.
 
 ```http
 GET /{subuser}/permissions HTTP1.1
-Authorization: Bearer {token}
+authorization: Bearer {token}
 ```
 
 **Response**
@@ -308,12 +308,12 @@ This method replaces subuser's all roles to information in the request body.
 
 ```http
 PATCH /userroles HTTP1.1
-Authorization: Bearer {token}
+authorization: Bearer {token}
 ```
 
 ```http
 PATCH /{subuser}/userroles HTTP1.1
-Authorization: Bearer {token}
+authorization: Bearer {token}
 ```
 
 `{subuser}` is the subuser id.
