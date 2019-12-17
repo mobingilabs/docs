@@ -1,6 +1,6 @@
 # Authentication
 
-Before you can access Alphaus API services, you need to get an access token first. You will then use this token in your succeeding calls to the API using the `authorization: Bearer {token}` HTTP header. Alphaus API tokens are [JSON Web Tokens (JWT)](https://tools.ietf.org/html/rfc7519).
+Before you can access Alphaus API services, you need to get an access token first. You will then use this token in your succeeding calls to the API using the `authorization: Bearer {token}` HTTP header. Alphaus API tokens are [JSON Web Tokens \(JWT\)](https://tools.ietf.org/html/rfc7519).
 
 | Product | URL |
 | :--- | :--- |
@@ -40,3 +40,4 @@ HTTP/1.1 200 OK
   "refresh_token": "def50200..."
 }
 ```
+
