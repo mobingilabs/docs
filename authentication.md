@@ -27,7 +27,7 @@ The following table describes the formdata you need to supply as your POST body.
 
 | Name | Value |
 | :--- | :--- |
-| `grant_type` | Valid values: `password`, 'client_credentials' |
+| `grant_type` | Valid values: `password`, `client_credentials` |
 | `client_id` | The client id you received from Alphaus. |
 | `client_secret` | The client secret you received from Alphaus. |
 | `username` | You account username. Required if `grant_type` is set to `password`. |
