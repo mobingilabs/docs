@@ -1,5 +1,9 @@
 # Authentication
 
+{% hint style="info" %}
+Authentication for [Wave \(OpenAPI\)](https://docs.mobingi.com/v/api-reference/wave-open-api/prerequest) is separated at the moment. We will be unifying all logins for all our APIs going forward. An announcement will be made once it's done.
+{% endhint %}
+
 Before you can access Alphaus API services, you need to get an access token first. You will then use this token in your succeeding calls to the API using the `authorization: Bearer {token}` HTTP header. Alphaus API tokens are [JSON Web Tokens \(JWT\)](https://tools.ietf.org/html/rfc7519).
 
 Use the following endpoints to acquire product-specific access tokens. Tokens are not compatible between the two. Ripple access tokens can only be used for Ripple endpoints; Wave access tokens are only valid on Wave endpoints.
