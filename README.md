@@ -19,6 +19,8 @@ Below are the links to our products' dashboards.
 | Ripple | [https://app.mobingi.com/ripple/](https://app.mobingi.com/ripple/) |
 | Wave | [https://app.mobingi.com/wave/](https://app.mobingi.com/wave/) |
 
+Our service status page can be found on [https://status.alphaus.cloud/](https://status.alphaus.cloud/).
+
 For more information about Mobingi in general, please visit the relevant links below.
 
 | Link | Description |
