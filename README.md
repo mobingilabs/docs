@@ -2,6 +2,10 @@
 description: Mobingi Documentation
 ---
 
+{% hint style="warning" %}
+This product is already deprecated. Apologies.
+{% endhint %}
+
 # Overview
 
 ## Overview
