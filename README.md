@@ -2,6 +2,10 @@
 description: Mobingi Documentation
 ---
 
+{% hint style="warning" %}
+This product is already deprecated.
+{% endhint %}
+
 # What is ALM?
 
 ## What is ALM?
