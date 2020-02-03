@@ -1,6 +1,6 @@
 # Overview
 
-{% hint style="info" %}
+{% hint style="warning" %}
 This product is already deprecated.
 {% endhint %}
 
