@@ -5,7 +5,7 @@ description: Alphaus Documentation
 # Getting started
 
 {% hint style="info" %}
-We are still in the process of updating our documentation from using the Mobingi company name to Alphaus.
+We are still in the process of updating our documentation from using the Mobingi company name to Alphaus. You will still notice some old references to Mobingi all throughout the documentation.
 {% endhint %}
 
 Welcome to Alphaus official documentation! To get started, you can use the dropdown menu on the upper left hand corner of this page.
