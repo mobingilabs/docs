@@ -3,7 +3,7 @@ description: Mobingi Documentation
 ---
 
 {% hint style="warning" %}
-This product is already deprecated. Apologies.
+This product is already deprecated.
 {% endhint %}
 
 # Overview
