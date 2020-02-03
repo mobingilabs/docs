@@ -21,7 +21,7 @@ Below are the links to our products' dashboards.
 
 Our service status page can be found on [https://status.alphaus.cloud/](https://status.alphaus.cloud/).
 
-For more information about Mobingi in general, please visit the relevant links below.
+For more information about Alphaus in general, please visit the relevant links below.
 
 | Link | Description |
 | :--- | :--- |
