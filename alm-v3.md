@@ -1,5 +1,9 @@
 # ALM \(v3\)
 
+{% hint style="warning" %}
+This API is already deprecated.
+{% endhint %}
+
 ## Endpoint
 
 ```text
