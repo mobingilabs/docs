@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Overview](README.md)
+* [Endpoint limits](endpoint-limits.md)
 * [Authentication](authentication.md)
 * [Users](users.md)
 * [Authorization \(RBAC\)](authorization.md)
