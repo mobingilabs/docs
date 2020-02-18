@@ -25,7 +25,7 @@ For more information about Alphaus in general, please visit the relevant links b
 
 | Link | Description |
 | :--- | :--- |
-| [https://mobingi.com/](https://mobingi.com/) | Official website |
+| [https://alphaus.cloud/jp/](https://alphaus.cloud/jp/) | Official website |
 | [http://blog.mobingi.co.jp/](http://blog.mobingi.co.jp/) | Blog \(Japanese\) |
 | [https://labs.mobingi.com/](https://labs.mobingi.com/) | Tech blog \(Japanese\) |
 | [https://tech.mobingi.com/](https://tech.mobingi.com/) | Tech blog \(English\) |
