@@ -39,7 +39,7 @@
 **Request**
 
 ```http
-POST /v1/reports/{owner}/{resolution}?from={from}&to={to}&by={by}&vendor={vendor} HTTP1.1
+GET /v1/reports/{owner}/{resolution}?from={from}&to={to}&by={by}&vendor={vendor} HTTP1.1
 Content-Type: application/json
 ```
 
