@@ -50,15 +50,10 @@ Content-Type: application/json
 | `owner` | 使用可能な値   - `company` |
 | `resolution` | 使用可能な値   - `monthly`   - `daily` |
 
-`{URL Params}` の例
+`Request URL` の例
 
 ```ruby
-{
-  "from":"2019-01-01",
-  "to":"2019-02-01",
-  "by":"service",
-  "vendor":"aws"
-}
+GET /v1/reports/company/monthly?from=2019-01-01&to=2019-02-01&by=service&vendor=aws
 ```
 
 | Params | description |
