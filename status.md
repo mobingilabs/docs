@@ -12,4 +12,4 @@ https://service.mobingi.com/m/status/
 
 ## Invoice calculation status
 
-TBD
+Get the current status of the invoice calculations.
