@@ -1,5 +1,5 @@
 # Status
 
 {% hint style="warning" %}
-This is still a draft.
+This is still a draft version.
 {% endhint %}
