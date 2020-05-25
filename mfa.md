@@ -3,7 +3,7 @@
 The following endpoint is the base url for the APIs below.
 
 ```text
-https://service.mobingi.com/m/
+https://service.mobingi.com/m/mfa
 ```
 
 ## Create MFA
@@ -17,7 +17,7 @@ The MFA setup will only be fully enabled when the verify endpoint is successfull
 **Request**
 
 ```http
-POST /mfa/ HTTP1.1
+POST / HTTP1.1
 authorization: Bearer {token}
 content-type: application/json
 ```
@@ -48,7 +48,7 @@ Verify MFA setup for the user.
 **Request**
 
 ```http
-POST /mfa/verify HTTP1.1
+POST /verify HTTP1.1
 authorization: Bearer {token}
 content-type: application/json
 
@@ -75,7 +75,7 @@ Get MFA status for the user.
 **Request**
 
 ```http
-GET /mfa/status HTTP1.1
+GET /status HTTP1.1
 authorization: Bearer {token}
 content-type: application/json
 ```
@@ -97,7 +97,7 @@ Disable MFA setup for the user.
 **Request**
 
 ```http
-DELETE /mfa/ HTTP1.1
+DELETE / HTTP1.1
 authorization: Bearer {token}
 content-type: application/json
 ```
