@@ -2,4 +2,4 @@
 
 | Description | Link |
 | :--- | :--- |
-| API Base URL | `https://api.alphaus.cloud/ripple/m/` |
+| API Base URL | `https://api.alphaus.cloud/m/ripple/` |
