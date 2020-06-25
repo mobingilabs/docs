@@ -39,8 +39,8 @@ The following are some example request payloads for `{request body}`.
 
 Field             | Type      | Required | Validation | Description
 ----------------- | --------- | -------- | ---------- | -----------
- `rate`           | *double*  | Yes      | -          | 為替レート
- `month`          | *string*  | Yes      | -          | 対象月
+ `rate`           | *double*  | Yes      | -          | Exchange rate
+ `month`          | *string*  | Yes      | -          | Target month
 
 
 **Response**
