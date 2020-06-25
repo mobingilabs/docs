@@ -60,6 +60,14 @@ note          | *string*  | No       | -          | note
 HTTP 200
 
 {"status":"success"}
+
+HTTP 400 customer id is already registered.
+
+{
+  "code":"5005",
+  "message":"account function exception",
+  "description":"Customer id already exists."
+}
 ```
 
 ## List
@@ -119,14 +127,53 @@ PUT /accts/{customer_id}/edit HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
+**{request body}**
 ```
+
+The following are some example parameter for `{customer_id}`.
+
+**{customer_id}**
+
+AWS AccountID or Azure SubscriptionID
+
+The following are some example request payloads for `{request body}`.
+
+**{request body}**
+
+```ruby
+{
+	"vendor":"aws",
+    "account_id":"919999618919"
+	"company_id":"AJfdivbDjhvbpE",
+	"name":"ripple customer1",
+	"note":null
+}
+```
+
+**{request body} description**
+
+Field         | Type      | Required | Validation | Description
+------------- | --------- | -------- | ---------- | -----------
+account_id    | *string*  | Yes      | - AWS 12digits <br> - AZURE 7digits | - AWS PayerAccountID <br> - Azure BillingID
+company_id    | *string*  | Yes      | -          | Billing group internal unique ID
+vendor        | *string*  | Yes      | - supported: `aws`,`azure`  | 
+name          | *string*  | Yes      | - length 3 ~ 100    | register customer name
+note          | *string*  | No       | -          | note 
 
 **Response**
 
 ```ruby
 HTTP 200
 
-{}
+{"status":"success"}
+
+HTTP 400 customer id is not registered.
+
+{
+  "code":"5005",
+  "message":"account function exception",
+  "description":"Customer id is not exists."
+}
 ```
 
 ## Delete
@@ -140,16 +187,28 @@ delete account information.
 **Request**
 
 ```http
-DELETE /accts/{customer_id} HTTP1.1
+DELETE /accts/{vendor}/{id} HTTP1.1
 Authorization: Bearer {token}
-Content-Type: application/json
 
 ```
+
+The following are some example parameter for `{vendor}`.
+
+**{vendor}**
+
+- aws
+- azure
+
+The following are some example parameter for `{id}`.
+
+**{id}**
+
+{id} format is `{customer_id}|{account_id}`. Request looks like `/accts/aws/012345678912|919999618919`
 
 **Response**
 
 ```ruby
 HTTP 200
 
-{}
+{"status":"success"}
 ```
