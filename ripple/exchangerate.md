@@ -35,7 +35,7 @@ The following are some example request payloads for `{request body}`.
 }
 ```
 
-**exchange_rate object**
+**exchange_rate object description**
 
 Field             | Type      | Required | Validation | Description
 ----------------- | --------- | -------- | ---------- | -----------
