@@ -20,13 +20,6 @@ Content-Type: application/json
 {request body}
 ```
 
-The following are some example parameter for `{vendor}`.
-
-**{vendor}**
-
-- aws
-- azure
-
 The following are some example request payloads for `{request body}`.
 
 **{request body}**
@@ -85,6 +78,13 @@ GET /accts?vendor={vendor} HTTP1.1
 Authorization: Bearer {token}
 
 ```
+
+The following are some example parameter for `{vendor}`.
+
+**{vendor}**
+
+- aws
+- azure
 
 **Response**
 
