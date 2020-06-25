@@ -8,7 +8,6 @@ create account information
 
 **Role actions**
 
-- `ReadAccount` 
 - `ModifyAccount`
 
 **Request**
