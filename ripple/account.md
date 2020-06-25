@@ -84,7 +84,23 @@ Authorization: Bearer {token}
 ```ruby
 HTTP 200
 
-{}
+[
+  {
+    "billinggroup_id":"Billing1",
+    "billinggroup_name":"Billing1",
+    "company_id":"AJfdivbDjhvbpE",
+    "customer_id":"012345678912",
+    "customer_name":"ripple customer1",
+    "account_id":"919999618919",
+    "vendor":"aws",
+    "note":null,
+    "payer":false,
+    "service_discount":null,
+    "project_id":null,
+    "azure_customer_id":null
+  },
+  ...
+]
 ```
 
 
