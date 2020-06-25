@@ -37,10 +37,10 @@ The following are some example request payloads for `{request body}`.
 
 **exchange_rate object description**
 
-Field             | Type      | Required | Validation | Description
------------------ | --------- | -------- | ---------- | -----------
- `rate`           | *double*  | Yes      | -          | Exchange rate
- `month`          | *string*  | Yes      | -          | Target month
+Field           | Type      | Required | Validation | Description
+--------------- | --------- | -------- | ---------- | -----------
+ rate           | *double*  | Yes      | -          | Exchange rate
+ month          | *string*  | Yes      | -          | Target month
 
 
 **Response**
