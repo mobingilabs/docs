@@ -304,7 +304,7 @@ update billing group information.
 **Request**
 
 ```http
-POST /billinggroup/{id} HTTP1.1
+PUT /billinggroup/{id} HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
@@ -366,7 +366,7 @@ HTTP 200
 **Request**
 
 ```http
-POST /billinggroup HTTP1.1
+PUT /billinggroup/{id}/setting HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
@@ -401,7 +401,7 @@ HTTP 200
 **Request**
 
 ```http
-POST /billinggroup HTTP1.1
+PUT /billinggroup/{id}/freeformat HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
@@ -437,7 +437,7 @@ HTTP 200
 **Request**
 
 ```http
-POST /billinggroup HTTP1.1
+PUT /billinggroup HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
@@ -472,21 +472,11 @@ HTTP 200
 **Request**
 
 ```http
-POST /billinggroup HTTP1.1
+DELETE /billinggroup/{id} HTTP1.1
 Authorization: Bearer {token}
-Content-Type: application/json
 
-{request body}
 ```
 
-The following are some example request payloads for `{request body}`.
-
-**{request body}**
-
-```ruby
-{
-}
-```
 
 **Response**
 
