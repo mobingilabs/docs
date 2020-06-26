@@ -1,5 +1,9 @@
 # User
 
+{% hint style="warning" %}
+This is still a draft version.
+{% endhint %}
+
 The following is the API reference for working with Ripple user.
 
 ## Get user

@@ -1,7 +1,7 @@
 # BillingGroup
 
 {% hint style="warning" %}
-This page is still a work in progress.
+This is still a draft version.
 {% endhint %}
 
 The following is the API reference for working with billing group.

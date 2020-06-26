@@ -1,5 +1,9 @@
 # ExchangeRate
 
+{% hint style="warning" %}
+This is still a draft version.
+{% endhint %}
+
 The following is the API reference for working with Ripple exchange rate.
 
 ## Set exchange rate per month
