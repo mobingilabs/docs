@@ -342,18 +342,18 @@ The following are some example request payloads for `{request body}`.
 
 Field                     | Type      | Required | Validation | Description
 ------------------------- | --------- | -------- | ---------- | -----------
-`billinggroup_id`         | *string*  | Yes      | -                | Billing group ID
-`billinggroup_name`       | *string*  | Yes      | length 1 ~ 100   | Billing group Name
-`company_name`            | *string*  | Yes      | length 1 ~ 100   | Company name
-`phone`                   | *string*  | No       | length 12 ~ 16   | Tel
-`postal`                  | *string*  | No       | length 4 ~ 10    | Postal
-`address`                 | *string*  | No       | length 1 ~ 100   | Address
-`billing_title`           | *string*  | No       | length 1 ~ 100   | Invoice title
-`personal`                | *string*  | No       | length 1 ~ 100   | Personal name
-`remarks`                 | *string*  | No       | length 1 ~ 100   | Memo
-`inv_aggregate`           | *boolean* | No       |                  | Displaying invoice in bulk or by vendor
-`project_id`              | *string*  | No       |                  | Project id
-`language`                | *string*  | No       | support: `ja`, `en` | Display invoice language setting
+billinggroup_id           | *string*  | Yes      | -                | Billing group ID
+billinggroup_name         | *string*  | Yes      | length 1 ~ 100   | Billing group Name
+company_name              | *string*  | Yes      | length 1 ~ 100   | Company name
+phone                     | *string*  | No       | length 12 ~ 16   | Tel
+postal                    | *string*  | No       | length 4 ~ 10    | Postal
+address                   | *string*  | No       | length 1 ~ 100   | Address
+billing_title             | *string*  | No       | length 1 ~ 100   | Invoice title
+personal                  | *string*  | No       | length 1 ~ 100   | Personal name
+remarks                   | *string*  | No       | length 1 ~ 100   | Memo
+inv_aggregate             | *boolean* | No       |                  | Displaying invoice in bulk or by vendor
+project_id                | *string*  | No       |                  | Project id
+language                  | *string*  | No       | support: `ja`, `en` | Display invoice language setting
 
 
 **Response**
@@ -412,23 +412,23 @@ The following are some example request payloads for `{request body}`.
 
 Field                           | Type      | Required | Validation | Description
 ------------------------------- | --------- | -------- | ---------- | -----------
-`calc_type`                     | *string*  | Yes      | support: `account`,`tag`                        | 計算タイプ
-`currency`                      | *string*  | Yes      | support: `jpy`,`usd`                            | 通貨
-`discount_calc_logic`           | *string*  | Yes      | support: `usageamount`,`allamount`              | 値引き対象
-`discount_rate`                 | *double*  | Yes      | support: 0 ~ 1                                  | 値引率
-`discount_target_usage`         | *string*  | Yes      | support: `cloudpayonly` ,`cloudpaywithfee`      | 値引き計算方法
-`substitution_fee`              | *string*  | Yes      | support: `percent`, `fix`, `automatic`, `table` | 代行手数料請求方法
-`substitution_fee_calc_target`  | *string*  | Yes      | support: `cloudpayonly`, `cloudpaywithfee`      | 代行手数料計算対象
-`substitution_fee_calc_type`    | *string*  | Yes      | support: `allsum`, `account`                    | 請求代行サービス計算方法
-`substitution_fee_target_usage` | *string*  | Yes      | support: ['nondiscount', 'discounted']          | 請求代行手数料対象
-`substitution_fix`              | *double*  | Yes      | support: 0 ~ 1,000,000                          | 代行手数料 固定
-`substitution_rate`             | *double*  | Yes      | support: 0 ~ 1                                  | 代行手数料 (%)
-`support_amount_target`         | *string*  | Yes      | support: `allusage`, `cloudpayonlywithfee`      | 表示なし
-`support_fee`                   | *string*  | Yes      | support: - aws `percent`, `aws_developer`, `aws_business`, `aws_enterprise`, `fix` <br> - azure `percent`, `fix`  | サポート料請求方法
-`support_fee_calc_target`       | *string*  | Yes      | support: `cloudpayonly`, `cloudpaywithfee`      | サポート料計算対象
-`support_fix`                   | *double*  | Yes      | support: 0 ~ 1,000,000                          | サポート料 固定
-`support_rate`                  | *double*  | Yes      | support: 0 ~ 1                                  | サポート料 %
-`tax_rate`                      | *double*  | Yes      | support: 0 ~ 0.08                               | 消費税率 %
+calc_type                       | *string*  | Yes      | support: `account`,`tag`                        | 計算タイプ
+currency                        | *string*  | Yes      | support: `jpy`,`usd`                            | 通貨
+discount_calc_logic             | *string*  | Yes      | support: `usageamount`,`allamount`              | 値引き対象
+discount_rate                   | *double*  | Yes      | support: 0 ~ 1                                  | 値引率
+discount_target_usage           | *string*  | Yes      | support: `cloudpayonly` ,`cloudpaywithfee`      | 値引き計算方法
+substitution_fee                | *string*  | Yes      | support: `percent`, `fix`, `automatic`, `table` | 代行手数料請求方法
+substitution_fee_calc_target    | *string*  | Yes      | support: `cloudpayonly`, `cloudpaywithfee`      | 代行手数料計算対象
+substitution_fee_calc_type      | *string*  | Yes      | support: `allsum`, `account`                    | 請求代行サービス計算方法
+substitution_fee_target_usage   | *string*  | Yes      | support: ['nondiscount', 'discounted']          | 請求代行手数料対象
+substitution_fix                | *double*  | Yes      | support: 0 ~ 1,000,000                          | 代行手数料 固定
+substitution_rate               | *double*  | Yes      | support: 0 ~ 1                                  | 代行手数料 (%)
+support_amount_target           | *string*  | Yes      | support: `allusage`, `cloudpayonlywithfee`      | 表示なし
+support_fee                     | *string*  | Yes      | support: - aws `percent`, `aws_developer`, `aws_business`, `aws_enterprise`, `fix` <br> - azure `percent`, `fix`  | サポート料請求方法
+support_fee_calc_target         | *string*  | Yes      | support: `cloudpayonly`, `cloudpaywithfee`      | サポート料計算対象
+support_fix                     | *double*  | Yes      | support: 0 ~ 1,000,000                          | サポート料 固定
+support_rate                    | *double*  | Yes      | support: 0 ~ 1                                  | サポート料 %
+tax_rate                        | *double*  | Yes      | support: 0 ~ 0.08                               | 消費税率 %
 
 **Response**
 
@@ -473,16 +473,23 @@ The following are some example request payloads for `{request body}`.
 }
 ```
 
+Field           | Type      | Required | Validation | Description
+--------------- | --------- | -------- | ---------- | -----------
+enabled         | *boolean* | Yes      | -          | 有効、無効
+label           | *string*  | Yes      | length 1 ~ 20     | タイトル
+unit_cost       | *double*  | Yes      | -          | 単価
+quantity        | *double*  | Yes      | -          | 数量
+total           | *double*  | Yes      | -          | 金額
+
 
 **Response**
-
-
 
 ```ruby
 HTTP 200
 
 {"status":"success"}
 ```
+
 
 ## Update Invoice Template
 
