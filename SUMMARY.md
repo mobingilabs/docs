@@ -6,6 +6,7 @@
 * [Users](users.md)
 * [Authorization \(RBAC\)](authorization.md)
 * [Status](status.md)
+* [Ripple](ripple/README.md)
 * [Wave](wave-open-api/README.md)
   * [Pre-request](wave-open-api/prerequest.md)
   * [Report](wave-open-api/report.md)
