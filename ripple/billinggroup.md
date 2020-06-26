@@ -225,11 +225,77 @@ request parameter for `{id}` is company_id.
 ```ruby
 HTTP 200
 
-{"status":"success"}
+{
+	"company_id":"RomwoEjdjhws",
+	"billinggroup_id":"Billing1",
+	"billinggroup_name":"Billing1",
+	"name":"Billing1 Company",
+	"invoices":{
+		"aws": {
+			"calc_type":"account",
+		    "currency":"jpy",
+		    "discount_calc_logic":"usageamount",
+		    "discount_rate":0,
+		    "discount_target_usage":"cloudpaywithfee",
+		    "substitution_fee":"percent",
+		    "substitution_fee_calc_target":"nondiscount",
+		    "substitution_fee_calc_type":"allsum",
+		    "substitution_fee_target_usage":"cloudpaywithfee",
+		    "substitution_fix":0,
+		    "substitution_rate":0,
+		    "support_amount_target":"allusage",
+		    "support_fee":"fix",
+		    "support_fee_calc_target":"nondiscount",
+		    "support_fix":0,
+		    "support_rate":0,
+		    "tax_rate":0
+		}
+		"azure": {
+			"calc_type":"account",
+		    "currency":"jpy",
+		    "discount_calc_logic":"usageamount",
+		    "discount_rate":0,
+		    "discount_target_usage":"cloudpaywithfee",
+		    "substitution_fee":"percent",
+		    "substitution_fee_calc_target":"nondiscount",
+		    "substitution_fee_calc_type":"allsum",
+		    "substitution_fee_target_usage":"cloudpaywithfee",
+		    "substitution_fix":0,
+		    "substitution_rate":0,
+		    "support_amount_target":"allusage",
+		    "support_fee":"fix",
+		    "support_fee_calc_target":"nondiscount",
+		    "support_fix":0,
+		    "support_rate":0,
+		    "tax_rate":0
+		}
+	},
+	"contact":"personal name",
+	"address":"123 street",
+	"postal":"12345",
+	"phone":"03‐1234‐5678",
+	"title":null,
+	"req_generate":null,
+	"remarks":null,
+	"inv_aggregate":null,
+	"project_id":null,
+	"project_code":null,
+	"project_label":null,
+	"project_currency":null,
+	"language":"ja",
+	"qrcode":false,
+	"invoice_template_id":null,
+	"custom_fields":null,
+	"untagged_groups":null,
+	"account":[],
+	"tag":[]
+}
 ```
 
 
 ## Update
+
+update billing group information.
 
 **Role actions**
 
@@ -238,7 +304,7 @@ HTTP 200
 **Request**
 
 ```http
-POST /billinggroup HTTP1.1
+POST /billinggroup/{id} HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
@@ -253,6 +319,9 @@ The following are some example request payloads for `{request body}`.
 {
 }
 ```
+
+**Response**
+
 
 ```ruby
 HTTP 200
@@ -286,6 +355,10 @@ The following are some example request payloads for `{request body}`.
 }
 ```
 
+
+**Response**
+
+
 ```ruby
 HTTP 200
 
@@ -316,6 +389,11 @@ The following are some example request payloads for `{request body}`.
 {
 }
 ```
+
+
+**Response**
+
+
 
 ```ruby
 HTTP 200
@@ -348,6 +426,10 @@ The following are some example request payloads for `{request body}`.
 }
 ```
 
+
+**Response**
+
+
 ```ruby
 HTTP 200
 
@@ -378,6 +460,8 @@ The following are some example request payloads for `{request body}`.
 {
 }
 ```
+
+**Response**
 
 ```ruby
 HTTP 200
