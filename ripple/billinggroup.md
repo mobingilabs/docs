@@ -1,5 +1,9 @@
 # BillingGroup
 
+{% hint style="warning" %}
+This page is still a work in progress.
+{% endhint %}
+
 The following is the API reference for working with billing group.
 
 ## Create
@@ -108,7 +112,11 @@ tax_rate                      | *double* | Yes | 0.00 ~ 0.10                    
 ```ruby
 HTTP 200
 
-{"status":"success"}
+{
+	"status":"success",
+	"company_id":"RomwoEjdjhws",
+	"billinggroup_id":"Billing1"
+}
 ```
 
 ## List
@@ -366,7 +374,7 @@ HTTP 200
 **Request**
 
 ```http
-PUT /billinggroup/{id}/setting HTTP1.1
+PUT /billinggroup/{id}/invoices HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
@@ -379,9 +387,48 @@ The following are some example request payloads for `{request body}`.
 
 ```ruby
 {
+  "invoices": {
+    "calc_type":"account",
+    "currency":"jpy",
+    "discount_calc_logic":"usageamount",
+    "discount_rate":0,
+    "discount_target_usage":"cloudpaywithfee",
+    "substitution_fee":"percent",
+    "substitution_fee_calc_target":"nondiscount",
+    "substitution_fee_calc_type":"allsum",
+    "substitution_fee_target_usage":"cloudpaywithfee",
+    "substitution_fix":0,
+    "substitution_rate":0,
+    "support_amount_target":"allusage",
+    "support_fee":"fix",
+    "support_fee_calc_target":"nondiscount",
+    "support_fix":0,
+    "support_rate":0,
+    "tax_rate":0.10
+  },
+  "vendor":"{vendor}"
 }
 ```
 
+Field                           | Type      | Required | Validation | Description
+------------------------------- | --------- | -------- | ---------- | -----------
+`calc_type`                     | *string*  | Yes      | support: `account`,`tag`                        | 計算タイプ
+`currency`                      | *string*  | Yes      | support: `jpy`,`usd`                            | 通貨
+`discount_calc_logic`           | *string*  | Yes      | support: `usageamount`,`allamount`              | 値引き対象
+`discount_rate`                 | *double*  | Yes      | support: 0 ~ 1                                  | 値引率
+`discount_target_usage`         | *string*  | Yes      | support: `cloudpayonly` ,`cloudpaywithfee`      | 値引き計算方法
+`substitution_fee`              | *string*  | Yes      | support: `percent`, `fix`, `automatic`, `table` | 代行手数料請求方法
+`substitution_fee_calc_target`  | *string*  | Yes      | support: `cloudpayonly`, `cloudpaywithfee`      | 代行手数料計算対象
+`substitution_fee_calc_type`    | *string*  | Yes      | support: `allsum`, `account`                    | 請求代行サービス計算方法
+`substitution_fee_target_usage` | *string*  | Yes      | support: ['nondiscount', 'discounted']          | 請求代行手数料対象
+`substitution_fix`              | *double*  | Yes      | support: 0 ~ 1,000,000                          | 代行手数料 固定
+`substitution_rate`             | *double*  | Yes      | support: 0 ~ 1                                  | 代行手数料 (%)
+`support_amount_target`         | *string*  | Yes      | support: `allusage`, `cloudpayonlywithfee`      | 表示なし
+`support_fee`                   | *string*  | Yes      | support: - aws `percent`, `aws_developer`, `aws_business`, `aws_enterprise`, `fix` <br> - azure `percent`, `fix`  | サポート料請求方法
+`support_fee_calc_target`       | *string*  | Yes      | support: `cloudpayonly`, `cloudpaywithfee`      | サポート料計算対象
+`support_fix`                   | *double*  | Yes      | support: 0 ~ 1,000,000                          | サポート料 固定
+`support_rate`                  | *double*  | Yes      | support: 0 ~ 1                                  | サポート料 %
+`tax_rate`                      | *double*  | Yes      | support: 0 ~ 0.08                               | 消費税率 %
 
 **Response**
 
@@ -414,6 +461,15 @@ The following are some example request payloads for `{request body}`.
 
 ```ruby
 {
+	"additional_items":[
+	{
+		"enabled":true,
+		"label":"testlabel",
+		"unit_cost":1,
+		"quantity":10000,
+		"total":10000
+	}
+]
 }
 ```
 
@@ -450,6 +506,7 @@ The following are some example request payloads for `{request body}`.
 
 ```ruby
 {
+	"invoice_template_id": "abcdefg"
 }
 ```
 
