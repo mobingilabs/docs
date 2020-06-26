@@ -473,6 +473,8 @@ The following are some example request payloads for `{request body}`.
 }
 ```
 
+**additional_items object description**
+
 Field           | Type      | Required | Validation | Description
 --------------- | --------- | -------- | ---------- | -----------
 enabled         | *boolean* | Yes      | -          | 有効、無効
