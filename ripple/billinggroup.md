@@ -91,14 +91,14 @@ discount_rate       | *double*  | Yes      | 0.00 ~ 1.00                        
 discount_target_usage         | *string* | Yes | - cloudpaywithfee <br> - cloudpayonly                   | -
 substitution_fee              | *string* | Yes | - percent <br> - fix <br> - automatic <br> - usagetable | -
 substitution_fee_calc_target  | *string* | Yes | - nondiscount <br> - discounted                         | -
-substitution_fee_calc_type    | *string* | Yes | - allsum                                                | -
+substitution_fee_calc_type    | *string* | Yes | - allsum <br> - account                                 | -
 substitution_fee_target_usage | *string* | Yes | - cloudpaywithfee <br> - cloudpayonly                   | -
-substitution_fix              | *double* | Yes | 00 ~ 100000000                                          | -
+substitution_fix              | *double* | Yes | 00 ~ 1000000                                            | -
 substitution_rate             | *double* | Yes | 0.00 ~ 1.00                                             | -
 support_amount_target         | *string* | Yes | - allusage                                              | -
 support_fee                   | *string* | Yes | - fix <br> - percent <br> - aws_developer <br> - aws_business <br> - aws_enterprise | -
 support_fee_calc_target       | *string* | Yes | - nondiscount <br> - discounted                         | -
-support_fix                   | *double* | Yes | 0.00 ~ 100000000                                        | -
+support_fix                   | *double* | Yes | 0.00 ~ 1000000                                          | -
 support_rate                  | *double* | Yes | 0.00 ~ 1.00                                             | -
 tax_rate                      | *double* | Yes | 0.00 ~ 0.10                                             | Tax
 
@@ -109,7 +109,6 @@ tax_rate                      | *double* | Yes | 0.00 ~ 0.10                    
 HTTP 200
 
 {"status":"success"}
-
 ```
 
 ## List
@@ -206,13 +205,182 @@ HTTP 200
 
 ## List details
 
+**Role actions**
+
+- `ReadBillingGroup` 
+- `ModifyBillingGroup` 
+
+**Request**
+
+```http
+GET /billinggroup/{id}/resource HTTP1.1
+Authorization: Bearer {token}
+
+```
+request parameter for `{id}` is company_id.
+
+
+**Response**
+
+```ruby
+HTTP 200
+
+{"status":"success"}
+```
+
+
 ## Update
+
+**Role actions**
+
+- `ModifyBillingGroup` 
+
+**Request**
+
+```http
+POST /billinggroup HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+The following are some example request payloads for `{request body}`.
+
+**{request body}**
+
+```ruby
+{
+}
+```
+
+```ruby
+HTTP 200
+
+{"status":"success"}
+```
+
 
 ## Update invoice setting
 
+**Role actions**
+
+- `ModifyBillingGroup` 
+
+**Request**
+
+```http
+POST /billinggroup HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+The following are some example request payloads for `{request body}`.
+
+**{request body}**
+
+```ruby
+{
+}
+```
+
+```ruby
+HTTP 200
+
+{"status":"success"}
+```
+
 ## Update free format
 
-## Update 
+**Role actions**
+
+- `ModifyBillingGroup` 
+
+**Request**
+
+```http
+POST /billinggroup HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+The following are some example request payloads for `{request body}`.
+
+**{request body}**
+
+```ruby
+{
+}
+```
+
+```ruby
+HTTP 200
+
+{"status":"success"}
+```
+
+## Update Invoice Template
+
+**Role actions**
+
+- `ModifyBillingGroup` 
+
+**Request**
+
+```http
+POST /billinggroup HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+The following are some example request payloads for `{request body}`.
+
+**{request body}**
+
+```ruby
+{
+}
+```
+
+```ruby
+HTTP 200
+
+{"status":"success"}
+```
 
 ## Delete
 
+**Role actions**
+
+- `ModifyBillingGroup` 
+
+**Request**
+
+```http
+POST /billinggroup HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+The following are some example request payloads for `{request body}`.
+
+**{request body}**
+
+```ruby
+{
+}
+```
+
+```ruby
+HTTP 200
+
+{"status":"success"}
+```
