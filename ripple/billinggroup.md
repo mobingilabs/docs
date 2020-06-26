@@ -317,11 +317,38 @@ The following are some example request payloads for `{request body}`.
 
 ```ruby
 {
+	"billinggroup_id":"Billing1",
+	"billinggroup_name":"Billing1",
+	"company_name":"Billing1 Company",
+	"phone":"03-123-4567",
+	"postal":"1243",
+	"address":"updateed address",
+	"billing_title":null,
+	"personal":"Personal name",
+	"remarks":"Some remarks data",
+	"inv_aggregate":false,
+	"project_id":"{created_project_id}",
+	"language": "ja"
 }
 ```
 
-**Response**
+Field                     | Type      | Required | Validation | Description
+------------------------- | --------- | -------- | ---------- | -----------
+`billinggroup_id`         | *string*  | Yes      | -                | Billing group ID
+`billinggroup_name`       | *string*  | Yes      | length 1 ~ 100   | Billing group Name
+`company_name`            | *string*  | Yes      | length 1 ~ 100   | Company name
+`phone`                   | *string*  | No       | length 12 ~ 16   | Tel
+`postal`                  | *string*  | No       | length 4 ~ 10    | Postal
+`address`                 | *string*  | No       | length 1 ~ 100   | Address
+`billing_title`           | *string*  | No       | length 1 ~ 100   | Invoice title
+`personal`                | *string*  | No       | length 1 ~ 100   | Personal name
+`remarks`                 | *string*  | No       | length 1 ~ 100   | Memo
+`inv_aggregate`           | *boolean* | No       |                  | Displaying invoice in bulk or by vendor
+`project_id`              | *string*  | No       |                  | Project id
+`language`                | *string*  | No       | support: `ja`, `en` | Display invoice language setting
 
+
+**Response**
 
 ```ruby
 HTTP 200
