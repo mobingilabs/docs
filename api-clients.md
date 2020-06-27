@@ -57,7 +57,7 @@ List all API clients under a specific user.
 **Request**
 
 ```http
-POST /clients/:user HTTP1.1
+GET /clients/:user HTTP1.1
 authorization: Bearer {token}
 ```
 
