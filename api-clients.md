@@ -39,16 +39,15 @@ Details for the POST `{body}`.
 ```ruby
 HTTP/1.1 200 OK
 
-[
-  {
-    "username":"mysubuser",
-    "msp_user":"MSP-123456",
-    "mobingi_user": "abcdef",
-    "email":"mysubuser@domain.com",
-    "nickname":"",
-    ...
-  }
-]
+{
+  "client_id":"ripple|abcdef123456",
+  "client_secret":"critical",
+  "grant_type":"client_credentials",
+  "create_time":"2020-06-27T11:26:46.257375295Z",
+  "user_id":"id0001",
+  "username":"someusername",
+  "name":"test-apiclient-name"
+}
 ```
 
 ## List API clients
