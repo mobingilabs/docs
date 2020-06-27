@@ -90,11 +90,6 @@ Delete an existing API client under a specific user.
 ```http
 DELETE /client/:user/:clientid HTTP1.1
 authorization: Bearer {token}
-content-type: application/json
-
-{
-  "name": "test-apiclient-name",
-}
 ```
 
 `:user` is either root user or subuser. `:clientid` is the client id to delete.
