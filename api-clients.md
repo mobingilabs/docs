@@ -1,9 +1,5 @@
 # API clients
 
-{% hint style="warning" %}
-This page is still a work in progress.
-{% endhint %}
-
 The following endpoint is the base url for the APIs below.
 
 ```text
@@ -40,13 +36,13 @@ Details for the POST `{body}`.
 HTTP/1.1 200 OK
 
 {
-  "client_id":"ripple|abcdef123456",
-  "client_secret":"critical",
-  "grant_type":"client_credentials",
-  "create_time":"2020-06-27T11:26:46.257375295Z",
-  "user_id":"id0001",
-  "username":"someusername",
-  "name":"test-apiclient-name"
+  "client_id": "ripple|abcdef123456",
+  "client_secret": "critical",
+  "grant_type": "client_credentials",
+  "create_time": "2020-06-27T11:26:46.257375295Z",
+  "user_id": "id0001",
+  "username": "someusername",
+  "name": "test-apiclient-name"
 }
 ```
 
@@ -70,12 +66,12 @@ HTTP/1.1 200 OK
 
 [
   {
-    "client_id":"ripple|abcdef123456",
-    "client_secret":"",
-    "grant_type":"client_credentials",
-    "create_time":"2020-06-15T05:07:50.258779172Z",
-    "user_id":"id001",
-    "name":"test-apiclient-name"
+    "client_id": "ripple|abcdef123456",
+    "client_secret": "",
+    "grant_type": "client_credentials",
+    "create_time": "2020-06-15T05:07:50.258779172Z",
+    "user_id": "id001",
+    "name": "test-apiclient-name"
   },
   ...
 ]
@@ -100,6 +96,6 @@ authorization: Bearer {token}
 HTTP/1.1 200 OK
 
 {
-  "status":"success"
+  "status": "success"
 }
 ```
