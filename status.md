@@ -13,3 +13,4 @@ https://service.mobingi.com/m/status/
 ## Invoice calculation status
 
 Get the current status of the invoice calculations.
+

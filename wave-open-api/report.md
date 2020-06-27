@@ -58,8 +58,8 @@ GET /v1/reports/company/monthly?from=2019-01-01&to=2019-02-01&by=service&vendor=
 
 | Params | description |
 | :--- | :--- |
-| `from` | 型 : _string_   フォーマット : _YYYY-MM\_DD_   説明 :   Monthly は自動的に `YYYY-MM`へ変換されます。   Daily は自動的に `YYYY-MM-DD`へ変換されます。  |
-| `to` | 型 : _string_   フォーマット : _YYYY-MM\_DD_   説明 :   Monthly は自動的に `YYYY-MM`へ変換されます。   Daily は自動的に `YYYY-MM-DD`へ変換されます。  |
+| `from` | 型 : _string_   フォーマット : _YYYY-MM\_DD_   説明 :   Monthly は自動的に `YYYY-MM`へ変換されます。   Daily は自動的に `YYYY-MM-DD`へ変換されます。 |
+| `to` | 型 : _string_   フォーマット : _YYYY-MM\_DD_   説明 :   Monthly は自動的に `YYYY-MM`へ変換されます。   Daily は自動的に `YYYY-MM-DD`へ変換されます。 |
 | `by` | **使用可能な値**   型 : _string_   - `service`   - `account` |
 | `vendor` | **使用可能な値**   型 : _string_   - `aws` |
 
