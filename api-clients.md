@@ -26,14 +26,13 @@ content-type: application/json
 }
 ```
 
+`:user` is either root user or subuser.
+
 Details for the POST `{body}`.
 
 | Key | Value |
 | :--- | :--- |
-| `username` | Required. Min: 4, max: 18, allowed characters: letters, numbers, \_ \(underscore\), . \(period\) and - \(hyphen\). |
-| `password` | Required. Min: 8, max: 18. |
-| `notification.email` | Required. Enable or disable notifications. Valid values: `"true"`, `"false"`. |
-| `email` | Optional email address. |
+| `name` | Required. The name of the API client. |
 
 **Response**
 
