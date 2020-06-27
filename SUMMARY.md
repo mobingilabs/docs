@@ -4,6 +4,7 @@
 * [Endpoint limits](endpoint-limits.md)
 * [Authentication](authentication.md)
 * [Users](users.md)
+* [API clients](api-clients.md)
 * [Authorization \(RBAC\)](authorization.md)
 * [Ripple](ripple.md)
 * [Wave](wave-open-api/README.md)
