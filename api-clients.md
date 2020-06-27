@@ -53,3 +53,30 @@ HTTP/1.1 200 OK
 ## List API clients
 
 List all API clients under a specific user.
+
+**Request**
+
+```http
+POST /clients/:user HTTP1.1
+authorization: Bearer {token}
+```
+
+`:user` is either root user or subuser.
+
+**Response**
+
+```ruby
+HTTP/1.1 200 OK
+
+[
+  {
+    "client_id":"ripple|abcdef123456",
+    "client_secret":"",
+    "grant_type":"client_credentials",
+    "create_time":"2020-06-15T05:07:50.258779172Z",
+    "user_id":"id001",
+    "name":"test-apiclient-name"
+  },
+  ...
+]
+```
