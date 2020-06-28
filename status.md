@@ -34,8 +34,8 @@ Details for `params`.
 ```ruby
 HTTP/1.1 200 OK
 
-[                                                                                                                                   
-  {                                        
+[
+  {
     "billing_month": "2020-04",
     "end_time": "",
     "finished": 3090,
