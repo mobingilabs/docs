@@ -25,7 +25,7 @@ Details for `params`.
 
 | Key | Value |
 | :--- | :--- |
-| `msp` | Required. The MSP id to query. |
+| `msp` | Optional. The MSP id to query. |
 | `vendor` | Optional. Supported vendor is only `aws`  at the moment. |
 | `from` | Optional. If not provided, default value is 2 months before current month. Format: `yyyymm`. |
 | `to` | Optional. If not provided, default value is current month. Format: `yyyymm`. |
