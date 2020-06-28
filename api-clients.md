@@ -18,8 +18,8 @@ Create a new API client under a specific user.
 
 ```http
 POST /client/:user HTTP1.1
-authorization: Bearer {token}
-content-type: application/json
+Authorization: Bearer {token}
+Content-Type: application/json
 
 {
   "name": "test-apiclient-name",
@@ -58,7 +58,7 @@ List all API clients under a specific user.
 
 ```http
 GET /clients/:user HTTP1.1
-authorization: Bearer {token}
+Authorization: Bearer {token}
 ```
 
 `:user` is either root user or subuser.
@@ -89,7 +89,7 @@ Delete an existing API client under a specific user.
 
 ```http
 DELETE /client/:user/:clientid HTTP1.1
-authorization: Bearer {token}
+Authorization: Bearer {token}
 ```
 
 `:user` is either root user or subuser. `:clientid` is the client id to delete.
