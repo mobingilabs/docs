@@ -10,7 +10,13 @@ The following endpoint is the base url for the APIs below.
 https://service.mobingi.com/m/status/
 ```
 
-## Invoice calculation status
+## List invoice calculation status
 
 Get the current status of the invoice calculations.
 
+**Request**
+
+```http
+GET calculations/status?msp={msp}&vendor={vendor}&from={yyyymm}&to={yyyymm} HTTP1.1
+Authorization: Bearer {token}
+```
