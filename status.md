@@ -29,6 +29,32 @@ Details for `params`.
 | `from` | Optional. If not provided, default value is 2 months before current month. Format: `yyyymm`. |
 | `to` | Optional. If not provided, default value is current month. Format: `yyyymm`. |
 
+**Response**
+
+```ruby
+HTTP/1.1 200 OK
+
+[                                                                                                                                   
+  {                                        
+    "billing_month": "2020-04",
+    "end_time": "",
+    "finished": 3090,
+    "id": "MSP-123456",
+    "invoice_type": "account",
+    "msp": "MSP-123456",
+    "name": "Alphaus, Inc.",
+    "run_id": "MSP-123456/76f20b9a-b7fa-4599-bc38-0691dbbd4ea3",
+    "start_time": "2020-05-22T04:01:38Z",
+    "status": "checking",
+    "status_message": "checking",
+    "total": 3090,
+    "type": "msp",
+    "vendor": "aws"
+  },
+  ...
+]
+```
+
 Examples:
 
 ```bash
