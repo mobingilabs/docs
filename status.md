@@ -17,6 +17,14 @@ Get the current status of the invoice calculations.
 **Request**
 
 ```http
-GET calculations/status?msp={msp}&vendor={vendor}&from={yyyymm}&to={yyyymm} HTTP1.1
+GET calculations/status[?params] HTTP1.1
 Authorization: Bearer {token}
 ```
+
+Details for `params`.
+
+| Key | Value |
+| :--- | :--- |
+| `vendor` | Optional. Supported vendor is only aws  at the moment. |
+| `from` | Optional. If not provided, default value is 2 months before current month. |
+| `to` | Optional. If not provided, default value is current month. |
