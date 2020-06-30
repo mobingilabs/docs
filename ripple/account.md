@@ -140,9 +140,10 @@ Content-Type: application/json
 AWS AccountID or Azure SubscriptionID
 
 
+以下に`{request body}`のリクエストペイロードの例を示します。
+
 **{request body}**
 
-以下に`{request body}`のリクエストペイロードの例を示します。
 
 ```ruby
 {
@@ -203,9 +204,10 @@ Authorization: Bearer {token}
 - aws
 - azure
 
-**{id}**
 
 以下に`{id}`フォーマットのパラメータの例を示します。
+
+**{id}**
 
 `{customer_id}|{account_id}`。 エンドポイント例: `/accts/aws/012345678912|919999618919`
 
