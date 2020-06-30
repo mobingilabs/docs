@@ -4,11 +4,11 @@
 This is still a draft version.
 {% endhint %}
 
-The following is the API reference for working with account.
+アカウントのAPIリファレンスは以下の通りです。
 
 ## Create
 
-create account information
+アカウントの作成
 
 **Role actions**
 
@@ -24,7 +24,7 @@ Content-Type: application/json
 {request body}
 ```
 
-The following are some example request payloads for `{request body}`.
+以下に`{request body}`のリクエストペイロードの例を示します。
 
 **{request body}**
 
@@ -43,12 +43,12 @@ The following are some example request payloads for `{request body}`.
 
 Field         | Type      | Required | Validation | Description
 ------------- | --------- | -------- | ---------- | -----------
-customer_id   | *string*  | Yes      | - AWS 12digits <br> - Azure 16~36digits | - AWS AccountID <br> - Azure SubscriptionID
-account_id    | *string*  | Yes      | - AWS 12digits <br> - AZURE 7digits | - AWS PayerAccountID <br> - Azure BillingID
-company_id    | *string*  | Yes      | -          | Billing group internal unique ID
-vendor        | *string*  | Yes      | - supported: `aws`,`azure`  | 
-name          | *string*  | Yes      | - length 3 ~ 100    | register customer name
-note          | *string*  | No       | -          | note 
+customer_id   | *string*  | Yes      | - AWS 12桁 <br> - Azure 16~36桁 | - AWS AccountID <br> - Azure SubscriptionID
+account_id    | *string*  | Yes      | - AWS 12桁 <br> - AZURE 7桁 | - AWS PayerAccountID <br> - Azure BillingID
+company_id    | *string*  | Yes      | -          | 請求グループ内部ID
+vendor        | *string*  | Yes      | - サポート: `aws`,`azure`  | 
+name          | *string*  | Yes      | - 長さ: 3 ~ 100    | 登録する顧客名
+note          | *string*  | No       | -          | 備考欄
 
 **Response**
 
@@ -57,7 +57,7 @@ HTTP 200
 
 {"status":"success"}
 
-HTTP 400 customer id is already registered.
+HTTP 400 customer id が既に登録されている場合
 
 {
   "code":"5005",
@@ -68,7 +68,7 @@ HTTP 400 customer id is already registered.
 
 ## List
 
-get list of account information.
+アカウントリストの取得
 
 **Role actions**
 
@@ -83,7 +83,7 @@ Authorization: Bearer {token}
 
 ```
 
-The following are some example parameter for `{vendor}`.
+以下に`{vendor}`のパラメータの例を示します。
 
 **{vendor}**
 
@@ -117,7 +117,7 @@ HTTP 200
 
 ## Update
 
-update account information.
+アカウントの更新
 
 **Role actions**
 
@@ -130,18 +130,19 @@ PUT /accts/{customer_id}/edit HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
-**{request body}**
+{request body}
 ```
 
-The following are some example parameter for `{customer_id}`.
+以下に`{customer_id}`のパラメータの例を示します。
 
 **{customer_id}**
 
 AWS AccountID or Azure SubscriptionID
 
-The following are some example request payloads for `{request body}`.
 
 **{request body}**
+
+以下に`{request body}`のリクエストペイロードの例を示します。
 
 ```ruby
 {
@@ -157,11 +158,11 @@ The following are some example request payloads for `{request body}`.
 
 Field         | Type      | Required | Validation | Description
 ------------- | --------- | -------- | ---------- | -----------
-account_id    | *string*  | Yes      | - AWS 12digits <br> - AZURE 7digits | - AWS PayerAccountID <br> - Azure BillingID
-company_id    | *string*  | Yes      | -          | Billing group internal unique ID
-vendor        | *string*  | Yes      | - supported: `aws`,`azure`  | 
-name          | *string*  | Yes      | - length 3 ~ 100    | register customer name
-note          | *string*  | No       | -          | note 
+account_id    | *string*  | Yes      | - AWS 12桁 <br> - AZURE 7桁 | - AWS PayerAccountID <br> - Azure BillingID
+company_id    | *string*  | Yes      | -          | 請求グループ内部ID
+vendor        | *string*  | Yes      | - サポート: `aws`,`azure`  | 
+name          | *string*  | Yes      | - 長さ: 3 ~ 100    | 登録する顧客名
+note          | *string*  | No       | -          | 備考欄
 
 **Response**
 
@@ -170,7 +171,7 @@ HTTP 200
 
 {"status":"success"}
 
-HTTP 400 customer id is not registered.
+HTTP 400 customer id が登録されていない場合
 
 {
   "code":"5005",
@@ -181,7 +182,7 @@ HTTP 400 customer id is not registered.
 
 ## Delete
 
-delete account information.
+アカウントの削除
 
 **Role actions**
 
@@ -195,18 +196,18 @@ Authorization: Bearer {token}
 
 ```
 
-The following are some example parameter for `{vendor}`.
+以下に`{vendor}`のパラメータの例を示します。
 
 **{vendor}**
 
 - aws
 - azure
 
-The following are some example parameter for `{id}`.
-
 **{id}**
 
-{id} format is `{customer_id}|{account_id}`. Request looks like `/accts/aws/012345678912|919999618919`
+以下に`{id}`フォーマットのパラメータの例を示します。
+
+`{customer_id}|{account_id}`。 エンドポイント例: `/accts/aws/012345678912|919999618919`
 
 **Response**
 
