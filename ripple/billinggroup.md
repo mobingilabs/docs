@@ -4,11 +4,11 @@
 This is still a draft version.
 {% endhint %}
 
-The following is the API reference for working with billing group.
+請求グループのAPIリファレンスは以下の通りです。
 
 ## Create
 
-create billing group information
+請求グループの作成
 
 **Role actions**
 
@@ -24,7 +24,7 @@ Content-Type: application/json
 {request body}
 ```
 
-The following are some example request payloads for `{request body}`.
+以下に`{request body}`のリクエストペイロードの例を示します。
 
 **{request body}**
 
@@ -121,7 +121,7 @@ HTTP 200
 
 ## List
 
-get list of billing group informaiton
+請求グループリストの取得
 
 **Role actions**
 
@@ -213,6 +213,8 @@ HTTP 200
 
 ## List details
 
+請求グループ詳細の取得
+
 **Role actions**
 
 - `ReadBillingGroup` 
@@ -225,7 +227,8 @@ GET /billinggroup/{id}/resource HTTP1.1
 Authorization: Bearer {token}
 
 ```
-request parameter for `{id}` is company_id.
+
+リクエストパラーメータの`{id}`は請求グループ内部ID`{company_id}`です
 
 
 **Response**
@@ -303,7 +306,7 @@ HTTP 200
 
 ## Update
 
-update billing group information.
+請求グループ情報の更新
 
 **Role actions**
 
@@ -319,7 +322,7 @@ Content-Type: application/json
 {request body}
 ```
 
-The following are some example request payloads for `{request body}`.
+以下に`{request body}`のリクエストペイロードの例を示します。
 
 **{request body}**
 
@@ -367,6 +370,8 @@ HTTP 200
 
 ## Update invoice setting
 
+請求グループ請求書設定の更新
+
 **Role actions**
 
 - `ModifyBillingGroup` 
@@ -381,7 +386,7 @@ Content-Type: application/json
 {request body}
 ```
 
-The following are some example request payloads for `{request body}`.
+以下に`{request body}`のリクエストペイロードの例を示します。
 
 **{request body}**
 
@@ -441,6 +446,8 @@ HTTP 200
 
 ## Update free format
 
+請求グループその他費用の更新
+
 **Role actions**
 
 - `ModifyBillingGroup` 
@@ -455,7 +462,7 @@ Content-Type: application/json
 {request body}
 ```
 
-The following are some example request payloads for `{request body}`.
+以下に`{request body}`のリクエストペイロードの例を示します。
 
 **{request body}**
 
@@ -495,6 +502,8 @@ HTTP 200
 
 ## Update Invoice Template
 
+請求グループ請求テンプレートの更新
+
 **Role actions**
 
 - `ModifyBillingGroup` 
@@ -509,7 +518,7 @@ Content-Type: application/json
 {request body}
 ```
 
-The following are some example request payloads for `{request body}`.
+以下に`{request body}`のリクエストペイロードの例を示します。
 
 **{request body}**
 
@@ -530,6 +539,8 @@ HTTP 200
 ```
 
 ## Delete
+
+請求グループの削除
 
 **Role actions**
 
