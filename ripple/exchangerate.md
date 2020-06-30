@@ -4,11 +4,11 @@
 This is still a draft version.
 {% endhint %}
 
-The following is the API reference for working with Ripple exchange rate.
+為替レートのAPIリファレンスは以下の通りです。
 
 ## Set exchange rate per month
 
-Set exchange rate per month.
+月ごとの為替レートの更新
 
 
 **Role actions**
@@ -24,8 +24,8 @@ Content-Type: application/json
 
 {request body}
 ```
-The following are some example request payloads for `{request body}`.
 
+以下に`{request body}`のリクエストペイロードの例を示します。
 
 **{request body}**
 
@@ -43,8 +43,8 @@ The following are some example request payloads for `{request body}`.
 
 Field           | Type      | Required | Validation | Description
 --------------- | --------- | -------- | ---------- | -----------
- rate           | *double*  | Yes      | -          | Exchange rate
- month          | *string*  | Yes      | -          | Target month
+ rate           | *double*  | Yes      | -          | 為替レート
+ month          | *string*  | Yes      | -          | 対象月
 
 
 **Response**
@@ -60,5 +60,5 @@ HTTP 200
 
 ## List exchange rate
 
-Get a list of exchange rate per month. you can check [`get:/user`](WIP) document.
+月ごとの為替レートの取得。ドキュメント[`get:/user`](WIP) レスポンス`{exchange_rate}`から確認できます。
 
