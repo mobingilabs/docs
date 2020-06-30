@@ -4,11 +4,11 @@
 This is still a draft version.
 {% endhint %}
 
-The following is the API reference for working with Ripple user.
+ユーザーのAPIリファレンスは以下の通りです。
 
 ## Get user
 
-get user information for ripple.
+ユーザー情報の取得
 
 **Role actions**
 
@@ -28,24 +28,29 @@ Authorization: Bearer {token}
 HTTP 200
 
 {
+  "msp_start": "2020-01",
+  "language": "ja",
+  "invoices_info": {},
+  "invoice_meta": {},
+  "meta": {},
+  "services": [],
   "username": null,
-  "msp_id": "abcdefg",
+  "support_fee": [],
+  "msp_id": "MSP-5aa311904d5d6",
+  "invoice_layout": {},
+  "service_discount": {},
+  "months": [],
+  "export_digit": "up",
   "exchange_rate": [
     {
-      "month": "2020-01",
-      "rate": 107.01
-    },
-    {
-      "month": "2020-02",
-      "rate": 104
-    },
-    {
-      "month": "2020-03",
-      "rate": 109.45
+      "month": "2020-04",
+      "rate": 105.00
     }
   ],
-  "company_name": "Docs, Inc.",
-  "email": "docs@alphaus.cloud",
-  "language": "ja"
+  "pay_accounts": [],
+  "service_fee": null,
+  "company_name": "Company Name",
+  "reseller_lng": null,
+  "email": "info@alphaus.cloud"
 }
 ```
