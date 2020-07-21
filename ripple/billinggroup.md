@@ -511,12 +511,14 @@ HTTP 200
 **Request**
 
 ```http
-PUT /billinggroup HTTP1.1
+POST /billinggroup/{id}/invoicetemplate HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
 {request body}
 ```
+
+リクエストパラーメータの`{id}`は請求グループ内部ID`{company_id}`です
 
 以下に`{request body}`のリクエストペイロードの例を示します。
 
