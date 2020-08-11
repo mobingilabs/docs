@@ -63,9 +63,8 @@ The following table lists the permissions supported under RBAC for Ripple. Rippl
 
 The following table lists the permissions supported under user management. User permissions belong to the `user` namespace.
 
-| Permission         | Description                                                  |
-| :----------------- | :----------------------------------------------------------- |
-| `Admin`            | No restrictions. Root user, by default, has this permission. |
-| `ReadOnly`         | View user information, including API clients.                |
-| `ModifyUsers`      | Allowed to modify user attributes.                           |
-| `ModifyApiClients` | Allowed to modify API clients.                               |
+| Permission         | Description                                                  | Resources Supported |
+| ------------------ | ------------------------------------------------------------ | ------------------- |
+| `Admin`            | No restrictions. Root user, by default, has this permission. |                     |
+| `\|-- ModifyUsers` | Allowed to modify user attributes.                           |                     |
+| `\|---- ReadOnly`  | View user information, including API clients.                |                     |
