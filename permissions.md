@@ -11,76 +11,76 @@ The following tables list all supported permissions under Mobingi RBAC across al
 
 The following table lists the permissions supported under RBAC management. RBAC permissions belong to the `rbac` namespace.
 
-| Permission             | Description                                                  | Resources Supported |
-| ---------------------- | ------------------------------------------------------------ | ------------------- |
-| `Admin`                | No restrictions. Root user, by default, has this permission. |                     |
-| `\|__ ModifyRoles`     | Allowed to modify RBAC roles.                                |                     |
-| `\|__ ModifyUserRoles` | Allowed to modify user-role mappings.                        |                     |
-| `\|____ ReadOnly`      | View RBAC permissions, roles, and mappings.                  |                     |
+| Permission                          | Description                                                  | Resources Supported |
+| ----------------------------------- | ------------------------------------------------------------ | ------------------- |
+| <nobr>`Admin`</nobr>                | No restrictions. Root user, by default, has this permission. |                     |
+| <nobr>`\|__ ModifyRoles`</nobr>     | Allowed to modify RBAC roles.                                |                     |
+| <nobr>`\|__ ModifyUserRoles`</nobr> | Allowed to modify user-role mappings.                        |                     |
+| <nobr>`\|____ ReadOnly`</nobr>      | View RBAC permissions, roles, and mappings.                  |                     |
 
 ## Wave permissions
 
-The following table lists the permissions supported under RBAC for Wave. Wave permissions belong to the `wave` namespace.
+The following table lists the permissions supported under RBAC for Wave. Wave permissions belong to the `wave`</nobr> namespace.
 
-| Permission                   | Description                                                  | Resources Supported |
-| ---------------------------- | ------------------------------------------------------------ | ------------------- |
-| `Admin`                      | No restrictions. Root user, by default, has this permission. |                     |
-| `\|-- ReadAccount`           | View account list only.                                      | Accounts            |
-| `\|-- ModifyAccountSettings` | Allowed to modify account level settings.                    | Accounts            |
-| `\|---- ReadAccountSettings` | View account level settings only.                            | Accounts            |
-| `\|-- DownloadBulk`          | Allowed to download bulk CSV.                                |                     |
-| `\|-- ModifyGroups`          | Allowed to modify groups.                                    | Account groups      |
-| `\|---- ReadGroups`          | View groups only.                                            | Account groups      |
-| `\|-- ReadInvoice`           | View invoices only                                           |                     |
-| `\|-- ReadRi`                | View RIs only                                                |                     |
-| `\|-- ReadSavingsPlan`       | View savings plan only                                       |                     |
-| `\|-- ModifySettings`        | Allowed to modify global Wave settings.                      |                     |
-| `\|---- ReadSettings`        | View global Wave settings only.                              |                     |
-| `\|-- ModifyTags`            | Allowed to modify tags.                                      |                     |
-| `\|---- ReadTags`            | View tags only.                                              |                     |
+| Permission                                | Description                                                  | Resources Supported |
+| ----------------------------------------- | ------------------------------------------------------------ | ------------------- |
+| <nobr>`Admin`</nobr>                      | No restrictions. Root user, by default, has this permission. |                     |
+| <nobr>`\|-- ReadAccount`</nobr>           | View account list only.                                      | Accounts            |
+| <nobr>`\|-- ModifyAccountSettings`</nobr> | Allowed to modify account level settings.                    | Accounts            |
+| <nobr>`\|---- ReadAccountSettings`</nobr> | View account level settings only.                            | Accounts            |
+| <nobr>`\|-- DownloadBulk`</nobr>          | Allowed to download bulk CSV.                                |                     |
+| <nobr>`\|-- ModifyGroups`</nobr>          | Allowed to modify groups.                                    | Account groups      |
+| <nobr>`\|---- ReadGroups`</nobr>          | View groups only.                                            | Account groups      |
+| <nobr>`\|-- ReadInvoice`</nobr>           | View invoices only                                           |                     |
+| <nobr>`\|-- ReadRi`</nobr>                | View RIs only                                                |                     |
+| <nobr>`\|-- ReadSavingsPlan`</nobr>       | View savings plan only                                       |                     |
+| <nobr>`\|-- ModifySettings`</nobr>        | Allowed to modify global Wave settings.                      |                     |
+| <nobr>`\|---- ReadSettings`</nobr>        | View global Wave settings only.                              |                     |
+| <nobr>`\|-- ModifyTags`</nobr>            | Allowed to modify tags.                                      |                     |
+| <nobr>`\|---- ReadTags`</nobr>            | View tags only.                                              |                     |
 
 ## Ripple permissions
 
 The following table lists the permissions supported under RBAC for Ripple. Ripple permissions belong to the `ripple` namespace.
 
-| Permission                        | Description                                                  | Resources Supported |
-| --------------------------------- | ------------------------------------------------------------ | ------------------- |
-| `Admin`                           | No restrictions. Root user, by default, has this permission. |                     |
-| `\|-- ModifyBillingGroup`         | Allowed to modify billing group settings.                    | Billing groups      |
-| `\|---- ReadBillingGroup`         | View billing group only.                                     | Billing groups      |
-| `\|------ ModifyAccount`          | Allowed to modify account section settings.                  | Billing groups      |
-| `\|-------- ReadAccount`          | View account section only.                                   | Billing groups      |
-| `\|------ ModifyInvoice`          | Allowed to modify invoice section settings.                  | Billing groups      |
-| `\|-------- ReadInvoice`          | View invoice section only.                                   | Billing groups      |
-| `\|------ ModifyInvoiceSettings`  | Allowed to modify invoice settings.                          | Billing groups      |
-| `\|--------- ReadInvoiceSettings` | View invoice settings only.                                  | Billing groups      |
-| `\|------ ModifyReseller`         | Allowed to modify reseller section settings.                 | Billing groups      |
-| `\|-------- ReadReseller`         | View reseller section only.                                  | Billing groups      |
-| `\|-- ModifyCustomField`          | Allowed to modify custom field settings.                     |                     |
-| `\|---- ReadCustomField`          | View custom field settings.                                  |                     |
-| `\|-- ModifyCustomService`        | Allowed to modify custom services settings.                  |                     |
-| `\|---- ReadCustomService`        | Read custom service settings only.                           |                     |
-| `\|-- ModifyInvoiceTemplate`      | Allowed to modify invoice templates.                         |                     |
-| `\|---- ReadInvoiceTemplate`      | View invoice templates only.                                 |                     |
-| `\|-- ModifyOriginalCost`         | Allowed to modify original cost settings.                    |                     |
-| `\|---- ReadOriginalCost`         | Read original cost only                                      |                     |
-| `\|-- ModifyProject`              | Allowed to modify projects.                                  |                     |
-| `\|---- ReadProject`              | Read projects only.                                          |                     |
-| `\|-- ReadReport`                 | Read reports only.                                           |                     |
-| `\|-- ModifyRi`                   | Allowed to modify RI section settings.                       |                     |
-| `\|---- ReadRi`                   | View RI section only.                                        |                     |
-| `\|-- ReadSavingsPlan`            | Read savings plan only.                                      |                     |
-| `\|-- ModifySettings`             | Allowed to modify global Ripple settings.                    |                     |
-| `\|---- ReadSettings`             | View global Ripple settings only.                            |                     |
-| `\|-- ModifyTags`                 | Allowed to modify tags.                                      |                     |
-| `\|---- ReadTags`                 | View tags only.                                              |                     |
+| Permission                                     | Description                                                  | Resources Supported |
+| ---------------------------------------------- | ------------------------------------------------------------ | ------------------- |
+| <nobr>`Admin`</nobr>                           | No restrictions. Root user, by default, has this permission. |                     |
+| <nobr>`\|-- ModifyBillingGroup`</nobr>         | Allowed to modify billing group settings.                    | Billing groups      |
+| <nobr>`\|---- ReadBillingGroup`</nobr>         | View billing group only.                                     | Billing groups      |
+| <nobr>`\|------ ModifyAccount`</nobr>          | Allowed to modify account section settings.                  | Billing groups      |
+| <nobr>`\|-------- ReadAccount`</nobr>          | View account section only.                                   | Billing groups      |
+| <nobr>`\|------ ModifyInvoice`</nobr>          | Allowed to modify invoice section settings.                  | Billing groups      |
+| <nobr>`\|-------- ReadInvoice`</nobr>          | View invoice section only.                                   | Billing groups      |
+| <nobr>`\|------ ModifyInvoiceSettings`</nobr>  | Allowed to modify invoice settings.                          | Billing groups      |
+| <nobr>`\|--------- ReadInvoiceSettings`</nobr> | View invoice settings only.                                  | Billing groups      |
+| <nobr>`\|------ ModifyReseller`</nobr>         | Allowed to modify reseller section settings.                 | Billing groups      |
+| <nobr>`\|-------- ReadReseller`</nobr>         | View reseller section only.                                  | Billing groups      |
+| <nobr>`\|-- ModifyCustomField`</nobr>          | Allowed to modify custom field settings.                     |                     |
+| <nobr>`\|---- ReadCustomField`</nobr>          | View custom field settings.                                  |                     |
+| <nobr>`\|-- ModifyCustomService`</nobr>        | Allowed to modify custom services settings.                  |                     |
+| <nobr>`\|---- ReadCustomService`</nobr>        | Read custom service settings only.                           |                     |
+| <nobr>`\|-- ModifyInvoiceTemplate`</nobr>      | Allowed to modify invoice templates.                         |                     |
+| <nobr>`\|---- ReadInvoiceTemplate`</nobr>      | View invoice templates only.                                 |                     |
+| <nobr>`\|-- ModifyOriginalCost`</nobr>         | Allowed to modify original cost settings.                    |                     |
+| <nobr>`\|---- ReadOriginalCost`</nobr>         | Read original cost only                                      |                     |
+| <nobr>`\|-- ModifyProject`</nobr>              | Allowed to modify projects.                                  |                     |
+| <nobr>`\|---- ReadProject`</nobr>              | Read projects only.                                          |                     |
+| <nobr>`\|-- ReadReport`</nobr>                 | Read reports only.                                           |                     |
+| <nobr>`\|-- ModifyRi`</nobr>                   | Allowed to modify RI section settings.                       |                     |
+| <nobr>`\|---- ReadRi`</nobr>                   | View RI section only.                                        |                     |
+| <nobr>`\|-- ReadSavingsPlan`</nobr>            | Read savings plan only.                                      |                     |
+| <nobr>`\|-- ModifySettings`</nobr>             | Allowed to modify global Ripple settings.                    |                     |
+| <nobr>`\|---- ReadSettings`</nobr>             | View global Ripple settings only.                            |                     |
+| <nobr>`\|-- ModifyTags`</nobr>                 | Allowed to modify tags.                                      |                     |
+| <nobr>`\|---- ReadTags`</nobr>                 | View tags only.                                              |                     |
 
 ## User permissions
 
 The following table lists the permissions supported under user management. User permissions belong to the `user` namespace.
 
-| Permission         | Description                                                  | Resources Supported |
-| ------------------ | ------------------------------------------------------------ | ------------------- |
-| `Admin`            | No restrictions. Root user, by default, has this permission. |                     |
-| `\|-- ModifyUsers` | Allowed to modify user attributes.                           |                     |
-| `\|---- ReadOnly`  | View user information, including API clients.                |                     |
+| Permission                      | Description                                                  | Resources Supported |
+| ------------------------------- | ------------------------------------------------------------ | ------------------- |
+| <nobr>`Admin`</nobr>            | No restrictions. Root user, by default, has this permission. |                     |
+| <nobr>`\|-- ModifyUsers`</nobr> | Allowed to modify user attributes.                           |                     |
+| <nobr>`\|---- ReadOnly`</nobr>  | View user information, including API clients.                |                     |
