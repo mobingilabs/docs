@@ -20,7 +20,7 @@ The following table lists the permissions supported under RBAC management. RBAC 
 
 ## Wave permissions
 
-The following table lists the permissions supported under RBAC for Wave. Wave permissions belong to the `wave</nobr> namespace.
+The following table lists the permissions supported under RBAC for Wave. Wave permissions belong to the `wave` namespace.
 
 | Permission                             | Description                                                  | Resources Supported |
 | -------------------------------------- | ------------------------------------------------------------ | ------------------- |
