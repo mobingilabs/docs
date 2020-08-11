@@ -11,12 +11,12 @@ The following tables list all supported permissions under Mobingi RBAC across al
 
 The following table lists the permissions supported under RBAC management. RBAC permissions belong to the `rbac` namespace.
 
-| Permission                          | Description                                                  | Resources Supported |
-| ----------------------------------- | ------------------------------------------------------------ | ------------------- |
-| <nobr>Admin</nobr>                  | No restrictions. Root user, by default, has this permission. |                     |
-| <nobr>\|\_\_ ModifyRoles</nobr>     | Allowed to modify RBAC roles.                                |                     |
-| <nobr>\|\_\_ ModifyUserRoles</nobr> | Allowed to modify user-role mappings.                        |                     |
-| <nobr>\|\_\_\_\_ ReadOnly</nobr>    | View RBAC permissions, roles, and mappings.                  |                     |
+| Permission                         | Description                                                  | Resources Supported |
+| ---------------------------------- | ------------------------------------------------------------ | ------------------- |
+| <nobr>Admin</nobr>                 | No restrictions. Root user, by default, has this permission. |                     |
+| <nobr>\|\_\_ModifyRoles</nobr>     | Allowed to modify RBAC roles.                                |                     |
+| <nobr>\|\_\_ModifyUserRoles</nobr> | Allowed to modify user-role mappings.                        |                     |
+| <nobr>\|\_\_\_\_ReadOnly</nobr>    | View RBAC permissions, roles, and mappings.                  |                     |
 
 ## Wave permissions
 
