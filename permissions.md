@@ -41,23 +41,37 @@ The following table lists the permissions supported under RBAC for Wave. Wave pe
 
 The following table lists the permissions supported under RBAC for Ripple. Ripple permissions belong to the `ripple` namespace.
 
-| Permission              | Description                                                  |
-| :---------------------- | :----------------------------------------------------------- |
-| `Admin`                 | No restrictions. Root user, by default, has this permission. |
-| `ReadSettings`          | View global Ripple settings only.                            |
-| `ModifySettings`        | Allowed to modify global Ripple settings.                    |
-| `ReadInvoiceSettings`   | View invoice settings only.                                  |
-| `ModifyInvoiceSettings` | Allowed to modify invoice settings.                          |
-| `ReadBillingGroup`      | View billing group only.                                     |
-| `ModifyBillingGroup`    | Allowed to modify billing group settings.                    |
-| `ReadAccount`           | View account section only.                                   |
-| `ModifyAccount`         | Allowed to modify account section settings.                  |
-| `ReadReseller`          | View reseller section only.                                  |
-| `ModifyReseller`        | Allowed to modify reseller section settings.                 |
-| `ReadInvoice`           | View invoice section only.                                   |
-| `ModifyInvoice`         | Allowed to modify invoice section settings.                  |
-| `ReadRi`                | View RI section only.                                        |
-| `ModifyRi`              | Allowed to modify RI section settings.                       |
+| Permission                        | Description                                                  | Resources Supported |
+| --------------------------------- | ------------------------------------------------------------ | ------------------- |
+| `Admin`                           | No restrictions. Root user, by default, has this permission. |                     |
+| `\|-- ModifyBillingGroup`         | Allowed to modify billing group settings.                    | Billing groups      |
+| `\|---- ReadBillingGroup`         | View billing group only.                                     | Billing groups      |
+| `\|------ ModifyAccount`          | Allowed to modify account section settings.                  | Billing groups      |
+| `\|-------- ReadAccount`          | View account section only.                                   | Billing groups      |
+| `\|------ ModifyInvoice`          | Allowed to modify invoice section settings.                  | Billing groups      |
+| `\|-------- ReadInvoice`          | View invoice section only.                                   | Billing groups      |
+| `\|------ ModifyInvoiceSettings`  | Allowed to modify invoice settings.                          | Billing groups      |
+| `\|--------- ReadInvoiceSettings` | View invoice settings only.                                  | Billing groups      |
+| `\|------ ModifyReseller`         | Allowed to modify reseller section settings.                 | Billing groups      |
+| `\|-------- ReadReseller`         | View reseller section only.                                  | Billing groups      |
+| `\|-- ModifyCustomField`          | Allowed to modify custom field settings.                     |                     |
+| `\|---- ReadCustomField`          | View custom field settings.                                  |                     |
+| `\|-- ModifyCustomService`        | Allowed to modify custom services settings.                  |                     |
+| `\|---- ReadCustomService`        | Read custom service settings only.                           |                     |
+| `\|-- ModifyInvoiceTemplate`      | Allowed to modify invoice templates.                         |                     |
+| `\|---- ReadInvoiceTemplate`      | View invoice templates only.                                 |                     |
+| `\|-- ModifyOriginalCost`         | Allowed to modify original cost settings.                    |                     |
+| `\|---- ReadOriginalCost`         | Read original cost only                                      |                     |
+| `\|-- ModifyProject`              | Allowed to modify projects.                                  |                     |
+| `\|---- ReadProject`              | Read projects only.                                          |                     |
+| `\|-- ReadReport`                 | Read reports only.                                           |                     |
+| `\|-- ModifyRi`                   | Allowed to modify RI section settings.                       |                     |
+| `\|---- ReadRi`                   | View RI section only.                                        |                     |
+| `\|-- ReadSavingsPlan`            | Read savings plan only.                                      |                     |
+| `\|-- ModifySettings`             | Allowed to modify global Ripple settings.                    |                     |
+| `\|---- ReadSettings`             | View global Ripple settings only.                            |                     |
+| `\|-- ModifyTags`                 | Allowed to modify tags.                                      |                     |
+| `\|---- ReadTags`                 | View tags only.                                              |                     |
 
 ## User permissions
 
