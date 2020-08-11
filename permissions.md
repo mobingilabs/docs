@@ -9,33 +9,33 @@ The following tables list all supported permissions under Mobingi RBAC across al
 
 The following table lists the permissions supported under RBAC management. RBAC permissions belong to the `rbac` namespace.
 
-| Permission        | Description                                                  |
-| :---------------- | :----------------------------------------------------------- |
-| `Admin`           | No restrictions. Root user, by default, has this permission. |
-| `ReadOnly`        | View RBAC permissions, roles, and mappings.                  |
-| `ModifyRoles`     | Allowed to modify RBAC roles.                                |
-| `ModifyUserRoles` | Allowed to modify user-role mappings.                        |
+| Permission             | Description                                                  | Resources Supported |
+| ---------------------- | ------------------------------------------------------------ | ------------------- |
+| `Admin`                | No restrictions. Root user, by default, has this permission. |                     |
+| `\|__ ModifyRoles`     | Allowed to modify RBAC roles.                                |                     |
+| `\|__ ModifyUserRoles` | Allowed to modify user-role mappings.                        |                     |
+| `\|____ ReadOnly`      | View RBAC permissions, roles, and mappings.                  |                     |
 
 ## Wave permissions
 
 The following table lists the permissions supported under RBAC for Wave. Wave permissions belong to the `wave` namespace.
 
-| Permission              | Description                                                  |
-| :---------------------- | :----------------------------------------------------------- |
-| `Admin`                 | No restrictions. Root user, by default, has this permission. |
-| `ModifySettings`        | Allowed to modify global Wave settings.                      |
-| `ReadSettings`          | View global Wave settings only.                              |
-| `ModifyAccountSettings` | Allowed to modify account level settings.                    |
-| `ReadAccountSettings`   | View account level settings only.                            |
-| `ReadAccount`           | View account list only.                                      |
-| `DownloadBulk`          | Allowed to download bulk CSV.                                |
-| `DownloadReports`       | Allowed to download reports CSV.                             |
-| `ModifyGroups`          | Allowed to modify groups.                                    |
-| `ReadGroups`            | View groups only.                                            |
-| `ModifyTags`            | Allowed to modify tags.                                      |
-| `ReadTags`              | View tags only.                                              |
-| `ReadBillingGroup`      | View billing group dashboard data \(graph\) only.            |
-| `ModifyBillingGroup`    | Allowed to modify billing group dashboard data.              |
+| Permission                   | Description                                                  | Resources Supported |
+| ---------------------------- | ------------------------------------------------------------ | ------------------- |
+| `Admin`                      | No restrictions. Root user, by default, has this permission. |                     |
+| `\|-- ReadAccount`           | View account list only.                                      | Accounts            |
+| `\|-- ModifyAccountSettings` | Allowed to modify account level settings.                    | Accounts            |
+| `\|---- ReadAccountSettings` | View account level settings only.                            | Accounts            |
+| `\|-- DownloadBulk`          | Allowed to download bulk CSV.                                |                     |
+| `\|-- ModifyGroups`          | Allowed to modify groups.                                    | Account groups      |
+| `\|---- ReadGroups`          | View groups only.                                            | Account groups      |
+| `\|-- ReadInvoice`           | View invoices only                                           |                     |
+| `\|-- ReadRi`                | View RIs only                                                |                     |
+| `\|-- ReadSavingsPlan`       | View savings plan only                                       |                     |
+| `\|-- ModifySettings`        | Allowed to modify global Wave settings.                      |                     |
+| `\|---- ReadSettings`        | View global Wave settings only.                              |                     |
+| `\|-- ModifyTags`            | Allowed to modify tags.                                      |                     |
+| `\|---- ReadTags`            | View tags only.                                              |                     |
 
 ## Ripple permissions
 
