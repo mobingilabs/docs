@@ -1,3 +1,5 @@
+{% hint style="warning" %} This is still a draft version. {% endhint %}
+
 # Permissions
 
 The following tables list all supported permissions under Mobingi RBAC across all namespaces.
