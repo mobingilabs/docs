@@ -1,9 +1,5 @@
 # API clients
 
-{% hint style="warning" %}
-This is still a draft version.
-{% endhint %}
-
 The following endpoint is the base url for the APIs below.
 
 ```text
