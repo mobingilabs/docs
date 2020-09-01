@@ -36,7 +36,7 @@ Details for the POST `{body}`.
 HTTP/1.1 200 OK
 
 {
-  "client_id": "ripple|abcdef123456",
+  "client_id": "ripple-abcdef123456",
   "client_secret": "critical",
   "grant_type": "client_credentials",
   "create_time": "2020-06-27T11:26:46.257375295Z",
@@ -66,7 +66,7 @@ HTTP/1.1 200 OK
 
 [
   {
-    "client_id": "ripple|abcdef123456",
+    "client_id": "ripple-abcdef123456",
     "client_secret": "",
     "grant_type": "client_credentials",
     "create_time": "2020-06-15T05:07:50.258779172Z",
