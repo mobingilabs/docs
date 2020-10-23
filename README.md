@@ -1,7 +1,7 @@
 # Overview
 
 {% hint style="warning" %}
-This product is already deprecated.
+**This product is already deprecated.**
 {% endhint %}
 
 Ocean is Mobingi's product for end-to-end application lifecycle management, including infrastructure provisioning, application deployment, and monitoring in a multi-cloud environment.
