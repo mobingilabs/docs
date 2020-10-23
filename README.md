@@ -2,15 +2,17 @@
 description: Mobingi Documentation
 ---
 
+# Mobingi Documentation \(v2.0\)
+
 {% hint style="warning" %}
 **This product is already deprecated.**
 {% endhint %}
 
-# Mobingi Documentation \(v2.0\)
+## Mobingi Documentation \(v2.0\)
 
-## Software that ships your cloud
+### Software that ships your cloud
 
-### What does Mobingi provides?
+#### What does Mobingi provides?
 
 ![](.gitbook/assets/002.png)
 
