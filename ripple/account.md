@@ -1,8 +1,5 @@
 # Account
 
-{% hint style="warning" %}
-This is still a draft version.
-{% endhint %}
 
 アカウントのAPIリファレンスは以下の通りです。
 

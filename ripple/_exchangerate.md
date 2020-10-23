@@ -1,8 +1,5 @@
 # ExchangeRate
 
-{% hint style="warning" %}
-This is still a draft version.
-{% endhint %}
 
 為替レートのAPIリファレンスは以下の通りです。
 

@@ -1,8 +1,5 @@
 # BillingGroup
 
-{% hint style="warning" %}
-This is still a draft version.
-{% endhint %}
 
 請求グループのAPIリファレンスは以下の通りです。
 

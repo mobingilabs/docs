@@ -1,8 +1,5 @@
 # User
 
-{% hint style="warning" %}
-This is still a draft version.
-{% endhint %}
 
 ユーザーのAPIリファレンスは以下の通りです。
 
