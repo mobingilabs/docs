@@ -11,6 +11,7 @@
   * [ExchangeRate](ripple/exchangerate.md)
   * [BillingGroup](ripple/billinggroup.md)
   * [Account](ripple/account.md)
+  * [Reseller](ripple/reseller.md)
 * [Wave](wave-open-api/README.md)
   * [Pre-request](wave-open-api/prerequest.md)
   * [Report](wave-open-api/report.md)
