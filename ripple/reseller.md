@@ -192,7 +192,7 @@ Content-Type: application/json
 Field           | Type      | Required | Validation | Description
 --------------- | --------- | -------- | ---------- | -----------
  input_type     | *string*  | Yes      | - Auto / Custom | Auto: パスワード自動生成 Custom: passwordを入力
- notification   | *boolean* | Yes      | -          | 作成時に通知をする/しない
+ notification   | *boolean* | Yes      | -          | 変更時に通知をする/しない
  password       | *string*  | No       | -          | パスワード
 
 **Response**
