@@ -12,6 +12,7 @@
   * [BillingGroup](ripple/billinggroup.md)
   * [Account](ripple/account.md)
   * [Wave for Reseller](ripple/reseller.md)
+  * [OriginalCost](ripple/export_cost.md)
 * [Wave](wave-open-api/README.md)
   * [Pre-request](wave-open-api/prerequest.md)
   * [Report](wave-open-api/report.md)
