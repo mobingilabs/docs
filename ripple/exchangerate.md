@@ -87,13 +87,13 @@ HTTP 200
 
 [
   {
-    "invoice_id": "738676530",
-    "account_id": "128347567789",
-    "exchange_rate": 107.302
+    "invoice_id":"738676530",
+    "account_id":"128347567789",
+    "exchange_rate":107.302
   },
   {
-    "invoice_id": "123656789",
-    "account_id": "987655467321",
+    "invoice_id":"123656789",
+    "account_id":"987655467321",
     "exchange_rate": null
   }
 ]
@@ -128,9 +128,9 @@ Content-Type: application/json
 {
   "settings": [
     {
-      "account_id": "987655467321",
-      "invoice_id": "123656789",
-      "exchange_rate": 101.07
+      "account_id":"987655467321",
+      "invoice_id":"123656789",
+      "exchange_rate":101.07
     }
   ]
 }
@@ -148,7 +148,7 @@ Field           | Type      | Required | Validation | Description
 HTTP 200
 
 {
-  "status": "success",
+  "status":"success",
   "error_data": []
 }
 ```
@@ -181,16 +181,16 @@ HTTP 200
 
 [
   {
-    "id": "128347567789",
-    "vendor": "aws",
-    "name": "Payer Account",
-    "exchange_rate": 109.154
+    "id":"128347567789",
+    "vendor":"aws",
+    "name":"Payer Account",
+    "exchange_rate":109.154
   },
   {
-    "id": "111345678911",
-    "vendor": "aws",
-    "name": "Payer Account2",
-    "exchange_rate": 108.02
+    "id":"111345678911",
+    "vendor":"aws",
+    "name":"Payer Account2",
+    "exchange_rate":108.02
   }
 ]
 ```
@@ -223,9 +223,9 @@ Content-Type: application/json
 {
   "settings": [
     {
-      "vendor": "aws",
-      "account_id": "128347567789",
-      "exchange_rate": 109.154
+      "vendor":"aws",
+      "account_id":"128347567789",
+      "exchange_rate":109.154
     }
   ]
 }
@@ -243,7 +243,7 @@ Field           | Type      | Required | Validation | Description
 HTTP 200
 
 {
-  "status": "success"
+  "status":"success"
 }
 ```
 
@@ -274,12 +274,12 @@ Content-Type: application/json
 
 ```ruby
 {
-  "vendor": "aws",
+  "vendor":"aws",
   "billing_groups": [
     "abcdfeg",
     "hijklmn"
   ],
-  "exchange_rate": 105.076
+  "exchange_rate":105.076
 }
 ```
 
@@ -296,6 +296,6 @@ Field           | Type      | Required | Validation | Description
 HTTP 200
 
 {
-  "status": "success"
+  "status":"success"
 }
 ```

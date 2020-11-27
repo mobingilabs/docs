@@ -51,7 +51,7 @@ Field           | Type      | Required | Validation | Description
 HTTP 200
 
 {
-  "status": "success"
+  "status":"success"
 }
 ```
 
@@ -148,7 +148,7 @@ Authorization: Bearer {token}
 HTTP 200
 
 {
-  "status": "success"
+  "status":"success"
 }
 ```
 
@@ -201,6 +201,6 @@ Field           | Type      | Required | Validation | Description
 HTTP 200
 
 {
-  "status": "success"
+  "status":"success"
 }
 ```
