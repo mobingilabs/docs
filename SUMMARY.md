@@ -16,6 +16,7 @@
   * [RI management](ripple/ri-management.md)
   * [Recalculation](ripple/recalculation.md)
   * [Invoice](ripple/invoice.md)
+  * [Export](ripple/export.md)
 * [Wave](wave-open-api/README.md)
   * [Pre-request](wave-open-api/prerequest.md)
   * [Report](wave-open-api/report.md)
