@@ -17,7 +17,7 @@
   * [Recalculation](ripple/recalculation.md)
   * [Invoice](ripple/invoice.md)
   * [Export](ripple/export.md)
-  * [Export](ripple/project.md)
+  * [Project](ripple/project.md)
 * [Wave](wave-open-api/README.md)
   * [Pre-request](wave-open-api/prerequest.md)
   * [Report](wave-open-api/report.md)
