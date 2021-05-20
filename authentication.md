@@ -63,7 +63,7 @@ You can also use [bluectl](https://github.com/alphauslabs/bluectl) CLI tool to g
 #   ALPHAUS_RIPPLE_CLIENT_SECRET
 $ bluectl ripple access-token
 
-# For Wave
+# For Wave:
 #   ALPHAUS_WAVE_CLIENT_ID
 #   ALPHAUS_WAVE_CLIENT_SECRET
 $ bluectl wave access-token
