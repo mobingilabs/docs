@@ -67,4 +67,7 @@ $ bluectl access-token --client-id=sampleid --client-secret=samplesecret
 
 # You can also access our beta (next) environment:
 $ bluectl access-token --client-id=sampleid --client-secret=samplesecret --beta
+
+# For easy use in scripting (example):
+$ curl -H "Authorization: Bearer $(bluectl access-token)" https://some-endpoint/...
 ```
