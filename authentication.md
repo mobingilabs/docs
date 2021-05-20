@@ -54,7 +54,7 @@ HTTP/1.1 200 OK
 
 **Using bluectl**
 
-You can also use [bluectl](https://github.com/alphauslabs/bluectl) CLI tool to generate access tokens. It is designed to work with `client_credentials` grant type, although it supports the `password` grant type as well.
+You can also use our [bluectl](https://github.com/alphauslabs/bluectl) CLI tool to generate access tokens. It is designed to work with `client_credentials` grant type, although it supports the `password` grant type as well.
 
 ```bash
 # Uses environment variables:
