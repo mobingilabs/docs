@@ -52,3 +52,19 @@ HTTP/1.1 200 OK
 }
 ```
 
+**Using bluectl**
+
+You can also use [bluectl](https://github.com/alphauslabs/bluectl) to generate access tokens.
+
+```bash
+# Uses environment variables:
+#   ALPHAUS_CLIENT_ID
+#   ALPHAUS_CLIENT_SECRET
+$ bluectl access-token
+
+# Or explicit values:
+$ bluectl access-token --client-id=sampleid --client-secret=samplesecret
+
+# You can also access our beta (next) environment:
+$ bluectl access-token --client-id=sampleid --client-secret=samplesecret --beta
+```
