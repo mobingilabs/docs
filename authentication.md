@@ -54,7 +54,7 @@ HTTP/1.1 200 OK
 
 **Using bluectl**
 
-You can also use [bluectl](https://github.com/alphauslabs/bluectl) to generate access tokens.
+You can also use [bluectl](https://github.com/alphauslabs/bluectl) CLI tool to generate access tokens.
 
 ```bash
 # Uses environment variables:
