@@ -58,18 +58,23 @@ You can also use [bluectl](https://github.com/alphauslabs/bluectl) CLI tool to g
 
 ```bash
 # Uses environment variables:
-# Ripple
+# For Ripple:
 #   ALPHAUS_RIPPLE_CLIENT_ID
 #   ALPHAUS_RIPPLE_CLIENT_SECRET
 $ bluectl ripple access-token
 
-# Or explicit values:
+# For Wave
+#   ALPHAUS_WAVE_CLIENT_ID
+#   ALPHAUS_WAVE_CLIENT_SECRET
+$ bluectl wave access-token
+
+# You can also provide the credentials directly if you prefer:
 $ bluectl ripple access-token --client-id=id --client-secret=secret
 
 # You can also access our beta (next) environment:
 $ bluectl ripple access-token --beta
 
-# For easy use in scripting (example):
+# Use with other commands (example):
 $ curl -H "Authorization: Bearer $(bluectl ripple access-token)" \
   https://some-ripple-endpoint/...
 ```
