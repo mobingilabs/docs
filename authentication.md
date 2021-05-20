@@ -58,18 +58,19 @@ You can also use [bluectl](https://github.com/alphauslabs/bluectl) CLI tool to g
 
 ```bash
 # Uses environment variables:
-#   ALPHAUS_CLIENT_ID
-#   ALPHAUS_CLIENT_SECRET
-$ bluectl access-token
+# Ripple
+#   ALPHAUS_RIPPLE_CLIENT_ID
+#   ALPHAUS_RIPPLE_CLIENT_SECRET
+$ bluectl ripple access-token
 
 # Or explicit values:
-$ bluectl access-token --client-id=sampleid --client-secret=samplesecret
+$ bluectl ripple access-token --client-id=id --client-secret=secret
 
 # You can also access our beta (next) environment:
-$ bluectl access-token --client-id=sampleid --client-secret=samplesecret --beta
+$ bluectl ripple access-token --beta
 
 # For easy use in scripting (example):
-$ curl -H "Authorization: Bearer $(bluectl access-token)" \
-  https://some-endpoint/...
+$ curl -H "Authorization: Bearer $(bluectl ripple access-token)" \
+  https://some-ripple-endpoint/...
 ```
 
