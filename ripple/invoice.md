@@ -2,23 +2,22 @@
 
 請求関連のAPIリファレンスは以下の通りです。
 
-
 ## Get Account total cost list
 
 アカウント合計一覧の取得
 
 **Role actions**
 
-- `ReadInvoice`
-- `ModifyInvoice`
+* `ReadInvoice`
+* `ModifyInvoice`
 
 **Request**
 
 ```http
 GET /invoice/{month}/details HTTP1.1
 Authorization: Bearer {token}
-
 ```
+
 リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
 
 **Response**
@@ -80,44 +79,42 @@ HTTP 200
 
 accountsの詳細
 
-Field              | Type      | Description
------------------- | --------- | -----------
-customer_id        | *string*  | 顧客ID
-customer_name      | *string*  | 顧客名
-total              | *double*  | $金額(税抜)
-total_exchanged    | *double*  | 換算後金額(税抜)
-adjustment_entries | *list*    | 請求書に含んだ再計算請求データの一覧
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| customer\_id | _string_ | 顧客ID |
+| customer\_name | _string_ | 顧客名 |
+| total | _double_ | $金額\(税抜\) |
+| total\_exchanged | _double_ | 換算後金額\(税抜\) |
+| adjustment\_entries | _list_ | 請求書に含んだ再計算請求データの一覧 |
 
+billing\_groupsの詳細
 
-billing_groupsの詳細
-
-Field                  | Type      | Description
----------------------  | --------- | -----------
-billing_group_id       | *string*  | 請求グループID
-billing_group_name     | *string*  | 請求グループ名
-vendor                 | *string*  | ベンダー
-tax_excluded_amount    | *double*  | $合計金額(税抜)
-tax_excluded_amount_exchanged    | *double*  | $換算後合計金額(税抜)
-tax                    | *double*    | 消費税金額
-total_amount_exchanged | *double*    | 合計請求金額
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| billing\_group\_id | _string_ | 請求グループID |
+| billing\_group\_name | _string_ | 請求グループ名 |
+| vendor | _string_ | ベンダー |
+| tax\_excluded\_amount | _double_ | $合計金額\(税抜\) |
+| tax\_excluded\_amount\_exchanged | _double_ | $換算後合計金額\(税抜\) |
+| tax | _double_ | 消費税金額 |
+| total\_amount\_exchanged | _double_ | 合計請求金額 |
 
 ## Get Invoice list
 
 請求書一覧の取得
 
-
 **Role actions**
 
-- `ReadInvoice`
-- `ModifyInvoice`
+* `ReadInvoice`
+* `ModifyInvoice`
 
 **Request**
 
 ```http
 GET /invoices/{month} HTTP1.1
 Authorization: Bearer {token}
-
 ```
+
 リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
 
 **Response**
@@ -262,3 +259,4 @@ HTTP 200
   ]
 }
 ```
+

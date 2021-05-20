@@ -6,10 +6,9 @@
 
 月ごとの為替レートの更新
 
-
 **Role actions**
 
-- `ModifySettings`
+* `ModifySettings`
 
 **Request**
 
@@ -27,21 +26,20 @@ Content-Type: application/json
 
 ```ruby
 {
-	"exchange_rate":
-		{
-			"rate":110,
-			"month":"2020-01"
-		}
+    "exchange_rate":
+        {
+            "rate":110,
+            "month":"2020-01"
+        }
 }
 ```
 
-**exchange_rate object description**
+**exchange\_rate object description**
 
-Field           | Type      | Required | Validation | Description
---------------- | --------- | -------- | ---------- | -----------
- rate           | *double*  | Yes      | -          | 為替レート
- month          | *string*  | Yes      | -          | 対象月
-
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| rate | _double_ | Yes | - | 為替レート |
+| month | _string_ | Yes | - | 対象月 |
 
 **Response**
 
@@ -53,11 +51,9 @@ HTTP 200
 }
 ```
 
-
 ## List exchange rate
 
 月ごとの為替レートの取得。ドキュメント[`get:/user`](https://docs.mobingi.com/v/api-reference/ripple/user) レスポンス`{exchange_rate}`から確認できます。
-
 
 ## List invoice id exchange rate per month
 
@@ -65,8 +61,8 @@ HTTP 200
 
 **Role actions**
 
-- `ModifySettings`
-- `ReadSettings`
+* `ModifySettings`
+* `ReadSettings`
 
 **Request**
 
@@ -77,8 +73,8 @@ Authorization: Bearer {token}
 {request body}
 ```
 
-リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
-<br>リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`,`azure`
+リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01   
+リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`,`azure`
 
 **Response**
 
@@ -105,7 +101,7 @@ HTTP 200
 
 **Role actions**
 
-- `ModifySettings`
+* `ModifySettings`
 
 **Request**
 
@@ -117,8 +113,8 @@ Content-Type: application/json
 {request body}
 ```
 
-リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
-<br>リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`,`azure`
+リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01   
+リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`,`azure`
 
 以下に`{request body}`のリクエストペイロードの例を示します。
 
@@ -136,11 +132,11 @@ Content-Type: application/json
 }
 ```
 
-Field           | Type      | Required | Validation | Description
---------------- | --------- | -------- | ---------- | -----------
- account_id     | *string*  | Yes      | -          | 支払いアカウント
- invoice_id     | *string*  | Yes      | -          | 支払いアカウントのInvoiceID
- exchange_rate  | *double*  | Yes      | -          | 為替レート
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| account\_id | _string_ | Yes | - | 支払いアカウント |
+| invoice\_id | _string_ | Yes | - | 支払いアカウントのInvoiceID |
+| exchange\_rate | _double_ | Yes | - | 為替レート |
 
 **Response**
 
@@ -153,15 +149,14 @@ HTTP 200
 }
 ```
 
-
 ## List payer account id exchange rate per month
 
 月ごとのPayerAccountID為替レートの取得
 
 **Role actions**
 
-- `ModifySettings`
-- `ReadSettings`
+* `ModifySettings`
+* `ReadSettings`
 
 **Request**
 
@@ -201,7 +196,7 @@ HTTP 200
 
 **Role actions**
 
-- `ModifySettings`
+* `ModifySettings`
 
 **Request**
 
@@ -231,11 +226,11 @@ Content-Type: application/json
 }
 ```
 
-Field           | Type      | Required | Validation | Description
---------------- | --------- | -------- | ---------- | -----------
- vendor         | *string*  | Yes      | `aws`,`azure`  | ベンダー
- account_id     | *string*  | Yes      | -          | 支払いアカウント
- exchange_rate  | *double*  | Yes      | -          | 為替レート
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| vendor | _string_ | Yes | `aws`,`azure` | ベンダー |
+| account\_id | _string_ | Yes | - | 支払いアカウント |
+| exchange\_rate | _double_ | Yes | - | 為替レート |
 
 **Response**
 
@@ -251,10 +246,9 @@ HTTP 200
 
 月ごとの請求書設定の為替レートの更新
 
-
 **Role actions**
 
-- `ModifyInvoice`
+* `ModifyInvoice`
 
 **Request**
 
@@ -283,12 +277,11 @@ Content-Type: application/json
 }
 ```
 
-Field           | Type      | Required | Validation | Description
---------------- | --------- | -------- | ---------- | -----------
- vendor         | *string*  | Yes      | サポート: `aws`, `azure` | ベンダー
- billing_groups | *object*  | Yes      | -          | 請求グループ一覧
- exchange_rate  | *double*  | Yes      | -          | 為替レート
-
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| vendor | _string_ | Yes | サポート: `aws`, `azure` | ベンダー |
+| billing\_groups | _object_ | Yes | - | 請求グループ一覧 |
+| exchange\_rate | _double_ | Yes | - | 為替レート |
 
 **Response**
 
@@ -299,3 +292,4 @@ HTTP 200
   "status":"success"
 }
 ```
+

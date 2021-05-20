@@ -1,6 +1,5 @@
 # Account
 
-
 アカウントのAPIリファレンスは以下の通りです。
 
 ## Create
@@ -9,7 +8,7 @@
 
 **Role actions**
 
-- `ModifyAccount`
+* `ModifyAccount`
 
 **Request**
 
@@ -27,25 +26,25 @@ Content-Type: application/json
 
 ```ruby
 {
-	"vendor":"aws",
+    "vendor":"aws",
     "customer_id":"012345678912",
     "account_id":"919999618919"
-	"company_id":"AJfdivbDjhvbpE",
-	"name":"ripple customer1",
-	"note":null
+    "company_id":"AJfdivbDjhvbpE",
+    "name":"ripple customer1",
+    "note":null
 }
 ```
 
 **{request body} description**
 
-Field         | Type      | Required | Validation | Description
-------------- | --------- | -------- | ---------- | -----------
-customer_id   | *string*  | Yes      | - AWS 12桁 <br> - Azure 16~36桁 | - AWS AccountID <br> - Azure SubscriptionID
-account_id    | *string*  | Yes      | - AWS 12桁 <br> - AZURE 7桁 | - AWS PayerAccountID <br> - Azure BillingID
-company_id    | *string*  | Yes      | -          | 請求グループ内部ID
-vendor        | *string*  | Yes      | - サポート: `aws`,`azure`  | 
-name          | *string*  | Yes      | - 長さ: 3 ~ 100    | 登録する顧客名
-note          | *string*  | No       | -          | 備考欄
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| customer\_id | _string_ | Yes | - AWS 12桁   - Azure 16~36桁 | - AWS AccountID   - Azure SubscriptionID |
+| account\_id | _string_ | Yes | - AWS 12桁   - AZURE 7桁 | - AWS PayerAccountID   - Azure BillingID |
+| company\_id | _string_ | Yes | - | 請求グループ内部ID |
+| vendor | _string_ | Yes | - サポート: `aws`,`azure` |  |
+| name | _string_ | Yes | - 長さ: 3 ~ 100 | 登録する顧客名 |
+| note | _string_ | No | - | 備考欄 |
 
 **Response**
 
@@ -69,23 +68,22 @@ HTTP 400 customer id が既に登録されている場合
 
 **Role actions**
 
-- `ReadAccount` 
-- `ModifyAccount`
+* `ReadAccount` 
+* `ModifyAccount`
 
 **Request**
 
 ```http
 GET /accts?vendor={vendor} HTTP1.1
 Authorization: Bearer {token}
-
 ```
 
 以下に`{vendor}`のパラメータの例を示します。
 
 **{vendor}**
 
-- aws
-- azure
+* aws
+* azure
 
 **Response**
 
@@ -111,14 +109,13 @@ HTTP 200
 ]
 ```
 
-
 ## Update
 
 アカウントの更新
 
 **Role actions**
 
-- `ModifyAccount`
+* `ModifyAccount`
 
 **Request**
 
@@ -132,35 +129,33 @@ Content-Type: application/json
 
 以下に`{customer_id}`のパラメータの例を示します。
 
-**{customer_id}**
+**{customer\_id}**
 
 AWS AccountID or Azure SubscriptionID
-
 
 以下に`{request body}`のリクエストペイロードの例を示します。
 
 **{request body}**
 
-
 ```ruby
 {
-	"vendor":"aws",
+    "vendor":"aws",
     "account_id":"919999618919"
-	"company_id":"AJfdivbDjhvbpE",
-	"name":"ripple customer1",
-	"note":null
+    "company_id":"AJfdivbDjhvbpE",
+    "name":"ripple customer1",
+    "note":null
 }
 ```
 
 **{request body} description**
 
-Field         | Type      | Required | Validation | Description
-------------- | --------- | -------- | ---------- | -----------
-account_id    | *string*  | Yes      | - AWS 12桁 <br> - AZURE 7桁 | - AWS PayerAccountID <br> - Azure BillingID
-company_id    | *string*  | Yes      | -          | 請求グループ内部ID
-vendor        | *string*  | Yes      | - サポート: `aws`,`azure`  | 
-name          | *string*  | Yes      | - 長さ: 3 ~ 100    | 登録する顧客名
-note          | *string*  | No       | -          | 備考欄
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| account\_id | _string_ | Yes | - AWS 12桁   - AZURE 7桁 | - AWS PayerAccountID   - Azure BillingID |
+| company\_id | _string_ | Yes | - | 請求グループ内部ID |
+| vendor | _string_ | Yes | - サポート: `aws`,`azure` |  |
+| name | _string_ | Yes | - 長さ: 3 ~ 100 | 登録する顧客名 |
+| note | _string_ | No | - | 備考欄 |
 
 **Response**
 
@@ -184,23 +179,21 @@ HTTP 400 customer id が登録されていない場合
 
 **Role actions**
 
-- `ModifyAccount`
+* `ModifyAccount`
 
 **Request**
 
 ```http
 DELETE /accts/{vendor}/{id} HTTP1.1
 Authorization: Bearer {token}
-
 ```
 
 以下に`{vendor}`のパラメータの例を示します。
 
 **{vendor}**
 
-- aws
-- azure
-
+* aws
+* azure
 
 以下に`{id}`フォーマットのパラメータの例を示します。
 
@@ -215,3 +208,4 @@ HTTP 200
 
 {"status":"success"}
 ```
+

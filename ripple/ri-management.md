@@ -6,19 +6,18 @@ RI管理のAPIリファレンスは以下の通りです。
 
 RI管理データの取得
 
-
 **Role actions**
 
-- `ReadRi`
-- `ModifyRi`
+* `ReadRi`
+* `ModifyRi`
 
 **Request**
 
 ```http
 GET /ri/purchased?vendor={vendor} HTTP1.1
 Authorization: Bearer {token}
-
 ```
+
 リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`,`azure`
 
 **Response**
@@ -68,7 +67,7 @@ RI管理データの移動
 
 **Role actions**
 
-- `ModifyRi`
+* `ModifyRi`
 
 **Request**
 
@@ -88,19 +87,19 @@ Content-Type: application/json
 
 ```ruby
 {
-	"customer_id":"123456789123",
-	"number":1,
-	"vendor":"aws"
+    "customer_id":"123456789123",
+    "number":1,
+    "vendor":"aws"
 }
 ```
 
 **{request body} description**
 
-Field         | Type      | Required | Validation | Description
-------------- | --------- | -------- | ---------- | -----------
-customer_id   | *string*  | Yes      | -          | 移動先の顧客ID
-number        | *integer* | Yes      | -          | 移動する数
-vendor        | *string*  | Yes      | サポート: `aws` | ベンダー
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| customer\_id | _string_ | Yes | - | 移動先の顧客ID |
+| number | _integer_ | Yes | - | 移動する数 |
+| vendor | _string_ | Yes | サポート: `aws` | ベンダー |
 
 **Response**
 
@@ -116,18 +115,17 @@ HTTP 200
 
 **Role actions**
 
-- `ModifyRi`
+* `ModifyRi`
 
 **Request**
 
 ```http
 POST /ri/purchased/{ri_id}/remove?vendor={vendor} HTTP1.1
 Authorization: Bearer {token}
-
 ```
 
-リクエストパラーメータの`{ri_id}` `GET /ri/purchased?vendor={vendor}`から取得したid
-<br>リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`
+リクエストパラーメータの`{ri_id}` `GET /ri/purchased?vendor={vendor}`から取得したid   
+リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`
 
 **Response**
 
@@ -136,3 +134,4 @@ HTTP 200
 
 {"status":"success"}
 ```
+

@@ -1,16 +1,14 @@
 # OriginalCost
 
-
 原価データのAPIリファレンスは以下の通りです。
 
 ## Set exchange rate per InvoiceID
 
 InvoiceIDの為替レート設定
 
-
 **Role actions**
 
-- `ModifyOriginalCost`
+* `ModifyOriginalCost`
 
 **Request**
 
@@ -22,8 +20,8 @@ Content-Type: application/json
 {request body}
 ```
 
-リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
-<br>リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`
+リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01   
+リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`
 
 以下に`{request body}`のリクエストペイロードの例を示します。
 
@@ -46,10 +44,10 @@ Content-Type: application/json
 
 **request body description**
 
-Field           | Type      | Required | Validation | Description
---------------- | --------- | -------- | ---------- | -----------
- invoice_id     | *string*  | Yes      | -          | InvoiceID
- exchange_rate  | *double*  | Yes      | -          | 登録する為替レート
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| invoice\_id | _string_ | Yes | - | InvoiceID |
+| exchange\_rate | _double_ | Yes | - | 登録する為替レート |
 
 **Response**
 
@@ -65,11 +63,10 @@ HTTP 200
 
 InvoiceIDの取得
 
-
 **Role actions**
 
-- `ReadOriginalCost`
-- `ModifyOriginalCost`
+* `ReadOriginalCost`
+* `ModifyOriginalCost`
 
 **Request**
 
@@ -80,8 +77,8 @@ Authorization: Bearer {token}
 {request body}
 ```
 
-リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
-<br>リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`
+リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01   
+リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`
 
 **Response**
 
@@ -104,10 +101,9 @@ HTTP 200
 
 InvoiceID CSVの出力
 
-
 **Role actions**
 
-- `ModifyOriginalCost`
+* `ModifyOriginalCost`
 
 **Request**
 
@@ -135,11 +131,11 @@ Content-Type: application/json
 
 **request body description**
 
-Field           | Type      | Required | Validation | Description
---------------- | --------- | -------- | ---------- | -----------
- vendor         | *string*  | Yes      | サポート: `aws` | ベンダー
- exchange       | *boolean* | Yes      | -          | USDで出力または為替後(JPY)を出力
- digit          | *double*  | Yes      | サポート: `up`,`down`,`rounding` | 小数点丸め設定
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| vendor | _string_ | Yes | サポート: `aws` | ベンダー |
+| exchange | _boolean_ | Yes | - | USDで出力または為替後\(JPY\)を出力 |
+| digit | _double_ | Yes | サポート: `up`,`down`,`rounding` | 小数点丸め設定 |
 
 **Response**
 
@@ -151,3 +147,4 @@ HTTP 200
   "url":"csv link"
 }
 ```
+

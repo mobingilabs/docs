@@ -1,6 +1,5 @@
 # User
 
-
 ユーザーのAPIリファレンスは以下の通りです。
 
 ## Get user
@@ -9,14 +8,13 @@
 
 **Role actions**
 
-- `ModifySettings`
+* `ModifySettings`
 
 **Request**
 
 ```http
 GET /user HTTP1.1
 Authorization: Bearer {token}
-
 ```
 
 **Response**
@@ -47,12 +45,12 @@ HTTP 200
 }
 ```
 
-**exchange_rate object例**
+**exchange\_rate object例**
 
-Field           | Type      | Description
---------------- | --------- | -------- 
- month         | *string*   | 月 format: `yyyy-mm`
- rate          | *double*   | 為替レート
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| month | _string_ | 月 format: `yyyy-mm` |
+| rate | _double_ | 為替レート |
 
 ```ruby
 "exchange_rate": [
@@ -63,20 +61,20 @@ Field           | Type      | Description
 ]
 ```
 
-**pay_accounts object例**
+**pay\_accounts object例**
 
 vendor : aws
 
-Field             | Type      | Description
------------------ | --------- | -------- 
- vendor           | *string*  | ベンダー
- id               | *string*  | 支払いアカウント
- name             | *string*  | 支払いアカウント名
- bucket_name      | *string*  | aws s3 bucket名
- prefix           | *string*  | aws s3 bucket prefix
- report_name      | *string*  | aws s3 report名
- role_arn         | *string*  | aws iam role arn
- report_last_saved| *string*  | CUR更新日時
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| vendor | _string_ | ベンダー |
+| id | _string_ | 支払いアカウント |
+| name | _string_ | 支払いアカウント名 |
+| bucket\_name | _string_ | aws s3 bucket名 |
+| prefix | _string_ | aws s3 bucket prefix |
+| report\_name | _string_ | aws s3 report名 |
+| role\_arn | _string_ | aws iam role arn |
+| report\_last\_saved | _string_ | CUR更新日時 |
 
 ```ruby
 "pay_accounts": [
@@ -95,14 +93,14 @@ Field             | Type      | Description
 
 vendor : azure
 
-Field             | Type      | Description
------------------ | --------- | -------- 
- vendor           | *string*  | ベンダー
- id               | *string*  | 支払いアカウント
- name             | *string*  | 支払いアカウント名
- application_name | *string*  | azure application name
- application_id   | *string*  | azure application id
- commerce_id      | *string*  | azure commerce id
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| vendor | _string_ | ベンダー |
+| id | _string_ | 支払いアカウント |
+| name | _string_ | 支払いアカウント名 |
+| application\_name | _string_ | azure application name |
+| application\_id | _string_ | azure application id |
+| commerce\_id | _string_ | azure commerce id |
 
 ```ruby
 "pay_accounts": [
@@ -116,3 +114,4 @@ Field             | Type      | Description
     }
 ]
 ```
+

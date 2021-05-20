@@ -60,3 +60,4 @@ GET calculations/status
 # If you want range from Oct 2019 - Jan 2020:
 GET calculations/status?from=201910&to=202001
 ```
+

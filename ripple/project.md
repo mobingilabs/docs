@@ -8,7 +8,7 @@
 
 **Role actions**
 
-- `ModifyProject`
+* `ModifyProject`
 
 **Request**
 
@@ -26,20 +26,19 @@ Content-Type: application/json
 
 ```ruby
 {
-	"project_code":"project 1",
-	"project_label":"project 1 description",
-	"project_currency":"jpy"
+    "project_code":"project 1",
+    "project_label":"project 1 description",
+    "project_currency":"jpy"
 }
-
 ```
 
 **{request body} description**
 
-Field         | Type      | Required | Validation | Description
-------------- | --------- | -------- | ---------- | -----------
-project_code  | *string*  | Yes      | 1 ~ 40     | プロジェクトコード
-project_label | *string*  | Yes      | 1 ~ 40     | プロジェクトラベル
-project_currency | *string* | Yes    | support:['jpy','usd'] | 表示通貨
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| project\_code | _string_ | Yes | 1 ~ 40 | プロジェクトコード |
+| project\_label | _string_ | Yes | 1 ~ 40 | プロジェクトラベル |
+| project\_currency | _string_ | Yes | support:\['jpy','usd'\] | 表示通貨 |
 
 **Response**
 
@@ -55,7 +54,7 @@ HTTP 200
 
 **Role actions**
 
-- `ModifyProject`
+* `ModifyProject`
 
 **Request**
 
@@ -71,20 +70,19 @@ Content-Type: application/json
 
 ```ruby
 {
-	"project_code":"project 1",
-	"project_label":"project 1 description",
-	"project_currency":"jpy"
+    "project_code":"project 1",
+    "project_label":"project 1 description",
+    "project_currency":"jpy"
 }
-
 ```
 
 **{request body} description**
 
-Field         | Type      | Required | Validation | Description
-------------- | --------- | -------- | ---------- | -----------
-project_code  | *string*  | Yes      | 1 ~ 40     | プロジェクトコード
-project_label | *string*  | Yes      | 1 ~ 40     | プロジェクトラベル
-project_currency | *string* | Yes    | support:['jpy','usd'] | 表示通貨
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| project\_code | _string_ | Yes | 1 ~ 40 | プロジェクトコード |
+| project\_label | _string_ | Yes | 1 ~ 40 | プロジェクトラベル |
+| project\_currency | _string_ | Yes | support:\['jpy','usd'\] | 表示通貨 |
 
 ## Delete project
 
@@ -92,14 +90,13 @@ project_currency | *string* | Yes    | support:['jpy','usd'] | 表示通貨
 
 **Role actions**
 
-- `ModifyProject`
+* `ModifyProject`
 
 **Request**
 
 ```http
 DELETE /project/{project_id} HTTP1.1
 Authorization: Bearer {token}
-
 ```
 
 ## Get project list
@@ -108,15 +105,14 @@ Authorization: Bearer {token}
 
 **Role actions**
 
-- `ReadProject`
-- `ModifyProject`
+* `ReadProject`
+* `ModifyProject`
 
 **Request**
 
 ```http
 GET /project HTTP1.1
 Authorization: Bearer {token}
-
 ```
 
 **Response**
@@ -146,15 +142,14 @@ HTTP 200
 
 **Role actions**
 
-- `ReadProject`
-- `ModifyProject`
+* `ReadProject`
+* `ModifyProject`
 
 **Request**
 
 ```http
 GET /project/{month} HTTP1.1
 Authorization: Bearer {token}
-
 ```
 
 リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
@@ -202,15 +197,14 @@ HTTP 200
 
 **Role actions**
 
-- `ReadProject`
-- `ModifyProject`
+* `ReadProject`
+* `ModifyProject`
 
 **Request**
 
 ```http
 GET /project/{month}/csv HTTP1.1
 Authorization: Bearer {token}
-
 ```
 
 リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
@@ -225,3 +219,4 @@ HTTP 200
     "data":"csv url"
 }
 ```
+

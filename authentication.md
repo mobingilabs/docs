@@ -69,5 +69,7 @@ $ bluectl access-token --client-id=sampleid --client-secret=samplesecret
 $ bluectl access-token --client-id=sampleid --client-secret=samplesecret --beta
 
 # For easy use in scripting (example):
-$ curl -H "Authorization: Bearer $(bluectl access-token)" https://some-endpoint/...
+$ curl -H "Authorization: Bearer $(bluectl access-token)" \
+  https://some-endpoint/...
 ```
+

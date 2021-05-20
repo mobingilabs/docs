@@ -6,7 +6,7 @@
 * [Users](users.md)
 * [API clients](api-clients.md)
 * [Authorization \(RBAC\)](authorization.md)
-* [Ripple](ripple.md)
+* [Ripple](ripple/README.md)
   * [User](ripple/user.md)
   * [ExchangeRate](ripple/exchangerate.md)
   * [BillingGroup](ripple/billinggroup.md)

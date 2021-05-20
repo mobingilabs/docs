@@ -6,22 +6,20 @@
 
 再計算請求データの取得
 
-
 **Role actions**
 
-- `ReadBillingGroup`
-- `ModifyBillingGroup`
+* `ReadBillingGroup`
+* `ModifyBillingGroup`
 
 **Request**
 
 ```http
 GET /billinggroup/recalculation/{month}?vendor={vendor} HTTP1.1
 Authorization: Bearer {token}
-
 ```
 
-リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
-<br>リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`,`azure`
+リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01   
+リクエストパラーメータの`{vendor}`のサポートベンダー: `aws`,`azure`
 
 **Response**
 
@@ -62,7 +60,7 @@ HTTP 200
 
 **Role actions**
 
-- `ModifyBillingGroup`
+* `ModifyBillingGroup`
 
 **Request**
 
@@ -80,30 +78,29 @@ Content-Type: application/json
 
 ```ruby
 {
-	"data": [
-		"recalculationid1",
-		"recalculationid2",
-		"recalculationid3"
-	],
-	"month": "2021-01",
-	"exchange_rate":104.02,
-	"tax_free":true,
-	"apply":true,
-	"vendor":"aws"
+    "data": [
+        "recalculationid1",
+        "recalculationid2",
+        "recalculationid3"
+    ],
+    "month": "2021-01",
+    "exchange_rate":104.02,
+    "tax_free":true,
+    "apply":true,
+    "vendor":"aws"
 }
-
 ```
 
 **{request body} description**
 
-Field         | Type      | Required | Validation | Description
-------------- | --------- | -------- | ---------- | -----------
-data          | *array*   | Yes      | [id1,id2,id3...] | 再計算請求データIDの一覧
-month         | *string*  | Yes      | -          | 適用・未適用する対象月
-exchange_rate | *double*  | Yes      | -          | 適用・未適用する為替レート
-tax_free      | *boolean* | Yes      | -          | 免税設定
-apply         | *boolean* | Yes      | -          | 適用・未適用設定
-vendor        | *string*  | Yes      | -          | ベンダー
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| data | _array_ | Yes | \[id1,id2,id3...\] | 再計算請求データIDの一覧 |
+| month | _string_ | Yes | - | 適用・未適用する対象月 |
+| exchange\_rate | _double_ | Yes | - | 適用・未適用する為替レート |
+| tax\_free | _boolean_ | Yes | - | 免税設定 |
+| apply | _boolean_ | Yes | - | 適用・未適用設定 |
+| vendor | _string_ | Yes | - | ベンダー |
 
 **Response**
 
@@ -112,3 +109,4 @@ HTTP 200
 
 {"status":"success"}
 ```
+

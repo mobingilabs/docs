@@ -1,4 +1,4 @@
-# Reseller
+# Wave for Reseller
 
 リセラーのAPIリファレンスは以下の通りです。
 
@@ -6,10 +6,9 @@
 
 リセラーアカウントの発行
 
-
 **Role actions**
 
-- `ModifyReseller`
+* `ModifyReseller`
 
 **Request**
 
@@ -37,13 +36,13 @@ Content-Type: application/json
 
 **request body description**
 
-Field           | Type      | Required | Validation | Description
---------------- | --------- | -------- | ---------- | -----------
- email          | *string*  | Yes      | -          | Eメールアドレス
- company_id     | *string*  | Yes      | -          | 請求グループ内部ID
- input_type     | *string*  | Yes      | - Auto / Custom | Auto: パスワード自動生成 Custom: passwordを入力
- notification   | *boolean* | Yes      | -          | 作成時に通知をする/しない
- password       | *string*  | No       | -          | パスワード
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| email | _string_ | Yes | - | Eメールアドレス |
+| company\_id | _string_ | Yes | - | 請求グループ内部ID |
+| input\_type | _string_ | Yes | - Auto / Custom | Auto: パスワード自動生成 Custom: passwordを入力 |
+| notification | _boolean_ | Yes | - | 作成時に通知をする/しない |
+| password | _string_ | No | - | パスワード |
 
 **Response**
 
@@ -55,25 +54,21 @@ HTTP 200
 }
 ```
 
-
 ## Get reseller account list
 
 リセラーアカウントの取得
 
-
 **Role actions**
 
-- `ReadReseller`
-- `ModifyReseller`
+* `ReadReseller`
+* `ModifyReseller`
 
 **Request**
 
 ```http
 POST /reseller HTTP1.1
 Authorization: Bearer {token}
-
 ```
-
 
 **Response**
 
@@ -120,25 +115,22 @@ HTTP 200
 ]
 ```
 
-
 ## Delete reseller account
 
 リセラーアカウントの削除
 
-
 **Role actions**
 
-- `ModifyReseller`
+* `ModifyReseller`
 
 **Request**
 
 ```http
 DELETE /reseller/{user_id} HTTP1.1
 Authorization: Bearer {token}
-
 ```
 
-**{user_id}**
+**{user\_id}**
 
 リセラーアカウントのidを指定する
 
@@ -156,10 +148,9 @@ HTTP 200
 
 リセラーアカウントパスワードの変更
 
-
 **Role actions**
 
-- `ModifyReseller`
+* `ModifyReseller`
 
 **Request**
 
@@ -171,7 +162,7 @@ Content-Type: application/json
 {request body}
 ```
 
-**{user_id}**
+**{user\_id}**
 
 リセラーアカウントのidを指定する
 
@@ -189,11 +180,11 @@ Content-Type: application/json
 
 **request body description**
 
-Field           | Type      | Required | Validation | Description
---------------- | --------- | -------- | ---------- | -----------
- input_type     | *string*  | Yes      | - Auto / Custom | Auto: パスワード自動生成 Custom: passwordを入力
- notification   | *boolean* | Yes      | -          | 変更時に通知をする/しない
- password       | *string*  | No       | -          | パスワード
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| input\_type | _string_ | Yes | - Auto / Custom | Auto: パスワード自動生成 Custom: passwordを入力 |
+| notification | _boolean_ | Yes | - | 変更時に通知をする/しない |
+| password | _string_ | No | - | パスワード |
 
 **Response**
 
@@ -204,3 +195,4 @@ HTTP 200
   "status":"success"
 }
 ```
+
