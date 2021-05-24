@@ -68,9 +68,6 @@ $ bluectl ripple access-token
 #   ALPHAUS_WAVE_CLIENT_SECRET
 $ bluectl wave access-token
 
-# You can also provide the credentials directly if you prefer:
-$ bluectl ripple access-token --client-id=id --client-secret=secret
-
 # You can also access our beta (next) environment:
 $ bluectl ripple access-token --beta
 
