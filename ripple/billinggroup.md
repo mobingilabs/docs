@@ -432,7 +432,7 @@ HTTP 200
 
 ## Update free format
 
-請求グループその他費用の更新
+請求グループその他費用の追加・更新
 
 **Role actions**
 
@@ -441,12 +441,14 @@ HTTP 200
 **Request**
 
 ```http
-PUT /billinggroup/{id}/freeformat HTTP1.1
+POST /billinggroup/{id}/freeformat/{vendor} HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
 {request body}
 ```
+
+リクエストパラーメータの`{id}`は請求グループ内部ID`{company_id}`です。
 
 以下に`{request body}`のリクエストペイロードの例を示します。
 
@@ -471,10 +473,39 @@ Content-Type: application/json
 | Field | Type | Required | Validation | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | enabled | _boolean_ | Yes | - | 有効、無効 |
-| label | _string_ | Yes | 長さ 1 ~ 20 | タイトル |
+| label | _string_ | Yes | 長さ 1 ~ 60 | タイトル |
 | unit\_cost | _double_ | Yes | - | 単価 |
 | quantity | _double_ | Yes | - | 数量 |
 | total | _double_ | Yes | - | 金額 |
+
+**Response**
+
+```ruby
+HTTP 200
+
+{"status":"success"}
+```
+
+## Delete free format
+
+請求グループその他費用の削除
+
+**Role actions**
+
+* `ModifyBillingGroup` 
+
+**Request**
+
+```http
+DELETE /billinggroup/{id}/freeformat/{vendor} HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+```
+
+リクエストパラーメータの`{id}`は請求グループ内部ID`{company_id}`です。
+
+請求グループに追加されているその他費用を全て削除します。
 
 **Response**
 
