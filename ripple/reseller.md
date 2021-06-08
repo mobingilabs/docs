@@ -43,7 +43,7 @@ Content-Type: application/json
 | input\_type | _string_ | Yes | - Auto / Custom | Auto: パスワード自動生成 Custom: passwordを入力 |
 | notification | _boolean_ | Yes | - | 作成時に通知をする/しない |
 | password | _string_ | No | - | パスワード |
-| meta | \[object\] | Yes | - | Wave機能表示設定。[metaについて](#meta) |
+| meta | \[object\] | Yes | - | Wave機能表示設定。[metaについて](reseller.md#meta) |
 
 **Response**
 
@@ -205,30 +205,31 @@ metaのリストを示します。
 
 `Default`はリセラーアカウントを発行する際に設定されるデフォルトの設定です。
 
-| Field | Type | Default | Label(ja) | Description | 
-| :---  | :--- | :---    | :---      | :---        |
-| dashboard_graph | _boolean_ | true | ダッシュボード |ダッシュボードグラフの表示
-| usage_account | _boolean_ | true | アカウントレポート | アカウント利用明細の表示 \[Account\] 
-| usage_account_graph | _boolean_ | true | グラフの表示 \[アカウント\] | アカウント利用明細グラフの表示 \[Account\]
-| usage_account_menu_account_edit | _boolean_ | false | アカウント名の編集 | アカウント名の編集 \[Account\]
-| usage_account_menu_budget | _boolean_ | false | バジェットの表示 \[アカウント\] | バジェット設定の表示 \[Account\]
-| usage_account_menu_budget_edit | _boolean_ | false | バジェットの編集 \[アカウント\] | バジェット設定の編集 \[Account\]
-| usage_account_menu_fees_fee | _boolean_ | false | Feeの表示 [アカウント > その他明細情報]  | Feeの表示 \[Account\]
-| usage_account_menu_fees_credit | _boolean_ | false | Creditの表示 [アカウント > その他明細情報] | Creditの表示 \[Account\]
-| usage_account_menu_fees_refund | _boolean_ | false | Refundの表示 [アカウント > その他明細情報] | Refundの表示 \[Account\]
-| usage_report_download | _boolean_ | true | レポートのダウンロード \[アカウント\] | 利用明細レポートのダウンロード表示 \[Account\]
-| usage_group | _boolean_ | true | グループレポート | 利用明細の表示 \[Group\]
-| usage_group_graph | _boolean_ | true | グラフの表示 \[グループ\] | 利用明細グラフの表示 \[Group\]
-| usage_tag | _boolean_ | true | タグレポート | 利用明細の表示 \[Tag\]
-| usage_tag_graph | _boolean_ | true | グラフの表示 \[タグ\] | 利用明細グラフの表示 \[Tag\]
-| usage_crosstag | _boolean_ | true | クロスタグレポート | 利用明細の表示 [Cross Tag]
-| usage_crosstag_graph | _boolean_ | true | グラフの表示 \[クロスタグ\] | 利用明細グラフの表示 [Cross Tag]
-| ri_purchased | _boolean_ | true | 購入済みRIの表示 | 購入済みRIの表示
-| ri_utilization | _boolean_ | false | RI適用率の表示 | RI適用率の表示
-| ri_recommendation | _boolean_ | false | レコメンデーションの表示 | RIレコメンデーションの表示
-| sp_purchased | _boolean_ | false | 購入済みSavingsPlansの表示 | 購入済みSavingsPlansの表示
-| invoice | _boolean_ | false | 請求書の表示 | ご利用明細の表示
-| invoice_download_csv_discount | _boolean_ | false | 割引詳細CSVのダウンロード | 割引詳細CSVのダウンロード \[Usage details\]
-| invoice_download_csv_merged | _boolean_ | false | 請求書（統合版）CSVのダウンロード | 請求書（統合版）CSVのダウンロード \[Usage details\]
-| open_api | _boolean_ | false | API アクセストークン | API アクセストークン \[Settings\]
-| users_management | _boolean_ | false | サブユーザー管理 | サブユーザー管理 \[Settings\]
+| Field | Type | Default | Label\(ja\) | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| dashboard\_graph | _boolean_ | true | ダッシュボード | ダッシュボードグラフの表示 |
+| usage\_account | _boolean_ | true | アカウントレポート | アカウント利用明細の表示 \[Account\] |
+| usage\_account\_graph | _boolean_ | true | グラフの表示 \[アカウント\] | アカウント利用明細グラフの表示 \[Account\] |
+| usage\_account\_menu\_account\_edit | _boolean_ | false | アカウント名の編集 | アカウント名の編集 \[Account\] |
+| usage\_account\_menu\_budget | _boolean_ | false | バジェットの表示 \[アカウント\] | バジェット設定の表示 \[Account\] |
+| usage\_account\_menu\_budget\_edit | _boolean_ | false | バジェットの編集 \[アカウント\] | バジェット設定の編集 \[Account\] |
+| usage\_account\_menu\_fees\_fee | _boolean_ | false | Feeの表示 \[アカウント &gt; その他明細情報\] | Feeの表示 \[Account\] |
+| usage\_account\_menu\_fees\_credit | _boolean_ | false | Creditの表示 \[アカウント &gt; その他明細情報\] | Creditの表示 \[Account\] |
+| usage\_account\_menu\_fees\_refund | _boolean_ | false | Refundの表示 \[アカウント &gt; その他明細情報\] | Refundの表示 \[Account\] |
+| usage\_report\_download | _boolean_ | true | レポートのダウンロード \[アカウント\] | 利用明細レポートのダウンロード表示 \[Account\] |
+| usage\_group | _boolean_ | true | グループレポート | 利用明細の表示 \[Group\] |
+| usage\_group\_graph | _boolean_ | true | グラフの表示 \[グループ\] | 利用明細グラフの表示 \[Group\] |
+| usage\_tag | _boolean_ | true | タグレポート | 利用明細の表示 \[Tag\] |
+| usage\_tag\_graph | _boolean_ | true | グラフの表示 \[タグ\] | 利用明細グラフの表示 \[Tag\] |
+| usage\_crosstag | _boolean_ | true | クロスタグレポート | 利用明細の表示 \[Cross Tag\] |
+| usage\_crosstag\_graph | _boolean_ | true | グラフの表示 \[クロスタグ\] | 利用明細グラフの表示 \[Cross Tag\] |
+| ri\_purchased | _boolean_ | true | 購入済みRIの表示 | 購入済みRIの表示 |
+| ri\_utilization | _boolean_ | false | RI適用率の表示 | RI適用率の表示 |
+| ri\_recommendation | _boolean_ | false | レコメンデーションの表示 | RIレコメンデーションの表示 |
+| sp\_purchased | _boolean_ | false | 購入済みSavingsPlansの表示 | 購入済みSavingsPlansの表示 |
+| invoice | _boolean_ | false | 請求書の表示 | ご利用明細の表示 |
+| invoice\_download\_csv\_discount | _boolean_ | false | 割引詳細CSVのダウンロード | 割引詳細CSVのダウンロード \[Usage details\] |
+| invoice\_download\_csv\_merged | _boolean_ | false | 請求書（統合版）CSVのダウンロード | 請求書（統合版）CSVのダウンロード \[Usage details\] |
+| open\_api | _boolean_ | false | API アクセストークン | API アクセストークン \[Settings\] |
+| users\_management | _boolean_ | false | サブユーザー管理 | サブユーザー管理 \[Settings\] |
+

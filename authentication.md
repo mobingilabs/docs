@@ -54,25 +54,17 @@ HTTP/1.1 200 OK
 
 **Using bluectl**
 
-You can also use our [bluectl](https://github.com/alphauslabs/bluectl) CLI tool to generate access tokens. It is designed to work with the `client_credentials` grant type, although it supports the `password` grant type as well.
+You can also use our [bluectl](https://github.com/alphauslabs/bluectl) CLI tool to generate access tokens. It is designed to work with the `client_credentials` grant type, although it supports the `password` grant type as well. To set the required environment variables for authentication, check out [blue-sdk-go](https://github.com/alphauslabs/blue-sdk-go).
 
 ```bash
-# Uses environment variables:
-# For Ripple:
-#   ALPHAUS_RIPPLE_CLIENT_ID
-#   ALPHAUS_RIPPLE_CLIENT_SECRET
-$ bluectl ripple access-token
-
-# For Wave:
-#   ALPHAUS_WAVE_CLIENT_ID
-#   ALPHAUS_WAVE_CLIENT_SECRET
-$ bluectl wave access-token
+# Simple version:
+$ bluectl access-token
 
 # You can also access our beta (next) environment:
-$ bluectl ripple access-token --beta
+$ bluectl access-token --beta
 
 # Use with other commands (example):
-$ curl -H "Authorization: Bearer $(bluectl ripple access-token)" \
+$ curl -H "Authorization: Bearer $(bluectl access-token)" \
   https://some-ripple-endpoint/...
 ```
 

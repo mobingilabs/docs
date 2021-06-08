@@ -500,7 +500,6 @@ HTTP 200
 DELETE /billinggroup/{id}/freeformat/{vendor} HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
-
 ```
 
 リクエストパラーメータの`{id}`は請求グループ内部ID`{company_id}`です。
