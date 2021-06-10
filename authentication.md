@@ -54,7 +54,7 @@ HTTP/1.1 200 OK
 
 **Using bluectl**
 
-You can also use our [bluectl](https://github.com/alphauslabs/bluectl) CLI tool to generate access tokens. It is designed to work with the `client_credentials` grant type, although it supports the `password` grant type as well. To set the required environment variables for authentication, check out [blue-sdk-go](https://github.com/alphauslabs/blue-sdk-go).
+You can also use our [bluectl](https://github.com/alphauslabs/bluectl) CLI tool to generate access tokens. It is designed to work with the `client_credentials` grant type, although it supports the `password` grant type as well. To set the required environment variables for authentication, check out this [document](https://alphauslabs.github.io/blueapi/authentication/apikey.html).
 
 ```bash
 # Simple version:
