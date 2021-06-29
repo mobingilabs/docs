@@ -1,5 +1,9 @@
 # API clients
 
+{% hint style="info" %}
+New API available on [https://alphauslabs.github.io/blueapidocs/\#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam).
+{% endhint %}
+
 The following endpoint is the base url for the APIs below.
 
 ```text
