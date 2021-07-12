@@ -207,5 +207,13 @@ Authorization: Bearer {token}
 HTTP 200
 
 {"status":"success"}
+
+HTTP 400 customer id が登録されていない場合
+
+{
+  "code":"5005",
+  "message":"account function exception",
+  "description":"Customer id is not exists."
+}
 ```
 
