@@ -1,5 +1,9 @@
 # Authorization \(RBAC\)
 
+{% hint style="info" %}
+New API available on [https://alphauslabs.github.io/blueapidocs/\#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam).
+{% endhint %}
+
 For general information about RBAC, check out this [link](https://docs.mobingi.com/v/ur-en/#rbac).
 
 The following endpoint is the base url for the APIs below.
