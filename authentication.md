@@ -1,7 +1,7 @@
 # Authentication
 
 {% hint style="info" %}
-Blue API authentication is now available [here](https://alphauslabs.github.io/blueapi/authentication/apikey.html). Check it out.
+Blue API \(BETA\) authentication is now available [here](https://alphauslabs.github.io/blueapi/authentication/apikey.html). Check it out.
 {% endhint %}
 
 {% hint style="info" %}
