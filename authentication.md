@@ -1,6 +1,10 @@
 # Authentication
 
 {% hint style="info" %}
+Blue API authentication is now available [here](https://alphauslabs.github.io/blueapi/authentication/apikey.html). Check it out.
+{% endhint %}
+
+{% hint style="info" %}
 Authentication for [Wave \(OpenAPI\)](https://docs.mobingi.com/v/api-reference/wave-open-api/prerequest) is separated at the moment. We will be unifying all logins for all our APIs going forward. An announcement will be made once it's done.
 {% endhint %}
 
