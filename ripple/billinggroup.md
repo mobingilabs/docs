@@ -36,6 +36,7 @@ Content-Type: application/json
     "personal":"personal name",
     "remarks":"test automation",
     "inv_aggregate":false,
+    "language":"ja",
     "invoices": {
         "aws": {
             "calc_type":"account",
@@ -77,6 +78,7 @@ Content-Type: application/json
 | project\_id | _string_ | No | - | Project id |
 | invoice\_template\_id | _string_ | No | - | Invoice template id |
 | invoices | \[object\] | No | - | Invoice setting |
+| language | _string_ | No | サポート: `ja`, `en` | Display invoice language setting |
 
 **invoices object description**
 
