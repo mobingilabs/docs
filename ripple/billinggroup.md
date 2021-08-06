@@ -411,7 +411,7 @@ Content-Type: application/json
 | discount\_calc\_logic | _string_ | Yes | usageamount,allamount | 値引き対象 |
 | discount\_rate | _double_ | Yes | 0 ~ 1 | 値引率 |
 | discount\_target\_usage | _string_ | Yes | cloudpayonly ,cloudpaywithfee | 値引き計算方法 |
-| substitution\_fee | _string_ | Yes | percent, fix, automatic, table | 代行手数料請求方法 |
+| substitution\_fee | _string_ | Yes | percent, fix, automatic, usagetable | 代行手数料請求方法 |
 | substitution\_fee\_calc\_target | _string_ | Yes | cloudpayonly, cloudpaywithfee | 代行手数料計算対象 |
 | substitution\_fee\_calc\_type | _string_ | Yes | allsum, account | 請求代行サービス計算方法 |
 | substitution\_fee\_target\_usage | _string_ | Yes | nondiscount, discounted | 請求代行手数料対象 |
