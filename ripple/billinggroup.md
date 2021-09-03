@@ -368,7 +368,7 @@ HTTP 200
 **Request**
 
 ```http
-PUT /billinggroup/{id}/invoices HTTP1.1
+POST /billinggroup/{id}/invoices HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
