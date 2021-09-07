@@ -26,7 +26,7 @@ After MySQL value setup, click Create Application button.
 
 From Stack Details page, click DB Address\(master\).
 
-![](../../.gitbook/assets/rds-check.png)
+![](../../.gitbook/assets/rds-check%20%281%29%20%281%29%20%281%29.png)
 
 You can check the connection information of RDS（MySQL・PostgreSQL）
 
@@ -34,5 +34,5 @@ You can check the connection information of RDS（MySQL・PostgreSQL）
 
 As default, DB Username and DB Password are hided. By mouse click, you can check them.
 
-![](../../.gitbook/assets/rds-check_detail_dbname.png)
+![](../../.gitbook/assets/rds-check_detail_dbname%20%281%29.png)
 
