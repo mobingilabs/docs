@@ -2,7 +2,7 @@
 
 * [Wave 公式ユーザーガイド](README.md)
 
-## Mobingi Wave
+## Alphaus Wave
 
 * [事前準備](mobingi-wave/prep.md)
 * [Wave 概要](mobingi-wave/about-wave/README.md)
