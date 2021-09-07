@@ -2,7 +2,7 @@
 
 mobingi ALMは新しいコードをデプロイする際のダウンタイムを無くすため、Blue-Green Deploymentを使用しています。コードページのボタンをクリックするだけで簡単にコードのデプロイが可能です。
 
-![](../../.gitbook/assets/code_1bgjp.png)
+![](../../.gitbook/assets/code_1jp%20%281%29.png)
 
 接続ボタンを押すとスタックの全サーバーに以下のワークフローが実行されます。
 

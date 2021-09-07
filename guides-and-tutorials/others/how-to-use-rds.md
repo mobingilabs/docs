@@ -25,13 +25,13 @@ MySQLに値が設定されハイライトします。この状態で「アプリ
 
 スタック詳細のデータベース項目から、DBアドレス（Master）をクリックします。
 
-![](../../.gitbook/assets/rds-checkjp.png)
+![](../../.gitbook/assets/rds-check%20%281%29%20%281%29%20%281%29%20%281%29.png)
 
 RDS（MySQL・PostgreSQL）への接続情報が確認できます。
 
-![](../../.gitbook/assets/rds-check_detailjp.png)
+![](../../.gitbook/assets/rds-check_detail%20%281%29.png)
 
 DBユーザ名・DBパスワード名は不可視となっています。クリックする事で確認できます。
 
-![](../../.gitbook/assets/rds-check_detail_dbnamejp.png)
+![](../../.gitbook/assets/rds-check_detail_dbname%20%281%29%20%281%29.png)
 
