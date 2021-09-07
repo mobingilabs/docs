@@ -10,7 +10,7 @@ First time customers, use your root account to login to ALM dashboard, then navi
 
 **Step 2**: Create a new role with pre-defined role examples.
 
-![](../.gitbook/assets/getting-started-step-02%20%281%29.png)
+![](../.gitbook/assets/getting-started-step-02%20%281%29%20%281%29.png)
 
 Click on the button at bottom to create the new role. You can customize the role policy body. For details on how to write your own policy document, please refer to [working with RBAC](https://learn.mobingi.com/enterprise/working-with-rbac) guide.
 

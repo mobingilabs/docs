@@ -2,13 +2,15 @@
 description: Mobingi Documentation
 ---
 
-{% hint style="warning" %}
-**This product is already deprecated.**
-{% endhint %}
-
 # What is ALM?
 
+{% hint style="warning" %}
+This product is already deprecated.
+{% endhint %}
+
 ## What is ALM?
+
+### What is ALM?
 
 ALM \(_Application Lifecycle Management_\) is Mobingi's product offering that helps you manage the whole lifecycle of your application from provisioning to different cloud providers to application deployment and monitoring. At the moment, we support the following cloud providers:
 
