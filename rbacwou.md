@@ -55,7 +55,9 @@ description: RBACページの利用方法を解説します。
       <td style="text-align:left">ReadOnly</td>
     </tr>
   </tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 各ロールの内容は後からでも編集可能ですが、ロールの内容を変更した場合はそのロールが付与されているサブユーザーにも影響します。
 {% endhint %}
 
