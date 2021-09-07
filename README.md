@@ -2,13 +2,15 @@
 description: Mobingi Documentation
 ---
 
+# Overview
+
 {% hint style="warning" %}
 **This product is already deprecated.**
 {% endhint %}
 
-# Overview
-
 ## Overview
+
+### Overview
 
 [mobingi](https://github.com/mobingi/mobingi) is the official command line interface for [Mobingi](https://mobingi.com/) services.
 
