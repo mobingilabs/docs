@@ -12,7 +12,7 @@ Wave for Reseller は、「Rippleユーザー自身」と、「Rippleユーザ�
 
 月中の利用状況の詳細をグラフや表で確認することができます。
 
-![](../.gitbook/assets/screen-shot-2019-03-05-at-15.24.46.png)
+![](../.gitbook/assets/assets_-lemvlfzdvqfzlqc2ymy_-l_bvn3omhgdpnpms6kw_-l_bwjitujwn6svxxdxs_screen-shot-2019-03-05-at-15.2%20%281%29.png)
 
 ## 機能概要（Rippleユーザーの自社または顧客向け）
 

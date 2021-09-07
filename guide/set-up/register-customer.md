@@ -50,7 +50,9 @@
       <td style="text-align:left">&#x8ACB;&#x6C42;&#x66F8;&#x767A;&#x884C;&#x5148;&#x306E;&#x4F01;&#x696D;&#x540D;</td>
     </tr>
   </tbody>
-</table>以下は任意項目です。
+</table>
+
+以下は任意項目です。
 
 * 電話番号
 * 郵便番号
