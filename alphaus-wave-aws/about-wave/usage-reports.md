@@ -46,7 +46,8 @@ description: Waveのレポートページについての説明です。
         <ol>
           <li>&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x60C5;&#x5831;&#x306E;&#x5909;&#x66F4;
             - &#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x540D;&#x304C;&#x5909;&#x66F4;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</li>
-          <li>&#x4E88;&#x7B97;&#x8A2D;&#x5B9A; - &#x65E5;&#x5225;&#x3001;&#x6708;&#x5225;&#x3067;&#x306E;&#x4E88;&#x7B97;&#x3068;&#x901A;&#x77E5;&#x306E;&#x8A2D;&#x5B9A;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</li>
+          <li><a href="https://docs.alphaus.cloud/v/wave/alphaus-wave-aws/aws-budget">&#x4E88;&#x7B97;&#x8A2D;&#x5B9A;</a> -
+            &#x65E5;&#x5225;&#x3001;&#x6708;&#x5225;&#x3067;&#x306E;&#x4E88;&#x7B97;&#x3068;&#x901A;&#x77E5;&#x306E;&#x8A2D;&#x5B9A;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</li>
           <li><a href="https://docs.alphaus.cloud/v/wave/alphaus-wave-aws/aws-other-fees">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x660E;&#x7D30;&#x60C5;&#x5831;</a> -
             &#x5F93;&#x91CF;&#x8AB2;&#x91D1;&#x4EE5;&#x5916;&#x306E;&#x5229;&#x7528;&#x6599;&#xFF08;Fee/Credit/Refund/Other
             fee)&#x304C;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;</li>
