@@ -12,7 +12,7 @@
 * [AWS - 機能詳細](alphaus-wave-aws/aws-detail/README.md)
   * [予算・通知設定](alphaus-wave-aws/aws-detail/budget.md)
   * [その他明細情報の確認](alphaus-wave-aws/aws-detail/fee.md)
-  * [タグ機能の有効化](alphaus-wave-aws/aws-detail/taguno.md)
+  * [タグ機能の有効化](alphaus-wave-aws/aws-detail/tag.md)
   * [レポートとCSVの比較](alphaus-wave-aws/aws-detail/reportcsv.md)
 
 ## ALPHAUS WAVE FOR AZURE <a id="alphaus-wave-azure"></a>
