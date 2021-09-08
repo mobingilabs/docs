@@ -21,8 +21,6 @@ Waveを利用することで日次、月次のコストデータをほぼリア�
 
 {% page-ref page="./" %}
 
-
-
 {% page-ref page="usage-reports.md" %}
 
 {% page-ref page="reserved-instances.md" %}
