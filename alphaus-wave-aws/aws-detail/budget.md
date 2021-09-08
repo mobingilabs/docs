@@ -45,5 +45,8 @@ description: レポートページから各AWSアカウントに設定できる�
   </tbody>
 </table>
 
+2日前までのデータを元に、予算をオーバーしたタイミングで指定した先に通知されます。  
+メールで設定した場合は下記のようなメールが届きます。
 
+![](../../.gitbook/assets/nosurumonoka5198tsukarimashita.png)
 
