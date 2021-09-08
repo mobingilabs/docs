@@ -19,6 +19,8 @@ Waveを利用することで日次、月次のコストデータをほぼリア�
 1. EC2\(Amazon Elastic Compute Cloud\) 、RDS\(Amazon Relational Database Service\)などの転送量はAWS Data Transferとして別項目で表示されます。
 2. EBS\(Amazon Elastic Block Store\) の料金はEC2に含まれて表示されています。
 
+
+
 {% page-ref page="./" %}
 
 {% page-ref page="usage-reports.md" %}

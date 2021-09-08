@@ -11,7 +11,6 @@
   * [ご利用明細](alphaus-wave-aws/about-wave/invoice.md)
 * [AWS - 機能詳細](alphaus-wave-aws/aws-detail/README.md)
   * [予算・通知設定](alphaus-wave-aws/aws-detail/budget.md)
-* [AWS - 明細の確認方法](alphaus-wave-aws/aws-detail-check.md)
 * [AWS - その他の明細情報の確認](alphaus-wave-aws/aws-other-fees.md)
 * [AWS - タグ機能の有効化](alphaus-wave-aws/aws-tag.md)
 * [AWS - レポートとCSVの見方](alphaus-wave-aws/report-csv.md)
