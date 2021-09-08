@@ -5,12 +5,12 @@
 ## Alphaus Wave for AWS <a id="alphaus-wave-aws"></a>
 
 * [Wave for AWS 概要](alphaus-wave-aws/about-wave/README.md)
-  * [ダッシュボード](alphaus-wave-aws/about-wave/dasshubdo.md)
+  * [ダッシュボード](alphaus-wave-aws/about-wave/dashboard.md)
   * [レポート](alphaus-wave-aws/about-wave/usage-reports.md)
   * [リザーブドインスタンス](alphaus-wave-aws/about-wave/reserved-instances.md)
   * [ご利用明細](alphaus-wave-aws/about-wave/invoice.md)
-* [AWS - 機能詳細](alphaus-wave-aws/aws-budget/README.md)
-  * [予算・通知設定](alphaus-wave-aws/aws-budget/budget.md)
+* [AWS - 機能詳細](alphaus-wave-aws/aws-detail/README.md)
+  * [予算・通知設定](alphaus-wave-aws/aws-detail/budget.md)
 * [AWS - 明細の確認方法](alphaus-wave-aws/aws-detail-check.md)
 * [AWS - その他の明細情報の確認](alphaus-wave-aws/aws-other-fees.md)
 * [AWS - タグ機能の有効化](alphaus-wave-aws/aws-tag.md)
