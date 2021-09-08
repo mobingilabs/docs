@@ -46,9 +46,9 @@ description: Waveのレポートページについての説明です。
         <ol>
           <li>&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x60C5;&#x5831;&#x306E;&#x5909;&#x66F4;
             - &#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30A2;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x540D;&#x304C;&#x5909;&#x66F4;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</li>
-          <li><a href="https://docs.alphaus.cloud/v/wave/alphaus-wave-aws/aws-budget">&#x4E88;&#x7B97;&#x8A2D;&#x5B9A;</a> -
+          <li><a href="https://docs.alphaus.cloud/v/wave/alphaus-wave-aws/aws-detail/budget">&#x4E88;&#x7B97;&#x8A2D;&#x5B9A;</a> -
             &#x65E5;&#x5225;&#x3001;&#x6708;&#x5225;&#x3067;&#x306E;&#x4E88;&#x7B97;&#x3068;&#x901A;&#x77E5;&#x306E;&#x8A2D;&#x5B9A;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</li>
-          <li><a href="https://docs.alphaus.cloud/v/wave/alphaus-wave-aws/aws-other-fees">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x660E;&#x7D30;&#x60C5;&#x5831;</a> -
+          <li><a href="https://docs.alphaus.cloud/v/wave/alphaus-wave-aws/aws-detail/fee">&#x305D;&#x306E;&#x4ED6;&#x306E;&#x660E;&#x7D30;&#x60C5;&#x5831;</a> -
             &#x5F93;&#x91CF;&#x8AB2;&#x91D1;&#x4EE5;&#x5916;&#x306E;&#x5229;&#x7528;&#x6599;&#xFF08;Fee/Credit/Refund/Other
             fee)&#x304C;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;</li>
         </ol>
@@ -66,7 +66,7 @@ description: Waveのレポートページについての説明です。
         <br
         />AWS&#x3067;&#x5229;&#x7528;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30BF;&#x30B0;&#x3054;&#x3068;&#x306E;&#x8A73;&#x7D30;&#x306A;&#x5229;&#x7528;&#x91D1;&#x984D;&#x3092;&#x628A;&#x63E1;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x30BF;&#x30B0;&#x6A5F;&#x80FD;&#x306E;&#x8A2D;&#x5B9A;&#x65B9;&#x6CD5;&#x306F;&#x3001;
         <a
-        href="https://docs.alphaus.cloud/v/wave/alphaus-wave-aws/aws-tag">&#x30BF;&#x30B0;&#x6A5F;&#x80FD;&#x306E;&#x6709;&#x52B9;&#x5316;</a>&#x3092;&#x3054;&#x89A7;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</td>
+        href="https://docs.alphaus.cloud/v/wave/alphaus-wave-aws/aws-detail/tag">&#x30BF;&#x30B0;&#x6A5F;&#x80FD;&#x306E;&#x6709;&#x52B9;&#x5316;</a>&#x3092;&#x3054;&#x89A7;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</td>
     </tr>
   </tbody>
 </table>
@@ -92,7 +92,5 @@ CSVデータが用意されている場合はレポート右上のダウンロ�
 
 CSV形式でのダウンロードはアカウントとタグで利用することが可能です。\*グループ機能ではデータのダウンロードはできません。
 
-UIのレポートとCSVデータの照らし合わせについては、[レポートとCSV](https://docs.alphaus.cloud/v/wave/alphaus-wave-aws/report-csv)をご覧ください。
-
-
+UIのレポートとCSVデータの照らし合わせについては、[レポートとCSV](https://docs.alphaus.cloud/v/wave/alphaus-wave-aws/aws-detail/reportcsv)をご覧ください。
 

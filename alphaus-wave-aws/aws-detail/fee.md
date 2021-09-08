@@ -1,4 +1,4 @@
-# AWS - その他の明細情報の確認
+# その他明細情報の確認
 
 Reserved Instanceの前払い金や返金、AWSから付与されたクレジットなど、通常の請求に載らない明細情報が確認できます。
 
@@ -27,7 +27,7 @@ Reserved Instanceの前払い金や返金、AWSから付与されたクレジッ
       <td style="text-align:left">AWS&#x3067;&#x9069;&#x7528;&#x3055;&#x308C;&#x305F;&#x30AF;&#x30EC;&#x30B8;&#x30C3;&#x30C8;&#x30E1;&#x30E2;&#x306E;&#x60C5;&#x5831;</td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Refund</td>
       <td style="text-align:left">SLA&#x9055;&#x53CD;&#x306B;&#x3088;&#x308B;&#x8FD4;&#x91D1;&#x60C5;&#x5831;&#x306A;&#x3069;</td>
     </tr>
     <tr>
