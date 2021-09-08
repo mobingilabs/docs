@@ -10,7 +10,7 @@ Wave を利用するための事前準備から、UIの基本的な操作方法�
 
 左のメニューから読みたい項目を選択してください。
 
-Wave: [https://app.mobingi.com/wave](https://app.mobingi.com/wave).
+Wave: [https://app.alphaus.cloud/wave](https://app.alphaus.cloud/wave)
 
-本ユーザーガイドで解決できない場合は wave\_cs@alphaus.cloud までお気軽にお問い合わせください。
+本ユーザーガイドで解決できない場合は support@alphaus.cloud までお気軽にお問い合わせください。
 
