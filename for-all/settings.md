@@ -2,7 +2,7 @@
 
 コンソール右上のドロップダウンメニューから設定を選択します。
 
-![](../.gitbook/assets/wave.png)
+![](../.gitbook/assets/wave%20%281%29.png)
 
 ### 設定画面でできること
 
