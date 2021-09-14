@@ -8,6 +8,7 @@
   * [ダッシュボード](alphaus-wave-aws/about-wave-aws/dashboard.md)
   * [レポート](alphaus-wave-aws/about-wave-aws/usage-reports.md)
   * [リザーブドインスタンス](alphaus-wave-aws/about-wave-aws/reserved-instances.md)
+  * [Savings Plans](alphaus-wave-aws/about-wave-aws/savings-plans.md)
   * [ご利用明細](alphaus-wave-aws/about-wave-aws/invoice.md)
 * [AWS - 機能詳細](alphaus-wave-aws/aws-detail/README.md)
   * [予算・通知設定](alphaus-wave-aws/aws-detail/budget.md)
