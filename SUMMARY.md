@@ -6,4 +6,5 @@
 
 * [Wave PRO for AWS 概要](wave-pro-for-aws/wave-pro-for-aws/README.md)
   * [ダッシュボード](wave-pro-for-aws/wave-pro-for-aws/dashboard.md)
+  * [予算管理と予測](wave-pro-for-aws/wave-pro-for-aws/budget-and-forecast.md)
 
