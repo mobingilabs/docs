@@ -96,6 +96,7 @@ HTTP 200
       "usage_account_menu_fees_fee":false
       "usage_account_menu_fees_credit":false
       "usage_account_menu_fees_refund":false
+      "usage_account_menu_fees_other_fees":false
       "usage_report_download":true
       "usage_group":true
       "usage_group_graph":true
@@ -216,6 +217,7 @@ metaのリストを示します。
 | usage\_account\_menu\_fees\_fee | _boolean_ | false | Feeの表示 \[アカウント &gt; その他明細情報\] | Feeの表示 \[Account\] |
 | usage\_account\_menu\_fees\_credit | _boolean_ | false | Creditの表示 \[アカウント &gt; その他明細情報\] | Creditの表示 \[Account\] |
 | usage\_account\_menu\_fees\_refund | _boolean_ | false | Refundの表示 \[アカウント &gt; その他明細情報\] | Refundの表示 \[Account\] |
+| usage\_account\_menu\_fees\_other\_fees | _boolean_ | false | その他Feeの表示 \[アカウント &gt; その他明細情報\] | その他Feeの表示 \[Account\] |
 | usage\_report\_download | _boolean_ | true | レポートのダウンロード \[アカウント\] | 利用明細レポートのダウンロード表示 \[Account\] |
 | usage\_group | _boolean_ | true | グループレポート | 利用明細の表示 \[Group\] |
 | usage\_group\_graph | _boolean_ | true | グラフの表示 \[グループ\] | 利用明細グラフの表示 \[Group\] |
