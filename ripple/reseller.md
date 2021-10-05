@@ -159,7 +159,7 @@ HTTP 200
 **Request**
 
 ```http
-DELETE /reseller/{user_id}/password HTTP1.1
+PUT /reseller/{user_id}/password HTTP1.1
 Authorization: Bearer {token}
 Content-Type: application/json
 
@@ -189,6 +189,81 @@ Content-Type: application/json
 | input\_type | _string_ | Yes | - Auto / Custom | Auto: パスワード自動生成 Custom: passwordを入力 |
 | notification | _boolean_ | Yes | - | 変更時に通知をする/しない |
 | password | _string_ | No | - | パスワード |
+
+**Response**
+
+```ruby
+HTTP 200
+
+{
+  "status":"success"
+}
+```
+
+## Update password for reseller meta
+
+リセラーアカウントメタ情報の変更
+
+**Role actions**
+
+* `ModifyReseller`
+
+**Request**
+
+```http
+PUT /reseller/{user_id}/meta HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+**{user\_id}**
+
+リセラーアカウントのidを指定する
+
+以下に`{request body}`のリクエストペイロードの例を示します。
+
+**{request body}**
+
+```ruby
+{
+  "meta": {
+      "dashboard_graph":true
+      "usage_account":true
+      "usage_account_graph":true
+      "usage_account_menu_account_edit":false
+      "usage_account_menu_budget":false
+      "usage_account_menu_budget_edit":false
+      "usage_account_menu_fees_fee":false
+      "usage_account_menu_fees_credit":false
+      "usage_account_menu_fees_refund":false
+      "usage_account_menu_fees_other_fees":false
+      "usage_report_download":true
+      "usage_group":true
+      "usage_group_graph":true
+      "usage_tag":true
+      "usage_tag_graph":true
+      "usage_crosstag":true
+      "usage_crosstag_graph":true
+      "ri_purchased":true
+      "ri_utilization":false
+      "ri_recommendation":false
+      "sp_purchased":false
+      "invoice":false
+      "invoice_download_csv_discount":false
+      "invoice_download_csv_merged":false
+      "open_api":false
+      "users_management":false
+    }
+}
+```
+
+**request body description**
+
+| Field | Type | Required | Validation | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| meta | \[object\] | Yes | - | Wave機能表示設定。[metaについて](reseller.md#meta) |
 
 **Response**
 
