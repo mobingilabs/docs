@@ -200,7 +200,7 @@ HTTP 200
 }
 ```
 
-## Update password for reseller meta
+## Update meta for reseller account
 
 リセラーアカウントメタ情報の変更
 
