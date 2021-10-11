@@ -1,5 +1,5 @@
 ---
-description: Mobingi Waveにログインする
+description: Alphaus Waveにログインする
 ---
 
 # Wave for AWS 概要
@@ -10,20 +10,27 @@ Waveを利用することで日次、月次のコストデータをほぼリア�
 
 ![](../../.gitbook/assets/2021-01-03-19.41.14.gif)
 
-## **日次、月次グラフ** <a id="h_4ead3043b8"></a>
+## **日次、月次グラフ** <a href="h_4ead3043b8" id="h_4ead3043b8"></a>
 
 日次コストは過去31日分がグラフで表示されます。サービスのフィルタリングや日次、月次データの切り替えなどを行うことで日々のコスト状況を確認することができます。
 
 **仕様上の注意点**
 
-1. EC2\(Amazon Elastic Compute Cloud\) 、RDS\(Amazon Relational Database Service\)などの転送量はAWS Data Transferとして別項目で表示されます。
-2. EBS\(Amazon Elastic Block Store\) の料金はEC2に含まれて表示されています。
+1. EC2(Amazon Elastic Compute Cloud) 、RDS(Amazon Relational Database Service)などの転送量はAWS Data Transferとして別項目で表示されます。
+2. EBS(Amazon Elastic Block Store) の料金はEC2に含まれて表示されています。
 
-{% page-ref page="dashboard.md" %}
+{% content-ref url="dashboard.md" %}
+[dashboard.md](dashboard.md)
+{% endcontent-ref %}
 
-{% page-ref page="usage-reports.md" %}
+{% content-ref url="usage-reports.md" %}
+[usage-reports.md](usage-reports.md)
+{% endcontent-ref %}
 
-{% page-ref page="reserved-instances.md" %}
+{% content-ref url="reserved-instances.md" %}
+[reserved-instances.md](reserved-instances.md)
+{% endcontent-ref %}
 
-{% page-ref page="invoice.md" %}
-
+{% content-ref url="invoice.md" %}
+[invoice.md](invoice.md)
+{% endcontent-ref %}

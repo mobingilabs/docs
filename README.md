@@ -1,7 +1,3 @@
----
-description: Mobingi Waveの公式ユーザーガイドです。
----
-
 # Wave 公式ユーザーガイド
 
 Wave を利用するための事前準備から、UIの基本的な操作方法などを説明しています。
@@ -13,4 +9,3 @@ Wave を利用するための事前準備から、UIの基本的な操作方法�
 Wave: [https://app.alphaus.cloud/wave](https://app.alphaus.cloud/wave)
 
 本ユーザーガイドで解決できない場合は support@alphaus.cloud までお気軽にお問い合わせください。
-
