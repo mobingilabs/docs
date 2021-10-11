@@ -1,5 +1,5 @@
 ---
-description: Mobingi Documentation
+description: Alphaus Documentation
 ---
 
 # Wave PRO 公式ユーザーガイド
@@ -13,4 +13,3 @@ Wave PRO の基本的な操作方法などを説明しています。
 Wave PRO: [https://app.alphaus.cloud/wavepro/login](https://app.alphaus.cloud/wavepro/login)
 
 本ユーザーガイドで解決できない場合は support@alphaus.cloud までお気軽にお問い合わせください。
-
