@@ -14,4 +14,3 @@ Wave PRO: [https://app.alphaus.cloud/wavepro/login](https://app.alphaus.cloud/wa
 
 本ユーザーガイドで解決できない場合は support@alphaus.cloud までお気軽にお問い合わせください。
 
-test
