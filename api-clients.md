@@ -7,7 +7,7 @@ New API available on [https://alphauslabs.github.io/blueapidocs/\#/Iam](https://
 The following endpoint is the base url for the APIs below.
 
 ```text
-https://service.mobingi.com/m/u/users/
+https://api.alphaus.cloud/m/u/users/
 ```
 
 ## Create API client

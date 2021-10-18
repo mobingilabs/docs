@@ -7,7 +7,7 @@ New API available on [https://alphauslabs.github.io/blueapidocs/\#/Iam](https://
 The following endpoint is the base url for the APIs below.
 
 ```text
-https://service.mobingi.com/m/u/
+https://api.alphaus.cloud/m/u/
 ```
 
 ## Create subuser
@@ -24,7 +24,7 @@ content-type: application/json
 {
   "username": "newsubuser",
   "password": "mysecretpassword",
-  "email": "dev@mobingi.com",
+  "email": "dev@alphaus.cloud",
   "notification": {
     "email": "false"
   }

@@ -2,5 +2,5 @@
 
 | Description | Link |
 | :--- | :--- |
-| API Base URL | `https://wavereport.mobingi.com/` |
+| API Base URL | `https://wavereport.alphaus.cloud/` |
 

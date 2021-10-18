@@ -53,7 +53,7 @@ HTTP 200
 
 ## List exchange rate
 
-月ごとの為替レートの取得。ドキュメント[`get:/user`](https://docs.mobingi.com/v/api-reference/ripple/user) レスポンス`{exchange_rate}`から確認できます。
+月ごとの為替レートの取得。ドキュメント[`get:/user`](https://docs.alphaus.cloud/v/api-reference/ripple/user) レスポンス`{exchange_rate}`から確認できます。
 
 ## List invoice id exchange rate per month
 

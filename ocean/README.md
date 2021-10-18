@@ -6,5 +6,5 @@ This API is already deprecated.
 
 | Description | Link |
 | :--- | :--- |
-| API Base URL | `https://service.mobingi.com/m/ocean/` |
+| API Base URL | `https://api.alphaus.cloud/m/ocean/` |
 

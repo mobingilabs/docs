@@ -4,12 +4,12 @@
 New API available on [https://alphauslabs.github.io/blueapidocs/\#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam).
 {% endhint %}
 
-For general information about RBAC, check out this [link](https://docs.mobingi.com/v/ur-en/#rbac).
+For general information about RBAC, check out this [link](https://docs.alphaus.cloud/v/ur-en/#rbac).
 
 The following endpoint is the base url for the APIs below.
 
 ```text
-https://service.mobingi.com/m/auth/rbac/
+https://api.alphaus.cloud/m/auth/rbac/
 ```
 
 ## List permissions
