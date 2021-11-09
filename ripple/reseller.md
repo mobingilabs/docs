@@ -113,6 +113,7 @@ HTTP 200
       "invoice_download_csv_merged":false
       "open_api":false
       "users_management":false
+      "report_filters":false
     }
   },
   ...
@@ -255,6 +256,7 @@ Content-Type: application/json
       "invoice_download_csv_merged":false
       "open_api":false
       "users_management":false
+      "report_filters":false
     }
 }
 ```
@@ -309,4 +311,4 @@ metaのリストを示します。
 | invoice\_download\_csv\_merged | _boolean_ | false | 請求書（統合版）CSVのダウンロード | 請求書（統合版）CSVのダウンロード \[Usage details\] |
 | open\_api | _boolean_ | false | API アクセストークン | API アクセストークン \[Settings\] |
 | users\_management | _boolean_ | false | サブユーザー管理 | サブユーザー管理 \[Settings\] |
-
+| report\_filters | _boolean_ | false | レポートフィルター | レポートフィルター |
