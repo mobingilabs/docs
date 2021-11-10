@@ -21,7 +21,7 @@ Authorization: Bearer {token}
 HTTP 202
 ```
 
-Check out [https://github.com/mobingi/ocean-template-examples](https://github.com/mobingi/ocean-template-examples) for examples about `{template body}`. For details on how to write Ocean templates, check out this [reference](https://docs.alphaus.cloud/v/ocean-en/template-2018-07-02).
+Check out [https://github.com/mobingi/ocean-template-examples](https://github.com/mobingi/ocean-template-examples) for examples about `{template body}`. For details on how to write Ocean templates, check out this [reference](https://docs.mobingi.com/v/ocean-en/template-2018-07-02).
 
 ## List deployments
 
@@ -53,7 +53,7 @@ GET /v0/deployments/{name} HTTP1.1
 Authorization: Bearer {token}
 ```
 
-`{name}` is the template \(or deployment\) name.
+`{name}` is the template (or deployment) name.
 
 **Response**
 
@@ -108,9 +108,8 @@ DELETE /v0/deployments/{name}[?force=true] HTTP1.1
 Authorization: Bearer {token}
 ```
 
-`{name}` is the template \(or deployment\) name. For templates that have dependency to other templates, API will return error stating the dependency. If the parameter `force=true` is specified, the template resources will be deleted including all dependencies.
+`{name}` is the template (or deployment) name. For templates that have dependency to other templates, API will return error stating the dependency. If the parameter `force=true` is specified, the template resources will be deleted including all dependencies.
 
 **Response**
 
 For successful responses, server will return `HTTP 202`. Errors will return `HTTP 422`.
-

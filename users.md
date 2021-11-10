@@ -1,13 +1,13 @@
 # Users
 
 {% hint style="info" %}
-New API available on [https://alphauslabs.github.io/blueapidocs/\#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam).
+New API available on [https://alphauslabs.github.io/blueapidocs/#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam).
 {% endhint %}
 
 The following endpoint is the base url for the APIs below.
 
-```text
-https://api.alphaus.cloud/m/u/
+```
+https://service.mobingi.com/m/u/
 ```
 
 ## Create subuser
@@ -24,7 +24,7 @@ content-type: application/json
 {
   "username": "newsubuser",
   "password": "mysecretpassword",
-  "email": "dev@alphaus.cloud",
+  "email": "dev@mobingi.com",
   "notification": {
     "email": "false"
   }
@@ -33,12 +33,12 @@ content-type: application/json
 
 Details for the POST `{body}`.
 
-| Key | Value |
-| :--- | :--- |
-| `username` | Required. Min: 4, max: 18, allowed characters: letters, numbers, \_ \(underscore\), . \(period\) and - \(hyphen\). |
-| `password` | Required. Min: 8, max: 18. |
-| `notification.email` | Required. Enable or disable notifications. Valid values: `"true"`, `"false"`. |
-| `email` | Optional email address. |
+| Key                  | Value                                                                                                        |
+| -------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `username`           | Required. Min: 4, max: 18, allowed characters: letters, numbers, \_ (underscore), . (period) and - (hyphen). |
+| `password`           | Required. Min: 8, max: 18.                                                                                   |
+| `notification.email` | Required. Enable or disable notifications. Valid values: `"true"`, `"false"`.                                |
+| `email`              | Optional email address.                                                                                      |
 
 **Response**
 
@@ -84,4 +84,3 @@ HTTP/1.1 200 OK
   }
 ]
 ```
-

@@ -1,13 +1,13 @@
 # API clients
 
 {% hint style="info" %}
-New API available on [https://alphauslabs.github.io/blueapidocs/\#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam).
+New API available on [https://alphauslabs.github.io/blueapidocs/#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam).
 {% endhint %}
 
 The following endpoint is the base url for the APIs below.
 
-```text
-https://api.alphaus.cloud/m/u/users/
+```
+https://service.mobingi.com/m/u/users/
 ```
 
 ## Create API client
@@ -30,8 +30,8 @@ Content-Type: application/json
 
 Details for the POST `{body}`.
 
-| Key | Value |
-| :--- | :--- |
+| Key    | Value                                 |
+| ------ | ------------------------------------- |
 | `name` | Required. The name of the API client. |
 
 **Response**
@@ -103,4 +103,3 @@ HTTP/1.1 200 OK
   "status": "success"
 }
 ```
-

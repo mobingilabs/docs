@@ -1,15 +1,15 @@
-# Authorization \(RBAC\)
+# Authorization (RBAC)
 
 {% hint style="info" %}
-New API available on [https://alphauslabs.github.io/blueapidocs/\#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam).
+New API available on [https://alphauslabs.github.io/blueapidocs/#/Iam](https://alphauslabs.github.io/blueapidocs/#/Iam).
 {% endhint %}
 
-For general information about RBAC, check out this [link](https://docs.alphaus.cloud/v/ur-en/#rbac).
+For general information about RBAC, check out this [link](https://docs.mobingi.com/v/ur-en/#rbac).
 
 The following endpoint is the base url for the APIs below.
 
-```text
-https://api.alphaus.cloud/m/auth/rbac/
+```
+https://service.mobingi.com/m/auth/rbac/
 ```
 
 ## List permissions
@@ -72,7 +72,7 @@ content-type: application/json
 
 Role names should have at least 6 characters in length and 32 characters maximum. It should also be alphanumeric. Hyphens and underscores are allowed in between. The regular expression used for validation is below:
 
-```text
+```
 ^[A-Za-z0-9][A-Za-z0-9_-]*[A-Za-z0-9]$
 ```
 
@@ -179,14 +179,14 @@ authorization: Bearer {token}
 
 ## Map roles to user
 
-You can only map \(or attach\) up to 5 roles to a user per namespace. There is no limit for filtering rules per user.
+You can only map (or attach) up to 5 roles to a user per namespace. There is no limit for filtering rules per user.
 
 Valid values for `type` for filtering rules:
 
-| Namespace | Value |
-| :--- | :--- |
-| `wave` | `linkAcct`, `group`, `tags` |
-| `ripple` | `billingGroup` |
+| Namespace | Value                       |
+| --------- | --------------------------- |
+| `wave`    | `linkAcct`, `group`, `tags` |
+| `ripple`  | `billingGroup`              |
 
 **Request**
 
@@ -299,14 +299,14 @@ HTTP/1.1 200 OK
 
 ## Update map roles to user
 
-You can only update map \(or attach\) up to 5 roles to a user per namespace. There is no limit for filtering rules per user.
+You can only update map (or attach) up to 5 roles to a user per namespace. There is no limit for filtering rules per user.
 
 Valid values for `type` for filtering rules:
 
-| Namespace | Value |
-| :--- | :--- |
-| `wave` | `linkAcct`, `group`, `tags` |
-| `ripple` | `billingGroup` |
+| Namespace | Value                       |
+| --------- | --------------------------- |
+| `wave`    | `linkAcct`, `group`, `tags` |
+| `ripple`  | `billingGroup`              |
 
 This method replaces subuser's all roles to information in the request body.
 
@@ -359,4 +359,3 @@ HTTP/1.1 200 OK
   "filters":[]
 }
 ```
-

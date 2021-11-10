@@ -2,8 +2,8 @@
 
 The following endpoint is the base url for the APIs below.
 
-```text
-https://api.alphaus.cloud/m/status/
+```
+https://service.mobingi.com/m/status/
 ```
 
 ## List invoice calculation status
@@ -19,11 +19,11 @@ Authorization: Bearer {token}
 
 Details for `params`.
 
-| Key | Value |
-| :--- | :--- |
-| `vendor` | Optional. Supported vendor is only `aws`  at the moment. |
-| `from` | Optional. If not provided, default value is 2 months before current month. Format: `yyyymm`. |
-| `to` | Optional. If not provided, default value is current month. Format: `yyyymm`. |
+| Key      | Value                                                                                        |
+| -------- | -------------------------------------------------------------------------------------------- |
+| `vendor` | Optional. Supported vendor is only `aws`  at the moment.                                     |
+| `from`   | Optional. If not provided, default value is 2 months before current month. Format: `yyyymm`. |
+| `to`     | Optional. If not provided, default value is current month. Format: `yyyymm`.                 |
 
 **Response**
 
@@ -60,4 +60,3 @@ GET calculations/status
 # If you want range from Oct 2019 - Jan 2020:
 GET calculations/status?from=201910&to=202001
 ```
-

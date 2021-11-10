@@ -1,6 +1,5 @@
 # Wave
 
-| Description | Link |
-| :--- | :--- |
-| API Base URL | `https://wavereport.alphaus.cloud/` |
-
+| Description  | Link                              |
+| ------------ | --------------------------------- |
+| API Base URL | `https://wavereport.mobingi.com/` |

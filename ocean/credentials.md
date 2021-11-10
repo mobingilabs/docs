@@ -54,7 +54,7 @@ Azure:
 }
 ```
 
-GCP \(for GCP, `secret` is your service account's JSON file\):
+GCP (for GCP, `secret` is your service account's JSON file):
 
 ```ruby
 {
@@ -84,7 +84,7 @@ HTTP 201
 }
 ```
 
-When creating [Ocean templates](https://docs.alphaus.cloud/v/ocean-en/reference-2018-07-02), you will use the credential's `name` part as the name for the template's credential entry. This name should be unique per account.
+When creating [Ocean templates](https://docs.mobingi.com/v/ocean-en/reference-2018-07-02), you will use the credential's `name` part as the name for the template's credential entry. This name should be unique per account.
 
 ## List credentials
 
@@ -210,4 +210,3 @@ Authorization: Bearer {token}
 ```ruby
 HTTP 200
 ```
-

@@ -1,23 +1,23 @@
 # Authentication
 
 {% hint style="info" %}
-Blue API \(BETA\) authentication is now available [here](https://alphauslabs.github.io/blueapi/authentication/apikey.html). Check it out.
+Blue API (BETA) authentication is now available [here](https://alphauslabs.github.io/blueapi/authentication/apikey.html). Check it out.
 {% endhint %}
 
 {% hint style="info" %}
-Authentication for [Wave \(OpenAPI\)](https://docs.alphaus.cloud/v/api-reference/wave-open-api/prerequest) is separated at the moment. We will be unifying all logins for all our APIs going forward. An announcement will be made once it's done.
+Authentication for [Wave (OpenAPI)](https://docs.mobingi.com/v/api-reference/wave-open-api/prerequest) is separated at the moment. We will be unifying all logins for all our APIs going forward. An announcement will be made once it's done.
 {% endhint %}
 
-Before you can access Alphaus API services, you need to get an access token first. You will then use this token in your succeeding calls to the API using the `Authorization: Bearer {token}` HTTP header. Alphaus API tokens are [JSON Web Tokens \(JWT\)](https://tools.ietf.org/html/rfc7519).
+Before you can access Alphaus API services, you need to get an access token first. You will then use this token in your succeeding calls to the API using the `Authorization: Bearer {token}` HTTP header. Alphaus API tokens are [JSON Web Tokens (JWT)](https://tools.ietf.org/html/rfc7519).
 
 Use the following endpoints to acquire product-specific access tokens. Tokens are not compatible between the two. Ripple access tokens can only be used for Ripple endpoints; Wave access tokens are only valid on Wave endpoints.
 
 ```bash
 # Ripple
-https://login.alphaus.cloud/ripple/access_token
+https://login.mobingi.com/ripple/access_token
 
 # Wave
-https://login.alphaus.cloud/access_token
+https://login.mobingi.com/access_token
 ```
 
 **Request**
@@ -33,14 +33,14 @@ Content-Type: multipart/form-data
 
 The following table describes the formdata you need to supply as your POST body.
 
-| Name | Value |
-| :--- | :--- |
-| `grant_type` | Valid values: `password`, `client_credentials` |
-| `client_id` | The client id you received from Alphaus or from API. |
-| `client_secret` | The client secret you received from Alphaus or from API. |
-| `username` | You account username. Required if `grant_type` is set to `password`. |
-| `password` | You account password. Required if `grant_type` is set to `password`. |
-| `scope` | Valid values: `openid` |
+| Name            | Value                                                                |
+| --------------- | -------------------------------------------------------------------- |
+| `grant_type`    | Valid values: `password`, `client_credentials`                       |
+| `client_id`     | The client id you received from Alphaus or from API.                 |
+| `client_secret` | The client secret you received from Alphaus or from API.             |
+| `username`      | You account username. Required if `grant_type` is set to `password`. |
+| `password`      | You account password. Required if `grant_type` is set to `password`. |
+| `scope`         | Valid values: `openid`                                               |
 
 **Response**
 
@@ -71,4 +71,3 @@ $ bluectl access-token --beta
 $ curl -H "Authorization: Bearer $(bluectl access-token)" \
   https://some-ripple-endpoint/...
 ```
-

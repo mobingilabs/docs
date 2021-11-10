@@ -4,7 +4,6 @@
 This API is already deprecated.
 {% endhint %}
 
-| Description | Link |
-| :--- | :--- |
-| API Base URL | `https://api.alphaus.cloud/m/ocean/` |
-
+| Description  | Link                                   |
+| ------------ | -------------------------------------- |
+| API Base URL | `https://service.mobingi.com/m/ocean/` |
