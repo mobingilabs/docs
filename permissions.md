@@ -1,7 +1,7 @@
 # Permissions
 
-{% hint style="warning" %}
-This is still a draft version.
+{% hint style="info" %}
+Moved to https://alphauslabs.github.io/docs/iam/#permissions
 {% endhint %}
 
 ## Permissions
