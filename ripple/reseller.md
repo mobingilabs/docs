@@ -87,6 +87,12 @@ HTTP 200
     "password_update_time":null,
     "wave_registered":"2020-01-01T10:00:00+09:00",
     "meta": {
+      "aq_coverage_ratio":false
+      "aq_ri_management":false
+      "aq_ri_sp_instances":false
+      "aq_right_sizing":false
+      "aq_scheduling":false
+      "aq_sp_management":false
       "dashboard_graph":true
       "usage_account":true
       "usage_account_graph":true
@@ -230,6 +236,12 @@ Content-Type: application/json
 ```ruby
 {
   "meta": {
+      "aq_coverage_ratio":false
+      "aq_ri_management":false
+      "aq_ri_sp_instances":false
+      "aq_right_sizing":false
+      "aq_scheduling":false
+      "aq_sp_management":false
       "dashboard_graph":true
       "usage_account":true
       "usage_account_graph":true
@@ -285,12 +297,6 @@ metaのリストを示します。
 
 | Field | Type | Default | Label\(ja\) | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| aq\_coverage\_ratio | _boolean_ | false | Aquaカバー率 | 表示カバー率 |
-| aq\_ri\_management | _boolean_ | false | Aqua ri管理 | ディスプレイ管理 |
-| aq\_ri\_sp\_instances | _boolean_ | false | Aqua ri spインスタンス | インスタンスを表示する |
-| aq\_right\_sizing | _boolean_ | false | Aqua right sizing | 画面right sizing |
-| aq\_scheduling | _boolean_ | false | Aqua スケジューリング | スケジュールの表示 |
-| aq\_sp\_management | _boolean_ | false | Aqua sp管理 | sp管理を表示 |
 | dashboard\_graph | _boolean_ | true | ダッシュボード | ダッシュボードグラフの表示 |
 | usage\_account | _boolean_ | true | アカウントレポート | アカウント利用明細の表示 \[Account\] |
 | usage\_account\_graph | _boolean_ | true | グラフの表示 \[アカウント\] | アカウント利用明細グラフの表示 \[Account\] |
