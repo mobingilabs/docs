@@ -87,12 +87,6 @@ HTTP 200
     "password_update_time":null,
     "wave_registered":"2020-01-01T10:00:00+09:00",
     "meta": {
-      "aq_coverage_ratio": false
-      "aq_ri_management": false
-      "aq_ri_sp_instances": false
-      "aq_right_sizing": false
-      "aq_scheduling": false
-      "aq_sp_management": false  
       "dashboard_graph":true
       "usage_account":true
       "usage_account_graph":true
@@ -236,12 +230,6 @@ Content-Type: application/json
 ```ruby
 {
   "meta": {
-      "aq_coverage_ratio": false
-      "aq_ri_management": false
-      "aq_ri_sp_instances": false
-      "aq_right_sizing": false
-      "aq_scheduling": false
-      "aq_sp_management": false
       "dashboard_graph":true
       "usage_account":true
       "usage_account_graph":true
