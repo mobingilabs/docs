@@ -55,6 +55,100 @@ HTTP 200
 }
 ```
 
+**Sample**
+```python
+# Python
+
+import requests
+import json
+
+def get_token():
+    # Note: you can see details https://docs.alphaus.cloud/v/api-reference/authentication
+    # Assign generated values for client_id and client_secret
+    params={
+        "grant_type": "client_credentials",
+        "client_id": "{client_id}",
+        "client_secret": "{client_secret}",
+        "scope": "openid",
+    }
+    try:
+        response = requests.post(
+            url="https://login.alphaus.cloud/ripple/access_token",
+            headers={
+            },
+            params=params,
+            files=params,
+        )
+    except requests.exceptions.RequestException:
+        print('HTTP Request failed')
+
+    r = response.json()
+    return r['access_token'], r["token_type"]
+
+def send_request(type, token):
+    # Authorization header
+    auth = type + " " + token
+    try:
+        response = requests.post(
+            url="https://api.alphaus.cloud/m/ripple/reseller",
+            headers={
+                "Content-Type": "application/json;",
+                "Authorization": auth
+            },
+            data=json.dumps({
+                "email": "reseller@waveresellersample.cloud",
+                "notification": True,
+                "meta": {
+                    "usage_report_download": True,
+                    "usage_account_menu_fees_fee": False,
+                    "ri_utilization": False,
+                    "usage_account_menu_account_edit": False,
+                    "usage_account": True,
+                    "usage_account_graph": True,
+                    "usage_tag_graph": True,
+                    "usage_account_menu_fees_refund": False,
+                    "invoice_download_csv_merged": False,
+                    "invoice_download_csv_discount": False,
+                    "usage_account_menu_fees_other_fees": False,
+                    "usage_account_menu_fees_credit": False,
+                    "ri_purchased": False,
+                    "open_api": False,
+                    "dashboard_graph": True,
+                    "usage_group": True,
+                    "report_filters": False,
+                    "usage_tag": True,
+                    "ri_recommendation": False,
+                    "invoice": False,
+                    "usage_crosstag_graph": True,
+                    "users_management": False,
+                    "usage_account_menu_budget": False,
+                    "usage_account_menu_budget_edit": False,
+                    "usage_group_graph": True,
+                    "usage_crosstag": True,
+                    "aq_coverage_ratio": False,
+                    "aq_sp_management": False,
+                    "aq_right_sizing": False,
+                    "aq_ri_sp_instances": False,
+                    "aq_ri_management": False,
+                    "sp_purchased": False,
+                    "aq_scheduling": False,
+                    "aqua_link": False
+                },
+                "company_id": "{company_id}",
+                "input_type": "Auto"
+            })
+        )
+        print('Response HTTP Status Code: {status_code}'.format(
+            status_code=response.status_code))
+        print('Response HTTP Response Body: {content}'.format(
+            content=response.content))
+    except requests.exceptions.RequestException:
+        print('HTTP Request failed')
+
+access_token, token_type = get_token()
+send_request(token_type, access_token)
+```
+
 ## Get reseller account list
 
 リセラーアカウントの取得

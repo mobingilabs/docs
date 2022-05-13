@@ -62,6 +62,66 @@ HTTP 400 customer id が既に登録されている場合
 }
 ```
 
+**Sample**
+```python
+# Python
+
+import requests
+import json
+
+def get_token():
+    # Note: you can see details https://docs.alphaus.cloud/v/api-reference/authentication
+    # Assign generated values for client_id and client_secret
+    params={
+        "grant_type": "client_credentials",
+        "client_id": "{client_id}",
+        "client_secret": "{client_secret}",
+        "scope": "openid",
+    }
+    try:
+        response = requests.post(
+            url="https://login.alphaus.cloud/ripple/access_token",
+            headers={
+            },
+            params=params,
+            files=params,
+        )
+    except requests.exceptions.RequestException:
+        print('HTTP Request failed')
+
+    r = response.json()
+    return r['access_token'], r["token_type"]
+
+def send_request(type, token):
+    # Authorization header
+    auth = type + " " + token
+    try:
+        response = requests.post(
+            url="https://api.alphaus.cloud/m/ripple/accts",
+            headers={
+                "Content-Type": "application/json;",
+                "Authorization": auth
+            },
+            data=json.dumps({
+                "account_id": "{account_id}",
+                "vendor": "{vendor}",
+                "customer_id": "{customer_id}",
+                "note": None,
+                "company_id": "{company_id}",
+                "name": "customer_name"
+            })
+        )
+        print('Response HTTP Status Code: {status_code}'.format(
+            status_code=response.status_code))
+        print('Response HTTP Response Body: {content}'.format(
+            content=response.content))
+    except requests.exceptions.RequestException:
+        print('HTTP Request failed')
+
+access_token, token_type = get_token()
+send_request(token_type, access_token)
+```
+
 ## List
 
 アカウントリストの取得
