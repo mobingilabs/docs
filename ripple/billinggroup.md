@@ -114,6 +114,72 @@ HTTP 200
 }
 ```
 
+**Sample**
+```python
+# Python
+
+import requests
+import json
+
+def get_token():
+    # Note: you can see details https://docs.alphaus.cloud/v/api-reference/authentication
+    # Assign generated values for client_id and client_secret
+    params={
+        "grant_type": "client_credentials",
+        "client_id": "{client_id}",
+        "client_secret": "{client_secret}",
+        "scope": "openid",
+    }
+    try:
+        response = requests.post(
+            url="https://login.alphaus.cloud/ripple/access_token",
+            headers={
+            },
+            params=params,
+            files=params,
+        )
+    except requests.exceptions.RequestException:
+        print('HTTP Request failed')
+
+    r = response.json()
+    return r['access_token'], r["token_type"]
+
+def send_request(type, token):
+    # Authorization header
+    auth = type + " " + token
+    try:
+        response = requests.post(
+            url="https://api.alphaus.cloud/m/ripple/billinggroup",
+            headers={
+                "Content-Type": "application/json;",
+                "Authorization": auth
+            },
+            data=json.dumps({
+                "display_cost": "true_unblended_cost",
+                "phone": None,
+                "billinggroup_id": "BG-SAMPLE-01",
+                "billinggroup_name": "BG-SAMPLE-01",
+                "inv_aggregate": True,
+                "personal": None,
+                "exchange_rate_type": None,
+                "company_name": "BG-SAMPLE-01",
+                "postal": None,
+                "address": None,
+                "billing_title": None,
+                "remarks": None
+            })
+        )
+        print('Response HTTP Status Code: {status_code}'.format(
+            status_code=response.status_code))
+        print('Response HTTP Response Body: {content}'.format(
+            content=response.content))
+    except requests.exceptions.RequestException:
+        print('HTTP Request failed')
+
+access_token, token_type = get_token()
+send_request(token_type, access_token)
+```
+
 ## List
 
 請求グループリストの取得
