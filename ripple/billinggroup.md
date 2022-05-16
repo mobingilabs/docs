@@ -8,7 +8,7 @@
 
 **Role actions**
 
-* `ModifyBillingGroup` 
+* `ModifyBillingGroup`&#x20;
 
 **Request**
 
@@ -63,44 +63,44 @@ Content-Type: application/json
 
 **{request body} description**
 
-| Field | Type | Required | Validation | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| billinggroup\_id | _string_ | Yes | - | Billing group ID |
-| billinggroup\_name | _string_ | Yes | - | Billimg group name |
-| company\_name | _string_ | Yes | - | Company name |
-| phone | _string_ | No | - | Tel |
-| postal | _string_ | No | - | Postal |
-| address | _string_ | No | - | Address |
-| billing\_title | _string_ | No | - | Invoice title |
-| personal | _string_ | No | - | Personal name |
-| remarks | _string_ | No | - | Memo |
-| inv\_aggregate | _boolean_ | Yes | - | Displaying invoice in bulk or by vendor |
-| project\_id | _string_ | No | - | Project id |
-| invoice\_template\_id | _string_ | No | - | Invoice template id |
-| invoices | \[object\] | No | - | Invoice setting |
-| language | _string_ | No | サポート: `ja`, `en` | Display invoice language setting |
+| Field                 | Type      | Required | Validation       | Description                             |
+| --------------------- | --------- | -------- | ---------------- | --------------------------------------- |
+| billinggroup\_id      | _string_  | Yes      | -                | Billing group ID                        |
+| billinggroup\_name    | _string_  | Yes      | -                | Billimg group name                      |
+| company\_name         | _string_  | Yes      | -                | Company name                            |
+| phone                 | _string_  | No       | -                | Tel                                     |
+| postal                | _string_  | No       | -                | Postal                                  |
+| address               | _string_  | No       | -                | Address                                 |
+| billing\_title        | _string_  | No       | -                | Invoice title                           |
+| personal              | _string_  | No       | -                | Personal name                           |
+| remarks               | _string_  | No       | -                | Memo                                    |
+| inv\_aggregate        | _boolean_ | Yes      | -                | Displaying invoice in bulk or by vendor |
+| project\_id           | _string_  | No       | -                | Project id                              |
+| invoice\_template\_id | _string_  | No       | -                | Invoice template id                     |
+| invoices              | \[object] | No       | -                | Invoice setting                         |
+| language              | _string_  | No       | サポート: `ja`, `en` | Display invoice language setting        |
 
 **invoices object description**
 
-| Field | Type | Required | Validation | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| calc\_type | _string_ | Yes | - account   - tag | Invoice calculation type |
-| currency | _string_ | Yes | - jpy   - usd | Currency |
-| discount\_calc\_logic | _string_ | Yes | - usageamount | - |
-| discount\_rate | _double_ | Yes | 0.00 ~ 1.00 | - |
-| discount\_target\_usage | _string_ | Yes | - cloudpaywithfee   - cloudpayonly | - |
-| substitution\_fee | _string_ | Yes | - percent   - fix   - automatic   - usagetable | - |
-| substitution\_fee\_calc\_target | _string_ | Yes | - nondiscount   - discounted | - |
-| substitution\_fee\_calc\_type | _string_ | Yes | - allsum   - account | - |
-| substitution\_fee\_target\_usage | _string_ | Yes | - cloudpaywithfee   - cloudpayonly | - |
-| substitution\_fix | _double_ | Yes | 00 ~ 1000000 | - |
-| substitution\_rate | _double_ | Yes | 0.00 ~ 1.00 | - |
-| support\_amount\_target | _string_ | Yes | - allusage | - |
-| support\_fee | _string_ | Yes | - fix   - percent   - aws\_developer   - aws\_business   - aws\_enterprise | - |
-| support\_fee\_calc\_target | _string_ | Yes | - nondiscount   - discounted | - |
-| support\_fix | _double_ | Yes | 0.00 ~ 1000000 | - |
-| support\_rate | _double_ | Yes | 0.00 ~ 1.00 | - |
-| tax\_rate | _double_ | Yes | 0.00 ~ 0.10 | Tax |
+| Field                            | Type     | Required | Validation                                                                 | Description              |
+| -------------------------------- | -------- | -------- | -------------------------------------------------------------------------- | ------------------------ |
+| calc\_type                       | _string_ | Yes      | - account   - tag                                                          | Invoice calculation type |
+| currency                         | _string_ | Yes      | - jpy   - usd                                                              | Currency                 |
+| discount\_calc\_logic            | _string_ | Yes      | - usageamount                                                              | -                        |
+| discount\_rate                   | _double_ | Yes      | 0.00 \~ 1.00                                                               | -                        |
+| discount\_target\_usage          | _string_ | Yes      | - cloudpaywithfee   - cloudpayonly                                         | -                        |
+| substitution\_fee                | _string_ | Yes      | - percent   - fix   - automatic   - usagetable                             | -                        |
+| substitution\_fee\_calc\_target  | _string_ | Yes      | - nondiscount   - discounted                                               | -                        |
+| substitution\_fee\_calc\_type    | _string_ | Yes      | - allsum   - account                                                       | -                        |
+| substitution\_fee\_target\_usage | _string_ | Yes      | - cloudpaywithfee   - cloudpayonly                                         | -                        |
+| substitution\_fix                | _double_ | Yes      | 00 \~ 1000000                                                              | -                        |
+| substitution\_rate               | _double_ | Yes      | 0.00 \~ 1.00                                                               | -                        |
+| support\_amount\_target          | _string_ | Yes      | - allusage                                                                 | -                        |
+| support\_fee                     | _string_ | Yes      | - fix   - percent   - aws\_developer   - aws\_business   - aws\_enterprise | -                        |
+| support\_fee\_calc\_target       | _string_ | Yes      | - nondiscount   - discounted                                               | -                        |
+| support\_fix                     | _double_ | Yes      | 0.00 \~ 1000000                                                            | -                        |
+| support\_rate                    | _double_ | Yes      | 0.00 \~ 1.00                                                               | -                        |
+| tax\_rate                        | _double_ | Yes      | 0.00 \~ 0.10                                                               | Tax                      |
 
 **Response**
 
@@ -114,6 +114,9 @@ HTTP 200
 }
 ```
 
+**Pythonでのサンプル**
+
+````
 **Sample**
 ```python
 # Python
@@ -179,6 +182,7 @@ def send_request(type, token):
 access_token, token_type = get_token()
 send_request(token_type, access_token)
 ```
+````
 
 ## List
 
@@ -186,8 +190,8 @@ send_request(token_type, access_token)
 
 **Role actions**
 
-* `ReadBillingGroup` 
-* `ModifyBillingGroup` 
+* `ReadBillingGroup`&#x20;
+* `ModifyBillingGroup`&#x20;
 
 **Request**
 
@@ -277,8 +281,8 @@ HTTP 200
 
 **Role actions**
 
-* `ReadBillingGroup` 
-* `ModifyBillingGroup` 
+* `ReadBillingGroup`&#x20;
+* `ModifyBillingGroup`&#x20;
 
 **Request**
 
@@ -367,7 +371,7 @@ HTTP 200
 
 **Role actions**
 
-* `ModifyBillingGroup` 
+* `ModifyBillingGroup`&#x20;
 
 **Request**
 
@@ -400,20 +404,20 @@ Content-Type: application/json
 }
 ```
 
-| Field | Type | Required | Validation | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| billinggroup\_id | _string_ | Yes | - | Billing group ID |
-| billinggroup\_name | _string_ | Yes | 長さ 1 ~ 100 | Billing group Name |
-| company\_name | _string_ | Yes | 長さ 1 ~ 100 | Company name |
-| phone | _string_ | No | 長さ 12 ~ 16 | Tel |
-| postal | _string_ | No | 長さ 4 ~ 10 | Postal |
-| address | _string_ | No | 長さ 1 ~ 100 | Address |
-| billing\_title | _string_ | No | 長さ 1 ~ 100 | Invoice title |
-| personal | _string_ | No | 長さ 1 ~ 100 | Personal name |
-| remarks | _string_ | No | 長さ 1 ~ 100 | Memo |
-| inv\_aggregate | _boolean_ | No |  | Displaying invoice in bulk or by vendor |
-| project\_id | _string_ | No |  | Project id |
-| language | _string_ | No | サポート: `ja`, `en` | Display invoice language setting |
+| Field              | Type      | Required | Validation       | Description                             |
+| ------------------ | --------- | -------- | ---------------- | --------------------------------------- |
+| billinggroup\_id   | _string_  | Yes      | -                | Billing group ID                        |
+| billinggroup\_name | _string_  | Yes      | 長さ 1 \~ 100      | Billing group Name                      |
+| company\_name      | _string_  | Yes      | 長さ 1 \~ 100      | Company name                            |
+| phone              | _string_  | No       | 長さ 12 \~ 16      | Tel                                     |
+| postal             | _string_  | No       | 長さ 4 \~ 10       | Postal                                  |
+| address            | _string_  | No       | 長さ 1 \~ 100      | Address                                 |
+| billing\_title     | _string_  | No       | 長さ 1 \~ 100      | Invoice title                           |
+| personal           | _string_  | No       | 長さ 1 \~ 100      | Personal name                           |
+| remarks            | _string_  | No       | 長さ 1 \~ 100      | Memo                                    |
+| inv\_aggregate     | _boolean_ | No       |                  | Displaying invoice in bulk or by vendor |
+| project\_id        | _string_  | No       |                  | Project id                              |
+| language           | _string_  | No       | サポート: `ja`, `en` | Display invoice language setting        |
 
 **Response**
 
@@ -429,7 +433,7 @@ HTTP 200
 
 **Role actions**
 
-* `ModifyBillingGroup` 
+* `ModifyBillingGroup`&#x20;
 
 **Request**
 
@@ -470,25 +474,25 @@ Content-Type: application/json
 }
 ```
 
-| Field | Type | Required | Validation | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| calc\_type | _string_ | Yes | account,tag | 計算タイプ |
-| currency | _string_ | Yes | jpy,usd | 通貨 |
-| discount\_calc\_logic | _string_ | Yes | usageamount,allamount | 値引き対象 |
-| discount\_rate | _double_ | Yes | 0 ~ 1 | 値引率 |
-| discount\_target\_usage | _string_ | Yes | cloudpayonly ,cloudpaywithfee | 値引き計算方法 |
-| substitution\_fee | _string_ | Yes | percent, fix, automatic, usagetable | 代行手数料請求方法 |
-| substitution\_fee\_calc\_target | _string_ | Yes | cloudpayonly, cloudpaywithfee | 代行手数料計算対象 |
-| substitution\_fee\_calc\_type | _string_ | Yes | allsum, account | 請求代行サービス計算方法 |
-| substitution\_fee\_target\_usage | _string_ | Yes | nondiscount, discounted | 請求代行手数料対象 |
-| substitution\_fix | _double_ | Yes | 0 ~ 1,000,000 | 代行手数料 固定 |
-| substitution\_rate | _double_ | Yes | 0 ~ 1 | 代行手数料 \(%\) |
-| support\_amount\_target | _string_ | Yes | allusage, cloudpayonlywithfee | 表示なし |
-| support\_fee | _string_ | Yes | - aws percent, aws\_developer, aws\_business, aws\_enterprise, fix   - azure percent, fix | サポート料請求方法 |
-| support\_fee\_calc\_target | _string_ | Yes | cloudpayonly, cloudpaywithfee | サポート料計算対象 |
-| support\_fix | _double_ | Yes | 0 ~ 1,000,000 | サポート料 固定 |
-| support\_rate | _double_ | Yes | 0 ~ 1 | サポート料 % |
-| tax\_rate | _double_ | Yes | 0 ~ 0.08 | 消費税率 % |
+| Field                            | Type     | Required | Validation                                                                                | Description  |
+| -------------------------------- | -------- | -------- | ----------------------------------------------------------------------------------------- | ------------ |
+| calc\_type                       | _string_ | Yes      | account,tag                                                                               | 計算タイプ        |
+| currency                         | _string_ | Yes      | jpy,usd                                                                                   | 通貨           |
+| discount\_calc\_logic            | _string_ | Yes      | usageamount,allamount                                                                     | 値引き対象        |
+| discount\_rate                   | _double_ | Yes      | 0 \~ 1                                                                                    | 値引率          |
+| discount\_target\_usage          | _string_ | Yes      | cloudpayonly ,cloudpaywithfee                                                             | 値引き計算方法      |
+| substitution\_fee                | _string_ | Yes      | percent, fix, automatic, usagetable                                                       | 代行手数料請求方法    |
+| substitution\_fee\_calc\_target  | _string_ | Yes      | cloudpayonly, cloudpaywithfee                                                             | 代行手数料計算対象    |
+| substitution\_fee\_calc\_type    | _string_ | Yes      | allsum, account                                                                           | 請求代行サービス計算方法 |
+| substitution\_fee\_target\_usage | _string_ | Yes      | nondiscount, discounted                                                                   | 請求代行手数料対象    |
+| substitution\_fix                | _double_ | Yes      | 0 \~ 1,000,000                                                                            | 代行手数料 固定     |
+| substitution\_rate               | _double_ | Yes      | 0 \~ 1                                                                                    | 代行手数料 (%)    |
+| support\_amount\_target          | _string_ | Yes      | allusage, cloudpayonlywithfee                                                             | 表示なし         |
+| support\_fee                     | _string_ | Yes      | - aws percent, aws\_developer, aws\_business, aws\_enterprise, fix   - azure percent, fix | サポート料請求方法    |
+| support\_fee\_calc\_target       | _string_ | Yes      | cloudpayonly, cloudpaywithfee                                                             | サポート料計算対象    |
+| support\_fix                     | _double_ | Yes      | 0 \~ 1,000,000                                                                            | サポート料 固定     |
+| support\_rate                    | _double_ | Yes      | 0 \~ 1                                                                                    | サポート料 %      |
+| tax\_rate                        | _double_ | Yes      | 0 \~ 0.08                                                                                 | 消費税率 %       |
 
 **Response**
 
@@ -504,7 +508,7 @@ HTTP 200
 
 **Role actions**
 
-* `ModifyBillingGroup` 
+* `ModifyBillingGroup`&#x20;
 
 **Request**
 
@@ -538,13 +542,13 @@ Content-Type: application/json
 
 **additional\_items object description**
 
-| Field | Type | Required | Validation | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| enabled | _boolean_ | Yes | - | 有効、無効 |
-| label | _string_ | Yes | 長さ 1 ~ 60 | タイトル |
-| unit\_cost | _double_ | Yes | - | 単価 |
-| quantity | _double_ | Yes | - | 数量 |
-| total | _double_ | Yes | - | 金額 |
+| Field      | Type      | Required | Validation | Description |
+| ---------- | --------- | -------- | ---------- | ----------- |
+| enabled    | _boolean_ | Yes      | -          | 有効、無効       |
+| label      | _string_  | Yes      | 長さ 1 \~ 60 | タイトル        |
+| unit\_cost | _double_  | Yes      | -          | 単価          |
+| quantity   | _double_  | Yes      | -          | 数量          |
+| total      | _double_  | Yes      | -          | 金額          |
 
 **Response**
 
@@ -560,7 +564,7 @@ HTTP 200
 
 **Role actions**
 
-* `ModifyBillingGroup` 
+* `ModifyBillingGroup`&#x20;
 
 **Request**
 
@@ -588,7 +592,7 @@ HTTP 200
 
 **Role actions**
 
-* `ModifyBillingGroup` 
+* `ModifyBillingGroup`&#x20;
 
 **Request**
 
@@ -626,7 +630,7 @@ HTTP 200
 
 **Role actions**
 
-* `ModifyBillingGroup` 
+* `ModifyBillingGroup`&#x20;
 
 **Request**
 
@@ -642,4 +646,3 @@ HTTP 200
 
 {"status":"success"}
 ```
-

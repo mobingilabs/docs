@@ -37,14 +37,14 @@ Content-Type: application/json
 
 **{request body} description**
 
-| Field | Type | Required | Validation | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| customer\_id | _string_ | Yes | - AWS 12桁   - Azure 16~36桁 | - AWS AccountID   - Azure SubscriptionID |
-| account\_id | _string_ | Yes | - AWS 12桁   - AZURE 7桁 | - AWS PayerAccountID   - Azure BillingID |
-| company\_id | _string_ | Yes | - | 請求グループ内部ID |
-| vendor | _string_ | Yes | - サポート: `aws`,`azure` |  |
-| name | _string_ | Yes | - 長さ: 3 ~ 100 | 登録する顧客名 |
-| note | _string_ | No | - | 備考欄 |
+| Field        | Type     | Required | Validation                  | Description                              |
+| ------------ | -------- | -------- | --------------------------- | ---------------------------------------- |
+| customer\_id | _string_ | Yes      | - AWS 12桁   - Azure 16\~36桁 | - AWS AccountID   - Azure SubscriptionID |
+| account\_id  | _string_ | Yes      | - AWS 12桁   - AZURE 7桁      | - AWS PayerAccountID   - Azure BillingID |
+| company\_id  | _string_ | Yes      | -                           | 請求グループ内部ID                               |
+| vendor       | _string_ | Yes      | - サポート: `aws`,`azure`       |                                          |
+| name         | _string_ | Yes      | - 長さ: 3 \~ 100              | 登録する顧客名                                  |
+| note         | _string_ | No       | -                           | 備考欄                                      |
 
 **Response**
 
@@ -62,6 +62,9 @@ HTTP 400 customer id が既に登録されている場合
 }
 ```
 
+**Pythonでのサンプル**
+
+````
 **Sample**
 ```python
 # Python
@@ -121,6 +124,7 @@ def send_request(type, token):
 access_token, token_type = get_token()
 send_request(token_type, access_token)
 ```
+````
 
 ## List
 
@@ -128,7 +132,7 @@ send_request(token_type, access_token)
 
 **Role actions**
 
-* `ReadAccount` 
+* `ReadAccount`&#x20;
 * `ModifyAccount`
 
 **Request**
@@ -209,13 +213,13 @@ AWS AccountID or Azure SubscriptionID
 
 **{request body} description**
 
-| Field | Type | Required | Validation | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| account\_id | _string_ | Yes | - AWS 12桁   - AZURE 7桁 | - AWS PayerAccountID   - Azure BillingID |
-| company\_id | _string_ | Yes | - | 請求グループ内部ID |
-| vendor | _string_ | Yes | - サポート: `aws`,`azure` |  |
-| name | _string_ | Yes | - 長さ: 3 ~ 100 | 登録する顧客名 |
-| note | _string_ | No | - | 備考欄 |
+| Field       | Type     | Required | Validation             | Description                              |
+| ----------- | -------- | -------- | ---------------------- | ---------------------------------------- |
+| account\_id | _string_ | Yes      | - AWS 12桁   - AZURE 7桁 | - AWS PayerAccountID   - Azure BillingID |
+| company\_id | _string_ | Yes      | -                      | 請求グループ内部ID                               |
+| vendor      | _string_ | Yes      | - サポート: `aws`,`azure`  |                                          |
+| name        | _string_ | Yes      | - 長さ: 3 \~ 100         | 登録する顧客名                                  |
+| note        | _string_ | No       | -                      | 備考欄                                      |
 
 **Response**
 
@@ -276,4 +280,3 @@ HTTP 400 customer id が登録されていない場合
   "description":"Customer id is not exists."
 }
 ```
-
