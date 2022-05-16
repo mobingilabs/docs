@@ -57,11 +57,7 @@ HTTP 200
 
 **Pythonでのサンプル**
 
-````
-**Sample**
-```python
-# Python
-
+```
 import requests
 import json
 
@@ -151,7 +147,6 @@ def send_request(type, token):
 access_token, token_type = get_token()
 send_request(token_type, access_token)
 ```
-````
 
 ## Get reseller account list
 
