@@ -9,7 +9,7 @@ For general information about RBAC, check out this [link](https://docs.mobingi.c
 The following endpoint is the base url for the APIs below.
 
 ```
-https://service.mobingi.com/m/auth/rbac/
+https://service.alphaus.cloud/m/auth/rbac/
 ```
 
 ## List permissions
