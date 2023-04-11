@@ -2,6 +2,148 @@
 
 請求関連のAPIリファレンスは以下の通りです。
 
+## 請求書設定の保存
+
+請求書設定の保存
+
+**Role actions**
+
+* `ModifyInvoice`
+
+```http
+PUT /invoices/save/{month} HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
+
+以下に`{request body}`のリクエストペイロードの例を示します。
+
+**{request body}**
+
+```ruby
+{
+  "settings":[],
+  "internal":true
+}
+```
+
+Field           | Type      | Required | Validation | Description
+--------------- | --------- | -------- | ---------- | -----------
+ settings       | _object_  | Yes      | -          | 請求書設定
+ internal       | _boolean_ | Yes      | -          | True: デフォルトの設定を請求書設定として一括で保存します。 False: settingsを参照します。
+
+
+**Response**
+
+```ruby
+HTTP 200
+
+{
+  "status": "success"
+}
+```
+
+
+## 請求書為替レートの保存
+
+請求書為替レートの保存
+
+**Role actions**
+
+* `ModifyInvoice`
+
+```http
+PUT /invoices/exchangerate/{month} HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
+
+以下に`{request body}`のリクエストペイロードの例を示します。
+
+**{request body}**
+
+```ruby
+{
+  "vendor":"aws",
+  "billing_groups":["company id value1","company id value2"...],
+  "exchange_rate":100
+}
+```
+
+Field           | Type      | Required | Validation | Description
+--------------- | --------- | -------- | ---------- | -----------
+ vendor         | _string_  | Yes      | サポート: `aws`, `azure` | ベンダー
+ billing_groups | _object_  | Yes      | -          | 請求グループ一覧。 company_idを設定
+ exchange_rate  | _double_  | Yes      | -          | 為替レート
+
+**Response**
+
+```ruby
+HTTP 200
+
+{
+  "status": "success"
+}
+```
+
+## 請求書の作成
+
+請求書の作成
+
+請求書の作成を行う前に以下のAPIで請求書の設定を行ってください。
+1. [`請求書設定の保存`](#請求書設定の保存)
+2. [`請求書為替レートの保存`](#請求書為替レートの保存)
+
+**Role actions**
+
+* `ModifyInvoice`
+
+```http
+POST /invoices/calculation/{month} HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
+
+以下に`{request body}`のリクエストペイロードの例を示します。
+
+**{request body}**
+
+```ruby
+{
+  "vendor":"aws",
+  "group":["company id value1","company id value2"...],
+  "bulk":false
+}
+```
+
+Field           | Type      | Required | Validation | Description
+--------------- | --------- | -------- | ---------- | -----------
+ vendor         | _string_  | Yes      | サポート: `aws`, `azure`, `gcp` | ベンダー
+ group          | _object_  | Yes      | -          | 請求グループ一覧。 company_idを設定
+ bulk           | _boolean_ | Yes      | -          | 一括設定. True:一括で作成。 False: groupに設定された請求グループの作成。
+
+**Response**
+
+```ruby
+HTTP 200
+
+{
+  "status": "success"
+}
+```
+
 ## Get Account total cost list
 
 アカウント合計一覧の取得
