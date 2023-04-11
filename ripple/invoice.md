@@ -132,7 +132,7 @@ Field           | Type      | Required | Validation | Description
 --------------- | --------- | -------- | ---------- | -----------
  vendor         | _string_  | Yes      | サポート: `aws`, `azure`, `gcp` | ベンダー
  group          | _object_  | Yes      | -          | 請求グループ一覧。 company_idを設定
- bulk           | _boolean_ | Yes      | -          | 一括設定. True:一括で作成。 False: groupに設定された請求グループの作成。
+ bulk           | _boolean_ | Yes      | -          | 一括設定. True:一括で請求書を作成。 False: groupに設定された請求グループの請求書を作成。
 
 **Response**
 
