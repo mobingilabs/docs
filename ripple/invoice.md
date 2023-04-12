@@ -2,148 +2,6 @@
 
 請求関連のAPIリファレンスは以下の通りです。
 
-## 請求書設定の保存
-
-請求書設定の保存
-
-**Role actions**
-
-* `ModifyInvoice`
-
-```http
-PUT /invoices/save/{month} HTTP1.1
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{request body}
-```
-
-リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
-
-以下に`{request body}`のリクエストペイロードの例を示します。
-
-**{request body}**
-
-```ruby
-{
-  "settings":[],
-  "internal":true
-}
-```
-
-Field           | Type      | Required | Validation | Description
---------------- | --------- | -------- | ---------- | -----------
- settings       | _object_  | Yes      | -          | 請求書設定
- internal       | _boolean_ | Yes      | -          | True: デフォルトの設定を請求書設定として一括で保存します。 False: settingsを参照します。
-
-
-**Response**
-
-```ruby
-HTTP 200
-
-{
-  "status": "success"
-}
-```
-
-
-## 請求書為替レートの保存
-
-請求書為替レートの保存
-
-**Role actions**
-
-* `ModifyInvoice`
-
-```http
-PUT /invoices/exchangerate/{month} HTTP1.1
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{request body}
-```
-
-リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
-
-以下に`{request body}`のリクエストペイロードの例を示します。
-
-**{request body}**
-
-```ruby
-{
-  "vendor":"aws",
-  "billing_groups":["company id value1","company id value2"...],
-  "exchange_rate":100
-}
-```
-
-Field           | Type      | Required | Validation | Description
---------------- | --------- | -------- | ---------- | -----------
- vendor         | _string_  | Yes      | サポート: `aws`, `azure` | ベンダー
- billing_groups | _object_  | Yes      | -          | 請求グループ一覧。 company_idを設定
- exchange_rate  | _double_  | Yes      | -          | 為替レート
-
-**Response**
-
-```ruby
-HTTP 200
-
-{
-  "status": "success"
-}
-```
-
-## 請求書の作成
-
-請求書の作成
-
-請求書の作成を行う前に以下のAPIで請求書の設定を行ってください。
-1. [`請求書設定の保存`](#請求書設定の保存)
-2. [`請求書為替レートの保存`](#請求書為替レートの保存)
-
-**Role actions**
-
-* `ModifyInvoice`
-
-```http
-POST /invoices/calculation/{month} HTTP1.1
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{request body}
-```
-
-リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
-
-以下に`{request body}`のリクエストペイロードの例を示します。
-
-**{request body}**
-
-```ruby
-{
-  "vendor":"aws",
-  "group":["company id value1","company id value2"...],
-  "bulk":false
-}
-```
-
-Field           | Type      | Required | Validation | Description
---------------- | --------- | -------- | ---------- | -----------
- vendor         | _string_  | Yes      | サポート: `aws`, `azure`, `gcp` | ベンダー
- group          | _object_  | Yes      | -          | 請求グループ一覧。 company_idを設定
- bulk           | _boolean_ | Yes      | -          | 一括設定. True:一括で請求書を作成。 False: groupに設定された請求グループの請求書を作成。
-
-**Response**
-
-```ruby
-HTTP 200
-
-{
-  "status": "success"
-}
-```
-
 ## Get Account total cost list
 
 アカウント合計一覧の取得
@@ -221,25 +79,25 @@ HTTP 200
 
 accountsの詳細
 
-| Field | Type | Description |
-| :--- | :--- | :--- |
-| customer\_id | _string_ | 顧客ID |
-| customer\_name | _string_ | 顧客名 |
-| total | _double_ | $金額\(税抜\) |
-| total\_exchanged | _double_ | 換算後金額\(税抜\) |
-| adjustment\_entries | _list_ | 請求書に含んだ再計算請求データの一覧 |
+| Field               | Type     | Description        |
+| ------------------- | -------- | ------------------ |
+| customer\_id        | _string_ | 顧客ID               |
+| customer\_name      | _string_ | 顧客名                |
+| total               | _double_ | $金額(税抜)            |
+| total\_exchanged    | _double_ | 換算後金額(税抜)          |
+| adjustment\_entries | _list_   | 請求書に含んだ再計算請求データの一覧 |
 
 billing\_groupsの詳細
 
-| Field | Type | Description |
-| :--- | :--- | :--- |
-| billing\_group\_id | _string_ | 請求グループID |
-| billing\_group\_name | _string_ | 請求グループ名 |
-| vendor | _string_ | ベンダー |
-| tax\_excluded\_amount | _double_ | $合計金額\(税抜\) |
-| tax\_excluded\_amount\_exchanged | _double_ | $換算後合計金額\(税抜\) |
-| tax | _double_ | 消費税金額 |
-| total\_amount\_exchanged | _double_ | 合計請求金額 |
+| Field                            | Type     | Description  |
+| -------------------------------- | -------- | ------------ |
+| billing\_group\_id               | _string_ | 請求グループID     |
+| billing\_group\_name             | _string_ | 請求グループ名      |
+| vendor                           | _string_ | ベンダー         |
+| tax\_excluded\_amount            | _double_ | $合計金額(税抜)    |
+| tax\_excluded\_amount\_exchanged | _double_ | $換算後合計金額(税抜) |
+| tax                              | _double_ | 消費税金額        |
+| total\_amount\_exchanged         | _double_ | 合計請求金額       |
 
 ## Get Invoice list
 
@@ -402,3 +260,141 @@ HTTP 200
 }
 ```
 
+## 請求書設定の保存
+
+**Role actions**
+
+* `ModifyInvoice`
+
+**Request**
+
+```http
+PUT /invoices/save/{month} HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
+
+以下に`{request body}`のリクエストペイロードの例を示します。
+
+**{request body}**
+
+```ruby
+{
+  "settings":[],
+  "internal":true
+}
+```
+
+| Field    | Type        | Required | Validation | Description                                             |
+| -------- | ----------- | -------- | ---------- | ------------------------------------------------------- |
+| settings | \_object\_  | Yes      | -          | 請求書設定                                                   |
+| internal | \_boolean\_ | Yes      | -          | True: デフォルトの設定を請求書設定として一括で保存します。 False: settingsを参照します。 |
+
+**Response**
+
+```ruby
+HTTP 200
+
+{
+  "status": "success"
+}
+```
+
+## 請求書為替レートの保存
+
+**Role actions**
+
+* `ModifyInvoice`
+
+```http
+PUT /invoices/exchangerate/{month} HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm` 例: 2020-01
+
+以下に`{request body}`のリクエストペイロードの例を示します。
+
+**{request body}**
+
+```ruby
+{
+  "vendor":"aws",
+  "billing_groups":["company id value1","company id value2"...],
+  "exchange_rate":100
+}
+
+```
+
+| Field           | Type       | Required | Validation           | Description              |
+| --------------- | ---------- | -------- | -------------------- | ------------------------ |
+| vendor          | \_string\_ | Yes      | サポート: `aws`, `azure` | ベンダー                     |
+| billing\_groups | \_object\_ | Yes      | -                    | 請求グループ一覧。 company\_idを設定 |
+| exchange\_rate  | \_double\_ | Yes      | -                    | 為替レート                    |
+
+**Response**
+
+```ruby
+HTTP 200
+
+{
+  "status": "success"
+}
+```
+
+## 請求書の作成
+
+請求書の作成を行う前に以下のAPIで請求書の設定を行ってください。
+
+1\. \[\`請求書設定の保存\`]\(#請求書設定の保存)
+
+2\. \[\`請求書為替レートの保存\`]\(#請求書為替レートの保存)
+
+**Role actions**
+
+* `ModifyInvoice`
+
+```http
+POST /invoices/calculation/{month} HTTP1.1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{request body}
+```
+
+リクエストパラーメータの`{month}`のフォーマット: `yyyy-mm`例: 2020-01
+
+以下に`{request body}`のリクエストペイロードの例を示します。
+
+**{request body}**
+
+```ruby
+{
+  "vendor":"aws",
+  "group":["company id value1","company id value2"...],
+  "bulk":false
+}
+```
+
+| Field  | Type        | Required | Validation                  | Description                                                             |
+| ------ | ----------- | -------- | --------------------------- | ----------------------------------------------------------------------- |
+| vendor | \_string\_  | Yes      | サポート: `aws`, `azure`, `gcp` | ベンダー                                                                    |
+| group  | \_object\_  | Yes      | -                           | 請求グループ一覧。 company\_idを設定                                                |
+| bulk   | \_boolean\_ | Yes      | -                           | <p>一括設定。<br>True:一括で請求書を作成。 </p><p>False: groupに設定された請求グループの請求書を作成。</p> |
+
+**Response**
+
+```ruby
+HTTP 200
+
+{
+  "status": "success"
+}
+```
