@@ -1,5 +1,5 @@
 ---
-description: Mobingi Documentation
+description: Alphaus Documentation
 ---
 
 # Overview
