@@ -213,6 +213,7 @@ HTTP 200
       "open_api":false
       "users_management":false
       "report_filters":false
+      "budgetalerts":false
     }
   },
   ...
@@ -362,6 +363,7 @@ Content-Type: application/json
       "open_api":false
       "users_management":false
       "report_filters":false
+      "budgetalerts":false
     }
 }
 ```
@@ -422,3 +424,4 @@ metaのリストを示します。
 | open\_api                               | _boolean_ | false | API アクセストークン                 | API アクセストークン \[Settings]            |
 | users\_management                       | _boolean_ | false | サブユーザー管理                     | サブユーザー管理 \[Settings]                |
 | report\_filters                         | _boolean_ | false | レポートフィルター                    | レポートフィルター                           |
+| budgetalerts                            | _boolean_ | false | 予算超過通知                     | 予算に関するアラート \[Notification]\[Settings]                           |
